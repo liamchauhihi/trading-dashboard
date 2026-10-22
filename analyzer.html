@@ -1,0 +1,630 @@
+<!doctype html>
+<html lang="zh-Hant">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>股票分析器</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Serif+TC:wght@600;700&family=Noto+Sans+TC:wght@400;500;700&family=JetBrains+Mono:wght@400;600&display=swap">
+<style>
+/* Layout: search bar on top, then a verdict strip (long / short term), the price chart with levels and
+   patterns, then the detail sections (patterns, backtests, VWAP, stops). Same tokens as the journal page. */
+:root {
+  --bg: #F3F5F8; --surface: #FFFFFF; --ink: #152030; --muted: #5A6577; --faint: #8C96A6; --line: #DCE1E8;
+  --accent: #2F4FA8; --accent-soft: #E5EAF7; --gain: #18794E; --gain-soft: #E2F2EA; --loss: #C2362B; --loss-soft: #F8E4E1;
+  --warn: #9A6200; --warn-soft: #F7EDD9; --ma50: #C0661A; --ma200: #8A3FA0;
+  --font-display: "Noto Serif TC", "Songti TC", "PMingLiU", serif;
+  --font-body: "Noto Sans TC", "PingFang TC", "Microsoft JhengHei", system-ui, sans-serif;
+  --font-num: "JetBrains Mono", ui-monospace, "SF Mono", Menlo, monospace;
+  padding-top: env(safe-area-inset-top, 0px); padding-bottom: env(safe-area-inset-bottom, 0px);
+}
+@media (prefers-color-scheme: dark) { :root:not([data-theme="light"]) {
+  --bg: #0D131B; --surface: #141C27; --ink: #E4EAF2; --muted: #9AA6B8; --faint: #6D798B; --line: #243041;
+  --accent: #6E87E0; --accent-soft: #1C2742; --gain: #2A9D63; --gain-soft: #12291F; --loss: #E0533F; --loss-soft: #301916;
+  --warn: #D9A03A; --warn-soft: #2C2312; --ma50: #C9762A; --ma200: #B06CC8; color-scheme: dark; } }
+:root[data-theme="dark"] {
+  --bg: #0D131B; --surface: #141C27; --ink: #E4EAF2; --muted: #9AA6B8; --faint: #6D798B; --line: #243041;
+  --accent: #6E87E0; --accent-soft: #1C2742; --gain: #2A9D63; --gain-soft: #12291F; --loss: #E0533F; --loss-soft: #301916;
+  --warn: #D9A03A; --warn-soft: #2C2312; --ma50: #C9762A; --ma200: #B06CC8; color-scheme: dark; }
+
+* { box-sizing: border-box; }
+[hidden] { display: none !important; }
+body { margin: 0; background: var(--bg); color: var(--ink); font-family: var(--font-body); font-size: 15px; line-height: 1.6;
+  padding-left: max(16px, env(safe-area-inset-left, 0px)); padding-right: max(16px, env(safe-area-inset-right, 0px));
+  padding-block: 24px 64px; }
+.wrap { max-width: 1120px; margin: 0 auto; display: grid; gap: 28px; }
+.num { font-family: var(--font-num); font-variant-numeric: tabular-nums; }
+.gain { color: var(--gain); } .loss { color: var(--loss); } .warn { color: var(--warn); }
+a { color: var(--accent); }
+a:focus-visible, button:focus-visible, input:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
+
+header.top { display: flex; flex-wrap: wrap; align-items: flex-end; justify-content: space-between; gap: 12px 24px;
+  border-bottom: 2px solid var(--ink); padding-bottom: 14px; }
+header.top h1 { font-family: var(--font-display); font-size: clamp(26px, 5vw, 36px); line-height: 1.15; margin: 0; }
+header.top .sub { color: var(--muted); font-size: 13px; margin-top: 4px; }
+.chip { font-size: 12px; padding: 3px 10px; border-radius: 999px; background: var(--accent-soft); color: var(--accent);
+  font-weight: 500; white-space: nowrap; display: inline-block; }
+.chip.gain { background: var(--gain-soft); color: var(--gain); }
+.chip.loss { background: var(--loss-soft); color: var(--loss); }
+.chip.warn { background: var(--warn-soft); color: var(--warn); }
+.chip.plain { background: var(--bg); color: var(--muted); border: 1px solid var(--line); }
+
+section { display: grid; gap: 14px; }
+.sec-head { display: flex; align-items: baseline; justify-content: space-between; gap: 12px; flex-wrap: wrap; }
+h2 { font-family: var(--font-display); font-size: 22px; margin: 0; }
+.note { color: var(--muted); font-size: 13px; }
+.note p { margin: 0 0 .5em; }
+
+.search { background: var(--surface); border: 1px solid var(--line); border-radius: 10px; padding: 16px; display: grid; gap: 12px; }
+.row { display: flex; flex-wrap: wrap; gap: 8px; align-items: center; }
+input[type=text], input[type=password] { font: inherit; font-size: 16px; padding: 9px 12px; border: 1px solid var(--line);
+  border-radius: 8px; background: var(--bg); color: var(--ink); min-width: 0; }
+#sym { flex: 1 1 160px; text-transform: uppercase; font-family: var(--font-num); font-weight: 600; }
+#key { flex: 1 1 220px; }
+button { font: inherit; font-size: 14px; padding: 9px 16px; border-radius: 8px; border: 1px solid var(--ink);
+  background: var(--ink); color: var(--bg); cursor: pointer; font-weight: 500; }
+button.ghost { background: var(--surface); color: var(--ink); border-color: var(--line); }
+button.pick { padding: 4px 12px; border-radius: 999px; font-family: var(--font-num); font-size: 13px; background: var(--surface);
+  color: var(--ink); border-color: var(--line); }
+button:disabled { opacity: .5; cursor: wait; }
+details.key summary { cursor: pointer; color: var(--muted); font-size: 13px; }
+details.key .box { margin-top: 10px; display: grid; gap: 8px; }
+.msg { font-size: 14px; padding: 10px 14px; border-radius: 8px; background: var(--warn-soft); color: var(--warn); }
+.msg.err { background: var(--loss-soft); color: var(--loss); }
+
+.tiles { display: grid; grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); gap: 1px; background: var(--line);
+  border: 1px solid var(--line); border-radius: 10px; overflow: hidden; }
+.tile { background: var(--surface); padding: 12px 16px; display: grid; gap: 2px; min-width: 0; }
+.tile .k { font-size: 12px; color: var(--muted); }
+.tile .v { font-family: var(--font-num); font-size: 20px; font-weight: 600; font-variant-numeric: tabular-nums; }
+.tile .s { font-size: 12px; color: var(--muted); }
+
+.verdicts { display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 340px), 1fr)); gap: 16px; }
+.verdict { background: var(--surface); border: 1px solid var(--line); border-top: 4px solid var(--c, var(--line)); border-radius: 10px;
+  padding: 14px 16px; display: grid; gap: 8px; min-width: 0; }
+.verdict h3 { margin: 0; font-size: 15px; display: flex; align-items: center; gap: 10px; flex-wrap: wrap; }
+.verdict .big { font-family: var(--font-display); font-size: 24px; color: var(--c); }
+.verdict ul { margin: 0; padding-left: 18px; font-size: 14px; }
+.verdict li { margin-bottom: 2px; }
+.verdict li .pt { font-family: var(--font-num); font-size: 12px; color: var(--faint); margin-left: 4px; }
+.verdict .act { font-size: 14px; background: var(--bg); border-radius: 8px; padding: 8px 12px; }
+
+.panel { background: var(--surface); border: 1px solid var(--line); border-radius: 10px; padding: 16px; display: grid; gap: 10px; min-width: 0; }
+.panel h3 { margin: 0; font-size: 15px; }
+.panels { display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 440px), 1fr)); gap: 16px; }
+.tabs { display: flex; flex-wrap: wrap; gap: 6px; }
+.tabs button { padding: 4px 12px; border-radius: 999px; border: 1px solid var(--line); background: var(--surface); color: var(--muted); font-size: 13px; }
+.tabs button[aria-pressed="true"] { background: var(--ink); color: var(--bg); border-color: var(--ink); }
+.chart { position: relative; width: 100%; }
+.chart svg { display: block; width: 100%; height: auto; overflow: visible; touch-action: pan-y; }
+.chart text { fill: var(--muted); font-family: var(--font-num); font-size: 11px; }
+.chart .grid { stroke: var(--line); stroke-width: 1; }
+.chart .px { fill: none; stroke: var(--ink); stroke-width: 1.6; }
+.chart .m50 { fill: none; stroke: var(--ma50); stroke-width: 1.4; }
+.chart .m200 { fill: none; stroke: var(--ma200); stroke-width: 1.4; }
+.chart .sup { stroke: var(--gain); stroke-width: 1; stroke-dasharray: 5 4; }
+.chart .res { stroke: var(--loss); stroke-width: 1; stroke-dasharray: 5 4; }
+.chart .pat { fill: none; stroke: var(--accent); stroke-width: 2; }
+.chart .cross { stroke: var(--faint); stroke-width: 1; }
+.chart .dot { fill: var(--ink); stroke: var(--surface); stroke-width: 2; }
+.tip { position: absolute; pointer-events: none; background: var(--ink); color: var(--bg); font-size: 12px; padding: 6px 9px;
+  border-radius: 6px; white-space: nowrap; transform: translate(-50%, calc(-100% - 10px)); line-height: 1.5; }
+.legend { display: flex; flex-wrap: wrap; gap: 6px 16px; font-size: 13px; color: var(--muted); }
+.legend span::before { content: ""; display: inline-block; width: 14px; height: 3px; border-radius: 2px; background: var(--c);
+  vertical-align: middle; margin-right: 6px; }
+.legend span.dash::before { background: repeating-linear-gradient(90deg, var(--c) 0 5px, transparent 5px 8px); }
+
+.table-wrap { overflow-x: auto; background: var(--surface); border: 1px solid var(--line); border-radius: 10px; }
+table { border-collapse: collapse; width: 100%; font-size: 14px; }
+th, td { padding: 9px 12px; text-align: left; border-bottom: 1px solid var(--line); white-space: nowrap; vertical-align: top; }
+th { font-size: 12px; letter-spacing: .04em; color: var(--muted); font-weight: 500; background: var(--bg); }
+td.r, th.r { text-align: right; }
+td.wrap-cell { white-space: normal; min-width: 200px; color: var(--muted); font-size: 13px; }
+tbody tr:last-child td { border-bottom: 0; }
+.best td { background: var(--accent-soft); }
+
+.cards { display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 300px), 1fr)); gap: 12px; }
+.card { background: var(--surface); border: 1px solid var(--line); border-left: 4px solid var(--c, var(--accent)); border-radius: 10px;
+  padding: 12px 16px; display: grid; gap: 6px; font-size: 14px; }
+.card b { font-size: 15px; }
+.empty { color: var(--muted); font-size: 14px; background: var(--surface); border: 1px dashed var(--line); border-radius: 10px; padding: 18px; }
+footer { color: var(--faint); font-size: 12px; border-top: 1px solid var(--line); padding-top: 12px; }
+.spin { display: inline-block; width: 14px; height: 14px; border: 2px solid var(--line); border-top-color: var(--accent);
+  border-radius: 50%; vertical-align: -2px; margin-right: 6px; }
+@media (prefers-reduced-motion: no-preference) { .spin { animation: sp 0.8s linear infinite; } @keyframes sp { to { transform: rotate(360deg); } } }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header class="top">
+    <div>
+      <h1>股票分析器</h1>
+      <div class="sub">輸入美股代號 → 自動計晒趨勢、形態、策略回測、止盈止蝕同建議</div>
+    </div>
+    <a href="index.html">← 返回交易日誌</a>
+  </header>
+
+  <div class="search">
+    <form class="row" id="form" autocomplete="off">
+      <input type="text" id="sym" placeholder="股票代號，例如 TSLA" aria-label="股票代號" maxlength="10" spellcheck="false">
+      <button type="submit" id="go">分析</button>
+    </form>
+    <div class="row" id="picks"></div>
+    <details class="key" id="keybox">
+      <summary id="keysum">設定 Twelve Data API key</summary>
+      <div class="box">
+        <div class="note">數據嚟自 Twelve Data（免費：每分鐘 8 次、每日 800 次；每分析一隻股用 2 次）。
+          key 只會儲存喺你呢部機嘅瀏覽器，唔會上載去網站。冇 key？去 twelvedata.com 免費註冊 → API Keys。</div>
+        <div class="row">
+          <input type="password" id="key" placeholder="貼上你嘅 API key" aria-label="API key">
+          <button type="button" id="savekey">儲存</button>
+          <button type="button" class="ghost" id="clearkey">清除</button>
+        </div>
+      </div>
+    </details>
+    <div id="status" hidden></div>
+  </div>
+
+  <div id="out" hidden></div>
+
+  <footer>
+    只供學習參考，唔係投資建議。所有結果都係用過去數據計，將來唔一定一樣；圖表形態係電腦按規則自動搵，未必同人眼睇法一致。
+    回測假設收市價成交、每邊成本 0.05%、冇計股息同稅。
+  </footer>
+</div>
+
+<script src="analyzer_core.js"></script>
+<script>
+"use strict";
+const HOLDINGS = {"TSM": {"qty": 4, "cost": 427.263}, "TSLA": {"qty": 4, "cost": 367.43}, "QQQ": {"qty": 1.5407, "cost": 719.835}, "GOOG": {"qty": 3, "cost": 340.0}, "ORCL": {"qty": 7, "cost": 139.9}, "VOO": {"qty": 0.7921, "cost": 706.401}, "QQQM": {"qty": 1.851, "cost": 302.377}, "NVDA": {"qty": 2, "cost": 212.47}};
+const A = window.Analyzer;
+const $ = id => document.getElementById(id);
+const KEY_STORE = "ta_key", CACHE_PREFIX = "ta_cache:", CACHE_MIN = 10, CACHE_KEEP = 6;
+
+// ---------- small helpers ----------
+const esc = s => String(s).replace(/[&<>"']/g, ch => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;" }[ch]));
+const ok = x => typeof x === "number" && isFinite(x);
+const f2 = (x, d = 2) => (ok(x) ? x.toLocaleString("en-US", { minimumFractionDigits: d, maximumFractionDigits: d }) : "—");
+const pct = (x, d = 1, sign = true) => (ok(x) ? (sign && x > 0 ? "+" : "") + (x * 100).toFixed(d) + "%" : "—");
+const cls = x => (ok(x) ? (x > 0 ? "gain" : x < 0 ? "loss" : "") : "");
+const store = {
+  get(k) { try { return localStorage.getItem(k); } catch (e) { return null; } },
+  set(k, v) { try { localStorage.setItem(k, v); return true; } catch (e) { return false; } },
+  del(k) { try { localStorage.removeItem(k); } catch (e) { /* ignore */ } },
+  keys() { try { return Object.keys(localStorage); } catch (e) { return []; } },
+};
+
+function status(html, kind) {
+  const el = $("status");
+  el.hidden = !html;
+  el.className = kind ? "msg " + kind : "msg";
+  el.innerHTML = html || "";
+}
+
+// ---------- API key ----------
+function refreshKeyUI() {
+  const has = !!store.get(KEY_STORE);
+  $("keysum").textContent = has ? "API key 已儲存（撳呢度更改）" : "設定 Twelve Data API key（第一次用要設定）";
+  $("keybox").open = !has;
+}
+$("savekey").onclick = () => {
+  const k = $("key").value.trim();
+  if (!k) return status("請先貼上 API key。", "err");
+  if (!store.set(KEY_STORE, k)) return status("呢個瀏覽器唔俾儲存（可能係私密瀏覽模式），請用普通模式再試。", "err");
+  $("key").value = ""; refreshKeyUI(); status("已儲存 ✓ 而家可以輸入股票代號分析。");
+};
+$("clearkey").onclick = () => { store.del(KEY_STORE); refreshKeyUI(); status("已清除 API key。"); };
+
+// ---------- data ----------
+const ERR = {
+  401: "API key 唔啱，請喺「設定 API key」重新貼過。",
+  429: "免費額度暫時用完（每分鐘 8 次／每日 800 次）。等一分鐘再試。",
+  400: "搵唔到呢個股票代號，請檢查下（只支援美股，例如 AAPL、TSLA、QQQ）。",
+  404: "搵唔到呢個股票代號，請檢查下（只支援美股，例如 AAPL、TSLA、QQQ）。",
+};
+
+async function fetchSeries(sym, interval) {
+  const ck = CACHE_PREFIX + sym + ":" + interval;
+  try {
+    const c = JSON.parse(store.get(ck) || "null");
+    if (c && Date.now() - c.at < CACHE_MIN * 60000) return c;
+  } catch (e) { /* bad cache: refetch */ }
+  const key = store.get(KEY_STORE);
+  const url = "https://api.twelvedata.com/time_series?symbol=" + encodeURIComponent(sym) + "&interval=" + interval +
+              "&outputsize=5000&apikey=" + encodeURIComponent(key);
+  let j;
+  try { j = await (await fetch(url)).json(); }
+  catch (e) { throw new Error("連唔到數據伺服器，請檢查網絡再試。"); }
+  if (j.status === "error" || !j.values) {
+    const e = new Error(ERR[j.code] || "數據錯誤：" + (j.message || "未知"));
+    e.code = j.code; throw e;
+  }
+  const bars = j.values.map(v => ({ t: v.datetime, o: +v.open, h: +v.high, l: +v.low, c: +v.close, v: +v.volume || 0 })).reverse();
+  const out = { at: Date.now(), meta: j.meta || {}, bars };
+  saveCache(ck, out);
+  return out;
+}
+
+function saveCache(ck, obj) {
+  // keep only the last few series so localStorage doesn't fill up
+  const mine = store.keys().filter(k => k.startsWith(CACHE_PREFIX))
+    .map(k => { try { return [k, JSON.parse(store.get(k)).at]; } catch (e) { return [k, 0]; } })
+    .sort((a, b) => b[1] - a[1]);
+  for (const [k] of mine.slice(CACHE_KEEP * 2 - 1)) store.del(k);
+  if (!store.set(ck, JSON.stringify(obj))) { for (const [k] of mine) store.del(k); store.set(ck, JSON.stringify(obj)); }
+}
+
+// ---------- run ----------
+let current = null;
+$("form").onsubmit = e => { e.preventDefault(); run($("sym").value); };
+
+async function run(raw) {
+  const sym = raw.trim().toUpperCase().replace(/\s+/g, "");
+  if (!/^[A-Z][A-Z0-9.\-]{0,9}$/.test(sym)) return status("請輸入美股代號，例如 AAPL、TSLA、QQQ。", "err");
+  if (!store.get(KEY_STORE)) { $("keybox").open = true; return status("第一次用要先設定 Twelve Data API key（下面）。", "err"); }
+  $("sym").value = sym; $("go").disabled = true;
+  status('<span class="spin"></span>攞緊 ' + esc(sym) + " 嘅數據…");
+  try {
+    const daily = await fetchSeries(sym, "1day");
+    if (daily.bars.length < 260) throw new Error("呢隻股上市唔夠一年（得 " + daily.bars.length + " 日數據），好多指標計唔到。");
+    let intra = null, intraErr = "";
+    try { intra = await fetchSeries(sym, "5min"); }
+    catch (e) { intraErr = e.message; }
+    status('<span class="spin"></span>計算緊…');
+    await new Promise(r => setTimeout(r, 20));
+    const res = A.analyze(daily.bars, intra ? intra.bars : null);
+    current = { sym, meta: daily.meta, daily: daily.bars, res, intraErr, range: 252 };
+    render();
+    status(intraErr ? "⚠️ 5 分鐘數據攞唔到（" + esc(intraErr) + "），VWAP 部分會留空，其他照計。" : "");
+    try { history.replaceState(null, "", "#" + sym); } catch (e) { /* file:// */ }
+  } catch (e) {
+    status(esc(e.message || String(e)), "err");
+  } finally { $("go").disabled = false; }
+}
+
+// ---------- rule-based verdict ----------
+function verdicts(sym, d, R) {
+  const I = R.I, e = d.length - 1, c = I.c[e], a = I.atr[e];
+  const L = [], S = [];
+  const add = (arr, pts, txt) => arr.push({ pts, txt });
+  // long term
+  if (c > I.ma200[e]) add(L, 2, "股價高過 200 天線（" + f2(I.ma200[e]) + "），長期趨勢向上");
+  else add(L, -2, "股價低過 200 天線（" + f2(I.ma200[e]) + "），長期趨勢向下");
+  if (I.ma50[e] > I.ma200[e]) add(L, 1, "50 天線喺 200 天線之上（金叉狀態）");
+  else add(L, -1, "50 天線喺 200 天線之下（死叉狀態）");
+  const slope = I.ma200[e] / I.ma200[e - 20] - 1;
+  if (slope > 0.005) add(L, 1, "200 天線仲向上斜（過去 20 日 " + pct(slope) + "）");
+  else if (slope < -0.005) add(L, -1, "200 天線向下斜（過去 20 日 " + pct(slope) + "）");
+  let hi52 = -Infinity; for (let i = Math.max(0, e - 251); i <= e; i++) hi52 = Math.max(hi52, d[i].h);
+  const off = c / hi52 - 1;
+  if (off < -0.3) add(L, -1, "距離一年高位 " + pct(off) + "，跌咗好多");
+  else if (off > -0.05) add(L, 1, "接近一年高位（" + pct(off) + "），強勢");
+  // short term
+  if (I.macd[e] > I.signal[e]) add(S, 1, "MACD 喺訊號線之上，短線動力向上");
+  else add(S, -1, "MACD 喺訊號線之下，短線動力向下");
+  if (c > I.ma20[e]) add(S, 1, "股價高過 20 天線"); else add(S, -1, "股價低過 20 天線");
+  const r14 = I.rsi14[e], r2 = I.rsi2[e];
+  if (r14 > 70) add(S, -1, "RSI(14) " + r14.toFixed(0) + "，超買，追高要小心");
+  else if (r14 < 30) add(S, 1, "RSI(14) " + r14.toFixed(0) + "，超賣，有機會反彈");
+  if (r2 < 10 && c > I.ma200[e]) add(S, 2, "RSI(2) " + r2.toFixed(0) + " 而且喺 200 天線之上 → 機械人 RSI(2) 策略嘅買入訊號");
+  else if (r2 > 90) add(S, -1, "RSI(2) " + r2.toFixed(0) + "，短線升得急，容易回吐");
+  if (c < I.bbLo[e]) add(S, 1, "跌穿布林下軌，短線偏離太遠，可能反彈");
+  else if (c > I.bbUp[e]) add(S, -1, "升穿布林上軌，短線偏離太遠");
+  const s1 = R.levels.support[0], r1 = R.levels.resistance[0];
+  if (r1 && r1.price - c < a) add(S, -1, "上面 " + f2(r1.price) + " 有阻力，距離唔夠 1 個 ATR");
+  if (s1 && c - s1.price < a) add(S, 1, "下面 " + f2(s1.price) + " 有支持，止蝕位近");
+  for (const p of R.patterns) {
+    const name = A.PATTERN_NAMES[p.key];
+    if (p.status === "breakout") add(S, 2 * p.dir, name + (p.dir > 0 ? "向上突破" : "向下跌穿") + "（目標 " + f2(p.target) + "）");
+    else if (p.dir) add(S, 0, "形成緊" + name + "，未突破（等確認）");
+  }
+  const sum = arr => arr.reduce((s, x) => s + x.pts, 0);
+  const tag = (s, hi, lo) => (s >= hi ? "偏好" : s <= lo ? "偏淡" : "中性");
+  const ls = sum(L), ss = sum(S), lt = tag(ls, 3, -2), st = tag(ss, 2, -2);
+  const ex = Object.fromEntries(R.exits.map(x => [x.id, x]));
+  const actL = { 偏好: "趨勢向上：可以考慮分段買入或者繼續持有。止蝕參考 " + f2(ex.pct.stop) + "（−8%）或者跌穿 200 天線 " + f2(I.ma200[e]) + " 先走。",
+                 中性: "訊號唔一致：已有就持有、唔急住加；想買可以等股價企穩 200 天線、或者跌到支持位先分段入。",
+                 偏淡: "長期趨勢弱：唔建議新買入；手上有嘅話考慮減持，等重新升返 200 天線之上先再考慮。" }[lt];
+  const actS = { 偏好: "短線可以考慮：止蝕 " + f2(ex.atr_short.stop) + "（−1 ATR），第一目標 " + f2(ex.atr_short.tp1) + "。",
+                 中性: "短線冇明確方向，觀望為主，等突破或者回調到支持位。",
+                 偏淡: "短線偏弱：唔好追入；短炒等 RSI(2) 超賣或者企穩支持位先考慮。" }[st];
+  return { long: { tag: lt, score: ls, items: L, act: actL }, short: { tag: st, score: ss, items: S, act: actS } };
+}
+
+// ---------- render ----------
+function render() {
+  const { sym, meta, daily: d, res: R } = current, I = R.I, e = d.length - 1, c = I.c[e], prev = I.c[e - 1], a = I.atr[e];
+  const V = verdicts(sym, d, R);
+  const hold = HOLDINGS && HOLDINGS[sym];
+  const lastDay = d[e].t.slice(0, 10);
+  const html = [];
+
+  html.push('<section><div class="sec-head"><h2>' + esc(sym) + '</h2><span class="note">' +
+    esc([meta.exchange, meta.currency].filter(Boolean).join(" · ")) + " · 最後數據 " + esc(d[e].t) + "</span></div>");
+  html.push('<div class="tiles">' +
+    tile("現價", f2(c), '<span class="' + cls(c - prev) + '">' + pct(c / prev - 1, 2) + "</span> 對上一日") +
+    tile("200 天線", f2(I.ma200[e]), '<span class="' + cls(c - I.ma200[e]) + '">' + pct(c / I.ma200[e] - 1) + "</span> 距離") +
+    tile("50 天線", f2(I.ma50[e]), '<span class="' + cls(c - I.ma50[e]) + '">' + pct(c / I.ma50[e] - 1) + "</span> 距離") +
+    tile("RSI(14)", I.rsi14[e].toFixed(0), I.rsi14[e] > 70 ? "超買" : I.rsi14[e] < 30 ? "超賣" : "正常（30–70）") +
+    tile("ATR(14)", f2(a), "每日平均波幅 " + pct(a / c, 1, false)) +
+    (hold ? tile("你持有", hold.qty + " 股", '成本 ' + f2(hold.cost) + ' · <span class="' + cls(c - hold.cost) + '">' + pct(c / hold.cost - 1) + "</span>") : "") +
+    "</div></section>");
+
+  // verdicts
+  html.push('<section><div class="sec-head"><h2>建議</h2><span class="note">按規則自動計分，唔係 AI 判斷</span></div><div class="verdicts">');
+  for (const [k, title] of [["long", "長線（幾個月以上）"], ["short", "短線（幾日至幾星期）"]]) {
+    const v = V[k], col = v.tag === "偏好" ? "var(--gain)" : v.tag === "偏淡" ? "var(--loss)" : "var(--warn)";
+    html.push('<div class="verdict" style="--c:' + col + '"><h3>' + title + '<span class="big">' + v.tag +
+      '</span><span class="chip plain num">分數 ' + (v.score > 0 ? "+" : "") + v.score + "</span></h3><ul>" +
+      v.items.map(x => "<li>" + esc(x.txt) + '<span class="pt">' + (x.pts > 0 ? "+" : "") + x.pts + "</span></li>").join("") +
+      '</ul><div class="act">' + esc(v.act) + "</div></div>");
+  }
+  html.push("</div>");
+  if (hold) html.push('<div class="card" style="--c:var(--accent)"><b>你手上嘅 ' + esc(sym) + "</b>" + holdingNote(hold, c, I, e) + "</div>");
+  html.push("</section>");
+
+  // chart
+  html.push('<section><div class="sec-head"><h2>走勢圖</h2><div class="tabs" id="ranges">' +
+    [[126, "6 個月"], [252, "1 年"], [756, "3 年"]].map(([n, t]) =>
+      '<button type="button" data-n="' + n + '" aria-pressed="' + (current.range === n) + '">' + t + "</button>").join("") +
+    '</div></div><div class="panel"><div class="legend"><span style="--c:var(--ink)">收市價</span>' +
+    '<span style="--c:var(--ma50)">50 天線</span><span style="--c:var(--ma200)">200 天線</span>' +
+    '<span class="dash" style="--c:var(--gain)">支持位</span><span class="dash" style="--c:var(--loss)">阻力位</span>' +
+    (R.patterns.length ? '<span style="--c:var(--accent)">形態線</span>' : "") +
+    '</div><div class="chart" id="chart"></div></div></section>');
+
+  // levels
+  const lvRow = (x, kind) => "<tr><td>" + kind + '</td><td class="r num">' + f2(x.price) + '</td><td class="r num ' +
+    cls(x.price - c) + '">' + pct(x.price / c - 1) + '</td><td class="r num">' + x.touches + "</td></tr>";
+  html.push('<section><div class="sec-head"><h2>支持位同阻力位</h2><span class="note">過去一年嘅轉角高低位，相近嘅合併；觸及次數越多越重要</span></div>' +
+    '<div class="table-wrap"><table><thead><tr><th>類別</th><th class="r">價位</th><th class="r">距現價</th><th class="r">觸及次數</th></tr></thead><tbody>' +
+    R.levels.resistance.slice().reverse().map(x => lvRow(x, '<span class="loss">阻力</span>')).join("") +
+    '<tr><td><b>現價</b></td><td class="r num"><b>' + f2(c) + "</b></td><td></td><td></td></tr>" +
+    R.levels.support.map(x => lvRow(x, '<span class="gain">支持</span>')).join("") +
+    "</tbody></table></div>" +
+    (R.levels.resistance.length ? "" : '<div class="note">上面冇阻力位：股價接近或者喺一年新高。</div>') + "</section>");
+
+  // patterns
+  html.push('<section><div class="sec-head"><h2>圖表形態</h2><span class="note">電腦按規則自動搵，附呢隻股過去出現後 ' + A.FWD + ' 個交易日嘅實際結果</span></div>');
+  if (R.patterns.length) {
+    html.push('<div class="cards">' + R.patterns.map(p => patternCard(p, R, c)).join("") + "</div>");
+  } else {
+    html.push('<div class="empty">而家冇搵到明顯嘅三角形、雙頂雙底、頭肩或者旗形。好多時候股價都係冇形態，呢個好正常。</div>');
+  }
+  html.push(patternHistoryTable(R));
+  html.push("</section>");
+
+  // strategies
+  html.push(strategyTable(R));
+
+  // VWAP
+  html.push(vwapSection(R));
+
+  // exits
+  html.push(exitTable(R, c, a, hold));
+
+  // indicators
+  html.push(indicatorTable(I, e));
+
+  $("out").innerHTML = html.join("");
+  $("out").hidden = false;
+  for (const b of document.querySelectorAll("#ranges button")) b.onclick = () => { current.range = +b.dataset.n; render(); };
+  drawChart();
+}
+
+function tile(k, v, s) { return '<div class="tile"><span class="k">' + k + '</span><span class="v">' + v + '</span><span class="s">' + s + "</span></div>"; }
+
+function holdingNote(h, c, I, e) {
+  const pl = c / h.cost - 1, stop = h.cost * 0.92, half = h.cost * 1.5;
+  const parts = ["持有 " + h.qty + " 股，成本 " + f2(h.cost) + "，而家 " + pct(pl) + "（約 " +
+    (pl >= 0 ? "+" : "−") + "$" + f2(Math.abs((c - h.cost) * h.qty)) + "）。"];
+  parts.push("按規則 B：成本計止蝕位 " + f2(stop) + "（−8%）" + (c <= stop ? " ⚠️ 已經跌穿" : "，距離 " + pct(stop / c - 1)) +
+    "；+50% 賣一半位 " + f2(half) + (c >= half ? " ✅ 已到" : "，距離 " + pct(half / c - 1)) + "。");
+  parts.push(c > I.ma200[e] ? "仍然喺 200 天線之上，規則 B 下繼續持有。" : "已經跌穿 200 天線，規則 B 下應該考慮賣出。");
+  return '<span class="note" style="font-size:14px">' + esc(parts.join("")) + "</span>";
+}
+
+const PATTERN_HELP = {
+  sym_tri: "高位越來越低、低位越來越高，好似三角形收窄。方向未定，跟突破方向走。",
+  asc_tri: "高位喺同一水平（阻力），低位越嚟越高。通常偏向向上突破。",
+  desc_tri: "低位喺同一水平（支持），高位越嚟越低。通常偏向向下跌穿。",
+  rising_wedge: "高低位都向上但越收越窄，升勢減弱，通常偏淡。",
+  falling_wedge: "高低位都向下但越收越窄，跌勢減弱，通常偏好。",
+  double_top: "兩次升到差唔多高度都升唔上，跌穿中間低位（頸線）就確認轉弱。",
+  double_bottom: "兩次跌到差唔多位置都企得穩，升穿中間高位（頸線）就確認轉強。",
+  hs_top: "左肩、頭（最高）、右肩，跌穿頸線確認見頂。",
+  hs_bottom: "倒轉嘅頭肩，升穿頸線確認見底。",
+  bull_flag: "急升之後細幅整固，升穿整固高位通常再升一段。",
+  bear_flag: "急跌之後細幅反彈整固，跌穿整固低位通常再跌一段。",
+};
+
+function patternCard(p, R, c) {
+  const name = A.PATTERN_NAMES[p.key], h = R.patternHistory.stats[p.key + (p.dir || 1)];
+  const dirTxt = p.dir > 0 ? "偏好（向上）" : p.dir < 0 ? "偏淡（向下）" : "方向未定";
+  const col = p.status === "breakout" ? (p.dir > 0 ? "var(--gain)" : "var(--loss)") : "var(--warn)";
+  let body = p.status === "breakout"
+    ? "已經" + (p.dir > 0 ? "向上突破 " : "向下跌穿 ") + f2(p.level) + "。量度目標 " + f2(p.target) + "（" + pct(p.target / c - 1) + "）" +
+      (ok(p.stop) ? "，失敗位 " + f2(p.stop) : "") + "。"
+    : (p.key.endsWith("tri") || p.key.endsWith("wedge")
+        ? "仲未突破：上邊 " + f2(p.upper) + "、下邊 " + f2(p.lower) + "。"
+        : "仲未確認：要" + (p.dir > 0 ? "升穿 " : "跌穿 ") + f2(p.level) + " 先算。") +
+      "如果確認，量度目標約 " + f2(p.target) + "。";
+  const hist = h && h.n ? "呢隻股過去 " + h.n + " 次" + (h.dir > 0 ? "向上突破" : "向下跌穿") + "後 " + A.FWD + " 日，" + h.wins + " 次行啱方向（" +
+    pct(h.wins / h.n, 0, false) + "）。" : "呢隻股過去未試過出現呢個形態嘅突破，冇歷史參考。";
+  return '<div class="card" style="--c:' + col + '"><div class="row"><b>' + name + '</b><span class="chip ' +
+    (p.status === "breakout" ? (p.dir > 0 ? "gain" : "loss") : "warn") + '">' + (p.status === "breakout" ? "已突破" : "形成中") +
+    '</span><span class="chip plain">' + dirTxt + "</span></div><div>" + esc(body) + '</div><div class="note">' + esc(PATTERN_HELP[p.key]) +
+    "</div><div class=\"note\">" + esc(hist) + "</div></div>";
+}
+
+function patternHistoryTable(R) {
+  const H = R.patternHistory, rows = Object.values(H.stats).sort((a, b) => b.n - a.n);
+  if (!rows.length) return "";
+  const base = H.base;
+  return '<details><summary class="note" style="cursor:pointer">睇晒呢隻股所有形態嘅歷史成績（' + rows.length + " 種）</summary>" +
+    '<div class="table-wrap" style="margin-top:10px"><table><thead><tr><th>形態</th><th>方向</th><th class="r">次數</th><th class="r">行啱方向</th>' +
+    '<th class="r">平均 ' + A.FWD + " 日回報（按方向）</th></tr></thead><tbody>" +
+    rows.map(s => "<tr><td>" + A.PATTERN_NAMES[s.key] + "</td><td>" + (s.dir > 0 ? '<span class="gain">向上突破</span>' : '<span class="loss">向下跌穿</span>') +
+      '</td><td class="r num">' + s.n + '</td><td class="r num">' + pct(s.wins / s.n, 0, false) + '</td><td class="r num ' + cls(s.sum) + '">' +
+      pct(s.sum / s.n) + "</td></tr>").join("") +
+    '</tbody></table></div><div class="note" style="margin-top:6px">比較：呢隻股隨便任何一日買入，' + A.FWD + " 日後升嘅機會係 " +
+    pct(base.upRate, 0, false) + "（平均 " + pct(base.avg) + "）。形態要明顯好過呢個數先算有用；次數少過 10 次嘅參考價值好低。</div></details>";
+}
+
+const SIG = { buy: ["今日買入訊號", "gain"], add: ["今日加倉訊號", "gain"], sell: ["今日賣出訊號", "loss"],
+              trim: ["今日減倉訊號", "warn"], hold: ["持有中", "plain"], wait: ["觀望（冇持倉）", "plain"] };
+
+function strategyTable(R) {
+  const S = R.strategies;
+  if (!S.rows.length) return "";
+  const bh = S.hold, best = Math.max(...S.rows.map(r => r.cagr));
+  const yrs = bh.years.toFixed(1);
+  const row = r => '<tr class="' + (r.cagr === best ? "best" : "") + '"><td><b>' + esc(r.name) + '</b></td><td>' + (r.term === "long" ? "長線" : "短線") +
+    '</td><td><span class="chip ' + SIG[r.signal][1] + '">' + SIG[r.signal][0] + "</span>" +
+    (r.open !== null && r.signal === "hold" ? ' <span class="num ' + cls(r.open) + '">' + pct(r.open) + "</span>" : "") +
+    '</td><td class="r num ' + cls(r.cagr) + '">' + pct(r.cagr) + '</td><td class="r num loss">' + pct(r.mdd, 0) +
+    '</td><td class="r num">' + r.trades + '</td><td class="r num">' + pct(r.winRate, 0, false) + '</td><td class="r num">' + pct(r.exposure, 0, false) +
+    '</td><td class="wrap-cell">' + esc(r.rule) + "</td></tr>";
+  return '<section><div class="sec-head"><h2>策略回測</h2><span class="note">用呢隻股過去 ' + yrs + " 年數據（" +
+    esc(current.daily[S.start].t) + " 起）</span></div>" +
+    '<div class="table-wrap"><table><thead><tr><th>策略</th><th>類型</th><th>而家訊號</th><th class="r">每年回報</th><th class="r">最大跌幅</th>' +
+    '<th class="r">交易次數</th><th class="r">勝率</th><th class="r">持倉時間</th><th>規則</th></tr></thead><tbody>' +
+    S.rows.map(row).join("") +
+    '<tr><td><b>買入持有（比較基準）</b></td><td>—</td><td>—</td><td class="r num ' + cls(bh.cagr) + '">' + pct(bh.cagr) +
+    '</td><td class="r num loss">' + pct(bh.mdd, 0) + '</td><td class="r num">—</td><td class="r num">—</td><td class="r num">100%</td>' +
+    '<td class="wrap-cell">一直揸住唔郁。</td></tr></tbody></table></div>' +
+    '<div class="note"><p>點睇：「每年回報」高唔代表最好，要同「最大跌幅」一齊睇——跌幅細啲、回報少少，通常更易揸得住。' +
+    "持倉時間短嘅策略，其餘時間資金可以做第二樣。</p><p>單一隻股嘅回測好受運氣影響（揀咗升得勁嘅股，買入持有自然贏）；" +
+    "我哋機械人用嘅策略係用 20 隻股一齊測先決定。</p></div></section>";
+}
+
+function vwapSection(R) {
+  const head = '<section><div class="sec-head"><h2>VWAP 即日回歸（機械人用緊）</h2><span class="note">用最近約 2–3 個月 5 分鐘數據</span></div>';
+  const V = R.vwap;
+  if (!V || !V.today) return head + '<div class="empty">冇 5 分鐘數據，計唔到。' + esc(current.intraErr || "") + "</div></section>";
+  const T = V.today, gap = T.last / T.trigger - 1;
+  let now;
+  if (!T.uptrend) now = "今日唔符合條件：前一日收市低過 50 天線（策略只喺上升趨勢做）。";
+  else if (T.last < T.trigger) now = "而家股價 " + f2(T.last) + " 已經低過觸發位 " + f2(T.trigger) + "，符合買入條件（10:00–15:00 先做）。";
+  else now = "今日觸發位 " + f2(T.trigger) + "（VWAP " + f2(T.vwap) + " − 0.5 ATR），而家 " + f2(T.last) + "，要再跌 " + pct(-gap, 1, false) + " 先觸發。";
+  return head + '<div class="tiles">' +
+    tile("測試日數", V.days + " 日", "有觸發 " + V.n + " 次") +
+    tile("勝率", pct(V.winRate, 0, false), V.n < 10 ? "次數太少，參考價值低" : "賺錢交易比例") +
+    tile("平均每次", '<span class="' + cls(V.avg) + '">' + pct(V.avg, 2) + "</span>", "已扣成本") +
+    tile("累計", '<span class="' + cls(V.total) + '">' + pct(V.total, 1) + "</span>", "全倉每次計") +
+    '</div><div class="note"><p>規則：前一日收市高過 50 天線；10:00–15:00 之間股價跌穿「VWAP − 0.5×ATR」就買；目標返到 VWAP，止蝕 0.5 ATR，15:55 一定平倉。</p><p>' +
+    esc(T.day + "：" + now) + "</p></div></section>";
+}
+
+function exitTable(R, c, a, hold) {
+  const rows = R.exits.map(x => '<tr><td><b>' + esc(x.name) + '</b></td><td class="r num loss">' + f2(x.stop) +
+    '<br><span class="note">' + pct(x.riskPct) + '</span></td><td class="r num gain">' + f2(x.tp1) +
+    '<br><span class="note">' + pct(x.tp1 / c - 1) + '</span></td><td class="r num">' + (x.tp2Note ? '<span class="note">' + esc(x.tp2Note) + "</span><br>" + f2(x.tp2) :
+      f2(x.tp2) + '<br><span class="note">' + pct(x.tp2 / c - 1) + "</span>") +
+    '</td><td class="r num">' + (ok(x.rr) ? "1 : " + x.rr.toFixed(1) : "—") + '</td><td class="wrap-cell">' + esc(x.how) +
+    (x.note ? "<br>⚠️ " + esc(x.note) : "") + "</td></tr>").join("");
+  return '<section><div class="sec-head"><h2>止蝕同止盈位</h2><span class="note">以現價 ' + f2(c) + " 買入計；ATR = " + f2(a) + "</span></div>" +
+    '<div class="table-wrap"><table><thead><tr><th>方法</th><th class="r">止蝕</th><th class="r">止盈 1</th><th class="r">止盈 2</th>' +
+    '<th class="r">風險回報比</th><th>計法</th></tr></thead><tbody>' + rows + "</tbody></table></div>" +
+    '<div class="note"><p>風險回報比 = 去到止盈 1 賺幾多 ÷ 去到止蝕蝕幾多。1 : 2 即係冒 $1 風險博 $2，一般最少要 1 : 1.5 先抵做。</p>' +
+    "<p>長線用闊啲嘅止蝕（2 ATR 或者 −8%），唔會俾日常波動震走；短線用窄啲（1 ATR）。止蝕位放喺支持位下面，係因為跌穿支持代表判斷錯咗。" +
+    (hold ? "你持倉嘅成本價止蝕位喺上面「你手上嘅」卡度。" : "") + "</p></div></section>";
+}
+
+function indicatorTable(I, e) {
+  const c = I.c[e];
+  const rows = [
+    ["RSI(14)", I.rsi14[e].toFixed(1), I.rsi14[e] > 70 ? "超買（>70），短期升得多" : I.rsi14[e] < 30 ? "超賣（<30），短期跌得多" : "正常區間（30–70）"],
+    ["RSI(2)", I.rsi2[e].toFixed(1), I.rsi2[e] < 10 ? "極度超賣（<10），RSI(2) 策略留意買入" : I.rsi2[e] > 90 ? "極度超買（>90）" : "正常"],
+    ["MACD", f2(I.macd[e]) + " / 訊號 " + f2(I.signal[e]),
+      (I.macd[e] > I.signal[e] ? "MACD 高過訊號線（向上動力）" : "MACD 低過訊號線（向下動力）") +
+      ((I.hist[e] > 0) !== (I.hist[e - 1] > 0) ? "，今日啱啱交叉" : "")],
+    ["布林通道 (20, 2)", f2(I.bbLo[e]) + " – " + f2(I.bbUp[e]),
+      c > I.bbUp[e] ? "升穿上軌，偏離太遠" : c < I.bbLo[e] ? "跌穿下軌，偏離太遠" :
+      "喺通道內（位置 " + pct((c - I.bbLo[e]) / (I.bbUp[e] - I.bbLo[e]), 0, false) + "，0% = 下軌，100% = 上軌）"],
+    ["5 / 20 天線", f2(I.ma5[e]) + " / " + f2(I.ma20[e]), (c > I.ma5[e] ? "高過" : "低過") + " 5 天線；" + (c > I.ma20[e] ? "高過" : "低過") + " 20 天線"],
+  ];
+  return '<section><div class="sec-head"><h2>技術指標</h2></div><div class="table-wrap"><table><thead><tr><th>指標</th><th class="r">數值</th><th>解讀</th></tr></thead><tbody>' +
+    rows.map(r => "<tr><td><b>" + r[0] + '</b></td><td class="r num">' + r[1] + '</td><td class="wrap-cell">' + esc(r[2]) + "</td></tr>").join("") +
+    "</tbody></table></div></section>";
+}
+
+// ---------- chart ----------
+function drawChart() {
+  const { daily: d, res: R, range } = current, I = R.I, n = d.length, s = Math.max(0, n - range);
+  const W = 1000, H = 380, padL = 8, padR = 62, padT = 12, padB = 26;
+  let lo = Infinity, hi = -Infinity;
+  for (let i = s; i < n; i++) {
+    for (const v of [d[i].c, I.ma50[i], I.ma200[i]]) if (ok(v)) { lo = Math.min(lo, v); hi = Math.max(hi, v); }
+  }
+  const lv = [...R.levels.support, ...R.levels.resistance].filter(x => x.price > lo * 0.9 && x.price < hi * 1.1);
+  for (const x of lv) { lo = Math.min(lo, x.price); hi = Math.max(hi, x.price); }
+  const padY = (hi - lo) * 0.05; lo -= padY; hi += padY;
+  const X = i => padL + (i - s) / Math.max(1, n - 1 - s) * (W - padL - padR);
+  const Y = v => padT + (hi - v) / (hi - lo) * (H - padT - padB);
+  const path = arr => { let p = "", pen = false; for (let i = s; i < n; i++) { if (!ok(arr[i])) { pen = false; continue; } p += (pen ? "L" : "M") + X(i).toFixed(1) + " " + Y(arr[i]).toFixed(1); pen = true; } return p; };
+  const g = [];
+  // grid + y labels
+  const step = niceStep((hi - lo) / 5);
+  for (let v = Math.ceil(lo / step) * step; v <= hi; v += step) {
+    g.push('<line class="grid" x1="' + padL + '" x2="' + (W - padR) + '" y1="' + Y(v) + '" y2="' + Y(v) + '"/>' +
+      '<text x="' + (W - padR + 6) + '" y="' + (Y(v) + 4) + '">' + f2(v, step < 1 ? 2 : 0) + "</text>");
+  }
+  // x labels: first trading day of each month/quarter
+  let lastM = "";
+  const every = range > 300 ? 6 : range > 150 ? 2 : 1;
+  for (let i = s; i < n; i++) {
+    const m = d[i].t.slice(0, 7);
+    if (m !== lastM) {
+      if (lastM && (+m.slice(5) - 1) % every === 0 && X(i) < W - padR - 30)
+        g.push('<text x="' + X(i) + '" y="' + (H - 6) + '" text-anchor="middle">' + (m.slice(5) === "01" ? m.slice(0, 4) : +m.slice(5) + "月") + "</text>");
+      lastM = m;
+    }
+  }
+  for (const x of R.levels.support) if (x.price > lo && x.price < hi)
+    g.push('<line class="sup" x1="' + padL + '" x2="' + (W - padR) + '" y1="' + Y(x.price) + '" y2="' + Y(x.price) + '"/>');
+  for (const x of R.levels.resistance) if (x.price > lo && x.price < hi)
+    g.push('<line class="res" x1="' + padL + '" x2="' + (W - padR) + '" y1="' + Y(x.price) + '" y2="' + Y(x.price) + '"/>');
+  g.push('<path class="m200" d="' + path(I.ma200) + '"/><path class="m50" d="' + path(I.ma50) + '"/><path class="px" d="' + path(I.c) + '"/>');
+  g.push('<clipPath id="clip"><rect x="' + padL + '" y="' + padT + '" width="' + (W - padL - padR) + '" height="' + (H - padT - padB) + '"/></clipPath><g clip-path="url(#clip)">');
+  for (const p of R.patterns) for (const ln of p.lines)
+    if (ln.i2 >= s) g.push('<line class="pat" x1="' + X(ln.i1) + '" y1="' + Y(ln.p1) + '" x2="' + X(ln.i2) + '" y2="' + Y(ln.p2) + '"/>');
+  g.push("</g>");
+  g.push('<line class="cross" id="cx" y1="' + padT + '" y2="' + (H - padB) + '" visibility="hidden"/><circle class="dot" id="cd" r="4" visibility="hidden"/>');
+  const el = $("chart");
+  el.innerHTML = '<svg viewBox="0 0 ' + W + " " + H + '" role="img" aria-label="' + esc(current.sym) + ' 股價走勢圖">' + g.join("") +
+    '<rect id="hit" x="' + padL + '" y="0" width="' + (W - padL - padR) + '" height="' + H + '" fill="transparent"/></svg><div class="tip" hidden></div>';
+  const svg = el.querySelector("svg"), tip = el.querySelector(".tip"), cx = $("cx"), cd = $("cd");
+  const move = ev => {
+    const r = svg.getBoundingClientRect(), x = (ev.clientX - r.left) / r.width * W;
+    const i = Math.min(n - 1, Math.max(s, Math.round(s + (x - padL) / (W - padL - padR) * (n - 1 - s))));
+    cx.setAttribute("x1", X(i)); cx.setAttribute("x2", X(i)); cx.setAttribute("visibility", "visible");
+    cd.setAttribute("cx", X(i)); cd.setAttribute("cy", Y(d[i].c)); cd.setAttribute("visibility", "visible");
+    tip.hidden = false;
+    tip.innerHTML = esc(d[i].t.slice(0, 10)) + "<br>收市 " + f2(d[i].c) + "<br>50 天線 " + f2(I.ma50[i]) + " · 200 天線 " + f2(I.ma200[i]);
+    const px = X(i) / W * r.width;
+    tip.style.left = Math.min(r.width - 90, Math.max(90, px)) + "px";
+    tip.style.top = Y(d[i].c) / H * r.height + "px";
+  };
+  svg.addEventListener("pointermove", move);
+  svg.addEventListener("pointerdown", move);
+  svg.addEventListener("pointerleave", () => { tip.hidden = true; cx.setAttribute("visibility", "hidden"); cd.setAttribute("visibility", "hidden"); });
+}
+
+function niceStep(raw) {
+  const p = Math.pow(10, Math.floor(Math.log10(raw))), m = raw / p;
+  return (m < 1.5 ? 1 : m < 3 ? 2 : m < 7 ? 5 : 10) * p;
+}
+
+// ---------- start ----------
+refreshKeyUI();
+const picks = HOLDINGS ? Object.keys(HOLDINGS) : [];
+$("picks").innerHTML = (picks.length ? '<span class="note">你持有：</span>' : "") +
+  picks.map(s => '<button type="button" class="pick" data-s="' + esc(s) + '">' + esc(s) + "</button>").join("");
+for (const b of document.querySelectorAll("#picks .pick")) b.onclick = () => run(b.dataset.s);
+const fromHash = decodeURIComponent(location.hash.slice(1));
+if (fromHash && store.get(KEY_STORE)) run(fromHash);
+</script>
+</body>
+</html>

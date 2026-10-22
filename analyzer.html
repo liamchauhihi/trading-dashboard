@@ -96,8 +96,25 @@ details.key .box { margin-top: 10px; display: grid; gap: 8px; }
 .tabs { display: flex; flex-wrap: wrap; gap: 6px; }
 .tabs button { padding: 4px 12px; border-radius: 999px; border: 1px solid var(--line); background: var(--surface); color: var(--muted); font-size: 13px; }
 .tabs button[aria-pressed="true"] { background: var(--ink); color: var(--bg); border-color: var(--ink); }
+.chart-bar { display: flex; flex-wrap: wrap; gap: 8px; align-items: center; justify-content: space-between; }
+.tabs button:disabled { opacity: .4; cursor: not-allowed; }
+.fullbtn { padding: 4px 12px; border-radius: 999px; border: 1px solid var(--accent); background: var(--surface); color: var(--accent); font-size: 13px; font-weight: 600; }
+.selnote { display: flex; flex-wrap: wrap; gap: 8px; align-items: center; font-size: 13px; background: var(--accent-soft); border-radius: 8px; padding: 6px 10px; }
+.selnote button { padding: 2px 10px; border-radius: 999px; border: 1px solid var(--line); background: var(--surface); color: var(--ink); font-size: 12px; }
+.chart-panel.full { position: fixed; inset: 0; z-index: 50; border-radius: 0; border: 0; display: flex; flex-direction: column; padding: 12px 16px; }
+.chart-panel.full .chart { flex: 1 1 0; min-height: 0; }
+body.noscroll { overflow: hidden; }
 .chart { position: relative; width: 100%; }
 .chart svg { display: block; width: 100%; height: auto; overflow: visible; touch-action: pan-y; }
+.chart .vw { fill: none; stroke: var(--accent); stroke-width: 1.4; }
+.chart .zone { fill: var(--accent-soft); }
+.chart .pat.sel { stroke-width: 3; }
+.chart .hl { stroke-width: 1.3; stroke-dasharray: 3 3; }
+.chart text.lab { font-family: var(--font-body); font-size: 12px; font-weight: 700; paint-order: stroke; stroke: var(--surface); stroke-width: 3px; stroke-linejoin: round; }
+.pcard { cursor: pointer; }
+.pcard:hover { border-color: var(--accent); }
+.pcard[aria-pressed="true"] { outline: 2px solid var(--accent); outline-offset: 1px; }
+.pcard .hint { color: var(--accent); font-size: 13px; font-weight: 600; }
 .chart text { fill: var(--muted); font-family: var(--font-num); font-size: 11px; }
 .chart .grid { stroke: var(--line); stroke-width: 1; }
 .chart .px { fill: none; stroke: var(--ink); stroke-width: 1.6; }
@@ -123,6 +140,10 @@ td.r, th.r { text-align: right; }
 td.wrap-cell { white-space: normal; min-width: 200px; color: var(--muted); font-size: 13px; }
 tbody tr:last-child td { border-bottom: 0; }
 .best td { background: var(--accent-soft); }
+/* frozen first column: row labels stay visible when the table scrolls sideways */
+.table-wrap td:first-child, .table-wrap th:first-child { position: sticky; left: 0; z-index: 1; background: var(--surface); box-shadow: inset -1px 0 0 var(--line); }
+.table-wrap th:first-child { background: var(--bg); }
+.table-wrap .best td:first-child { background: linear-gradient(var(--accent-soft), var(--accent-soft)) var(--surface); }
 
 .cards { display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 300px), 1fr)); gap: 12px; }
 .card { background: var(--surface); border: 1px solid var(--line); border-left: 4px solid var(--c, var(--accent)); border-radius: 10px;
@@ -274,7 +295,8 @@ async function run(raw) {
     status('<span class="spin"></span>計算緊…');
     await new Promise(r => setTimeout(r, 20));
     const res = A.analyze(daily.bars, intra ? intra.bars : null);
-    current = { sym, meta: daily.meta, daily: daily.bars, res, intraErr, range: 252 };
+    current = { sym, meta: daily.meta, daily: daily.bars, res, intraErr, range: 252, sel: null,
+                intra: intra && intra.bars.length ? intra.bars : null, iv: intra && intra.bars.length ? intraSeries(intra.bars) : null };
     render();
     status(intraErr ? "⚠️ 5 分鐘數據攞唔到（" + esc(intraErr) + "），VWAP 部分會留空，其他照計。" : "");
     try { history.replaceState(null, "", "#" + sym); } catch (e) { /* file:// */ }
@@ -365,14 +387,12 @@ function render() {
   html.push("</section>");
 
   // chart
-  html.push('<section><div class="sec-head"><h2>走勢圖</h2><div class="tabs" id="ranges">' +
-    [[126, "6 個月"], [252, "1 年"], [756, "3 年"]].map(([n, t]) =>
-      '<button type="button" data-n="' + n + '" aria-pressed="' + (current.range === n) + '">' + t + "</button>").join("") +
-    '</div></div><div class="panel"><div class="legend"><span style="--c:var(--ink)">收市價</span>' +
-    '<span style="--c:var(--ma50)">50 天線</span><span style="--c:var(--ma200)">200 天線</span>' +
-    '<span class="dash" style="--c:var(--gain)">支持位</span><span class="dash" style="--c:var(--loss)">阻力位</span>' +
-    (R.patterns.length ? '<span style="--c:var(--accent)">形態線</span>' : "") +
-    '</div><div class="chart" id="chart"></div></div></section>');
+  html.push('<section><div class="sec-head"><h2>走勢圖</h2><span class="note">即日同 5 日係 5 分鐘圖；其他係日線圖</span></div>' +
+    '<div class="panel chart-panel" id="chartpanel"><div class="chart-bar"><div class="tabs" id="ranges">' +
+    RANGES.map(([n, t]) => '<button type="button" data-n="' + n + '"' + (typeof n === "string" && !current.intra ? " disabled" : "") +
+      ">" + t + "</button>").join("") +
+    '</div><button type="button" class="fullbtn" id="fullbtn">⛶ 全螢幕</button></div>' +
+    '<div class="selnote" id="selnote" hidden></div><div class="legend" id="legend"></div><div class="chart" id="chart"></div></div></section>');
 
   // levels
   const lvRow = (x, kind) => "<tr><td>" + kind + '</td><td class="r num">' + f2(x.price) + '</td><td class="r num ' +
@@ -388,7 +408,7 @@ function render() {
   // patterns
   html.push('<section><div class="sec-head"><h2>圖表形態</h2><span class="note">電腦按規則自動搵，附呢隻股過去出現後 ' + A.FWD + ' 個交易日嘅實際結果</span></div>');
   if (R.patterns.length) {
-    html.push('<div class="cards">' + R.patterns.map(p => patternCard(p, R, c)).join("") + "</div>");
+    html.push('<div class="cards">' + R.patterns.map((p, k) => patternCard(p, R, c, k)).join("") + "</div>");
   } else {
     html.push('<div class="empty">而家冇搵到明顯嘅三角形、雙頂雙底、頭肩或者旗形。好多時候股價都係冇形態，呢個好正常。</div>');
   }
@@ -409,9 +429,72 @@ function render() {
 
   $("out").innerHTML = html.join("");
   $("out").hidden = false;
-  for (const b of document.querySelectorAll("#ranges button")) b.onclick = () => { current.range = +b.dataset.n; render(); };
+  for (const b of document.querySelectorAll("#ranges button"))
+    b.onclick = () => { current.range = /^\d+$/.test(b.dataset.n) ? +b.dataset.n : b.dataset.n; chartUI(); drawChart(); };
+  for (const el of document.querySelectorAll(".pcard")) {
+    el.onclick = () => selectPattern(+el.dataset.p);
+    el.onkeydown = ev => { if (ev.key === "Enter" || ev.key === " ") { ev.preventDefault(); selectPattern(+el.dataset.p); } };
+  }
+  $("fullbtn").onclick = toggleFull;
+  $("entry").oninput = updateExits;
+  for (const b of document.querySelectorAll("#entry ~ .pick")) b.onclick = () => { $("entry").value = (+b.dataset.v).toFixed(2); updateExits(); };
+  updateExits();
+  chartUI();
   drawChart();
 }
+
+const RANGES = [["i1", "即日"], ["i5", "5 日"], [21, "1 個月"], [63, "3 個月"], [126, "6 個月"], [252, "1 年"], [756, "3 年"]];
+
+function intraSeries(b) {
+  const vw = [], c = [], starts = [];
+  let day = "", pv = 0, vol = 0;
+  b.forEach((x, i) => {
+    const d = x.t.slice(0, 10);
+    if (d !== day) { day = d; pv = 0; vol = 0; starts.push(i); }
+    pv += (x.h + x.l + x.c) / 3 * x.v; vol += x.v;
+    vw.push(vol ? pv / vol : NaN); c.push(x.c);
+  });
+  return { vw, c, starts };
+}
+
+// sync range tabs, selected-pattern note and card highlight with current state
+function chartUI() {
+  for (const b of document.querySelectorAll("#ranges button")) b.setAttribute("aria-pressed", String(current.range) === b.dataset.n);
+  const p = current.sel !== null ? current.res.patterns[current.sel] : null, note = $("selnote");
+  note.hidden = !p;
+  if (p) {
+    note.innerHTML = "<span>顯示緊：<b>" + A.PATTERN_NAMES[p.key] + "</b>（淺色底 = 形態範圍" +
+      (typeof current.range === "string" ? "；形態只喺日線圖顯示，撳返 3 個月或以上" : "") + '）</span><button type="button" id="selclear">✕ 取消</button>';
+    $("selclear").onclick = () => selectPattern(current.sel);
+  }
+  for (const el of document.querySelectorAll(".pcard")) el.setAttribute("aria-pressed", +el.dataset.p === current.sel);
+}
+
+function selectPattern(k) {
+  if (current.sel === k) { current.sel = null; chartUI(); drawChart(); return; }
+  current.sel = k;
+  const p = current.res.patterns[k], n = current.daily.length, i1 = Math.min(...p.lines.map(l => l.i1));
+  const need = Math.ceil((n - i1) * 1.25) + 5;   // pattern plus some lead-in
+  const fit = RANGES.find(([r]) => typeof r === "number" && r >= need);   // smallest range that shows the whole pattern
+  current.range = fit ? fit[0] : Math.min(n, need);
+  chartUI(); drawChart();
+  const reduce = matchMedia("(prefers-reduced-motion: reduce)").matches;
+  if (!$("chartpanel").classList.contains("full")) $("chartpanel").scrollIntoView({ behavior: reduce ? "auto" : "smooth", block: "start" });
+}
+
+function toggleFull() {
+  const full = $("chartpanel").classList.toggle("full");
+  document.body.classList.toggle("noscroll", full);
+  $("fullbtn").textContent = full ? "✕ 收細" : "⛶ 全螢幕";
+  drawChart();
+}
+addEventListener("keydown", ev => { if (ev.key === "Escape" && $("chartpanel") && $("chartpanel").classList.contains("full")) toggleFull(); });
+let resizeQueued = false;
+addEventListener("resize", () => {
+  if (resizeQueued || !current || !$("chart")) return;
+  resizeQueued = true;
+  requestAnimationFrame(() => { resizeQueued = false; drawChart(); });
+});
 
 function tile(k, v, s) { return '<div class="tile"><span class="k">' + k + '</span><span class="v">' + v + '</span><span class="s">' + s + "</span></div>"; }
 
@@ -439,7 +522,7 @@ const PATTERN_HELP = {
   bear_flag: "急跌之後細幅反彈整固，跌穿整固低位通常再跌一段。",
 };
 
-function patternCard(p, R, c) {
+function patternCard(p, R, c, k) {
   const name = A.PATTERN_NAMES[p.key], h = R.patternHistory.stats[p.key + (p.dir || 1)];
   const dirTxt = p.dir > 0 ? "偏好（向上）" : p.dir < 0 ? "偏淡（向下）" : "方向未定";
   const col = p.status === "breakout" ? (p.dir > 0 ? "var(--gain)" : "var(--loss)") : "var(--warn)";
@@ -452,10 +535,10 @@ function patternCard(p, R, c) {
       "如果確認，量度目標約 " + f2(p.target) + "。";
   const hist = h && h.n ? "呢隻股過去 " + h.n + " 次" + (h.dir > 0 ? "向上突破" : "向下跌穿") + "後 " + A.FWD + " 日，" + h.wins + " 次行啱方向（" +
     pct(h.wins / h.n, 0, false) + "）。" : "呢隻股過去未試過出現呢個形態嘅突破，冇歷史參考。";
-  return '<div class="card" style="--c:' + col + '"><div class="row"><b>' + name + '</b><span class="chip ' +
+  return '<div class="card pcard" role="button" tabindex="0" aria-pressed="false" data-p="' + k + '" style="--c:' + col + '"><div class="row"><b>' + name + '</b><span class="chip ' +
     (p.status === "breakout" ? (p.dir > 0 ? "gain" : "loss") : "warn") + '">' + (p.status === "breakout" ? "已突破" : "形成中") +
     '</span><span class="chip plain">' + dirTxt + "</span></div><div>" + esc(body) + '</div><div class="note">' + esc(PATTERN_HELP[p.key]) +
-    "</div><div class=\"note\">" + esc(hist) + "</div></div>";
+    "</div><div class=\"note\">" + esc(hist) + '</div><span class="hint">📈 撳呢張卡，喺走勢圖睇呢個形態</span></div>';
 }
 
 function patternHistoryTable(R) {
@@ -518,18 +601,46 @@ function vwapSection(R) {
 }
 
 function exitTable(R, c, a, hold) {
-  const rows = R.exits.map(x => '<tr><td><b>' + esc(x.name) + '</b></td><td class="r num loss">' + f2(x.stop) +
+  const e = current.daily.length - 1;
+  const quick = [["現價", c]];
+  for (const x of R.levels.support.slice(0, 2)) quick.push(["支持位", x.price]);
+  if (R.levels.resistance[0]) quick.push(["突破阻力", R.levels.resistance[0].price]);
+  if (hold) quick.push(["你嘅成本", hold.cost]);
+  return '<section><div class="sec-head"><h2>止蝕同止盈位</h2><span class="note">ATR = ' + f2(a) + "（每日平均波幅）</span></div>" +
+    '<div class="panel"><div class="row"><label for="entry"><b>計劃買入價</b></label>' +
+    '<input type="text" inputmode="decimal" id="entry" aria-label="計劃買入價" style="width:120px;font-family:var(--font-num)" value="' + f2(c) + '">' +
+    quick.map(([t, v]) => '<button type="button" class="pick" data-v="' + v + '">' + t + " " + f2(v) + "</button>").join("") +
+    '</div><div class="note" id="entrynote"></div></div><div id="exitbody"></div></section>';
+}
+
+// recompute stop / take-profit for the typed entry price; only the exit block is redrawn so the input keeps focus
+function updateExits() {
+  const R = current.res, I = R.I, e = current.daily.length - 1, c = I.c[e], hold = HOLDINGS && HOLDINGS[current.sym];
+  const v = parseFloat(($("entry").value || "").replace(/[$,\s]/g, ""));
+  const p = v > 0 ? v : c, diff = p / c - 1;
+  const exits = A.exitLevels(I, R.levels, e, p);
+  let how;
+  if (!(v > 0)) how = "⚠️ 價錢唔啱，暫時用現價 " + f2(c) + " 計。";
+  else if (Math.abs(diff) < 0.002) how = "差唔多現價，可以用市價單（market order）直接買。";
+  else if (diff < 0) how = "要再跌 " + pct(-diff, 1, false) + " 先買到 → 落「限價買單」（limit buy order）喺 " + f2(p) +
+    "：股價跌到先成交，跌唔到就唔會買，唔使成日睇住。";
+  else how = "要再升 " + pct(diff, 1, false) + " 先買 → 用「觸發買單」（stop buy order）喺 " + f2(p) +
+    "：等升穿（突破）先追入。⚠️ 唔好落限價單，因為限價高過現價會即刻用現價成交。";
+  if (v > 0 && Math.abs(diff) > 0.25) how += " 呢個價離現價好遠，下面嘅止蝕止盈到時要再計過。";
+  $("entrynote").innerHTML = esc(how);
+  const rows = exits.map(x => '<tr><td><b>' + esc(x.name) + '</b></td><td class="r num loss">' + f2(x.stop) +
     '<br><span class="note">' + pct(x.riskPct) + '</span></td><td class="r num gain">' + f2(x.tp1) +
-    '<br><span class="note">' + pct(x.tp1 / c - 1) + '</span></td><td class="r num">' + (x.tp2Note ? '<span class="note">' + esc(x.tp2Note) + "</span><br>" + f2(x.tp2) :
-      f2(x.tp2) + '<br><span class="note">' + pct(x.tp2 / c - 1) + "</span>") +
+    '<br><span class="note">' + pct(x.tp1 / p - 1) + '</span></td><td class="r num">' + (x.tp2Note ? '<span class="note">' + esc(x.tp2Note) + "</span><br>" + f2(x.tp2) :
+      f2(x.tp2) + '<br><span class="note">' + pct(x.tp2 / p - 1) + "</span>") +
     '</td><td class="r num">' + (ok(x.rr) ? "1 : " + x.rr.toFixed(1) : "—") + '</td><td class="wrap-cell">' + esc(x.how) +
     (x.note ? "<br>⚠️ " + esc(x.note) : "") + "</td></tr>").join("");
-  return '<section><div class="sec-head"><h2>止蝕同止盈位</h2><span class="note">以現價 ' + f2(c) + " 買入計；ATR = " + f2(a) + "</span></div>" +
+  $("exitbody").innerHTML = '<p class="note">以買入價 <b class="num">' + f2(p) + "</b> 計（% 係對比買入價）</p>" +
     '<div class="table-wrap"><table><thead><tr><th>方法</th><th class="r">止蝕</th><th class="r">止盈 1</th><th class="r">止盈 2</th>' +
     '<th class="r">風險回報比</th><th>計法</th></tr></thead><tbody>' + rows + "</tbody></table></div>" +
-    '<div class="note"><p>風險回報比 = 去到止盈 1 賺幾多 ÷ 去到止蝕蝕幾多。1 : 2 即係冒 $1 風險博 $2，一般最少要 1 : 1.5 先抵做。</p>' +
+    '<div class="note"><p>風險回報比 = 去到止盈 1 賺幾多 ÷ 去到止蝕蝕幾多。1 : 2 即係冒 $1 風險博 $2，一般最少要 1 : 1.5 先抵做。' +
+    "喺支持位附近買，止蝕近、風險細，風險回報比通常好啲。</p>" +
     "<p>長線用闊啲嘅止蝕（2 ATR 或者 −8%），唔會俾日常波動震走；短線用窄啲（1 ATR）。止蝕位放喺支持位下面，係因為跌穿支持代表判斷錯咗。" +
-    (hold ? "你持倉嘅成本價止蝕位喺上面「你手上嘅」卡度。" : "") + "</p></div></section>";
+    (hold ? "你持倉嘅成本價止蝕位喺上面「你手上嘅」卡度。" : "") + "</p></div>";
 }
 
 function indicatorTable(I, e) {
@@ -552,47 +663,90 @@ function indicatorTable(I, e) {
 
 // ---------- chart ----------
 function drawChart() {
-  const { daily: d, res: R, range } = current, I = R.I, n = d.length, s = Math.max(0, n - range);
-  const W = 1000, H = 380, padL = 8, padR = 62, padT = 12, padB = 26;
-  let lo = Infinity, hi = -Infinity;
-  for (let i = s; i < n; i++) {
-    for (const v of [d[i].c, I.ma50[i], I.ma200[i]]) if (ok(v)) { lo = Math.min(lo, v); hi = Math.max(hi, v); }
+  const el = $("chart");
+  if (!el) return;
+  const R = current.res, I = R.I, full = $("chartpanel").classList.contains("full"), intra = typeof current.range === "string";
+  const W = Math.max(300, Math.round(el.clientWidth));
+  const H = full ? Math.max(240, Math.round(el.clientHeight)) : W < 640 ? Math.round(W * 0.9) : Math.round(Math.min(600, Math.max(380, W * 0.5)));
+  const padL = 8, padR = 64, padT = 12, padB = 26;
+  let b, s, series, tipFn;
+  if (intra) {
+    const IV = current.iv;
+    b = current.intra; s = IV.starts[Math.max(0, IV.starts.length - (current.range === "i1" ? 1 : 5))];
+    series = [["vw", IV.vw], ["px", IV.c]];
+    tipFn = i => esc(b[i].t.slice(5, 16)) + "<br>價 " + f2(b[i].c) + "<br>VWAP " + f2(IV.vw[i]);
+    $("legend").innerHTML = '<span style="--c:var(--ink)">5 分鐘價</span><span style="--c:var(--accent)">VWAP（成交量加權平均價，每日重新計）</span>';
+  } else {
+    b = current.daily; s = Math.max(0, b.length - current.range);
+    series = [["m200", I.ma200], ["m50", I.ma50], ["px", I.c]];
+    tipFn = i => esc(b[i].t.slice(0, 10)) + "<br>收市 " + f2(b[i].c) + "<br>50 天線 " + f2(I.ma50[i]) + " · 200 天線 " + f2(I.ma200[i]);
+    $("legend").innerHTML = '<span style="--c:var(--ink)">收市價</span><span style="--c:var(--ma50)">50 天線</span><span style="--c:var(--ma200)">200 天線</span>' +
+      '<span class="dash" style="--c:var(--gain)">支持位</span><span class="dash" style="--c:var(--loss)">阻力位</span>' +
+      (R.patterns.length ? '<span style="--c:var(--accent)">形態線</span>' : "");
   }
-  const lv = [...R.levels.support, ...R.levels.resistance].filter(x => x.price > lo * 0.9 && x.price < hi * 1.1);
-  for (const x of lv) { lo = Math.min(lo, x.price); hi = Math.max(hi, x.price); }
-  const padY = (hi - lo) * 0.05; lo -= padY; hi += padY;
+  const n = b.length, px = series[series.length - 1][1];
+  const sel = !intra && current.sel !== null ? R.patterns[current.sel] : null;
+  // horizontal marks for the selected pattern: breakout level, target, failure level
+  const marks = sel ? [[sel.level, "突破位", "var(--accent)"],
+    [sel.target, "目標", sel.dir < 0 ? "var(--loss)" : "var(--gain)"],
+    [sel.stop, "失敗位", sel.dir < 0 ? "var(--gain)" : "var(--loss)"]].filter(m => ok(m[0])) : [];
+  let lo = Infinity, hi = -Infinity;
+  for (let i = s; i < n; i++) for (const [, arr] of series) if (ok(arr[i])) { lo = Math.min(lo, arr[i]); hi = Math.max(hi, arr[i]); }
+  const lv = intra || sel ? [] : [...R.levels.support, ...R.levels.resistance].filter(x => x.price > lo * 0.9 && x.price < hi * 1.1);
+  for (const v of [...lv.map(x => x.price), ...marks.map(m => m[0])]) { lo = Math.min(lo, v); hi = Math.max(hi, v); }
+  const padY = (hi - lo) * 0.05 || hi * 0.01; lo -= padY; hi += padY;
   const X = i => padL + (i - s) / Math.max(1, n - 1 - s) * (W - padL - padR);
   const Y = v => padT + (hi - v) / (hi - lo) * (H - padT - padB);
-  const path = arr => { let p = "", pen = false; for (let i = s; i < n; i++) { if (!ok(arr[i])) { pen = false; continue; } p += (pen ? "L" : "M") + X(i).toFixed(1) + " " + Y(arr[i]).toFixed(1); pen = true; } return p; };
+  const path = (arr, brk) => { let p = "", pen = false; for (let i = s; i < n; i++) { if (!ok(arr[i])) { pen = false; continue; } if (brk && brk.has(i)) pen = false; p += (pen ? "L" : "M") + X(i).toFixed(1) + " " + Y(arr[i]).toFixed(1); pen = true; } return p; };
+  const xText = (i, t) => { if (X(i) > padL + 14 && X(i) < W - padR - 20) g.push('<text x="' + X(i) + '" y="' + (H - 6) + '" text-anchor="middle">' + t + "</text>"); };
+  const md = t => +t.slice(5, 7) + "/" + +t.slice(8, 10);
   const g = [];
   // grid + y labels
-  const step = niceStep((hi - lo) / 5);
+  const step = niceStep((hi - lo) / Math.max(4, Math.round(H / 80)));
   for (let v = Math.ceil(lo / step) * step; v <= hi; v += step) {
     g.push('<line class="grid" x1="' + padL + '" x2="' + (W - padR) + '" y1="' + Y(v) + '" y2="' + Y(v) + '"/>' +
       '<text x="' + (W - padR + 6) + '" y="' + (Y(v) + 4) + '">' + f2(v, step < 1 ? 2 : 0) + "</text>");
   }
-  // x labels: first trading day of each month/quarter
-  let lastM = "";
-  const every = range > 300 ? 6 : range > 150 ? 2 : 1;
-  for (let i = s; i < n; i++) {
-    const m = d[i].t.slice(0, 7);
-    if (m !== lastM) {
-      if (lastM && (+m.slice(5) - 1) % every === 0 && X(i) < W - padR - 30)
-        g.push('<text x="' + X(i) + '" y="' + (H - 6) + '" text-anchor="middle">' + (m.slice(5) === "01" ? m.slice(0, 4) : +m.slice(5) + "月") + "</text>");
-      lastM = m;
+  // x labels
+  if (intra) {
+    const starts = new Set(current.iv.starts);
+    for (let i = s; i < n; i++) {
+      if (current.range === "i5") {
+        if (starts.has(i)) {
+          if (i > s) g.push('<line class="grid" x1="' + X(i) + '" x2="' + X(i) + '" y1="' + padT + '" y2="' + (H - padB) + '"/>');
+          xText(i + 3, md(b[i].t));
+        }
+      } else if (b[i].t.slice(14, 16) === "00") xText(i, b[i].t.slice(11, 16));
+    }
+  } else if (n - s <= 70) {
+    const every = n - s <= 25 ? 5 : 10;
+    for (let i = n - 1; i >= s; i -= every) xText(i, md(b[i].t));
+  } else {
+    let lastM = "";
+    const every = n - s > 300 ? 6 : n - s > 150 ? 2 : 1;
+    for (let i = s; i < n; i++) {
+      const m = b[i].t.slice(0, 7);
+      if (m !== lastM) {
+        if (lastM && (+m.slice(5) - 1) % every === 0) xText(i, m.slice(5) === "01" ? m.slice(0, 4) : +m.slice(5) + "月");
+        lastM = m;
+      }
     }
   }
-  for (const x of R.levels.support) if (x.price > lo && x.price < hi)
-    g.push('<line class="sup" x1="' + padL + '" x2="' + (W - padR) + '" y1="' + Y(x.price) + '" y2="' + Y(x.price) + '"/>');
-  for (const x of R.levels.resistance) if (x.price > lo && x.price < hi)
-    g.push('<line class="res" x1="' + padL + '" x2="' + (W - padR) + '" y1="' + Y(x.price) + '" y2="' + Y(x.price) + '"/>');
-  g.push('<path class="m200" d="' + path(I.ma200) + '"/><path class="m50" d="' + path(I.ma50) + '"/><path class="px" d="' + path(I.c) + '"/>');
   g.push('<clipPath id="clip"><rect x="' + padL + '" y="' + padT + '" width="' + (W - padL - padR) + '" height="' + (H - padT - padB) + '"/></clipPath><g clip-path="url(#clip)">');
-  for (const p of R.patterns) for (const ln of p.lines)
-    if (ln.i2 >= s) g.push('<line class="pat" x1="' + X(ln.i1) + '" y1="' + Y(ln.p1) + '" x2="' + X(ln.i2) + '" y2="' + Y(ln.p2) + '"/>');
+  if (sel) {
+    const i1 = Math.max(s, Math.min(...sel.lines.map(l => l.i1)));
+    g.push('<rect class="zone" x="' + X(i1) + '" y="' + padT + '" width="' + (X(n - 1) - X(i1)) + '" height="' + (H - padT - padB) + '"/>');
+  }
+  for (const x of lv) g.push('<line class="' + (R.levels.support.includes(x) ? "sup" : "res") + '" x1="' + padL + '" x2="' + (W - padR) + '" y1="' + Y(x.price) + '" y2="' + Y(x.price) + '"/>');
+  const dayBreaks = intra ? new Set(current.iv.starts) : null;   // VWAP restarts each day
+  for (const [k, arr] of series) g.push('<path class="' + k + '" d="' + path(arr, k === "vw" ? dayBreaks : null) + '"/>');
+  if (!intra) for (const p of sel ? [sel] : R.patterns) for (const ln of p.lines)
+    if (ln.i2 >= s) g.push('<line class="pat' + (sel ? " sel" : "") + '" x1="' + X(ln.i1) + '" y1="' + Y(ln.p1) + '" x2="' + X(ln.i2) + '" y2="' + Y(ln.p2) + '"/>');
+  for (const [v, t, col] of marks)
+    g.push('<line class="hl" style="stroke:' + col + '" x1="' + padL + '" x2="' + (W - padR) + '" y1="' + Y(v) + '" y2="' + Y(v) + '"/>' +
+      '<text class="lab" style="fill:' + col + '" x="' + (padL + 6) + '" y="' + (Y(v) - 5) + '">' + t + " " + f2(v) + "</text>");
   g.push("</g>");
   g.push('<line class="cross" id="cx" y1="' + padT + '" y2="' + (H - padB) + '" visibility="hidden"/><circle class="dot" id="cd" r="4" visibility="hidden"/>');
-  const el = $("chart");
   el.innerHTML = '<svg viewBox="0 0 ' + W + " " + H + '" role="img" aria-label="' + esc(current.sym) + ' 股價走勢圖">' + g.join("") +
     '<rect id="hit" x="' + padL + '" y="0" width="' + (W - padL - padR) + '" height="' + H + '" fill="transparent"/></svg><div class="tip" hidden></div>';
   const svg = el.querySelector("svg"), tip = el.querySelector(".tip"), cx = $("cx"), cd = $("cd");
@@ -600,12 +754,11 @@ function drawChart() {
     const r = svg.getBoundingClientRect(), x = (ev.clientX - r.left) / r.width * W;
     const i = Math.min(n - 1, Math.max(s, Math.round(s + (x - padL) / (W - padL - padR) * (n - 1 - s))));
     cx.setAttribute("x1", X(i)); cx.setAttribute("x2", X(i)); cx.setAttribute("visibility", "visible");
-    cd.setAttribute("cx", X(i)); cd.setAttribute("cy", Y(d[i].c)); cd.setAttribute("visibility", "visible");
+    cd.setAttribute("cx", X(i)); cd.setAttribute("cy", Y(px[i])); cd.setAttribute("visibility", "visible");
     tip.hidden = false;
-    tip.innerHTML = esc(d[i].t.slice(0, 10)) + "<br>收市 " + f2(d[i].c) + "<br>50 天線 " + f2(I.ma50[i]) + " · 200 天線 " + f2(I.ma200[i]);
-    const px = X(i) / W * r.width;
-    tip.style.left = Math.min(r.width - 90, Math.max(90, px)) + "px";
-    tip.style.top = Y(d[i].c) / H * r.height + "px";
+    tip.innerHTML = tipFn(i);
+    tip.style.left = Math.min(r.width - 90, Math.max(90, X(i) / W * r.width)) + "px";
+    tip.style.top = Y(px[i]) / H * r.height + "px";
   };
   svg.addEventListener("pointermove", move);
   svg.addEventListener("pointerdown", move);

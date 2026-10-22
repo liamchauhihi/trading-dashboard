@@ -382,17 +382,22 @@ function vwapStudy(intra, daily, I) {
 }
 
 // ---------- stop-loss / take-profit ----------
-function exitLevels(I, lv, end) {
-  const p = I.c[end], a = I.atr[end], rows = [];
+// entry: planned buy price (limit / breakout order); defaults to the last close
+function exitLevels(I, lv, end, entry) {
+  const p = Number.isFinite(entry) && entry > 0 ? entry : I.c[end], a = I.atr[end], rows = [];
   const rr = (stop, tp) => (tp - p) / (p - stop);
-  rows.push({ id: "atr_long", name: "波幅 ATR（長線）", how: "止蝕 = 現價 − 2×ATR；止盈 = +3×ATR / +6×ATR",
+  rows.push({ id: "atr_long", name: "波幅 ATR（長線）", how: "止蝕 = 買入價 − 2×ATR；止盈 = +3×ATR / +6×ATR",
               stop: p - 2 * a, tp1: p + 3 * a, tp2: p + 6 * a });
-  rows.push({ id: "atr_short", name: "波幅 ATR（短線）", how: "止蝕 = 現價 − 1×ATR；止盈 = +1.5×ATR / +2×ATR",
+  rows.push({ id: "atr_short", name: "波幅 ATR（短線）", how: "止蝕 = 買入價 − 1×ATR；止盈 = +1.5×ATR / +2×ATR",
               stop: p - a, tp1: p + 1.5 * a, tp2: p + 2 * a });
   rows.push({ id: "pct", name: "固定百分比（規則 B）", how: "止蝕 −8%；+50% 賣一半；其餘跌穿 200 天線先賣",
               stop: p * 0.92, tp1: p * 1.5, tp2: I.ma200[end], tp2Note: "跌穿 200 天線" });
-  const s1 = lv.support[0], r1 = lv.resistance[0], r2 = lv.resistance[1];
-  rows.push({ id: "sr", name: "支持位 / 阻力位", how: "止蝕 = 最近支持位下面半個 ATR；止盈 = 第 1、2 個阻力位",
+  // levels relative to the entry, not today's price
+  const all = [...lv.support, ...lv.resistance];
+  const sup = all.filter(x => x.price < p).sort((x, y) => y.price - x.price);
+  const res = all.filter(x => x.price > p).sort((x, y) => x.price - y.price);
+  const s1 = sup[0], r1 = res[0], r2 = res[1];
+  rows.push({ id: "sr", name: "支持位 / 阻力位", how: "止蝕 = 買入價下面最近支持位再低半個 ATR；止盈 = 上面第 1、2 個阻力位",
               stop: s1 ? s1.price - 0.5 * a : NaN, tp1: r1 ? r1.price : NaN, tp2: r2 ? r2.price : NaN,
               note: !r1 ? "上面冇阻力位（接近一年新高），可改用 ATR 止盈" : !s1 ? "下面冇明顯支持位" : "" });
   for (const r of rows) {

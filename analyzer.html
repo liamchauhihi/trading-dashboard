@@ -114,6 +114,19 @@ body.noscroll { overflow: hidden; }
 .pcard { cursor: pointer; }
 .pcard:hover { border-color: var(--accent); }
 .pcard[aria-pressed="true"] { outline: 2px solid var(--accent); outline-offset: 1px; }
+.h2btn { font: inherit; color: inherit; background: none; border: 0; padding: 0; cursor: pointer; display: inline-flex; align-items: center; gap: 10px; flex-wrap: wrap; text-align: left; }
+.h2btn .chip { font-family: var(--font-body, inherit); font-size: 13px; }
+.h2btn[aria-expanded="true"] .chip { background: var(--accent); color: var(--surface); }
+.pguide .card { align-content: start; }
+.pguide { margin-bottom: 18px; padding-bottom: 18px; border-bottom: 1px dashed var(--line); }
+.psk { width: 120px; height: 60px; display: block; margin: 6px 0; }
+.psk polyline { fill: none; stroke: var(--ink, currentColor); stroke-width: 2.2; stroke-linejoin: round; stroke-linecap: round; }
+.psk polyline.g { stroke: var(--accent); stroke-width: 1.4; stroke-dasharray: 4 3; }
+.pexp summary { cursor: pointer; color: var(--accent); font-size: 13px; font-weight: 600; }
+.pexp[open] summary { margin-bottom: 6px; }
+dl.pg { margin: 6px 0 0; display: grid; grid-template-columns: auto 1fr; gap: 6px 10px; font-size: 13.5px; line-height: 1.55; }
+dl.pg dt { color: var(--muted); font-weight: 600; white-space: nowrap; }
+dl.pg dd { margin: 0; }
 .pcard .hint { color: var(--accent); font-size: 13px; font-weight: 600; }
 .chart text { fill: var(--muted); font-family: var(--font-num); font-size: 11px; }
 .chart .grid { stroke: var(--line); stroke-width: 1; }
@@ -406,7 +419,8 @@ function render() {
     (R.levels.resistance.length ? "" : '<div class="note">上面冇阻力位：股價接近或者喺一年新高。</div>') + "</section>");
 
   // patterns
-  html.push('<section><div class="sec-head"><h2>圖表形態</h2><span class="note">電腦按規則自動搵，附呢隻股過去出現後 ' + A.FWD + ' 個交易日嘅實際結果</span></div>');
+  html.push('<section><div class="sec-head"><h2><button type="button" class="h2btn" id="pguidebtn" aria-expanded="false" aria-controls="pguide">圖表形態 <span class="chip">📖 全部形態解釋</span></button></h2><span class="note">電腦按規則自動搵，附呢隻股過去出現後 ' + A.FWD + ' 個交易日嘅實際結果</span></div>');
+  html.push(patternGlossary(R));
   if (R.patterns.length) {
     html.push('<div class="cards">' + R.patterns.map((p, k) => patternCard(p, R, c, k)).join("") + "</div>");
   } else {
@@ -432,9 +446,14 @@ function render() {
   for (const b of document.querySelectorAll("#ranges button"))
     b.onclick = () => { current.range = /^\d+$/.test(b.dataset.n) ? +b.dataset.n : b.dataset.n; chartUI(); drawChart(); };
   for (const el of document.querySelectorAll(".pcard")) {
-    el.onclick = () => selectPattern(+el.dataset.p);
-    el.onkeydown = ev => { if (ev.key === "Enter" || ev.key === " ") { ev.preventDefault(); selectPattern(+el.dataset.p); } };
+    el.onclick = ev => { if (!ev.target.closest(".pexp")) selectPattern(+el.dataset.p); };   // opening the explanation shouldn't jump to the chart
+    el.onkeydown = ev => { if (ev.target === el && (ev.key === "Enter" || ev.key === " ")) { ev.preventDefault(); selectPattern(+el.dataset.p); } };
   }
+  $("pguidebtn").onclick = () => {
+    const open = $("pguide").hidden;
+    $("pguide").hidden = !open;
+    $("pguidebtn").setAttribute("aria-expanded", open);
+  };
   $("fullbtn").onclick = toggleFull;
   $("entry").oninput = updateExits;
   for (const b of document.querySelectorAll("#entry ~ .pick")) b.onclick = () => { $("entry").value = (+b.dataset.v).toFixed(2); updateExits(); };
@@ -508,19 +527,124 @@ function holdingNote(h, c, I, e) {
   return '<span class="note" style="font-size:14px">' + esc(parts.join("")) + "</span>";
 }
 
-const PATTERN_HELP = {
-  sym_tri: "高位越來越低、低位越來越高，好似三角形收窄。方向未定，跟突破方向走。",
-  asc_tri: "高位喺同一水平（阻力），低位越嚟越高。通常偏向向上突破。",
-  desc_tri: "低位喺同一水平（支持），高位越嚟越低。通常偏向向下跌穿。",
-  rising_wedge: "高低位都向上但越收越窄，升勢減弱，通常偏淡。",
-  falling_wedge: "高低位都向下但越收越窄，跌勢減弱，通常偏好。",
-  double_top: "兩次升到差唔多高度都升唔上，跌穿中間低位（頸線）就確認轉弱。",
-  double_bottom: "兩次跌到差唔多位置都企得穩，升穿中間高位（頸線）就確認轉強。",
-  hs_top: "左肩、頭（最高）、右肩，跌穿頸線確認見頂。",
-  hs_bottom: "倒轉嘅頭肩，升穿頸線確認見底。",
-  bull_flag: "急升之後細幅整固，升穿整固高位通常再升一段。",
-  bear_flag: "急跌之後細幅反彈整固，跌穿整固低位通常再跌一段。",
+// plain-language guide for every pattern the engine can find; sketch = polyline points in a 120×60 box (price line, then guide lines)
+const PATTERN_GUIDE = {
+  sym_tri: { dir: 0, short: "高位越來越低、低位越來越高，好似三角形收窄。方向未定，跟突破方向走。",
+    look: "股價上落幅度越嚟越細：每次反彈嘅高位低過上次，每次回落嘅低位又高過上次，兩條線收埋一齊。",
+    mean: "買家同賣家拉鋸，雙方都未贏。佢本身唔偏好亦唔偏淡，通常會跟返之前嘅大趨勢方向突破。",
+    confirm: "收市升穿上邊斜線 = 向上突破；收市跌穿下邊斜線 = 向下跌穿。未突破之前唔好估方向。",
+    target: "三角形開口最闊嗰度嘅高度，加落（或減落）突破位。",
+    stop: "向上突破就放喺三角形另一邊（下邊線）下面；向下就放喺上邊線上面。",
+    watch: "假突破好常見；突破嗰日成交量大先比較可信。越接近三角形尖端先突破，力度通常越弱。",
+    sketch: ["0,10 20,48 40,18 60,42 80,24 100,36 118,8", "0,10 110,28|0,50 110,32"] },
+  asc_tri: { dir: 1, short: "高位喺同一水平（阻力），低位越嚟越高。通常偏向向上突破。",
+    look: "上面有條平嘅阻力線，股價幾次升到都過唔到；但每次回落嘅低位一次比一次高。",
+    mean: "賣家喺同一個價一直賣，但買家越嚟越心急、越買越高，賣盤遲早被食晒，所以偏好。",
+    confirm: "收市升穿平頂阻力線先算確認。",
+    target: "三角形最闊嗰度嘅高度，加落阻力位。",
+    stop: "放喺最近一個上升低位（下邊斜線）下面。",
+    watch: "如果反而跌穿下邊斜線，形態失敗，通常會跌得幾急。",
+    sketch: ["0,52 22,14 40,44 62,14 80,34 100,14 118,4", "0,14 110,14|0,54 110,24"] },
+  desc_tri: { dir: -1, short: "低位喺同一水平（支持），高位越嚟越低。通常偏向向下跌穿。",
+    look: "下面有條平嘅支持線，股價幾次跌到都企得穩；但每次反彈嘅高位一次比一次低。",
+    mean: "買家喺同一個價接貨，但賣家越嚟越急、越賣越低，支持遲早頂唔住，所以偏淡。",
+    confirm: "收市跌穿平底支持線先算確認。",
+    target: "三角形最闊嗰度嘅高度，喺支持位減落去。",
+    stop: "（沽空或者減倉計）放喺最近一個下降高位（上邊斜線）上面。",
+    watch: "如果反而升穿上邊斜線，形態失敗，可能係轉強訊號。",
+    sketch: ["0,8 22,46 40,16 62,46 80,26 100,46 118,56", "0,6 110,36|0,46 110,46"] },
+  rising_wedge: { dir: -1, short: "高低位都向上但越收越窄，升勢減弱，通常偏淡。",
+    look: "股價一路向上，但上下兩條線都斜向上而且越收越窄，下邊線比上邊線斜得更勁。",
+    mean: "雖然仲創新高，但每次升得越嚟越少，買家冇晒氣。常見喺升勢尾段，偏向轉跌。",
+    confirm: "收市跌穿下邊斜線先算確認。",
+    target: "楔形開始嗰度嘅高度，喺跌穿位減落去（通常跌返去楔形起點附近）。",
+    stop: "放喺楔形最高點上面。",
+    watch: "未跌穿之前股價仲係升緊，唔好太早沽空；升勢強勁時亦可以向上衝出去。",
+    sketch: ["0,56 18,30 34,44 54,20 70,30 90,12 104,18 118,50", "0,52 104,14|0,30 104,10"] },
+  falling_wedge: { dir: 1, short: "高低位都向下但越收越窄，跌勢減弱，通常偏好。",
+    look: "股價一路向下，但上下兩條線都斜向下而且越收越窄，上邊線比下邊線斜得更勁。",
+    mean: "雖然仲創新低，但每次跌得越嚟越少，賣家冇晒氣。常見喺跌勢尾段，偏向轉升。",
+    confirm: "收市升穿上邊斜線先算確認。",
+    target: "楔形開始嗰度嘅高度，加落突破位（通常升返去楔形起點附近）。",
+    stop: "放喺楔形最低點下面。",
+    watch: "未突破之前仲係跌緊，唔好太早撈底。",
+    sketch: ["0,4 18,30 34,16 54,40 70,30 90,48 104,42 118,10", "0,8 104,46|0,30 104,50"] },
+  double_top: { dir: -1, short: "兩次升到差唔多高度都升唔上，跌穿中間低位（頸線）就確認轉弱。",
+    look: "好似英文字母 M：升上去 → 回落 → 再升到差唔多高 → 又跌落嚟。中間嗰個低位就係「頸線」。",
+    mean: "兩次都喺同一個價被賣落嚟，代表上面賣壓好重，升勢可能完結。",
+    confirm: "收市跌穿頸線先算確認；未跌穿只係兩個高位，唔係雙頂。",
+    target: "頂部去頸線嘅距離，喺頸線再減落去。",
+    stop: "（沽空或者減倉計）放喺兩個頂嘅最高位上面。",
+    watch: "跌穿頸線之後好多時會反彈返去試頸線（頸線由支持變阻力），呢個係第二次機會。",
+    sketch: ["0,56 28,10 50,36 72,12 96,40 118,56", "0,36 118,36"] },
+  double_bottom: { dir: 1, short: "兩次跌到差唔多位置都企得穩，升穿中間高位（頸線）就確認轉強。",
+    look: "好似英文字母 W：跌落去 → 反彈 → 再跌到差唔多低 → 又升返上嚟。中間嗰個高位就係「頸線」。",
+    mean: "兩次都喺同一個價有人接貨，代表下面買盤好強，跌勢可能完結。",
+    confirm: "收市升穿頸線先算確認；未升穿只係兩個低位，唔係雙底。",
+    target: "頸線去底部嘅距離，喺頸線再加上去。",
+    stop: "放喺兩個底嘅最低位下面。",
+    watch: "升穿頸線之後好多時會回落試頸線（頸線由阻力變支持），呢個係第二次機會。",
+    sketch: ["0,4 28,50 50,24 72,48 96,20 118,4", "0,24 118,24"] },
+  hs_top: { dir: -1, short: "左肩、頭（最高）、右肩，跌穿頸線確認見頂。",
+    look: "三個高位：中間嗰個最高（頭），兩邊比較矮而且差唔多高（左肩、右肩）。連住兩個低位嘅線就係「頸線」。",
+    mean: "最經典嘅見頂形態之一。右肩升唔返上頭嘅高度，代表買家越嚟越弱。",
+    confirm: "收市跌穿頸線先算確認。",
+    target: "頭部去頸線嘅距離，喺頸線再減落去。",
+    stop: "（沽空或者減倉計）放喺右肩上面。",
+    watch: "未跌穿頸線之前唔好當佢係頭肩頂；跌穿時成交量大會更可信。",
+    sketch: ["0,56 18,26 32,38 56,6 78,38 96,26 118,56", "0,38 118,38"] },
+  hs_bottom: { dir: 1, short: "倒轉嘅頭肩，升穿頸線確認見底。",
+    look: "三個低位：中間嗰個最低（頭），兩邊比較淺而且差唔多（左肩、右肩）。連住兩個高位嘅線就係「頸線」。",
+    mean: "最經典嘅見底形態之一。右肩跌唔返落頭嘅低位，代表賣家越嚟越弱。",
+    confirm: "收市升穿頸線先算確認，最好有大成交量配合。",
+    target: "頸線去頭部嘅距離，喺頸線再加上去。",
+    stop: "放喺右肩下面。",
+    watch: "未升穿頸線之前唔好當佢係頭肩底；有時會喺頸線附近上上落落幾次先突破。",
+    sketch: ["0,4 18,34 32,22 56,54 78,22 96,34 118,4", "0,22 118,22"] },
+  bull_flag: { dir: 1, short: "急升之後細幅整固，升穿整固高位通常再升一段。",
+    look: "先有一段好急嘅升（旗桿），之後股價喺一個細細嘅範圍橫行或者微微向下（旗）。",
+    mean: "急升之後有人食糊，但賣得唔多、跌得好少，代表買家仲喺度，休息完通常再升。",
+    confirm: "收市升穿旗形嘅上邊（整固期高位）先算確認。",
+    target: "旗桿嘅長度，加落突破位。",
+    stop: "放喺旗形最低位下面。",
+    watch: "整固時間太長（幾個禮拜以上）或者回落太深（超過旗桿一半），就唔再算旗形。",
+    sketch: ["0,56 30,12 42,22 54,14 66,24 78,16 90,26 118,4", "30,12 90,20|42,22 90,30"] },
+  bear_flag: { dir: -1, short: "急跌之後細幅反彈整固，跌穿整固低位通常再跌一段。",
+    look: "先有一段好急嘅跌（旗桿），之後股價喺一個細細嘅範圍橫行或者微微向上（旗）。",
+    mean: "急跌之後有人撈底，但反彈好弱，代表賣家仲喺度，休息完通常再跌。",
+    confirm: "收市跌穿旗形嘅下邊（整固期低位）先算確認。",
+    target: "旗桿嘅長度，喺跌穿位減落去。",
+    stop: "（沽空或者減倉計）放喺旗形最高位上面。",
+    watch: "反彈太長或者太深（超過旗桿一半），就唔再算旗形。",
+    sketch: ["0,4 30,48 42,38 54,46 66,36 78,44 90,34 118,56", "30,48 90,40|42,38 90,30"] },
 };
+const DIR_TXT = { "1": "偏好（向上）", "-1": "偏淡（向下）", "0": "方向未定" };
+
+function patternSketch(key) {
+  const [price, lines] = PATTERN_GUIDE[key].sketch;
+  return '<svg class="psk" viewBox="-4 -4 128 68" aria-hidden="true">' +
+    lines.split("|").map(l => '<polyline class="g" points="' + l + '"/>').join("") +
+    '<polyline points="' + price + '"/></svg>';
+}
+
+function patternGuideBody(key) {
+  const g = PATTERN_GUIDE[key];
+  return '<dl class="pg">' + [["樣子", g.look], ["代表乜", g.mean], ["點樣確認", g.confirm], ["量度目標", g.target], ["止蝕放邊", g.stop], ["要小心", g.watch]]
+    .map(([k, v]) => "<dt>" + k + "</dt><dd>" + esc(v) + "</dd>").join("") + "</dl>";
+}
+
+// glossary of every pattern; ones found in this stock right now are marked
+function patternGlossary(R) {
+  const found = new Set(R.patterns.map(p => p.key));
+  return '<div id="pguide" class="pguide" hidden><p class="note" style="margin:0 0 12px">以下係呢個工具識搵嘅全部 ' + Object.keys(PATTERN_GUIDE).length +
+    ' 種形態。所有形態都要<b>收市突破</b>先算確認；未確認之前只係「可能」。</p><div class="cards">' +
+    Object.keys(PATTERN_GUIDE).map(key => {
+      const g = PATTERN_GUIDE[key], cc = g.dir > 0 ? "gain" : g.dir < 0 ? "loss" : "warn";
+      return '<div class="card" style="--c:var(--' + cc + ')"><div class="row"><b>' + A.PATTERN_NAMES[key] + '</b><span class="chip ' + cc + '">' + DIR_TXT[g.dir] + "</span>" +
+        (found.has(key) ? '<span class="chip">呢隻股而家有</span>' : "") + "</div>" + patternSketch(key) +
+        '<div class="note">' + esc(g.short) + "</div>" + patternGuideBody(key) + "</div>";
+    }).join("") + "</div></div>";
+}
 
 function patternCard(p, R, c, k) {
   const name = A.PATTERN_NAMES[p.key], h = R.patternHistory.stats[p.key + (p.dir || 1)];
@@ -537,8 +661,9 @@ function patternCard(p, R, c, k) {
     pct(h.wins / h.n, 0, false) + "）。" : "呢隻股過去未試過出現呢個形態嘅突破，冇歷史參考。";
   return '<div class="card pcard" role="button" tabindex="0" aria-pressed="false" data-p="' + k + '" style="--c:' + col + '"><div class="row"><b>' + name + '</b><span class="chip ' +
     (p.status === "breakout" ? (p.dir > 0 ? "gain" : "loss") : "warn") + '">' + (p.status === "breakout" ? "已突破" : "形成中") +
-    '</span><span class="chip plain">' + dirTxt + "</span></div><div>" + esc(body) + '</div><div class="note">' + esc(PATTERN_HELP[p.key]) +
-    "</div><div class=\"note\">" + esc(hist) + '</div><span class="hint">📈 撳呢張卡，喺走勢圖睇呢個形態</span></div>';
+    '</span><span class="chip plain">' + dirTxt + "</span></div><div>" + esc(body) + '</div><div class="note">' + esc(PATTERN_GUIDE[p.key].short) +
+    "</div><div class=\"note\">" + esc(hist) + '</div><details class="pexp"><summary>📖 詳細解釋：點睇、點確認、目標同止蝕</summary>' +
+    patternSketch(p.key) + patternGuideBody(p.key) + '</details><span class="hint">📈 撳呢張卡，喺走勢圖睇呢個形態</span></div>';
 }
 
 function patternHistoryTable(R) {

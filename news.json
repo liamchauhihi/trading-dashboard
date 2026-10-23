@@ -1,5 +1,5 @@
 {
- "generated": "2026-10-23T18:00+08:00",
+ "generated": "2026-10-23T22:30+08:00",
  "holdings": [
   "TSM",
   "TSLA",
@@ -11,9 +11,129 @@
   "NVDA"
  ],
  "claude_ok": true,
- "claude_at": "2026-10-23T18:00+08:00",
- "summary": "AI 開支同融資憂慮令晶片股大跌，你嘅 NVDA、TSM、ORCL 同 QQQ 首當其衝。布蘭特油價升至114美元附近，市場推高通脹預期，亦推高12月加息嘅機會。TSM 盤前輕微反彈，但下週三聯儲局議息同 Google 業績先係關鍵，短期波動可能仲會好大。",
+ "claude_at": "2026-10-23T22:30+08:00",
+ "summary": "中東局勢再升溫，胡塞武裝襲擊沙特，令布蘭特油價企喺114美元附近，市場估12月加息機會大約八成。周四AI同晶片股急跌之後，周五美股開市繼續偏軟。你持有嘅科技股（NVDA、TSM、GOOG、ORCL、TSLA）同QQQ／VOO都受AI開支同息口兩大因素左右，下週Google業績同聯儲局議息係關鍵。",
  "items": [
+  {
+   "time": "2026-10-23 22:27",
+   "headline": "美股周五低開 道指跌約1%",
+   "source": "Yahoo Finance",
+   "url": "https://finance.yahoo.com/markets/live/stock-market-today-friday-october-23-dow-sp-500-nasdaq-tesla-meta-093000521.html",
+   "summary": "周四科技股大跌之後，周五開市道指跌約1%，標普500跌約0.4%。中東局勢緊張同油價高企繼續拖累氣氛。",
+   "level": "high",
+   "scope": "market",
+   "affects": [
+    {
+     "sym": "VOO",
+     "dir": "down",
+     "why": "標普500成分股普遍受壓"
+    },
+    {
+     "sym": "QQQ",
+     "dir": "mixed",
+     "why": "科技股經過周四大跌，周五有啲喺低位徘徊，有啲反彈"
+    },
+    {
+     "sym": "QQQM",
+     "dir": "mixed",
+     "why": "同QQQ一樣追蹤Nasdaq-100"
+    }
+   ],
+   "takeaway": "短期波動大，留意收市會唔會企穩，唔使因為一日升跌就慌。",
+   "found": "2026-10-23 22:30"
+  },
+  {
+   "time": "2026-10-23 22:00",
+   "headline": "密歇根消費者信心終值48 好過預期",
+   "source": "Bloomberg",
+   "url": "https://www.bloomberg.com/news/articles/2026-10-23/us-consumer-sentiment-slips-to-five-month-low-on-inflation-woes",
+   "summary": "10月終值48.0，上月48.1，好過初值同所有經濟師預測，但仍然係五個月低位，消費者擔心物價。",
+   "level": "medium",
+   "scope": "market",
+   "affects": [
+    {
+     "sym": "VOO",
+     "dir": "mixed",
+     "why": "消費者情緒偏弱，但冇再惡化"
+    },
+    {
+     "sym": "TSLA",
+     "dir": "down",
+     "why": "消費者信心低，汽車呢類大額消費會受影響"
+    }
+   ],
+   "takeaway": "留意通脹預期數字，佢會影響聯儲局會唔會加息。",
+   "found": "2026-10-23 22:30"
+  },
+  {
+   "time": "2026-10-23 21:45",
+   "headline": "美國10月PMI：製造業勝預期 服務業放緩",
+   "source": "Newsquawk",
+   "url": "https://www.newsquawk.com/headlines/us-sp-global-manufacturing-pmi-flash-oct-560-vs-exp-555-prev-559",
+   "summary": "S&P Global初值：製造業56.0（預期55.5），服務業57.9（上月58.8），綜合指數57.6（上月58.4）。經濟仍然擴張，但服務業放慢。",
+   "level": "medium",
+   "scope": "market",
+   "affects": [
+    {
+     "sym": "VOO",
+     "dir": "mixed",
+     "why": "經濟穩陣係好事，但都唔夠弱去減低加息壓力"
+    },
+    {
+     "sym": "QQQ",
+     "dir": "mixed",
+     "why": "數據冇改變市場對12月加息嘅預期"
+    }
+   ],
+   "takeaway": "經濟冇明顯轉差，焦點仍然係油價同聯儲局。",
+   "found": "2026-10-23 22:30"
+  },
+  {
+   "time": "2026-10-23 20:00",
+   "headline": "盤前晶片股反彈 SK海力士升逾4%",
+   "source": "TradingKey",
+   "url": "https://www.tradingkey.com/analysis/stocks/us-stocks/262235802-us-stock-premarket-brent-crude-oil-near-115-dollars-chip-stocks-rebound-skhynix-tradingkey",
+   "summary": "費城半導體指數周四跌超過6%，周五盤前晶片股反彈，韓國SK海力士升逾4%。",
+   "level": "medium",
+   "scope": "sector",
+   "affects": [
+    {
+     "sym": "TSM",
+     "dir": "up",
+     "why": "半導體急跌之後有人趁低吸納，上一日升1.34%"
+    },
+    {
+     "sym": "NVDA",
+     "dir": "up",
+     "why": "跟隨板塊反彈，但升幅細"
+    }
+   ],
+   "takeaway": "大跌之後反彈好常見，未代表跌市完結，留意反彈撐唔撐得住。",
+   "found": "2026-10-23 22:30"
+  },
+  {
+   "time": "2026-10-23 17:00",
+   "headline": "華殊唔表態 12月加息機會稍為回落",
+   "source": "FXStreet / CME FedWatch",
+   "url": "https://www.fxstreet.com/news/gold-declines-to-one-week-low-below-4-100-on-fed-hike-bets-as-bulls-shrug-off-weak-usd-202610220423",
+   "summary": "聯儲局主席華殊（Warsh）冇講明會唔會加息。FedWatch顯示下週按兵不動機會約93%，12月加息機會由約九成回落至七至八成。",
+   "level": "medium",
+   "scope": "market",
+   "affects": [
+    {
+     "sym": "QQQ",
+     "dir": "mixed",
+     "why": "加息預期稍為降溫，對科技股估值有少少幫助"
+    },
+    {
+     "sym": "GOOG",
+     "dir": "mixed",
+     "why": "大型科技股估值受息口影響"
+    }
+   ],
+   "takeaway": "下週三議息聲明嘅措辭好重要，留意佢點講12月。",
+   "found": "2026-10-23 22:30"
+  },
   {
    "time": "2026-10-23 16:05",
    "headline": "台積電ADR急跌4.5%後 盤前反彈約1.7%",
@@ -112,6 +232,34 @@
    "found": "2026-10-23 18:00"
   },
   {
+   "time": "2026-10-23 10:00",
+   "headline": "胡塞武裝襲沙特 Aramco總部疏散",
+   "source": "IBTimes / Rigzone",
+   "url": "https://www.ibtimes.com.au/oil-prices-rise-saudi-attacks-iran-tensions-1877275",
+   "summary": "胡塞武裝襲擊沙特東部機場，造成1死8傷，Aramco要疏散達蘭總部。布蘭特油價升至約114.4美元，WTI企喺100美元以上。",
+   "level": "high",
+   "scope": "market",
+   "affects": [
+    {
+     "sym": "VOO",
+     "dir": "down",
+     "why": "油價高推高通脹，加息壓力打擊股市估值"
+    },
+    {
+     "sym": "QQQ",
+     "dir": "down",
+     "why": "高增長科技股對息口最敏感"
+    },
+    {
+     "sym": "TSLA",
+     "dir": "mixed",
+     "why": "油貴可能令電動車更吸引，但大市氣氛差"
+    }
+   ],
+   "takeaway": "油價係而家最大嘅風險因素，留意中東局勢有冇降溫。",
+   "found": "2026-10-23 22:30"
+  },
+  {
    "time": "2026-10-23 09:30",
    "headline": "亞洲股市跟跌 日韓開市再挫",
    "source": "Business Standard",
@@ -133,6 +281,34 @@
    ],
    "takeaway": "留意台股收市，可以預早估到 TSM 今晚點開。",
    "found": "2026-10-23 12:00"
+  },
+  {
+   "time": "2026-10-23 08:00",
+   "headline": "Google下週三業績 焦點係開支同雲端",
+   "source": "Top1Markets / OANDA",
+   "url": "https://www.top1markets.com/news/alphabet-q3-2026-earnings-preview-cloud-capex",
+   "summary": "Alphabet 10月28日收市後公布業績。今年資本開支指引1,950億至2,050億美元，有分析師估雲端業務增長約93%，2027年開支會再增加。",
+   "level": "high",
+   "scope": "stock",
+   "affects": [
+    {
+     "sym": "GOOG",
+     "dir": "mixed",
+     "why": "雲端增長強，但開支太大會蝕咗現金流"
+    },
+    {
+     "sym": "NVDA",
+     "dir": "mixed",
+     "why": "Google開支指引會影響晶片需求嘅預期"
+    },
+    {
+     "sym": "QQQ",
+     "dir": "mixed",
+     "why": "GOOG係Nasdaq-100大成分股"
+    }
+   ],
+   "takeaway": "Meta因為開支大、現金流轉負跌7%，Google可能面對同樣考驗，業績前後波幅會好大。",
+   "found": "2026-10-23 22:30"
   },
   {
    "time": "2026-10-23 08:00",
@@ -207,6 +383,24 @@
    ],
    "takeaway": "下星期係關鍵週，股價可能好大上落，唔使因為一日嘅波動就驚。",
    "found": "2026-10-23 12:00"
+  },
+  {
+   "time": "2026-10-23 05:00",
+   "headline": "Tesla周四收跌3.1% 周五盤前再跌",
+   "source": "Gotrade / Investing.com",
+   "url": "https://www.heygotrade.com/en/news/tesla-tsla-stock-news-october-23-2026/",
+   "summary": "Tesla周四收報374.58美元，跌3.1%，因為削減2026年資本開支，市場擔心AI同機械人投資唔夠。周五盤前一度報373美元附近。",
+   "level": "medium",
+   "scope": "stock",
+   "affects": [
+    {
+     "sym": "TSLA",
+     "dir": "down",
+     "why": "開支減少令人質疑佢嘅AI同機械人前景"
+    }
+   ],
+   "takeaway": "分析師平均目標價約400美元，留意可唔可以守住近期低位。",
+   "found": "2026-10-23 22:30"
   },
   {
    "time": "2026-10-23 05:00",

@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="zh-Hant-HK">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>市場新聞</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Serif+TC:wght@600;700&family=Noto+Sans+TC:wght@400;500;700&family=JetBrains+Mono:wght@400;600&display=swap">
+<link rel="stylesheet" href="pages.css">
+<link rel="stylesheet" href="feed.css">
+<style>
+/* Layout: Claude's summary → per-holding tally (good / bad news count) → filters → news feed. */
+header.top nav { gap: 14px; }
+.tabs { display: inline-flex; border: 1px solid var(--line); border-radius: 8px; overflow: hidden; }
+.tabs button { border: 0; border-radius: 0; background: var(--surface); color: var(--ink); padding: 7px 14px; }
+.tabs button[aria-pressed="true"] { background: var(--ink); color: var(--bg); }
+.summary { background: var(--accent-soft); border-radius: 10px; padding: 14px 16px; font-size: 15px; }
+.tally { display: grid; grid-template-columns: repeat(auto-fill, minmax(190px, 1fr)); gap: 10px; }
+.tally button { text-align: left; display: grid; gap: 4px; background: var(--surface); color: var(--ink); border: 1px solid var(--line);
+  border-radius: 10px; padding: 10px 14px; font-weight: 400; }
+.tally button[aria-pressed="true"] { border-color: var(--accent); box-shadow: inset 0 0 0 1px var(--accent); }
+.tally .sym { font-family: var(--font-num); font-weight: 600; font-size: 16px; }
+.tally .cnt { font-size: 13px; display: flex; gap: 10px; }
+.tally .last { font-size: 12px; color: var(--muted); overflow: hidden; display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header class="top">
+    <div>
+      <h1>市場新聞</h1>
+      <div class="sub" id="sub">過去幾日最重要嘅新聞，同埋對你持倉係好消息定壞消息</div>
+    </div>
+    <nav class="row"><a href="index.html">← 交易日誌</a><a href="analyzer.html">🔍 股票分析器</a><a href="portfolio.html">💼 我的持倉</a><a href="events.html">📅 重要日子</a></nav>
+  </header>
+
+  <div id="msg" class="msg" hidden></div>
+
+  <section id="sumsec" hidden>
+    <div class="sec-head"><h2>重點</h2><span class="note" id="sumat"></span></div>
+    <div class="summary" id="summary"></div>
+  </section>
+
+  <section id="tallysec" hidden>
+    <div class="sec-head"><h2>你嘅持倉</h2><span class="note">撳一隻股只睇佢嘅新聞；再撳一次取消</span></div>
+    <div class="tally" id="tally"></div>
+  </section>
+
+  <section>
+    <div class="sec-head"><h2>新聞</h2><span class="note">左邊有黃線嘅係影響你持倉嘅</span></div>
+    <div class="row">
+      <div class="tabs" role="group" aria-label="範圍">
+        <button type="button" data-scope="mine" aria-pressed="true">影響我持倉＋大市</button><button type="button" data-scope="all" aria-pressed="false">全部</button>
+      </div>
+      <span class="note" id="count"></span>
+    </div>
+    <div class="feed" id="feed"></div>
+  </section>
+
+  <footer>
+    新聞由 Claude 每日幾次用網上搜尋揀選同解釋（香港時間大約 08:00、12:00、18:00、22:30、01:00、04:45），可能有錯或者遲咗；
+    標題連去原文，重要決定前請睇返原文。只供學習參考，唔係投資建議。
+  </footer>
+</div>
+
+<script src="feed.js"></script>
+<script>
+"use strict";
+const HOLDINGS = {"TSM": {"qty": 4, "cost": 427.263}, "TSLA": {"qty": 4, "cost": 367.43}, "QQQ": {"qty": 1.5407, "cost": 719.835}, "GOOG": {"qty": 3, "cost": 340.0}, "ORCL": {"qty": 7, "cost": 139.9}, "VOO": {"qty": 0.7921, "cost": 706.401}, "QQQM": {"qty": 1.851, "cost": 302.377}, "NVDA": {"qty": 2, "cost": 212.47}};
+const $ = id => document.getElementById(id);
+const { esc, up } = FEED;
+const store = {
+  get(k) { try { return localStorage.getItem(k); } catch (e) { return null; } },
+  set(k, v) { try { localStorage.setItem(k, v); } catch (e) { /* ignore */ } },
+};
+
+// holdings typed on 我的持倉 (this browser) win over the bot's record
+function held() {
+  try {
+    const s = JSON.parse(store.get("my_holdings") || "null");
+    if (s && Array.isArray(s.list) && s.list.length) return [...new Set(s.list.map(r => up(r.sym)).filter(Boolean))];
+  } catch (e) { /* fall back */ }
+  return Object.keys(HOLDINGS || {});
+}
+const HELD = held();
+const ctx = { held: HELD };
+let D = null, scope = store.get("nw_scope") || "mine", pick = null;
+
+function shown(n) {
+  if (pick) return (n.affects || []).some(a => up(a.sym) === pick);
+  return scope === "all" || n.scope === "market" || FEED.newsAbout(n, HELD);
+}
+
+function tally() {
+  const items = D.items || [];
+  $("tally").innerHTML = HELD.map(s => {
+    const mine = items.filter(n => (n.affects || []).some(a => up(a.sym) === s));
+    const dirs = mine.map(n => n.affects.find(a => up(a.sym) === s).dir);
+    const c = d => dirs.filter(x => x === d).length;
+    return '<button type="button" data-pick="' + esc(s) + '" aria-pressed="' + (pick === s) + '"><span class="sym">' + esc(s) + "</span>" +
+      (mine.length ? '<span class="cnt"><span class="gain">▲ ' + c("up") + '</span><span class="loss">▼ ' + c("down") + '</span><span class="warn">◆ ' + c("mixed") + "</span></span>" +
+        '<span class="last">' + esc(mine[0].headline) + "</span>" : '<span class="last">呢幾日冇直接相關新聞</span>') + "</button>";
+  }).join("");
+  $("tallysec").hidden = !HELD.length;
+}
+
+function render() {
+  for (const b of document.querySelectorAll("[data-scope]")) b.setAttribute("aria-pressed", !pick && b.dataset.scope === scope);
+  for (const b of document.querySelectorAll("[data-pick]")) b.setAttribute("aria-pressed", b.dataset.pick === pick);
+  const list = (D.items || []).filter(shown);
+  $("count").textContent = (pick ? pick + "：" : "") + list.length + " 條";
+  $("feed").innerHTML = list.length ? list.map(n => FEED.newsCard(n, ctx)).join("")
+    : '<div class="empty">' + (pick ? "呢幾日冇搵到 " + esc(pick) + " 嘅新聞。" : "暫時冇新聞。") + "</div>";
+}
+
+async function start() {
+  try {
+    const r = await fetch("news.json", { cache: "no-cache" });
+    if (!r.ok) throw new Error(r.status);
+    D = await r.json();
+  } catch (e) {
+    $("msg").hidden = false; $("msg").textContent = "載入唔到新聞，請遲啲再試。"; return;
+  }
+  const at = String(D.claude_at || "").replace("T", " ").slice(0, 16);
+  $("sub").textContent = "過去幾日最重要嘅新聞，同埋對你持倉係好消息定壞消息 · 更新於 " + at + "（香港時間）";
+  if (D.summary) { $("summary").textContent = D.summary; $("sumat").textContent = "Claude 網上搜尋整理 · " + at; $("sumsec").hidden = false; }
+  if (!D.claude_ok) { $("msg").hidden = false; $("msg").textContent = "最近一次更新失敗，而家顯示 " + at + " 嘅新聞。"; }
+  for (const b of document.querySelectorAll("[data-scope]")) b.onclick = () => { scope = b.dataset.scope; pick = null; store.set("nw_scope", scope); render(); };
+  $("tally").addEventListener("click", ev => {
+    const b = ev.target.closest("[data-pick]");
+    if (!b) return;
+    pick = pick === b.dataset.pick ? null : b.dataset.pick;
+    render();
+    $("feed").scrollIntoView({ behavior: "smooth", block: "start" });
+  });
+  const h = up(decodeURIComponent(location.hash.slice(1)));
+  if (h) pick = h;
+  tally();
+  render();
+}
+start();
+</script>
+</body>
+</html>

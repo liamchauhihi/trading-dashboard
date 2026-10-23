@@ -7,6 +7,7 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Serif+TC:wght@600;700&family=Noto+Sans+TC:wght@400;500;700&family=JetBrains+Mono:wght@400;600&display=swap">
+<link rel="stylesheet" href="feed.css">
 <style>
 /* Layout: search bar on top, then a verdict strip (long / short term), the price chart with levels and
    patterns, then the detail sections (patterns, backtests, VWAP, stops). Same tokens as the journal page. */
@@ -97,6 +98,8 @@ details.key .box { margin-top: 10px; display: grid; gap: 8px; }
 .tabs button { padding: 4px 12px; border-radius: 999px; border: 1px solid var(--line); background: var(--surface); color: var(--muted); font-size: 13px; }
 .tabs button[aria-pressed="true"] { background: var(--ink); color: var(--bg); border-color: var(--ink); }
 .chart-bar { display: flex; flex-wrap: wrap; gap: 8px; align-items: center; justify-content: space-between; }
+#feedsec .panel { align-content: start; }
+details.macro summary { cursor: pointer; color: var(--muted); font-size: 13px; margin: 8px 0; }
 .tabs button:disabled { opacity: .4; cursor: not-allowed; }
 .fullbtn { padding: 4px 12px; border-radius: 999px; border: 1px solid var(--accent); background: var(--surface); color: var(--accent); font-size: 13px; font-weight: 600; }
 .selnote { display: flex; flex-wrap: wrap; gap: 8px; align-items: center; font-size: 13px; background: var(--accent-soft); border-radius: 8px; padding: 6px 10px; }
@@ -176,7 +179,7 @@ footer { color: var(--faint); font-size: 12px; border-top: 1px solid var(--line)
       <h1>股票分析器</h1>
       <div class="sub">輸入美股代號 → 自動計晒趨勢、形態、策略回測、止盈止蝕同建議</div>
     </div>
-    <nav class="row"><a href="index.html">← 交易日誌</a><a href="portfolio.html">💼 我的持倉</a><a href="events.html">📅 重要日子</a></nav>
+    <nav class="row"><a href="index.html">← 交易日誌</a><a href="portfolio.html">💼 我的持倉</a><a href="events.html">📅 重要日子</a><a href="news.html">📰 新聞</a></nav>
   </header>
 
   <div class="search">
@@ -209,6 +212,7 @@ footer { color: var(--faint); font-size: 12px; border-top: 1px solid var(--line)
 </div>
 
 <script src="analyzer_core.js"></script>
+<script src="feed.js"></script>
 <script>
 "use strict";
 const HOLDINGS = {"TSM": {"qty": 4, "cost": 427.263}, "TSLA": {"qty": 4, "cost": 367.43}, "QQQ": {"qty": 1.5407, "cost": 719.835}, "GOOG": {"qty": 3, "cost": 340.0}, "ORCL": {"qty": 7, "cost": 139.9}, "VOO": {"qty": 0.7921, "cost": 706.401}, "QQQM": {"qty": 1.851, "cost": 302.377}, "NVDA": {"qty": 2, "cost": 212.47}};
@@ -368,6 +372,9 @@ function render() {
   if (hold) html.push('<div class="card" style="--c:var(--accent)"><b>你手上嘅 ' + esc(sym) + "</b>" + holdingNote(hold, c, I, e) + "</div>");
   html.push("</section>");
 
+  // key dates + news for this stock (filled in when events.json / news.json arrive)
+  html.push('<section id="feedsec"><div class="sec-head"><h2>重要日子同新聞</h2><span class="note">載入中…</span></div></section>');
+
   // chart
   html.push('<section><div class="sec-head"><h2>走勢圖</h2><span class="note">即日同 5 日係 5 分鐘圖；其他係日線圖</span></div>' +
     '<div class="panel chart-panel" id="chartpanel"><div class="chart-bar"><div class="tabs" id="ranges">' +
@@ -429,6 +436,50 @@ function render() {
   updateExits();
   chartUI();
   drawChart();
+  fillFeed(sym);
+}
+
+// ---------- key dates + news (same data as 重要日子 / 新聞 pages) ----------
+let feedData = null;
+const MACRO = ["fomc", "cpi", "jobs", "pce", "gdp"];
+async function fillFeed(sym) {
+  feedData = feedData || Promise.all(["events.json", "news.json"].map(u =>
+    fetch(u, { cache: "no-cache" }).then(r => (r.ok ? r.json() : null)).catch(() => null)));
+  const [ev, nw] = await feedData;
+  const sec = $("feedsec");
+  if (!sec || current.sym !== sym) return;   // another stock was picked meanwhile
+  const ctx = { held: [sym], stats: (ev && ev.stats) || {} };
+  const today = FEED.todayStr(), in30 = FEED.addDays(today, 30);
+  const evs = ((ev && ev.events) || []).filter(e => e.date >= today);
+  const own = evs.filter(e => FEED.about(e, [sym]));
+  const macro = evs.filter(e => e.date <= in30 && MACRO.includes(e.type) && !own.includes(e));
+  const news = ((nw && nw.items) || []).filter(n => FEED.newsAbout(n, [sym]));
+  const st = ctx.stats[sym], h = [];
+  h.push('<div class="sec-head"><h2>重要日子同新聞</h2><span class="note">只顯示同 ' + esc(sym) + " 有關嘅；全部睇 " +
+    '<a href="events.html">📅 重要日子</a>／<a href="news.html">📰 新聞</a></span></div><div class="panels">');
+
+  h.push('<div class="panel"><h3>📅 ' + esc(sym) + " 未來 " + ((ev && ev.days) || 60) + " 日</h3>");
+  if (!ev) h.push('<div class="note">載入唔到重要日子資料。</div>');
+  else if (own.length) h.push('<div class="feed">' + own.slice(0, 5).map(e => FEED.evCard(e, ctx)).join("") + "</div>" +
+    (own.length > 5 ? '<details class="macro"><summary>再顯示 ' + (own.length - 5) + " 件</summary><div class=\"feed\">" +
+      own.slice(5).map(e => FEED.evCard(e, ctx)).join("") + "</div></details>" : ""));
+  else h.push('<div class="empty">冇搵到 ' + esc(sym) + " 自己嘅業績或者特別事件（ETF 冇業績；冷門股可能未收錄）。</div>");
+  if (st && st.earn && !own.some(e => e.type === "earnings"))
+    h.push('<div class="note">📊 參考：' + esc(sym) + " 過去 " + st.earn.n + " 次業績後兩日平均郁 " + FEED.pct(st.earn.avgAbs, 1, false) +
+      "（平時 " + FEED.pct(st.typical2d, 1, false) + "）。</div>");
+  if (macro.length) h.push('<details class="macro"><summary>大市大事（未來 30 日，所有股票都受影響）· ' + macro.length + " 件</summary>" +
+    '<div class="feed">' + macro.map(e => FEED.evCard(e, ctx)).join("") + "</div></details>");
+  h.push("</div>");
+
+  h.push('<div class="panel"><h3>📰 ' + esc(sym) + " 最近新聞</h3>");
+  if (!nw) h.push('<div class="note">載入唔到新聞。</div>');
+  else if (news.length) h.push('<div class="feed">' + news.slice(0, 6).map(n => FEED.newsCard(n, ctx, sym)).join("") + "</div>" +
+    (news.length > 6 ? '<a href="news.html#' + encodeURIComponent(sym) + '">睇晒 ' + news.length + " 條 →</a>" : ""));
+  else h.push('<div class="empty">過去幾日冇搵到 ' + esc(sym) + " 嘅重要新聞（新聞只追蹤你持倉同大型股）。" +
+    '<br><a href="https://news.google.com/search?q=' + encodeURIComponent(sym + " stock") + '&hl=zh-HK" target="_blank" rel="noopener">喺 Google 新聞搵 ' + esc(sym) + " →</a></div>");
+  h.push("</div></div>");
+  sec.innerHTML = h.join("");
+  FEED.bindIcs(sec, () => own.concat(macro));
 }
 
 const RANGES = [["i1", "即日"], ["i5", "5 日"], [21, "1 個月"], [63, "3 個月"], [126, "6 個月"], [252, "1 年"], [756, "3 年"]];

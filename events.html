@@ -8,6 +8,7 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Serif+TC:wght@600;700&family=Noto+Sans+TC:wght@400;500;700&family=JetBrains+Mono:wght@400;600&display=swap">
 <link rel="stylesheet" href="pages.css">
+<link rel="stylesheet" href="feed.css">
 <style>
 /* Layout: Claude's summary → filters → timeline grouped by week → past-reaction stats. */
 header.top nav { gap: 14px; }
@@ -16,23 +17,7 @@ header.top nav { gap: 14px; }
 .tabs button[aria-pressed="true"] { background: var(--ink); color: var(--bg); }
 .summary { background: var(--accent-soft); border-radius: 10px; padding: 14px 16px; font-size: 15px; }
 .week h3 { font-size: 14px; color: var(--muted); margin: 6px 0 0; font-weight: 500; }
-.ev { display: grid; grid-template-columns: 88px 1fr; gap: 4px 14px; background: var(--surface); border: 1px solid var(--line);
-  border-left: 4px solid var(--c); border-radius: 10px; padding: 12px 16px; }
-.ev.mine { box-shadow: inset 0 0 0 1px var(--c); }
-.ev .d { font-family: var(--font-num); font-weight: 600; font-size: 15px; line-height: 1.3; }
-.ev .d small { display: block; font-family: var(--font-body); font-weight: 400; font-size: 12px; color: var(--muted); }
-.ev .body { display: grid; gap: 4px; min-width: 0; font-size: 14px; }
-.ev .title { display: flex; flex-wrap: wrap; gap: 6px 8px; align-items: center; }
-.ev .title b { font-size: 15px; }
-.ev .k { color: var(--muted); font-size: 12px; margin-right: 4px; }
-.ev .hist { font-size: 13px; color: var(--muted); }
-.ev:target { outline: 2px solid var(--accent); outline-offset: 2px; }
-@media (max-width: 520px) { .ev { grid-template-columns: 1fr; } }
 .legend { display: flex; flex-wrap: wrap; gap: 6px; }
-.tchip { --c: var(--accent); background: color-mix(in srgb, var(--c) 14%, var(--surface)); color: var(--c); }
-.cal { display: flex; flex-wrap: wrap; gap: 6px; margin-top: 2px; }
-.cal a, .cal button { font-size: 12px; padding: 3px 10px; border-radius: 999px; border: 1px solid var(--line); background: var(--surface);
-  color: var(--accent); text-decoration: none; font-weight: 500; cursor: pointer; }
 .sources { font-size: 12px; word-break: break-all; margin: 0; padding-left: 18px; }
 </style>
 </head>
@@ -43,7 +28,7 @@ header.top nav { gap: 14px; }
       <h1>重要日子</h1>
       <div class="sub" id="sub">未來 60 日會郁股市嘅日子：業績、議息、通脹、就業數據…同埋點解重要</div>
     </div>
-    <nav class="row"><a href="index.html">← 交易日誌</a><a href="analyzer.html">🔍 股票分析器</a><a href="portfolio.html">💼 我的持倉</a></nav>
+    <nav class="row"><a href="index.html">← 交易日誌</a><a href="analyzer.html">🔍 股票分析器</a><a href="portfolio.html">💼 我的持倉</a><a href="news.html">📰 新聞</a></nav>
   </header>
 
   <div id="msg" class="msg" hidden></div>
@@ -89,18 +74,12 @@ header.top nav { gap: 14px; }
   </footer>
 </div>
 
+<script src="feed.js"></script>
 <script>
 "use strict";
 const HOLDINGS = {"TSM": {"qty": 4, "cost": 427.263}, "TSLA": {"qty": 4, "cost": 367.43}, "QQQ": {"qty": 1.5407, "cost": 719.835}, "GOOG": {"qty": 3, "cost": 340.0}, "ORCL": {"qty": 7, "cost": 139.9}, "VOO": {"qty": 0.7921, "cost": 706.401}, "QQQM": {"qty": 1.851, "cost": 302.377}, "NVDA": {"qty": 2, "cost": 212.47}};
 const $ = id => document.getElementById(id);
-const esc = s => String(s == null ? "" : s).replace(/[&<>"']/g, ch => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;" }[ch]));
-const ok = x => typeof x === "number" && isFinite(x);
-const pct = (x, d = 1, sign = true) => (ok(x) ? (sign && x > 0 ? "+" : "") + (x * 100).toFixed(d) + "%" : "—");
-const TYPE = {
-  earnings: ["業績", "#2F4FA8"], fomc: ["議息", "#C2362B"], cpi: ["通脹", "#C0661A"], jobs: ["就業", "#18794E"],
-  pce: ["PCE", "#B8860B"], gdp: ["GDP", "#2A8A9A"], opex: ["期權結算", "#8A3FA0"], other: ["其他", "#5A6577"],
-};
-const WD = ["日", "一", "二", "三", "四", "五", "六"];
+const { esc, pct, TYPE, parse, todayStr, addDays, monday } = FEED;
 const store = {
   get(k) { try { return localStorage.getItem(k); } catch (e) { return null; } },
   set(k, v) { try { localStorage.setItem(k, v); } catch (e) { /* ignore */ } },
@@ -117,91 +96,13 @@ function held() {
 const HELD = held();
 let D = null, days = +(store.get("ev_days") || 60), scope = store.get("ev_scope") || "mine";
 
-const parse = d => new Date(d + "T00:00:00");
-const todayStr = () => { const t = new Date(); return t.getFullYear() + "-" + String(t.getMonth() + 1).padStart(2, "0") + "-" + String(t.getDate()).padStart(2, "0"); };
-const addDays = (s, n) => { const t = parse(s); t.setDate(t.getDate() + n); return todayStrOf(t); };
-const todayStrOf = t => t.getFullYear() + "-" + String(t.getMonth() + 1).padStart(2, "0") + "-" + String(t.getDate()).padStart(2, "0");
-const monday = s => { const t = parse(s); t.setDate(t.getDate() - ((t.getDay() + 6) % 7)); return todayStrOf(t); };
-
-function mine(e) {
-  const aff = (e.affects || []).map(s => String(s).toUpperCase());
-  return HELD.includes(String(e.sym || "").toUpperCase()) || aff.some(s => HELD.includes(s));
-}
+const ctx = { held: HELD, stats: {}, anchors: true };
+const mine = e => FEED.about(e, HELD);
 function shown(e) {
   if (scope === "all") return true;
   return e.type !== "earnings" || mine(e);   // macro events always shown; earnings only for stocks you hold (or that move them)
 }
 
-function history(e) {
-  const st = D.stats || {}, s = String(e.sym || "").toUpperCase();
-  if (e.type === "earnings" && st[s] && st[s].earn) {
-    const x = st[s].earn, t = st[s].typical2d;
-    return "📊 " + esc(s) + " 過去 " + x.n + " 次業績後兩日平均郁 <b>" + pct(x.avgAbs, 1, false) + "</b>（平時 " + pct(t, 1, false) + "，" +
-      (x.avgAbs > 2 * t ? "大好多" : "大啲") + "），" + x.up + " 次升 " + (x.n - x.up) + " 次跌，最多 " + pct(x.maxAbs, 1, false) + "。";
-  }
-  if (e.type === "fomc") {
-    const rows = ["SPY"].concat(HELD.filter(h => h !== "SPY")).filter(h => st[h] && st[h].fomc)
-      .map(h => esc(h) + " " + pct(st[h].fomc.avgAbs, 1, false) + "（平時 " + pct(st[h].typical1d, 1, false) + "）");
-    return rows.length ? "📊 過去議息當日平均郁：" + rows.join("、") : "";
-  }
-  return "";
-}
-
-function evCard(e) {
-  const [label, color] = TYPE[e.type] || TYPE.other;
-  const t = parse(e.date), dd = Math.round((t - parse(todayStr())) / 86400000);
-  const isMine = mine(e);
-  const aff = (e.affects || []).map(s => String(s).toUpperCase());
-  const affHtml = aff.length ? aff.map(s => '<span class="chip ' + (HELD.includes(s) ? "warn" : "plain") + '">' + esc(s) + "</span>").join(" ") : "";
-  const id = e.type === "earnings" && e.sym ? ' id="' + esc(String(e.sym).toUpperCase()) + '"' : "";
-  return '<article class="ev' + (isMine ? " mine" : "") + '" style="--c:' + color + '"' + id + ">" +
-    '<div class="d">' + esc(e.date.slice(5).replace("-", "/")) + "<small>星期" + WD[t.getDay()] + " · " + (dd === 0 ? "今日" : dd === 1 ? "聽日" : dd + " 日後") + "</small></div>" +
-    '<div class="body"><div class="title"><span class="chip tchip" style="--c:' + color + '">' + label + "</span><b>" + esc(e.name || "") + "</b>" +
-      (e.confidence === "estimated" ? '<span class="chip warn">日期未正式確認</span>' : "") + "</div>" +
-    (e.time ? '<div class="note">🕒 ' + esc(e.time) + "</div>" : "") +
-    (e.why ? "<div><span class=\"k\">點解重要</span>" + esc(e.why) + "</div>" : "") +
-    (e.impact ? "<div><span class=\"k\">可能影響</span>" + esc(e.impact) + "</div>" : "") +
-    (e.watch ? "<div><span class=\"k\">要睇咩</span>" + esc(e.watch) + "</div>" : "") +
-    (ok(e.epsEst) ? '<div class="note">市場預期每股盈利 <span class="num">$' + e.epsEst.toFixed(2) + "</span></div>" : "") +
-    (affHtml ? "<div><span class=\"k\">相關</span>" + affHtml + "</div>" : "") +
-    (history(e) ? '<div class="hist">' + history(e) + "</div>" : "") +
-    '<div class="cal"><a href="' + esc(gcal(e)) + '" target="_blank" rel="noopener">＋ Google 日曆</a>' +
-    '<button type="button" data-ics="' + esc(key(e)) + '">＋ Apple／Outlook 日曆</button></div>' +
-    "</div></article>";
-}
-
-// ---------- add to calendar (all-day events; the exact time is in the notes) ----------
-const key = e => e.date + "|" + e.type + "|" + (e.sym || "") + "|" + (e.name || "");
-const ymd = s => s.replace(/-/g, "");
-const calTitle = e => (TYPE[e.type] || TYPE.other)[0] + "｜" + (e.name || "");
-function calNotes(e) {
-  return [e.time && "時間：" + e.time, e.why && "點解重要：" + e.why, e.impact && "可能影響：" + e.impact, e.watch && "要睇咩：" + e.watch,
-          "詳情：" + location.href.split("#")[0]].filter(Boolean).join("\n");
-}
-function gcal(e) {
-  return "https://calendar.google.com/calendar/render?action=TEMPLATE&text=" + encodeURIComponent(calTitle(e)) +
-    "&dates=" + ymd(e.date) + "/" + ymd(addDays(e.date, 1)) + "&details=" + encodeURIComponent(calNotes(e));
-}
-function ics(evs) {
-  const q = s => String(s).replace(/\\/g, "\\\\").replace(/[;,]/g, m => "\\" + m).replace(/\n/g, "\\n");
-  const stamp = new Date().toISOString().replace(/[-:]/g, "").slice(0, 15) + "Z";
-  const lines = ["BEGIN:VCALENDAR", "VERSION:2.0", "PRODID:-//trading-dashboard//events//ZH", "CALSCALE:GREGORIAN"];
-  for (const e of evs) lines.push("BEGIN:VEVENT", "UID:" + ymd(e.date) + "-" + e.type + "-" + (e.sym || "x") + "-" + Math.abs(hash(key(e))) + "@trading-dashboard",
-    "DTSTAMP:" + stamp, "DTSTART;VALUE=DATE:" + ymd(e.date), "DTEND;VALUE=DATE:" + ymd(addDays(e.date, 1)),
-    "SUMMARY:" + q(calTitle(e)), "DESCRIPTION:" + q(calNotes(e)), "END:VEVENT");
-  lines.push("END:VCALENDAR");
-  const a = document.createElement("a");
-  // RFC 5545: lines over 75 bytes are folded (continuation lines start with a space)
-  const fold = l => { const out = []; let cur = "", n = 0;
-    for (const ch of l) { const b = new TextEncoder().encode(ch).length;
-      if (n + b > 74) { out.push(cur); cur = " "; n = 1; }
-      cur += ch; n += b; }
-    return out.concat(cur).join("\r\n"); };
-  a.href = URL.createObjectURL(new Blob([lines.map(fold).join("\r\n") + "\r\n"], { type: "text/calendar" }));
-  a.download = evs.length === 1 ? ymd(evs[0].date) + "_" + (evs[0].sym || evs[0].type) + ".ics" : "重要日子.ics";
-  document.body.appendChild(a); a.click(); a.remove(); setTimeout(() => URL.revokeObjectURL(a.href), 1000);
-}
-function hash(s) { let h = 0; for (const ch of s) h = (h * 31 + ch.codePointAt(0)) | 0; return h; }
 let SHOWN = [];
 
 function render() {
@@ -221,7 +122,7 @@ function render() {
     const fri = addDays(m, 4);
     const label = m <= today ? "今個星期" : addDays(monday(today), 7) === m ? "下個星期" : "";
     return '<div class="week" style="display:grid;gap:10px;margin-bottom:14px"><h3>' + (label ? label + " · " : "") +
-      m.slice(5).replace("-", "/") + " – " + fri.slice(5).replace("-", "/") + "</h3>" + list.map(evCard).join("") + "</div>";
+      m.slice(5).replace("-", "/") + " – " + fri.slice(5).replace("-", "/") + "</h3>" + list.map(e => FEED.evCard(e, ctx)).join("") + "</div>";
   }).join("");
   if (location.hash) { const el = document.getElementById(decodeURIComponent(location.hash.slice(1))); if (el) el.scrollIntoView({ block: "center" }); }
 }
@@ -256,6 +157,7 @@ async function start() {
     const r = await fetch("events.json", { cache: "no-cache" });
     if (!r.ok) throw new Error(r.status);
     D = await r.json();
+    ctx.stats = D.stats || {};
   } catch (e) {
     $("msg").hidden = false; $("msg").textContent = "載入唔到重要日子資料，請遲啲再試。"; return;
   }
@@ -275,11 +177,8 @@ async function start() {
   }
   for (const b of document.querySelectorAll("[data-days]")) b.onclick = () => { days = +b.dataset.days; store.set("ev_days", days); render(); };
   for (const b of document.querySelectorAll("[data-scope]")) b.onclick = () => { scope = b.dataset.scope; store.set("ev_scope", scope); render(); };
-  $("list").addEventListener("click", ev => {
-    const b = ev.target.closest("[data-ics]");
-    if (b) ics(SHOWN.filter(e => key(e) === b.dataset.ics));
-  });
-  $("icsall").onclick = () => SHOWN.length && ics(SHOWN);
+  FEED.bindIcs($("list"), () => SHOWN);
+  $("icsall").onclick = () => SHOWN.length && FEED.ics(SHOWN);
   render();
   statsTables();
 }

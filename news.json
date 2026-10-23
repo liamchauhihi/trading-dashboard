@@ -1,0 +1,230 @@
+{
+ "generated": "2026-10-23T09:29+08:00",
+ "holdings": [
+  "TSM",
+  "TSLA",
+  "QQQ",
+  "GOOG",
+  "ORCL",
+  "VOO",
+  "QQQM",
+  "NVDA"
+ ],
+ "claude_ok": true,
+ "claude_at": "2026-10-23T09:29+08:00",
+ "summary": "AI 股同晶片股大跌：Lam Research 警告供應鏈受限，Meta 加大 AI 開支，令 Nasdaq 跌 2.6%，半導體指數跌超過 6%。有報道指美以可能喺中期選舉後再打伊朗，油價升穿 $111。你嘅 NVDA、TSM、QQQ/QQQM 受影響最大。下星期有聯儲局議息同 Google 業績，波動可能持續。",
+ "items": [
+  {
+   "time": "2026-10-23 04:00",
+   "headline": "晶片股大跌 半導體指數跌逾6%",
+   "source": "24/7 Wall St.",
+   "url": "https://247wallst.com/investing/2026/10/22/chip-stocks-fall-as-supply-warning-deepens-ai-selloff-marvell-and-amd-sink-8-intel-drops-7/",
+   "summary": "晶片設備商 Lam Research 話供應鏈受限會延續到 2027 年，市場擔心成個行業出貨受限。費城半導體指數跌超過 6%，AMD、Marvell 跌約 8%，Nvidia 跌約 4%。",
+   "level": "high",
+   "scope": "sector",
+   "affects": [
+    {
+     "sym": "NVDA",
+     "dir": "down",
+     "why": "晶片股一齊被拋售，昨日跌 4.4%，主要係行業恐慌，唔係 Nvidia 自己出咗事"
+    },
+    {
+     "sym": "TSM",
+     "dir": "down",
+     "why": "台積電係晶片供應鏈核心，供應受限同 AI 開支疑慮令佢跌 4.5%"
+    },
+    {
+     "sym": "QQQ",
+     "dir": "down",
+     "why": "晶片股喺 Nasdaq-100 佔比好重，所以拖低成個指數"
+    }
+   ],
+   "takeaway": "今次係成個行業一齊跌，唔係單一公司出事；留意下星期 SK 海力士業績會唔會令情緒再轉差。",
+   "found": "2026-10-23 09:29"
+  },
+  {
+   "time": "2026-10-23 04:00",
+   "headline": "Nasdaq 跌2.6% 創6月以嚟最大跌幅",
+   "source": "Yahoo Finance",
+   "url": "https://finance.yahoo.com/markets/live/stock-market-today-thursday-october-22-dow-sp-500-nasdaq-tesla-meta-112217857.html",
+   "summary": "Nasdaq 跌 2.6%，收 26,008；標普 500 跌 1.2%，收 7,663；道指持平。有統計指 Nasdaq-100 嘅跌幅有約 93% 嚟自 AI 同晶片股。",
+   "level": "high",
+   "scope": "market",
+   "affects": [
+    {
+     "sym": "QQQ",
+     "dir": "down",
+     "why": "科技股佔比高，所以跌得比大市多，約 2.9%"
+    },
+    {
+     "sym": "QQQM",
+     "dir": "down",
+     "why": "同 QQQ 追蹤同一個指數，走勢一樣"
+    },
+    {
+     "sym": "VOO",
+     "dir": "down",
+     "why": "標普 500 跌 1.2%，因為分散啲，所以跌得少過 Nasdaq"
+    }
+   ],
+   "takeaway": "你嘅 ETF 同科技股持倉重疊好多，市況差嗰陣會一齊跌，要知道自己真正嘅風險有幾集中。",
+   "found": "2026-10-23 09:29"
+  },
+  {
+   "time": "2026-10-23 03:00",
+   "headline": "資金湧入美債 10年債息跌穿5%",
+   "source": "Briefs",
+   "url": "https://www.briefs.co/news/treasuries-rally-as-stocks-sell-off-and-oil-jumps/",
+   "summary": "股市跌嘅時候資金走去買國債，10 年期債息跌約 15 點子，跌穿 5%。市場預計聯儲局 10 月 27-28 日加息嘅機會，由之前大約三成跌到大約一成半。",
+   "level": "medium",
+   "scope": "market",
+   "affects": [
+    {
+     "sym": "QQQ",
+     "dir": "mixed",
+     "why": "債息回落對高估值科技股係支持，但呢次係因為避險，唔係因為經濟好"
+    },
+    {
+     "sym": "VOO",
+     "dir": "mixed",
+     "why": "加息機會減少係好事，但通脹仍然偏高（9 月 CPI 3.7%）"
+    }
+   ],
+   "takeaway": "下星期聯儲局議息係大事；如果意外加息，市場可能再波動。",
+   "found": "2026-10-23 09:29"
+  },
+  {
+   "time": "2026-10-22 23:00",
+   "headline": "Meta 拖累 Oracle 等科技股信貸風險升",
+   "source": "Investing.com",
+   "url": "https://www.investing.com/analysis/meta-stock-selloff-exposes-the-cost-of-its-ai-spending-boom-200690103",
+   "summary": "Meta 嘅 CDS 創新高之後，Oracle、微軟、Broadcom 嘅 CDS 都一齊擴闊。Oracle 為咗起 AI 數據中心借咗大量錢，信貸評級 BBB- 已經係投資級最低一級。",
+   "level": "medium",
+   "scope": "stock",
+   "affects": [
+    {
+     "sym": "ORCL",
+     "dir": "down",
+     "why": "負債高、評級貼近垃圾級，市場一擔心 AI 借貸，佢就首當其衝"
+    }
+   ],
+   "takeaway": "Oracle 嘅風險主要喺債務同 OpenAI 合約，留意評級機構會唔會降佢評級。",
+   "found": "2026-10-23 09:29"
+  },
+  {
+   "time": "2026-10-22 22:30",
+   "headline": "Google 業績前跌穿支持位 被降目標價",
+   "source": "FX Leaders",
+   "url": "https://fxleaders.com/news/2026/10/22/goog-stock-breaks-support-following-meta-and-tesla-as-ai-spending-concerns-weigh-ahead-of-earnings",
+   "summary": "Meta 同 Tesla 嘅業績反應令市場擔心 AI 開支，GOOG 跌約 3%。KeyBanc 將目標價由 435 降到 410，但維持「增持」。另外有集體訴訟指 Google 誤導 Gemini 嘅開發時間表。",
+   "level": "high",
+   "scope": "stock",
+   "affects": [
+    {
+     "sym": "GOOG",
+     "dir": "down",
+     "why": "業績前市場謹慎，加上被降目標價同官司消息"
+    }
+   ],
+   "takeaway": "Google 10 月 28 日收市後公佈業績，重點睇雲端增長同資本開支；業績前後股價可能大上大落。",
+   "found": "2026-10-23 09:29"
+  },
+  {
+   "time": "2026-10-22 22:00",
+   "headline": "傳美以考慮選後再襲伊朗 油價破$111",
+   "source": "NBC News",
+   "url": "https://www.nbcnews.com/business/markets/iran-war-ai-spending-oil-prices-selloff-rcna604994",
+   "summary": "《紐約時報》引述美國官員講，美國同以色列考慮喺 11 月中期選舉後再空襲伊朗，伊朗揚言會報復。布蘭特期油升穿每桶 $111，係 5 個月高位。",
+   "level": "high",
+   "scope": "market",
+   "affects": [
+    {
+     "sym": "VOO",
+     "dir": "down",
+     "why": "油價貴會推高通脹、蠶食企業利潤，對成個大市都係壓力"
+    },
+    {
+     "sym": "TSLA",
+     "dir": "mixed",
+     "why": "油價高可能令多啲人想買電動車，但大市避險情緒對佢唔利"
+    },
+    {
+     "sym": "QQQ",
+     "dir": "down",
+     "why": "地緣風險升，資金傾向離開估值高嘅科技股"
+    }
+   ],
+   "takeaway": "依家只係報道，未發生；但油價同中東消息會繼續影響通脹同市場情緒，值得留意。",
+   "found": "2026-10-23 09:29"
+  },
+  {
+   "time": "2026-10-22 04:30",
+   "headline": "Tesla 業績勝預期 削減開支後股價反跌",
+   "source": "SiliconANGLE",
+   "url": "https://siliconangle.com/2026/10/21/tesla-shares-fall-more-than-3-despite-earnings-beat-and-1-5b-in-free-cash-flow/",
+   "summary": "Tesla 第三季自由現金流係正 15 億美元，市場原本預期會燒錢。佢將全年資本開支由超過 250 億美元降到約 200 億美元，但經營利潤跌 56%，股價跌約 3%。",
+   "level": "high",
+   "scope": "stock",
+   "affects": [
+    {
+     "sym": "TSLA",
+     "dir": "down",
+     "why": "市場覺得少咗投資，代表 Robotaxi 同 Optimus 機械人嘅進度可能慢咗"
+    }
+   ],
+   "takeaway": "財務數字其實改善咗，股價跌主要係市場對 AI 故事嘅期望；留意 Robotaxi 嘅實際進度。",
+   "found": "2026-10-23 09:29"
+  },
+  {
+   "time": "2026-10-22 04:30",
+   "headline": "Lam Research：供應受限將延至2027年",
+   "source": "Yahoo Finance",
+   "url": "https://finance.yahoo.com/markets/article/chip-stocks-fall-as-equipment-maker-lam-research-cites-supply-chain-constraints-130648719.html",
+   "summary": "Lam Research 業績會上，財務總監話短期供應鏈受限，CEO 話問題會持續到 2027 年。Lam 股價跌約 8-12%，成為昨日晶片股大跌嘅導火線。",
+   "level": "medium",
+   "scope": "sector",
+   "affects": [
+    {
+     "sym": "TSM",
+     "dir": "mixed",
+     "why": "設備供應受限可能拖慢擴產，但同時代表先進晶片嘅產能仍然緊張"
+    },
+    {
+     "sym": "NVDA",
+     "dir": "mixed",
+     "why": "需求冇問題，但供應鏈瓶頸可能限制出貨速度"
+    }
+   ],
+   "takeaway": "問題係供應唔夠，唔係冇人要；需求冇轉差，所以唔使當係 AI 需求見頂。",
+   "found": "2026-10-23 09:29"
+  },
+  {
+   "time": "2026-10-22 04:05",
+   "headline": "Meta 業績後跌7% AI開支令現金流轉負",
+   "source": "CNBC",
+   "url": "https://www.cnbc.com/2026/10/22/meta-stock-q3-earnings-free-cash-flow.html",
+   "summary": "Meta 收入 646 億美元，好過預期，但將 2026 年資本開支下限上調至 1,350 億美元，季度自由現金流係負 21 億美元。佢個信貸違約掉期（CDS）創新高，股價跌約 7%。",
+   "level": "high",
+   "scope": "sector",
+   "affects": [
+    {
+     "sym": "GOOG",
+     "dir": "down",
+     "why": "市場擔心大科技公司 AI 開支太大、回報唔清楚，Google 下星期公佈業績都會被用同一把尺衡量"
+    },
+    {
+     "sym": "NVDA",
+     "dir": "mixed",
+     "why": "AI 開支多對晶片需求係好事，但市場擔心呢啲開支可唔可以長期維持"
+    },
+    {
+     "sym": "ORCL",
+     "dir": "down",
+     "why": "Oracle 都係靠借錢起數據中心，Meta 出事令佢嘅信貸風險再受關注"
+    }
+   ],
+   "takeaway": "依家市場唔再淨係睇收入，仲會睇 AI 開支同現金流；Google 業績會用同一個標準嚟睇。",
+   "found": "2026-10-23 09:29"
+  }
+ ]
+}

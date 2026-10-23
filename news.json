@@ -1,5 +1,5 @@
 {
- "generated": "2026-10-23T22:30+08:00",
+ "generated": "2026-10-24T01:00+08:00",
  "holdings": [
   "TSM",
   "TSLA",
@@ -11,36 +11,64 @@
   "NVDA"
  ],
  "claude_ok": true,
- "claude_at": "2026-10-23T22:30+08:00",
- "summary": "中東局勢再升溫，胡塞武裝襲擊沙特，令布蘭特油價企喺114美元附近，市場估12月加息機會大約八成。周四AI同晶片股急跌之後，周五美股開市繼續偏軟。你持有嘅科技股（NVDA、TSM、GOOG、ORCL、TSLA）同QQQ／VOO都受AI開支同息口兩大因素左右，下週Google業績同聯儲局議息係關鍵。",
+ "claude_at": "2026-10-24T01:00+08:00",
+ "summary": "周五大市分化：道指跌約1%，但 Nasdaq 喺周四大跌之後企穩，科技股暫時冇再插。美債息回落到5%附近，市場仍然估聯儲局12月加息機會大約七至八成。AI 開支同資金嘅憂慮未散，你持有嘅晶片股（NVDA、TSM）同 ORCL 短期仍然會大上大落，下週三議息同 Google 業績係關鍵。",
  "items": [
   {
-   "time": "2026-10-23 22:27",
-   "headline": "美股周五低開 道指跌約1%",
+   "time": "2026-10-24 00:20",
+   "headline": "午市道指跌1.1% Nasdaq轉升 科技股企穩",
    "source": "Yahoo Finance",
    "url": "https://finance.yahoo.com/markets/live/stock-market-today-friday-october-23-dow-sp-500-nasdaq-tesla-meta-093000521.html",
-   "summary": "周四科技股大跌之後，周五開市道指跌約1%，標普500跌約0.4%。中東局勢緊張同油價高企繼續拖累氣氛。",
+   "summary": "周五午市道指跌約1.1%，標普500跌約0.2%，Nasdaq 微升0.1%。Tesla、Meta 喺前一日大跌之後回穩，布蘭特油價仍然喺約112美元嘅五個月高位。",
    "level": "high",
    "scope": "market",
    "affects": [
     {
-     "sym": "VOO",
-     "dir": "down",
-     "why": "標普500成分股普遍受壓"
-    },
-    {
      "sym": "QQQ",
      "dir": "mixed",
-     "why": "科技股經過周四大跌，周五有啲喺低位徘徊，有啲反彈"
+     "why": "科技股喺周四急跌之後有買盤承接，但升幅好細，未算真正反彈"
+    },
+    {
+     "sym": "VOO",
+     "dir": "down",
+     "why": "道指成份嘅藍籌股同金融股拖低大市，標普500微跌"
     },
     {
      "sym": "QQQM",
      "dir": "mixed",
-     "why": "同QQQ一樣追蹤Nasdaq-100"
+     "why": "同 QQQ 一樣追蹤 Nasdaq-100，走勢一樣"
     }
    ],
-   "takeaway": "短期波動大，留意收市會唔會企穩，唔使因為一日升跌就慌。",
-   "found": "2026-10-23 22:30"
+   "takeaway": "科技股暫時止跌，但仲未肯定見底。收市前仍然可能會變，留意最後收市數字。",
+   "found": "2026-10-24 01:00"
+  },
+  {
+   "time": "2026-10-23 23:30",
+   "headline": "10年債息本週回落至5% 資金避開AI股",
+   "source": "CNBC",
+   "url": "https://www.cnbc.com/2026/10/23/bonds-yields-us-treasurys.html",
+   "summary": "投資者擔心 AI 股，將資金轉入美債，10年期債息周五一度跌到約4.95%，之後回升到5%左右。CME FedWatch 顯示12月加息機會約七成，其他估算更高到八成。",
+   "level": "high",
+   "scope": "market",
+   "affects": [
+    {
+     "sym": "QQQ",
+     "dir": "mixed",
+     "why": "債息回落對科技股估值有幫助，但加息預期仍然係壓力"
+    },
+    {
+     "sym": "VOO",
+     "dir": "mixed",
+     "why": "借貸成本微降有幫助，但12月可能加息會壓住大市"
+    },
+    {
+     "sym": "ORCL",
+     "dir": "up",
+     "why": "Oracle 負債重，債息回落可以減輕融資壓力"
+    }
+   ],
+   "takeaway": "債息由高位回落係好事，但只要12月仲可能加息，大市都會比較波動。",
+   "found": "2026-10-24 01:00"
   },
   {
    "time": "2026-10-23 22:00",
@@ -64,6 +92,29 @@
    ],
    "takeaway": "留意通脹預期數字，佢會影響聯儲局會唔會加息。",
    "found": "2026-10-23 22:30"
+  },
+  {
+   "time": "2026-10-23 21:45",
+   "headline": "Bloom Energy業績勝預期 股價反跌11%",
+   "source": "TheStreet",
+   "url": "https://www.thestreet.com/stock-market-today/stock-market-today-dow-jones-sp-500-nasdaq-updates-oct-23-2026",
+   "summary": "為 Oracle AI 數據中心供電嘅 Bloom Energy 第三季業績好過預期，但市場擔心佢現金流係負數同開支太高，股價急跌約11%。",
+   "level": "medium",
+   "scope": "sector",
+   "affects": [
+    {
+     "sym": "ORCL",
+     "dir": "down",
+     "why": "Bloom 係 Oracle 新墨西哥 AI 園區嘅主要電力供應商，市場對 AI 基建要燒幾多錢更加敏感"
+    },
+    {
+     "sym": "BE",
+     "dir": "down",
+     "why": "負現金流同高開支蓋過咗業績好消息"
+    }
+   ],
+   "takeaway": "市場而家好睇重 AI 公司嘅現金流。持有 ORCL 要留意佢負債同融資方面嘅消息。",
+   "found": "2026-10-24 01:00"
   },
   {
    "time": "2026-10-23 21:45",
@@ -422,6 +473,34 @@
   },
   {
    "time": "2026-10-23 04:30",
+   "headline": "Tesla削減今年資本開支至約200億美元",
+   "source": "TradingKey",
+   "url": "https://www.tradingkey.com/analysis/stocks/us-stocks/262234781-nasdaq-down-2-60-meta-drops-7-percent-oil-above-113-gold-nears-4000-tradingkey",
+   "summary": "Tesla 業績好過預期，但將2026年資本開支預測下調到約200億美元，周四收跌3.08%。市場擔心大公司開始減少 AI 同設備投資，連帶拖累晶片股。",
+   "level": "medium",
+   "scope": "stock",
+   "affects": [
+    {
+     "sym": "TSLA",
+     "dir": "mixed",
+     "why": "少啲開支可以改善現金流，但市場可能覺得增長步伐放慢"
+    },
+    {
+     "sym": "NVDA",
+     "dir": "down",
+     "why": "大客戶減少開支，令人擔心 AI 晶片需求降溫"
+    },
+    {
+     "sym": "TSM",
+     "dir": "down",
+     "why": "晶片代工需求同科技公司嘅開支掛鈎"
+    }
+   ],
+   "takeaway": "減開支唔一定係壞事，你可以留意 Tesla 下季有冇講清楚 AI 同機械人投資嘅計劃。",
+   "found": "2026-10-24 01:00"
+  },
+  {
+   "time": "2026-10-23 04:30",
    "headline": "布蘭特油價升至113美元 五個月新高",
    "source": "BNN Bloomberg",
    "url": "https://bnnbloomberg.ca/markets/2026/10/22/ai-stocks-drag-markets-down-worldwide-as-oil-prices-climb-to-their-highest-since-may",
@@ -603,6 +682,29 @@
   },
   {
    "time": "2026-10-22 23:00",
+   "headline": "BMO：議息可能觸發美債息突破",
+   "source": "CNBC",
+   "url": "https://www.cnbc.com/2026/10/22/us-treasury-yields-breakout-fed-bmo-.html",
+   "summary": "BMO 認為下週聯儲局議息可能成為催化劑，令美債息出現較大幅度嘅突破，之後方向會更清楚。",
+   "level": "low",
+   "scope": "market",
+   "affects": [
+    {
+     "sym": "QQQ",
+     "dir": "mixed",
+     "why": "債息大升或者大跌，都會直接影響科技股估值"
+    },
+    {
+     "sym": "VOO",
+     "dir": "mixed",
+     "why": "議息結果會左右整體股市嘅借貸成本預期"
+    }
+   ],
+   "takeaway": "下週三議息前後，股市同債市都可能大郁，心理上要有準備。",
+   "found": "2026-10-24 01:00"
+  },
+  {
+   "time": "2026-10-22 23:00",
    "headline": "Meta 拖累 Oracle 等科技股信貸風險升",
    "source": "Investing.com",
    "url": "https://www.investing.com/analysis/meta-stock-selloff-exposes-the-cost-of-its-ai-spending-boom-200690103",
@@ -618,6 +720,29 @@
    ],
    "takeaway": "Oracle 嘅風險主要喺債務同 OpenAI 合約，留意評級機構會唔會降佢評級。",
    "found": "2026-10-23 09:29"
+  },
+  {
+   "time": "2026-10-22 22:30",
+   "headline": "晶片股普跌 台積電ADR周四跌3.2%",
+   "source": "TradingKey",
+   "url": "https://www.tradingkey.com/news/market-movers/262232613-market-movers-tsm-20261022",
+   "summary": "受行業逆風、獲利回吐同避險情緒拖累，台積電 ADR 周四跌約3.2%。不過佢上季收入仍然有467億美元，按年增長41%，基本面依然強勁。",
+   "level": "low",
+   "scope": "stock",
+   "affects": [
+    {
+     "sym": "TSM",
+     "dir": "mixed",
+     "why": "股價受 AI 情緒拖累，但業績增長仍然好強"
+    },
+    {
+     "sym": "NVDA",
+     "dir": "down",
+     "why": "同一個 AI 晶片板塊，同步受壓"
+    }
+   ],
+   "takeaway": "跌嘅原因主要係市場情緒，唔係業績轉差，唔使太驚，但短期會比較波動。",
+   "found": "2026-10-24 01:00"
   },
   {
    "time": "2026-10-22 22:30",

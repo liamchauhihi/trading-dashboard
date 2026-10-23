@@ -1,5 +1,5 @@
 {
- "generated": "2026-10-24T01:00+08:00",
+ "generated": "2026-10-24T04:45+08:00",
  "holdings": [
   "TSM",
   "TSLA",
@@ -11,36 +11,110 @@
   "NVDA"
  ],
  "claude_ok": true,
- "claude_at": "2026-10-24T01:00+08:00",
- "summary": "周五大市分化：道指跌約1%，但 Nasdaq 喺周四大跌之後企穩，科技股暫時冇再插。美債息回落到5%附近，市場仍然估聯儲局12月加息機會大約七至八成。AI 開支同資金嘅憂慮未散，你持有嘅晶片股（NVDA、TSM）同 ORCL 短期仍然會大上大落，下週三議息同 Google 業績係關鍵。",
+ "claude_at": "2026-10-24T04:45+08:00",
+ "summary": "美股周五個個指數都跌，道指跌 1.2%。主要原因有兩個：美伊衝突可能再升溫，美國油價升穿 100 美元；市場繼續擔心 AI 開支太大。標普同 Nasdaq 連跌兩個星期。你持有嘅 VOO 跟大市跌，科技股同 QQQ 就企得比較穩。台積電因為信貸評級升級逆市升。下星期三聯儲局議息，同日 Google 公布業績，係最大嘅焦點。",
  "items": [
   {
-   "time": "2026-10-24 00:20",
-   "headline": "午市道指跌1.1% Nasdaq轉升 科技股企穩",
-   "source": "Yahoo Finance",
-   "url": "https://finance.yahoo.com/markets/live/stock-market-today-friday-october-23-dow-sp-500-nasdaq-tesla-meta-093000521.html",
-   "summary": "周五午市道指跌約1.1%，標普500跌約0.2%，Nasdaq 微升0.1%。Tesla、Meta 喺前一日大跌之後回穩，布蘭特油價仍然喺約112美元嘅五個月高位。",
-   "level": "high",
+   "time": "2026-10-24 04:30",
+   "headline": "10年美債息周五回升至5%附近",
+   "source": "Kiplinger",
+   "url": "https://www.kiplinger.com/investing/stocks/dow-drops-652-points-as-oil-treasury-yields-rise-stock-market-today",
+   "summary": "10 年期美債息周四一度跌穿 5%，周五因為油價推高通脹預期，回升到 5% 附近，令借貸成本嘅擔心重新出現。",
+   "level": "medium",
    "scope": "market",
    "affects": [
     {
      "sym": "QQQ",
-     "dir": "mixed",
-     "why": "科技股喺周四急跌之後有買盤承接，但升幅好細，未算真正反彈"
+     "dir": "down",
+     "why": "債息高會壓低成長股估值"
+    },
+    {
+     "sym": "ORCL",
+     "dir": "down",
+     "why": "Oracle 借咗好多錢起數據中心，息口高對佢壓力特別大"
     },
     {
      "sym": "VOO",
      "dir": "down",
-     "why": "道指成份嘅藍籌股同金融股拖低大市，標普500微跌"
+     "why": "債息高會令股票冇咁吸引"
+    }
+   ],
+   "takeaway": "如果債息企喺 5% 以上，科技股可能好難大幅反彈。",
+   "found": "2026-10-24 04:45"
+  },
+  {
+   "time": "2026-10-24 04:00",
+   "headline": "道指周五跌653點 標普同Nasdaq連跌兩星期",
+   "source": "CNBC",
+   "url": "https://www.cnbc.com/2026/10/22/stock-market-today-live-update.html",
+   "summary": "道指跌 1.23% 收 52,215，標普 500 跌 0.52%，Nasdaq 跌 0.21%。油價同債息上升，大部分行業都跌。標普同 Nasdaq 連續第二個星期下跌。",
+   "level": "high",
+   "scope": "market",
+   "affects": [
+    {
+     "sym": "VOO",
+     "dir": "down",
+     "why": "VOO 追蹤標普 500，周五跟大市跌約 0.5%"
+    },
+    {
+     "sym": "QQQ",
+     "dir": "mixed",
+     "why": "周四大跌之後，科技股周五跌得少，QQQ 幾乎冇郁"
     },
     {
      "sym": "QQQM",
      "dir": "mixed",
-     "why": "同 QQQ 一樣追蹤 Nasdaq-100，走勢一樣"
+     "why": "同 QQQ 一樣追蹤 Nasdaq 100，走勢差唔多"
     }
    ],
-   "takeaway": "科技股暫時止跌，但仲未肯定見底。收市前仍然可能會變，留意最後收市數字。",
-   "found": "2026-10-24 01:00"
+   "takeaway": "大市未企穩。下星期議息同大型科技股業績可能令大市大上大落，心理上要有準備。",
+   "found": "2026-10-24 04:45"
+  },
+  {
+   "time": "2026-10-24 00:30",
+   "headline": "美國油價升穿100美元 擔心美伊衝突再升溫",
+   "source": "Yahoo Finance",
+   "url": "https://finance.yahoo.com/markets/live/stock-market-today-friday-october-23-dow-sp-500-nasdaq-tesla-meta-093000521.html",
+   "summary": "有報道指以色列可能策劃再襲擊伊朗，WTI 原油升穿每桶 100 美元，布蘭特油價大約 114 美元。油價高會推高通脹，令市場擔心聯儲局要加息。",
+   "level": "high",
+   "scope": "market",
+   "affects": [
+    {
+     "sym": "VOO",
+     "dir": "down",
+     "why": "油價高會增加企業成本，令消費者少咗錢使，拖低大市"
+    },
+    {
+     "sym": "QQQ",
+     "dir": "down",
+     "why": "通脹升溫令加息機會增加，高估值科技股最受壓"
+    },
+    {
+     "sym": "TSLA",
+     "dir": "mixed",
+     "why": "油價高可能令電動車更吸引，但經濟轉弱亦會影響買車意欲"
+    }
+   ],
+   "takeaway": "中東局勢係而家最大嘅風險，要留意油價有冇繼續升。",
+   "found": "2026-10-24 04:45"
+  },
+  {
+   "time": "2026-10-23 23:30",
+   "headline": "台積電獲穆迪升評至Aa2 股價逆市升1.5%",
+   "source": "Benzinga",
+   "url": "https://www.benzinga.com/markets/tech/26/10/62570114/whats-going-on-with-taiwan-semiconductor-stock-friday-5",
+   "summary": "穆迪將台積電嘅信貸評級由 Aa3 升到 Aa2，理由係佢喺先進晶片製造嘅龍頭地位、負債低同現金流強。台積電 ADR 周四急跌之後，周五反彈約 1.5%。",
+   "level": "medium",
+   "scope": "stock",
+   "affects": [
+    {
+     "sym": "TSM",
+     "dir": "up",
+     "why": "評級升級反映財務穩健，幫手止住周四嘅跌勢"
+    }
+   ],
+   "takeaway": "公司基本面冇變差，周四大跌主要係跟住晶片股一齊沽。",
+   "found": "2026-10-24 04:45"
   },
   {
    "time": "2026-10-23 23:30",
@@ -385,29 +459,6 @@
    "found": "2026-10-23 18:00"
   },
   {
-   "time": "2026-10-23 06:30",
-   "headline": "美股期貨喺大跌後回穩 變動唔大",
-   "source": "CNBC",
-   "url": "https://www.cnbc.com/2026/10/22/stock-market-today-live-update.html",
-   "summary": "尋晚科技股大跌之後，道指、標普期貨微升約 0.05%，Nasdaq 期貨微跌約 0.07%，暫時冇再急跌。",
-   "level": "medium",
-   "scope": "market",
-   "affects": [
-    {
-     "sym": "QQQ",
-     "dir": "mixed",
-     "why": "期貨平穩，代表暫時未見恐慌式拋售延續"
-    },
-    {
-     "sym": "VOO",
-     "dir": "mixed",
-     "why": "大市期貨接近平收"
-    }
-   ],
-   "takeaway": "期貨平穩唔代表已經見底，今晚開市後先睇清楚。",
-   "found": "2026-10-23 12:00"
-  },
-  {
    "time": "2026-10-23 05:30",
    "headline": "下週三聯儲局議息 Google、Microsoft同日公布業績",
    "source": "Charles Schwab",
@@ -524,6 +575,34 @@
   },
   {
    "time": "2026-10-23 04:00",
+   "headline": "Meta業績後急跌近7% 拖累科技股",
+   "source": "Yahoo Finance",
+   "url": "https://finance.yahoo.com/markets/live/stock-market-today-thursday-october-22-dow-sp-500-nasdaq-tesla-meta-112217857.html",
+   "summary": "Meta 公布季績，同時宣布一拆二，但市場擔心佢 AI 開支太大，股價周四跌近 7%，拖累成個科技板塊。",
+   "level": "medium",
+   "scope": "sector",
+   "affects": [
+    {
+     "sym": "GOOG",
+     "dir": "down",
+     "why": "Google 下星期三公布業績，市場會用同一個標準睇佢嘅 AI 開支"
+    },
+    {
+     "sym": "QQQ",
+     "dir": "down",
+     "why": "Meta 係 Nasdaq 100 大型成分股之一"
+    },
+    {
+     "sym": "NVDA",
+     "dir": "mixed",
+     "why": "大公司加大 AI 開支係 Nvidia 嘅收入來源，但市場開始質疑值唔值得"
+    }
+   ],
+   "takeaway": "Google 公布業績嗰陣，要留意佢嘅開支同雲端收入，股價可能好大上落。",
+   "found": "2026-10-24 04:45"
+  },
+  {
+   "time": "2026-10-23 04:00",
    "headline": "晶片股大跌 半導體指數跌逾6%",
    "source": "24/7 Wall St.",
    "url": "https://247wallst.com/investing/2026/10/22/chip-stocks-fall-as-supply-warning-deepens-ai-selloff-marvell-and-amd-sink-8-intel-drops-7/",
@@ -548,34 +627,6 @@
     }
    ],
    "takeaway": "今次係成個行業一齊跌，唔係單一公司出事；留意下星期 SK 海力士業績會唔會令情緒再轉差。",
-   "found": "2026-10-23 09:29"
-  },
-  {
-   "time": "2026-10-23 04:00",
-   "headline": "Nasdaq 跌2.6% 創6月以嚟最大跌幅",
-   "source": "Yahoo Finance",
-   "url": "https://finance.yahoo.com/markets/live/stock-market-today-thursday-october-22-dow-sp-500-nasdaq-tesla-meta-112217857.html",
-   "summary": "Nasdaq 跌 2.6%，收 26,008；標普 500 跌 1.2%，收 7,663；道指持平。有統計指 Nasdaq-100 嘅跌幅有約 93% 嚟自 AI 同晶片股。",
-   "level": "high",
-   "scope": "market",
-   "affects": [
-    {
-     "sym": "QQQ",
-     "dir": "down",
-     "why": "科技股佔比高，所以跌得比大市多，約 2.9%"
-    },
-    {
-     "sym": "QQQM",
-     "dir": "down",
-     "why": "同 QQQ 追蹤同一個指數，走勢一樣"
-    },
-    {
-     "sym": "VOO",
-     "dir": "down",
-     "why": "標普 500 跌 1.2%，因為分散啲，所以跌得少過 Nasdaq"
-    }
-   ],
-   "takeaway": "你嘅 ETF 同科技股持倉重疊好多，市況差嗰陣會一齊跌，要知道自己真正嘅風險有幾集中。",
    "found": "2026-10-23 09:29"
   },
   {
@@ -917,57 +968,6 @@
    ],
    "takeaway": "問題係供應唔夠，唔係冇人要；需求冇轉差，所以唔使當係 AI 需求見頂。",
    "found": "2026-10-23 09:29"
-  },
-  {
-   "time": "2026-10-22 04:05",
-   "headline": "Meta 業績後跌7% AI開支令現金流轉負",
-   "source": "CNBC",
-   "url": "https://www.cnbc.com/2026/10/22/meta-stock-q3-earnings-free-cash-flow.html",
-   "summary": "Meta 收入 646 億美元，好過預期，但將 2026 年資本開支下限上調至 1,350 億美元，季度自由現金流係負 21 億美元。佢個信貸違約掉期（CDS）創新高，股價跌約 7%。",
-   "level": "high",
-   "scope": "sector",
-   "affects": [
-    {
-     "sym": "GOOG",
-     "dir": "down",
-     "why": "市場擔心大科技公司 AI 開支太大、回報唔清楚，Google 下星期公佈業績都會被用同一把尺衡量"
-    },
-    {
-     "sym": "NVDA",
-     "dir": "mixed",
-     "why": "AI 開支多對晶片需求係好事，但市場擔心呢啲開支可唔可以長期維持"
-    },
-    {
-     "sym": "ORCL",
-     "dir": "down",
-     "why": "Oracle 都係靠借錢起數據中心，Meta 出事令佢嘅信貸風險再受關注"
-    }
-   ],
-   "takeaway": "依家市場唔再淨係睇收入，仲會睇 AI 開支同現金流；Google 業績會用同一個標準嚟睇。",
-   "found": "2026-10-23 09:29"
-  },
-  {
-   "time": "2026-10-22 03:00",
-   "headline": "普京提議特朗普、習近平三方峰會",
-   "source": "Reuters / Investing.com",
-   "url": "https://www.investing.com/news/commodities-news/putin-proposes-summit-with-trump-and-xi-to-discuss-ukraine-deal-wsj-says-4956250",
-   "summary": "據《華爾街日報》報道，普京提議 11 月 18–19 日喺深圳 APEC 期間同特朗普、習近平舉行三方峰會，傾烏克蘭問題。美方話特朗普未答應，但可能有興趣。",
-   "level": "low",
-   "scope": "market",
-   "affects": [
-    {
-     "sym": "TSM",
-     "dir": "mixed",
-     "why": "中美關係有任何變化，都會影響市場點睇台灣地緣風險"
-    },
-    {
-     "sym": "VOO",
-     "dir": "mixed",
-     "why": "如果傾到落去，可能有助紓緩地緣緊張同油價"
-    }
-   ],
-   "takeaway": "暫時只係提議，未成事，知道有呢件事就夠。",
-   "found": "2026-10-23 12:00"
   }
  ]
 }

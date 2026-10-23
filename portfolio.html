@@ -1,0 +1,435 @@
+<!doctype html>
+<html lang="zh-Hant">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>我的持倉</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Serif+TC:wght@600;700&family=Noto+Sans+TC:wght@400;500;700&family=JetBrains+Mono:wght@400;600&display=swap">
+<link rel="stylesheet" href="pages.css">
+<style>
+/* Layout: holdings editor (saved in this browser only) → analyse button → portfolio summary → one row per stock. */
+header.top nav { gap: 14px; }
+.ed td { padding: 6px 8px; }
+.ed input { font: inherit; font-size: 15px; padding: 6px 8px; border: 1px solid var(--line); border-radius: 6px; background: var(--bg);
+  color: var(--ink); width: 100%; min-width: 0; }
+.ed input.n { font-family: var(--font-num); text-align: right; }
+.ed input.sy { font-family: var(--font-num); font-weight: 600; text-transform: uppercase; width: 90px; }
+.ed input.bad { border-color: var(--loss); background: var(--loss-soft); }
+.ed .x { padding: 4px 10px; background: var(--surface); color: var(--loss); border-color: var(--line); }
+.saved { font-size: 13px; color: var(--gain); }
+.bar { display: flex; height: 28px; border-radius: 8px; overflow: hidden; border: 1px solid var(--line); }
+.bar span { display: block; height: 100%; background: var(--c); border-right: 2px solid var(--surface); min-width: 2px; }
+.barlegend { display: flex; flex-wrap: wrap; gap: 4px 14px; font-size: 13px; color: var(--muted); }
+.barlegend span::before { content: ""; display: inline-block; width: 10px; height: 10px; border-radius: 2px; background: var(--c);
+  margin-right: 6px; vertical-align: -1px; }
+.warns { margin: 0; padding-left: 20px; font-size: 14px; display: grid; gap: 4px; }
+.why td { background: var(--bg); white-space: normal; }
+.why ul { margin: 4px 0 8px; padding-left: 18px; font-size: 13.5px; }
+.why .act { font-size: 13.5px; margin: 0 0 6px; }
+button.mini { padding: 3px 10px; font-size: 12px; background: var(--surface); color: var(--accent); border-color: var(--accent); border-radius: 999px; }
+td .sub { display: block; font-size: 12px; color: var(--muted); }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header class="top">
+    <div>
+      <h1>我的持倉</h1>
+      <div class="sub">輸入你嘅股票同買入價 → 一次過分析晒：盈虧、止蝕止盈、200 天線、長短線評分、業績日</div>
+    </div>
+    <nav class="row"><a href="index.html">← 交易日誌</a><a href="analyzer.html">🔍 股票分析器</a><a href="events.html">📅 重要日子</a></nav>
+  </header>
+
+  <section>
+    <div class="sec-head"><h2>輸入持倉</h2><span class="saved" id="saved" aria-live="polite"></span></div>
+    <div class="note">只會儲存喺你呢部機嘅瀏覽器（唔會上載去網站）。換機或者清除瀏覽器資料會唔見，記得用「匯出」備份。同一隻股分幾次買可以分開幾行，計算時會自動合埋（平均成本）。</div>
+    <div class="table-wrap"><table class="ed">
+      <thead><tr><th>代號</th><th class="r">股數</th><th class="r">買入價（美元）</th><th>買入日期</th><th>備註</th><th></th></tr></thead>
+      <tbody id="edbody"></tbody>
+    </table></div>
+    <div class="row">
+      <button type="button" class="ghost" id="addrow">＋ 加一行</button>
+      <button type="button" class="ghost" id="loadbot">載入機械人記錄嘅持倉</button>
+      <button type="button" class="ghost" id="export">匯出備份</button>
+      <button type="button" class="ghost" id="importbtn">匯入</button>
+      <input type="file" id="importfile" accept=".json,application/json" hidden>
+      <button type="button" class="ghost" id="clearall" style="color:var(--loss)">全部清除</button>
+    </div>
+  </section>
+
+  <div class="search">
+    <div class="row">
+      <button type="button" id="go">📊 分析全部持倉</button>
+      <span class="note">每隻股用 1 次 Twelve Data 額度（每分鐘最多 8 次，多過 8 隻會自動等）；一個鐘內重複分析會用返舊數據。</span>
+    </div>
+    <details class="key" id="keybox">
+      <summary id="keysum">設定 Twelve Data API key</summary>
+      <div class="box">
+        <div class="note">同股票分析器共用同一個 key。key 只會儲存喺你呢部機嘅瀏覽器。冇 key？去 twelvedata.com 免費註冊 → API Keys。</div>
+        <div class="row">
+          <input type="password" id="key" placeholder="貼上你嘅 API key" aria-label="API key">
+          <button type="button" id="savekey">儲存</button>
+          <button type="button" class="ghost" id="clearkey">清除</button>
+        </div>
+      </div>
+    </details>
+    <div id="status" hidden></div>
+  </div>
+
+  <div id="out" hidden></div>
+
+  <footer>
+    只供學習參考，唔係投資建議。止蝕 −8%／+50% 賣一半／跌穿 200 天線係機械人用緊嘅「規則 B」；長短線評分同股票分析器一樣，係按規則自動計分。
+    價錢嚟自 Twelve Data，可能有幾分鐘延遲。
+  </footer>
+</div>
+
+<script src="analyzer_core.js"></script>
+<script>
+"use strict";
+const HOLDINGS = {"TSM": {"qty": 4, "cost": 427.263}, "TSLA": {"qty": 4, "cost": 367.43}, "QQQ": {"qty": 1.5407, "cost": 719.835}, "GOOG": {"qty": 3, "cost": 340.0}, "ORCL": {"qty": 7, "cost": 139.9}, "VOO": {"qty": 0.7921, "cost": 706.401}, "QQQM": {"qty": 1.851, "cost": 302.377}, "NVDA": {"qty": 2, "cost": 212.47}};
+const A = window.Analyzer;
+const $ = id => document.getElementById(id);
+const KEY_STORE = "ta_key", MY_STORE = "my_holdings", CACHE_PREFIX = "pf_cache:", CACHE_MIN = 60, BARS = 600;
+const PALETTE = ["#2F4FA8", "#18794E", "#C0661A", "#8A3FA0", "#B8860B", "#2A8A9A", "#C2362B", "#5A6577"];
+const OVERLAP = [["QQQ", "QQQM"], ["VOO", "SPY", "IVV", "SPLG"]];   // same index, different ticker
+
+const esc = s => String(s).replace(/[&<>"']/g, ch => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;" }[ch]));
+const ok = x => typeof x === "number" && isFinite(x);
+const f2 = (x, d = 2) => (ok(x) ? x.toLocaleString("en-US", { minimumFractionDigits: d, maximumFractionDigits: d }) : "—");
+const pct = (x, d = 1, sign = true) => (ok(x) ? (sign && x > 0 ? "+" : "") + (x * 100).toFixed(d) + "%" : "—");
+const cls = x => (ok(x) ? (x > 0 ? "gain" : x < 0 ? "loss" : "") : "");
+const money = x => (ok(x) ? (x < 0 ? "−$" : "$") + f2(Math.abs(x)) : "—");
+const store = {
+  get(k) { try { return localStorage.getItem(k); } catch (e) { return null; } },
+  set(k, v) { try { localStorage.setItem(k, v); return true; } catch (e) { return false; } },
+  del(k) { try { localStorage.removeItem(k); } catch (e) { /* ignore */ } },
+  keys() { try { return Object.keys(localStorage); } catch (e) { return []; } },
+};
+function status(html, kind) {
+  const el = $("status");
+  el.hidden = !html;
+  el.className = kind ? "msg " + kind : "msg";
+  el.innerHTML = html || "";
+}
+
+// ---------- API key (shared with the analyzer page) ----------
+function refreshKeyUI() {
+  const has = !!store.get(KEY_STORE);
+  $("keysum").textContent = has ? "API key 已儲存（撳呢度更改）" : "設定 Twelve Data API key（第一次用要設定）";
+  $("keybox").open = !has;
+}
+$("savekey").onclick = () => {
+  const k = $("key").value.trim();
+  if (!k) return status("請先貼上 API key。", "err");
+  if (!store.set(KEY_STORE, k)) return status("呢個瀏覽器唔俾儲存（可能係私密瀏覽模式），請用普通模式再試。", "err");
+  $("key").value = ""; refreshKeyUI(); status("已儲存 ✓ 而家可以撳「分析全部持倉」。");
+};
+$("clearkey").onclick = () => { store.del(KEY_STORE); refreshKeyUI(); status("已清除 API key。"); };
+
+// ---------- holdings editor ----------
+let list = [];
+const symOk = s => /^[A-Z][A-Z0-9.\-]{0,9}$/.test(s);
+const rowOk = r => symOk(r.sym) && r.qty > 0 && r.cost > 0;
+
+function fromBot() {
+  return Object.entries(HOLDINGS || {}).map(([sym, h]) => ({ sym, qty: h.qty, cost: h.cost, date: "", note: "" }));
+}
+function loadList() {
+  try {
+    const s = JSON.parse(store.get(MY_STORE) || "null");
+    if (s && Array.isArray(s.list)) return s.list;
+  } catch (e) { /* bad save: start again */ }
+  return null;
+}
+function save() {
+  const okSave = store.set(MY_STORE, JSON.stringify({ v: 1, saved: new Date().toISOString(), list }));
+  $("saved").textContent = okSave ? "已自動儲存 ✓" : "⚠️ 儲存唔到（私密瀏覽模式？）";
+}
+function cleanNum(v) { const x = parseFloat(String(v).replace(/[$,\s]/g, "")); return isFinite(x) ? x : NaN; }
+
+function renderEditor() {
+  $("edbody").innerHTML = list.length ? list.map((r, i) =>
+    "<tr>" +
+    '<td><input class="sy' + (symOk(r.sym) ? "" : " bad") + '" data-i="' + i + '" data-f="sym" value="' + esc(r.sym) + '" placeholder="TSLA" aria-label="代號" maxlength="10" spellcheck="false"></td>' +
+    '<td class="r"><input class="n' + (r.qty > 0 ? "" : " bad") + '" style="width:90px" inputmode="decimal" data-i="' + i + '" data-f="qty" value="' + (ok(r.qty) ? r.qty : "") + '" aria-label="股數"></td>' +
+    '<td class="r"><input class="n' + (r.cost > 0 ? "" : " bad") + '" style="width:110px" inputmode="decimal" data-i="' + i + '" data-f="cost" value="' + (ok(r.cost) ? r.cost : "") + '" aria-label="買入價"></td>' +
+    '<td><input type="date" data-i="' + i + '" data-f="date" value="' + esc(r.date || "") + '" aria-label="買入日期" style="width:150px"></td>' +
+    '<td><input data-i="' + i + '" data-f="note" value="' + esc(r.note || "") + '" placeholder="例如：長線、等業績" aria-label="備註" style="min-width:140px"></td>' +
+    '<td><button type="button" class="x" data-del="' + i + '" aria-label="刪除 ' + esc(r.sym) + '">刪除</button></td></tr>').join("")
+    : '<tr><td colspan="6" class="note" style="white-space:normal">未有持倉。撳「＋ 加一行」輸入，或者「載入機械人記錄嘅持倉」。</td></tr>';
+}
+$("edbody").addEventListener("input", ev => {
+  const el = ev.target, i = +el.dataset.i, f = el.dataset.f;
+  if (!f || !list[i]) return;
+  let v = el.value;
+  if (f === "sym") { v = v.trim().toUpperCase(); el.classList.toggle("bad", !symOk(v)); }
+  else if (f === "qty" || f === "cost") { v = cleanNum(v); el.classList.toggle("bad", !(v > 0)); }
+  list[i][f] = v;
+  save();
+});
+$("edbody").addEventListener("click", ev => {
+  const b = ev.target.closest("[data-del]");
+  if (!b) return;
+  list.splice(+b.dataset.del, 1); save(); renderEditor();
+});
+$("addrow").onclick = () => {
+  list.push({ sym: "", qty: NaN, cost: NaN, date: "", note: "" }); renderEditor();
+  const rows = document.querySelectorAll("#edbody .sy"); rows[rows.length - 1].focus();
+};
+$("loadbot").onclick = () => { list = fromBot(); save(); renderEditor(); status("已載入機械人記錄嘅 " + list.length + " 隻持倉（取代咗之前嘅）。"); };
+$("export").onclick = () => {
+  const blob = new Blob([JSON.stringify({ v: 1, saved: new Date().toISOString(), list }, null, 1)], { type: "application/json" });
+  const a = document.createElement("a");
+  a.href = URL.createObjectURL(blob); a.download = "my_holdings_" + new Date().toISOString().slice(0, 10) + ".json";
+  document.body.appendChild(a); a.click(); a.remove(); setTimeout(() => URL.revokeObjectURL(a.href), 1000);
+};
+$("importbtn").onclick = () => $("importfile").click();
+$("importfile").onchange = async ev => {
+  const file = ev.target.files[0]; ev.target.value = "";
+  if (!file) return;
+  try {
+    const j = JSON.parse(await file.text());
+    // accepts this page's export, a plain array, or the bot's my_portfolio.json format
+    const raw = Array.isArray(j) ? j : Array.isArray(j.list) ? j.list :
+      j.holdings ? Object.entries(j.holdings).map(([sym, h]) => ({ sym, qty: h.qty, cost: h.cost })) : null;
+    if (!raw) throw new Error("格式唔啱");
+    const got = raw.map(r => ({ sym: String(r.sym || "").trim().toUpperCase(), qty: cleanNum(r.qty), cost: cleanNum(r.cost),
+                                date: String(r.date || "").slice(0, 10), note: String(r.note || "").slice(0, 200) })).filter(rowOk);
+    if (!got.length) throw new Error("搵唔到有效嘅持倉");
+    list = got; save(); renderEditor();
+    status("已匯入 " + got.length + " 行持倉（取代咗之前嘅）。");
+  } catch (e) { status("匯入失敗：" + esc(e.message) + "。請揀返用「匯出備份」整出嚟嘅 .json 檔。", "err"); }
+};
+let clearArmed = null;
+$("clearall").onclick = () => {
+  if (!clearArmed) {
+    $("clearall").textContent = "再撳一次確認清除";
+    clearArmed = setTimeout(() => { clearArmed = null; $("clearall").textContent = "全部清除"; }, 4000);
+    return;
+  }
+  clearTimeout(clearArmed); clearArmed = null; $("clearall").textContent = "全部清除";
+  list = []; save(); renderEditor(); $("out").hidden = true; status("已清除所有持倉。");
+};
+
+// one line per symbol: several buys of the same stock become one with the average cost
+function positions() {
+  const out = {};
+  for (const r of list) {
+    if (!rowOk(r)) continue;
+    const o = out[r.sym] || (out[r.sym] = { sym: r.sym, qty: 0, cost: 0, lots: 0, notes: [] });
+    o.cost = (o.cost * o.qty + r.cost * r.qty) / (o.qty + r.qty); o.qty += r.qty; o.lots++;
+    if (r.note) o.notes.push(r.note);
+  }
+  return Object.values(out);
+}
+
+// ---------- data (rate limited: free plan = 8 calls a minute) ----------
+const ERR = {
+  401: "API key 唔啱，請喺「設定 API key」重新貼過。",
+  400: "搵唔到呢個股票代號（只支援美股）。",
+  404: "搵唔到呢個股票代號（只支援美股）。",
+};
+const calls = [];
+const wait = ms => new Promise(r => setTimeout(r, ms));
+async function slot(progress) {
+  for (;;) {
+    while (calls.length && Date.now() - calls[0] > 61000) calls.shift();
+    if (calls.length < 8) { calls.push(Date.now()); return; }
+    const s = Math.ceil((61000 - (Date.now() - calls[0])) / 1000);
+    progress("等緊免費額度（每分鐘 8 次），仲有 " + s + " 秒…");
+    await wait(1000);
+  }
+}
+async function fetchDaily(sym, progress) {
+  const ck = CACHE_PREFIX + sym;
+  try {
+    const c = JSON.parse(store.get(ck) || "null");
+    if (c && Date.now() - c.at < CACHE_MIN * 60000) return c;
+  } catch (e) { /* bad cache: refetch */ }
+  const url = "https://api.twelvedata.com/time_series?symbol=" + encodeURIComponent(sym) + "&interval=1day&outputsize=" + BARS +
+              "&apikey=" + encodeURIComponent(store.get(KEY_STORE));
+  for (let attempt = 0; ; attempt++) {
+    await slot(progress);
+    let j;
+    try { j = await (await fetch(url)).json(); }
+    catch (e) { throw new Error("連唔到數據伺服器"); }
+    if (j.code === 429 && attempt === 0) {   // quota hit (maybe the analyzer used some): wait a minute, try once more
+      for (let s = 61; s > 0; s--) { progress("免費額度用完，等 " + s + " 秒再試…"); await wait(1000); }
+      continue;
+    }
+    if (j.status === "error" || !j.values) throw new Error(ERR[j.code] || (j.code === 429 ? "免費額度用完" : j.message || "數據錯誤"));
+    const out = { at: Date.now(), bars: j.values.map(v => ({ t: v.datetime, o: +v.open, h: +v.high, l: +v.low, c: +v.close, v: +v.volume || 0 })).reverse() };
+    for (const k of store.keys()) if (k.startsWith(CACHE_PREFIX) && !list.some(r => CACHE_PREFIX + r.sym === k)) store.del(k);
+    if (!store.set(ck, JSON.stringify(out))) {   // storage full: drop the analyzer's big cache and try again
+      for (const k of store.keys()) if (k.startsWith("ta_cache:")) store.del(k);
+      store.set(ck, JSON.stringify(out));
+    }
+    return out;
+  }
+}
+
+let EVENTS = null;
+async function loadEvents() {
+  if (EVENTS !== null) return EVENTS;
+  try { EVENTS = await (await fetch("events.json", { cache: "no-cache" })).json(); }
+  catch (e) { EVENTS = {}; }
+  return EVENTS;
+}
+function nextEarnings(sym) {
+  const today = new Date().toISOString().slice(0, 10);
+  const ev = (EVENTS && EVENTS.events || []).find(e => e.type === "earnings" && (e.sym || "").toUpperCase() === sym && e.date >= today);
+  return ev ? ev.date : "";
+}
+const daysTo = d => Math.round((new Date(d + "T00:00:00") - new Date(new Date().toDateString())) / 86400000);
+
+// ---------- analyse ----------
+let running = false;
+$("go").onclick = async () => {
+  if (running) return;
+  const pos = positions();
+  if (!pos.length) return status("請先輸入最少一隻持倉（代號、股數、買入價都要填）。", "err");
+  if (!store.get(KEY_STORE)) { $("keybox").open = true; return status("第一次用要先設定 Twelve Data API key（下面）。", "err"); }
+  running = true; $("go").disabled = true;
+  const res = [], fails = [];
+  await loadEvents();
+  try {
+    for (const [n, p] of pos.entries()) {
+      const progress = msg => status('<span class="spin"></span>' + (n + 1) + "/" + pos.length + " " + esc(p.sym) + "：" + esc(msg));
+      progress("攞緊數據…");
+      try {
+        const d = await fetchDaily(p.sym, progress);
+        if (d.bars.length < 260) throw new Error("數據唔夠一年");
+        const R = A.analyze(d.bars, null);
+        res.push(Object.assign({}, p, { bars: d.bars, R, V: A.verdicts(d.bars, R) }));
+      } catch (e) {
+        if (/API key/.test(e.message)) throw e;
+        fails.push(p.sym + "（" + e.message + "）");
+      }
+      await wait(10);
+    }
+    render(res);
+    status(fails.length ? "⚠️ 以下分析唔到：" + esc(fails.join("、")) : "");
+  } catch (e) { status(esc(e.message), "err"); }
+  finally { running = false; $("go").disabled = false; }
+};
+
+function render(res) {
+  if (!res.length) { $("out").hidden = true; return; }
+  for (const p of res) {
+    const I = p.R.I, e = p.bars.length - 1;
+    p.c = I.c[e]; p.prev = I.c[e - 1]; p.ma200 = I.ma200[e]; p.date = p.bars[e].t;
+    p.value = p.qty * p.c; p.invested = p.qty * p.cost; p.pl = p.value - p.invested; p.plPct = p.c / p.cost - 1;
+    p.dayPl = p.qty * (p.c - p.prev); p.stop = p.cost * 0.92; p.half = p.cost * 1.5;
+    p.earn = nextEarnings(p.sym);
+  }
+  const total = res.reduce((s, p) => s + p.value, 0), invested = res.reduce((s, p) => s + p.invested, 0);
+  const dayPl = res.reduce((s, p) => s + p.dayPl, 0);
+  res.sort((a, b) => b.value - a.value);
+  res.forEach((p, i) => { p.w = p.value / total; p.color = PALETTE[i % PALETTE.length]; });
+
+  const html = [];
+  html.push('<section><div class="sec-head"><h2>組合總覽</h2><span class="note">價錢日期 ' + esc(res[0].date) + "</span></div>" +
+    '<div class="tiles">' +
+    tile("總市值", "$" + f2(total, 0), res.length + " 隻股") +
+    tile("總成本", "$" + f2(invested, 0), "") +
+    tile("總盈虧", '<span class="' + cls(total - invested) + '">' + money(total - invested) + "</span>", '<span class="' + cls(total - invested) + '">' + pct(total / invested - 1) + "</span>") +
+    tile("今日", '<span class="' + cls(dayPl) + '">' + money(dayPl) + "</span>", '<span class="' + cls(dayPl) + '">' + pct(dayPl / (total - dayPl), 2) + "</span>") +
+    "</div>" +
+    '<div class="panel"><h3>每隻佔幾多</h3><div class="bar" role="img" aria-label="持倉比重">' +
+    res.map(p => '<span style="--c:' + p.color + ";width:" + (p.w * 100).toFixed(2) + '%" title="' + esc(p.sym) + " " + pct(p.w, 1, false) + '"></span>').join("") +
+    '</div><div class="barlegend">' + res.map(p => '<span style="--c:' + p.color + '">' + esc(p.sym) + " " + pct(p.w, 1, false) + "</span>").join("") + "</div>" +
+    "<h3>要留意</h3>" + warnings(res) + "</div></section>");
+
+  html.push('<section><div class="sec-head"><h2>逐隻分析</h2><span class="note">撳代號 → 用股票分析器睇晒全部（止蝕止盈會用你嘅買入價計）</span></div>' +
+    '<div class="table-wrap"><table><thead><tr><th>代號</th><th class="r">現價／今日</th><th class="r">股數 × 成本</th><th class="r">市值／佔比</th>' +
+    '<th class="r">盈虧</th><th class="r">止蝕 −8%</th><th class="r">+50% 賣一半</th><th class="r">200 天線</th><th>長線</th><th>短線</th>' +
+    "<th>突破形態</th><th>業績日</th><th>規則 B 建議</th><th></th></tr></thead><tbody>" +
+    res.map((p, i) => stockRow(p, i)).join("") + "</tbody></table></div></section>");
+  $("out").innerHTML = html.join("");
+  $("out").hidden = false;
+  for (const b of document.querySelectorAll("[data-why]")) b.onclick = () => {
+    const r = $("why" + b.dataset.why), open = r.hidden;
+    r.hidden = !open; b.setAttribute("aria-expanded", open); b.textContent = open ? "收埋" : "理由";
+  };
+}
+
+function tile(k, v, s) { return '<div class="tile"><span class="k">' + k + '</span><span class="v">' + v + '</span><span class="s">' + s + "</span></div>"; }
+const TAG = { 偏好: "gain", 偏淡: "loss", 中性: "plain" };
+const tagChip = v => '<span class="chip ' + TAG[v.tag] + '">' + v.tag + " " + (v.score > 0 ? "+" : "") + v.score + "</span>";
+
+function ruleB(p) {
+  if (p.c <= p.stop) return ["⚠️ 跌穿成本 −8% 止蝕位：規則 B 應該全部賣出", "loss"];
+  if (p.c < p.ma200) return ["📉 跌穿 200 天線：規則 B 應該考慮賣出", "loss"];
+  if (p.c >= p.half) return ["✅ 已到 +50%：規則 B 賣一半鎖定利潤", "gain"];
+  if (p.stop / p.c - 1 > -0.03) return ["⚠️ 離止蝕位唔夠 3%，留意", "warn"];
+  return ["持有（趨勢向上，未到止蝕／止盈）", ""];
+}
+
+function stockRow(p, i) {
+  const [act, actCls] = ruleB(p);
+  const bo = p.R.patterns.filter(x => x.status === "breakout");
+  const dt = p.earn ? daysTo(p.earn) : null;
+  const sd = p.stop / p.c - 1, hd = p.half / p.c - 1, v2 = p.c / p.ma200 - 1;
+  return "<tr>" +
+    '<td><a href="analyzer.html#' + encodeURIComponent(p.sym) + '" style="font-family:var(--font-num);font-weight:700;border-left:4px solid ' + p.color + ';padding-left:8px">' + esc(p.sym) + "</a>" +
+      (p.lots > 1 ? '<span class="sub">' + p.lots + " 次買入合併</span>" : "") + "</td>" +
+    '<td class="r num">' + f2(p.c) + '<span class="sub ' + cls(p.c - p.prev) + '">' + pct(p.c / p.prev - 1, 2) + "</span></td>" +
+    '<td class="r num">' + (+p.qty.toFixed(4)) + " × " + f2(p.cost) + "</td>" +
+    '<td class="r num">$' + f2(p.value, 0) + '<span class="sub">' + pct(p.w, 1, false) + "</span></td>" +
+    '<td class="r num ' + cls(p.pl) + '">' + money(p.pl) + '<span class="sub ' + cls(p.pl) + '">' + pct(p.plPct) + "</span></td>" +
+    '<td class="r num">' + f2(p.stop) + '<span class="sub ' + (sd > -0.03 ? "loss" : "") + '">' + (p.c <= p.stop ? "已跌穿" : "距離 " + pct(sd)) + "</span></td>" +
+    '<td class="r num">' + f2(p.half) + '<span class="sub">' + (p.c >= p.half ? "✅ 已到" : "距離 " + pct(hd)) + "</span></td>" +
+    '<td class="r num ' + cls(v2) + '">' + f2(p.ma200) + '<span class="sub ' + cls(v2) + '">' + (v2 >= 0 ? "📈 高 " : "📉 低 ") + pct(Math.abs(v2), 1, false) + "</span></td>" +
+    "<td>" + tagChip(p.V.long) + "</td><td>" + tagChip(p.V.short) + "</td>" +
+    "<td>" + (bo.length ? bo.map(x => '<span class="chip ' + (x.dir > 0 ? "gain" : "loss") + '">' + esc(A.PATTERN_NAMES[x.key]) + (x.dir > 0 ? " ↑" : " ↓") + "</span>").join(" ") : '<span class="note">冇</span>') + "</td>" +
+    "<td>" + (p.earn ? '<a href="events.html#' + encodeURIComponent(p.sym) + '" class="num">' + esc(p.earn.slice(5)) + "</a>" +
+      '<span class="sub ' + (dt <= 7 ? "warn" : "") + '">' + (dt <= 0 ? "今日" : dt + " 日後") + "</span>" : '<span class="note">—</span>') + "</td>" +
+    '<td class="wrap-cell ' + actCls + '" style="min-width:180px">' + act + (dt !== null && dt <= 7 ? "<br>📅 一星期內公佈業績，波動會大" : "") + "</td>" +
+    '<td><button type="button" class="mini" data-why="' + i + '" aria-expanded="false" aria-controls="why' + i + '">理由</button></td></tr>' +
+    '<tr class="why" id="why' + i + '" hidden><td colspan="14">' + whyBlock(p) + "</td></tr>";
+}
+
+function whyBlock(p) {
+  const part = (title, v) => "<b>" + title + " " + tagChip(v) + "</b><ul>" +
+    v.items.map(x => "<li>" + esc(x.txt) + ' <span class="note num">' + (x.pts > 0 ? "+" : "") + x.pts + "</span></li>").join("") +
+    '</ul><p class="act">👉 ' + esc(v.act) + "</p>";
+  return '<div class="panels">' + '<div>' + part("長線（幾個月）", p.V.long) + "</div><div>" + part("短線（幾日至幾星期）", p.V.short) + "</div></div>" +
+    (p.notes.length ? '<p class="note">你嘅備註：' + esc(p.notes.join("；")) + "</p>" : "");
+}
+
+function warnings(res) {
+  const W = [];
+  for (const p of res) if (p.w > 0.25) W.push("⚠️ <b>" + esc(p.sym) + "</b> 佔咗 " + pct(p.w, 0, false) + "，單一隻股超過 25%，佢一跌成個組合都會受傷。");
+  const top3 = res.slice(0, 3).reduce((s, p) => s + p.w, 0);
+  if (res.length > 3 && top3 > 0.6) W.push("⚠️ 最大 3 隻（" + res.slice(0, 3).map(p => esc(p.sym)).join("、") + "）合共佔 " + pct(top3, 0, false) + "，比較集中。");
+  const syms = res.map(p => p.sym);
+  for (const g of OVERLAP) {
+    const have = g.filter(s => syms.includes(s));
+    if (have.length > 1) W.push("ℹ️ " + have.join(" 同 ") + " 追蹤同一個指數，等於重複持有同一樣嘢（唔係分散）。");
+  }
+  const etf = syms.filter(s => ["QQQ", "QQQM", "VOO", "SPY", "IVV", "SPLG"].includes(s));
+  const mega = syms.filter(s => ["NVDA", "AAPL", "MSFT", "GOOG", "GOOGL", "AMZN", "META", "AVGO", "TSLA"].includes(s));
+  if (etf.length && mega.length) W.push("ℹ️ " + etf.join("、") + " 入面已經有大量 " + mega.join("、") + "，再單獨持有呢啲股，實際集中喺美國大型科技股嘅比例會再高啲。");
+  const below = res.filter(p => p.c < p.ma200);
+  W.push(below.length ? "📉 " + below.length + " 隻跌穿 200 天線：" + below.map(p => esc(p.sym)).join("、") + "（規則 B 考慮賣出）。"
+                      : "📈 全部持倉都喺 200 天線之上，長期趨勢健康。");
+  const hit = res.filter(p => p.c <= p.stop);
+  if (hit.length) W.push("⚠️ 跌穿成本 −8% 止蝕位：" + hit.map(p => esc(p.sym)).join("、") + "。");
+  const soon = res.filter(p => p.earn && daysTo(p.earn) <= 14);
+  if (soon.length) W.push("📅 兩星期內公佈業績：" + soon.map(p => esc(p.sym) + "（" + p.earn.slice(5) + "）").join("、") + "，業績前後股價通常郁得大。");
+  return '<ul class="warns">' + W.map(w => "<li>" + w + "</li>").join("") + "</ul>";
+}
+
+// ---------- start ----------
+refreshKeyUI();
+const savedList = loadList();
+if (savedList) list = savedList.map(r => Object.assign({ date: "", note: "" }, r));
+else if (HOLDINGS) { list = fromBot(); save(); $("saved").textContent = "已預先載入機械人記錄嘅持倉，可以直接改"; }
+renderEditor();
+loadEvents();
+</script>
+</body>
+</html>

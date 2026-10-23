@@ -407,6 +407,59 @@ function exitLevels(I, lv, end, entry) {
   return rows;
 }
 
+// ---------- rule-based verdict (long term / short term score with reasons) ----------
+const okN = x => typeof x === "number" && isFinite(x);
+const f2 = x => (okN(x) ? x.toLocaleString("en-US", { minimumFractionDigits: 2, maximumFractionDigits: 2 }) : "—");
+const pct = x => (okN(x) ? (x > 0 ? "+" : "") + (x * 100).toFixed(1) + "%" : "—");
+
+function verdicts(d, R) {
+  const I = R.I, e = d.length - 1, c = I.c[e], a = I.atr[e];
+  const L = [], S = [];
+  const add = (arr, pts, txt) => arr.push({ pts, txt });
+  // long term
+  if (c > I.ma200[e]) add(L, 2, "股價高過 200 天線（" + f2(I.ma200[e]) + "），長期趨勢向上");
+  else add(L, -2, "股價低過 200 天線（" + f2(I.ma200[e]) + "），長期趨勢向下");
+  if (I.ma50[e] > I.ma200[e]) add(L, 1, "50 天線喺 200 天線之上（金叉狀態）");
+  else add(L, -1, "50 天線喺 200 天線之下（死叉狀態）");
+  const slope = I.ma200[e] / I.ma200[e - 20] - 1;
+  if (slope > 0.005) add(L, 1, "200 天線仲向上斜（過去 20 日 " + pct(slope) + "）");
+  else if (slope < -0.005) add(L, -1, "200 天線向下斜（過去 20 日 " + pct(slope) + "）");
+  let hi52 = -Infinity; for (let i = Math.max(0, e - 251); i <= e; i++) hi52 = Math.max(hi52, d[i].h);
+  const off = c / hi52 - 1;
+  if (off < -0.3) add(L, -1, "距離一年高位 " + pct(off) + "，跌咗好多");
+  else if (off > -0.05) add(L, 1, "接近一年高位（" + pct(off) + "），強勢");
+  // short term
+  if (I.macd[e] > I.signal[e]) add(S, 1, "MACD 喺訊號線之上，短線動力向上");
+  else add(S, -1, "MACD 喺訊號線之下，短線動力向下");
+  if (c > I.ma20[e]) add(S, 1, "股價高過 20 天線"); else add(S, -1, "股價低過 20 天線");
+  const r14 = I.rsi14[e], r2 = I.rsi2[e];
+  if (r14 > 70) add(S, -1, "RSI(14) " + r14.toFixed(0) + "，超買，追高要小心");
+  else if (r14 < 30) add(S, 1, "RSI(14) " + r14.toFixed(0) + "，超賣，有機會反彈");
+  if (r2 < 10 && c > I.ma200[e]) add(S, 2, "RSI(2) " + r2.toFixed(0) + " 而且喺 200 天線之上 → 機械人 RSI(2) 策略嘅買入訊號");
+  else if (r2 > 90) add(S, -1, "RSI(2) " + r2.toFixed(0) + "，短線升得急，容易回吐");
+  if (c < I.bbLo[e]) add(S, 1, "跌穿布林下軌，短線偏離太遠，可能反彈");
+  else if (c > I.bbUp[e]) add(S, -1, "升穿布林上軌，短線偏離太遠");
+  const s1 = R.levels.support[0], r1 = R.levels.resistance[0];
+  if (r1 && r1.price - c < a) add(S, -1, "上面 " + f2(r1.price) + " 有阻力，距離唔夠 1 個 ATR");
+  if (s1 && c - s1.price < a) add(S, 1, "下面 " + f2(s1.price) + " 有支持，止蝕位近");
+  for (const p of R.patterns) {
+    const name = PATTERN_NAMES[p.key];
+    if (p.status === "breakout") add(S, 2 * p.dir, name + (p.dir > 0 ? "向上突破" : "向下跌穿") + "（目標 " + f2(p.target) + "）");
+    else if (p.dir) add(S, 0, "形成緊" + name + "，未突破（等確認）");
+  }
+  const sum = arr => arr.reduce((s, x) => s + x.pts, 0);
+  const tag = (s, hi, lo) => (s >= hi ? "偏好" : s <= lo ? "偏淡" : "中性");
+  const ls = sum(L), ss = sum(S), lt = tag(ls, 3, -2), st = tag(ss, 2, -2);
+  const ex = Object.fromEntries(R.exits.map(x => [x.id, x]));
+  const actL = { 偏好: "趨勢向上：可以考慮分段買入或者繼續持有。止蝕參考 " + f2(ex.pct.stop) + "（−8%）或者跌穿 200 天線 " + f2(I.ma200[e]) + " 先走。",
+                 中性: "訊號唔一致：已有就持有、唔急住加；想買可以等股價企穩 200 天線、或者跌到支持位先分段入。",
+                 偏淡: "長期趨勢弱：唔建議新買入；手上有嘅話考慮減持，等重新升返 200 天線之上先再考慮。" }[lt];
+  const actS = { 偏好: "短線可以考慮：止蝕 " + f2(ex.atr_short.stop) + "（−1 ATR），第一目標 " + f2(ex.atr_short.tp1) + "。",
+                 中性: "短線冇明確方向，觀望為主，等突破或者回調到支持位。",
+                 偏淡: "短線偏弱：唔好追入；短炒等 RSI(2) 超賣或者企穩支持位先考慮。" }[st];
+  return { long: { tag: lt, score: ls, items: L, act: actL }, short: { tag: st, score: ss, items: S, act: actS } };
+}
+
 // ---------- everything for one stock ----------
 function analyze(daily, intra) {
   const I = indicators(daily), n = daily.length, end = n - 1;
@@ -421,7 +474,7 @@ function analyze(daily, intra) {
 }
 
 const api = { COST, FWD, PATTERN_NAMES, STRATEGIES, sma, ema, rsi, atr, indicators, pivots, levels,
-              detectPatterns, patternHistory, runBacktest, strategies, vwapStudy, exitLevels, analyze };
+              detectPatterns, patternHistory, runBacktest, strategies, vwapStudy, exitLevels, analyze, verdicts };
 if (typeof module !== "undefined" && module.exports) module.exports = api;
 else root.Analyzer = api;
 })(this);

@@ -176,7 +176,7 @@ footer { color: var(--faint); font-size: 12px; border-top: 1px solid var(--line)
       <h1>股票分析器</h1>
       <div class="sub">輸入美股代號 → 自動計晒趨勢、形態、策略回測、止盈止蝕同建議</div>
     </div>
-    <a href="index.html">← 返回交易日誌</a>
+    <nav class="row"><a href="index.html">← 交易日誌</a><a href="portfolio.html">💼 我的持倉</a><a href="events.html">📅 重要日子</a></nav>
   </header>
 
   <div class="search">
@@ -228,6 +228,24 @@ const store = {
   del(k) { try { localStorage.removeItem(k); } catch (e) { /* ignore */ } },
   keys() { try { return Object.keys(localStorage); } catch (e) { return []; } },
 };
+
+// holdings typed on the 我的持倉 page (this browser only) win over the list baked in from my_portfolio.json
+function loadHoldings() {
+  try {
+    const s = JSON.parse(store.get("my_holdings") || "null");
+    if (s && Array.isArray(s.list) && s.list.length) {
+      const out = {};
+      for (const r of s.list) {
+        if (!(r.qty > 0 && r.cost > 0)) continue;
+        const o = out[r.sym] || (out[r.sym] = { qty: 0, cost: 0 });
+        o.cost = (o.cost * o.qty + r.cost * r.qty) / (o.qty + r.qty); o.qty += r.qty;
+      }
+      return out;
+    }
+  } catch (e) { /* bad saved list: fall back */ }
+  return HOLDINGS || {};
+}
+const HOLD = loadHoldings();
 
 function status(html, kind) {
   const el = $("status");
@@ -318,60 +336,11 @@ async function run(raw) {
   } finally { $("go").disabled = false; }
 }
 
-// ---------- rule-based verdict ----------
-function verdicts(sym, d, R) {
-  const I = R.I, e = d.length - 1, c = I.c[e], a = I.atr[e];
-  const L = [], S = [];
-  const add = (arr, pts, txt) => arr.push({ pts, txt });
-  // long term
-  if (c > I.ma200[e]) add(L, 2, "股價高過 200 天線（" + f2(I.ma200[e]) + "），長期趨勢向上");
-  else add(L, -2, "股價低過 200 天線（" + f2(I.ma200[e]) + "），長期趨勢向下");
-  if (I.ma50[e] > I.ma200[e]) add(L, 1, "50 天線喺 200 天線之上（金叉狀態）");
-  else add(L, -1, "50 天線喺 200 天線之下（死叉狀態）");
-  const slope = I.ma200[e] / I.ma200[e - 20] - 1;
-  if (slope > 0.005) add(L, 1, "200 天線仲向上斜（過去 20 日 " + pct(slope) + "）");
-  else if (slope < -0.005) add(L, -1, "200 天線向下斜（過去 20 日 " + pct(slope) + "）");
-  let hi52 = -Infinity; for (let i = Math.max(0, e - 251); i <= e; i++) hi52 = Math.max(hi52, d[i].h);
-  const off = c / hi52 - 1;
-  if (off < -0.3) add(L, -1, "距離一年高位 " + pct(off) + "，跌咗好多");
-  else if (off > -0.05) add(L, 1, "接近一年高位（" + pct(off) + "），強勢");
-  // short term
-  if (I.macd[e] > I.signal[e]) add(S, 1, "MACD 喺訊號線之上，短線動力向上");
-  else add(S, -1, "MACD 喺訊號線之下，短線動力向下");
-  if (c > I.ma20[e]) add(S, 1, "股價高過 20 天線"); else add(S, -1, "股價低過 20 天線");
-  const r14 = I.rsi14[e], r2 = I.rsi2[e];
-  if (r14 > 70) add(S, -1, "RSI(14) " + r14.toFixed(0) + "，超買，追高要小心");
-  else if (r14 < 30) add(S, 1, "RSI(14) " + r14.toFixed(0) + "，超賣，有機會反彈");
-  if (r2 < 10 && c > I.ma200[e]) add(S, 2, "RSI(2) " + r2.toFixed(0) + " 而且喺 200 天線之上 → 機械人 RSI(2) 策略嘅買入訊號");
-  else if (r2 > 90) add(S, -1, "RSI(2) " + r2.toFixed(0) + "，短線升得急，容易回吐");
-  if (c < I.bbLo[e]) add(S, 1, "跌穿布林下軌，短線偏離太遠，可能反彈");
-  else if (c > I.bbUp[e]) add(S, -1, "升穿布林上軌，短線偏離太遠");
-  const s1 = R.levels.support[0], r1 = R.levels.resistance[0];
-  if (r1 && r1.price - c < a) add(S, -1, "上面 " + f2(r1.price) + " 有阻力，距離唔夠 1 個 ATR");
-  if (s1 && c - s1.price < a) add(S, 1, "下面 " + f2(s1.price) + " 有支持，止蝕位近");
-  for (const p of R.patterns) {
-    const name = A.PATTERN_NAMES[p.key];
-    if (p.status === "breakout") add(S, 2 * p.dir, name + (p.dir > 0 ? "向上突破" : "向下跌穿") + "（目標 " + f2(p.target) + "）");
-    else if (p.dir) add(S, 0, "形成緊" + name + "，未突破（等確認）");
-  }
-  const sum = arr => arr.reduce((s, x) => s + x.pts, 0);
-  const tag = (s, hi, lo) => (s >= hi ? "偏好" : s <= lo ? "偏淡" : "中性");
-  const ls = sum(L), ss = sum(S), lt = tag(ls, 3, -2), st = tag(ss, 2, -2);
-  const ex = Object.fromEntries(R.exits.map(x => [x.id, x]));
-  const actL = { 偏好: "趨勢向上：可以考慮分段買入或者繼續持有。止蝕參考 " + f2(ex.pct.stop) + "（−8%）或者跌穿 200 天線 " + f2(I.ma200[e]) + " 先走。",
-                 中性: "訊號唔一致：已有就持有、唔急住加；想買可以等股價企穩 200 天線、或者跌到支持位先分段入。",
-                 偏淡: "長期趨勢弱：唔建議新買入；手上有嘅話考慮減持，等重新升返 200 天線之上先再考慮。" }[lt];
-  const actS = { 偏好: "短線可以考慮：止蝕 " + f2(ex.atr_short.stop) + "（−1 ATR），第一目標 " + f2(ex.atr_short.tp1) + "。",
-                 中性: "短線冇明確方向，觀望為主，等突破或者回調到支持位。",
-                 偏淡: "短線偏弱：唔好追入；短炒等 RSI(2) 超賣或者企穩支持位先考慮。" }[st];
-  return { long: { tag: lt, score: ls, items: L, act: actL }, short: { tag: st, score: ss, items: S, act: actS } };
-}
-
 // ---------- render ----------
 function render() {
   const { sym, meta, daily: d, res: R } = current, I = R.I, e = d.length - 1, c = I.c[e], prev = I.c[e - 1], a = I.atr[e];
-  const V = verdicts(sym, d, R);
-  const hold = HOLDINGS && HOLDINGS[sym];
+  const V = A.verdicts(d, R);
+  const hold = HOLD[sym];
   const lastDay = d[e].t.slice(0, 10);
   const html = [];
 
@@ -733,14 +702,14 @@ function exitTable(R, c, a, hold) {
   if (hold) quick.push(["你嘅成本", hold.cost]);
   return '<section><div class="sec-head"><h2>止蝕同止盈位</h2><span class="note">ATR = ' + f2(a) + "（每日平均波幅）</span></div>" +
     '<div class="panel"><div class="row"><label for="entry"><b>計劃買入價</b></label>' +
-    '<input type="text" inputmode="decimal" id="entry" aria-label="計劃買入價" style="width:120px;font-family:var(--font-num)" value="' + f2(c) + '">' +
+    '<input type="text" inputmode="decimal" id="entry" aria-label="計劃買入價" style="width:120px;font-family:var(--font-num)" value="' + (hold ? hold.cost : c).toFixed(2) + '">' +
     quick.map(([t, v]) => '<button type="button" class="pick" data-v="' + v + '">' + t + " " + f2(v) + "</button>").join("") +
     '</div><div class="note" id="entrynote"></div></div><div id="exitbody"></div></section>';
 }
 
 // recompute stop / take-profit for the typed entry price; only the exit block is redrawn so the input keeps focus
 function updateExits() {
-  const R = current.res, I = R.I, e = current.daily.length - 1, c = I.c[e], hold = HOLDINGS && HOLDINGS[current.sym];
+  const R = current.res, I = R.I, e = current.daily.length - 1, c = I.c[e], hold = HOLD[current.sym];
   const v = parseFloat(($("entry").value || "").replace(/[$,\s]/g, ""));
   const p = v > 0 ? v : c, diff = p / c - 1;
   const exits = A.exitLevels(I, R.levels, e, p);
@@ -897,7 +866,7 @@ function niceStep(raw) {
 
 // ---------- start ----------
 refreshKeyUI();
-const picks = HOLDINGS ? Object.keys(HOLDINGS) : [];
+const picks = Object.keys(HOLD);
 $("picks").innerHTML = (picks.length ? '<span class="note">你持有：</span>' : "") +
   picks.map(s => '<button type="button" class="pick" data-s="' + esc(s) + '">' + esc(s) + "</button>").join("");
 for (const b of document.querySelectorAll("#picks .pick")) b.onclick = () => run(b.dataset.s);

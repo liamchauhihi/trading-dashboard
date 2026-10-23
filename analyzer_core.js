@@ -407,6 +407,73 @@ function exitLevels(I, lv, end, entry) {
   return rows;
 }
 
+// ---------- suggested buy levels ----------
+// Candidates: pull-backs to support / moving averages (limit order) and breakouts above resistance / pattern lines
+// (stop buy order). Each gets a stop, a first target, risk/reward and how often price got that far within
+// ENTRY_DAYS trading days over the past year. Levels within 0.3 ATR of each other are merged (two reasons = stronger).
+const ENTRY_DAYS = 10;
+function reachRate(b, end, move, look = 250) {          // move < 0: low fell by |move|; > 0: high rose by move
+  let hit = 0, n = 0;
+  for (let i = Math.max(0, end - look); i + ENTRY_DAYS <= end; i++) {
+    let x = move < 0 ? Infinity : -Infinity;
+    for (let j = i + 1; j <= i + ENTRY_DAYS; j++) x = move < 0 ? Math.min(x, b[j].l) : Math.max(x, b[j].h);
+    n++;
+    if (move < 0 ? x <= b[i].c * (1 + move) : x >= b[i].c * (1 + move)) hit++;
+  }
+  return n ? hit / n : NaN;
+}
+
+function entryLevels(b, I, lv, patterns, end) {
+  const c = I.c[end], a = I.atr[end], cands = [];
+  const all = [...lv.support, ...lv.resistance].map(x => x.price);
+  const add = (kind, price, name, why, term, extra = {}) => {
+    if (!(price > 0) || (kind === "dip" ? price >= c - 0.1 * a || price < c - 4 * a : price <= c || price > c + 3 * a)) return;
+    cands.push({ kind, price, names: [name], whys: [why], term, ...extra });
+  };
+  lv.support.slice(0, 2).forEach((s, k) => add("dip", s.price + 0.1 * a, (k ? "第二" : "最近") + "支持位",
+    "以前喺 " + f2(s.price) + " 附近轉角 " + s.touches + " 次，買家多數喺度承接；掛單高少少（+0.1 ATR）易啲成交", "短線", { sup: s.price }));
+  if (c > I.ma20[end]) add("dip", I.ma20[end], "20 天線", "升勢中回落到 20 天線，常見短線買位", "短線");
+  if (c > I.ma50[end]) add("dip", I.ma50[end], "50 天線", "中期升勢嘅支持，跌到呢度仲未破壞趨勢", "中線");
+  if (c > I.ma200[end]) add("dip", I.ma200[end], "200 天線", "長期趨勢分界線；跌到呢度係長線分段買位，跌穿就要走", "長線");
+  else add("break", I.ma200[end] + 0.1 * a, "企返 200 天線", "而家喺 200 天線之下（長期弱勢）；升返上去先代表趨勢轉好，規則 B 先會買", "長線");
+  if (c > I.ma200[end] && I.bbLo[end] < c) add("dip", I.bbLo[end], "布林下軌", "升勢中跌到下軌 = 短線跌過龍，多數會反彈", "短線");
+  if (lv.resistance[0]) add("break", lv.resistance[0].price + 0.1 * a, "突破阻力",
+    "升穿 " + f2(lv.resistance[0].price) + "（觸及 " + lv.resistance[0].touches + " 次）代表買家贏咗，追突破", "短線",
+    { stop: lv.resistance[0].price - a });
+  for (const p of patterns) if (p.dir > 0 && p.status === "forming")
+    add("break", p.level + 0.1 * a, PATTERN_NAMES[p.key] + "突破", "形態向上突破先確認，目標 " + f2(p.target), "短線",
+      { stop: Math.max(p.stop || 0, p.level - 1.5 * a), tp: p.target });
+
+  // merge levels that sit together
+  cands.sort((x, y) => y.price - x.price);
+  const out = [];
+  for (const x of cands) {
+    const m = out.find(o => o.kind === x.kind && Math.abs(o.price - x.price) < 0.3 * a);
+    if (m) { m.names.push(...x.names); m.whys.push(...x.whys); m.sup = m.sup || x.sup; m.stop = m.stop || x.stop; m.tp = m.tp || x.tp; }
+    else out.push(x);
+  }
+  for (const x of out) {
+    const p = x.price;
+    if (!x.stop) {                                       // half an ATR under the support it leans on (or the next one, 0.3–2.5 ATR below)
+      const s = x.sup || all.filter(v => v < p - 0.3 * a && v > p - 2.5 * a).sort((u, v) => v - u)[0];
+      x.stop = s ? Math.min(s - 0.5 * a, p - a) : p - (x.term === "長線" ? 2 : 1.5) * a;   // at least 1 ATR, or normal noise stops you out
+    }
+    if (!x.tp) x.tp = all.filter(v => v > p + a).sort((u, v) => u - v)[0] || p + 3 * a;
+    x.name = x.names.join(" + ");
+    x.risk = x.stop / p - 1;
+    x.rr = (x.tp - p) / (p - x.stop);
+    x.dist = p / c - 1;
+    x.reach = reachRate(b, end, x.dist);
+    x.order = x.kind === "dip" ? "限價買單" : "觸發買單";
+    x.against = x.kind === "dip" && c < I.ma200[end];   // buying dips under the 200-day line = catching a falling knife
+  }
+  // pick one: the best risk/reward that is reasonably likely to fill, never against the long-term trend
+  const good = out.filter(x => x.rr >= 1.5 && x.reach >= 0.25 && !x.against);
+  const best = good.sort((x, y) => y.rr * y.reach - x.rr * x.reach)[0];
+  if (best) best.best = true;
+  return out;
+}
+
 // ---------- rule-based verdict (long term / short term score with reasons) ----------
 const okN = x => typeof x === "number" && isFinite(x);
 const f2 = x => (okN(x) ? x.toLocaleString("en-US", { minimumFractionDigits: 2, maximumFractionDigits: 2 }) : "—");
@@ -470,11 +537,12 @@ function analyze(daily, intra) {
   return {
     I, piv, levels: lv, patterns, patternHistory: hist, strategies: strategies(I),
     vwap: intra && intra.length ? vwapStudy(intra, daily, I) : null, exits: exitLevels(I, lv, end),
+    entries: entryLevels(daily, I, lv, patterns, end),
   };
 }
 
 const api = { COST, FWD, PATTERN_NAMES, STRATEGIES, sma, ema, rsi, atr, indicators, pivots, levels,
-              detectPatterns, patternHistory, runBacktest, strategies, vwapStudy, exitLevels, analyze, verdicts };
+              detectPatterns, patternHistory, runBacktest, strategies, vwapStudy, exitLevels, entryLevels, ENTRY_DAYS, analyze, verdicts };
 if (typeof module !== "undefined" && module.exports) module.exports = api;
 else root.Analyzer = api;
 })(this);

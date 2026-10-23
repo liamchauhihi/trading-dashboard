@@ -91,6 +91,17 @@ details.key .box { margin-top: 10px; display: grid; gap: 8px; }
 .verdict li .pt { font-family: var(--font-num); font-size: 12px; color: var(--faint); margin-left: 4px; }
 .verdict .act { font-size: 14px; background: var(--bg); border-radius: 8px; padding: 8px 12px; }
 
+.buys { display: grid; grid-template-columns: repeat(auto-fill, minmax(min(100%, 300px), 1fr)); gap: 12px; }
+.buy { background: var(--surface); border: 1px solid var(--line); border-left: 4px solid var(--c, var(--line)); border-radius: 10px;
+  padding: 12px 14px; display: grid; gap: 6px; align-content: start; min-width: 0; font-size: 14px; }
+.buy.best { outline: 2px solid var(--gain); outline-offset: 1px; }
+.buy .px { font-family: var(--font-num); font-size: 22px; font-weight: 600; }
+.buy .head { display: flex; flex-wrap: wrap; align-items: baseline; gap: 8px; }
+.buy dl { display: grid; grid-template-columns: auto 1fr; gap: 2px 12px; margin: 0; font-size: 13px; }
+.buy dt { color: var(--muted); }
+.buy dd { margin: 0; font-family: var(--font-num); }
+.buy .why { font-size: 13px; color: var(--muted); margin: 0; padding-left: 18px; }
+.buy.against { opacity: .75; }
 .panel { background: var(--surface); border: 1px solid var(--line); border-radius: 10px; padding: 16px; display: grid; gap: 10px; min-width: 0; }
 .panel h3 { margin: 0; font-size: 15px; }
 .panels { display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 440px), 1fr)); gap: 16px; }
@@ -372,6 +383,9 @@ function render() {
   if (hold) html.push('<div class="card" style="--c:var(--accent)"><b>你手上嘅 ' + esc(sym) + "</b>" + holdingNote(hold, c, I, e) + "</div>");
   html.push("</section>");
 
+  // suggested buy levels
+  html.push(buyLevels(R, V, c, hold));
+
   // key dates + news for this stock (filled in when events.json / news.json arrive)
   html.push('<section id="feedsec"><div class="sec-head"><h2>重要日子同新聞</h2><span class="note">載入中…</span></div></section>');
 
@@ -431,6 +445,10 @@ function render() {
     $("pguidebtn").setAttribute("aria-expanded", open);
   };
   $("fullbtn").onclick = toggleFull;
+  for (const b of document.querySelectorAll("[data-buy]")) b.onclick = () => {
+    $("entry").value = (+b.dataset.buy).toFixed(2); updateExits();
+    $("entry").closest("section").scrollIntoView({ behavior: "smooth", block: "start" });
+  };
   $("entry").oninput = updateExits;
   for (const b of document.querySelectorAll("#entry ~ .pick")) b.onclick = () => { $("entry").value = (+b.dataset.v).toFixed(2); updateExits(); };
   updateExits();
@@ -743,6 +761,43 @@ function vwapSection(R) {
     tile("累計", '<span class="' + cls(V.total) + '">' + pct(V.total, 1) + "</span>", "全倉每次計") +
     '</div><div class="note"><p>規則：前一日收市高過 50 天線；10:00–15:00 之間股價跌穿「VWAP − 0.5×ATR」就買；目標返到 VWAP，止蝕 0.5 ATR，15:55 一定平倉。</p><p>' +
     esc(T.day + "：" + now) + "</p></div></section>";
+}
+
+// pull-back (limit order) and breakout (stop buy order) levels from analyzer_core entryLevels()
+function buyLevels(R, V, c, hold) {
+  const head = '<section><div class="sec-head"><h2>建議買入位</h2><span class="note">按支持位、均線、突破位自動計，唔係 AI 判斷，亦唔係叫你買</span></div>';
+  const E = R.entries || [];
+  if (!E.length) return head + '<div class="empty">附近冇明顯嘅買入位（例如下面冇支持、上面冇阻力），可以參考下面止蝕止盈表用現價計。</div></section>';
+  const lead = V.long.tag === "偏淡"
+    ? "⚠️ 長線趨勢向下（股價喺 200 天線之下）：按規則唔建議喺跌緊嘅時候接貨，灰色嘅「回調買入」位風險高；比較穩陣係等升返上去（觸發買單）先入。"
+    : V.long.tag === "偏好" ? "長線趨勢向上：回調到支持位或者均線分段買，風險通常細過追高。"
+    : "訊號唔一致：寧願等跌到有支持嘅位，或者等突破確認先入，唔好急。";
+  const best = E.find(x => x.best);
+  const cards = E.map(x => {
+    const col = x.against ? "var(--faint)" : x.kind === "dip" ? "var(--accent)" : "var(--warn)";
+    const move = x.dist < 0 ? "要跌 " + pct(-x.dist, 1, false) : "要升 " + pct(x.dist, 1, false);
+    return '<article class="buy' + (x.best ? " best" : "") + (x.against ? " against" : "") + '" style="--c:' + col + '">' +
+      '<div class="head">' + (x.best ? '<span class="chip gain">⭐ 首選</span>' : "") +
+      '<span class="chip ' + (x.kind === "dip" ? "" : "warn") + '">' + (x.kind === "dip" ? "回調買入" : "突破買入") + "</span>" +
+      '<span class="chip plain">' + esc(x.term) + "</span>" + (x.against ? '<span class="chip loss">逆勢</span>' : "") + "</div>" +
+      '<div class="head"><span class="px">' + f2(x.price) + '</span><span class="note">' + move + "</span></div>" +
+      "<b>" + esc(x.name) + "</b>" +
+      '<ul class="why">' + x.whys.map(w => "<li>" + esc(w) + "</li>").join("") + "</ul>" +
+      "<dl><dt>落單</dt><dd>" + esc(x.order) + "</dd>" +
+      '<dt>止蝕</dt><dd class="loss">' + f2(x.stop) + "（" + pct(x.risk) + "）</dd>" +
+      '<dt>第一目標</dt><dd class="gain">' + f2(x.tp) + "（" + pct(x.tp / x.price - 1) + "）</dd>" +
+      "<dt>風險回報</dt><dd>" + (ok(x.rr) && x.rr > 0 ? "1 : " + x.rr.toFixed(1) : "—") + (+x.rr.toFixed(1) < 1.5 ? ' <span class="note">偏低</span>' : "") + "</dd>" +
+      "<dt>" + A.ENTRY_DAYS + " 日內到價</dt><dd>" + pct(x.reach, 0, false) + ' <span class="note">過去一年</span></dd></dl>' +
+      '<button type="button" class="pick" data-buy="' + x.price + '">用呢個價計止蝕止盈 ↓</button></article>';
+  }).join("");
+  return head + '<div class="card" style="--c:var(--accent)"><div>' + esc(lead) +
+    (best ? " 而家計落最抵嘅係 <b class=\"num\">" + f2(best.price) + "</b>（" + esc(best.name) + "）。" : " 而家冇一個位同時夠抵（風險回報 ≥ 1 : 1.5）又有合理機會到價，可以觀望。") +
+    (hold ? " 你已經持有，成本 " + f2(hold.cost) + "；加倉都可以參考呢啲位。" : "") + "</div></div>" +
+    '<div class="buys">' + cards + "</div>" +
+    '<div class="note"><p><b>點睇：</b>「回調買入」= 等跌落嚟先買，落<b>限價買單</b>；「突破買入」= 等升穿先追，落<b>觸發買單</b>（stop buy），唔好落限價單。' +
+    "「" + A.ENTRY_DAYS + " 日內到價」係過去一年由收市價計，" + A.ENTRY_DAYS + " 個交易日內郁到咁遠嘅機會：太低即係可能等好耐都買唔到。" +
+    "⭐ 首選 = 風險回報 ≥ 1 : 1.5、到價機會 ≥ 25%、唔逆長線趨勢之中最好嗰個。</p>" +
+    "<p>唔使一次過全部買：可以將想買嘅金額分 2–3 份，喺唔同買入位分段入。所有價位只係按過去數據計嘅參考，唔係投資建議。</p></div></section>";
 }
 
 function exitTable(R, c, a, hold) {

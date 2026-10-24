@@ -1,5 +1,5 @@
 {
- "generated": "2026-10-24T18:00+08:00",
+ "generated": "2026-10-24T22:30+08:00",
  "holdings": [
   "TSM",
   "TSLA",
@@ -11,8 +11,8 @@
   "NVDA"
  ],
  "claude_ok": true,
- "claude_at": "2026-10-24T18:00+08:00",
- "summary": "中東局勢再升溫：美國撤走駐沙特外交人員，布蘭特期油升穿116美元，加息憂慮一直壓住科技股。下星期三（10月28日）聯儲局議息，同日 Alphabet 公佈業績、Oracle 開投資者日，對你嘅 GOOG、ORCL、QQQ、VOO 都係一個關口，到時波動可能會大啲。",
+ "claude_at": "2026-10-24T22:30+08:00",
+ "summary": "今個星期最大嘅兩件事：一係中東局勢升溫，美國撤走駐沙特外交人員，油價維持喺高位，加息嘅擔心又返嚟；二係下星期三（10月28日）聯儲局議息，同日 Alphabet 同 Microsoft 公布業績。你嘅 GOOG、QQQ、NVDA、TSM 未來幾日都可能郁得比較大，留意 AI 開支嘅消息。",
  "items": [
   {
    "time": "2026-10-24 12:00",
@@ -59,6 +59,34 @@
    ],
    "takeaway": "下週可能會大上大落，唔使因為一日升跌而慌張",
    "found": "2026-10-24 08:00"
+  },
+  {
+   "time": "2026-10-24 05:00",
+   "headline": "下週三議息兼Alphabet、微軟業績 考驗AI股",
+   "source": "Reuters / Investing.com",
+   "url": "https://www.investing.com/news/economy-news/earnings-flood-fed-meeting-pose-pivotal-tests-for-rickety-ai-market-rally-4968724",
+   "summary": "標普500成份股約三分一下週公布業績。Alphabet 同 Microsoft 星期三收市後公布，Amazon 星期四公布。期貨市場估計今次加息機會低過一成，但12月加息機會約八成。",
+   "level": "high",
+   "scope": "market",
+   "affects": [
+    {
+     "sym": "GOOG",
+     "dir": "mixed",
+     "why": "10月28日公布業績，雲端增長同資本開支會直接影響股價"
+    },
+    {
+     "sym": "QQQ",
+     "dir": "mixed",
+     "why": "幾隻大型科技股佔比高，業績好唔好會帶動成個指數"
+    },
+    {
+     "sym": "NVDA",
+     "dir": "mixed",
+     "why": "大型雲端公司嘅AI開支係Nvidia晶片需求嘅主要來源"
+    }
+   ],
+   "takeaway": "下星期三四波幅可能好大，業績前後唔使因為一日升跌就驚。",
+   "found": "2026-10-24 22:30"
   },
   {
    "time": "2026-10-24 04:30",
@@ -422,31 +450,44 @@
   },
   {
    "time": "2026-10-23 21:00",
-   "headline": "布蘭特期油升穿116美元 創六個月新高",
+   "headline": "Alphabet業績前被調低目標價 集體訴訟提醒",
+   "source": "GlobeNewswire / MarketBeat",
+   "url": "https://www.globenewswire.com/news-release/2026/10/23/3387567/1020/en/kaplan-fox-alerts-investors-of-alphabet-inc-nasdaq-googl-goog-to-a-pending-securities-class-action-deadline-is-december-1-2026.html",
+   "summary": "Citizens 將 Alphabet 目標價由515美元降到450美元。律師行再提醒投資者有一單集體訴訟，指控 Gemini 3.5 Pro 進度落後。GOOG 呢個星期跌咗唔少。",
+   "level": "medium",
+   "scope": "stock",
+   "affects": [
+    {
+     "sym": "GOOG",
+     "dir": "down",
+     "why": "業績前被調低目標價，加上訴訟消息，影響投資者信心"
+    }
+   ],
+   "takeaway": "律師行嘅訴訟通告好常見，影響通常有限；重點都係下週業績。",
+   "found": "2026-10-24 22:30"
+  },
+  {
+   "time": "2026-10-23 20:00",
+   "headline": "胡塞再襲沙特油田 Aramco撤離總部",
    "source": "CNBC",
    "url": "https://cnbc.com/2026/10/23/oil-price-brent-wti-iran-war-saudi-arabia.html",
-   "summary": "伊朗加強襲擊荷姆茲海峽一帶油輪，胡塞又用無人機襲擊沙特Shaybah油田。布蘭特期油一星期升咗6.2%，已經連升三個星期。",
-   "level": "high",
+   "summary": "胡塞武裝用無人機襲擊沙特 Shaybah 油田同達曼機場，造成兩死兩傷。Aramco 撤離 Dhahran 總部，布蘭特期油升到半年高位。",
+   "level": "medium",
    "scope": "market",
    "affects": [
     {
      "sym": "VOO",
      "dir": "down",
-     "why": "油價高企推高通脹，聯儲局較難唔加息"
+     "why": "油價急升會增加企業成本，同時令減息更加遙遠"
     },
     {
      "sym": "TSLA",
      "dir": "mixed",
-     "why": "油貴可能令多啲人想買電動車，但高息拖累買車需求"
-    },
-    {
-     "sym": "NVDA",
-     "dir": "down",
-     "why": "債息上升，市場對高估值AI股更加審慎"
+     "why": "油價高可能令多啲人考慮電動車，但大市氣氛差會拖累高估值股"
     }
    ],
-   "takeaway": "留意油價會唔會繼續升，佢係而家帶動債息同科技股嘅最大因素。",
-   "found": "2026-10-24 18:00"
+   "takeaway": "油價係近排大市最大嘅風險，可以留意油價走勢。",
+   "found": "2026-10-24 22:30"
   },
   {
    "time": "2026-10-23 20:00",
@@ -585,6 +626,34 @@
    ],
    "takeaway": "Tesla 股價主要靠機械人同自動駕駛嘅故事，留意佢哋嘅進度消息。",
    "found": "2026-10-23 18:00"
+  },
+  {
+   "time": "2026-10-23 14:00",
+   "headline": "Nvidia、Tesla合資28億美元 擴產晶片基板",
+   "source": "Digitimes",
+   "url": "https://www.digitimes.com/news/a20261023PD226/tesla-nvidia-semco-production-abf-substrate.html",
+   "summary": "韓媒報道 Nvidia 同 Tesla 合共出資3.7萬億韓圜（約28億美元），幫三星電機喺韓國擴產 ABF 晶片基板，確保AI晶片零件供應。公司未證實。",
+   "level": "medium",
+   "scope": "stock",
+   "affects": [
+    {
+     "sym": "NVDA",
+     "dir": "up",
+     "why": "鎖定關鍵零件產能，減低供應不足拖慢出貨嘅風險"
+    },
+    {
+     "sym": "TSLA",
+     "dir": "mixed",
+     "why": "保障自家AI晶片供應，但要多花錢"
+    },
+    {
+     "sym": "TSM",
+     "dir": "up",
+     "why": "基板夠就可以完成更多晶片封裝，對台積電訂單有利"
+    }
+   ],
+   "takeaway": "顯示AI晶片需求仲好大，不過消息未經公司證實。",
+   "found": "2026-10-24 22:30"
   },
   {
    "time": "2026-10-23 12:00",
@@ -733,34 +802,6 @@
    ],
    "takeaway": "如果通脹預期高過4.7%，今晚科技股可能再受壓。",
    "found": "2026-10-23 18:00"
-  },
-  {
-   "time": "2026-10-23 06:00",
-   "headline": "美撤駐沙特外交人員 傳中期選舉後再襲伊朗",
-   "source": "CNBC",
-   "url": "https://www.cnbc.com/2026/10/22/us-iran-trump-hormuz-.html",
-   "summary": "胡塞武裝襲擊沙特機場同油田之後，美國叫非緊急人員撤離沙特。特朗普話唔會同伊朗談判，有報道指美以已經計劃喺11月3日中期選舉之後再空襲伊朗。",
-   "level": "high",
-   "scope": "market",
-   "affects": [
-    {
-     "sym": "VOO",
-     "dir": "down",
-     "why": "戰事風險推高油價同通脹預期，大市承壓"
-    },
-    {
-     "sym": "QQQ",
-     "dir": "down",
-     "why": "加息預期升，高估值科技股最受壓"
-    },
-    {
-     "sym": "QQQM",
-     "dir": "down",
-     "why": "同QQQ一樣追蹤Nasdaq 100"
-    }
-   ],
-   "takeaway": "11月初前後係地緣風險高峰，唔使日日驚，但要預咗大市會上上落落。",
-   "found": "2026-10-24 18:00"
   },
   {
    "time": "2026-10-23 05:30",
@@ -931,52 +972,6 @@
     }
    ],
    "takeaway": "問題係供應唔夠、唔係冇需求，同需求倒塌唔同；留意下週業績有冇再提缺貨。",
-   "found": "2026-10-24 12:00"
-  },
-  {
-   "time": "2026-10-23 04:00",
-   "headline": "Meta開支再加碼 自由現金流轉負 股價跌7%",
-   "source": "CNBC",
-   "url": "https://www.cnbc.com/2026/10/22/meta-stock-q3-earnings-free-cash-flow.html",
-   "summary": "Meta第三季收入創新高646億美元，但全年資本開支調高至1350–1450億美元，季度自由現金流轉負，股價周四收跌7%。Wells Fargo估佢明年開支可能達2500億。",
-   "level": "high",
-   "scope": "market",
-   "affects": [
-    {
-     "sym": "GOOG",
-     "dir": "mixed",
-     "why": "市場擔心大型科技股開支太大，Google下週業績都會被同樣檢視"
-    },
-    {
-     "sym": "NVDA",
-     "dir": "mixed",
-     "why": "開支越大代表晶片訂單越多，但投資者開始質疑回報"
-    },
-    {
-     "sym": "QQQ",
-     "dir": "down",
-     "why": "Meta係大成分股，加上AI開支憂慮拖累科技股"
-    }
-   ],
-   "takeaway": "市場而家唔再淨係睇增長，仲睇開支同現金流；Google業績都會用呢把尺去量。",
-   "found": "2026-10-24 12:00"
-  },
-  {
-   "time": "2026-10-23 04:00",
-   "headline": "Tesla削減開支 Musk為機械人同Robotaxi降溫",
-   "source": "CNBC",
-   "url": "https://www.cnbc.com/2026/10/22/tesla-q3-2026-earnings-analysts.html",
-   "summary": "Tesla第三季每股盈利0.48美元，好過預期，但收入持平喺280.5億。全年開支由超過250億削減到200億。Musk話Optimus同Robotaxi一年內未必有明顯收入，股價周四跌3%。",
-   "level": "medium",
-   "scope": "stock",
-   "affects": [
-    {
-     "sym": "TSLA",
-     "dir": "mixed",
-     "why": "盈利勝預期，但新業務收入要等耐啲，好淡分歧大"
-    }
-   ],
-   "takeaway": "Robotaxi年底推Cybercab係下一個睇點；短期股價主要跟住期望升跌。",
    "found": "2026-10-24 12:00"
   }
  ]

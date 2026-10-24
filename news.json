@@ -1,5 +1,5 @@
 {
- "generated": "2026-10-24T12:00+08:00",
+ "generated": "2026-10-24T18:00+08:00",
  "holdings": [
   "TSM",
   "TSLA",
@@ -11,9 +11,27 @@
   "NVDA"
  ],
  "claude_ok": true,
- "claude_at": "2026-10-24T12:00+08:00",
- "summary": "AI相關股本週受壓：Lam Research警告供應唔夠，費半一日跌6.7%；Meta開支大增令佢股價跌7%。荷姆茲海峽衝突升溫，推高油價同加息預期。你嘅NVDA、QQQ、GOOG短期會較波動，下週聯儲局議息同Google業績係關鍵。",
+ "claude_at": "2026-10-24T18:00+08:00",
+ "summary": "中東局勢再升溫：美國撤走駐沙特外交人員，布蘭特期油升穿116美元，加息憂慮一直壓住科技股。下星期三（10月28日）聯儲局議息，同日 Alphabet 公佈業績、Oracle 開投資者日，對你嘅 GOOG、ORCL、QQQ、VOO 都係一個關口，到時波動可能會大啲。",
  "items": [
+  {
+   "time": "2026-10-24 12:00",
+   "headline": "Oracle 10月28日投資者日 將更新長遠目標",
+   "source": "Morningstar",
+   "url": "https://www.morningstar.com.au/stocks/are-we-bullish-oracle-market",
+   "summary": "Oracle AI World 大會10月25至28日喺拉斯維加斯舉行，28日開投資者日，財務總監表示會更新長遠財務目標，市場特別想知資本開支同借錢計劃。",
+   "level": "medium",
+   "scope": "stock",
+   "affects": [
+    {
+     "sym": "ORCL",
+     "dir": "mixed",
+     "why": "目標夠進取可以支持股價，但開支或負債太大會令人擔心"
+    }
+   ],
+   "takeaway": "Oracle近排借錢做雲端備受質疑，今次投資者日係重要嘅解畫機會。",
+   "found": "2026-10-24 18:00"
+  },
   {
    "time": "2026-10-24 06:00",
    "headline": "下週關鍵：議息、PCE通脹，Amazon、Intel業績",
@@ -403,6 +421,34 @@
    "found": "2026-10-23 22:30"
   },
   {
+   "time": "2026-10-23 21:00",
+   "headline": "布蘭特期油升穿116美元 創六個月新高",
+   "source": "CNBC",
+   "url": "https://cnbc.com/2026/10/23/oil-price-brent-wti-iran-war-saudi-arabia.html",
+   "summary": "伊朗加強襲擊荷姆茲海峽一帶油輪，胡塞又用無人機襲擊沙特Shaybah油田。布蘭特期油一星期升咗6.2%，已經連升三個星期。",
+   "level": "high",
+   "scope": "market",
+   "affects": [
+    {
+     "sym": "VOO",
+     "dir": "down",
+     "why": "油價高企推高通脹，聯儲局較難唔加息"
+    },
+    {
+     "sym": "TSLA",
+     "dir": "mixed",
+     "why": "油貴可能令多啲人想買電動車，但高息拖累買車需求"
+    },
+    {
+     "sym": "NVDA",
+     "dir": "down",
+     "why": "債息上升，市場對高估值AI股更加審慎"
+    }
+   ],
+   "takeaway": "留意油價會唔會繼續升，佢係而家帶動債息同科技股嘅最大因素。",
+   "found": "2026-10-24 18:00"
+  },
+  {
    "time": "2026-10-23 20:00",
    "headline": "盤前晶片股反彈 SK海力士升逾4%",
    "source": "TradingKey",
@@ -424,6 +470,29 @@
    ],
    "takeaway": "大跌之後反彈好常見，未代表跌市完結，留意反彈撐唔撐得住。",
    "found": "2026-10-23 22:30"
+  },
+  {
+   "time": "2026-10-23 18:00",
+   "headline": "阿曼斡旋 胡塞指有外國嘗試叫停襲沙特",
+   "source": "CBS News",
+   "url": "https://www.cbsnews.com/live-updates/iran-war-us-trump-saudi-arabia-houthi/",
+   "summary": "胡塞高層表示，有地區同國際勢力聯絡佢哋，想停止對沙特嘅襲擊；阿曼正嘗試重啟談判，但暫時未有停火協議。沙特就繼續空襲胡塞。",
+   "level": "medium",
+   "scope": "market",
+   "affects": [
+    {
+     "sym": "VOO",
+     "dir": "mixed",
+     "why": "談成就可能壓低油價、幫到大市；談唔成就繼續升溫"
+    },
+    {
+     "sym": "QQQ",
+     "dir": "mixed",
+     "why": "油價同債息回落嘅話，科技股會鬆一口氣"
+    }
+   ],
+   "takeaway": "如果傳出停火消息，油價同股市可能大幅反彈，不過而家仲未確定。",
+   "found": "2026-10-24 18:00"
   },
   {
    "time": "2026-10-23 17:00",
@@ -666,6 +735,34 @@
    "found": "2026-10-23 18:00"
   },
   {
+   "time": "2026-10-23 06:00",
+   "headline": "美撤駐沙特外交人員 傳中期選舉後再襲伊朗",
+   "source": "CNBC",
+   "url": "https://www.cnbc.com/2026/10/22/us-iran-trump-hormuz-.html",
+   "summary": "胡塞武裝襲擊沙特機場同油田之後，美國叫非緊急人員撤離沙特。特朗普話唔會同伊朗談判，有報道指美以已經計劃喺11月3日中期選舉之後再空襲伊朗。",
+   "level": "high",
+   "scope": "market",
+   "affects": [
+    {
+     "sym": "VOO",
+     "dir": "down",
+     "why": "戰事風險推高油價同通脹預期，大市承壓"
+    },
+    {
+     "sym": "QQQ",
+     "dir": "down",
+     "why": "加息預期升，高估值科技股最受壓"
+    },
+    {
+     "sym": "QQQM",
+     "dir": "down",
+     "why": "同QQQ一樣追蹤Nasdaq 100"
+    }
+   ],
+   "takeaway": "11月初前後係地緣風險高峰，唔使日日驚，但要預咗大市會上上落落。",
+   "found": "2026-10-24 18:00"
+  },
+  {
    "time": "2026-10-23 05:30",
    "headline": "下週三聯儲局議息 Google、Microsoft同日公布業績",
    "source": "Charles Schwab",
@@ -692,6 +789,34 @@
    ],
    "takeaway": "下星期係關鍵週，股價可能好大上落，唔使因為一日嘅波動就驚。",
    "found": "2026-10-23 12:00"
+  },
+  {
+   "time": "2026-10-23 05:00",
+   "headline": "Nvidia周四急跌4.4% Seaport維持沽售評級",
+   "source": "Gotrade",
+   "url": "https://www.heygotrade.com/en/news/nvidia-nvda-stock-news-october-23-2026/",
+   "summary": "市場擔心AI開支過大同借錢成本上升，Nvidia 周四跌4.4%收212.21美元，Nasdaq同日跌2.6%。Seaport維持沽售評級，目標價180美元；整體分析師評級仍然係強烈買入。",
+   "level": "medium",
+   "scope": "stock",
+   "affects": [
+    {
+     "sym": "NVDA",
+     "dir": "down",
+     "why": "AI投資回報同融資成本受到質疑"
+    },
+    {
+     "sym": "TSM",
+     "dir": "down",
+     "why": "同屬AI晶片供應鏈，情緒會互相拖累"
+    },
+    {
+     "sym": "QQQ",
+     "dir": "down",
+     "why": "Nvidia係指數最大成分股之一"
+    }
+   ],
+   "takeaway": "周五已經喘定，只跌0.6%；下星期大型科技公司公佈AI開支，會影響 Nvidia 下一步走勢。",
+   "found": "2026-10-24 18:00"
   },
   {
    "time": "2026-10-23 05:00",
@@ -853,136 +978,6 @@
    ],
    "takeaway": "Robotaxi年底推Cybercab係下一個睇點；短期股價主要跟住期望升跌。",
    "found": "2026-10-24 12:00"
-  },
-  {
-   "time": "2026-10-23 04:00",
-   "headline": "黃仁勳：新興雲端需求勁但缺錢 Nvidia跌4.4%",
-   "source": "Gotrade / TradingKey",
-   "url": "https://www.heygotrade.com/en/news/nvidia-nvda-stock-news-october-23-2026/",
-   "summary": "黃仁勳話新興雲端公司（neocloud）需求「爆燈」，但缺資金擴張。加上市場擔心AI開支見頂，周四Nvidia跌4.4%收212美元，市值蒸發約2350億美元。",
-   "level": "high",
-   "scope": "stock",
-   "affects": [
-    {
-     "sym": "NVDA",
-     "dir": "down",
-     "why": "客戶唔夠錢買晶片，令人擔心將來訂單"
-    },
-    {
-     "sym": "TSM",
-     "dir": "down",
-     "why": "Nvidia晶片由台積電代工，受同一個憂慮拖累"
-    },
-    {
-     "sym": "ORCL",
-     "dir": "down",
-     "why": "同樣係借錢建AI數據中心嘅公司，受同一種憂慮"
-    }
-   ],
-   "takeaway": "呢個就係周四Nvidia跌超過4%嘅主因，之後要留意大客戶開支有冇減",
-   "found": "2026-10-24 08:00"
-  },
-  {
-   "time": "2026-10-23 04:00",
-   "headline": "Meta業績後急跌近7% 拖累科技股",
-   "source": "Yahoo Finance",
-   "url": "https://finance.yahoo.com/markets/live/stock-market-today-thursday-october-22-dow-sp-500-nasdaq-tesla-meta-112217857.html",
-   "summary": "Meta 公布季績，同時宣布一拆二，但市場擔心佢 AI 開支太大，股價周四跌近 7%，拖累成個科技板塊。",
-   "level": "medium",
-   "scope": "sector",
-   "affects": [
-    {
-     "sym": "GOOG",
-     "dir": "down",
-     "why": "Google 下星期三公布業績，市場會用同一個標準睇佢嘅 AI 開支"
-    },
-    {
-     "sym": "QQQ",
-     "dir": "down",
-     "why": "Meta 係 Nasdaq 100 大型成分股之一"
-    },
-    {
-     "sym": "NVDA",
-     "dir": "mixed",
-     "why": "大公司加大 AI 開支係 Nvidia 嘅收入來源，但市場開始質疑值唔值得"
-    }
-   ],
-   "takeaway": "Google 公布業績嗰陣，要留意佢嘅開支同雲端收入，股價可能好大上落。",
-   "found": "2026-10-24 04:45"
-  },
-  {
-   "time": "2026-10-23 04:00",
-   "headline": "晶片股大跌 半導體指數跌逾6%",
-   "source": "24/7 Wall St.",
-   "url": "https://247wallst.com/investing/2026/10/22/chip-stocks-fall-as-supply-warning-deepens-ai-selloff-marvell-and-amd-sink-8-intel-drops-7/",
-   "summary": "晶片設備商 Lam Research 話供應鏈受限會延續到 2027 年，市場擔心成個行業出貨受限。費城半導體指數跌超過 6%，AMD、Marvell 跌約 8%，Nvidia 跌約 4%。",
-   "level": "high",
-   "scope": "sector",
-   "affects": [
-    {
-     "sym": "NVDA",
-     "dir": "down",
-     "why": "晶片股一齊被拋售，昨日跌 4.4%，主要係行業恐慌，唔係 Nvidia 自己出咗事"
-    },
-    {
-     "sym": "TSM",
-     "dir": "down",
-     "why": "台積電係晶片供應鏈核心，供應受限同 AI 開支疑慮令佢跌 4.5%"
-    },
-    {
-     "sym": "QQQ",
-     "dir": "down",
-     "why": "晶片股喺 Nasdaq-100 佔比好重，所以拖低成個指數"
-    }
-   ],
-   "takeaway": "今次係成個行業一齊跌，唔係單一公司出事；留意下星期 SK 海力士業績會唔會令情緒再轉差。",
-   "found": "2026-10-23 09:29"
-  },
-  {
-   "time": "2026-10-23 03:00",
-   "headline": "伊朗稱荷姆茲海峽7艘油輪中招 警告擴大衝突",
-   "source": "Al Jazeera",
-   "url": "https://www.aljazeera.com/news/2026/10/22/iran-says-seven-ships-hit-in-hormuz-strait-warns-us-of-wider-response",
-   "summary": "伊朗話一日內有7艘油輪喺荷姆茲海峽被擊中，係開戰以嚟最多；革命衛隊警告美軍再護航就會攻擊美國基地。美方話95%船照過，特朗普指伊朗作假推高油價。",
-   "level": "high",
-   "scope": "market",
-   "affects": [
-    {
-     "sym": "VOO",
-     "dir": "down",
-     "why": "油價升推高通脹同加息預期，壓大市估值"
-    },
-    {
-     "sym": "QQQ",
-     "dir": "down",
-     "why": "高息環境對高估值科技股最唔利"
-    }
-   ],
-   "takeaway": "油價係而家影響息口嘅最大變數；有停火消息時大市可能急彈，唔使因一兩日新聞驚。",
-   "found": "2026-10-24 12:00"
-  },
-  {
-   "time": "2026-10-23 03:00",
-   "headline": "資金湧入美債 10年債息跌穿5%",
-   "source": "Briefs",
-   "url": "https://www.briefs.co/news/treasuries-rally-as-stocks-sell-off-and-oil-jumps/",
-   "summary": "股市跌嘅時候資金走去買國債，10 年期債息跌約 15 點子，跌穿 5%。市場預計聯儲局 10 月 27-28 日加息嘅機會，由之前大約三成跌到大約一成半。",
-   "level": "medium",
-   "scope": "market",
-   "affects": [
-    {
-     "sym": "QQQ",
-     "dir": "mixed",
-     "why": "債息回落對高估值科技股係支持，但呢次係因為避險，唔係因為經濟好"
-    },
-    {
-     "sym": "VOO",
-     "dir": "mixed",
-     "why": "加息機會減少係好事，但通脹仍然偏高（9 月 CPI 3.7%）"
-    }
-   ],
-   "takeaway": "下星期聯儲局議息係大事；如果意外加息，市場可能再波動。",
-   "found": "2026-10-23 09:29"
   }
  ]
 }

@@ -1,5 +1,5 @@
 {
- "generated": "2026-10-24T04:45+08:00",
+ "generated": "2026-10-24T08:00+08:00",
  "holdings": [
   "TSM",
   "TSLA",
@@ -11,9 +11,60 @@
   "NVDA"
  ],
  "claude_ok": true,
- "claude_at": "2026-10-24T04:45+08:00",
- "summary": "美股周五個個指數都跌，道指跌 1.2%。主要原因有兩個：美伊衝突可能再升溫，美國油價升穿 100 美元；市場繼續擔心 AI 開支太大。標普同 Nasdaq 連跌兩個星期。你持有嘅 VOO 跟大市跌，科技股同 QQQ 就企得比較穩。台積電因為信貸評級升級逆市升。下星期三聯儲局議息，同日 Google 公布業績，係最大嘅焦點。",
+ "claude_at": "2026-10-24T08:00+08:00",
+ "summary": "周五美股再跌，但晶片股喘定，Nasdaq只跌0.2%。油價升穿100美元，令人擔心通脹，市場估12月加息機會約八成，金價跌穿4000美元。下週有聯儲局議息、PCE通脹數據，Google、Microsoft、Amazon亦會公布業績。你手上AI股多，下週可能會大上大落。",
  "items": [
+  {
+   "time": "2026-10-24 06:00",
+   "headline": "下週關鍵：議息、PCE通脹，Amazon、Intel業績",
+   "source": "FXStreet / TradingKey",
+   "url": "https://www.fxstreet.com/news/gold-falls-below-4-000-as-oil-surge-deepens-weekly-rout-ahead-of-fed-202610231819",
+   "summary": "聯儲局10月27至28日議息，市場估會按兵不動。10月29日公布聯儲局最睇重嘅PCE通脹數據，同日Amazon公布業績，Intel就喺收市後公布。",
+   "level": "high",
+   "scope": "market",
+   "affects": [
+    {
+     "sym": "QQQ",
+     "dir": "mixed",
+     "why": "幾間大型科技股同一個星期公布業績，會左右大市走勢"
+    },
+    {
+     "sym": "NVDA",
+     "dir": "mixed",
+     "why": "Amazon會唔會減AI開支，直接影響晶片需求"
+    },
+    {
+     "sym": "GOOG",
+     "dir": "mixed",
+     "why": "28號收市後公布業績，同議息喺同一日"
+    }
+   ],
+   "takeaway": "下週可能會大上大落，唔使因為一日升跌而慌張",
+   "found": "2026-10-24 08:00"
+  },
+  {
+   "time": "2026-10-24 04:30",
+   "headline": "Apple一度超越Nvidia 重做全球最值錢公司",
+   "source": "Seoul Economic Daily",
+   "url": "https://en.sedaily.com/international/2026/10/24/us-stocks-fall-as-oil-surges-apple-briefly-tops-nvidia-in",
+   "summary": "Nvidia連跌之後，周五Apple市值一度超越Nvidia，成為全球最值錢嘅公司。同日油價急升，美股普遍下跌。",
+   "level": "low",
+   "scope": "stock",
+   "affects": [
+    {
+     "sym": "NVDA",
+     "dir": "down",
+     "why": "反映資金暫時由AI晶片股轉去其他大型股"
+    },
+    {
+     "sym": "QQQ",
+     "dir": "mixed",
+     "why": "Apple同Nvidia都係重磅成分股，一升一跌會互相抵消"
+    }
+   ],
+   "takeaway": "市值排名會變嚟變去，主要反映市場情緒，唔使太緊張",
+   "found": "2026-10-24 08:00"
+  },
   {
    "time": "2026-10-24 04:30",
    "headline": "10年美債息周五回升至5%附近",
@@ -43,6 +94,39 @@
    "found": "2026-10-24 04:45"
   },
   {
+   "time": "2026-10-24 04:15",
+   "headline": "周五晶片股喘定 費半微升0.4% Nasdaq僅跌0.2%",
+   "source": "TradingKey",
+   "url": "https://www.tradingkey.com/analysis/stocks/us-stocks/262236830-us-market-close-dow-drop-consumer-healthcare-chips-rebound-crowdstrike-tradingkey",
+   "summary": "周四晶片股大跌後，周五費城半導體指數微升0.44%，Micron、AMD、Intel反彈。標普跌0.52%，Nasdaq跌0.21%。Nvidia再跌約0.6%，Alphabet跌約1.2%，Tesla跌約0.6%。",
+   "level": "high",
+   "scope": "market",
+   "affects": [
+    {
+     "sym": "NVDA",
+     "dir": "mixed",
+     "why": "晶片股止跌，但Nvidia自己仲跌緊少少"
+    },
+    {
+     "sym": "TSM",
+     "dir": "mixed",
+     "why": "周四急跌後，晶片板塊周五喘定"
+    },
+    {
+     "sym": "QQQ",
+     "dir": "down",
+     "why": "科技股跌幅比周四細好多，但仍然收跌"
+    },
+    {
+     "sym": "GOOG",
+     "dir": "down",
+     "why": "周五再跌約1.2%，市場等緊下週三業績"
+    }
+   ],
+   "takeaway": "周四急跌之後周五未有再大跌，不過仲未見到明顯反彈，要睇下週業績",
+   "found": "2026-10-24 08:00"
+  },
+  {
    "time": "2026-10-24 04:00",
    "headline": "道指周五跌653點 標普同Nasdaq連跌兩星期",
    "source": "CNBC",
@@ -69,6 +153,57 @@
    ],
    "takeaway": "大市未企穩。下星期議息同大型科技股業績可能令大市大上大落，心理上要有準備。",
    "found": "2026-10-24 04:45"
+  },
+  {
+   "time": "2026-10-24 03:00",
+   "headline": "網絡安全股急升 CrowdStrike漲8%",
+   "source": "TradingKey",
+   "url": "https://www.tradingkey.com/analysis/stocks/us-stocks/262236289-cybersecurity-stocks-crowdstrike-cloudflare-rally-ai-vulnerability-discovery-php-flaw-tradingkey",
+   "summary": "美國網絡安全部門發出PHP漏洞警告，德意志銀行又話AI用量增加會幫到網絡安全公司。CrowdStrike升約8%，Cloudflare升約6%。",
+   "level": "low",
+   "scope": "sector",
+   "affects": [
+    {
+     "sym": "QQQ",
+     "dir": "up",
+     "why": "CrowdStrike係Nasdaq 100成分股，幫手抵銷部分跌幅"
+    },
+    {
+     "sym": "QQQM",
+     "dir": "up",
+     "why": "成分同QQQ一樣"
+    }
+   ],
+   "takeaway": "科技股唔係全部一齊跌，資金喺板塊之間轉移緊",
+   "found": "2026-10-24 08:00"
+  },
+  {
+   "time": "2026-10-24 02:00",
+   "headline": "油價推高加息預期 金價跌穿4000美元",
+   "source": "CNBC / FXStreet",
+   "url": "https://www.cnbc.com/2026/10/23/gold-heads-for-steep-weekly-loss-as-oil-prices-fuel-fed-rate-concerns.html",
+   "summary": "胡塞武裝襲擊沙特後，紐約期油升超過4%，再升穿100美元。9月通脹已經升至3.7%。CME估下週加息機會約9%，12月約81%。金價一度跌穿4000美元。",
+   "level": "high",
+   "scope": "market",
+   "affects": [
+    {
+     "sym": "QQQ",
+     "dir": "down",
+     "why": "加息預期高，科技股估值會受壓"
+    },
+    {
+     "sym": "VOO",
+     "dir": "down",
+     "why": "油價同利率一齊升，大市整體受壓"
+    },
+    {
+     "sym": "NVDA",
+     "dir": "down",
+     "why": "高增長股對利率最敏感"
+    }
+   ],
+   "takeaway": "油價係而家最大嘅風險，要留意中東局勢同債息",
+   "found": "2026-10-24 08:00"
   },
   {
    "time": "2026-10-24 00:30",
@@ -143,6 +278,42 @@
    ],
    "takeaway": "債息由高位回落係好事，但只要12月仲可能加息，大市都會比較波動。",
    "found": "2026-10-24 01:00"
+  },
+  {
+   "time": "2026-10-23 22:30",
+   "headline": "Dan Ives：Oracle借錢做雲端 處境最艱難",
+   "source": "Yahoo Finance",
+   "url": "https://finance.yahoo.com/technology/ai/articles/dan-ives-calls-ai-sell-135518486.html",
+   "summary": "Wedbush分析師Dan Ives形容今次AI股拋售係「SaaS末日2.0」，又話Oracle想做大型雲端公司，但靠借錢去做，所以處境最艱難。周五Oracle開市後再跌少少。",
+   "level": "medium",
+   "scope": "stock",
+   "affects": [
+    {
+     "sym": "ORCL",
+     "dir": "down",
+     "why": "連一向睇好AI嘅分析師都擔心佢負債"
+    }
+   ],
+   "takeaway": "Oracle最大嘅問題係負債，要留意佢嘅信用評級有冇俾人降",
+   "found": "2026-10-24 08:00"
+  },
+  {
+   "time": "2026-10-23 22:00",
+   "headline": "台積電連續六季創紀錄盈利 股價反而跌",
+   "source": "The Motley Fool",
+   "url": "https://www.fool.com/investing/2026/10/23/taiwan-semiconductor-posted-record-profit-and-the/",
+   "summary": "台積電已經連續六季錄得創紀錄盈利，但周四股價跟晶片股一齊跌約4.5%。市場擔心嘅係AI客戶將來嘅開支，而唔係台積電而家嘅業績。",
+   "level": "medium",
+   "scope": "stock",
+   "affects": [
+    {
+     "sym": "TSM",
+     "dir": "mixed",
+     "why": "業績好，但被整個AI板塊嘅憂慮拖低"
+    }
+   ],
+   "takeaway": "台積電今次跌主要係受板塊拖累，唔係公司本身出事",
+   "found": "2026-10-24 08:00"
   },
   {
    "time": "2026-10-23 22:00",
@@ -575,6 +746,34 @@
   },
   {
    "time": "2026-10-23 04:00",
+   "headline": "黃仁勳：新興雲端需求勁但缺錢 Nvidia跌4.4%",
+   "source": "Gotrade / TradingKey",
+   "url": "https://www.heygotrade.com/en/news/nvidia-nvda-stock-news-october-23-2026/",
+   "summary": "黃仁勳話新興雲端公司（neocloud）需求「爆燈」，但缺資金擴張。加上市場擔心AI開支見頂，周四Nvidia跌4.4%收212美元，市值蒸發約2350億美元。",
+   "level": "high",
+   "scope": "stock",
+   "affects": [
+    {
+     "sym": "NVDA",
+     "dir": "down",
+     "why": "客戶唔夠錢買晶片，令人擔心將來訂單"
+    },
+    {
+     "sym": "TSM",
+     "dir": "down",
+     "why": "Nvidia晶片由台積電代工，受同一個憂慮拖累"
+    },
+    {
+     "sym": "ORCL",
+     "dir": "down",
+     "why": "同樣係借錢建AI數據中心嘅公司，受同一種憂慮"
+    }
+   ],
+   "takeaway": "呢個就係周四Nvidia跌超過4%嘅主因，之後要留意大客戶開支有冇減",
+   "found": "2026-10-24 08:00"
+  },
+  {
+   "time": "2026-10-23 04:00",
    "headline": "Meta業績後急跌近7% 拖累科技股",
    "source": "Yahoo Finance",
    "url": "https://finance.yahoo.com/markets/live/stock-market-today-thursday-october-22-dow-sp-500-nasdaq-tesla-meta-112217857.html",
@@ -794,180 +993,6 @@
    ],
    "takeaway": "跌嘅原因主要係市場情緒，唔係業績轉差，唔使太驚，但短期會比較波動。",
    "found": "2026-10-24 01:00"
-  },
-  {
-   "time": "2026-10-22 22:30",
-   "headline": "Google 業績前跌穿支持位 被降目標價",
-   "source": "FX Leaders",
-   "url": "https://fxleaders.com/news/2026/10/22/goog-stock-breaks-support-following-meta-and-tesla-as-ai-spending-concerns-weigh-ahead-of-earnings",
-   "summary": "Meta 同 Tesla 嘅業績反應令市場擔心 AI 開支，GOOG 跌約 3%。KeyBanc 將目標價由 435 降到 410，但維持「增持」。另外有集體訴訟指 Google 誤導 Gemini 嘅開發時間表。",
-   "level": "high",
-   "scope": "stock",
-   "affects": [
-    {
-     "sym": "GOOG",
-     "dir": "down",
-     "why": "業績前市場謹慎，加上被降目標價同官司消息"
-    }
-   ],
-   "takeaway": "Google 10 月 28 日收市後公佈業績，重點睇雲端增長同資本開支；業績前後股價可能大上大落。",
-   "found": "2026-10-23 09:29"
-  },
-  {
-   "time": "2026-10-22 22:00",
-   "headline": "Oracle再跌逾4% 大行仍維持看好",
-   "source": "Investing.com / TradingKey",
-   "url": "https://in.investing.com/news/stock-market-news/cantor-fitzgerald-reiterates-oracle-stock-overweight-rating-on-ai-positioning-93CH-5648347",
-   "summary": "市場擔心 Oracle 起AI數據中心要大量借錢，佢嘅債務超過1,690億美元，信貸違約掉期價格亦創新高。Cantor 維持「增持」評級，目標價284美元；Mizuho 亦維持「跑贏大市」。",
-   "level": "high",
-   "scope": "stock",
-   "affects": [
-    {
-     "sym": "ORCL",
-     "dir": "mixed",
-     "why": "大行仍然睇好佢嘅AI雲端生意，但借錢太多嘅憂慮未解決，信貸市場仲好緊張"
-    }
-   ],
-   "takeaway": "可以留意 Oracle 債券同信貸違約掉期價格，信貸市場回穩，股價先有機會靠穩。",
-   "found": "2026-10-23 18:00"
-  },
-  {
-   "time": "2026-10-22 22:00",
-   "headline": "傳美以考慮選後再襲伊朗 油價破$111",
-   "source": "NBC News",
-   "url": "https://www.nbcnews.com/business/markets/iran-war-ai-spending-oil-prices-selloff-rcna604994",
-   "summary": "《紐約時報》引述美國官員講，美國同以色列考慮喺 11 月中期選舉後再空襲伊朗，伊朗揚言會報復。布蘭特期油升穿每桶 $111，係 5 個月高位。",
-   "level": "high",
-   "scope": "market",
-   "affects": [
-    {
-     "sym": "VOO",
-     "dir": "down",
-     "why": "油價貴會推高通脹、蠶食企業利潤，對成個大市都係壓力"
-    },
-    {
-     "sym": "TSLA",
-     "dir": "mixed",
-     "why": "油價高可能令多啲人想買電動車，但大市避險情緒對佢唔利"
-    },
-    {
-     "sym": "QQQ",
-     "dir": "down",
-     "why": "地緣風險升，資金傾向離開估值高嘅科技股"
-    }
-   ],
-   "takeaway": "依家只係報道，未發生；但油價同中東消息會繼續影響通脹同市場情緒，值得留意。",
-   "found": "2026-10-23 09:29"
-  },
-  {
-   "time": "2026-10-22 21:00",
-   "headline": "AMD、Intel單日跌8% Intel下週四公布業績",
-   "source": "Gotrade / Investing.com",
-   "url": "https://www.investing.com/news/stock-market-news/intel-stock-may-move-83-on-oct-29-earnings-report-93CH-4966674",
-   "summary": "週四晶片股大跌，AMD 跌8.1%，Intel 跌8.0%。Intel 將於10月29日收市後公布業績，期權市場估業績後股價可能上落約8.3%。",
-   "level": "medium",
-   "scope": "sector",
-   "affects": [
-    {
-     "sym": "NVDA",
-     "dir": "down",
-     "why": "成個晶片板塊一齊被拋售，NVDA 跌4.4%主要係受行業拖累"
-    },
-    {
-     "sym": "TSM",
-     "dir": "mixed",
-     "why": "Intel 業績會反映晶片需求同代工競爭"
-    },
-    {
-     "sym": "QQQ",
-     "dir": "down",
-     "why": "晶片股喺 Nasdaq-100 佔比好重"
-    }
-   ],
-   "takeaway": "下週科技股密集公布業績，晶片股波動可能好大，心理上要有準備。",
-   "found": "2026-10-23 18:00"
-  },
-  {
-   "time": "2026-10-22 20:30",
-   "headline": "首次申領失業救濟19.4萬 近57年低位",
-   "source": "CNBC",
-   "url": "https://www.cnbc.com/2026/10/22/jobless-claims-record-low-weekly.html",
-   "summary": "截至 10 月 17 日嗰星期，首次申領失業救濟人數跌到 19.4 萬，少過預期嘅 20 萬，接近 1969 年以嚟最低，反映美國就業市場仲好穩陣。",
-   "level": "low",
-   "scope": "market",
-   "affects": [
-    {
-     "sym": "VOO",
-     "dir": "mixed",
-     "why": "經濟穩陣係好事，但係就減少咗聯儲局減息嘅理由"
-    }
-   ],
-   "takeaway": "經濟冇衰退跡象，今次跌市主要係擔心 AI 同油價，唔係經濟轉差。",
-   "found": "2026-10-23 12:00"
-  },
-  {
-   "time": "2026-10-22 18:00",
-   "headline": "Nvidia聯同供應商擴產 封裝基板產能增2.5倍",
-   "source": "NVIDIA Newsroom",
-   "url": "https://nvidianews.nvidia.com/news/nvidia-and-supply-chain-partners-expand-capacity-to-accelerate-ai-infrastructure-buildout",
-   "summary": "Nvidia 同 IBIDEN、三星電機、欣興簽協議，三年內將基板產能提升2.5倍；另外預付11億美元，支持京元電喺美國起新廠。",
-   "level": "medium",
-   "scope": "stock",
-   "affects": [
-    {
-     "sym": "NVDA",
-     "dir": "mixed",
-     "why": "表示公司仍然睇好需求並且積極擴產，但市場而家更擔心客戶籌唔籌到錢"
-    },
-    {
-     "sym": "TSM",
-     "dir": "up",
-     "why": "AI晶片產能擴大，長遠對台積電先進製程同封裝需求有幫助"
-    }
-   ],
-   "takeaway": "長遠需求未見轉差，短期股價主要睇市場對AI融資嘅情緒。",
-   "found": "2026-10-23 18:00"
-  },
-  {
-   "time": "2026-10-22 04:30",
-   "headline": "Tesla 業績勝預期 削減開支後股價反跌",
-   "source": "SiliconANGLE",
-   "url": "https://siliconangle.com/2026/10/21/tesla-shares-fall-more-than-3-despite-earnings-beat-and-1-5b-in-free-cash-flow/",
-   "summary": "Tesla 第三季自由現金流係正 15 億美元，市場原本預期會燒錢。佢將全年資本開支由超過 250 億美元降到約 200 億美元，但經營利潤跌 56%，股價跌約 3%。",
-   "level": "high",
-   "scope": "stock",
-   "affects": [
-    {
-     "sym": "TSLA",
-     "dir": "down",
-     "why": "市場覺得少咗投資，代表 Robotaxi 同 Optimus 機械人嘅進度可能慢咗"
-    }
-   ],
-   "takeaway": "財務數字其實改善咗，股價跌主要係市場對 AI 故事嘅期望；留意 Robotaxi 嘅實際進度。",
-   "found": "2026-10-23 09:29"
-  },
-  {
-   "time": "2026-10-22 04:30",
-   "headline": "Lam Research：供應受限將延至2027年",
-   "source": "Yahoo Finance",
-   "url": "https://finance.yahoo.com/markets/article/chip-stocks-fall-as-equipment-maker-lam-research-cites-supply-chain-constraints-130648719.html",
-   "summary": "Lam Research 業績會上，財務總監話短期供應鏈受限，CEO 話問題會持續到 2027 年。Lam 股價跌約 8-12%，成為昨日晶片股大跌嘅導火線。",
-   "level": "medium",
-   "scope": "sector",
-   "affects": [
-    {
-     "sym": "TSM",
-     "dir": "mixed",
-     "why": "設備供應受限可能拖慢擴產，但同時代表先進晶片嘅產能仍然緊張"
-    },
-    {
-     "sym": "NVDA",
-     "dir": "mixed",
-     "why": "需求冇問題，但供應鏈瓶頸可能限制出貨速度"
-    }
-   ],
-   "takeaway": "問題係供應唔夠，唔係冇人要；需求冇轉差，所以唔使當係 AI 需求見頂。",
-   "found": "2026-10-23 09:29"
   }
  ]
 }

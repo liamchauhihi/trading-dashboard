@@ -1,5 +1,5 @@
 {
- "generated": "2026-10-25T18:00+08:00",
+ "generated": "2026-10-25T22:30+08:00",
  "holdings": [
   "TSM",
   "TSLA",
@@ -11,9 +11,83 @@
   "NVDA"
  ],
  "claude_ok": true,
- "claude_at": "2026-10-25T18:00+08:00",
- "summary": "中東局勢再升溫：胡塞武裝連日襲擊沙特能源設施，美國再派航母，伊朗就揚言報復，油價維持高位，週日海灣股市先跌。下週三議息應該唔會加息，但市場預期12月會加。同日 Alphabet 公佈業績，你嘅 GOOG、QQQ、QQQM 同 VOO 都可能大上大落。",
+ "claude_at": "2026-10-25T22:30+08:00",
+ "summary": "美伊局勢仍然係最大風險：伊朗週日話擊落美軍無人機，卡塔爾喺德黑蘭斡旋但未有突破，布蘭特油價企喺約117美元。今個星期有議息、PCE、GDP，加上Alphabet、微軟業績同Oracle投資者日，你嘅科技股持倉波動可能會加大。",
  "items": [
+  {
+   "time": "2026-10-25 20:00",
+   "headline": "Intel週四公佈業績 焦點毛利率同18A製程",
+   "source": "The Motley Fool",
+   "url": "https://www.fool.com/investing/2026/10/25/is-intel-stock-a-buy-right-now/",
+   "summary": "Intel 10月29日收市後公佈業績，市場預期收入約164.5億美元。佢上週四喺晶片股拋售中跌咗8%，市場主要睇毛利率指引同18A製程進度。",
+   "level": "low",
+   "scope": "sector",
+   "affects": [
+    {
+     "sym": "TSM",
+     "dir": "mixed",
+     "why": "Intel晶圓代工追得近，會增加台積電競爭壓力"
+    },
+    {
+     "sym": "NVDA",
+     "dir": "mixed",
+     "why": "業績會影響成個晶片板塊嘅情緒"
+    }
+   ],
+   "takeaway": "晶片股上週已經好波動，Intel業績可能再令板塊郁一郁",
+   "found": "2026-10-25 22:30"
+  },
+  {
+   "time": "2026-10-25 17:00",
+   "headline": "卡塔爾調停人到德黑蘭 伊朗話立場唔會變",
+   "source": "CBS News",
+   "url": "https://www.cbsnews.com/live-updates/iran-war-trump-us-oil-gas-prices-strait-of-hormuz-midterms/",
+   "summary": "卡塔爾調停人週日喺德黑蘭推動降溫，背後有美國協調。伊朗外長阿拉格齊話，就算美國再出手，德黑蘭立場都唔會改變，談判暫時仲未有突破。",
+   "level": "medium",
+   "scope": "market",
+   "affects": [
+    {
+     "sym": "VOO",
+     "dir": "mixed",
+     "why": "談判有進展大市會鬆一口氣，談唔成就繼續受壓"
+    },
+    {
+     "sym": "QQQM",
+     "dir": "mixed",
+     "why": "跟住大市情緒行，消息兩邊都有可能"
+    }
+   ],
+   "takeaway": "談判同開戰兩個可能都有，唔好單憑一條標題就判斷大市方向",
+   "found": "2026-10-25 22:30"
+  },
+  {
+   "time": "2026-10-25 16:00",
+   "headline": "伊朗稱喺阿巴斯港上空擊落美軍無人機",
+   "source": "Al Jazeera",
+   "url": "https://www.aljazeera.com/news/liveblog/2026/10/25/iran-war-live-trump-hints-at-possible-sunday-iran-attack-or-deal-reached",
+   "summary": "伊朗軍方週日話，喺南部港口阿巴斯港上空擊落一架美軍LUCAS攻擊無人機。之前特朗普講過可能「聽日」空襲，亦可能達成協議。",
+   "level": "high",
+   "scope": "market",
+   "affects": [
+    {
+     "sym": "VOO",
+     "dir": "down",
+     "why": "衝突升級會推高油價同避險情緒，大市普遍受壓"
+    },
+    {
+     "sym": "QQQ",
+     "dir": "down",
+     "why": "高估值科技股對避險情緒最敏感"
+    },
+    {
+     "sym": "XOM",
+     "dir": "up",
+     "why": "油價有上升壓力，石油股會受惠"
+    }
+   ],
+   "takeaway": "留意週一開市前有冇美軍報復行動，期貨可能先反映",
+   "found": "2026-10-25 22:30"
+  },
   {
    "time": "2026-10-25 14:00",
    "headline": "海灣股市週日先跌 沙特指數跌1.1%",
@@ -39,6 +113,29 @@
   },
   {
    "time": "2026-10-25 12:00",
+   "headline": "布蘭特油價約117美元迎週日開市 美稱封鎖無限期",
+   "source": "FinanceFeeds",
+   "url": "https://financefeeds.com/brent-crude-oil-price-116-72-sunday-futures-open-houthi-yanbu-rabigh-claims-riyadh-intercepts-fed-week-bull-120-bear-108",
+   "summary": "期油週日晚開市前，布蘭特報116.72美元。美國駐聯合國大使話對伊朗嘅海上封鎖會無限期維持，另一位美國大使Barrack話週末空襲「絕對」有可能。",
+   "level": "high",
+   "scope": "market",
+   "affects": [
+    {
+     "sym": "VOO",
+     "dir": "down",
+     "why": "油價貴會推高通脹，加息壓力大啲，對估值唔利"
+    },
+    {
+     "sym": "TSLA",
+     "dir": "mixed",
+     "why": "油貴有機會令更多人考慮電動車，但消費力會被削弱"
+    }
+   ],
+   "takeaway": "油價企喺高位，加息預期就難降，要留意週四公佈嘅PCE通脹數據",
+   "found": "2026-10-25 22:30"
+  },
+  {
+   "time": "2026-10-25 12:00",
    "headline": "比特幣週末急跌後回升至8.08萬美元",
    "source": "Time News",
    "url": "https://time.news/bitcoin-price-today-btc-recovers-to-80800-ahead-of-fed-meeting/",
@@ -54,6 +151,24 @@
    ],
    "takeaway": "你冇直接持有加密貨幣，當係觀察市場情緒嘅溫度計就得。",
    "found": "2026-10-25 18:00"
+  },
+  {
+   "time": "2026-10-25 09:00",
+   "headline": "Oracle AI World推10億美元夥伴計劃 高盛降目標價",
+   "source": "Pluang",
+   "url": "https://pluang.com/en/news-feed/hari-investor-oracle-28-oktober-2026",
+   "summary": "Oracle喺AI World宣佈投資10億美元推動合作夥伴業務增長。高盛將目標價由240美元降到206美元，但維持「買入」評級。Oracle靠賣股、借債同客戶預繳款去建AI雲。",
+   "level": "medium",
+   "scope": "stock",
+   "affects": [
+    {
+     "sym": "ORCL",
+     "dir": "mixed",
+     "why": "AI需求強，但借債多同降目標價反映市場擔心開支太大"
+    }
+   ],
+   "takeaway": "10月28日投資者日會更新長遠目標，要留意現金流同負債點講",
+   "found": "2026-10-25 22:30"
   },
   {
    "time": "2026-10-25 08:00",
@@ -84,6 +199,29 @@
    "found": "2026-10-25 12:00"
   },
   {
+   "time": "2026-10-25 06:00",
+   "headline": "本週議息兼GDP、PCE 市場押注12月加息八成",
+   "source": "FXEmpire",
+   "url": "https://www.fxempire.com/forecasts/article/the-week-ahead-fed-ai-earnings-and-pce-data-test-stock-market-strength-1640174",
+   "summary": "聯儲局週三議息，主席華殊（Warsh）會後見記者，今次加息機會約一成，但期貨顯示12月加息機會約八成。週四公佈第三季GDP（預期3.0%）同核心PCE。",
+   "level": "high",
+   "scope": "market",
+   "affects": [
+    {
+     "sym": "QQQ",
+     "dir": "mixed",
+     "why": "華殊講法偏鷹（傾向加息）會壓科技股估值，偏鴿就有支持"
+    },
+    {
+     "sym": "VOO",
+     "dir": "mixed",
+     "why": "GDP強但通脹高，即係加息機會大啲"
+    }
+   ],
+   "takeaway": "週三晚同週四晚（香港時間）大市可能會大上大落",
+   "found": "2026-10-25 22:30"
+  },
+  {
    "time": "2026-10-25 04:00",
    "headline": "特朗普：可能聽日空襲伊朗 亦可能達成協議",
    "source": "CBS News",
@@ -110,6 +248,24 @@
    ],
    "takeaway": "星期一開市前周末可能有突發消息，開市波動可能較大，唔使因為一條標題就慌。",
    "found": "2026-10-25 08:00"
+  },
+  {
+   "time": "2026-10-25 02:00",
+   "headline": "Tesla新Roadster洛杉磯博物館展出 官網主打Robotaxi",
+   "source": "Teslarati",
+   "url": "https://teslarati.com/tesla-roadster-center-display-ui-ux",
+   "summary": "Tesla首次公開新Roadster嘅車內介面，架車10月24至27日喺洛杉磯Petersen汽車博物館展出。官網亦改版，主打Robotaxi、Semi同Roadster。",
+   "level": "low",
+   "scope": "stock",
+   "affects": [
+    {
+     "sym": "TSLA",
+     "dir": "mixed",
+     "why": "新產品有話題性，但汽車業務利潤率收窄仍然係隱憂"
+    }
+   ],
+   "takeaway": "屬於宣傳性質嘅消息，對股價影響有限，主要睇Robotaxi進度",
+   "found": "2026-10-25 22:30"
   },
   {
    "time": "2026-10-25 02:00",
@@ -641,6 +797,29 @@
   },
   {
    "time": "2026-10-24 04:00",
+   "headline": "Alphabet業績前偏軟 降目標價同訴訟拖累",
+   "source": "Investing.com",
+   "url": "https://www.investing.com/news/stock-market-news/why-is-alphabet-stock-sliding-today-93CH-4963511",
+   "summary": "Alphabet業績前股價偏軟，原因包括KeyBanc降目標價、證券集體訴訟、英國雲端服務故障同AI競爭。不過OpenAI模型即將登陸Google Cloud，算係利好。",
+   "level": "medium",
+   "scope": "stock",
+   "affects": [
+    {
+     "sym": "GOOG",
+     "dir": "mixed",
+     "why": "短線有幾項利淡消息，但雲端得到OpenAI模型係新增長點"
+    },
+    {
+     "sym": "MSFT",
+     "dir": "down",
+     "why": "OpenAI唔再淨係經微軟發佈，Azure嘅獨家優勢冇咗"
+    }
+   ],
+   "takeaway": "GOOG上日跌1%屬正常業績前觀望，真正睇頭係週三嘅雲端數字",
+   "found": "2026-10-25 22:30"
+  },
+  {
+   "time": "2026-10-24 04:00",
    "headline": "特朗普撤部分加拿大關稅 另加新稅",
    "source": "Washington Post",
    "url": "https://www.washingtonpost.com/politics/2026/10/23/trump-rolls-back-some-canada-tariffs-move-that-helps-gop-candidates/",
@@ -814,185 +993,6 @@
    ],
    "takeaway": "留意周末中東消息，星期一開市可能會高開或者低開一大截",
    "found": "2026-10-25 01:00"
-  },
-  {
-   "time": "2026-10-24 00:30",
-   "headline": "美國油價升穿100美元 擔心美伊衝突再升溫",
-   "source": "Yahoo Finance",
-   "url": "https://finance.yahoo.com/markets/live/stock-market-today-friday-october-23-dow-sp-500-nasdaq-tesla-meta-093000521.html",
-   "summary": "有報道指以色列可能策劃再襲擊伊朗，WTI 原油升穿每桶 100 美元，布蘭特油價大約 114 美元。油價高會推高通脹，令市場擔心聯儲局要加息。",
-   "level": "high",
-   "scope": "market",
-   "affects": [
-    {
-     "sym": "VOO",
-     "dir": "down",
-     "why": "油價高會增加企業成本，令消費者少咗錢使，拖低大市"
-    },
-    {
-     "sym": "QQQ",
-     "dir": "down",
-     "why": "通脹升溫令加息機會增加，高估值科技股最受壓"
-    },
-    {
-     "sym": "TSLA",
-     "dir": "mixed",
-     "why": "油價高可能令電動車更吸引，但經濟轉弱亦會影響買車意欲"
-    }
-   ],
-   "takeaway": "中東局勢係而家最大嘅風險，要留意油價有冇繼續升。",
-   "found": "2026-10-24 04:45"
-  },
-  {
-   "time": "2026-10-23 23:30",
-   "headline": "10年債息本週回落至5% 資金避開AI股",
-   "source": "CNBC",
-   "url": "https://www.cnbc.com/2026/10/23/bonds-yields-us-treasurys.html",
-   "summary": "投資者擔心 AI 股，將資金轉入美債，10年期債息周五一度跌到約4.95%，之後回升到5%左右。CME FedWatch 顯示12月加息機會約七成，其他估算更高到八成。",
-   "level": "high",
-   "scope": "market",
-   "affects": [
-    {
-     "sym": "QQQ",
-     "dir": "mixed",
-     "why": "債息回落對科技股估值有幫助，但加息預期仍然係壓力"
-    },
-    {
-     "sym": "VOO",
-     "dir": "mixed",
-     "why": "借貸成本微降有幫助，但12月可能加息會壓住大市"
-    },
-    {
-     "sym": "ORCL",
-     "dir": "up",
-     "why": "Oracle 負債重，債息回落可以減輕融資壓力"
-    }
-   ],
-   "takeaway": "債息由高位回落係好事，但只要12月仲可能加息，大市都會比較波動。",
-   "found": "2026-10-24 01:00"
-  },
-  {
-   "time": "2026-10-23 23:00",
-   "headline": "PIMCO：下週停加息 但保留加息傾向",
-   "source": "PIMCO／Advisor Perspectives",
-   "url": "https://www.advisorperspectives.com/commentaries/2026/10/23/pause-still-recalibration?topic=retirement-income",
-   "summary": "PIMCO預計聯儲局10月28日將利率維持喺3.75%至4%，但會保留明確嘅加息傾向，可能有幾位委員投反對票，12月加息0.25厘機會最大。CME FedWatch顯示10月加息機會只有約9%。",
-   "level": "medium",
-   "scope": "market",
-   "affects": [
-    {
-     "sym": "VOO",
-     "dir": "mixed",
-     "why": "唔加息係預期之內，重點係聲明幾鷹派"
-    },
-    {
-     "sym": "QQQ",
-     "dir": "mixed",
-     "why": "如果暗示12月會加息，債息可能再升，壓住科技股"
-    },
-    {
-     "sym": "QQQM",
-     "dir": "mixed",
-     "why": "同QQQ一樣受利率預期影響"
-    }
-   ],
-   "takeaway": "唔郁息已經反映咗，你要留意聲明同主席講話有冇暗示12月加息。",
-   "found": "2026-10-25 12:00"
-  },
-  {
-   "time": "2026-10-23 23:00",
-   "headline": "Oracle 四年投10億美元撐合作夥伴",
-   "source": "GuruFocus",
-   "url": "https://www.gurufocus.com/news/9139931/oracle-stocks-edge-up-as-1-billion-backs-ai-partners",
-   "summary": "Oracle 宣布未來四年投資10億美元加強合作夥伴網絡，推廣 AI 雲端服務。股價周五微升0.5%，不過超過1,690億美元嘅債務仍然係市場最擔心嘅地方。",
-   "level": "low",
-   "scope": "stock",
-   "affects": [
-    {
-     "sym": "ORCL",
-     "dir": "mixed",
-     "why": "有助拓展客戶，但又係一筆新開支，債務憂慮仍在"
-    }
-   ],
-   "takeaway": "真正焦點係10月28日投資者日更新嘅長遠目標",
-   "found": "2026-10-25 04:45"
-  },
-  {
-   "time": "2026-10-23 23:00",
-   "headline": "Tesla業績後 焦點轉向SpaceX合併",
-   "source": "CNBC",
-   "url": "https://cnbc.com/2026/10/23/spacex-tesla-merger-chatter-takes-center-stage-after-earnings.html",
-   "summary": "馬斯克話SpaceX同Tesla合併係「好主意」，兩間公司已經成立委員會研究，但未有條款。Tesla周四跌3%，今年累計跌約17%；周五再跌0.6%。",
-   "level": "medium",
-   "scope": "stock",
-   "affects": [
-    {
-     "sym": "TSLA",
-     "dir": "mixed",
-     "why": "合併可能帶嚟新故事，但條款同監管仍然未知"
-    }
-   ],
-   "takeaway": "合併只係研究緊，未必成事；Barclays估最快12月前會有消息",
-   "found": "2026-10-25 01:00"
-  },
-  {
-   "time": "2026-10-23 22:30",
-   "headline": "穆迪上調台積電評級 TSM周五升1.5%",
-   "source": "Benzinga",
-   "url": "https://www.benzinga.com/markets/tech/26/10/62570114/whats-going-on-with-taiwan-semiconductor-stock-friday-5",
-   "summary": "穆迪上調台積電信貸評級，展望由正面改為穩定。另外路透報道台積電向供應商查詢唔使用稀土嘅工廠摩打。晶片股跑贏大市，TSM收市升1.49%，但成交比平時少約28%。",
-   "level": "medium",
-   "scope": "stock",
-   "affects": [
-    {
-     "sym": "TSM",
-     "dir": "up",
-     "why": "評級上調反映財政穩健；減少依賴稀土可以降低中國供應風險"
-    },
-    {
-     "sym": "NVDA",
-     "dir": "mixed",
-     "why": "台積電係Nvidia嘅主要代工廠，供應鏈穩定對佢有利"
-    }
-   ],
-   "takeaway": "今次升係評級同晶片股反彈帶動，但成交偏少，近一個月TSM仍然跌咗約7%。",
-   "found": "2026-10-25 12:00"
-  },
-  {
-   "time": "2026-10-23 22:30",
-   "headline": "Dan Ives：Oracle借錢做雲端 處境最艱難",
-   "source": "Yahoo Finance",
-   "url": "https://finance.yahoo.com/technology/ai/articles/dan-ives-calls-ai-sell-135518486.html",
-   "summary": "Wedbush分析師Dan Ives形容今次AI股拋售係「SaaS末日2.0」，又話Oracle想做大型雲端公司，但靠借錢去做，所以處境最艱難。周五Oracle開市後再跌少少。",
-   "level": "medium",
-   "scope": "stock",
-   "affects": [
-    {
-     "sym": "ORCL",
-     "dir": "down",
-     "why": "連一向睇好AI嘅分析師都擔心佢負債"
-    }
-   ],
-   "takeaway": "Oracle最大嘅問題係負債，要留意佢嘅信用評級有冇俾人降",
-   "found": "2026-10-24 08:00"
-  },
-  {
-   "time": "2026-10-23 22:00",
-   "headline": "Citizens JMP削Alphabet目標價至450美元",
-   "source": "MarketBeat",
-   "url": "https://www.marketbeat.com/instant-alerts/price-alphabet-nasdaq-googl-stock-price-down-12-following-analyst-downgrade-2026-10-23/",
-   "summary": "Citizens JMP將Alphabet目標價由515美元降至450美元，GOOG周五跌約1.1%。之前一日科技股因為擔心AI開支同借貸成本已經大跌，GOOGL跌咗約3%。Alphabet 10月28日公布業績。",
-   "level": "medium",
-   "scope": "stock",
-   "affects": [
-    {
-     "sym": "GOOG",
-     "dir": "down",
-     "why": "分析師削目標價，加上市場擔心AI開支太大，業績前氣氛偏淡"
-    }
-   ],
-   "takeaway": "業績前股價先跌咗一段，10月28日業績同AI開支指引先係關鍵。",
-   "found": "2026-10-25 12:00"
   }
  ]
 }

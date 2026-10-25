@@ -1,5 +1,5 @@
 {
- "generated": "2026-10-25T12:00+08:00",
+ "generated": "2026-10-25T18:00+08:00",
  "holdings": [
   "TSM",
   "TSLA",
@@ -11,9 +11,50 @@
   "NVDA"
  ],
  "claude_ok": true,
- "claude_at": "2026-10-25T12:00+08:00",
- "summary": "美伊局勢仍然係最大變數：有報道指美國考慮喺11月3日中期選舉後一連幾日空襲，目標包括伊朗能源設施，油價同債息壓力短期都未消。下星期議息預料唔郁息，但市場睇12月加息。跌勢主要集中喺AI大型科技股，你持有嘅GOOG、NVDA、QQQ同QQQM都受影響；Alphabet下星期三放榜係重要考驗。",
+ "claude_at": "2026-10-25T18:00+08:00",
+ "summary": "中東局勢再升溫：胡塞武裝連日襲擊沙特能源設施，美國再派航母，伊朗就揚言報復，油價維持高位，週日海灣股市先跌。下週三議息應該唔會加息，但市場預期12月會加。同日 Alphabet 公佈業績，你嘅 GOOG、QQQ、QQQM 同 VOO 都可能大上大落。",
  "items": [
+  {
+   "time": "2026-10-25 14:00",
+   "headline": "海灣股市週日先跌 沙特指數跌1.1%",
+   "source": "Business Recorder／路透社",
+   "url": "https://brecorder.com/news/40445859/gulf-bourses-slip-as-houthi-saudi-clashes-rattle-investors",
+   "summary": "胡塞武裝同沙特聯軍衝突升級，週日開市嘅海灣股市大多數下跌，沙特基準指數跌1.1%，係週末第一個反映局勢嘅市場。",
+   "level": "medium",
+   "scope": "market",
+   "affects": [
+    {
+     "sym": "VOO",
+     "dir": "down",
+     "why": "反映週末避險情緒，星期一美股開市可能受影響"
+    },
+    {
+     "sym": "SPY",
+     "dir": "down",
+     "why": "同VOO一樣追蹤標普500"
+    }
+   ],
+   "takeaway": "海灣股市跌幅溫和，未見恐慌，但係美股開市嘅一個參考。",
+   "found": "2026-10-25 18:00"
+  },
+  {
+   "time": "2026-10-25 12:00",
+   "headline": "比特幣週末急跌後回升至8.08萬美元",
+   "source": "Time News",
+   "url": "https://time.news/bitcoin-price-today-btc-recovers-to-80800-ahead-of-fed-meeting/",
+   "summary": "比特幣週末急跌之後，週日回升到約80,800美元，市場等緊下週聯儲局議息。",
+   "level": "low",
+   "scope": "market",
+   "affects": [
+    {
+     "sym": "QQQ",
+     "dir": "mixed",
+     "why": "週末加密貨幣跌反映冒險意慾轉弱，可以當係星期一科技股情緒嘅參考"
+    }
+   ],
+   "takeaway": "你冇直接持有加密貨幣，當係觀察市場情緒嘅溫度計就得。",
+   "found": "2026-10-25 18:00"
+  },
   {
    "time": "2026-10-25 08:00",
    "headline": "上週跌勢集中AI大型股 防守股撐得住",
@@ -118,6 +159,29 @@
   },
   {
    "time": "2026-10-25 00:00",
+   "headline": "美再派第三支航母編隊 伊朗揚言打海底電纜",
+   "source": "Bloomberg／TokenPost",
+   "url": "https://www.bloomberg.com/news/articles/2026-10-24/trump-prepares-for-iran-escalation-after-us-israeli-elections",
+   "summary": "美國派第三支航母打擊群同埋多一萬名海軍同陸戰隊去波斯灣。伊朗官員話如果再被襲擊，可能會攻擊海灣嘅海底通訊電纜同秘密軍事基地。",
+   "level": "medium",
+   "scope": "market",
+   "affects": [
+    {
+     "sym": "VOO",
+     "dir": "down",
+     "why": "戰爭升級風險提高，大市避險情緒升溫"
+    },
+    {
+     "sym": "GOOG",
+     "dir": "mixed",
+     "why": "海底電纜受襲可能影響雲端同網絡服務，暫時只係恐嚇"
+    }
+   ],
+   "takeaway": "暫時未真係開打，亦未達成協議，消息隨時令市況急轉。",
+   "found": "2026-10-25 18:00"
+  },
+  {
+   "time": "2026-10-25 00:00",
    "headline": "Oracle AI World 拉斯維加斯開幕",
    "source": "VDURA（活動資料）",
    "url": "https://www.vdura.com/?p=16400",
@@ -164,6 +228,34 @@
   },
   {
    "time": "2026-10-24 22:00",
+   "headline": "胡塞武裝連日襲擊沙特油港機場 油價企穩117美元",
+   "source": "Benzinga／路透社",
+   "url": "https://www.benzinga.com/markets/commodities/26/10/62577115/oil-prices-surge-houthi-attacks-saudi-arabia",
+   "summary": "胡塞武裝話48小時內襲擊咗沙特國防部、兩個機場同埋延布嘅Aramco設施。週六聯軍話擊落兩枚導彈，布蘭特期油喺117美元附近徘徊。",
+   "level": "high",
+   "scope": "market",
+   "affects": [
+    {
+     "sym": "VOO",
+     "dir": "down",
+     "why": "油價高推高通脹同加息預期，對成個大市都係壓力"
+    },
+    {
+     "sym": "QQQ",
+     "dir": "down",
+     "why": "債息貴，高估值科技股最受影響"
+    },
+    {
+     "sym": "QQQM",
+     "dir": "down",
+     "why": "同QQQ一樣追蹤Nasdaq 100"
+    }
+   ],
+   "takeaway": "中東衝突由伊朗擴散到沙特，留意星期一開市油價有冇再急升。",
+   "found": "2026-10-25 18:00"
+  },
+  {
+   "time": "2026-10-24 22:00",
    "headline": "伊朗：無論如何唔准美艦入海灣",
    "source": "Al Jazeera",
    "url": "https://aljazeera.com/news/2026/10/24/iran-says-wont-allow-us-warships-to-get-close-as-trump-ponders-new-attacks",
@@ -191,6 +283,57 @@
    "found": "2026-10-25 04:45"
   },
   {
+   "time": "2026-10-24 20:00",
+   "headline": "下週議息料按兵不動 市場押注12月加息",
+   "source": "DeFi Rate／CME FedWatch",
+   "url": "https://defirate.com/prediction-markets/fed-decision-odds/",
+   "summary": "CME數據顯示10月28日加息機會率只有約9%，Kalshi更低至6%。不過9月CPI升到3.7%，市場普遍預期12月9日會再加息。",
+   "level": "high",
+   "scope": "market",
+   "affects": [
+    {
+     "sym": "QQQ",
+     "dir": "mixed",
+     "why": "唔加息係預咗，重點係主席Warsh對12月有冇講得更鷹派"
+    },
+    {
+     "sym": "NVDA",
+     "dir": "mixed",
+     "why": "利率前景影響AI股估值同借錢擴張嘅成本"
+    },
+    {
+     "sym": "VOO",
+     "dir": "mixed",
+     "why": "議息聲明可能令債息同股市大上大落"
+    }
+   ],
+   "takeaway": "香港時間週四凌晨公佈議息結果，留意記者會講法，唔只係睇加唔加息。",
+   "found": "2026-10-25 18:00"
+  },
+  {
+   "time": "2026-10-24 18:00",
+   "headline": "中期選舉11月3日 預測市場睇好民主黨奪眾議院",
+   "source": "Time News",
+   "url": "https://time.news/us-stock-market-shows-mixed-reactions-after-midterms-historically/",
+   "summary": "預測市場Kalshi顯示，民主黨重奪眾議院嘅機會率約91%。報道話歷史上中期選舉後美股反應有好有淡，另外有報道指特朗普可能等選後先再對伊朗動手。",
+   "level": "low",
+   "scope": "market",
+   "affects": [
+    {
+     "sym": "VOO",
+     "dir": "mixed",
+     "why": "國會分治通常令新政策難推行，對市場影響好壞參半"
+    },
+    {
+     "sym": "SPY",
+     "dir": "mixed",
+     "why": "選舉加埋選後伊朗行動嘅風險，波動可能增加"
+    }
+   ],
+   "takeaway": "11月3日前後可能較波動，唔使因為選舉新聞即時反應。",
+   "found": "2026-10-25 18:00"
+  },
+  {
    "time": "2026-10-24 15:00",
    "headline": "期權預示 Alphabet 業績後可升跌約6%",
    "source": "TradingKey / Benzinga",
@@ -212,6 +355,34 @@
    ],
    "takeaway": "你揸 GOOG 就要預咗星期三晚可能有大波幅",
    "found": "2026-10-25 04:45"
+  },
+  {
+   "time": "2026-10-24 12:00",
+   "headline": "Alphabet週三業績 雲端利潤率同資本開支係焦點",
+   "source": "InsiderFinance",
+   "url": "https://www.insiderfinance.io/news/alphabet-q3-2026-earnings-preview",
+   "summary": "Alphabet會喺10月28日收市後公佈業績，市場預期收入1,274億至1,318億美元，每股盈利3.04至3.10美元。上季雲端增長超過80%，不過分析師預期雲端利潤率會跌到約31%。",
+   "level": "high",
+   "scope": "stock",
+   "affects": [
+    {
+     "sym": "GOOG",
+     "dir": "mixed",
+     "why": "上季資本開支大到自由現金流變負，要睇投資有冇回報"
+    },
+    {
+     "sym": "QQQ",
+     "dir": "mixed",
+     "why": "Alphabet係Nasdaq 100大權重股"
+    },
+    {
+     "sym": "QQQM",
+     "dir": "mixed",
+     "why": "同QQQ一樣大比重持有Alphabet"
+    }
+   ],
+   "takeaway": "業績同日撞正議息，GOOG隔晚可能大上大落，心理上要有準備。",
+   "found": "2026-10-25 18:00"
   },
   {
    "time": "2026-10-24 12:00",
@@ -821,147 +992,6 @@
     }
    ],
    "takeaway": "業績前股價先跌咗一段，10月28日業績同AI開支指引先係關鍵。",
-   "found": "2026-10-25 12:00"
-  },
-  {
-   "time": "2026-10-23 22:00",
-   "headline": "高盛下調Oracle目標價至206美元 維持買入",
-   "source": "ad-hoc-news",
-   "url": "https://www.ad-hoc-news.de/boerse/news/corporate-news/oracle-stock-jp-morgan-keeps-usd-200-target-for-oracle-stock/70399411",
-   "summary": "高盛將Oracle目標價由240降到206美元，但維持「買入」；摩根大通維持200美元目標。Oracle今年已跌約32%，股價喺125美元附近，季度股息0.5美元已經派發。",
-   "level": "medium",
-   "scope": "stock",
-   "affects": [
-    {
-     "sym": "ORCL",
-     "dir": "mixed",
-     "why": "分析師減目標反映借貸同開支憂慮，但仍睇好雲端前景"
-    }
-   ],
-   "takeaway": "Oracle負債高、靠OpenAI大合約，息口同AI資金消息會令佢特別波動。",
-   "found": "2026-10-24 12:00"
-  },
-  {
-   "time": "2026-10-23 22:00",
-   "headline": "台積電連續六季創紀錄盈利 股價反而跌",
-   "source": "The Motley Fool",
-   "url": "https://www.fool.com/investing/2026/10/23/taiwan-semiconductor-posted-record-profit-and-the/",
-   "summary": "台積電已經連續六季錄得創紀錄盈利，但周四股價跟晶片股一齊跌約4.5%。市場擔心嘅係AI客戶將來嘅開支，而唔係台積電而家嘅業績。",
-   "level": "medium",
-   "scope": "stock",
-   "affects": [
-    {
-     "sym": "TSM",
-     "dir": "mixed",
-     "why": "業績好，但被整個AI板塊嘅憂慮拖低"
-    }
-   ],
-   "takeaway": "台積電今次跌主要係受板塊拖累，唔係公司本身出事",
-   "found": "2026-10-24 08:00"
-  },
-  {
-   "time": "2026-10-23 22:00",
-   "headline": "密歇根消費者信心終值48 好過預期",
-   "source": "Bloomberg",
-   "url": "https://www.bloomberg.com/news/articles/2026-10-23/us-consumer-sentiment-slips-to-five-month-low-on-inflation-woes",
-   "summary": "10月終值48.0，上月48.1，好過初值同所有經濟師預測，但仍然係五個月低位，消費者擔心物價。",
-   "level": "medium",
-   "scope": "market",
-   "affects": [
-    {
-     "sym": "VOO",
-     "dir": "mixed",
-     "why": "消費者情緒偏弱，但冇再惡化"
-    },
-    {
-     "sym": "TSLA",
-     "dir": "down",
-     "why": "消費者信心低，汽車呢類大額消費會受影響"
-    }
-   ],
-   "takeaway": "留意通脹預期數字，佢會影響聯儲局會唔會加息。",
-   "found": "2026-10-23 22:30"
-  },
-  {
-   "time": "2026-10-23 21:45",
-   "headline": "Bloom Energy業績勝預期 股價反跌11%",
-   "source": "TheStreet",
-   "url": "https://www.thestreet.com/stock-market-today/stock-market-today-dow-jones-sp-500-nasdaq-updates-oct-23-2026",
-   "summary": "為 Oracle AI 數據中心供電嘅 Bloom Energy 第三季業績好過預期，但市場擔心佢現金流係負數同開支太高，股價急跌約11%。",
-   "level": "medium",
-   "scope": "sector",
-   "affects": [
-    {
-     "sym": "ORCL",
-     "dir": "down",
-     "why": "Bloom 係 Oracle 新墨西哥 AI 園區嘅主要電力供應商，市場對 AI 基建要燒幾多錢更加敏感"
-    },
-    {
-     "sym": "BE",
-     "dir": "down",
-     "why": "負現金流同高開支蓋過咗業績好消息"
-    }
-   ],
-   "takeaway": "市場而家好睇重 AI 公司嘅現金流。持有 ORCL 要留意佢負債同融資方面嘅消息。",
-   "found": "2026-10-24 01:00"
-  },
-  {
-   "time": "2026-10-23 21:45",
-   "headline": "美國10月PMI：製造業勝預期 服務業放緩",
-   "source": "Newsquawk",
-   "url": "https://www.newsquawk.com/headlines/us-sp-global-manufacturing-pmi-flash-oct-560-vs-exp-555-prev-559",
-   "summary": "S&P Global初值：製造業56.0（預期55.5），服務業57.9（上月58.8），綜合指數57.6（上月58.4）。經濟仍然擴張，但服務業放慢。",
-   "level": "medium",
-   "scope": "market",
-   "affects": [
-    {
-     "sym": "VOO",
-     "dir": "mixed",
-     "why": "經濟穩陣係好事，但都唔夠弱去減低加息壓力"
-    },
-    {
-     "sym": "QQQ",
-     "dir": "mixed",
-     "why": "數據冇改變市場對12月加息嘅預期"
-    }
-   ],
-   "takeaway": "經濟冇明顯轉差，焦點仍然係油價同聯儲局。",
-   "found": "2026-10-23 22:30"
-  },
-  {
-   "time": "2026-10-23 21:00",
-   "headline": "Alphabet業績前被調低目標價 集體訴訟提醒",
-   "source": "GlobeNewswire / MarketBeat",
-   "url": "https://www.globenewswire.com/news-release/2026/10/23/3387567/1020/en/kaplan-fox-alerts-investors-of-alphabet-inc-nasdaq-googl-goog-to-a-pending-securities-class-action-deadline-is-december-1-2026.html",
-   "summary": "Citizens 將 Alphabet 目標價由515美元降到450美元。律師行再提醒投資者有一單集體訴訟，指控 Gemini 3.5 Pro 進度落後。GOOG 呢個星期跌咗唔少。",
-   "level": "medium",
-   "scope": "stock",
-   "affects": [
-    {
-     "sym": "GOOG",
-     "dir": "down",
-     "why": "業績前被調低目標價，加上訴訟消息，影響投資者信心"
-    }
-   ],
-   "takeaway": "律師行嘅訴訟通告好常見，影響通常有限；重點都係下週業績。",
-   "found": "2026-10-24 22:30"
-  },
-  {
-   "time": "2026-10-23 20:00",
-   "headline": "Tesla Robotaxi再擴四城 公開安全數據",
-   "source": "Tesla Oracle",
-   "url": "https://www.teslaoracle.com/2026/10/23/tesla-announces-robotaxi-launch-in-four-more-cities-releases-safety-data-via-new-website-no-kittens-were-hurt/",
-   "summary": "Tesla推出Robotaxi安全數據網站，六個城市累計行駛超過340萬英里，預告拉斯維加斯、鳳凰城等四個城市即將開通。奧斯汀服務範圍擴大至F1賽道。美銀話Robotaxi「到咗轉捩點」，但成本仍然偏高。",
-   "level": "medium",
-   "scope": "stock",
-   "affects": [
-    {
-     "sym": "TSLA",
-     "dir": "mixed",
-     "why": "業務擴張係好消息，但Musk話要2027年先開始貢獻收入，無人監督FSD押後到2027年第二季"
-    }
-   ],
-   "takeaway": "Robotaxi進度穩步向前，但真正賺錢最快都要2027年，股價主要靠預期推動。",
    "found": "2026-10-25 12:00"
   }
  ]

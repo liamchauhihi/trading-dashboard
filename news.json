@@ -1,5 +1,5 @@
 {
- "generated": "2026-10-26T22:30+08:00",
+ "generated": "2026-10-27T01:00+08:00",
  "holdings": [
   "TSM",
   "TSLA",
@@ -11,9 +11,124 @@
   "NVDA"
  ],
  "claude_ok": true,
- "claude_at": "2026-10-26T22:30+08:00",
- "summary": "今晚有三件大事：Anthropic 正式交咗上市文件（S-1），AI 晶片股因此有支持；Meta 宣布集資最多 950 億美元搞 AI，市場再擔心科技巨頭開支太大；Tesla 獲 Barclays 升評級，一度升約 6%。另外 10 年期美債息喺 5% 附近，聯儲局本週議息，Alphabet 同 Oracle 週三有大事，你嘅科技持倉今個星期可能會郁得比較大。",
+ "claude_at": "2026-10-27T01:00+08:00",
+ "summary": "美股週一收復上週大部分跌幅。焦點係週四凌晨（香港時間）聯儲局議息同 Google、微軟業績，市場普遍預期今次唔郁息。Tesla 因為合併 SpaceX 嘅憧憬急升。油價重企喺 115 美元以上，債息仍然接近 5%，所以你持有嘅科技股短期可能會上落得比較大。",
  "items": [
+  {
+   "time": "2026-10-27 00:57",
+   "headline": "美股週一造好 納指領漲約1%",
+   "source": "Yahoo Finance",
+   "url": "https://finance.yahoo.com/markets/live/stock-market-today-monday-october-26-dow-sp-500-nasdaq-101153035.html",
+   "summary": "美股收市前，標普500升約0.7%，納指升約0.8–1%，道指升約0.2%，收復上週部分跌幅。Anthropic 交上市文件，帶動 AI 同晶片股造好。",
+   "level": "high",
+   "scope": "market",
+   "affects": [
+    {
+     "sym": "QQQ",
+     "dir": "up",
+     "why": "科技股領漲，QQQ升約1.2%"
+    },
+    {
+     "sym": "QQQM",
+     "dir": "up",
+     "why": "同QQQ追蹤同一個指數，走勢一樣"
+    },
+    {
+     "sym": "VOO",
+     "dir": "up",
+     "why": "標普500升約0.7%"
+    }
+   ],
+   "takeaway": "今日只係反彈。標普同納指之前已經連跌兩個禮拜，未算轉勢，要等今個禮拜議息同業績先知方向。",
+   "found": "2026-10-27 01:00"
+  },
+  {
+   "time": "2026-10-27 00:30",
+   "headline": "Tesla 升逾6% 兩間公司成立委員會研究合併",
+   "source": "CNBC",
+   "url": "https://www.cnbc.com/2026/10/26/tesla-spacex-merger-barclays.html",
+   "summary": "Barclays 將 Tesla 目標價由370美元升到450美元，睇好合併 SpaceX 時股東會收到溢價。股價升約6.5%，到約396美元。馬斯克確認兩間公司已經各自成立獨立委員會研究合併，但話未一定成事。",
+   "level": "high",
+   "scope": "stock",
+   "affects": [
+    {
+     "sym": "TSLA",
+     "dir": "up",
+     "why": "市場炒合併溢價，加上汽車業務恢復增長、儲能出貨可能大增"
+    }
+   ],
+   "takeaway": "今次升主要靠合併憧憬。如果合併談唔成，股價有機會回吐，要留意兩間公司嘅正式公布。",
+   "found": "2026-10-27 01:00"
+  },
+  {
+   "time": "2026-10-27 00:05",
+   "headline": "沙特防長赴德黑蘭 油價早跌後回升",
+   "source": "CNBC",
+   "url": "https://www.cnbc.com/2026/10/26/oil-prices-today-wti-brent.html",
+   "summary": "因為美伊和談有希望，布蘭特油價早段一度跌到約114.5美元，之後回升到約117美元。沙特防長去咗德黑蘭會談，胡塞武裝襲擊沙特嘅風險仲喺度。",
+   "level": "medium",
+   "scope": "market",
+   "affects": [
+    {
+     "sym": "VOO",
+     "dir": "mixed",
+     "why": "油價高推高通脹，令減息更難"
+    },
+    {
+     "sym": "QQQ",
+     "dir": "mixed",
+     "why": "通脹壓力會令債息唔跌，對高估值科技股唔利"
+    }
+   ],
+   "takeaway": "中東談判有冇進展會直接影響油價同大市，留意和談有冇結果。",
+   "found": "2026-10-27 01:00"
+  },
+  {
+   "time": "2026-10-27 00:00",
+   "headline": "Anthropic 招股書披露 Google 有權加碼100億美元",
+   "source": "CNBC",
+   "url": "https://www.cnbc.com/2026/10/26/anthropic-ipo-live-updates-ai-s-1-filing.html",
+   "summary": "招股書顯示，Google 有權喺上市同時用私人配售買入最多100億美元 Anthropic 股份。Amazon 持股上限係12%。分析估計 Alphabet 持股約一至一成半，上市後呢筆投資價值可能好高。",
+   "level": "high",
+   "scope": "stock",
+   "affects": [
+    {
+     "sym": "GOOG",
+     "dir": "mixed",
+     "why": "持有嘅 Anthropic 股份可能好值錢，但最終估值要上市定價先知"
+    },
+    {
+     "sym": "AMZN",
+     "dir": "mixed",
+     "why": "持股最多12%，比部分分析師估計嘅15–20%低"
+    }
+   ],
+   "takeaway": "Anthropic 上市對 Google 係潛在好處，但估值數字仲未落實，唔好單靠呢單新聞判斷 Google 股價。",
+   "found": "2026-10-27 01:00"
+  },
+  {
+   "time": "2026-10-26 23:00",
+   "headline": "10年期債息回落至約4.97%",
+   "source": "CNBC",
+   "url": "https://www.cnbc.com/2026/10/26/us-treasury-yields-investors-feds-interest-rate-decision-.html",
+   "summary": "10年期美債息喺4.96–4.99%之間，比本月初超過5.3%低，今日變化唔大。2年期約4.7%，投資者等議息同經濟數據。",
+   "level": "low",
+   "scope": "market",
+   "affects": [
+    {
+     "sym": "QQQ",
+     "dir": "up",
+     "why": "債息回落通常對科技股估值有利"
+    },
+    {
+     "sym": "NVDA",
+     "dir": "up",
+     "why": "高增長股對債息比較敏感"
+    }
+   ],
+   "takeaway": "債息仲貼近5%。如果議息後債息再升穿5%，科技股可能再受壓。",
+   "found": "2026-10-27 01:00"
+  },
   {
    "time": "2026-10-26 23:00",
    "headline": "Oracle 跌近52週低位 大行接連削目標價",
@@ -102,34 +217,6 @@
    "found": "2026-10-26 22:30"
   },
   {
-   "time": "2026-10-26 21:00",
-   "headline": "Anthropic 交 S-1 上市文件 擬納指上市代號 ANT",
-   "source": "CNBC",
-   "url": "https://www.cnbc.com/2026/10/26/anthropic-ipo-live-updates-ai-s-1-filing.html",
-   "summary": "AI 公司 Anthropic 公開上市文件，計劃喺納指上市，代號 ANT，最快 11 月中定價。文件披露收入增長快，但開支同虧損都好大。",
-   "level": "high",
-   "scope": "market",
-   "affects": [
-    {
-     "sym": "NVDA",
-     "dir": "up",
-     "why": "Anthropic 大量買 AI 晶片，上市集到錢之後可能再加大採購"
-    },
-    {
-     "sym": "GOOG",
-     "dir": "mixed",
-     "why": "Google 係 Anthropic 嘅投資者同雲端供應商，但兩者喺 AI 模型上又係競爭對手"
-    },
-    {
-     "sym": "QQQ",
-     "dir": "mixed",
-     "why": "超大型 IPO 會將一部分資金由現有科技股吸走"
-    }
-   ],
-   "takeaway": "超大型 IPO 會左右 AI 板塊氣氛。留意 11 月中定價前後，科技股可能會比平時波動。",
-   "found": "2026-10-26 22:30"
-  },
-  {
    "time": "2026-10-26 20:30",
    "headline": "Meta 擬集資最多950億美元 投放AI基建",
    "source": "CNBC",
@@ -158,27 +245,32 @@
    "found": "2026-10-26 22:30"
   },
   {
-   "time": "2026-10-26 20:00",
-   "headline": "10年期美債息徘徊5%附近 等聯儲議息",
-   "source": "CNBC",
-   "url": "https://www.cnbc.com/2026/10/26/us-treasury-yields-investors-feds-interest-rate-decision-.html",
-   "summary": "10 年期美債息約 4.97% 至 5.0%，30 年期約 5.31%。市場等聯儲局 10 月 27 至 28 日議息結果。",
-   "level": "medium",
+   "time": "2026-10-26 19:30",
+   "headline": "週四凌晨議息 緊接 Google 同微軟業績",
+   "source": "Yahoo Finance",
+   "url": "https://finance.yahoo.com/markets/stocks/articles/microsoft-alphanet-amazon-earnings-meet-113701296.html",
+   "summary": "聯儲局香港時間週四凌晨2:00公布議息結果，期貨顯示約九成機會維持3.75–4%。部分機構估計12月可能加息。Google 同微軟週四凌晨收市後出業績，Amazon 週五凌晨出。",
+   "level": "high",
    "scope": "market",
    "affects": [
     {
+     "sym": "GOOG",
+     "dir": "mixed",
+     "why": "業績焦點係雲端增長同資本開支"
+    },
+    {
      "sym": "QQQ",
-     "dir": "down",
-     "why": "債息高企，高估值科技股嘅吸引力會下降"
+     "dir": "mixed",
+     "why": "三大科技股業績加議息集中喺兩日內"
     },
     {
      "sym": "VOO",
      "dir": "mixed",
-     "why": "如果債息升穿 5%，大市可能受壓"
+     "why": "鮑威爾有冇暗示12月加息會影響大市"
     }
    ],
-   "takeaway": "可以留意債息會唔會企穩 5% 以上，同埋鮑威爾點講通脹。",
-   "found": "2026-10-26 22:30"
+   "takeaway": "週四同週五早上香港時間股價可能大上大落，記住呢兩日睇你嘅持倉。",
+   "found": "2026-10-27 01:00"
   },
   {
    "time": "2026-10-26 19:00",
@@ -588,6 +680,34 @@
   },
   {
    "time": "2026-10-25 20:00",
+   "headline": "微軟料單季資本開支超過500億美元",
+   "source": "Forbes",
+   "url": "https://www.forbes.com/sites/bill_stone/2026/10/25/alphabet-microsoft-and-amazon-lead-busiest-week-of-earnings-season/",
+   "summary": "市場預期微軟季度收入約906億美元，Azure 增長約45%，季度資本開支超過500億美元。科技巨頭肯唔肯繼續大手投資 AI 係今個禮拜嘅焦點。",
+   "level": "medium",
+   "scope": "sector",
+   "affects": [
+    {
+     "sym": "NVDA",
+     "dir": "mixed",
+     "why": "微軟係 AI 晶片大客，資本開支多少直接影響需求"
+    },
+    {
+     "sym": "TSM",
+     "dir": "mixed",
+     "why": "AI 晶片大多由台積電代工"
+    },
+    {
+     "sym": "ORCL",
+     "dir": "mixed",
+     "why": "雲端對手業績會影響市場點睇 Oracle"
+    }
+   ],
+   "takeaway": "巨頭話繼續加大投資，對晶片股通常係好消息。但如果投資者擔心花錢太多、賺錢太慢，股價都可能跌。",
+   "found": "2026-10-27 01:00"
+  },
+  {
+   "time": "2026-10-25 20:00",
    "headline": "胡塞稱襲沙特延布、拉比格油設施 沙特未證實有損毀",
    "source": "IBTimes / China Economic Net",
    "url": "http://en.ce.cn/main/latest/202610/t20261025_3270462.shtml",
@@ -843,126 +963,6 @@
    ],
    "takeaway": "你冇直接持有加密貨幣，當係觀察市場情緒嘅溫度計就得。",
    "found": "2026-10-25 18:00"
-  },
-  {
-   "time": "2026-10-25 10:00",
-   "headline": "美股連跌兩週 能源醫療股撐市",
-   "source": "Edward Lane（Substack）",
-   "url": "https://edwardlane.substack.com/p/stock-market-report-for-october-25",
-   "summary": "上週標普500跌0.43%，納指跌0.76%，羅素2000就升近2%。資金走去能源同醫療股，Meta業績後大跌，半導體股繼續受壓。",
-   "level": "medium",
-   "scope": "market",
-   "affects": [
-    {
-     "sym": "VOO",
-     "dir": "down",
-     "why": "大市連跌兩週，不過跌幅唔大"
-    },
-    {
-     "sym": "QQQ",
-     "dir": "down",
-     "why": "大型科技股係主要拖累"
-    },
-    {
-     "sym": "NVDA",
-     "dir": "down",
-     "why": "市場懷疑AI開支值唔值，半導體股被沽"
-    }
-   ],
-   "takeaway": "跌勢集中喺科技股，你嘅持倉偏科技，會比大市跌得多啲。",
-   "found": "2026-10-26 01:00"
-  },
-  {
-   "time": "2026-10-25 09:00",
-   "headline": "Oracle AI World推10億美元夥伴計劃 高盛降目標價",
-   "source": "Pluang",
-   "url": "https://pluang.com/en/news-feed/hari-investor-oracle-28-oktober-2026",
-   "summary": "Oracle喺AI World宣佈投資10億美元推動合作夥伴業務增長。高盛將目標價由240美元降到206美元，但維持「買入」評級。Oracle靠賣股、借債同客戶預繳款去建AI雲。",
-   "level": "medium",
-   "scope": "stock",
-   "affects": [
-    {
-     "sym": "ORCL",
-     "dir": "mixed",
-     "why": "AI需求強，但借債多同降目標價反映市場擔心開支太大"
-    }
-   ],
-   "takeaway": "10月28日投資者日會更新長遠目標，要留意現金流同負債點講",
-   "found": "2026-10-25 22:30"
-  },
-  {
-   "time": "2026-10-25 08:00",
-   "headline": "高盛大削韓股目標25% AI股拋售蔓延亞洲",
-   "source": "Investing.com",
-   "url": "https://uk.investing.com/news/stock-market-news/form-4-unitedhealth-group-for-25-october-93CH-4930215",
-   "summary": "高盛因為AI股拋售，將韓國Kospi指數目標價大削25%。韓國晶片股同AI供應鏈關係密切。",
-   "level": "medium",
-   "scope": "sector",
-   "affects": [
-    {
-     "sym": "TSM",
-     "dir": "down",
-     "why": "亞洲晶片股情緒轉差，台積電可能受牽連"
-    },
-    {
-     "sym": "NVDA",
-     "dir": "down",
-     "why": "反映市場對AI需求嘅擔心擴散"
-    }
-   ],
-   "takeaway": "留意亞洲晶片股週一開市表現，可以當係美國晶片股嘅先兆。",
-   "found": "2026-10-26 01:00"
-  },
-  {
-   "time": "2026-10-25 08:00",
-   "headline": "上週跌勢集中AI大型股 防守股撐得住",
-   "source": "Seeking Alpha",
-   "url": "https://seekingalpha.com/article/4957279-the-1-minute-market-report-october-24-2026",
-   "summary": "市場周報指出，上星期跌幅主要集中喺大型成長股同AI股，防守股同價值股相對穩陣。標普500距離歷史高位約2.5%，作者估計會有人趁低吸納，但呢個只係個人睇法。",
-   "level": "low",
-   "scope": "sector",
-   "affects": [
-    {
-     "sym": "NVDA",
-     "dir": "down",
-     "why": "AI股係上週資金撤出嘅重災區"
-    },
-    {
-     "sym": "QQQ",
-     "dir": "down",
-     "why": "大型科技股佔比高，受AI股回落拖累"
-    },
-    {
-     "sym": "VOO",
-     "dir": "mixed",
-     "why": "比較分散，有防守股抵銷部分跌幅"
-    }
-   ],
-   "takeaway": "標普只係距高位2.5%，屬正常回調幅度，但你嘅持倉偏重科技股，波動會比大市大。",
-   "found": "2026-10-25 12:00"
-  },
-  {
-   "time": "2026-10-25 06:00",
-   "headline": "本週議息兼GDP、PCE 市場押注12月加息八成",
-   "source": "FXEmpire",
-   "url": "https://www.fxempire.com/forecasts/article/the-week-ahead-fed-ai-earnings-and-pce-data-test-stock-market-strength-1640174",
-   "summary": "聯儲局週三議息，主席華殊（Warsh）會後見記者，今次加息機會約一成，但期貨顯示12月加息機會約八成。週四公佈第三季GDP（預期3.0%）同核心PCE。",
-   "level": "high",
-   "scope": "market",
-   "affects": [
-    {
-     "sym": "QQQ",
-     "dir": "mixed",
-     "why": "華殊講法偏鷹（傾向加息）會壓科技股估值，偏鴿就有支持"
-    },
-    {
-     "sym": "VOO",
-     "dir": "mixed",
-     "why": "GDP強但通脹高，即係加息機會大啲"
-    }
-   ],
-   "takeaway": "週三晚同週四晚（香港時間）大市可能會大上大落",
-   "found": "2026-10-25 22:30"
   }
  ]
 }

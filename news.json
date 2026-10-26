@@ -1,5 +1,5 @@
 {
- "generated": "2026-10-27T01:00+08:00",
+ "generated": "2026-10-27T04:45+08:00",
  "holdings": [
   "TSM",
   "TSLA",
@@ -11,9 +11,83 @@
   "NVDA"
  ],
  "claude_ok": true,
- "claude_at": "2026-10-27T01:00+08:00",
- "summary": "美股週一收復上週大部分跌幅。焦點係週四凌晨（香港時間）聯儲局議息同 Google、微軟業績，市場普遍預期今次唔郁息。Tesla 因為合併 SpaceX 嘅憧憬急升。油價重企喺 115 美元以上，債息仍然接近 5%，所以你持有嘅科技股短期可能會上落得比較大。",
+ "claude_at": "2026-10-27T04:45+08:00",
+ "summary": "Anthropic 遞表上市，帶動晶片股同大型科技股反彈，你嘅 NVDA、TSM、QQQ 都受惠。不過今個星期有幾件大事：週四凌晨聯儲局議息，市場想知會唔會講到 12 月加息；同日 Google 同微軟出業績，週四晚仲有 GDP 同 PCE 通脹數據。大市短期可能會波動得比較大。",
  "items": [
+  {
+   "time": "2026-10-27 04:00",
+   "headline": "美股收高 Anthropic 遞表帶動晶片股反彈",
+   "source": "CNBC",
+   "url": "https://www.cnbc.com/2026/10/25/stock-market-today-live-updates.html",
+   "summary": "標普 500 收升約 0.7%，納指升約 0.8%。Anthropic 正式遞交上市文件，令市場重新炒 AI，半導體 ETF 升近 3%。Nvidia 收升約 2.4%，Tesla 升 5% 以上。",
+   "level": "high",
+   "scope": "market",
+   "affects": [
+    {
+     "sym": "NVDA",
+     "dir": "up",
+     "why": "AI 公司上市再次證明對晶片需求大，晶片股帶頭升"
+    },
+    {
+     "sym": "QQQ",
+     "dir": "up",
+     "why": "科技同晶片權重股一齊升，帶高納指"
+    },
+    {
+     "sym": "VOO",
+     "dir": "up",
+     "why": "大市普遍向上，不過升幅細過納指"
+    }
+   ],
+   "takeaway": "反彈主要係靠 AI 情緒推動，今個星期業績同議息先係真正考驗",
+   "found": "2026-10-27 04:45"
+  },
+  {
+   "time": "2026-10-27 02:30",
+   "headline": "中東斡旋 布蘭特油價收跌至約 115.8 美元",
+   "source": "CNBC",
+   "url": "https://www.cnbc.com/2026/10/26/oil-prices-today-wti-brent.html",
+   "summary": "沙特同卡塔爾分別派人去德黑蘭斡旋，布蘭特期油收跌 0.91 美元，WTI 收 101.76 美元，但油價仍然處於高位。",
+   "level": "low",
+   "scope": "market",
+   "affects": [
+    {
+     "sym": "VOO",
+     "dir": "mixed",
+     "why": "油價高會推高通脹，影響減息或加息預期"
+    }
+   ],
+   "takeaway": "談判有進展可以紓緩通脹壓力，但局勢隨時會變",
+   "found": "2026-10-27 04:45"
+  },
+  {
+   "time": "2026-10-27 01:00",
+   "headline": "聯儲局料週四凌晨按兵不動 焦點係 12 月會唔會加息",
+   "source": "Investing.com",
+   "url": "https://www.investing.com/news/stock-market-news/fed-hold-expected-this-week-as-markets-watch-for-december-hike-signals-93CH-4973447",
+   "summary": "市場預期利率維持 4.0% 不變。重點係主席 Warsh 喺記者會有冇暗示 12 月加息。",
+   "level": "high",
+   "scope": "market",
+   "affects": [
+    {
+     "sym": "QQQ",
+     "dir": "mixed",
+     "why": "如果暗示加息，高估值科技股通常最受壓"
+    },
+    {
+     "sym": "VOO",
+     "dir": "mixed",
+     "why": "利率前景會影響成個大市嘅估值"
+    },
+    {
+     "sym": "QQQM",
+     "dir": "mixed",
+     "why": "同 QQQ 一樣追蹤納指 100，受影響方向一樣"
+    }
+   ],
+   "takeaway": "唔加息基本上已經反映咗喺股價，要留意記者會嘅語氣",
+   "found": "2026-10-27 04:45"
+  },
   {
    "time": "2026-10-27 00:57",
    "headline": "美股週一造好 納指領漲約1%",
@@ -61,29 +135,6 @@
    "found": "2026-10-27 01:00"
   },
   {
-   "time": "2026-10-27 00:05",
-   "headline": "沙特防長赴德黑蘭 油價早跌後回升",
-   "source": "CNBC",
-   "url": "https://www.cnbc.com/2026/10/26/oil-prices-today-wti-brent.html",
-   "summary": "因為美伊和談有希望，布蘭特油價早段一度跌到約114.5美元，之後回升到約117美元。沙特防長去咗德黑蘭會談，胡塞武裝襲擊沙特嘅風險仲喺度。",
-   "level": "medium",
-   "scope": "market",
-   "affects": [
-    {
-     "sym": "VOO",
-     "dir": "mixed",
-     "why": "油價高推高通脹，令減息更難"
-    },
-    {
-     "sym": "QQQ",
-     "dir": "mixed",
-     "why": "通脹壓力會令債息唔跌，對高估值科技股唔利"
-    }
-   ],
-   "takeaway": "中東談判有冇進展會直接影響油價同大市，留意和談有冇結果。",
-   "found": "2026-10-27 01:00"
-  },
-  {
    "time": "2026-10-27 00:00",
    "headline": "Anthropic 招股書披露 Google 有權加碼100億美元",
    "source": "CNBC",
@@ -105,6 +156,24 @@
    ],
    "takeaway": "Anthropic 上市對 Google 係潛在好處，但估值數字仲未落實，唔好單靠呢單新聞判斷 Google 股價。",
    "found": "2026-10-27 01:00"
+  },
+  {
+   "time": "2026-10-26 23:30",
+   "headline": "Google 業績前跌近三個月低位 市場憂開支",
+   "source": "FX Leaders",
+   "url": "https://www.fxleaders.com/news/2026/10/26/goog-stock-heads-to-300-as-infrastructure-costs-rise-ahead-of-google-earnings/",
+   "summary": "Alphabet 連跌兩星期，跌穿 330 美元支持位。投資者擔心今年接近 2,000 億美元嘅資本開支幾時先有回報。",
+   "level": "high",
+   "scope": "stock",
+   "affects": [
+    {
+     "sym": "GOOG",
+     "dir": "down",
+     "why": "業績前市場擔心開支太大，令股價受壓"
+    }
+   ],
+   "takeaway": "週四清晨出業績，股價可能大上大落，留意雲端增長同開支指引",
+   "found": "2026-10-27 04:45"
   },
   {
    "time": "2026-10-26 23:00",
@@ -149,6 +218,29 @@
   },
   {
    "time": "2026-10-26 22:30",
+   "headline": "晶片股雖然反彈 但 AI 借貸憂慮仍在",
+   "source": "FXEmpire",
+   "url": "https://www.fxempire.com/forecasts/article/nasdaq-index-anthropic-filing-lifts-semis-but-ai-debt-concerns-persist-1640408",
+   "summary": "半導體股最近由高位跌咗約兩成半，今次反彈未必代表轉勢。分析員仍然擔心數據中心靠借錢擴張。",
+   "level": "medium",
+   "scope": "sector",
+   "affects": [
+    {
+     "sym": "NVDA",
+     "dir": "mixed",
+     "why": "一日反彈之後仍然距離 10 月初高位約一成"
+    },
+    {
+     "sym": "TSM",
+     "dir": "mixed",
+     "why": "業績好過預期，但股價仍然受 AI 開支憂慮拖累"
+    }
+   ],
+   "takeaway": "一日升幅唔代表轉勢，要等埋大型科技股業績先睇得清",
+   "found": "2026-10-27 04:45"
+  },
+  {
+   "time": "2026-10-26 22:30",
    "headline": "Tesla 獲 Barclays 升至「增持」 股價一度升約6%",
    "source": "Yahoo Finance / 24/7 Wall St.",
    "url": "https://finance.yahoo.com/markets/stocks/articles/tesla-rises-6-barclays-upgrade-135853310.html",
@@ -164,6 +256,29 @@
    ],
    "takeaway": "今日升 6% 主要因為大行升評級。合併仲未落實，消息一變股價就可能回吐。",
    "found": "2026-10-26 22:30"
+  },
+  {
+   "time": "2026-10-26 22:00",
+   "headline": "Anthropic 招股書：欠雲端商算力開支近 2,700 億",
+   "source": "PPC Land",
+   "url": "https://ppc.land/anthropics-ipo-filing-shows-16-3bn-of-revenue-and-no-plan-to-sell-ads/",
+   "summary": "Anthropic 上半年收入 163 億美元，計劃以「ANT」喺納斯達克上市。佢承諾向 Amazon、Google、微軟購買最少 2,690 億美元嘅算力。",
+   "level": "medium",
+   "scope": "stock",
+   "affects": [
+    {
+     "sym": "GOOG",
+     "dir": "up",
+     "why": "Google 雲端有長期大客，仲持有 Anthropic 股份，上市後可能出現估值收益"
+    },
+    {
+     "sym": "NVDA",
+     "dir": "up",
+     "why": "算力開支最終好大部分會用嚟買 AI 晶片"
+    }
+   ],
+   "takeaway": "對 Google 雲端增長係利好，週三業績可以睇吓有冇提到",
+   "found": "2026-10-27 04:45"
   },
   {
    "time": "2026-10-26 22:00",
@@ -192,6 +307,29 @@
    ],
    "takeaway": "今日晶片股係跟消息升，唔代表趨勢已經轉好。本週仲有科技巨頭業績要睇。",
    "found": "2026-10-26 22:30"
+  },
+  {
+   "time": "2026-10-26 21:30",
+   "headline": "Nvidia 等晶片商有意認購 Meta 50 億美元新股",
+   "source": "TipRanks",
+   "url": "https://www.tipranks.com/news/meta-launches-95-billion-stock-offering-plan-to-fund-ai-expansion-nvidia-amd-and-broadcom-weigh-5-billion-purchase",
+   "summary": "Meta 先發行約 350 億美元新股同優先股，用嚟起 AI 基建。Nvidia、AMD、Broadcom 表示有興趣買最多 50 億美元，但未有承諾。",
+   "level": "medium",
+   "scope": "stock",
+   "affects": [
+    {
+     "sym": "NVDA",
+     "dir": "mixed",
+     "why": "Meta 有錢繼續買晶片係好事，但有人擔心變成「自己錢買自己貨」嘅循環投資"
+    },
+    {
+     "sym": "TSM",
+     "dir": "up",
+     "why": "Meta 加大 AI 基建開支，最終都要台積電代工晶片"
+    }
+   ],
+   "takeaway": "可以留意市場會唔會開始質疑 AI 資金循環，呢樣嘢可能令晶片股波動",
+   "found": "2026-10-27 04:45"
   },
   {
    "time": "2026-10-26 21:30",
@@ -243,6 +381,29 @@
    ],
    "takeaway": "AI 開支冇放慢，對晶片股係好事。但「燒錢」嘅憂慮可能拖累大型科技股。",
    "found": "2026-10-26 22:30"
+  },
+  {
+   "time": "2026-10-26 20:00",
+   "headline": "本週數據密集：消費信心、GDP、核心 PCE",
+   "source": "Gotrade",
+   "url": "https://www.heygotrade.com/en/news/weekly-economic-outlook-2026-10-26/",
+   "summary": "週二公布消費者信心，預期 80.5。週四公布第三季 GDP（預期 3.2%）同核心 PCE 通脹（預期 3.1%）。微軟同 Google 週三收市後出業績，Amazon 週四出。",
+   "level": "medium",
+   "scope": "market",
+   "affects": [
+    {
+     "sym": "VOO",
+     "dir": "mixed",
+     "why": "通脹數據高過預期，會增加加息憂慮"
+    },
+    {
+     "sym": "QQQ",
+     "dir": "mixed",
+     "why": "微軟、Google、Amazon 業績會直接影響納指"
+    }
+   ],
+   "takeaway": "週四係本週最關鍵嘅一日，心理上要準備好股價會波動",
+   "found": "2026-10-27 04:45"
   },
   {
    "time": "2026-10-26 19:30",
@@ -527,29 +688,6 @@
   },
   {
    "time": "2026-10-26 07:00",
-   "headline": "油價亞洲早段回落0.8% 布蘭特仍高於115美元",
-   "source": "Reuters / CNBC",
-   "url": "https://www.cnbc.com/2026/10/25/stock-market-today-live-updates.html",
-   "summary": "布蘭特期油跌約93仙至115.8美元，WTI跌約1%至102美元。上週五布蘭特收116.72美元，係4月以嚟最高收市價，起因係胡塞襲擊沙特同美國可能空襲伊朗嘅報道。",
-   "level": "medium",
-   "scope": "market",
-   "affects": [
-    {
-     "sym": "VOO",
-     "dir": "mixed",
-     "why": "油價回落減輕通脹壓力，但水平仍然好高"
-    },
-    {
-     "sym": "QQQ",
-     "dir": "up",
-     "why": "油價同債息回落通常對科技股有利"
-    }
-   ],
-   "takeaway": "油價仲喺半年高位附近，中東有新消息隨時會再急升，要留意。",
-   "found": "2026-10-26 08:00"
-  },
-  {
-   "time": "2026-10-26 07:00",
    "headline": "日股今早料低開 韓股本月已跌近兩成",
    "source": "Peter's Asian Business Briefing",
    "url": "https://peterlewismoneytalk.substack.com/p/peters-asian-business-and-finance-5ac",
@@ -825,144 +963,6 @@
    ],
    "takeaway": "業績前後單日郁5%以上都唔出奇，留意雲端增長同開支指引",
    "found": "2026-10-26 04:45"
-  },
-  {
-   "time": "2026-10-25 16:00",
-   "headline": "伊朗稱喺阿巴斯港上空擊落美軍無人機",
-   "source": "Al Jazeera",
-   "url": "https://www.aljazeera.com/news/liveblog/2026/10/25/iran-war-live-trump-hints-at-possible-sunday-iran-attack-or-deal-reached",
-   "summary": "伊朗軍方週日話，喺南部港口阿巴斯港上空擊落一架美軍LUCAS攻擊無人機。之前特朗普講過可能「聽日」空襲，亦可能達成協議。",
-   "level": "high",
-   "scope": "market",
-   "affects": [
-    {
-     "sym": "VOO",
-     "dir": "down",
-     "why": "衝突升級會推高油價同避險情緒，大市普遍受壓"
-    },
-    {
-     "sym": "QQQ",
-     "dir": "down",
-     "why": "高估值科技股對避險情緒最敏感"
-    },
-    {
-     "sym": "XOM",
-     "dir": "up",
-     "why": "油價有上升壓力，石油股會受惠"
-    }
-   ],
-   "takeaway": "留意週一開市前有冇美軍報復行動，期貨可能先反映",
-   "found": "2026-10-25 22:30"
-  },
-  {
-   "time": "2026-10-25 15:00",
-   "headline": "Oracle週三開投資者日 焦點資本開支同電力",
-   "source": "ad-hoc-news",
-   "url": "https://www.ad-hoc-news.de/boerse/news/corporate-news/oracle-announces-partner-investment-what-it-means-for-oracle-stock/70410431",
-   "summary": "Oracle將於10月28日喺AI World舉行投資者日。佢本年度計劃投入900至950億美元資本開支，上季自由現金流係負50億美元，股價一年跌咗55%。",
-   "level": "high",
-   "scope": "stock",
-   "affects": [
-    {
-     "sym": "ORCL",
-     "dir": "mixed",
-     "why": "管理層對現金流同融資嘅交代可以令股價大升或者大跌"
-    }
-   ],
-   "takeaway": "投資者日前後股價波幅可能好大，記得檢查一下你嘅止蝕位。",
-   "found": "2026-10-26 12:00"
-  },
-  {
-   "time": "2026-10-25 14:00",
-   "headline": "海灣股市週日先跌 沙特指數跌1.1%",
-   "source": "Business Recorder／路透社",
-   "url": "https://brecorder.com/news/40445859/gulf-bourses-slip-as-houthi-saudi-clashes-rattle-investors",
-   "summary": "胡塞武裝同沙特聯軍衝突升級，週日開市嘅海灣股市大多數下跌，沙特基準指數跌1.1%，係週末第一個反映局勢嘅市場。",
-   "level": "medium",
-   "scope": "market",
-   "affects": [
-    {
-     "sym": "VOO",
-     "dir": "down",
-     "why": "反映週末避險情緒，星期一美股開市可能受影響"
-    },
-    {
-     "sym": "SPY",
-     "dir": "down",
-     "why": "同VOO一樣追蹤標普500"
-    }
-   ],
-   "takeaway": "海灣股市跌幅溫和，未見恐慌，但係美股開市嘅一個參考。",
-   "found": "2026-10-25 18:00"
-  },
-  {
-   "time": "2026-10-25 12:00",
-   "headline": "本週數據：GDP料3.2% 整體PCE料升至3.7%",
-   "source": "Babypips / FXEmpire",
-   "url": "https://www.babypips.com/analysis/fundies-cheat-sheet-2026-10-26-fed-big-tech-oil-saudi",
-   "summary": "週四公佈第三季 GDP，預期年率3.2%；9月 PCE 預期按年3.7%，核心 PCE 3.1%。聯儲局週三議息，預期息率維持3.75%–4.00%，主席 Warsh 記招係焦點。",
-   "level": "high",
-   "scope": "market",
-   "affects": [
-    {
-     "sym": "VOO",
-     "dir": "mixed",
-     "why": "通脹高過預期會加強12月加息預期"
-    },
-    {
-     "sym": "QQQ",
-     "dir": "mixed",
-     "why": "加息預期升，成長股通常受壓最大"
-    },
-    {
-     "sym": "QQQM",
-     "dir": "mixed",
-     "why": "同 QQQ 一樣追蹤納指100"
-    }
-   ],
-   "takeaway": "Warsh 講嘢嘅語氣可能比議息結果本身更郁市",
-   "found": "2026-10-26 04:45"
-  },
-  {
-   "time": "2026-10-25 12:00",
-   "headline": "布蘭特油價約117美元迎週日開市 美稱封鎖無限期",
-   "source": "FinanceFeeds",
-   "url": "https://financefeeds.com/brent-crude-oil-price-116-72-sunday-futures-open-houthi-yanbu-rabigh-claims-riyadh-intercepts-fed-week-bull-120-bear-108",
-   "summary": "期油週日晚開市前，布蘭特報116.72美元。美國駐聯合國大使話對伊朗嘅海上封鎖會無限期維持，另一位美國大使Barrack話週末空襲「絕對」有可能。",
-   "level": "high",
-   "scope": "market",
-   "affects": [
-    {
-     "sym": "VOO",
-     "dir": "down",
-     "why": "油價貴會推高通脹，加息壓力大啲，對估值唔利"
-    },
-    {
-     "sym": "TSLA",
-     "dir": "mixed",
-     "why": "油貴有機會令更多人考慮電動車，但消費力會被削弱"
-    }
-   ],
-   "takeaway": "油價企喺高位，加息預期就難降，要留意週四公佈嘅PCE通脹數據",
-   "found": "2026-10-25 22:30"
-  },
-  {
-   "time": "2026-10-25 12:00",
-   "headline": "比特幣週末急跌後回升至8.08萬美元",
-   "source": "Time News",
-   "url": "https://time.news/bitcoin-price-today-btc-recovers-to-80800-ahead-of-fed-meeting/",
-   "summary": "比特幣週末急跌之後，週日回升到約80,800美元，市場等緊下週聯儲局議息。",
-   "level": "low",
-   "scope": "market",
-   "affects": [
-    {
-     "sym": "QQQ",
-     "dir": "mixed",
-     "why": "週末加密貨幣跌反映冒險意慾轉弱，可以當係星期一科技股情緒嘅參考"
-    }
-   ],
-   "takeaway": "你冇直接持有加密貨幣，當係觀察市場情緒嘅溫度計就得。",
-   "found": "2026-10-25 18:00"
   }
  ]
 }

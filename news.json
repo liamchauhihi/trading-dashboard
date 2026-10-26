@@ -1,5 +1,5 @@
 {
- "generated": "2026-10-26T18:00+08:00",
+ "generated": "2026-10-26T22:30+08:00",
  "holdings": [
   "TSM",
   "TSLA",
@@ -11,9 +11,216 @@
   "NVDA"
  ],
  "claude_ok": true,
- "claude_at": "2026-10-26T18:00+08:00",
- "summary": "今個星期有三件大事：週三聯儲局議息（市場估計九成機會唔郁息）、Alphabet同Microsoft週三出業績、Amazon週四出業績。市場最關心AI開支會唔會繼續加、賺唔賺到錢。今日亞洲晶片股偏弱，你持有嘅TSM、NVDA、GOOG、QQQ同QQQM短期可能會郁得大啲。中東局勢稍為緩和，油價回落，對大市算係好事。",
+ "claude_at": "2026-10-26T22:30+08:00",
+ "summary": "今晚有三件大事：Anthropic 正式交咗上市文件（S-1），AI 晶片股因此有支持；Meta 宣布集資最多 950 億美元搞 AI，市場再擔心科技巨頭開支太大；Tesla 獲 Barclays 升評級，一度升約 6%。另外 10 年期美債息喺 5% 附近，聯儲局本週議息，Alphabet 同 Oracle 週三有大事，你嘅科技持倉今個星期可能會郁得比較大。",
  "items": [
+  {
+   "time": "2026-10-26 23:00",
+   "headline": "Oracle 跌近52週低位 大行接連削目標價",
+   "source": "Investing.com",
+   "url": "https://www.investing.com/news/analyst-ratings/wells-fargo-cuts-oracle-stock-price-target-on-capex-concerns-93CH-4971938",
+   "summary": "Goldman Sachs 將 Oracle 目標價由 240 削到 206 美元，Wells Fargo 由 280 削到 250 美元，主要擔心資本開支同負債。Mizuho 維持「跑贏大市」評級。股價過去一個月跌咗約 16%。",
+   "level": "high",
+   "scope": "stock",
+   "affects": [
+    {
+     "sym": "ORCL",
+     "dir": "down",
+     "why": "市場擔心借錢建數據中心，負債太重，自由現金流遲遲未改善"
+    }
+   ],
+   "takeaway": "週三投資者日係關鍵，可以聽佢點交代資金來源同幾時開始回本。",
+   "found": "2026-10-26 22:30"
+  },
+  {
+   "time": "2026-10-26 22:30",
+   "headline": "Tesla 獲 Barclays 升至「增持」 股價一度升約6%",
+   "source": "Yahoo Finance / 24/7 Wall St.",
+   "url": "https://finance.yahoo.com/markets/stocks/articles/tesla-rises-6-barclays-upgrade-135853310.html",
+   "summary": "Barclays 將 Tesla 評級由「中性」升至「增持」，目標價由 370 加到 450 美元，理由係同 SpaceX 合併可能帶嚟溢價、FSD 同儲能業務增長。Mizuho 亦將目標價加到 460 美元。",
+   "level": "high",
+   "scope": "stock",
+   "affects": [
+    {
+     "sym": "TSLA",
+     "dir": "up",
+     "why": "大行升評級，加上市場憧憬同 SpaceX 合併，帶動今日大升"
+    }
+   ],
+   "takeaway": "今日升 6% 主要因為大行升評級。合併仲未落實，消息一變股價就可能回吐。",
+   "found": "2026-10-26 22:30"
+  },
+  {
+   "time": "2026-10-26 22:00",
+   "headline": "晶片股造好 Nvidia 盤前升1.4%",
+   "source": "Yahoo Finance",
+   "url": "https://finance.yahoo.com/markets/article/tech-rise-after-anthropic-ipo-filing-alphacheck-140040601.html",
+   "summary": "受 Anthropic 上市文件刺激，Nvidia、AMD、Broadcom 等晶片股上升，科技板塊做好大市。",
+   "level": "medium",
+   "scope": "sector",
+   "affects": [
+    {
+     "sym": "NVDA",
+     "dir": "up",
+     "why": "市場憧憬 AI 公司上市之後有更多錢買晶片"
+    },
+    {
+     "sym": "TSM",
+     "dir": "up",
+     "why": "晶片需求向好，代工龍頭跟住受惠"
+    },
+    {
+     "sym": "QQQM",
+     "dir": "up",
+     "why": "晶片股喺納指入面佔比重高"
+    }
+   ],
+   "takeaway": "今日晶片股係跟消息升，唔代表趨勢已經轉好。本週仲有科技巨頭業績要睇。",
+   "found": "2026-10-26 22:30"
+  },
+  {
+   "time": "2026-10-26 21:30",
+   "headline": "美股開市向上 市場等議息同科技業績",
+   "source": "TheStreet / Yahoo Finance",
+   "url": "https://finance.yahoo.com/markets/stocks/articles/stock-market-today-oct-26-134626728.html",
+   "summary": "上週五道指跌 1.2%，標普同納指連跌兩星期。今日油價回落，加上 Anthropic 上市消息，美股開市後反彈，標普升約 0.4% 至 0.6%。",
+   "level": "medium",
+   "scope": "market",
+   "affects": [
+    {
+     "sym": "VOO",
+     "dir": "up",
+     "why": "大市反彈，油價回落令通脹壓力稍為減輕"
+    },
+    {
+     "sym": "QQQ",
+     "dir": "up",
+     "why": "科技股帶頭反彈"
+    }
+   ],
+   "takeaway": "連跌兩星期之後反彈，但今個星期事件多，市況可能好反覆，唔使因為一日升跌而驚。",
+   "found": "2026-10-26 22:30"
+  },
+  {
+   "time": "2026-10-26 21:00",
+   "headline": "Anthropic 交 S-1 上市文件 擬納指上市代號 ANT",
+   "source": "CNBC",
+   "url": "https://www.cnbc.com/2026/10/26/anthropic-ipo-live-updates-ai-s-1-filing.html",
+   "summary": "AI 公司 Anthropic 公開上市文件，計劃喺納指上市，代號 ANT，最快 11 月中定價。文件披露收入增長快，但開支同虧損都好大。",
+   "level": "high",
+   "scope": "market",
+   "affects": [
+    {
+     "sym": "NVDA",
+     "dir": "up",
+     "why": "Anthropic 大量買 AI 晶片，上市集到錢之後可能再加大採購"
+    },
+    {
+     "sym": "GOOG",
+     "dir": "mixed",
+     "why": "Google 係 Anthropic 嘅投資者同雲端供應商，但兩者喺 AI 模型上又係競爭對手"
+    },
+    {
+     "sym": "QQQ",
+     "dir": "mixed",
+     "why": "超大型 IPO 會將一部分資金由現有科技股吸走"
+    }
+   ],
+   "takeaway": "超大型 IPO 會左右 AI 板塊氣氛。留意 11 月中定價前後，科技股可能會比平時波動。",
+   "found": "2026-10-26 22:30"
+  },
+  {
+   "time": "2026-10-26 20:30",
+   "headline": "Meta 擬集資最多950億美元 投放AI基建",
+   "source": "CNBC",
+   "url": "https://www.cnbc.com/2026/10/26/meta-stock-offering-ai.html",
+   "summary": "Meta 計劃先發售約 350 億美元新股同可轉換優先股，之後再用最多 600 億美元嘅市價發行計劃（ATM，即係隨市價陸續賣新股）。第三季佢錄得十幾年嚟第一次負自由現金流。Nvidia、AMD、Broadcom 有興趣認購最多 50 億美元。",
+   "level": "high",
+   "scope": "sector",
+   "affects": [
+    {
+     "sym": "NVDA",
+     "dir": "up",
+     "why": "Meta 集到嘅錢主要會用嚟買 AI 晶片，Nvidia 亦有意認購"
+    },
+    {
+     "sym": "TSM",
+     "dir": "up",
+     "why": "AI 晶片需求持續，台積電負責代工生產"
+    },
+    {
+     "sym": "QQQ",
+     "dir": "mixed",
+     "why": "科技巨頭要靠集資撐住開支，市場會擔心 AI 投資嘅回報"
+    }
+   ],
+   "takeaway": "AI 開支冇放慢，對晶片股係好事。但「燒錢」嘅憂慮可能拖累大型科技股。",
+   "found": "2026-10-26 22:30"
+  },
+  {
+   "time": "2026-10-26 20:00",
+   "headline": "10年期美債息徘徊5%附近 等聯儲議息",
+   "source": "CNBC",
+   "url": "https://www.cnbc.com/2026/10/26/us-treasury-yields-investors-feds-interest-rate-decision-.html",
+   "summary": "10 年期美債息約 4.97% 至 5.0%，30 年期約 5.31%。市場等聯儲局 10 月 27 至 28 日議息結果。",
+   "level": "medium",
+   "scope": "market",
+   "affects": [
+    {
+     "sym": "QQQ",
+     "dir": "down",
+     "why": "債息高企，高估值科技股嘅吸引力會下降"
+    },
+    {
+     "sym": "VOO",
+     "dir": "mixed",
+     "why": "如果債息升穿 5%，大市可能受壓"
+    }
+   ],
+   "takeaway": "可以留意債息會唔會企穩 5% 以上，同埋鮑威爾點講通脹。",
+   "found": "2026-10-26 22:30"
+  },
+  {
+   "time": "2026-10-26 19:00",
+   "headline": "Mizuho：Oracle投資者日要解答資金疑慮",
+   "source": "Investing.com",
+   "url": "https://www.investing.com/news/analyst-ratings/mizuho-reiterates-oracle-stock-rating-ahead-of-investor-day-93CH-4972220",
+   "summary": "Mizuho 維持 320 美元目標價，認為 10 月 28 日投資者日係 Oracle 交代融資、資本開支強度同自由現金流幾時好轉嘅機會。",
+   "level": "medium",
+   "scope": "stock",
+   "affects": [
+    {
+     "sym": "ORCL",
+     "dir": "mixed",
+     "why": "交代得清楚可能會反彈，令人失望就可能再跌"
+    }
+   ],
+   "takeaway": "投資者日前後股價可能大上大落，你要有心理準備。",
+   "found": "2026-10-26 22:30"
+  },
+  {
+   "time": "2026-10-26 18:00",
+   "headline": "Alphabet週三業績 焦點雲端增長同資本開支",
+   "source": "Yahoo Finance",
+   "url": "https://finance.yahoo.com/quote/GOOG/",
+   "summary": "Alphabet 10 月 28 日公佈第三季業績，市場關注 Google Cloud 增長，以及全年 1,950 億至 2,050 億美元嘅資本開支會唔會蠶食利潤。",
+   "level": "medium",
+   "scope": "stock",
+   "affects": [
+    {
+     "sym": "GOOG",
+     "dir": "mixed",
+     "why": "雲端增長強會加分，但開支再加會令人擔心利潤"
+    },
+    {
+     "sym": "NVDA",
+     "dir": "up",
+     "why": "Google 資本開支愈大，買 AI 晶片嘅需求就愈大"
+    }
+   ],
+   "takeaway": "業績前後波動可以好大，重點睇資本開支指引同雲端增長率。",
+   "found": "2026-10-26 22:30"
+  },
   {
    "time": "2026-10-26 16:46",
    "headline": "美股期貨個別發展 道指升 納指期貨偏軟",
@@ -133,6 +340,24 @@
    ],
    "takeaway": "可以當係AI需求嘅溫度計，週三要睇埋。",
    "found": "2026-10-26 18:00"
+  },
+  {
+   "time": "2026-10-26 12:00",
+   "headline": "台積電上週業績勝預期 但股價受AI開支憂慮拖累",
+   "source": "Stocktwits",
+   "url": "https://stocktwits.com/symbol/TSM",
+   "summary": "台積電第三季收入約 467 億美元，按年增長 41%，每股盈利 4.60 美元，勝預期，仲上調指引。但市場擔心 AI 開支見頂，股價業績後反而回落。",
+   "level": "low",
+   "scope": "stock",
+   "affects": [
+    {
+     "sym": "TSM",
+     "dir": "mixed",
+     "why": "基本面強勁，但股價跟住市場對 AI 開支嘅情緒郁"
+    }
+   ],
+   "takeaway": "公司本身業績好，短期股價主要睇本週科技巨頭講資本開支嘅取態。",
+   "found": "2026-10-26 22:30"
   },
   {
    "time": "2026-10-26 10:00",
@@ -738,246 +963,6 @@
    ],
    "takeaway": "週三晚同週四晚（香港時間）大市可能會大上大落",
    "found": "2026-10-25 22:30"
-  },
-  {
-   "time": "2026-10-25 04:00",
-   "headline": "特朗普：可能聽日空襲伊朗 亦可能達成協議",
-   "source": "CBS News",
-   "url": "https://www.cbsnews.com/live-updates/iran-war-trump-us-elections-saudi-arabia-yemen-houthis/",
-   "summary": "特朗普周六對記者講，空襲隨時可以「聽日」發生，亦可能談成協議，話決定權喺伊朗；佢想要一個徹底防止伊朗擁有核武嘅方案，但懷疑伊朗會唔會守約。",
-   "level": "high",
-   "scope": "market",
-   "affects": [
-    {
-     "sym": "VOO",
-     "dir": "mixed",
-     "why": "打仗會推高油價同通脹擔憂，壓住大市；有協議就可能令大市鬆一口氣"
-    },
-    {
-     "sym": "QQQ",
-     "dir": "mixed",
-     "why": "高增長科技股最怕油價推高債息，消息兩邊都可能出現"
-    },
-    {
-     "sym": "QQQM",
-     "dir": "mixed",
-     "why": "同 QQQ 一樣追蹤 Nasdaq-100，影響相同"
-    }
-   ],
-   "takeaway": "星期一開市前周末可能有突發消息，開市波動可能較大，唔使因為一條標題就慌。",
-   "found": "2026-10-25 08:00"
-  },
-  {
-   "time": "2026-10-25 02:00",
-   "headline": "Tesla新Roadster洛杉磯博物館展出 官網主打Robotaxi",
-   "source": "Teslarati",
-   "url": "https://teslarati.com/tesla-roadster-center-display-ui-ux",
-   "summary": "Tesla首次公開新Roadster嘅車內介面，架車10月24至27日喺洛杉磯Petersen汽車博物館展出。官網亦改版，主打Robotaxi、Semi同Roadster。",
-   "level": "low",
-   "scope": "stock",
-   "affects": [
-    {
-     "sym": "TSLA",
-     "dir": "mixed",
-     "why": "新產品有話題性，但汽車業務利潤率收窄仍然係隱憂"
-    }
-   ],
-   "takeaway": "屬於宣傳性質嘅消息，對股價影響有限，主要睇Robotaxi進度",
-   "found": "2026-10-25 22:30"
-  },
-  {
-   "time": "2026-10-25 02:00",
-   "headline": "報道：美國考慮選後連續幾日空襲伊朗",
-   "source": "Iran International／The Atlantic",
-   "url": "https://www.iranintl.com/en/liveblog/202610244311",
-   "summary": "《大西洋月刊》報道，白宮考慮喺11月3日中期選舉後一連幾日空襲伊朗，目標包括導彈、無人機、能源設施同核設施。中央司令部嘅後續空襲計劃已經準備好，等白宮批准。",
-   "level": "high",
-   "scope": "market",
-   "affects": [
-    {
-     "sym": "VOO",
-     "dir": "down",
-     "why": "衝突拖長，油價可能企喺高位，推高通脹同加息預期，壓住大市估值"
-    },
-    {
-     "sym": "QQQ",
-     "dir": "down",
-     "why": "債息上升對高估值科技股壓力最大"
-    },
-    {
-     "sym": "QQQM",
-     "dir": "down",
-     "why": "同QQQ一樣追蹤Nasdaq 100，受同一個因素影響"
-    }
-   ],
-   "takeaway": "打擊目標包括能源設施，油價風險會延續到11月，你要留意油價同10年債息。",
-   "found": "2026-10-25 12:00"
-  },
-  {
-   "time": "2026-10-25 01:00",
-   "headline": "美情報：伊朗針對美國人員嘅計劃已進入後期",
-   "source": "U.S. News（引路透社）",
-   "url": "https://www.usnews.com/news/world/articles/2026-10-24/iran-has-ramped-up-efforts-to-target-us-personnel-intelligence-memo-warns",
-   "summary": "美國情報備忘錄警告，伊朗針對美國官員同人員嘅行動計劃已經去到「後期階段」，令雙方關係更加緊張。",
-   "level": "low",
-   "scope": "market",
-   "affects": [
-    {
-     "sym": "VOO",
-     "dir": "down",
-     "why": "地緣風險升溫，市場可能更加避險"
-    }
-   ],
-   "takeaway": "屬背景風險，對股市未必有即時影響",
-   "found": "2026-10-25 04:45"
-  },
-  {
-   "time": "2026-10-25 00:00",
-   "headline": "美再派第三支航母編隊 伊朗揚言打海底電纜",
-   "source": "Bloomberg／TokenPost",
-   "url": "https://www.bloomberg.com/news/articles/2026-10-24/trump-prepares-for-iran-escalation-after-us-israeli-elections",
-   "summary": "美國派第三支航母打擊群同埋多一萬名海軍同陸戰隊去波斯灣。伊朗官員話如果再被襲擊，可能會攻擊海灣嘅海底通訊電纜同秘密軍事基地。",
-   "level": "medium",
-   "scope": "market",
-   "affects": [
-    {
-     "sym": "VOO",
-     "dir": "down",
-     "why": "戰爭升級風險提高，大市避險情緒升溫"
-    },
-    {
-     "sym": "GOOG",
-     "dir": "mixed",
-     "why": "海底電纜受襲可能影響雲端同網絡服務，暫時只係恐嚇"
-    }
-   ],
-   "takeaway": "暫時未真係開打，亦未達成協議，消息隨時令市況急轉。",
-   "found": "2026-10-25 18:00"
-  },
-  {
-   "time": "2026-10-25 00:00",
-   "headline": "Oracle AI World 拉斯維加斯開幕",
-   "source": "VDURA（活動資料）",
-   "url": "https://www.vdura.com/?p=16400",
-   "summary": "Oracle 年度大會 AI World 10月25至28日喺拉斯維加斯舉行（前身係 CloudWorld），預告會發佈 AI 數據平台同分析產品，期間仲有投資者日更新長遠目標。",
-   "level": "medium",
-   "scope": "stock",
-   "affects": [
-    {
-     "sym": "ORCL",
-     "dir": "mixed",
-     "why": "新產品同長遠目標可以提振信心，但市場更關心借錢擴張同現金流"
-    },
-    {
-     "sym": "NVDA",
-     "dir": "mixed",
-     "why": "Oracle 係 Nvidia AI 晶片嘅大買家，佢嘅擴張計劃影響晶片需求"
-    }
-   ],
-   "takeaway": "留意 Oracle 有冇講點樣處理債務同現金流，呢點可能比新產品更影響股價。",
-   "found": "2026-10-25 08:00"
-  },
-  {
-   "time": "2026-10-24 23:00",
-   "headline": "傳伊朗經巴基斯坦表示願重開海峽",
-   "source": "Gulf News（引 Al Arabiya）",
-   "url": "https://gulfnews.com/uae/us-israel-iran-war-what-uae-residents-need-to-know-today-october-24-2026-1.500722388",
-   "summary": "報道指伊朗通知巴基斯坦，只要美國解除對伊朗港口嘅封鎖，就願意恢復同美國談判，並重開霍爾木茲海峽。",
-   "level": "medium",
-   "scope": "market",
-   "affects": [
-    {
-     "sym": "VOO",
-     "dir": "up",
-     "why": "如果真係談得成，油價回落，對大市係好消息"
-    },
-    {
-     "sym": "QQQ",
-     "dir": "up",
-     "why": "油價同債息回落，科技股估值壓力會細啲"
-    }
-   ],
-   "takeaway": "消息來源未具名，要等雙方正式確認先算數",
-   "found": "2026-10-25 04:45"
-  },
-  {
-   "time": "2026-10-24 22:00",
-   "headline": "胡塞武裝連日襲擊沙特油港機場 油價企穩117美元",
-   "source": "Benzinga／路透社",
-   "url": "https://www.benzinga.com/markets/commodities/26/10/62577115/oil-prices-surge-houthi-attacks-saudi-arabia",
-   "summary": "胡塞武裝話48小時內襲擊咗沙特國防部、兩個機場同埋延布嘅Aramco設施。週六聯軍話擊落兩枚導彈，布蘭特期油喺117美元附近徘徊。",
-   "level": "high",
-   "scope": "market",
-   "affects": [
-    {
-     "sym": "VOO",
-     "dir": "down",
-     "why": "油價高推高通脹同加息預期，對成個大市都係壓力"
-    },
-    {
-     "sym": "QQQ",
-     "dir": "down",
-     "why": "債息貴，高估值科技股最受影響"
-    },
-    {
-     "sym": "QQQM",
-     "dir": "down",
-     "why": "同QQQ一樣追蹤Nasdaq 100"
-    }
-   ],
-   "takeaway": "中東衝突由伊朗擴散到沙特，留意星期一開市油價有冇再急升。",
-   "found": "2026-10-25 18:00"
-  },
-  {
-   "time": "2026-10-24 22:00",
-   "headline": "伊朗：無論如何唔准美艦入海灣",
-   "source": "Al Jazeera",
-   "url": "https://aljazeera.com/news/2026/10/24/iran-says-wont-allow-us-warships-to-get-close-as-trump-ponders-new-attacks",
-   "summary": "美國特使話最快今個周末再空襲之後，伊朗軍方回應唔會俾美國軍艦入海灣。有報道指美國航母喺阿拉伯海補充鑽地彈。",
-   "level": "high",
-   "scope": "market",
-   "affects": [
-    {
-     "sym": "VOO",
-     "dir": "down",
-     "why": "一旦開戰，油價同債息可能再升，大市承壓"
-    },
-    {
-     "sym": "QQQ",
-     "dir": "down",
-     "why": "高債息對估值高嘅科技股影響最大"
-    },
-    {
-     "sym": "NVDA",
-     "dir": "down",
-     "why": "避險情緒下，AI 股通常跌得多啲"
-    }
-   ],
-   "takeaway": "星期一開市前留意周末有冇真係開火，開市可能大上大落",
-   "found": "2026-10-25 04:45"
-  },
-  {
-   "time": "2026-10-24 21:00",
-   "headline": "Alphabet遭降級跌約1% 出業績前仲有官司陰霾",
-   "source": "Defense World / Investing.com",
-   "url": "https://www.defenseworld.net/2026/10/24/alphabet-nasdaqgoogl-shares-down-1-2-after-analyst-downgrade.html",
-   "summary": "有分析師降級Alphabet，股價跌約1.2%。KeyBanc早前將目標價由435降至410美元。另外有集體訴訟指控公司就Gemini 3.5 Pro推出時間表誤導投資者。",
-   "level": "medium",
-   "scope": "stock",
-   "affects": [
-    {
-     "sym": "GOOG",
-     "dir": "down",
-     "why": "出業績前有降級同官司消息，有人先沽貨"
-    },
-    {
-     "sym": "QQQ",
-     "dir": "mixed",
-     "why": "Alphabet係納指首幾大成分股"
-    }
-   ],
-   "takeaway": "週三業績先係重點，降級同官司暫時未改變公司基本面。",
-   "found": "2026-10-26 08:00"
   }
  ]
 }

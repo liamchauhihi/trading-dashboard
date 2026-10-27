@@ -1,5 +1,5 @@
 {
- "generated": "2026-10-27T04:45+08:00",
+ "generated": "2026-10-27T08:00+08:00",
  "holdings": [
   "TSM",
   "TSLA",
@@ -11,9 +11,96 @@
   "NVDA"
  ],
  "claude_ok": true,
- "claude_at": "2026-10-27T04:45+08:00",
- "summary": "Anthropic 遞表上市，帶動晶片股同大型科技股反彈，你嘅 NVDA、TSM、QQQ 都受惠。不過今個星期有幾件大事：週四凌晨聯儲局議息，市場想知會唔會講到 12 月加息；同日 Google 同微軟出業績，週四晚仲有 GDP 同 PCE 通脹數據。大市短期可能會波動得比較大。",
+ "claude_at": "2026-10-27T08:00+08:00",
+ "summary": "AI 熱潮因 Anthropic 申請上市而回升，晶片股反彈。不過週四凌晨議息、Google 同 Oracle 呢個星期嘅業績同投資者日先係真正考驗。你嘅持倉以科技股為主，未來幾日波動可能會大啲。",
  "items": [
+  {
+   "time": "2026-10-27 06:30",
+   "headline": "美股期貨靠穩 市場估加息機會只有約9%",
+   "source": "CNBC",
+   "url": "https://www.cnbc.com/2026/10/26/stock-market-today-live-updates.html",
+   "summary": "週一升市之後，道指同標普期貨微跌，納指期貨升0.1%。利率期貨顯示今次議息加息0.25厘嘅機會約9.4%，市場普遍預期按兵不動。",
+   "level": "medium",
+   "scope": "market",
+   "affects": [
+    {
+     "sym": "VOO",
+     "dir": "mixed",
+     "why": "議息前資金觀望，大市未必有大方向"
+    },
+    {
+     "sym": "QQQ",
+     "dir": "mixed",
+     "why": "科技股對利率前景最敏感"
+    }
+   ],
+   "takeaway": "焦點係聯儲局對12月嘅講法，議息前後短線波動係正常。",
+   "found": "2026-10-27 08:00"
+  },
+  {
+   "time": "2026-10-27 06:00",
+   "headline": "今晚 Visa、波音、可口可樂公佈業績",
+   "source": "Yahoo Finance",
+   "url": "https://finance.yahoo.com/markets/stocks/articles/u-stock-futures-edge-higher-011151135.html",
+   "summary": "週二美股有 Visa、波音同可口可樂等大公司出業績，同日仲有消費信心數據。9月消費信心跌到81.9，係2014年以嚟最低。",
+   "level": "medium",
+   "scope": "market",
+   "affects": [
+    {
+     "sym": "VOO",
+     "dir": "mixed",
+     "why": "Visa 同可口可樂反映美國人消費力，都係標普重要成分股"
+    }
+   ],
+   "takeaway": "如果消費數據再轉差，大市可能受壓，可以留意 Visa 點講消費趨勢。",
+   "found": "2026-10-27 08:00"
+  },
+  {
+   "time": "2026-10-27 04:30",
+   "headline": "AI 伺服器商 Celestica 業績好 盤後急升17%",
+   "source": "CNBC",
+   "url": "https://www.cnbc.com/2026/10/26/stocks-making-the-biggest-moves-after-hours-whr-jblu-cls.html",
+   "summary": "幫大型科技公司砌 AI 伺服器同網絡設備嘅 Celestica 公佈第三季業績，股價盤後由約246美元升到約289美元。",
+   "level": "medium",
+   "scope": "sector",
+   "affects": [
+    {
+     "sym": "NVDA",
+     "dir": "up",
+     "why": "AI 硬件供應商生意好，反映數據中心訂單仲未放慢"
+    },
+    {
+     "sym": "TSM",
+     "dir": "up",
+     "why": "AI 晶片需求旺，最終都要靠台積電代工"
+    }
+   ],
+   "takeaway": "AI 硬件需求暫時穩陣，可以用嚟對照市場對 AI 開支嘅憂慮。",
+   "found": "2026-10-27 08:00"
+  },
+  {
+   "time": "2026-10-27 04:30",
+   "headline": "晶片設計軟件商 Cadence 業績勝預期",
+   "source": "Investing.com",
+   "url": "https://www.investing.com/equities/after-hours",
+   "summary": "Cadence 第三季經調整每股盈利2.11美元，高過預期嘅2.05美元，收入16.3億美元，股價盤後升約2%。",
+   "level": "low",
+   "scope": "sector",
+   "affects": [
+    {
+     "sym": "NVDA",
+     "dir": "up",
+     "why": "晶片公司仲積極設計新晶片，反映 AI 研發投入持續"
+    },
+    {
+     "sym": "QQQ",
+     "dir": "up",
+     "why": "Cadence 係納指成分股，業績好對科技板塊有少少支持"
+    }
+   ],
+   "takeaway": "對你持倉係小幅利好訊號，唔係大事。",
+   "found": "2026-10-27 08:00"
+  },
   {
    "time": "2026-10-27 04:00",
    "headline": "美股收高 Anthropic 遞表帶動晶片股反彈",
@@ -59,6 +146,24 @@
    ],
    "takeaway": "談判有進展可以紓緩通脹壓力，但局勢隨時會變",
    "found": "2026-10-27 04:45"
+  },
+  {
+   "time": "2026-10-27 01:00",
+   "headline": "Google 業績前受壓 大行削目標價兼面對集體訴訟",
+   "source": "Investing.com",
+   "url": "https://www.investing.com/news/stock-market-news/why-is-alphabet-stock-sliding-today-93CH-4963511",
+   "summary": "大市平穩時 Google 都跌，原因包括 KeyBanc 削目標價、一宗證券訴訟、英國雲端服務故障，同埋 AI 競爭加劇。",
+   "level": "medium",
+   "scope": "stock",
+   "affects": [
+    {
+     "sym": "GOOG",
+     "dir": "down",
+     "why": "業績前多個負面消息疊埋一齊，打擊投資者信心"
+    }
+   ],
+   "takeaway": "週三公佈嘅業績先係關鍵，留意雲端增長同資本開支數字。",
+   "found": "2026-10-27 08:00"
   },
   {
    "time": "2026-10-27 01:00",
@@ -259,6 +364,24 @@
   },
   {
    "time": "2026-10-26 22:00",
+   "headline": "Google 被指 Gemini 3.5 Pro 誤導 集體訴訟12月截止登記",
+   "source": "GlobeNewswire",
+   "url": "https://www.globenewswire.com/news-release/2026/10/26/3388443/1020/en/kaplan-fox-kilsheimer-llp-alerts-alphabet-inc-nasdaq-googl-goog-investors-to-a-securities-class-action-deadline-on-december-1-2026.html",
+   "summary": "律師行指 Alphabet 對 Gemini 3.5 Pro 嘅訓練成果同延遲推出作出誤導陳述，提出證券集體訴訟，截止登記日係12月1日。",
+   "level": "low",
+   "scope": "stock",
+   "affects": [
+    {
+     "sym": "GOOG",
+     "dir": "down",
+     "why": "訴訟會影響市場情緒，但對盈利嘅實際影響通常有限"
+    }
+   ],
+   "takeaway": "呢類律師行公告好常見，唔使太驚，留意有冇監管機構跟進就得。",
+   "found": "2026-10-27 08:00"
+  },
+  {
+   "time": "2026-10-26 22:00",
    "headline": "Anthropic 招股書：欠雲端商算力開支近 2,700 億",
    "source": "PPC Land",
    "url": "https://ppc.land/anthropics-ipo-filing-shows-16-3bn-of-revenue-and-no-plan-to-sell-ads/",
@@ -381,6 +504,24 @@
    ],
    "takeaway": "AI 開支冇放慢，對晶片股係好事。但「燒錢」嘅憂慮可能拖累大型科技股。",
    "found": "2026-10-26 22:30"
+  },
+  {
+   "time": "2026-10-26 20:00",
+   "headline": "Oracle 債務逾1,500億 本財年擬再集資約400億",
+   "source": "24/7 Wall St.",
+   "url": "https://247wallst.com/investing/2026/10/26/balancing-oracles-backlog-against-its-balance-sheet/",
+   "summary": "分析指 Oracle 總債務約1,559億美元，另有約306億租賃負債，本財年打算透過發債同發新股集資約400億。投資者日喺10月28或29日舉行。",
+   "level": "medium",
+   "scope": "stock",
+   "affects": [
+    {
+     "sym": "ORCL",
+     "dir": "mixed",
+     "why": "訂單好多，但借錢建數據中心令市場擔心財務壓力"
+    }
+   ],
+   "takeaway": "投資者日會講資金安排同2030年目標，股價喺嗰幾日可能大上大落。",
+   "found": "2026-10-27 08:00"
   },
   {
    "time": "2026-10-26 20:00",
@@ -782,187 +923,6 @@
    ],
    "takeaway": "週一開市前留意有冇新消息，戰定和都可能令大市大幅波動。",
    "found": "2026-10-26 01:00"
-  },
-  {
-   "time": "2026-10-25 21:00",
-   "headline": "本週科技巨頭密集出業績 AI開支係焦點",
-   "source": "CNBC",
-   "url": "https://www.cnbc.com/2026/10/25/earnings-week-alphabet-microsoft-amazon.html",
-   "summary": "Microsoft同Alphabet週三（10月28日）收市後公佈業績，Amazon週四。市場最想知AI投資幾時見到回報，同埋明年資本開支幾多。",
-   "level": "high",
-   "scope": "sector",
-   "affects": [
-    {
-     "sym": "GOOG",
-     "dir": "mixed",
-     "why": "雲端增長同資本開支會直接決定業績後股價點郁"
-    },
-    {
-     "sym": "NVDA",
-     "dir": "mixed",
-     "why": "三大雲端公司買晶片嘅預算關係到Nvidia日後收入"
-    },
-    {
-     "sym": "TSM",
-     "dir": "mixed",
-     "why": "AI晶片需求最終都係落到台積電度生產"
-    },
-    {
-     "sym": "QQQ",
-     "dir": "mixed",
-     "why": "MSFT、GOOG、AMZN喺指數入面佔好大比重"
-    }
-   ],
-   "takeaway": "週三、四晚可能大幅波動，事先諗定自己承受到幾大嘅升跌。",
-   "found": "2026-10-26 01:00"
-  },
-  {
-   "time": "2026-10-25 20:00",
-   "headline": "微軟料單季資本開支超過500億美元",
-   "source": "Forbes",
-   "url": "https://www.forbes.com/sites/bill_stone/2026/10/25/alphabet-microsoft-and-amazon-lead-busiest-week-of-earnings-season/",
-   "summary": "市場預期微軟季度收入約906億美元，Azure 增長約45%，季度資本開支超過500億美元。科技巨頭肯唔肯繼續大手投資 AI 係今個禮拜嘅焦點。",
-   "level": "medium",
-   "scope": "sector",
-   "affects": [
-    {
-     "sym": "NVDA",
-     "dir": "mixed",
-     "why": "微軟係 AI 晶片大客，資本開支多少直接影響需求"
-    },
-    {
-     "sym": "TSM",
-     "dir": "mixed",
-     "why": "AI 晶片大多由台積電代工"
-    },
-    {
-     "sym": "ORCL",
-     "dir": "mixed",
-     "why": "雲端對手業績會影響市場點睇 Oracle"
-    }
-   ],
-   "takeaway": "巨頭話繼續加大投資，對晶片股通常係好消息。但如果投資者擔心花錢太多、賺錢太慢，股價都可能跌。",
-   "found": "2026-10-27 01:00"
-  },
-  {
-   "time": "2026-10-25 20:00",
-   "headline": "胡塞稱襲沙特延布、拉比格油設施 沙特未證實有損毀",
-   "source": "IBTimes / China Economic Net",
-   "url": "http://en.ce.cn/main/latest/202610/t20261025_3270462.shtml",
-   "summary": "胡塞武裝聲稱向沙特7個目標發動襲擊，包括延布 Aramco 設施、拉比格煉油廠同東西輸油管。聯軍話攔截咗兩枚彈道導彈，暫時無證實有損毀。",
-   "level": "high",
-   "scope": "market",
-   "affects": [
-    {
-     "sym": "VOO",
-     "dir": "down",
-     "why": "油價再升會推高通脹預期，加息壓力大啲，大市估值受壓"
-    },
-    {
-     "sym": "QQQ",
-     "dir": "down",
-     "why": "高估值科技股對債息最敏感"
-    },
-    {
-     "sym": "XOM",
-     "dir": "up",
-     "why": "油價高企對石油股有利"
-    }
-   ],
-   "takeaway": "留意週一開市沙特有冇證實損毀，有嘅話油價可能衝120美元",
-   "found": "2026-10-26 04:45"
-  },
-  {
-   "time": "2026-10-25 20:00",
-   "headline": "伊朗否認霍爾木茲協議報道 指係「捏造」",
-   "source": "The Statesman",
-   "url": "https://www.thestatesman.com/world/iran-cries-fabrication-over-new-hormuz-deal-report-as-trump-threatens-another-strike-1503654732.html",
-   "summary": "有報道指美伊就重開霍爾木茲海峽有新協議，伊朗即刻話係捏造。特朗普就喺Fox訪問聲稱美國已經控制咗海峽。",
-   "level": "medium",
-   "scope": "market",
-   "affects": [
-    {
-     "sym": "VOO",
-     "dir": "down",
-     "why": "和談消息反覆，油價好難回落，通脹壓力仍在"
-    },
-    {
-     "sym": "QQQM",
-     "dir": "down",
-     "why": "油價高會令加息預期升溫，對成長股唔利"
-    }
-   ],
-   "takeaway": "和談消息真假難分，唔好單憑一條標題就判斷油價會跌。",
-   "found": "2026-10-26 01:00"
-  },
-  {
-   "time": "2026-10-25 20:00",
-   "headline": "Tesla第三季三個指標達標 合併SpaceX門檻高",
-   "source": "The Motley Fool",
-   "url": "https://www.fool.com/investing/2026/10/25/good-news-for-tesla-investors-3-key-benchmarks-elo/",
-   "summary": "Tesla第三季每股盈利好過預期約6%，收入就略差。Musk考慮將SpaceX同Tesla合併，但自己都話股東投票「門檻好高」。Robotaxi推出進度慢過佢講嘅。",
-   "level": "medium",
-   "scope": "stock",
-   "affects": [
-    {
-     "sym": "TSLA",
-     "dir": "mixed",
-     "why": "盈利好過預期，但合併同Robotaxi有好多唔確定"
-    }
-   ],
-   "takeaway": "合併消息一出可能令股價大幅郁，留意兩間公司董事會嘅進展。",
-   "found": "2026-10-26 01:00"
-  },
-  {
-   "time": "2026-10-25 20:00",
-   "headline": "Intel週四公佈業績 焦點毛利率同18A製程",
-   "source": "The Motley Fool",
-   "url": "https://www.fool.com/investing/2026/10/25/is-intel-stock-a-buy-right-now/",
-   "summary": "Intel 10月29日收市後公佈業績，市場預期收入約164.5億美元。佢上週四喺晶片股拋售中跌咗8%，市場主要睇毛利率指引同18A製程進度。",
-   "level": "low",
-   "scope": "sector",
-   "affects": [
-    {
-     "sym": "TSM",
-     "dir": "mixed",
-     "why": "Intel晶圓代工追得近，會增加台積電競爭壓力"
-    },
-    {
-     "sym": "NVDA",
-     "dir": "mixed",
-     "why": "業績會影響成個晶片板塊嘅情緒"
-    }
-   ],
-   "takeaway": "晶片股上週已經好波動，Intel業績可能再令板塊郁一郁",
-   "found": "2026-10-25 22:30"
-  },
-  {
-   "time": "2026-10-25 18:00",
-   "headline": "Alphabet週三出業績 市場預期收入約1,240億",
-   "source": "Yahoo Finance / Kalkine",
-   "url": "https://kalkine.com/news/premium/week-ahead-october-26-to-30-microsoft-alphabet-and-amazon-earnings-the-fed-decision-and-q3-gdp-converge",
-   "summary": "Alphabet 同 Microsoft 週三（香港週四朝早）收市後公佈業績。市場預期 Alphabet 每股盈利大約2.94–3.02美元，收入大約1,240億美元，焦點係雲端增長同 AI 開支。",
-   "level": "high",
-   "scope": "stock",
-   "affects": [
-    {
-     "sym": "GOOG",
-     "dir": "mixed",
-     "why": "過去7季有6季勝預期，但如果 AI 開支增得太快，市場可能唔受落"
-    },
-    {
-     "sym": "NVDA",
-     "dir": "mixed",
-     "why": "Google 嘅資本開支指引會影響 AI 晶片需求預期"
-    },
-    {
-     "sym": "QQQ",
-     "dir": "mixed",
-     "why": "GOOG 同 MSFT 係 QQQ 嘅大成分股"
-    }
-   ],
-   "takeaway": "業績前後單日郁5%以上都唔出奇，留意雲端增長同開支指引",
-   "found": "2026-10-26 04:45"
   }
  ]
 }

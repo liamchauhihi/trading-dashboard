@@ -1,5 +1,5 @@
 {
- "generated": "2026-10-27T08:00+08:00",
+ "generated": "2026-10-27T12:00+08:00",
  "holdings": [
   "TSM",
   "TSLA",
@@ -11,9 +11,55 @@
   "NVDA"
  ],
  "claude_ok": true,
- "claude_at": "2026-10-27T08:00+08:00",
- "summary": "AI 熱潮因 Anthropic 申請上市而回升，晶片股反彈。不過週四凌晨議息、Google 同 Oracle 呢個星期嘅業績同投資者日先係真正考驗。你嘅持倉以科技股為主，未來幾日波動可能會大啲。",
+ "claude_at": "2026-10-27T12:00+08:00",
+ "summary": "Anthropic 遞表帶動亞洲科技股急升，對你嘅 TSM、NVDA 有利。不過今個星期有幾件大事：週四凌晨聯儲局議息，跟住 Google 同微軟公佈業績。油價仲喺六個月高位附近，債息貼近 5%，所以大市隨時會大上大落。",
  "items": [
+  {
+   "time": "2026-10-27 10:00",
+   "headline": "Anthropic 遞表帶動亞股急升 韓股升逾4%",
+   "source": "Reuters / Investing.com",
+   "url": "https://za.investing.com/news/economy-news/asian-stocks-surge-as-anthropic-ipo-lifts-sentiment-ahead-of-earnings-central-banks-4526727",
+   "summary": "美股週一收高之後，今朝亞洲股市跟住升。南韓 Kospi 早段升超過 4%，日經指數升約 1.9%，主要由晶片同科技股帶動。",
+   "level": "medium",
+   "scope": "market",
+   "affects": [
+    {
+     "sym": "TSM",
+     "dir": "up",
+     "why": "亞洲晶片股氣氛好轉，台積電通常會跟住受惠"
+    },
+    {
+     "sym": "NVDA",
+     "dir": "up",
+     "why": "市場重新押注 AI，晶片龍頭最受注目"
+    }
+   ],
+   "takeaway": "短線氣氛轉好，但係週四議息同業績先係真正考驗，唔好只睇一日升幅。",
+   "found": "2026-10-27 12:00"
+  },
+  {
+   "time": "2026-10-27 08:45",
+   "headline": "傳台積電先進封裝 CoWoS 再加價最多兩成",
+   "source": "Newsquawk",
+   "url": "https://newsquawk.com/headlines/market-analysis-tech-stocks-climb-in-asia-following-anthropics-ipo-filing",
+   "summary": "市場報道指台積電考慮將 CoWoS 封裝服務價錢再加最多 20%，反映 AI 晶片封裝需求仲係供不應求。",
+   "level": "medium",
+   "scope": "stock",
+   "affects": [
+    {
+     "sym": "TSM",
+     "dir": "up",
+     "why": "能夠加價，代表需求強同議價能力高，有助維持利潤率"
+    },
+    {
+     "sym": "NVDA",
+     "dir": "mixed",
+     "why": "需求強係好事，但封裝成本上升可能會蠶食少少毛利"
+    }
+   ],
+   "takeaway": "暫時只係市場傳聞，未有官方確認，要留意台積電會唔會正式回應。",
+   "found": "2026-10-27 12:00"
+  },
   {
    "time": "2026-10-27 06:30",
    "headline": "美股期貨靠穩 市場估加息機會只有約9%",
@@ -130,6 +176,47 @@
    "found": "2026-10-27 04:45"
   },
   {
+   "time": "2026-10-27 03:00",
+   "headline": "Tesla 升5.2% Barclays 估合併唔成事目標只得250美元",
+   "source": "CNBC",
+   "url": "https://www.cnbc.com/2026/10/26/tesla-spacex-merger-barclays.html",
+   "summary": "Barclays 估 SpaceX 最可能用換股方式收購 Tesla，大約每股 Tesla 換 3.1 股 SpaceX，即係有兩成溢價。如果合併唔成事，Barclays 估 Tesla 只值 250 美元。",
+   "level": "high",
+   "scope": "stock",
+   "affects": [
+    {
+     "sym": "TSLA",
+     "dir": "mixed",
+     "why": "股價升咗好多係因為押注合併，但 Musk 自己都話合併唔一定成事"
+    }
+   ],
+   "takeaway": "股價而家好受合併消息影響，如果傳出負面消息，可能會跌得好急，要預咗波動。",
+   "found": "2026-10-27 12:00"
+  },
+  {
+   "time": "2026-10-27 03:00",
+   "headline": "胡塞武裝襲擊沙特油管 油價高位反覆",
+   "source": "CNBC Africa",
+   "url": "https://www.cnbcafrica.com/2026/oil-slides-over-2-as-traders-weigh-saudi-attack-risks-demand-destruction",
+   "summary": "胡塞武裝聲稱週末襲擊沙特東西輸油管嘅泵站同機場。油價週一回落，但仍然貼近六個月高位，有分析估地緣風險令油價多咗約 20 美元一桶。",
+   "level": "medium",
+   "scope": "market",
+   "affects": [
+    {
+     "sym": "VOO",
+     "dir": "down",
+     "why": "油價高會推高通脹，令減息機會更細，對大市不利"
+    },
+    {
+     "sym": "QQQ",
+     "dir": "down",
+     "why": "通脹同債息上升，對估值高嘅科技股壓力較大"
+    }
+   ],
+   "takeaway": "中東局勢隨時有突發事件，油價急升嘅話，科技股可能會跟住跌。",
+   "found": "2026-10-27 12:00"
+  },
+  {
    "time": "2026-10-27 02:30",
    "headline": "中東斡旋 布蘭特油價收跌至約 115.8 美元",
    "source": "CNBC",
@@ -146,6 +233,29 @@
    ],
    "takeaway": "談判有進展可以紓緩通脹壓力，但局勢隨時會變",
    "found": "2026-10-27 04:45"
+  },
+  {
+   "time": "2026-10-27 02:00",
+   "headline": "議息前分歧 德銀睇再收緊 Zandi 指加息係錯",
+   "source": "CNBC / InvestingLive",
+   "url": "https://www.cnbc.com/2026/10/26/us-treasury-yields-investors-feds-interest-rate-decision-.html",
+   "summary": "10 年期債息大約 4.99%。德意志銀行認為通脹數據支持遲啲再收緊銀根，Moody's 經濟學家 Zandi 就話 5% 債息已經夠緊，再加息係錯誤。今晚 10 點公佈消費者信心指數。",
+   "level": "medium",
+   "scope": "market",
+   "affects": [
+    {
+     "sym": "QQQ",
+     "dir": "mixed",
+     "why": "聯儲局主席 Warsh 講法偏鷹派嘅話，科技股會受壓"
+    },
+    {
+     "sym": "VOO",
+     "dir": "mixed",
+     "why": "加息預期升溫，會影響成個大市嘅估值"
+    }
+   ],
+   "takeaway": "週四凌晨 2:30 Warsh 記者會嘅語氣，比議息結果本身更重要。",
+   "found": "2026-10-27 12:00"
   },
   {
    "time": "2026-10-27 01:00",
@@ -222,24 +332,6 @@
    "found": "2026-10-27 01:00"
   },
   {
-   "time": "2026-10-27 00:30",
-   "headline": "Tesla 升逾6% 兩間公司成立委員會研究合併",
-   "source": "CNBC",
-   "url": "https://www.cnbc.com/2026/10/26/tesla-spacex-merger-barclays.html",
-   "summary": "Barclays 將 Tesla 目標價由370美元升到450美元，睇好合併 SpaceX 時股東會收到溢價。股價升約6.5%，到約396美元。馬斯克確認兩間公司已經各自成立獨立委員會研究合併，但話未一定成事。",
-   "level": "high",
-   "scope": "stock",
-   "affects": [
-    {
-     "sym": "TSLA",
-     "dir": "up",
-     "why": "市場炒合併溢價，加上汽車業務恢復增長、儲能出貨可能大增"
-    }
-   ],
-   "takeaway": "今次升主要靠合併憧憬。如果合併談唔成，股價有機會回吐，要留意兩間公司嘅正式公布。",
-   "found": "2026-10-27 01:00"
-  },
-  {
    "time": "2026-10-27 00:00",
    "headline": "Anthropic 招股書披露 Google 有權加碼100億美元",
    "source": "CNBC",
@@ -279,29 +371,6 @@
    ],
    "takeaway": "週四清晨出業績，股價可能大上大落，留意雲端增長同開支指引",
    "found": "2026-10-27 04:45"
-  },
-  {
-   "time": "2026-10-26 23:00",
-   "headline": "10年期債息回落至約4.97%",
-   "source": "CNBC",
-   "url": "https://www.cnbc.com/2026/10/26/us-treasury-yields-investors-feds-interest-rate-decision-.html",
-   "summary": "10年期美債息喺4.96–4.99%之間，比本月初超過5.3%低，今日變化唔大。2年期約4.7%，投資者等議息同經濟數據。",
-   "level": "low",
-   "scope": "market",
-   "affects": [
-    {
-     "sym": "QQQ",
-     "dir": "up",
-     "why": "債息回落通常對科技股估值有利"
-    },
-    {
-     "sym": "NVDA",
-     "dir": "up",
-     "why": "高增長股對債息比較敏感"
-    }
-   ],
-   "takeaway": "債息仲貼近5%。如果議息後債息再升穿5%，科技股可能再受壓。",
-   "found": "2026-10-27 01:00"
   },
   {
    "time": "2026-10-26 23:00",
@@ -361,6 +430,24 @@
    ],
    "takeaway": "今日升 6% 主要因為大行升評級。合併仲未落實，消息一變股價就可能回吐。",
    "found": "2026-10-26 22:30"
+  },
+  {
+   "time": "2026-10-26 22:00",
+   "headline": "Oracle 週三舉行投資者日 訂單多但現金流負",
+   "source": "24/7 Wall St.",
+   "url": "https://247wallst.com/investing/2026/10/26/balancing-oracles-backlog-against-its-balance-sheet/",
+   "summary": "Oracle 股價喺 126 美元附近徘徊。佢手上 AI 訂單破紀錄，但自由現金流係負數。公司 10 月 28 日舉行投資者日，市場想知佢點樣應付龐大開支同債務。",
+   "level": "high",
+   "scope": "stock",
+   "affects": [
+    {
+     "sym": "ORCL",
+     "dir": "mixed",
+     "why": "投資者日可能釐清前景，但如果集資計劃比預期大，可能會再受壓"
+    }
+   ],
+   "takeaway": "留意投資者日有冇講清楚現金流幾時轉正，同埋借錢計劃有幾大。",
+   "found": "2026-10-27 12:00"
   },
   {
    "time": "2026-10-26 22:00",
@@ -504,24 +591,6 @@
    ],
    "takeaway": "AI 開支冇放慢，對晶片股係好事。但「燒錢」嘅憂慮可能拖累大型科技股。",
    "found": "2026-10-26 22:30"
-  },
-  {
-   "time": "2026-10-26 20:00",
-   "headline": "Oracle 債務逾1,500億 本財年擬再集資約400億",
-   "source": "24/7 Wall St.",
-   "url": "https://247wallst.com/investing/2026/10/26/balancing-oracles-backlog-against-its-balance-sheet/",
-   "summary": "分析指 Oracle 總債務約1,559億美元，另有約306億租賃負債，本財年打算透過發債同發新股集資約400億。投資者日喺10月28或29日舉行。",
-   "level": "medium",
-   "scope": "stock",
-   "affects": [
-    {
-     "sym": "ORCL",
-     "dir": "mixed",
-     "why": "訂單好多，但借錢建數據中心令市場擔心財務壓力"
-    }
-   ],
-   "takeaway": "投資者日會講資金安排同2030年目標，股價喺嗰幾日可能大上大落。",
-   "found": "2026-10-27 08:00"
   },
   {
    "time": "2026-10-26 20:00",
@@ -849,80 +918,6 @@
    ],
    "takeaway": "亞洲AI股仲未穩定，美股開市前可以先睇吓亞洲收市。",
    "found": "2026-10-26 08:00"
-  },
-  {
-   "time": "2026-10-26 06:30",
-   "headline": "美股期貨週日晚回升 納指期貨升約0.5%",
-   "source": "Bloomberg / CNBC",
-   "url": "https://www.bloomberg.com/news/articles/2026-10-25/us-equity-futures-climb-as-crude-oil-price-dips-markets-wrap",
-   "summary": "上週標普500跌0.4%、納指跌0.8%之後，週日晚期貨反彈：標普期貨升0.3–0.4%，納指100期貨升0.5–0.6%。主因係油價回落，投資者等緊本週科技巨頭業績同議息。",
-   "level": "medium",
-   "scope": "market",
-   "affects": [
-    {
-     "sym": "QQQ",
-     "dir": "up",
-     "why": "納指期貨領升，開市有機會先反彈"
-    },
-    {
-     "sym": "QQQM",
-     "dir": "up",
-     "why": "同QQQ追蹤同一個指數"
-    },
-    {
-     "sym": "VOO",
-     "dir": "up",
-     "why": "標普期貨小幅向上"
-    }
-   ],
-   "takeaway": "期貨反彈唔代表成日都升，週三議息同業績先係真正考驗。",
-   "found": "2026-10-26 08:00"
-  },
-  {
-   "time": "2026-10-25 23:00",
-   "headline": "近6,500名Tesla股東聯署 促董事會加快合併SpaceX",
-   "source": "Tesla North",
-   "url": "https://teslanorth.com/2026/10/25/tesla-shareholder-letter-spacex-merger/",
-   "summary": "股東公開信有6,493人聯署，合共持有約1,750萬股，預計週一交畀董事會。呢封信只係請願，唔係正式投票。",
-   "level": "low",
-   "scope": "stock",
-   "affects": [
-    {
-     "sym": "TSLA",
-     "dir": "mixed",
-     "why": "合併話題會帶動炒作，但要成事門檻好高，暫時只係股東施壓"
-    }
-   ],
-   "takeaway": "暫時只係話題，要等董事會正式回應先有實質影響。",
-   "found": "2026-10-26 12:00"
-  },
-  {
-   "time": "2026-10-25 22:30",
-   "headline": "特朗普：週日唔會空襲伊朗 協議定開戰仲諗緊",
-   "source": "CBS News",
-   "url": "https://www.cbsnews.com/live-updates/iran-war-trump-us-oil-gas-prices-strait-of-hormuz-midterms/",
-   "summary": "特朗普出發去密歇根之前同記者講「今日唔會有空襲」，但話仲喺度揀達成協議定係出手「解決佢哋」。美國特使Barrack之前就話週末出手「絕對」有可能。",
-   "level": "high",
-   "scope": "market",
-   "affects": [
-    {
-     "sym": "VOO",
-     "dir": "mixed",
-     "why": "短期唔使擔心即刻開戰，但結果未定，大市會跟住消息上上落落"
-    },
-    {
-     "sym": "QQQ",
-     "dir": "mixed",
-     "why": "油價同避險情緒會左右科技股估值"
-    },
-    {
-     "sym": "TSLA",
-     "dir": "mixed",
-     "why": "高波動股對風險情緒特別敏感"
-    }
-   ],
-   "takeaway": "週一開市前留意有冇新消息，戰定和都可能令大市大幅波動。",
-   "found": "2026-10-26 01:00"
   }
  ]
 }

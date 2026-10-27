@@ -1,5 +1,5 @@
 {
- "generated": "2026-10-27T12:00+08:00",
+ "generated": "2026-10-27T18:00+08:00",
  "holdings": [
   "TSM",
   "TSLA",
@@ -11,9 +11,88 @@
   "NVDA"
  ],
  "claude_ok": true,
- "claude_at": "2026-10-27T12:00+08:00",
- "summary": "Anthropic 遞表帶動亞洲科技股急升，對你嘅 TSM、NVDA 有利。不過今個星期有幾件大事：週四凌晨聯儲局議息，跟住 Google 同微軟公佈業績。油價仲喺六個月高位附近，債息貼近 5%，所以大市隨時會大上大落。",
+ "claude_at": "2026-10-27T18:00+08:00",
+ "summary": "今個禮拜最緊要係聯儲局週四凌晨議息。市場估九成機會唔郁息，焦點係新主席 Warsh 會唔會暗示 12 月加息。美國 10 年期債息貼近 5%，對 NVDA、TSLA、QQQ 呢類高估值科技股係壓力。另外 Meta 大舉集資，Google、微軟週四清晨出業績，會左右你嘅 GOOG、QQQ、QQQM、VOO 走勢。",
  "items": [
+  {
+   "time": "2026-10-27 17:00",
+   "headline": "美國10年債息貼近5% 議息前原地踏步",
+   "source": "CNBC",
+   "url": "https://www.cnbc.com/2026/10/27/treasury-yields-federal-reserve-monetary-policy-meeting.html",
+   "summary": "聯儲局開始兩日議息會議。10年期債息約4.98%，30年期約5.30%，2年期約4.71%，同上個交易日差唔多。上週五債息已經上升過。",
+   "level": "high",
+   "scope": "market",
+   "affects": [
+    {
+     "sym": "QQQ",
+     "dir": "down",
+     "why": "債息高，未來盈利折返而家就唔抵錢，高估值科技股最受壓"
+    },
+    {
+     "sym": "NVDA",
+     "dir": "down",
+     "why": "高增長股對債息最敏感，債息再升會拖低估值"
+    },
+    {
+     "sym": "VOO",
+     "dir": "mixed",
+     "why": "大市整體受影響，但銀行股可以受惠於高息"
+    }
+   ],
+   "takeaway": "10年債息過5%係心理關口。如果突破，科技股可能波動加劇，要留意。",
+   "found": "2026-10-27 18:00"
+  },
+  {
+   "time": "2026-10-27 17:00",
+   "headline": "美股期貨窄幅上落 AI熱潮降溫等議息同業績",
+   "source": "Bloomberg／TipRanks",
+   "url": "https://www.tipranks.com/news/stock-market-today-oct-27-futures-edge-higher-ahead-of-key-earnings-and-the-feds-rate-decision",
+   "summary": "Anthropic 遞表帶動週一 AI 股急升後，週二期貨回穩。標普週一升0.70%，納指升0.82%，投資者觀望聯儲局同今晚 Robinhood、波音等業績。",
+   "level": "medium",
+   "scope": "market",
+   "affects": [
+    {
+     "sym": "NVDA",
+     "dir": "mixed",
+     "why": "上個交易日升2.4%，熱潮降溫可能出現獲利回吐"
+    },
+    {
+     "sym": "TSM",
+     "dir": "mixed",
+     "why": "週一跟晶片股反彈，短線要睇 AI 情緒會唔會延續"
+    }
+   ],
+   "takeaway": "大事前市場通常觀望，今晚小上小落好正常。",
+   "found": "2026-10-27 18:00"
+  },
+  {
+   "time": "2026-10-27 12:00",
+   "headline": "聯儲局料週四凌晨按兵不動 Warsh記者會成最大變數",
+   "source": "BigGo Finance／CME FedWatch",
+   "url": "https://finance.biggo.com/news/d55f08a7-252f-4ddf-8a67-440756191246",
+   "summary": "CME 數據顯示，市場估約九成機會維持息口喺3.75%–4%。議息結果香港時間週四凌晨2點公佈，市場最關心 Warsh 有冇講到年底加息。",
+   "level": "high",
+   "scope": "market",
+   "affects": [
+    {
+     "sym": "QQQ",
+     "dir": "mixed",
+     "why": "如果 Warsh 暗示 12 月加息，科技股可能急跌；語氣溫和就可能反彈"
+    },
+    {
+     "sym": "VOO",
+     "dir": "mixed",
+     "why": "息口路向會影響整個大市估值"
+    },
+    {
+     "sym": "TSLA",
+     "dir": "mixed",
+     "why": "高 beta 股，議息當晚通常郁得最犀利"
+    }
+   ],
+   "takeaway": "週四凌晨大市可能大上大落。唔使因為一晚嘅波動就驚。",
+   "found": "2026-10-27 18:00"
+  },
   {
    "time": "2026-10-27 10:00",
    "headline": "Anthropic 遞表帶動亞股急升 韓股升逾4%",
@@ -100,6 +179,34 @@
    ],
    "takeaway": "如果消費數據再轉差，大市可能受壓，可以留意 Visa 點講消費趨勢。",
    "found": "2026-10-27 08:00"
+  },
+  {
+   "time": "2026-10-27 05:00",
+   "headline": "Meta正式啟動巨額集資 普通股加可換股優先股",
+   "source": "SEC 文件（Meta）",
+   "url": "https://www.sec.gov/Archives/edgar/data/0001326801/000119312526431040/d94886d424b5.htm",
+   "summary": "Meta 發售225億美元普通股（遠期出售），同時發行強制可換股優先股，用嚟支持 AI 基建同「個人超級智能」投資。最終定價未出。",
+   "level": "medium",
+   "scope": "stock",
+   "affects": [
+    {
+     "sym": "META",
+     "dir": "down",
+     "why": "大量新股攤薄現有股東，自由現金流已經好緊"
+    },
+    {
+     "sym": "NVDA",
+     "dir": "up",
+     "why": "集資主要用嚟買 AI 算力，對晶片需求係支持"
+    },
+    {
+     "sym": "QQQ",
+     "dir": "mixed",
+     "why": "Meta 係大成分股，股價受壓會拖累指數，但 AI 開支利好晶片股"
+    }
+   ],
+   "takeaway": "反映 AI 巨企要借錢、集資先夠錢投資，留意市場會唔會開始擔心 AI 泡沫。",
+   "found": "2026-10-27 18:00"
   },
   {
    "time": "2026-10-27 04:30",
@@ -233,6 +340,29 @@
    ],
    "takeaway": "談判有進展可以紓緩通脹壓力，但局勢隨時會變",
    "found": "2026-10-27 04:45"
+  },
+  {
+   "time": "2026-10-27 02:12",
+   "headline": "聯儲局同日本央行同週議息 日圓走弱",
+   "source": "FXStreet",
+   "url": "https://www.fxstreet.com/news/japanese-yen-weakens-with-fed-and-boj-monetary-policy-meetings-in-focus-202610261812",
+   "summary": "日本央行同聯儲局本週都議息，日圓兌美元偏弱。如果日本加息，可能觸發日圓套息交易平倉，影響環球資金流。",
+   "level": "low",
+   "scope": "market",
+   "affects": [
+    {
+     "sym": "QQQ",
+     "dir": "mixed",
+     "why": "以前試過日圓套息交易平倉，引發科技股急跌"
+    },
+    {
+     "sym": "VOO",
+     "dir": "mixed",
+     "why": "環球資金流向一變，大市波動都會增加"
+    }
+   ],
+   "takeaway": "暫時唔係主要風險，但如果日圓突然急升，要留意美股會唔會跟住跌。",
+   "found": "2026-10-27 18:00"
   },
   {
    "time": "2026-10-27 02:00",
@@ -803,121 +933,6 @@
    ],
    "takeaway": "可以當係AI需求嘅溫度計，週三要睇埋。",
    "found": "2026-10-26 18:00"
-  },
-  {
-   "time": "2026-10-26 12:00",
-   "headline": "台積電上週業績勝預期 但股價受AI開支憂慮拖累",
-   "source": "Stocktwits",
-   "url": "https://stocktwits.com/symbol/TSM",
-   "summary": "台積電第三季收入約 467 億美元，按年增長 41%，每股盈利 4.60 美元，勝預期，仲上調指引。但市場擔心 AI 開支見頂，股價業績後反而回落。",
-   "level": "low",
-   "scope": "stock",
-   "affects": [
-    {
-     "sym": "TSM",
-     "dir": "mixed",
-     "why": "基本面強勁，但股價跟住市場對 AI 開支嘅情緒郁"
-    }
-   ],
-   "takeaway": "公司本身業績好，短期股價主要睇本週科技巨頭講資本開支嘅取態。",
-   "found": "2026-10-26 22:30"
-  },
-  {
-   "time": "2026-10-26 10:00",
-   "headline": "卡塔爾調停人赴德黑蘭 油價跌1.6%",
-   "source": "美聯社",
-   "url": "https://www.wsls.com/business/2026/10/26/shares-fall-in-asia-after-a-decline-on-wall-street-and-oil-prices-fall-more-than-1/",
-   "summary": "報道指卡塔爾調停人週日喺德黑蘭，嘗試為美伊局勢降溫。布蘭特油價跌1.6%，至約114.8美元。",
-   "level": "high",
-   "scope": "market",
-   "affects": [
-    {
-     "sym": "VOO",
-     "dir": "up",
-     "why": "油價回落可以減輕通脹同加息壓力，對大市有利"
-    },
-    {
-     "sym": "QQQ",
-     "dir": "up",
-     "why": "科技股對利率好敏感，油價降溫有助債息回落"
-    }
-   ],
-   "takeaway": "斡旋仲未有結果，油價好易因為一條新聞再急升，留意週中進展。",
-   "found": "2026-10-26 12:00"
-  },
-  {
-   "time": "2026-10-26 07:30",
-   "headline": "路透調查：94%經濟師料聯儲本週按兵不動",
-   "source": "Seoul Economic Daily（引述路透）",
-   "url": "https://en.sedaily.com/international/2026/10/26/us-economists-see-fed-holding-rates-on-the-28th-hiking-in",
-   "summary": "100位經濟師之中有94位預期週三（10月28日）唔郁息，但全部100位都預期12月會加息。期貨市場估唔郁息機會約90%，美銀就堅持估今次會加息。",
-   "level": "high",
-   "scope": "market",
-   "affects": [
-    {
-     "sym": "QQQ",
-     "dir": "mixed",
-     "why": "加息預期升溫，對高估值科技股最唔利"
-    },
-    {
-     "sym": "VOO",
-     "dir": "mixed",
-     "why": "如果突然加息，大市有機會急跌"
-    },
-    {
-     "sym": "NVDA",
-     "dir": "mixed",
-     "why": "高增長股對利率最敏感"
-    }
-   ],
-   "takeaway": "就算今次唔郁息，都要聽聯儲講12月會唔會加息。",
-   "found": "2026-10-26 08:00"
-  },
-  {
-   "time": "2026-10-26 07:24",
-   "headline": "期貨：本週唔加息機會約九成 金價跌穿4,000美元",
-   "source": "FXStreet",
-   "url": "https://fxstreet.com/news/gold-declines-below-4-000-as-higher-oil-prices-reinforce-fed-rate-hike-expectations-202610252324",
-   "summary": "利率期貨反映，聯儲局週三維持利率不變嘅機會約91%，12月加息機會約79%。高油價令加息預期升溫，金價跌穿4,000美元。",
-   "level": "high",
-   "scope": "market",
-   "affects": [
-    {
-     "sym": "VOO",
-     "dir": "mixed",
-     "why": "本週唔加息係預期之內，重點係主席Warsh會唔會暗示12月加息"
-    },
-    {
-     "sym": "QQQM",
-     "dir": "mixed",
-     "why": "高增長科技股估值對加息預期好敏感"
-    }
-   ],
-   "takeaway": "香港時間週四凌晨聯儲局公佈議息結果，屆時大市可能波動。",
-   "found": "2026-10-26 12:00"
-  },
-  {
-   "time": "2026-10-26 07:00",
-   "headline": "日股今早料低開 韓股本月已跌近兩成",
-   "source": "Peter's Asian Business Briefing",
-   "url": "https://peterlewismoneytalk.substack.com/p/peters-asian-business-and-finance-5ac",
-   "summary": "預計日經今早低開約0.2%，恒指平開。韓國Kospi上週五一度急跌4.1%，最後收升0.3%，但本月已經跌咗接近兩成，主要係AI晶片股被拋售。",
-   "level": "low",
-   "scope": "market",
-   "affects": [
-    {
-     "sym": "TSM",
-     "dir": "mixed",
-     "why": "亞洲晶片股情緒會影響台積電"
-    },
-    {
-     "sym": "NVDA",
-     "dir": "mixed",
-     "why": "韓國記憶體股係AI產業鏈一部分"
-    }
-   ],
-   "takeaway": "亞洲AI股仲未穩定，美股開市前可以先睇吓亞洲收市。",
-   "found": "2026-10-26 08:00"
   }
  ]
 }

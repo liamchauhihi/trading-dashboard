@@ -1,5 +1,5 @@
 {
- "generated": "2026-10-28T01:00+08:00",
+ "generated": "2026-10-28T04:45+08:00",
  "holdings": [
   "TSM",
   "TSLA",
@@ -11,9 +11,88 @@
   "NVDA"
  ],
  "claude_ok": true,
- "claude_at": "2026-10-28T01:00+08:00",
- "summary": "科技股今晚繼續升，納指半日升約1%。Oracle 喺 AI World 宣佈同 OpenAI、Nvidia 擴大合作，股價升約4%；晶片指數升約3%，帶埋台積電。Tesla 有 Barclays 升評級撐住，連升兩日。聽日凌晨有 Google 業績同議息結果，你嘅科技持倉短期可能會大上大落。",
+ "claude_at": "2026-10-28T04:45+08:00",
+ "summary": "美股周二由科技股帶動再升，納指升約1.2%。10年期債息貼近5%，市場開始估12月有機會加息，所以今晚聯儲局主席Warsh點講好關鍵。之後Google、微軟出業績會直接影響你嘅QQQ、QQQM同GOOG。Tesla連升兩日，主要靠合併憧憬，波動會好大。",
  "items": [
+  {
+   "time": "2026-10-28 04:20",
+   "headline": "Visa業績勝預期 但盤後跌約1.7%",
+   "source": "Benzinga",
+   "url": "https://www.benzinga.com/markets/earnings/26/10/62638176/visa-reports-strong-q4-earnings-a-milestone-year-ceo-says",
+   "summary": "Visa第四財季收入121億美元，按年升13%；經調整每股賺3.48美元，兩樣都好過預期。業績包括一筆4.69億美元訴訟撥備，盤後股價仍然跌約1.7%。",
+   "level": "low",
+   "scope": "stock",
+   "affects": [
+    {
+     "sym": "V",
+     "dir": "down",
+     "why": "業績好過預期，但市場反應一般"
+    },
+    {
+     "sym": "VOO",
+     "dir": "mixed",
+     "why": "Visa係標普大型成分股，影響好細"
+    }
+   ],
+   "takeaway": "顯示美國消費仍然穩陣，對你嘅VOO係正面背景，唔使太在意。",
+   "found": "2026-10-28 04:45"
+  },
+  {
+   "time": "2026-10-28 04:05",
+   "headline": "美股收高 晶片股領漲 納指升約1.2%",
+   "source": "Yahoo Finance",
+   "url": "https://finance.yahoo.com/markets/live/stock-market-today-tuesday-october-27-dow-sp-500-nasdaq-tech-sector-160557664.html",
+   "summary": "科技股連續第二日帶動大市。據報納指升約1.2%，標普升約0.6%，道指差唔多平收。晶片股升得最勁，聯儲局兩日議息會議亦已經開始。",
+   "level": "high",
+   "scope": "market",
+   "affects": [
+    {
+     "sym": "QQQ",
+     "dir": "up",
+     "why": "大型科技股同晶片股帶頭升"
+    },
+    {
+     "sym": "QQQM",
+     "dir": "up",
+     "why": "同QQQ追蹤同一個指數"
+    },
+    {
+     "sym": "VOO",
+     "dir": "up",
+     "why": "標普跟住科技股升，不過幅度細啲"
+    }
+   ],
+   "takeaway": "連升兩日之後，今晚議息同業績可能令市況大上大落，唔使因為一日升跌就緊張。",
+   "found": "2026-10-28 04:45"
+  },
+  {
+   "time": "2026-10-28 01:00",
+   "headline": "債息貼近5% 市場估12月加息機會約75%",
+   "source": "CNBC／Kiplinger",
+   "url": "https://www.cnbc.com/2026/10/27/treasury-yields-federal-reserve-monetary-policy-meeting.html",
+   "summary": "議息會議開始，10年期債息約4.99%，30年期約5.31%。市場幾乎肯定今次會維持3.75%至4%唔變，但期貨反映12月加息嘅機會大約有75%。",
+   "level": "high",
+   "scope": "market",
+   "affects": [
+    {
+     "sym": "QQQ",
+     "dir": "mixed",
+     "why": "債息高對估值高嘅科技股最唔利"
+    },
+    {
+     "sym": "NVDA",
+     "dir": "mixed",
+     "why": "加息預期升溫，高增長股容易被沽"
+    },
+    {
+     "sym": "VOO",
+     "dir": "mixed",
+     "why": "聯儲局講法會左右成個大市方向"
+    }
+   ],
+   "takeaway": "留意Warsh記者會有冇暗示12月加息。講法偏鷹，科技股可能會先跌一轉。",
+   "found": "2026-10-28 04:45"
+  },
   {
    "time": "2026-10-28 00:30",
    "headline": "波音跌約10% 削減全年交付目標",
@@ -87,6 +166,24 @@
    ],
    "takeaway": "議息同大型科技股業績前大市偏強，但週四凌晨之後可能會好波動。",
    "found": "2026-10-28 01:00"
+  },
+  {
+   "time": "2026-10-27 23:30",
+   "headline": "Tesla再升 唱淡評級跌到11年最少",
+   "source": "Investing.com",
+   "url": "https://www.investing.com/news/stock-market-news/why-is-tesla-stock-climbing-today-93CH-4976174",
+   "summary": "BNP Paribas同里昂（CLSA）唔再俾沽售評級，分析師唱淡比例跌到大約11年最低。拉脫維亞亦批准咗FSD，係第十個批准嘅歐盟國家。另外市場繼續炒同SpaceX合併。",
+   "level": "high",
+   "scope": "stock",
+   "affects": [
+    {
+     "sym": "TSLA",
+     "dir": "up",
+     "why": "評級轉好、FSD喺歐洲擴展加上合併憧憬"
+    }
+   ],
+   "takeaway": "兩日升咗大約一成，主要靠合併憧憬。Musk自己都話合併未成事，要預咗股價會大上大落。",
+   "found": "2026-10-28 04:45"
   },
   {
    "time": "2026-10-27 23:00",
@@ -310,34 +407,6 @@
   },
   {
    "time": "2026-10-27 17:00",
-   "headline": "美國10年債息貼近5% 議息前原地踏步",
-   "source": "CNBC",
-   "url": "https://www.cnbc.com/2026/10/27/treasury-yields-federal-reserve-monetary-policy-meeting.html",
-   "summary": "聯儲局開始兩日議息會議。10年期債息約4.98%，30年期約5.30%，2年期約4.71%，同上個交易日差唔多。上週五債息已經上升過。",
-   "level": "high",
-   "scope": "market",
-   "affects": [
-    {
-     "sym": "QQQ",
-     "dir": "down",
-     "why": "債息高，未來盈利折返而家就唔抵錢，高估值科技股最受壓"
-    },
-    {
-     "sym": "NVDA",
-     "dir": "down",
-     "why": "高增長股對債息最敏感，債息再升會拖低估值"
-    },
-    {
-     "sym": "VOO",
-     "dir": "mixed",
-     "why": "大市整體受影響，但銀行股可以受惠於高息"
-    }
-   ],
-   "takeaway": "10年債息過5%係心理關口。如果突破，科技股可能波動加劇，要留意。",
-   "found": "2026-10-27 18:00"
-  },
-  {
-   "time": "2026-10-27 17:00",
    "headline": "美股期貨窄幅上落 AI熱潮降溫等議息同業績",
    "source": "Bloomberg／TipRanks",
    "url": "https://www.tipranks.com/news/stock-market-today-oct-27-futures-edge-higher-ahead-of-key-earnings-and-the-feds-rate-decision",
@@ -358,6 +427,24 @@
    ],
    "takeaway": "大事前市場通常觀望，今晚小上小落好正常。",
    "found": "2026-10-27 18:00"
+  },
+  {
+   "time": "2026-10-27 14:00",
+   "headline": "台積電台股收升0.6% 早段曾經向下",
+   "source": "中央社 Focus Taiwan",
+   "url": "https://focustaiwan.tw/business/202610270015",
+   "summary": "台積電台股早段偏軟，之後回升，收市升0.63%至2,400新台幣，帶動台股微升。美國ADR隔晚跟住費半升得更多。",
+   "level": "low",
+   "scope": "stock",
+   "affects": [
+    {
+     "sym": "TSM",
+     "dir": "up",
+     "why": "AI晶片需求帶動，台美兩邊股價都向好"
+    }
+   ],
+   "takeaway": "公司本身冇新消息，股價主要跟大市晶片股走勢，可以留意下季指引。",
+   "found": "2026-10-28 04:45"
   },
   {
    "time": "2026-10-27 12:00",
@@ -774,6 +861,34 @@
    "found": "2026-10-27 01:00"
   },
   {
+   "time": "2026-10-27 00:30",
+   "headline": "博通安排630億美元融資 供晶片俾Anthropic",
+   "source": "Bloomberg",
+   "url": "https://www.bloomberg.com/news/articles/2026-10-26/broadcom-arranges-63-billion-deal-to-finance-anthropic-s-chips",
+   "summary": "美銀、花旗、摩根士丹利同黑石成立特殊公司，買博通晶片再租俾Anthropic，2027年開始付貨。博通替大約八成金額做擔保，股價升約4%。",
+   "level": "medium",
+   "scope": "sector",
+   "affects": [
+    {
+     "sym": "AVGO",
+     "dir": "up",
+     "why": "鎖定一大筆AI晶片訂單"
+    },
+    {
+     "sym": "NVDA",
+     "dir": "mixed",
+     "why": "AI需求旺係好事，但博通自家晶片係競爭對手"
+    },
+    {
+     "sym": "QQQ",
+     "dir": "up",
+     "why": "AI投資熱潮持續，撐起大型科技股"
+    }
+   ],
+   "takeaway": "AI需求仲好強勁，但晶片商出錢幫客戶買自己貨（循環融資）嘅風險值得留意。",
+   "found": "2026-10-28 04:45"
+  },
+  {
    "time": "2026-10-27 00:00",
    "headline": "Anthropic 招股書披露 Google 有權加碼100億美元",
    "source": "CNBC",
@@ -812,106 +927,6 @@
     }
    ],
    "takeaway": "週四清晨出業績，股價可能大上大落，留意雲端增長同開支指引",
-   "found": "2026-10-27 04:45"
-  },
-  {
-   "time": "2026-10-26 23:00",
-   "headline": "Oracle 跌近52週低位 大行接連削目標價",
-   "source": "Investing.com",
-   "url": "https://www.investing.com/news/analyst-ratings/wells-fargo-cuts-oracle-stock-price-target-on-capex-concerns-93CH-4971938",
-   "summary": "Goldman Sachs 將 Oracle 目標價由 240 削到 206 美元，Wells Fargo 由 280 削到 250 美元，主要擔心資本開支同負債。Mizuho 維持「跑贏大市」評級。股價過去一個月跌咗約 16%。",
-   "level": "high",
-   "scope": "stock",
-   "affects": [
-    {
-     "sym": "ORCL",
-     "dir": "down",
-     "why": "市場擔心借錢建數據中心，負債太重，自由現金流遲遲未改善"
-    }
-   ],
-   "takeaway": "週三投資者日係關鍵，可以聽佢點交代資金來源同幾時開始回本。",
-   "found": "2026-10-26 22:30"
-  },
-  {
-   "time": "2026-10-26 22:30",
-   "headline": "晶片股雖然反彈 但 AI 借貸憂慮仍在",
-   "source": "FXEmpire",
-   "url": "https://www.fxempire.com/forecasts/article/nasdaq-index-anthropic-filing-lifts-semis-but-ai-debt-concerns-persist-1640408",
-   "summary": "半導體股最近由高位跌咗約兩成半，今次反彈未必代表轉勢。分析員仍然擔心數據中心靠借錢擴張。",
-   "level": "medium",
-   "scope": "sector",
-   "affects": [
-    {
-     "sym": "NVDA",
-     "dir": "mixed",
-     "why": "一日反彈之後仍然距離 10 月初高位約一成"
-    },
-    {
-     "sym": "TSM",
-     "dir": "mixed",
-     "why": "業績好過預期，但股價仍然受 AI 開支憂慮拖累"
-    }
-   ],
-   "takeaway": "一日升幅唔代表轉勢，要等埋大型科技股業績先睇得清",
-   "found": "2026-10-27 04:45"
-  },
-  {
-   "time": "2026-10-26 22:00",
-   "headline": "Oracle 週三舉行投資者日 訂單多但現金流負",
-   "source": "24/7 Wall St.",
-   "url": "https://247wallst.com/investing/2026/10/26/balancing-oracles-backlog-against-its-balance-sheet/",
-   "summary": "Oracle 股價喺 126 美元附近徘徊。佢手上 AI 訂單破紀錄，但自由現金流係負數。公司 10 月 28 日舉行投資者日，市場想知佢點樣應付龐大開支同債務。",
-   "level": "high",
-   "scope": "stock",
-   "affects": [
-    {
-     "sym": "ORCL",
-     "dir": "mixed",
-     "why": "投資者日可能釐清前景，但如果集資計劃比預期大，可能會再受壓"
-    }
-   ],
-   "takeaway": "留意投資者日有冇講清楚現金流幾時轉正，同埋借錢計劃有幾大。",
-   "found": "2026-10-27 12:00"
-  },
-  {
-   "time": "2026-10-26 22:00",
-   "headline": "Google 被指 Gemini 3.5 Pro 誤導 集體訴訟12月截止登記",
-   "source": "GlobeNewswire",
-   "url": "https://www.globenewswire.com/news-release/2026/10/26/3388443/1020/en/kaplan-fox-kilsheimer-llp-alerts-alphabet-inc-nasdaq-googl-goog-investors-to-a-securities-class-action-deadline-on-december-1-2026.html",
-   "summary": "律師行指 Alphabet 對 Gemini 3.5 Pro 嘅訓練成果同延遲推出作出誤導陳述，提出證券集體訴訟，截止登記日係12月1日。",
-   "level": "low",
-   "scope": "stock",
-   "affects": [
-    {
-     "sym": "GOOG",
-     "dir": "down",
-     "why": "訴訟會影響市場情緒，但對盈利嘅實際影響通常有限"
-    }
-   ],
-   "takeaway": "呢類律師行公告好常見，唔使太驚，留意有冇監管機構跟進就得。",
-   "found": "2026-10-27 08:00"
-  },
-  {
-   "time": "2026-10-26 22:00",
-   "headline": "Anthropic 招股書：欠雲端商算力開支近 2,700 億",
-   "source": "PPC Land",
-   "url": "https://ppc.land/anthropics-ipo-filing-shows-16-3bn-of-revenue-and-no-plan-to-sell-ads/",
-   "summary": "Anthropic 上半年收入 163 億美元，計劃以「ANT」喺納斯達克上市。佢承諾向 Amazon、Google、微軟購買最少 2,690 億美元嘅算力。",
-   "level": "medium",
-   "scope": "stock",
-   "affects": [
-    {
-     "sym": "GOOG",
-     "dir": "up",
-     "why": "Google 雲端有長期大客，仲持有 Anthropic 股份，上市後可能出現估值收益"
-    },
-    {
-     "sym": "NVDA",
-     "dir": "up",
-     "why": "算力開支最終好大部分會用嚟買 AI 晶片"
-    }
-   ],
-   "takeaway": "對 Google 雲端增長係利好，週三業績可以睇吓有冇提到",
    "found": "2026-10-27 04:45"
   }
  ]

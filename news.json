@@ -1,5 +1,5 @@
 {
- "generated": "2026-10-27T22:30+08:00",
+ "generated": "2026-10-28T01:00+08:00",
  "holdings": [
   "TSM",
   "TSLA",
@@ -11,9 +11,119 @@
   "NVDA"
  ],
  "claude_ok": true,
- "claude_at": "2026-10-27T22:30+08:00",
- "summary": "聯儲局今日開始兩日議息，市場普遍估唔郁息；週三晚 Alphabet、Microsoft 同晚出業績。Nvidia 宣佈入股 Meta 30億美元，Oracle 週一反彈逾3%。消費者信心比預期好，科技股繼續反彈，對你嘅 QQQ、GOOG、NVDA 短線偏正面，但週三週四波動可能好大。",
+ "claude_at": "2026-10-28T01:00+08:00",
+ "summary": "科技股今晚繼續升，納指半日升約1%。Oracle 喺 AI World 宣佈同 OpenAI、Nvidia 擴大合作，股價升約4%；晶片指數升約3%，帶埋台積電。Tesla 有 Barclays 升評級撐住，連升兩日。聽日凌晨有 Google 業績同議息結果，你嘅科技持倉短期可能會大上大落。",
  "items": [
+  {
+   "time": "2026-10-28 00:30",
+   "headline": "波音跌約10% 削減全年交付目標",
+   "source": "TheStreet",
+   "url": "https://www.thestreet.com/stock-market-today/stock-market-today-dow-jones-sp-500-nasdaq-updates-oct-27-2026",
+   "summary": "波音第三季業績遜預期，仲削減全年飛機交付目標，股價跌約10%，拖低道指。大型科技股就撐住標普同納指。",
+   "level": "low",
+   "scope": "stock",
+   "affects": [
+    {
+     "sym": "VOO",
+     "dir": "mixed",
+     "why": "波音係標普成分股，但佔比細，影響有限"
+    }
+   ],
+   "takeaway": "你冇直接持有波音，對 VOO 影響好細，唔使擔心。",
+   "found": "2026-10-28 01:00"
+  },
+  {
+   "time": "2026-10-28 00:00",
+   "headline": "費城半導體指數升約3% 台積電升逾3%",
+   "source": "TokenPost",
+   "url": "https://www.tokenpost.com/news/insights/41846",
+   "summary": "週二晶片股普遍上升，費城半導體指數盤中升約3%，AMD 帶頭。台積電升約3%，Nvidia 升約1.2%，延續 Anthropic 遞表之後嘅反彈。",
+   "level": "high",
+   "scope": "sector",
+   "affects": [
+    {
+     "sym": "TSM",
+     "dir": "up",
+     "why": "晶片股齊齊反彈，加上 CoWoS 封裝傳加價"
+    },
+    {
+     "sym": "NVDA",
+     "dir": "up",
+     "why": "AI 晶片需求嘅消息不斷，跟大隊升"
+    },
+    {
+     "sym": "QQQ",
+     "dir": "up",
+     "why": "晶片股喺納指佔比大"
+    }
+   ],
+   "takeaway": "晶片股近排好波動，升完都可以好快回落，唔使追住每日升跌。",
+   "found": "2026-10-28 01:00"
+  },
+  {
+   "time": "2026-10-27 23:40",
+   "headline": "美股半日：科技股帶動 納指升約1%",
+   "source": "The Motley Fool",
+   "url": "https://www.fool.com/coverage/stock-market-today/2026/10/27/stock-market-midday-oct-27-tech-stocks-lead-as-nasdaq-climbs-on-market-momentum/",
+   "summary": "美東時間11:41，標普500升0.61%報7,723點，納指升1.08%報26,458點。Royal Caribbean 同 SoFi 業績好，股價上升。",
+   "level": "medium",
+   "scope": "market",
+   "affects": [
+    {
+     "sym": "QQQ",
+     "dir": "up",
+     "why": "大型科技股帶頭升"
+    },
+    {
+     "sym": "QQQM",
+     "dir": "up",
+     "why": "同 QQQ 追蹤同一個指數"
+    },
+    {
+     "sym": "VOO",
+     "dir": "up",
+     "why": "標普500跟住升，不過升幅細過納指"
+    }
+   ],
+   "takeaway": "議息同大型科技股業績前大市偏強，但週四凌晨之後可能會好波動。",
+   "found": "2026-10-28 01:00"
+  },
+  {
+   "time": "2026-10-27 23:00",
+   "headline": "Google 業績前 摩根大通升目標價至425美元",
+   "source": "Benzinga",
+   "url": "https://www.benzinga.com/markets/tech/26/10/62561452/google-cloud-revenue-surges-alphabet-focuses-on-100-billion-tpu-opportunity-ahead-of-q3-earnings",
+   "summary": "Alphabet 週三收市後公佈第三季業績。摩根大通維持「增持」，目標價由420升到425美元，睇好雲端同 TPU 晶片生意。另外波蘭監管機構懷疑 Google 同新聞出版商談判時濫用市場地位。",
+   "level": "medium",
+   "scope": "stock",
+   "affects": [
+    {
+     "sym": "GOOG",
+     "dir": "mixed",
+     "why": "大行睇好雲端，但開支高同監管問題仍然係隱憂"
+    }
+   ],
+   "takeaway": "業績公佈之後股價可以單日大上大落，要有心理準備。",
+   "found": "2026-10-28 01:00"
+  },
+  {
+   "time": "2026-10-27 22:30",
+   "headline": "Oracle 升約4% 同 OpenAI 擴大合作 ChatGPT 直接用到 Oracle 系統",
+   "source": "Benzinga",
+   "url": "https://www.benzinga.com/trading-ideas/movers/26/10/62628674/oracle-stock-jumps-whats-going-on",
+   "summary": "Oracle 喺 AI World 大會宣佈擴大同 OpenAI 嘅合作，以後喺 ChatGPT 入面就用到 Oracle 嘅企業軟件同數據。佢嘅雲端仲會加入 Google TPU、Cerebras 等晶片，股價升約4%。",
+   "level": "high",
+   "scope": "stock",
+   "affects": [
+    {
+     "sym": "ORCL",
+     "dir": "up",
+     "why": "雲端客戶同晶片選擇多咗，市場對佢 AI 生意嘅信心回升"
+    }
+   ],
+   "takeaway": "Oracle 今年仍然跌咗近三成，聽日（週三）有投資者日，要留意佢點講目標同負債。",
+   "found": "2026-10-28 01:00"
+  },
   {
    "time": "2026-10-27 22:15",
    "headline": "AI 雲端股續升 CoreWeave 擴充丹麥產能",
@@ -39,6 +149,24 @@
   },
   {
    "time": "2026-10-27 22:00",
+   "headline": "Tesla 再升約3% Barclays 升評級 目標價升至450美元",
+   "source": "Yahoo Finance",
+   "url": "https://finance.yahoo.com/markets/stocks/articles/tesla-rises-6-barclays-upgrade-135853310.html",
+   "summary": "Barclays 將 Tesla 評級由「中性」升至「增持」，目標價由370美元升到450美元，原因係同 SpaceX 合併有機會帶嚟溢價，加上 FSD 帶動汽車業務。拉脫維亞亦批准咗 FSD。",
+   "level": "high",
+   "scope": "stock",
+   "affects": [
+    {
+     "sym": "TSLA",
+     "dir": "up",
+     "why": "大行升評級，又炒同 SpaceX 合併"
+    }
+   ],
+   "takeaway": "Tesla 升主要靠合併憧憬，合併未落實，消息一變股價都可以急跌。",
+   "found": "2026-10-28 01:00"
+  },
+  {
+   "time": "2026-10-27 22:00",
    "headline": "美國10月消費者信心升至91.7 遠勝預期",
    "source": "FXStreet",
    "url": "https://www.fxstreet.com/news/us-cb-consumer-confidence-index-improves-to-917-in-october-202610271412",
@@ -61,32 +189,32 @@
    "found": "2026-10-27 22:30"
   },
   {
-   "time": "2026-10-27 21:50",
-   "headline": "美股開市向上 科技股續反彈 聯儲局開始議息",
-   "source": "TheStreet",
-   "url": "https://www.thestreet.com/stock-market-today/stock-market-today-dow-jones-sp-500-nasdaq-updates-oct-27-2026",
-   "summary": "標普500早段升約0.3%，納指升約0.5%，延續週一 Anthropic 遞表帶動嘅 AI 股反彈。聯儲局兩日會議今日開始，期貨估約九成機會維持息率3.75%–4%。",
+   "time": "2026-10-27 21:00",
+   "headline": "Nvidia 同 Oracle 擴大合作 Vera Rubin 系統去到幾 GW 規模",
+   "source": "NVIDIA Newsroom",
+   "url": "https://nvidianews.nvidia.com/news/latest",
+   "summary": "Nvidia 同 Oracle 宣佈，Oracle 雲端嘅超級電腦會用 Nvidia 新一代 Vera Rubin 系統，規模擴大到幾 GW（十億瓦），仲會引入 Vera CPU。同日 Nvidia 亦宣佈同 Meta 深化合作。",
    "level": "medium",
-   "scope": "market",
+   "scope": "stock",
    "affects": [
     {
-     "sym": "QQQ",
+     "sym": "NVDA",
      "dir": "up",
-     "why": "科技股領漲，連續第二日反彈"
+     "why": "大客戶再加單，新一代晶片需求有保證"
     },
     {
-     "sym": "QQQM",
+     "sym": "ORCL",
      "dir": "up",
-     "why": "同 QQQ 一樣追蹤納指100"
+     "why": "拎到更多頂級 AI 晶片，可以接多啲大客"
     },
     {
-     "sym": "VOO",
+     "sym": "TSM",
      "dir": "up",
-     "why": "大市溫和向上"
+     "why": "Nvidia 晶片由台積電代工，訂單多咗都受惠"
     }
    ],
-   "takeaway": "議息同大型業績前，升市可能好快逆轉，唔使因為一兩日升跌而心急。",
-   "found": "2026-10-27 22:30"
+   "takeaway": "AI 投資潮仲未停，但要留意 Oracle 借大錢買晶片嘅風險。",
+   "found": "2026-10-28 01:00"
   },
   {
    "time": "2026-10-27 20:50",
@@ -728,24 +856,6 @@
    "found": "2026-10-27 04:45"
   },
   {
-   "time": "2026-10-26 22:30",
-   "headline": "Tesla 獲 Barclays 升至「增持」 股價一度升約6%",
-   "source": "Yahoo Finance / 24/7 Wall St.",
-   "url": "https://finance.yahoo.com/markets/stocks/articles/tesla-rises-6-barclays-upgrade-135853310.html",
-   "summary": "Barclays 將 Tesla 評級由「中性」升至「增持」，目標價由 370 加到 450 美元，理由係同 SpaceX 合併可能帶嚟溢價、FSD 同儲能業務增長。Mizuho 亦將目標價加到 460 美元。",
-   "level": "high",
-   "scope": "stock",
-   "affects": [
-    {
-     "sym": "TSLA",
-     "dir": "up",
-     "why": "大行升評級，加上市場憧憬同 SpaceX 合併，帶動今日大升"
-    }
-   ],
-   "takeaway": "今日升 6% 主要因為大行升評級。合併仲未落實，消息一變股價就可能回吐。",
-   "found": "2026-10-26 22:30"
-  },
-  {
    "time": "2026-10-26 22:00",
    "headline": "Oracle 週三舉行投資者日 訂單多但現金流負",
    "source": "24/7 Wall St.",
@@ -802,131 +912,6 @@
     }
    ],
    "takeaway": "對 Google 雲端增長係利好，週三業績可以睇吓有冇提到",
-   "found": "2026-10-27 04:45"
-  },
-  {
-   "time": "2026-10-26 22:00",
-   "headline": "晶片股造好 Nvidia 盤前升1.4%",
-   "source": "Yahoo Finance",
-   "url": "https://finance.yahoo.com/markets/article/tech-rise-after-anthropic-ipo-filing-alphacheck-140040601.html",
-   "summary": "受 Anthropic 上市文件刺激，Nvidia、AMD、Broadcom 等晶片股上升，科技板塊做好大市。",
-   "level": "medium",
-   "scope": "sector",
-   "affects": [
-    {
-     "sym": "NVDA",
-     "dir": "up",
-     "why": "市場憧憬 AI 公司上市之後有更多錢買晶片"
-    },
-    {
-     "sym": "TSM",
-     "dir": "up",
-     "why": "晶片需求向好，代工龍頭跟住受惠"
-    },
-    {
-     "sym": "QQQM",
-     "dir": "up",
-     "why": "晶片股喺納指入面佔比重高"
-    }
-   ],
-   "takeaway": "今日晶片股係跟消息升，唔代表趨勢已經轉好。本週仲有科技巨頭業績要睇。",
-   "found": "2026-10-26 22:30"
-  },
-  {
-   "time": "2026-10-26 21:30",
-   "headline": "Nvidia 等晶片商有意認購 Meta 50 億美元新股",
-   "source": "TipRanks",
-   "url": "https://www.tipranks.com/news/meta-launches-95-billion-stock-offering-plan-to-fund-ai-expansion-nvidia-amd-and-broadcom-weigh-5-billion-purchase",
-   "summary": "Meta 先發行約 350 億美元新股同優先股，用嚟起 AI 基建。Nvidia、AMD、Broadcom 表示有興趣買最多 50 億美元，但未有承諾。",
-   "level": "medium",
-   "scope": "stock",
-   "affects": [
-    {
-     "sym": "NVDA",
-     "dir": "mixed",
-     "why": "Meta 有錢繼續買晶片係好事，但有人擔心變成「自己錢買自己貨」嘅循環投資"
-    },
-    {
-     "sym": "TSM",
-     "dir": "up",
-     "why": "Meta 加大 AI 基建開支，最終都要台積電代工晶片"
-    }
-   ],
-   "takeaway": "可以留意市場會唔會開始質疑 AI 資金循環，呢樣嘢可能令晶片股波動",
-   "found": "2026-10-27 04:45"
-  },
-  {
-   "time": "2026-10-26 21:30",
-   "headline": "美股開市向上 市場等議息同科技業績",
-   "source": "TheStreet / Yahoo Finance",
-   "url": "https://finance.yahoo.com/markets/stocks/articles/stock-market-today-oct-26-134626728.html",
-   "summary": "上週五道指跌 1.2%，標普同納指連跌兩星期。今日油價回落，加上 Anthropic 上市消息，美股開市後反彈，標普升約 0.4% 至 0.6%。",
-   "level": "medium",
-   "scope": "market",
-   "affects": [
-    {
-     "sym": "VOO",
-     "dir": "up",
-     "why": "大市反彈，油價回落令通脹壓力稍為減輕"
-    },
-    {
-     "sym": "QQQ",
-     "dir": "up",
-     "why": "科技股帶頭反彈"
-    }
-   ],
-   "takeaway": "連跌兩星期之後反彈，但今個星期事件多，市況可能好反覆，唔使因為一日升跌而驚。",
-   "found": "2026-10-26 22:30"
-  },
-  {
-   "time": "2026-10-26 20:30",
-   "headline": "Meta 擬集資最多950億美元 投放AI基建",
-   "source": "CNBC",
-   "url": "https://www.cnbc.com/2026/10/26/meta-stock-offering-ai.html",
-   "summary": "Meta 計劃先發售約 350 億美元新股同可轉換優先股，之後再用最多 600 億美元嘅市價發行計劃（ATM，即係隨市價陸續賣新股）。第三季佢錄得十幾年嚟第一次負自由現金流。Nvidia、AMD、Broadcom 有興趣認購最多 50 億美元。",
-   "level": "high",
-   "scope": "sector",
-   "affects": [
-    {
-     "sym": "NVDA",
-     "dir": "up",
-     "why": "Meta 集到嘅錢主要會用嚟買 AI 晶片，Nvidia 亦有意認購"
-    },
-    {
-     "sym": "TSM",
-     "dir": "up",
-     "why": "AI 晶片需求持續，台積電負責代工生產"
-    },
-    {
-     "sym": "QQQ",
-     "dir": "mixed",
-     "why": "科技巨頭要靠集資撐住開支，市場會擔心 AI 投資嘅回報"
-    }
-   ],
-   "takeaway": "AI 開支冇放慢，對晶片股係好事。但「燒錢」嘅憂慮可能拖累大型科技股。",
-   "found": "2026-10-26 22:30"
-  },
-  {
-   "time": "2026-10-26 20:00",
-   "headline": "本週數據密集：消費信心、GDP、核心 PCE",
-   "source": "Gotrade",
-   "url": "https://www.heygotrade.com/en/news/weekly-economic-outlook-2026-10-26/",
-   "summary": "週二公布消費者信心，預期 80.5。週四公布第三季 GDP（預期 3.2%）同核心 PCE 通脹（預期 3.1%）。微軟同 Google 週三收市後出業績，Amazon 週四出。",
-   "level": "medium",
-   "scope": "market",
-   "affects": [
-    {
-     "sym": "VOO",
-     "dir": "mixed",
-     "why": "通脹數據高過預期，會增加加息憂慮"
-    },
-    {
-     "sym": "QQQ",
-     "dir": "mixed",
-     "why": "微軟、Google、Amazon 業績會直接影響納指"
-    }
-   ],
-   "takeaway": "週四係本週最關鍵嘅一日，心理上要準備好股價會波動",
    "found": "2026-10-27 04:45"
   }
  ]

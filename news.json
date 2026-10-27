@@ -1,5 +1,5 @@
 {
- "generated": "2026-10-27T18:00+08:00",
+ "generated": "2026-10-27T22:30+08:00",
  "holdings": [
   "TSM",
   "TSLA",
@@ -11,9 +11,175 @@
   "NVDA"
  ],
  "claude_ok": true,
- "claude_at": "2026-10-27T18:00+08:00",
- "summary": "今個禮拜最緊要係聯儲局週四凌晨議息。市場估九成機會唔郁息，焦點係新主席 Warsh 會唔會暗示 12 月加息。美國 10 年期債息貼近 5%，對 NVDA、TSLA、QQQ 呢類高估值科技股係壓力。另外 Meta 大舉集資，Google、微軟週四清晨出業績，會左右你嘅 GOOG、QQQ、QQQM、VOO 走勢。",
+ "claude_at": "2026-10-27T22:30+08:00",
+ "summary": "聯儲局今日開始兩日議息，市場普遍估唔郁息；週三晚 Alphabet、Microsoft 同晚出業績。Nvidia 宣佈入股 Meta 30億美元，Oracle 週一反彈逾3%。消費者信心比預期好，科技股繼續反彈，對你嘅 QQQ、GOOG、NVDA 短線偏正面，但週三週四波動可能好大。",
  "items": [
+  {
+   "time": "2026-10-27 22:15",
+   "headline": "AI 雲端股續升 CoreWeave 擴充丹麥產能",
+   "source": "24/7 Wall St.",
+   "url": "https://247wallst.com/investing/2026/10/27/ai-cloud-stocks-rise-as-coreweave-adds-denmark-capacity-coreweave-and-nebius-climb-4-oracle-ticks-up/",
+   "summary": "CoreWeave 宣佈喺丹麥增加數據中心產能，CoreWeave 同 Nebius 升約4%，Oracle 今日都輕微向上。",
+   "level": "low",
+   "scope": "sector",
+   "affects": [
+    {
+     "sym": "ORCL",
+     "dir": "up",
+     "why": "同屬 AI 雲端，行業氣氛轉好有帶動"
+    },
+    {
+     "sym": "NVDA",
+     "dir": "up",
+     "why": "雲端商擴產即係要買更多 GPU"
+    }
+   ],
+   "takeaway": "行業氣氛回暖，但 AI 借貸同開支嘅憂慮仍然未散。",
+   "found": "2026-10-27 22:30"
+  },
+  {
+   "time": "2026-10-27 22:00",
+   "headline": "美國10月消費者信心升至91.7 遠勝預期",
+   "source": "FXStreet",
+   "url": "https://www.fxstreet.com/news/us-cb-consumer-confidence-index-improves-to-917-in-october-202610271412",
+   "summary": "諮商會消費者信心指數由84.2升至91.7，市場原本估約81。油價回落係主因，但消費者打算未來半年少啲使錢喺服務同耐用品。",
+   "level": "medium",
+   "scope": "market",
+   "affects": [
+    {
+     "sym": "VOO",
+     "dir": "up",
+     "why": "消費者冇想像中咁悲觀，經濟衰退憂慮減輕"
+    },
+    {
+     "sym": "QQQ",
+     "dir": "mixed",
+     "why": "經濟好啲有利盈利，但都可能令聯儲局更唔急減息"
+    }
+   ],
+   "takeaway": "好消息，但單一數據唔改變大方向，焦點仍然係週四凌晨議息。",
+   "found": "2026-10-27 22:30"
+  },
+  {
+   "time": "2026-10-27 21:50",
+   "headline": "美股開市向上 科技股續反彈 聯儲局開始議息",
+   "source": "TheStreet",
+   "url": "https://www.thestreet.com/stock-market-today/stock-market-today-dow-jones-sp-500-nasdaq-updates-oct-27-2026",
+   "summary": "標普500早段升約0.3%，納指升約0.5%，延續週一 Anthropic 遞表帶動嘅 AI 股反彈。聯儲局兩日會議今日開始，期貨估約九成機會維持息率3.75%–4%。",
+   "level": "medium",
+   "scope": "market",
+   "affects": [
+    {
+     "sym": "QQQ",
+     "dir": "up",
+     "why": "科技股領漲，連續第二日反彈"
+    },
+    {
+     "sym": "QQQM",
+     "dir": "up",
+     "why": "同 QQQ 一樣追蹤納指100"
+    },
+    {
+     "sym": "VOO",
+     "dir": "up",
+     "why": "大市溫和向上"
+    }
+   ],
+   "takeaway": "議息同大型業績前，升市可能好快逆轉，唔使因為一兩日升跌而心急。",
+   "found": "2026-10-27 22:30"
+  },
+  {
+   "time": "2026-10-27 20:50",
+   "headline": "Nvidia 斥30億美元入股 Meta 擴大 AI 合作",
+   "source": "Yahoo Finance",
+   "url": "https://finance.yahoo.com/markets/article/nvidia-to-invest-3-billion-in-meta-expand-partnership-on-muse-125249944.html",
+   "summary": "Nvidia 認購 Meta 新股30億美元，雙方擴大 Muse AI 模型合作。Meta 將普通股集資規模加大至250億美元，Nvidia、AMD、Broadcom 合共有意認購最多50億。",
+   "level": "high",
+   "scope": "stock",
+   "affects": [
+    {
+     "sym": "NVDA",
+     "dir": "mixed",
+     "why": "鎖實大客戶繼續買晶片，但「投資客戶再賣晶片畀佢」模式惹人質疑，盤前微跌"
+    },
+    {
+     "sym": "QQQ",
+     "dir": "mixed",
+     "why": "Meta 同 Nvidia 都係大成分股，大額集資會攤薄 Meta 股東"
+    }
+   ],
+   "takeaway": "留意市場點睇 AI 公司互相投資，呢個係泡沫憂慮嘅話題之一。",
+   "found": "2026-10-27 22:30"
+  },
+  {
+   "time": "2026-10-27 20:00",
+   "headline": "Google、微軟週三同晚出業績 撞正議息結果",
+   "source": "CoinCentral",
+   "url": "https://coincentral.com/todays-market-movers-alphabet-and-microsoft-earnings-loom-as-fed-meeting-begins",
+   "summary": "今週係業績高峰，163間標普公司公佈業績。微軟同 Alphabet 週三收市後公佈，聯儲局同日宣佈議息結果，兩件事撞埋一齊。",
+   "level": "medium",
+   "scope": "market",
+   "affects": [
+    {
+     "sym": "QQQ",
+     "dir": "mixed",
+     "why": "兩隻巨頭同一晚出業績，加上議息，指數波動會放大"
+    },
+    {
+     "sym": "VOO",
+     "dir": "mixed",
+     "why": "兩隻股佔標普權重好高"
+    }
+   ],
+   "takeaway": "週四香港時間早上係今週最大風險時段，記得留意。",
+   "found": "2026-10-27 22:30"
+  },
+  {
+   "time": "2026-10-27 19:30",
+   "headline": "波音第三季虧損多過預期 訂單創新高",
+   "source": "GuruFocus",
+   "url": "https://www.gurufocus.com/news/9144520/boeing-ba-q3-results-miss-estimates-amid-ongoing-recovery-challenges",
+   "summary": "波音季度收入約242億美元，經調整每股蝕0.34美元，差過預期；但積壓訂單達7450億美元新高，737-7、737-10 獲認證。",
+   "level": "low",
+   "scope": "stock",
+   "affects": [
+    {
+     "sym": "BA",
+     "dir": "mixed",
+     "why": "虧損差過預期，但訂單同認證進展正面"
+    },
+    {
+     "sym": "VOO",
+     "dir": "mixed",
+     "why": "波音係標普成分股，不過權重細，影響有限"
+    }
+   ],
+   "takeaway": "你冇直接持有波音，對你嘅 VOO 影響好細。",
+   "found": "2026-10-27 22:30"
+  },
+  {
+   "time": "2026-10-27 18:00",
+   "headline": "Google 週三收市後公佈業績 雲端同開支係焦點",
+   "source": "BigGo Finance",
+   "url": "https://finance.biggo.com/news/a3dea228-98db-46c0-a57b-1cafd970acfc",
+   "summary": "Alphabet 香港時間週四早上公佈第三季業績。市場估雲端收入增長約九成，今年資本開支指引約1950–2050億美元，2027年開支計劃最受關注。",
+   "level": "high",
+   "scope": "stock",
+   "affects": [
+    {
+     "sym": "GOOG",
+     "dir": "mixed",
+     "why": "雲端好可以撐股價，開支再加或者現金流轉差就可能跌"
+    },
+    {
+     "sym": "QQQ",
+     "dir": "mixed",
+     "why": "Google 係大成分股，業績會影響成個納指"
+    }
+   ],
+   "takeaway": "業績後股價大上大落好常見，你要預咗週四有大波動。",
+   "found": "2026-10-27 22:30"
+  },
   {
    "time": "2026-10-27 17:00",
    "headline": "美國10年債息貼近5% 議息前原地踏步",
@@ -388,6 +554,24 @@
    "found": "2026-10-27 12:00"
   },
   {
+   "time": "2026-10-27 01:30",
+   "headline": "Oracle 週一反彈逾3% AI World 推新產品",
+   "source": "Benzinga",
+   "url": "https://www.benzinga.com/markets/large-cap/26/10/62598026/oracle-expands-ai-software-offerings-ahead-of-investor-day",
+   "summary": "Oracle 喺 AI World 大會推出一批 AI 軟件，加上 Anthropic 遞表帶動 AI 股反彈，股價由52週低位附近回升，收市升約3%。週三有投資者日。",
+   "level": "high",
+   "scope": "stock",
+   "affects": [
+    {
+     "sym": "ORCL",
+     "dir": "up",
+     "why": "跌到接近一年低位後有新產品同大市支持，出現技術反彈"
+    }
+   ],
+   "takeaway": "股價一年跌咗一半，反彈未代表見底；週三投資者日講現金流先係關鍵。",
+   "found": "2026-10-27 22:30"
+  },
+  {
    "time": "2026-10-27 01:00",
    "headline": "Google 業績前受壓 大行削目標價兼面對集體訴訟",
    "source": "Investing.com",
@@ -744,195 +928,6 @@
    ],
    "takeaway": "週四係本週最關鍵嘅一日，心理上要準備好股價會波動",
    "found": "2026-10-27 04:45"
-  },
-  {
-   "time": "2026-10-26 19:30",
-   "headline": "週四凌晨議息 緊接 Google 同微軟業績",
-   "source": "Yahoo Finance",
-   "url": "https://finance.yahoo.com/markets/stocks/articles/microsoft-alphanet-amazon-earnings-meet-113701296.html",
-   "summary": "聯儲局香港時間週四凌晨2:00公布議息結果，期貨顯示約九成機會維持3.75–4%。部分機構估計12月可能加息。Google 同微軟週四凌晨收市後出業績，Amazon 週五凌晨出。",
-   "level": "high",
-   "scope": "market",
-   "affects": [
-    {
-     "sym": "GOOG",
-     "dir": "mixed",
-     "why": "業績焦點係雲端增長同資本開支"
-    },
-    {
-     "sym": "QQQ",
-     "dir": "mixed",
-     "why": "三大科技股業績加議息集中喺兩日內"
-    },
-    {
-     "sym": "VOO",
-     "dir": "mixed",
-     "why": "鮑威爾有冇暗示12月加息會影響大市"
-    }
-   ],
-   "takeaway": "週四同週五早上香港時間股價可能大上大落，記住呢兩日睇你嘅持倉。",
-   "found": "2026-10-27 01:00"
-  },
-  {
-   "time": "2026-10-26 19:00",
-   "headline": "Mizuho：Oracle投資者日要解答資金疑慮",
-   "source": "Investing.com",
-   "url": "https://www.investing.com/news/analyst-ratings/mizuho-reiterates-oracle-stock-rating-ahead-of-investor-day-93CH-4972220",
-   "summary": "Mizuho 維持 320 美元目標價，認為 10 月 28 日投資者日係 Oracle 交代融資、資本開支強度同自由現金流幾時好轉嘅機會。",
-   "level": "medium",
-   "scope": "stock",
-   "affects": [
-    {
-     "sym": "ORCL",
-     "dir": "mixed",
-     "why": "交代得清楚可能會反彈，令人失望就可能再跌"
-    }
-   ],
-   "takeaway": "投資者日前後股價可能大上大落，你要有心理準備。",
-   "found": "2026-10-26 22:30"
-  },
-  {
-   "time": "2026-10-26 18:00",
-   "headline": "Alphabet週三業績 焦點雲端增長同資本開支",
-   "source": "Yahoo Finance",
-   "url": "https://finance.yahoo.com/quote/GOOG/",
-   "summary": "Alphabet 10 月 28 日公佈第三季業績，市場關注 Google Cloud 增長，以及全年 1,950 億至 2,050 億美元嘅資本開支會唔會蠶食利潤。",
-   "level": "medium",
-   "scope": "stock",
-   "affects": [
-    {
-     "sym": "GOOG",
-     "dir": "mixed",
-     "why": "雲端增長強會加分，但開支再加會令人擔心利潤"
-    },
-    {
-     "sym": "NVDA",
-     "dir": "up",
-     "why": "Google 資本開支愈大，買 AI 晶片嘅需求就愈大"
-    }
-   ],
-   "takeaway": "業績前後波動可以好大，重點睇資本開支指引同雲端增長率。",
-   "found": "2026-10-26 22:30"
-  },
-  {
-   "time": "2026-10-26 16:46",
-   "headline": "美股期貨個別發展 道指升 納指期貨偏軟",
-   "source": "FXStreet / Investing.com",
-   "url": "https://www.fxstreet.com/news/dow-jones-futures-rise-on-easing-middle-east-tensions-fed-rate-pause-bets-202610260846",
-   "summary": "中東局勢有緩和跡象，加上市場押注聯儲唔郁息，道指期貨上升。但納指期貨轉為平穩至輕微下跌，週日晚嘅升幅未能保持，科技股仍然受壓。",
-   "level": "medium",
-   "scope": "market",
-   "affects": [
-    {
-     "sym": "QQQ",
-     "dir": "mixed",
-     "why": "納指期貨冇乜方向，科技股連跌兩週之後仍然未企穩"
-    },
-    {
-     "sym": "VOO",
-     "dir": "up",
-     "why": "標普期貨輕微上升，能源同防守股撐住大市"
-    }
-   ],
-   "takeaway": "開市前市況反覆好正常，唔使因為期貨郁少少就緊張。",
-   "found": "2026-10-26 18:00"
-  },
-  {
-   "time": "2026-10-26 16:34",
-   "headline": "德銀：科技巨頭資本開支 焦點或蓋過議息",
-   "source": "FXStreet（Deutsche Bank）",
-   "url": "https://www.fxstreet.com/news/equities-global-stocks-under-pressure-ahead-of-tech-earnings-deutsche-bank-202610260834",
-   "summary": "德銀策略師指，今個星期市場對科技巨頭業績嘅反應，尤其係最新資本開支計劃，受關注程度可能唔輸週三聯儲議息。投資者由「有AI就買」轉為追問AI賺唔賺錢。",
-   "level": "high",
-   "scope": "sector",
-   "affects": [
-    {
-     "sym": "GOOG",
-     "dir": "mixed",
-     "why": "週三出業績，資本開支同現金流係焦點"
-    },
-    {
-     "sym": "NVDA",
-     "dir": "mixed",
-     "why": "科技巨頭加開支即係多買晶片，減開支就不利"
-    },
-    {
-     "sym": "QQQ",
-     "dir": "mixed",
-     "why": "幾大科技股佔納指好大比重"
-    }
-   ],
-   "takeaway": "今個星期股價可能郁得大，你要預咗有波動。",
-   "found": "2026-10-26 18:00"
-  },
-  {
-   "time": "2026-10-26 15:00",
-   "headline": "布蘭特油價跌至約115美元 市場憂AI開支",
-   "source": "Tickmill",
-   "url": "https://tickmill.com/blog/daily-market-outlook-october-26-2026",
-   "summary": "卡塔爾赴德黑蘭調停之後，布蘭特期油跌約1.6%至114.88美元，美國期油跌1.9%至約101美元。不過地緣風險、油價同埋科技股資本開支過高嘅憂慮，仍然拖累市場情緒。",
-   "level": "medium",
-   "scope": "market",
-   "affects": [
-    {
-     "sym": "VOO",
-     "dir": "up",
-     "why": "油價回落有助紓緩通脹壓力"
-    },
-    {
-     "sym": "QQQ",
-     "dir": "mixed",
-     "why": "油價回落係好事，但AI開支憂慮仍然壓住科技股"
-    }
-   ],
-   "takeaway": "油價仍然高企，中東消息隨時令市場掉頭，要留意。",
-   "found": "2026-10-26 18:00"
-  },
-  {
-   "time": "2026-10-26 14:30",
-   "headline": "韓股跌1.5% 日股跌0.8% 亞洲晶片股受壓",
-   "source": "TradingKey / IBTimes",
-   "url": "https://tradingkey.com/analysis/stocks/more/262238636-japan-korea-stocks-skhy-kospi-nikkei-samsung-kioxia-ai-softbank-tradingkey",
-   "summary": "韓國KOSPI收跌1.46%，三星跌1.16%；日經指數連跌三日，收跌0.8%，被東京電子同愛德萬拖累。美國晶片股偏弱亦拖低區內氣氛。",
-   "level": "medium",
-   "scope": "sector",
-   "affects": [
-    {
-     "sym": "TSM",
-     "dir": "down",
-     "why": "亞洲晶片股同步偏弱，台積電美股今晚可能受影響"
-    },
-    {
-     "sym": "NVDA",
-     "dir": "down",
-     "why": "AI晶片股嘅市場情緒仍然偏淡"
-    }
-   ],
-   "takeaway": "要留意今晚晶片股會唔會跟住亞洲跌，你唔需要因為一日嘅郁動就做決定。",
-   "found": "2026-10-26 18:00"
-  },
-  {
-   "time": "2026-10-26 14:00",
-   "headline": "SK海力士週三出業績 考驗AI記憶體需求",
-   "source": "TradingKey",
-   "url": "https://www.tradingkey.com/analysis/stocks/us-stocks/262238162-japan-korea-stocks-skhy-kospi-nikkei-samsung-kioxia-tradingkey",
-   "summary": "SK海力士10月28日公佈第三季業績，計劃派16萬億韓圜特別股息。佢係Nvidia AI晶片高頻寬記憶體嘅主要供應商，業績會影響成個AI晶片行業嘅氣氛。",
-   "level": "low",
-   "scope": "sector",
-   "affects": [
-    {
-     "sym": "NVDA",
-     "dir": "mixed",
-     "why": "海力士業績反映AI伺服器需求強唔強"
-    },
-    {
-     "sym": "TSM",
-     "dir": "mixed",
-     "why": "同屬AI晶片供應鏈，市場情緒會互相影響"
-    }
-   ],
-   "takeaway": "可以當係AI需求嘅溫度計，週三要睇埋。",
-   "found": "2026-10-26 18:00"
   }
  ]
 }

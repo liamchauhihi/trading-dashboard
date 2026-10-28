@@ -1,5 +1,5 @@
 {
- "generated": "2026-10-28T12:00+08:00",
+ "generated": "2026-10-28T18:00+08:00",
  "holdings": [
   "TSM",
   "TSLA",
@@ -11,9 +11,88 @@
   "NVDA"
  ],
  "claude_ok": true,
- "claude_at": "2026-10-28T12:00+08:00",
- "summary": "今晚（香港時間週四凌晨 2 點）聯儲局議息，市場估九成唔郁息，焦點係會唔會暗示 12 月加息；Google、微軟今晚收市後出業績，開支會唔會太大係關鍵。Anthropic 招股書、博通融資同 SK 海力士破紀錄業績推高晶片股，對你手上嘅 NVDA、TSM 有利，但連升幾日之後波幅可能會加大。",
+ "claude_at": "2026-10-28T18:00+08:00",
+ "summary": "今晚三件大事：聯儲局議息（大部分人估唔郁息）、Google 同微軟收市後一齊公佈業績。另外有報道指美國可能喺中期選舉後再空襲伊朗，布蘭特油價升返上 115 美元。你嘅科技股同指數 ETF 今晚同聽朝波幅可能會大啲。",
  "items": [
+  {
+   "time": "2026-10-28 16:30",
+   "headline": "傳美國中期選舉後再打伊朗 布蘭特油價升穿115美元",
+   "source": "TipRanks",
+   "url": "https://www.tipranks.com/news/stock-market-today-oct-28-futures-mixed-as-investors-await-mega-cap-earnings-and-the-feds-policy-decision",
+   "summary": "有報道指美國可能喺下星期中期選舉之後恢復空襲伊朗，布蘭特期油升至約115美元，抵銷咗之前談判有進展帶嚟嘅跌幅。",
+   "level": "high",
+   "scope": "market",
+   "affects": [
+    {
+     "sym": "VOO",
+     "dir": "down",
+     "why": "油價高會推高通脹同債息，對大市估值唔利"
+    },
+    {
+     "sym": "QQQ",
+     "dir": "down",
+     "why": "債息上升通常最影響高估值科技股"
+    },
+    {
+     "sym": "TSLA",
+     "dir": "mixed",
+     "why": "油貴可能令多啲人想買電動車，但大市氣氛差都會拖累"
+    }
+   ],
+   "takeaway": "地緣政治新聞變得好快，留意油價同債息有冇再升。",
+   "found": "2026-10-28 18:00"
+  },
+  {
+   "time": "2026-10-28 16:06",
+   "headline": "美股期貨上落不一 等聯儲局同科技巨頭業績",
+   "source": "Yahoo Finance",
+   "url": "https://finance.yahoo.com/markets/live/stock-market-today-wednesday-october-28-dow-sp-500-nasdaq-fed-meeting-decision-080642111.html",
+   "summary": "道指期貨跌約0.3%，標普期貨差唔多冇郁，納指期貨升約0.3%。聯儲局香港時間週四凌晨2點公佈議息，CME 數據估有92%機會維持3.75%–4%唔變。",
+   "level": "high",
+   "scope": "market",
+   "affects": [
+    {
+     "sym": "QQQ",
+     "dir": "mixed",
+     "why": "納指已經連升兩日，今晚業績同議息結果會決定之後方向"
+    },
+    {
+     "sym": "VOO",
+     "dir": "mixed",
+     "why": "大市喺大事之前觀望，鮑威爾點講12月加唔加息係關鍵"
+    }
+   ],
+   "takeaway": "今晚消息多，ETF 可能大上大落，唔使因為一晚嘅郁動太緊張。",
+   "found": "2026-10-28 18:00"
+  },
+  {
+   "time": "2026-10-28 16:00",
+   "headline": "微軟今晚同 Google 一齊放榜 焦點係 Azure 同開支",
+   "source": "Seeking Alpha",
+   "url": "https://seekingalpha.com/news/4658652-sp500-nasdaq-dow-jones-outlook-stock-market",
+   "summary": "微軟今晚美股收市後公佈業績，市場最關心 Azure 雲端增長，同埋上季超過500億美元嘅資本開支會唔會再加。",
+   "level": "high",
+   "scope": "stock",
+   "affects": [
+    {
+     "sym": "QQQ",
+     "dir": "mixed",
+     "why": "微軟係納指最大成分股之一，業績好壞會直接拉動指數"
+    },
+    {
+     "sym": "NVDA",
+     "dir": "mixed",
+     "why": "微軟開支指引越高，代表 AI 晶片需求越強"
+    },
+    {
+     "sym": "ORCL",
+     "dir": "mixed",
+     "why": "Azure 增長數字會影響市場點睇雲端同 Oracle 競爭"
+    }
+   ],
+   "takeaway": "睇埋 Google 同微軟嘅開支數字，就知 AI 晶片需求仲旺唔旺。",
+   "found": "2026-10-28 18:00"
+  },
   {
    "time": "2026-10-28 09:00",
    "headline": "Google今晚業績 焦點係二千億開支同現金流",
@@ -404,6 +483,24 @@
   },
   {
    "time": "2026-10-27 23:00",
+   "headline": "Tesla 擬用 Optimus 機械人幫 Robotaxi 充電",
+   "source": "Not a Tesla App",
+   "url": "https://www.notateslaapp.com/news/4904/teslas-optimus-robot-will-soon-plug-in-robotaxis-to-charge",
+   "summary": "Tesla 高層表示，喺自動無線充電準備好之前，會用 Optimus 人形機械人喺超級充電站幫 Robotaxi 插電。",
+   "level": "low",
+   "scope": "stock",
+   "affects": [
+    {
+     "sym": "TSLA",
+     "dir": "mixed",
+     "why": "展示機械人同無人的士點樣配合，但短期對收入影響細"
+    }
+   ],
+   "takeaway": "屬於長遠故事，短期股價主要睇大市同合併消息。",
+   "found": "2026-10-28 18:00"
+  },
+  {
+   "time": "2026-10-27 23:00",
    "headline": "Tesla炒SpaceX合併 但仲未有正式協議",
    "source": "Crypto Briefing",
    "url": "https://cryptobriefing.com/spacex-and-tesla-form-committees-to-explore-potential-merger/",
@@ -628,27 +725,32 @@
    "found": "2026-10-28 01:00"
   },
   {
-   "time": "2026-10-27 20:50",
-   "headline": "Nvidia 斥30億美元入股 Meta 擴大 AI 合作",
-   "source": "Yahoo Finance",
+   "time": "2026-10-27 20:52",
+   "headline": "Nvidia 入股 Meta 30億美元 擴大 Muse 合作",
+   "source": "Yahoo Finance / Reuters",
    "url": "https://finance.yahoo.com/markets/article/nvidia-to-invest-3-billion-in-meta-expand-partnership-on-muse-125249944.html",
-   "summary": "Nvidia 認購 Meta 新股30億美元，雙方擴大 Muse AI 模型合作。Meta 將普通股集資規模加大至250億美元，Nvidia、AMD、Broadcom 合共有意認購最多50億。",
-   "level": "high",
+   "summary": "Meta 宣佈大規模發新股集資建 AI 基建，Nvidia 認購30億美元，AMD 認購10億美元。Meta 會加大採用 Nvidia 嘅 Vera Rubin 平台同 Vera CPU。",
+   "level": "medium",
    "scope": "stock",
    "affects": [
     {
      "sym": "NVDA",
-     "dir": "mixed",
-     "why": "鎖實大客戶繼續買晶片，但「投資客戶再賣晶片畀佢」模式惹人質疑，盤前微跌"
+     "dir": "up",
+     "why": "鎖定 Meta 大量晶片訂單，但用自己資金入股客戶會惹「循環投資」質疑"
     },
     {
      "sym": "QQQ",
      "dir": "mixed",
-     "why": "Meta 同 Nvidia 都係大成分股，大額集資會攤薄 Meta 股東"
+     "why": "Meta 係重磅成分股，發新股會攤薄股東權益，但 AI 投資繼續擴大"
+    },
+    {
+     "sym": "QQQM",
+     "dir": "mixed",
+     "why": "同 QQQ 一樣，都持有 Meta 同 Nvidia"
     }
    ],
-   "takeaway": "留意市場點睇 AI 公司互相投資，呢個係泡沫憂慮嘅話題之一。",
-   "found": "2026-10-27 22:30"
+   "takeaway": "AI 開支仲喺度加，但要留意科技公司越嚟越靠集資撐住開支。",
+   "found": "2026-10-28 18:00"
   },
   {
    "time": "2026-10-27 20:00",
@@ -795,6 +897,47 @@
   },
   {
    "time": "2026-10-27 12:00",
+   "headline": "傳台積電先進封裝 CoWoS 加價最多兩成",
+   "source": "Tom's Hardware",
+   "url": "https://tomshardware.com/tech-industry/semiconductors/tsmc-reportedly-weighs-20-percent-cowos-price-increase-as-nvidia-blackwell-and-rubin-chips-put-pressure-on-packaging-capacity-equipment-lead-times-stretch-to-eight-months",
+   "summary": "台灣《工商時報》報道，Nvidia Blackwell 同 Rubin 晶片需求太大，台積電考慮將 CoWoS 封裝價錢加最多20%，設備交貨期已經拉長到8個月。暫時未有官方確認。",
+   "level": "medium",
+   "scope": "stock",
+   "affects": [
+    {
+     "sym": "TSM",
+     "dir": "up",
+     "why": "需求大過供應先可以加價，有助提升毛利"
+    },
+    {
+     "sym": "NVDA",
+     "dir": "mixed",
+     "why": "需求強勁係好事，但封裝成本會上升"
+    }
+   ],
+   "takeaway": "暫時只係報道，要等台積電正式確認先作準。",
+   "found": "2026-10-28 18:00"
+  },
+  {
+   "time": "2026-10-27 12:00",
+   "headline": "Tesla 現金流質素受質疑 疑靠延遲找數",
+   "source": "MarketBeat",
+   "url": "https://www.marketbeat.com/stocks/NASDAQ/TSLA/news/",
+   "summary": "有分析師指出，Tesla 上季現金增加部分係因為延遲付錢俾供應商，質疑自由現金流嘅質素。同時股價繼續炒 SpaceX 合併同 Barclays 升評級。",
+   "level": "low",
+   "scope": "stock",
+   "affects": [
+    {
+     "sym": "TSLA",
+     "dir": "mixed",
+     "why": "股價升主要靠合併憧憬，基本面有啲疑問，炒完可能會回吐"
+    }
+   ],
+   "takeaway": "Tesla 升咗好多，主要係炒消息，留意合併到而家都未有正式協議。",
+   "found": "2026-10-28 18:00"
+  },
+  {
+   "time": "2026-10-27 12:00",
    "headline": "聯儲局料週四凌晨按兵不動 Warsh記者會成最大變數",
    "source": "BigGo Finance／CME FedWatch",
    "url": "https://finance.biggo.com/news/d55f08a7-252f-4ddf-8a67-440756191246",
@@ -820,144 +963,6 @@
    ],
    "takeaway": "週四凌晨大市可能大上大落。唔使因為一晚嘅波動就驚。",
    "found": "2026-10-27 18:00"
-  },
-  {
-   "time": "2026-10-27 10:00",
-   "headline": "Anthropic 遞表帶動亞股急升 韓股升逾4%",
-   "source": "Reuters / Investing.com",
-   "url": "https://za.investing.com/news/economy-news/asian-stocks-surge-as-anthropic-ipo-lifts-sentiment-ahead-of-earnings-central-banks-4526727",
-   "summary": "美股週一收高之後，今朝亞洲股市跟住升。南韓 Kospi 早段升超過 4%，日經指數升約 1.9%，主要由晶片同科技股帶動。",
-   "level": "medium",
-   "scope": "market",
-   "affects": [
-    {
-     "sym": "TSM",
-     "dir": "up",
-     "why": "亞洲晶片股氣氛好轉，台積電通常會跟住受惠"
-    },
-    {
-     "sym": "NVDA",
-     "dir": "up",
-     "why": "市場重新押注 AI，晶片龍頭最受注目"
-    }
-   ],
-   "takeaway": "短線氣氛轉好，但係週四議息同業績先係真正考驗，唔好只睇一日升幅。",
-   "found": "2026-10-27 12:00"
-  },
-  {
-   "time": "2026-10-27 08:45",
-   "headline": "傳台積電先進封裝 CoWoS 再加價最多兩成",
-   "source": "Newsquawk",
-   "url": "https://newsquawk.com/headlines/market-analysis-tech-stocks-climb-in-asia-following-anthropics-ipo-filing",
-   "summary": "市場報道指台積電考慮將 CoWoS 封裝服務價錢再加最多 20%，反映 AI 晶片封裝需求仲係供不應求。",
-   "level": "medium",
-   "scope": "stock",
-   "affects": [
-    {
-     "sym": "TSM",
-     "dir": "up",
-     "why": "能夠加價，代表需求強同議價能力高，有助維持利潤率"
-    },
-    {
-     "sym": "NVDA",
-     "dir": "mixed",
-     "why": "需求強係好事，但封裝成本上升可能會蠶食少少毛利"
-    }
-   ],
-   "takeaway": "暫時只係市場傳聞，未有官方確認，要留意台積電會唔會正式回應。",
-   "found": "2026-10-27 12:00"
-  },
-  {
-   "time": "2026-10-27 06:30",
-   "headline": "美股期貨靠穩 市場估加息機會只有約9%",
-   "source": "CNBC",
-   "url": "https://www.cnbc.com/2026/10/26/stock-market-today-live-updates.html",
-   "summary": "週一升市之後，道指同標普期貨微跌，納指期貨升0.1%。利率期貨顯示今次議息加息0.25厘嘅機會約9.4%，市場普遍預期按兵不動。",
-   "level": "medium",
-   "scope": "market",
-   "affects": [
-    {
-     "sym": "VOO",
-     "dir": "mixed",
-     "why": "議息前資金觀望，大市未必有大方向"
-    },
-    {
-     "sym": "QQQ",
-     "dir": "mixed",
-     "why": "科技股對利率前景最敏感"
-    }
-   ],
-   "takeaway": "焦點係聯儲局對12月嘅講法，議息前後短線波動係正常。",
-   "found": "2026-10-27 08:00"
-  },
-  {
-   "time": "2026-10-27 06:00",
-   "headline": "今晚 Visa、波音、可口可樂公佈業績",
-   "source": "Yahoo Finance",
-   "url": "https://finance.yahoo.com/markets/stocks/articles/u-stock-futures-edge-higher-011151135.html",
-   "summary": "週二美股有 Visa、波音同可口可樂等大公司出業績，同日仲有消費信心數據。9月消費信心跌到81.9，係2014年以嚟最低。",
-   "level": "medium",
-   "scope": "market",
-   "affects": [
-    {
-     "sym": "VOO",
-     "dir": "mixed",
-     "why": "Visa 同可口可樂反映美國人消費力，都係標普重要成分股"
-    }
-   ],
-   "takeaway": "如果消費數據再轉差，大市可能受壓，可以留意 Visa 點講消費趨勢。",
-   "found": "2026-10-27 08:00"
-  },
-  {
-   "time": "2026-10-27 05:00",
-   "headline": "Meta正式啟動巨額集資 普通股加可換股優先股",
-   "source": "SEC 文件（Meta）",
-   "url": "https://www.sec.gov/Archives/edgar/data/0001326801/000119312526431040/d94886d424b5.htm",
-   "summary": "Meta 發售225億美元普通股（遠期出售），同時發行強制可換股優先股，用嚟支持 AI 基建同「個人超級智能」投資。最終定價未出。",
-   "level": "medium",
-   "scope": "stock",
-   "affects": [
-    {
-     "sym": "META",
-     "dir": "down",
-     "why": "大量新股攤薄現有股東，自由現金流已經好緊"
-    },
-    {
-     "sym": "NVDA",
-     "dir": "up",
-     "why": "集資主要用嚟買 AI 算力，對晶片需求係支持"
-    },
-    {
-     "sym": "QQQ",
-     "dir": "mixed",
-     "why": "Meta 係大成分股，股價受壓會拖累指數，但 AI 開支利好晶片股"
-    }
-   ],
-   "takeaway": "反映 AI 巨企要借錢、集資先夠錢投資，留意市場會唔會開始擔心 AI 泡沫。",
-   "found": "2026-10-27 18:00"
-  },
-  {
-   "time": "2026-10-27 04:30",
-   "headline": "AI 伺服器商 Celestica 業績好 盤後急升17%",
-   "source": "CNBC",
-   "url": "https://www.cnbc.com/2026/10/26/stocks-making-the-biggest-moves-after-hours-whr-jblu-cls.html",
-   "summary": "幫大型科技公司砌 AI 伺服器同網絡設備嘅 Celestica 公佈第三季業績，股價盤後由約246美元升到約289美元。",
-   "level": "medium",
-   "scope": "sector",
-   "affects": [
-    {
-     "sym": "NVDA",
-     "dir": "up",
-     "why": "AI 硬件供應商生意好，反映數據中心訂單仲未放慢"
-    },
-    {
-     "sym": "TSM",
-     "dir": "up",
-     "why": "AI 晶片需求旺，最終都要靠台積電代工"
-    }
-   ],
-   "takeaway": "AI 硬件需求暫時穩陣，可以用嚟對照市場對 AI 開支嘅憂慮。",
-   "found": "2026-10-27 08:00"
   }
  ]
 }

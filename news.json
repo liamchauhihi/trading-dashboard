@@ -1,5 +1,5 @@
 {
- "generated": "2026-10-28T22:30+08:00",
+ "generated": "2026-10-29T01:00+08:00",
  "holdings": [
   "TSM",
   "TSLA",
@@ -11,9 +11,78 @@
   "NVDA"
  ],
  "claude_ok": true,
- "claude_at": "2026-10-28T22:30+08:00",
- "summary": "今晚有兩件大事：聯儲局週四凌晨 2 點公佈議息，同埋 Google、微軟收市後放榜，你嘅 GOOG、QQQ、VOO 都會受影響。另外胡塞武裝聲稱襲擊沙特煉油廠，油價再升到 115 美元以上；10 年期美債息升穿 5%，壓住科技股估值。晶片股（TSM、NVDA）暫時仲有 AI 需求撐住。",
+ "claude_at": "2026-10-29T01:00+08:00",
+ "summary": "美國聯儲局香港時間凌晨 2 點公佈議息，市場估九成唔郁息，重點係主席 Warsh 會唔會暗示 12 月加息。之後 Google 同微軟收市後放榜。美股開市後輕微向上，納指幾乎無郁，大家都等緊結果。AI 基建需求仲係好強（Vertiv 上調預測、Nvidia 同 Meta 擴大合作），對你嘅晶片股同科技 ETF 算係支持，不過今晚過後波動可能會大啲。",
  "items": [
+  {
+   "time": "2026-10-29 00:30",
+   "headline": "美股半日：標普道指微升 納指上落",
+   "source": "Yahoo Finance",
+   "url": "https://finance.yahoo.com/markets/live/stock-market-today-wednesday-october-28-dow-sp-500-nasdaq-fed-meeting-decision-big-tech-earnings-130508769.html",
+   "summary": "標普 500 同道指輕微向上，納指喺平手附近上落。投資者喺議息同 Google、微軟業績之前唔敢大手落注。布蘭特油價仍然高過 110 美元。",
+   "level": "medium",
+   "scope": "market",
+   "affects": [
+    {
+     "sym": "VOO",
+     "dir": "mixed",
+     "why": "大市窄幅上落，等緊議息同業績"
+    },
+    {
+     "sym": "QQQ",
+     "dir": "mixed",
+     "why": "科技股觀望 Google、微軟今晚業績"
+    }
+   ],
+   "takeaway": "而家只係等消息，真正嘅方向要睇今晚議息同業績之後。",
+   "found": "2026-10-29 01:00"
+  },
+  {
+   "time": "2026-10-29 00:00",
+   "headline": "議息凌晨2點公佈 Warsh記者會定調12月",
+   "source": "CNN",
+   "url": "https://www.cnn.com/2026/10/28/business/live-news/federal-reserve-interest-rate-october",
+   "summary": "市場估九成以上今次唔郁息（3.75%–4.00%），但估 12 月加息嘅機會約 78%。今次冇新嘅點陣圖，焦點落喺聲明同主席 Warsh 嘅記者會；德銀估訊息會偏鷹派。",
+   "level": "high",
+   "scope": "market",
+   "affects": [
+    {
+     "sym": "QQQ",
+     "dir": "mixed",
+     "why": "如果明確暗示加息，債息會再升，高估值科技股最受壓"
+    },
+    {
+     "sym": "VOO",
+     "dir": "mixed",
+     "why": "大市方向要睇 Warsh 嘅語氣係咪比預期更鷹"
+    },
+    {
+     "sym": "QQQM",
+     "dir": "mixed",
+     "why": "同 QQQ 一樣追蹤納指 100，影響相同"
+    }
+   ],
+   "takeaway": "今晚凌晨 2 點到 3 點可能會大上大落，唔使因為一兩個鐘嘅波動而驚。",
+   "found": "2026-10-29 01:00"
+  },
+  {
+   "time": "2026-10-28 23:55",
+   "headline": "Oracle投資者日：稱簽逾300億美元AI新合約",
+   "source": "BeInCrypto",
+   "url": "https://beincrypto.com/oracle-openai-keynote-skips-financing-questions/",
+   "summary": "Oracle 聯席 CEO Magouyrk 喺 AI World 話簽咗超過 300 億美元 AI 新合約，唔使額外集資。不過有評論指管理層冇講清楚龐大訂單點樣融資。市場仲等緊 2030 年目標同自由現金流嘅時間表。",
+   "level": "high",
+   "scope": "stock",
+   "affects": [
+    {
+     "sym": "ORCL",
+     "dir": "mixed",
+     "why": "訂單強，但融資同現金流嘅疑問仲未解答"
+    }
+   ],
+   "takeaway": "留意投資者日有冇上調或者下調 2030 目標，呢樣會直接影響聽日股價。",
+   "found": "2026-10-29 01:00"
+  },
   {
    "time": "2026-10-28 22:30",
    "headline": "Tesla 開市後回落約2% 升穿400美元後有人食糊",
@@ -33,27 +102,37 @@
    "found": "2026-10-28 22:30"
   },
   {
-   "time": "2026-10-28 22:00",
-   "headline": "美股開市：標普道指微升 納指上落 等議息同業績",
-   "source": "Yahoo Finance",
-   "url": "https://finance.yahoo.com/markets/live/stock-market-today-wednesday-october-28-dow-sp-500-nasdaq-fed-meeting-decision-big-tech-earnings-130508769.html",
-   "summary": "週二晶片股帶動納指升 1.2% 之後，週三開市標普升約 0.3%，納指喺升跌之間徘徊。市場等聯儲局議息，同埋 Google、微軟收市後公佈業績。",
+   "time": "2026-10-28 21:30",
+   "headline": "Vertiv上調全年預測 股價急升約13%",
+   "source": "StockTitan",
+   "url": "https://www.stocktitan.net/articles/stock-market-today-live-october-28-2026",
+   "summary": "數據中心電力同散熱設備商 Vertiv 上調全年銷售預測，股價升約 13%；太陽能股 Enphase 就因為家用太陽能需求弱，跌約 16%。",
    "level": "medium",
-   "scope": "market",
+   "scope": "sector",
    "affects": [
     {
-     "sym": "VOO",
-     "dir": "mixed",
-     "why": "大市喺大事公佈前觀望"
+     "sym": "NVDA",
+     "dir": "up",
+     "why": "數據中心設備訂單強，反映 AI 伺服器需求仲未減"
     },
     {
-     "sym": "GOOG",
-     "dir": "mixed",
-     "why": "今晚收市後放榜，股價會大郁"
+     "sym": "TSM",
+     "dir": "up",
+     "why": "AI 晶片需求持續，間接利好代工"
+    },
+    {
+     "sym": "VRT",
+     "dir": "up",
+     "why": "上調預測"
+    },
+    {
+     "sym": "ENPH",
+     "dir": "down",
+     "why": "家用太陽能需求弱"
     }
    ],
-   "takeaway": "今晚同明朝係本週最關鍵嘅時段，留意你嘅 GOOG 同 ETF",
-   "found": "2026-10-28 22:30"
+   "takeaway": "AI 基建需求仲係強，對你嘅晶片股係好消息，但唔代表股價一定升。",
+   "found": "2026-10-29 01:00"
   },
   {
    "time": "2026-10-28 20:30",
@@ -230,6 +309,24 @@
    ],
    "takeaway": "仲係傳聞，要等台積電正式確認",
    "found": "2026-10-28 22:30"
+  },
+  {
+   "time": "2026-10-28 09:30",
+   "headline": "大行喺Oracle投資者日前提出焦點",
+   "source": "Investing.com",
+   "url": "https://www.investing.com/news/analyst-ratings/mizuho-reiterates-oracle-stock-rating-ahead-of-investor-day-93CH-4972220",
+   "summary": "Mizuho 維持正面評級，認為投資者日係 Oracle 回應資本開支、融資同自由現金流何時轉正嘅關鍵機會。RBC 就提醒唔好太早樂觀。",
+   "level": "medium",
+   "scope": "stock",
+   "affects": [
+    {
+     "sym": "ORCL",
+     "dir": "mixed",
+     "why": "大行睇法分歧，結果好壞都可能令股價大郁"
+    }
+   ],
+   "takeaway": "Oracle 今年已經跌咗三成幾，消息出完之後波動可能好大，要有心理準備。",
+   "found": "2026-10-29 01:00"
   },
   {
    "time": "2026-10-28 09:00",
@@ -739,6 +836,29 @@
   },
   {
    "time": "2026-10-27 22:00",
+   "headline": "美國10月消費者信心大升至91.7",
+   "source": "Yahoo Finance",
+   "url": "https://finance.yahoo.com/economy/policy/articles/eurozone-yields-push-higher-french-092729468.html",
+   "summary": "世界大型企業聯合會（Conference Board）10 月消費者信心指數由 84.2 升到 91.7。一年通脹預期有回落，但仍然高企喺 5.8%。",
+   "level": "medium",
+   "scope": "market",
+   "affects": [
+    {
+     "sym": "VOO",
+     "dir": "mixed",
+     "why": "消費信心好利好經濟，但通脹預期高會支持加息"
+    },
+    {
+     "sym": "TSLA",
+     "dir": "mixed",
+     "why": "消費信心回升對買車需求有幫助，但息口高抵銷咗部分"
+    }
+   ],
+   "takeaway": "經濟唔差係好事，但亦令聯儲局更有理由維持高息甚至加息。",
+   "found": "2026-10-29 01:00"
+  },
+  {
+   "time": "2026-10-27 22:00",
    "headline": "Anthropic招股書曝光算力開支 Google TPU大單",
    "source": "GeekWire",
    "url": "https://www.geekwire.com/2026/whos-getting-anthropics-compute-spending-ipo-filing-shows-where-the-tech-giants-really-stand/",
@@ -808,151 +928,26 @@
   },
   {
    "time": "2026-10-27 21:00",
-   "headline": "巴克萊升 Tesla 至「增持」 目標價升至450美元",
-   "source": "FX Leaders",
-   "url": "https://www.fxleaders.com/news/2026/10/27/tsla-stock-jumps-5-to-391-62-after-barclays-upgrade-on-spacex-merger-hopes/",
-   "summary": "巴克萊將 Tesla 評級升至「增持」，目標價由 370 升至 450 美元，主要理由係可能同 SpaceX 合併，同埋 Robotaxi 業務增長。",
-   "level": "medium",
-   "scope": "stock",
-   "affects": [
-    {
-     "sym": "TSLA",
-     "dir": "up",
-     "why": "大行升評級，加強市場對合併嘅憧憬"
-    }
-   ],
-   "takeaway": "評級升咗唔代表一定會升，合併仲要股東投票同監管審批",
-   "found": "2026-10-28 22:30"
-  },
-  {
-   "time": "2026-10-27 21:00",
-   "headline": "聯儲局議息今晚有結果 市場估九成機會唔郁息",
-   "source": "Yahoo Finance",
-   "url": "https://finance.yahoo.com/markets/stocks/articles/big-tech-earnings-fed-decision-170002299.html",
-   "summary": "兩日議息會議已經開始，香港時間週四凌晨2點公佈結果，2:30 Warsh 開記者會。CME FedWatch 估約九成機會維持利率喺3.75%至4%。",
-   "level": "high",
-   "scope": "market",
-   "affects": [
-    {
-     "sym": "VOO",
-     "dir": "mixed",
-     "why": "唔郁息係預期之內，真正嘅變數係 Warsh 對加息嘅取態"
-    },
-    {
-     "sym": "QQQ",
-     "dir": "mixed",
-     "why": "如果講法偏鷹（傾向加息），債息上升會對科技股估值造成壓力"
-    },
-    {
-     "sym": "QQQM",
-     "dir": "mixed",
-     "why": "同 QQQ 一樣追蹤納指100"
-    }
-   ],
-   "takeaway": "記者會講法可能比議息結果本身更影響市場，嗰段時間波幅會大啲",
-   "found": "2026-10-28 08:00"
-  },
-  {
-   "time": "2026-10-27 21:00",
-   "headline": "Nvidia 同 Oracle 擴大合作 Vera Rubin 系統去到幾 GW 規模",
-   "source": "NVIDIA Newsroom",
-   "url": "https://nvidianews.nvidia.com/news/latest",
-   "summary": "Nvidia 同 Oracle 宣佈，Oracle 雲端嘅超級電腦會用 Nvidia 新一代 Vera Rubin 系統，規模擴大到幾 GW（十億瓦），仲會引入 Vera CPU。同日 Nvidia 亦宣佈同 Meta 深化合作。",
+   "headline": "Nvidia同Meta擴大AI模型合作",
+   "source": "GlobeNewswire",
+   "url": "https://www.globenewswire.com/news-release/2026/10/27/3388683/0/en/nvidia-and-meta-to-expand-collaboration-on-muse-and-muse-family-of-models-amid-robust-growth.html",
+   "summary": "Nvidia 宣佈同 Meta 擴大合作，一齊開發 Meta 嘅 Muse 系列 AI 模型，加快推理同訓練。黃仁勳話 AI 代理會改變人用電腦嘅方式。",
    "level": "medium",
    "scope": "stock",
    "affects": [
     {
      "sym": "NVDA",
      "dir": "up",
-     "why": "大客戶再加單，新一代晶片需求有保證"
+     "why": "大客戶 Meta 加深合作，需求有支持"
     },
     {
-     "sym": "ORCL",
+     "sym": "META",
      "dir": "up",
-     "why": "拎到更多頂級 AI 晶片，可以接多啲大客"
-    },
-    {
-     "sym": "TSM",
-     "dir": "up",
-     "why": "Nvidia 晶片由台積電代工，訂單多咗都受惠"
+     "why": "加快 AI 模型發展"
     }
    ],
-   "takeaway": "AI 投資潮仲未停，但要留意 Oracle 借大錢買晶片嘅風險。",
-   "found": "2026-10-28 01:00"
-  },
-  {
-   "time": "2026-10-27 20:52",
-   "headline": "Nvidia 入股 Meta 30億美元 擴大 Muse 合作",
-   "source": "Yahoo Finance / Reuters",
-   "url": "https://finance.yahoo.com/markets/article/nvidia-to-invest-3-billion-in-meta-expand-partnership-on-muse-125249944.html",
-   "summary": "Meta 宣佈大規模發新股集資建 AI 基建，Nvidia 認購30億美元，AMD 認購10億美元。Meta 會加大採用 Nvidia 嘅 Vera Rubin 平台同 Vera CPU。",
-   "level": "medium",
-   "scope": "stock",
-   "affects": [
-    {
-     "sym": "NVDA",
-     "dir": "up",
-     "why": "鎖定 Meta 大量晶片訂單，但用自己資金入股客戶會惹「循環投資」質疑"
-    },
-    {
-     "sym": "QQQ",
-     "dir": "mixed",
-     "why": "Meta 係重磅成分股，發新股會攤薄股東權益，但 AI 投資繼續擴大"
-    },
-    {
-     "sym": "QQQM",
-     "dir": "mixed",
-     "why": "同 QQQ 一樣，都持有 Meta 同 Nvidia"
-    }
-   ],
-   "takeaway": "AI 開支仲喺度加，但要留意科技公司越嚟越靠集資撐住開支。",
-   "found": "2026-10-28 18:00"
-  },
-  {
-   "time": "2026-10-27 20:00",
-   "headline": "Nvidia 注資30億美元參與 Meta 集資",
-   "source": "Coinpedia",
-   "url": "https://coinpedia.org/crypto-live-news/nvidia-stock-premarket-nvda-edges-up-to-217-after-3-billion-meta-investment/",
-   "summary": "Meta 為 AI 基建大規模發新股集資，Nvidia 會投資 30 億美元。另外 SpaceX 確認借咗 400 億美元買 Nvidia 晶片，摩根士丹利亦將 Nvidia 列為晶片股首選。",
-   "level": "medium",
-   "scope": "stock",
-   "affects": [
-    {
-     "sym": "NVDA",
-     "dir": "up",
-     "why": "大客戶繼續大手買 AI 晶片，需求有支持"
-    },
-    {
-     "sym": "QQQ",
-     "dir": "up",
-     "why": "Nvidia 喺納指 100 佔比好大"
-    }
-   ],
-   "takeaway": "有分析員擔心 Nvidia 投資客戶、客戶再買佢晶片係「循環融資」，要留意",
-   "found": "2026-10-28 22:30"
-  },
-  {
-   "time": "2026-10-27 20:00",
-   "headline": "Google、微軟週三同晚出業績 撞正議息結果",
-   "source": "CoinCentral",
-   "url": "https://coincentral.com/todays-market-movers-alphabet-and-microsoft-earnings-loom-as-fed-meeting-begins",
-   "summary": "今週係業績高峰，163間標普公司公佈業績。微軟同 Alphabet 週三收市後公佈，聯儲局同日宣佈議息結果，兩件事撞埋一齊。",
-   "level": "medium",
-   "scope": "market",
-   "affects": [
-    {
-     "sym": "QQQ",
-     "dir": "mixed",
-     "why": "兩隻巨頭同一晚出業績，加上議息，指數波動會放大"
-    },
-    {
-     "sym": "VOO",
-     "dir": "mixed",
-     "why": "兩隻股佔標普權重好高"
-    }
-   ],
-   "takeaway": "週四香港時間早上係今週最大風險時段，記得留意。",
-   "found": "2026-10-27 22:30"
+   "takeaway": "屬於正面消息，但細節金額未清楚，唔好單憑呢條新聞追入。",
+   "found": "2026-10-29 01:00"
   }
  ]
 }

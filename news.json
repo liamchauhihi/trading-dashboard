@@ -1,5 +1,5 @@
 {
- "generated": "2026-10-28T04:45+08:00",
+ "generated": "2026-10-28T08:00+08:00",
  "holdings": [
   "TSM",
   "TSLA",
@@ -11,9 +11,32 @@
   "NVDA"
  ],
  "claude_ok": true,
- "claude_at": "2026-10-28T04:45+08:00",
- "summary": "美股周二由科技股帶動再升，納指升約1.2%。10年期債息貼近5%，市場開始估12月有機會加息，所以今晚聯儲局主席Warsh點講好關鍵。之後Google、微軟出業績會直接影響你嘅QQQ、QQQM同GOOG。Tesla連升兩日，主要靠合併憧憬，波動會好大。",
+ "claude_at": "2026-10-28T08:00+08:00",
+ "summary": "今晚凌晨2點聯儲局公佈議息，Warsh 記者會之後 Google 同微軟就出業績，你嘅科技股同指數 ETF 今晚可能會大上大落。油價仍然喺每桶 110 美元以上，通脹壓力未消。Google 已經跌穿200天線。晶片股最近升得急，但 NXP 盤後跌近一成，你要留意晶片股會唔會回吐。",
  "items": [
+  {
+   "time": "2026-10-28 04:30",
+   "headline": "NXP 盤後跌約9% 希捷業績好都跌6%",
+   "source": "CNBC",
+   "url": "https://www.cnbc.com/2026/10/27/stocks-making-the-biggest-moves-after-hours-v-hood-nxp-stx-more-.html",
+   "summary": "車用晶片商 NXP 收入展望只係大致符合預期，盤後跌約9%。硬碟商希捷業績同指引都勝預期，但股價仍然跌約6%，反映市場對晶片股嘅期望好高。",
+   "level": "medium",
+   "scope": "sector",
+   "affects": [
+    {
+     "sym": "TSM",
+     "dir": "down",
+     "why": "台積電啱啱升咗超過3%，晶片股氣氛轉差可能令股價回吐"
+    },
+    {
+     "sym": "NVDA",
+     "dir": "mixed",
+     "why": "NXP 主要做車用晶片，同 AI 關係唔大，但會影響整體晶片股情緒"
+    }
+   ],
+   "takeaway": "股價升得急嘅時候，業績好都可能跌，唔使見到一日跌就驚",
+   "found": "2026-10-28 08:00"
+  },
   {
    "time": "2026-10-28 04:20",
    "headline": "Visa業績勝預期 但盤後跌約1.7%",
@@ -64,6 +87,47 @@
    ],
    "takeaway": "連升兩日之後，今晚議息同業績可能令市況大上大落，唔使因為一日升跌就緊張。",
    "found": "2026-10-28 04:45"
+  },
+  {
+   "time": "2026-10-28 02:30",
+   "headline": "伊朗談判有進展 油價跌近2美元 但仍然高企",
+   "source": "Reuters / CNBC",
+   "url": "https://www.cnbc.com/2026/10/27/oil-today-iran-us-crude-wti-brent-trump.html",
+   "summary": "伊朗高層討論結束戰事嘅條件，布蘭特期油收報約113.88美元，跌約1.7%。不過價格仍然貼近半年高位，UBS 估年底前會維持喺110美元附近。",
+   "level": "medium",
+   "scope": "market",
+   "affects": [
+    {
+     "sym": "VOO",
+     "dir": "mixed",
+     "why": "油價回落有助紓緩通脹，但仍然高企，加息壓力未解除"
+    },
+    {
+     "sym": "QQQ",
+     "dir": "mixed",
+     "why": "高油價推高債息，對高估值科技股唔利"
+    }
+   ],
+   "takeaway": "要留意荷姆茲海峽局勢，油價再急升會拖累大市",
+   "found": "2026-10-28 08:00"
+  },
+  {
+   "time": "2026-10-28 01:00",
+   "headline": "Tesla 再升約4% 創7月以嚟高位 炒同 SpaceX 合併",
+   "source": "FX Leaders / Schaeffer's",
+   "url": "https://www.fxleaders.com/news/2026/10/27/tsla-stock-jumps-5-to-391-62-after-barclays-upgrade-on-spacex-merger-hopes/",
+   "summary": "Barclays 升評級，提到 Tesla 有機會同 SpaceX 合併，Tesla 升5.2%至391.62美元。之後一個交易日中段再升約4%，最高去到408美元，係7月初以嚟最高。",
+   "level": "medium",
+   "scope": "stock",
+   "affects": [
+    {
+     "sym": "TSLA",
+     "dir": "up",
+     "why": "市場憧憬同 SpaceX 合併，加上評級上調，帶動買盤"
+    }
+   ],
+   "takeaway": "合併只係市場估計，未有正式消息。股價離52週高位仍然低約兩成",
+   "found": "2026-10-28 08:00"
   },
   {
    "time": "2026-10-28 01:00",
@@ -187,6 +251,29 @@
   },
   {
    "time": "2026-10-27 23:00",
+   "headline": "Google 跌穿200天線 業績前期權估波幅約6%",
+   "source": "Barchart / Yahoo Finance",
+   "url": "https://finance.yahoo.com/markets/stocks/articles/alphabet-stock-breaks-down-ahead-150000350.html",
+   "summary": "Alphabet 連跌兩星期，跌穿330美元支持，低過200天線嘅幅度係17個月以嚟最大。期權市場估佢業績後會升或跌約6%。另外有集體訴訟未有結果，Burry 亦話可能減持。",
+   "level": "high",
+   "scope": "stock",
+   "affects": [
+    {
+     "sym": "GOOG",
+     "dir": "down",
+     "why": "技術走勢轉弱，加上市場擔心 AI 開支越嚟越大，業績前沽壓較重"
+    },
+    {
+     "sym": "QQQ",
+     "dir": "mixed",
+     "why": "Google 係納指大成分股，業績好壞會直接影響指數"
+    }
+   ],
+   "takeaway": "如果你用200天線做出場規則，Google 已經觸及警號。今晚出業績之後要再睇一次",
+   "found": "2026-10-28 08:00"
+  },
+  {
+   "time": "2026-10-27 23:00",
    "headline": "Google 業績前 摩根大通升目標價至425美元",
    "source": "Benzinga",
    "url": "https://www.benzinga.com/markets/tech/26/10/62561452/google-cloud-revenue-surges-alphabet-focuses-on-100-billion-tpu-opportunity-ahead-of-q3-earnings",
@@ -287,6 +374,34 @@
   },
   {
    "time": "2026-10-27 21:00",
+   "headline": "聯儲局議息今晚有結果 市場估九成機會唔郁息",
+   "source": "Yahoo Finance",
+   "url": "https://finance.yahoo.com/markets/stocks/articles/big-tech-earnings-fed-decision-170002299.html",
+   "summary": "兩日議息會議已經開始，香港時間週四凌晨2點公佈結果，2:30 Warsh 開記者會。CME FedWatch 估約九成機會維持利率喺3.75%至4%。",
+   "level": "high",
+   "scope": "market",
+   "affects": [
+    {
+     "sym": "VOO",
+     "dir": "mixed",
+     "why": "唔郁息係預期之內，真正嘅變數係 Warsh 對加息嘅取態"
+    },
+    {
+     "sym": "QQQ",
+     "dir": "mixed",
+     "why": "如果講法偏鷹（傾向加息），債息上升會對科技股估值造成壓力"
+    },
+    {
+     "sym": "QQQM",
+     "dir": "mixed",
+     "why": "同 QQQ 一樣追蹤納指100"
+    }
+   ],
+   "takeaway": "記者會講法可能比議息結果本身更影響市場，嗰段時間波幅會大啲",
+   "found": "2026-10-28 08:00"
+  },
+  {
+   "time": "2026-10-27 21:00",
    "headline": "Nvidia 同 Oracle 擴大合作 Vera Rubin 系統去到幾 GW 規模",
    "source": "NVIDIA Newsroom",
    "url": "https://nvidianews.nvidia.com/news/latest",
@@ -358,6 +473,39 @@
    ],
    "takeaway": "週四香港時間早上係今週最大風險時段，記得留意。",
    "found": "2026-10-27 22:30"
+  },
+  {
+   "time": "2026-10-27 19:40",
+   "headline": "Google、微軟今晚業績 市場預期一覽",
+   "source": "Yahoo Finance",
+   "url": "https://finance.yahoo.com/markets/stocks/articles/microsoft-alphanet-amazon-earnings-meet-113701296.html",
+   "summary": "市場預期 Alphabet 收入約1,280億美元，每股盈利約2.94至3.03美元；微軟收入約906億，Azure 增長約45%。亞馬遜週四出業績。",
+   "level": "high",
+   "scope": "sector",
+   "affects": [
+    {
+     "sym": "GOOG",
+     "dir": "mixed",
+     "why": "焦點係雲端利潤、Gemini 用量同資本開支指引"
+    },
+    {
+     "sym": "NVDA",
+     "dir": "mixed",
+     "why": "大型雲端公司有冇加開支，會直接影響 AI 晶片需求"
+    },
+    {
+     "sym": "ORCL",
+     "dir": "mixed",
+     "why": "Azure 增長快慢會影響市場點睇同類雲端股"
+    },
+    {
+     "sym": "TSM",
+     "dir": "mixed",
+     "why": "台股分析員話投資者等緊雲端業績，用嚟判斷 AI 需求"
+    }
+   ],
+   "takeaway": "今晚香港時間凌晨4點後先知結果，開市前價格未必反映到",
+   "found": "2026-10-28 08:00"
   },
   {
    "time": "2026-10-27 19:30",
@@ -785,149 +933,6 @@
    ],
    "takeaway": "股價一年跌咗一半，反彈未代表見底；週三投資者日講現金流先係關鍵。",
    "found": "2026-10-27 22:30"
-  },
-  {
-   "time": "2026-10-27 01:00",
-   "headline": "Google 業績前受壓 大行削目標價兼面對集體訴訟",
-   "source": "Investing.com",
-   "url": "https://www.investing.com/news/stock-market-news/why-is-alphabet-stock-sliding-today-93CH-4963511",
-   "summary": "大市平穩時 Google 都跌，原因包括 KeyBanc 削目標價、一宗證券訴訟、英國雲端服務故障，同埋 AI 競爭加劇。",
-   "level": "medium",
-   "scope": "stock",
-   "affects": [
-    {
-     "sym": "GOOG",
-     "dir": "down",
-     "why": "業績前多個負面消息疊埋一齊，打擊投資者信心"
-    }
-   ],
-   "takeaway": "週三公佈嘅業績先係關鍵，留意雲端增長同資本開支數字。",
-   "found": "2026-10-27 08:00"
-  },
-  {
-   "time": "2026-10-27 01:00",
-   "headline": "聯儲局料週四凌晨按兵不動 焦點係 12 月會唔會加息",
-   "source": "Investing.com",
-   "url": "https://www.investing.com/news/stock-market-news/fed-hold-expected-this-week-as-markets-watch-for-december-hike-signals-93CH-4973447",
-   "summary": "市場預期利率維持 4.0% 不變。重點係主席 Warsh 喺記者會有冇暗示 12 月加息。",
-   "level": "high",
-   "scope": "market",
-   "affects": [
-    {
-     "sym": "QQQ",
-     "dir": "mixed",
-     "why": "如果暗示加息，高估值科技股通常最受壓"
-    },
-    {
-     "sym": "VOO",
-     "dir": "mixed",
-     "why": "利率前景會影響成個大市嘅估值"
-    },
-    {
-     "sym": "QQQM",
-     "dir": "mixed",
-     "why": "同 QQQ 一樣追蹤納指 100，受影響方向一樣"
-    }
-   ],
-   "takeaway": "唔加息基本上已經反映咗喺股價，要留意記者會嘅語氣",
-   "found": "2026-10-27 04:45"
-  },
-  {
-   "time": "2026-10-27 00:57",
-   "headline": "美股週一造好 納指領漲約1%",
-   "source": "Yahoo Finance",
-   "url": "https://finance.yahoo.com/markets/live/stock-market-today-monday-october-26-dow-sp-500-nasdaq-101153035.html",
-   "summary": "美股收市前，標普500升約0.7%，納指升約0.8–1%，道指升約0.2%，收復上週部分跌幅。Anthropic 交上市文件，帶動 AI 同晶片股造好。",
-   "level": "high",
-   "scope": "market",
-   "affects": [
-    {
-     "sym": "QQQ",
-     "dir": "up",
-     "why": "科技股領漲，QQQ升約1.2%"
-    },
-    {
-     "sym": "QQQM",
-     "dir": "up",
-     "why": "同QQQ追蹤同一個指數，走勢一樣"
-    },
-    {
-     "sym": "VOO",
-     "dir": "up",
-     "why": "標普500升約0.7%"
-    }
-   ],
-   "takeaway": "今日只係反彈。標普同納指之前已經連跌兩個禮拜，未算轉勢，要等今個禮拜議息同業績先知方向。",
-   "found": "2026-10-27 01:00"
-  },
-  {
-   "time": "2026-10-27 00:30",
-   "headline": "博通安排630億美元融資 供晶片俾Anthropic",
-   "source": "Bloomberg",
-   "url": "https://www.bloomberg.com/news/articles/2026-10-26/broadcom-arranges-63-billion-deal-to-finance-anthropic-s-chips",
-   "summary": "美銀、花旗、摩根士丹利同黑石成立特殊公司，買博通晶片再租俾Anthropic，2027年開始付貨。博通替大約八成金額做擔保，股價升約4%。",
-   "level": "medium",
-   "scope": "sector",
-   "affects": [
-    {
-     "sym": "AVGO",
-     "dir": "up",
-     "why": "鎖定一大筆AI晶片訂單"
-    },
-    {
-     "sym": "NVDA",
-     "dir": "mixed",
-     "why": "AI需求旺係好事，但博通自家晶片係競爭對手"
-    },
-    {
-     "sym": "QQQ",
-     "dir": "up",
-     "why": "AI投資熱潮持續，撐起大型科技股"
-    }
-   ],
-   "takeaway": "AI需求仲好強勁，但晶片商出錢幫客戶買自己貨（循環融資）嘅風險值得留意。",
-   "found": "2026-10-28 04:45"
-  },
-  {
-   "time": "2026-10-27 00:00",
-   "headline": "Anthropic 招股書披露 Google 有權加碼100億美元",
-   "source": "CNBC",
-   "url": "https://www.cnbc.com/2026/10/26/anthropic-ipo-live-updates-ai-s-1-filing.html",
-   "summary": "招股書顯示，Google 有權喺上市同時用私人配售買入最多100億美元 Anthropic 股份。Amazon 持股上限係12%。分析估計 Alphabet 持股約一至一成半，上市後呢筆投資價值可能好高。",
-   "level": "high",
-   "scope": "stock",
-   "affects": [
-    {
-     "sym": "GOOG",
-     "dir": "mixed",
-     "why": "持有嘅 Anthropic 股份可能好值錢，但最終估值要上市定價先知"
-    },
-    {
-     "sym": "AMZN",
-     "dir": "mixed",
-     "why": "持股最多12%，比部分分析師估計嘅15–20%低"
-    }
-   ],
-   "takeaway": "Anthropic 上市對 Google 係潛在好處，但估值數字仲未落實，唔好單靠呢單新聞判斷 Google 股價。",
-   "found": "2026-10-27 01:00"
-  },
-  {
-   "time": "2026-10-26 23:30",
-   "headline": "Google 業績前跌近三個月低位 市場憂開支",
-   "source": "FX Leaders",
-   "url": "https://www.fxleaders.com/news/2026/10/26/goog-stock-heads-to-300-as-infrastructure-costs-rise-ahead-of-google-earnings/",
-   "summary": "Alphabet 連跌兩星期，跌穿 330 美元支持位。投資者擔心今年接近 2,000 億美元嘅資本開支幾時先有回報。",
-   "level": "high",
-   "scope": "stock",
-   "affects": [
-    {
-     "sym": "GOOG",
-     "dir": "down",
-     "why": "業績前市場擔心開支太大，令股價受壓"
-    }
-   ],
-   "takeaway": "週四清晨出業績，股價可能大上大落，留意雲端增長同開支指引",
-   "found": "2026-10-27 04:45"
   }
  ]
 }

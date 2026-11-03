@@ -1,5 +1,5 @@
 {
- "generated": "2026-11-03T04:45+08:00",
+ "generated": "2026-11-03T08:00+08:00",
  "holdings": [
   "TSM",
   "TSLA",
@@ -11,9 +11,93 @@
   "NVDA"
  ],
  "claude_ok": true,
- "claude_at": "2026-11-03T04:45+08:00",
- "summary": "美股未收市，資金繼續由科技股轉去傳統股：納指轉跌，道指仍升。Oracle 集資後一度跌 9%，再令市場擔心 AI 負債；QQQ、台積電同受壓。今晚 Apple、Palantir 放榜，加上美國中期選舉同週五就業數據，短期波動可能較大。",
+ "claude_at": "2026-11-03T08:00+08:00",
+ "summary": "科技股繼續受壓：Oracle 集資後急跌，AI 硬件股尾市再沽，Apple 毛利指引又令盤後轉弱。今晚有中期選舉同 AMD 業績，週五有非農。市場仍料 12 月可能加息，你嘅 TSM、NVDA、ORCL、QQQ 波動可能仍然較大。",
  "items": [
+  {
+   "time": "2026-11-03 05:30",
+   "headline": "Apple 業績勝預期 但毛利指引差 盤後跌約3%",
+   "source": "Investing.com",
+   "url": "https://www.investing.com/news/transcripts/earnings-call-transcript-apple-tops-q4-2026-estimates-but-shares-fall-after-hours-93CH-4993172",
+   "summary": "季度收入 1,145 億美元，升 12%。不過預期下季毛利率只有 45–46%，主因記憶體成本上升。",
+   "level": "high",
+   "scope": "stock",
+   "affects": [
+    {
+     "sym": "QQQ",
+     "dir": "down",
+     "why": "Apple 係主要成分股之一，盤後轉弱可能拖低今晚開市表現。"
+    },
+    {
+     "sym": "QQQM",
+     "dir": "down",
+     "why": "同 QQQ 追蹤同一指數，受 Apple 影響一樣。"
+    },
+    {
+     "sym": "VOO",
+     "dir": "down",
+     "why": "Apple 亦係標普 500 大比重股，但 VOO 較分散，影響較細。"
+    }
+   ],
+   "takeaway": "你冇直接持有 Apple，但佢會透過 ETF 影響你，可留意今晚開市反應。",
+   "found": "2026-11-03 08:00"
+  },
+  {
+   "time": "2026-11-03 05:05",
+   "headline": "Palantir 收入升96%兼上調指引 盤後仍偏軟",
+   "source": "Business Wire",
+   "url": "https://www.businesswire.com/news/home/20261101396214/en/Palantir-Reports-Q3-2026-U.S.-Comm-Revenue-Growth-of-148-YY-and-Revenue-Growth-of-96-YY-Raises-FY-2026-Revenue-Guidance-to-91-YY-Growth-and-U.S.-Comm-Revenue-Guidance-to-143-YY-Crushing-Consensus-Expectations",
+   "summary": "第三季收入 23.1 億美元，全年指引上調至約 85.3 億美元。盤後股價上落，美東傍晚 6 時約跌 3.6%。",
+   "level": "medium",
+   "scope": "stock",
+   "affects": [
+    {
+     "sym": "PLTR",
+     "dir": "mixed",
+     "why": "業績強勁，但高估值下市場反應唔算熱烈。"
+    },
+    {
+     "sym": "QQQ",
+     "dir": "mixed",
+     "why": "反映企業 AI 需求仍強，但好消息未必帶動股價。"
+    }
+   ],
+   "takeaway": "AI 軟件需求仍然強，但而家市場對好業績嘅要求好高。",
+   "found": "2026-11-03 08:00"
+  },
+  {
+   "time": "2026-11-03 05:00",
+   "headline": "AI 硬件股尾市急跌 AMD、Dell 跌逾7%",
+   "source": "Capp Notes",
+   "url": "https://cappnotes.substack.com/p/closing-look-monday-november-2-2026",
+   "summary": "AI 開支憂慮再起，AMD、Dell 跌逾 7%，Micron 跌近 6%。Nvidia 早段曾升約 2.6%，收市倒跌 1.26%。",
+   "level": "high",
+   "scope": "sector",
+   "affects": [
+    {
+     "sym": "NVDA",
+     "dir": "down",
+     "why": "早段反彈守唔住，反映市場對 AI 開支仍然審慎。"
+    },
+    {
+     "sym": "TSM",
+     "dir": "down",
+     "why": "台積電代工 AI 晶片，同板塊氣氛一齊受壓。"
+    },
+    {
+     "sym": "QQQ",
+     "dir": "down",
+     "why": "科技比重高，納指 100 收跌 1.39%。"
+    },
+    {
+     "sym": "QQQM",
+     "dir": "down",
+     "why": "同 QQQ 追蹤同一指數，同樣受科技股拖累。"
+    }
+   ],
+   "takeaway": "呢次主要係板塊情緒轉弱，留意今晚 AMD 業績會唔會改變氣氛。",
+   "found": "2026-11-03 08:00"
+  },
   {
    "time": "2026-11-03 04:22",
    "headline": "Oracle 一度跌 9% 見七月以來低位",
@@ -56,32 +140,22 @@
    "found": "2026-11-03 04:45"
   },
   {
-   "time": "2026-11-03 04:01",
-   "headline": "納指標普倒跌 資金續流出科技股",
+   "time": "2026-11-03 03:30",
+   "headline": "Oracle 收跌8.76% Stephens 逆市升評級",
    "source": "CNBC",
    "url": "https://www.cnbc.com/2026/11/01/stock-market-today-live-updates.html",
-   "summary": "美東下午 3 時，納指跌 0.6%、標普跌 0.2%，早段曾分別升 1.4% 及 1.1%；道指升 0.6%，家得寶等傳統股領漲。",
+   "summary": "Oracle 擬發 100 億美元新股及 100 億美元債券。Stephens 同日升評級至增持，目標價 213 美元。",
    "level": "high",
-   "scope": "market",
+   "scope": "stock",
    "affects": [
     {
-     "sym": "QQQ",
-     "dir": "down",
-     "why": "科技比重高，資金轉走時跌得比大市多"
-    },
-    {
-     "sym": "QQQM",
-     "dir": "down",
-     "why": "同樣追蹤納指 100，走勢同 QQQ 相近"
-    },
-    {
-     "sym": "VOO",
+     "sym": "ORCL",
      "dir": "mixed",
-     "why": "傳統股上升，抵銷部分科技股跌幅"
+     "why": "新股攤薄兼債務憂慮壓股價，但有分析員認為市場低估佢嘅執行力。"
     }
    ],
-   "takeaway": "以上係未收市數字；你持有嘅納指 ETF 重疊高，波動會一齊放大。",
-   "found": "2026-11-03 04:45"
+   "takeaway": "跌超過 3% 主因係集資同債務憂慮，可留意新股定價同信貸市場反應。",
+   "found": "2026-11-03 08:00"
   },
   {
    "time": "2026-11-03 02:00",
@@ -291,6 +365,24 @@
    "found": "2026-11-03 01:00"
   },
   {
+   "time": "2026-11-02 23:00",
+   "headline": "報道指 Tesla Robotaxi 擴展至 Fort Worth",
+   "source": "Azat TV",
+   "url": "https://azat.tv/en/tesla-robotaxi-expands-fort-worth-stock-rally/",
+   "summary": "報道指 Tesla 週一將 Robotaxi 服務擴展至德州 Fort Worth，另有報道指侯斯頓服務範圍亦擴大。",
+   "level": "low",
+   "scope": "stock",
+   "affects": [
+    {
+     "sym": "TSLA",
+     "dir": "up",
+     "why": "自動駕駛進度係 Tesla 估值嘅重要故事，消息有助氣氛。"
+    }
+   ],
+   "takeaway": "可留意服務規模同實際收入，唔好只睇擴張城市數目。",
+   "found": "2026-11-03 08:00"
+  },
+  {
    "time": "2026-11-02 22:48",
    "headline": "傳台積電或主導 Tesla Terafab 晶片廠",
    "source": "Ad-hoc-news（引述 Benzinga）",
@@ -330,6 +422,52 @@
    ],
    "takeaway": "呢次升幅細過上週五跌幅，要睇大型科技公司開支態度有冇變。",
    "found": "2026-11-03 01:00"
+  },
+  {
+   "time": "2026-11-02 22:00",
+   "headline": "Melius 削 Nvidia 目標價 AI 開支憂慮未散",
+   "source": "IBTimes",
+   "url": "https://www.ibtimes.com.au/nvidia-shares-rebound-ai-spending-concerns-1877770",
+   "summary": "Nvidia 週一早段曾反彈，但 Melius Research 在業績前下調目標價，市場繼續關注 AI 開支。",
+   "level": "medium",
+   "scope": "stock",
+   "affects": [
+    {
+     "sym": "NVDA",
+     "dir": "down",
+     "why": "目標價下調加上開支憂慮，削弱咗早段反彈。"
+    }
+   ],
+   "takeaway": "一間大行嘅目標價唔代表結果，業績同指引先係下一個重點。",
+   "found": "2026-11-03 08:00"
+  },
+  {
+   "time": "2026-11-02 21:00",
+   "headline": "Marvell 全股票收購 Lumentum 兩股俱挫",
+   "source": "The Motley Fool",
+   "url": "https://fool.com/investing/2026/11/02/marvell-technology-is-acquiring-lumentum-why-does-the-market-hate-the-move",
+   "summary": "交易企業價值約 1,150 億美元。Marvell 收跌 12.72%，Lumentum 跌 18.59%，Ciena 亦跌逾 11%。",
+   "level": "medium",
+   "scope": "sector",
+   "affects": [
+    {
+     "sym": "MRVL",
+     "dir": "down",
+     "why": "全股票交易有攤薄憂慮，市場唔太受落。"
+    },
+    {
+     "sym": "LITE",
+     "dir": "down",
+     "why": "收購價跟 Marvell 股價變動，股價隨之急跌。"
+    },
+    {
+     "sym": "QQQ",
+     "dir": "down",
+     "why": "AI 網絡相關股同跌，加重科技板塊壓力。"
+    }
+   ],
+   "takeaway": "你冇直接持有呢兩隻股，但佢反映市場對 AI 大額交易更審慎。",
+   "found": "2026-11-03 08:00"
   },
   {
    "time": "2026-11-02 18:00",
@@ -409,6 +547,24 @@
    ],
    "takeaway": "呢個只係一間大行嘅睇法，而且今日大市未有因此持續反彈。",
    "found": "2026-11-03 04:45"
+  },
+  {
+   "time": "2026-11-02 13:30",
+   "headline": "台積電台股週一跌1.69% 外資沽壓拖累大市",
+   "source": "Kotak Neo",
+   "url": "https://www.kotakneo.com/news/global-markets/taiwan-weighted-index-falls-as-tsmc-shares-and-foreign-investor-selling-weigh-on-market/",
+   "summary": "台灣加權指數跌 0.65%，台積電跌 1.69%，延續上週五美股半導體沽壓同外資沽貨。",
+   "level": "low",
+   "scope": "stock",
+   "affects": [
+    {
+     "sym": "TSM",
+     "dir": "down",
+     "why": "台股同 ADR 一齊受半導體情緒影響，反映外資態度審慎。"
+    }
+   ],
+   "takeaway": "台股走勢可作參考，今晚亦要留意 AMD 業績對晶片股情緒嘅影響。",
+   "found": "2026-11-03 08:00"
   },
   {
    "time": "2026-11-02 13:30",

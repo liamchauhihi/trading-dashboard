@@ -1,5 +1,5 @@
 {
- "generated": "2026-11-03T08:00+08:00",
+ "generated": "2026-11-03T12:00+08:00",
  "holdings": [
   "TSM",
   "TSLA",
@@ -11,9 +11,83 @@
   "NVDA"
  ],
  "claude_ok": true,
- "claude_at": "2026-11-03T08:00+08:00",
- "summary": "科技股繼續受壓：Oracle 集資後急跌，AI 硬件股尾市再沽，Apple 毛利指引又令盤後轉弱。今晚有中期選舉同 AMD 業績，週五有非農。市場仍料 12 月可能加息，你嘅 TSM、NVDA、ORCL、QQQ 波動可能仍然較大。",
+ "claude_at": "2026-11-03T12:00+08:00",
+ "summary": "今日（香港時間今晚）係美國中期選舉投票日，市場同時等緊今晚 AMD 放榜。AI 晶片股嘅拋售由華爾街蔓延到亞洲，台股同韓股今朝都跌，對你嘅 TSM、NVDA、QQQ／QQQM 有壓力。Oracle 集資帶起嘅「AI 借錢擴張」憂慮仲未散。你嘅持倉偏重科技股，短期波動可能會大啲。",
  "items": [
+  {
+   "time": "2026-11-03 11:00",
+   "headline": "AI 拋售蔓延亞洲 台股早段跌 1.8%",
+   "source": "BigGo Finance",
+   "url": "https://finance.biggo.com/news/41a759c2-fa82-4822-a532-2e775c0bdf65",
+   "summary": "美股科技股週一再跌，今朝台灣加權指數一度跌 822 點（約 1.8%）。台積電跌幅細啲，約 0.6%，報 NT$2,315。韓股都因為有人懷疑 AI 開支回報而跌。",
+   "level": "high",
+   "scope": "sector",
+   "affects": [
+    {
+     "sym": "TSM",
+     "dir": "down",
+     "why": "台股母股跌，今晚 ADR 開市可能受拖累，不過台積電跌得比大市少"
+    },
+    {
+     "sym": "NVDA",
+     "dir": "down",
+     "why": "亞洲 AI 供應鏈股普遍被沽，反映市場對 AI 開支仲有戒心"
+    }
+   ],
+   "takeaway": "留意今晚 TSM ADR 開市表現。台積電跌得比大市少，算相對抗跌。",
+   "found": "2026-11-03 12:00"
+  },
+  {
+   "time": "2026-11-03 09:00",
+   "headline": "美國今日中期選舉 期指表現參差",
+   "source": "Goodreturns",
+   "url": "https://www.goodreturns.in/news/us-stock-market-today-us-midterm-election-polls-dow-jones-futures-nasdaq-s-p-500-wall-street-outlook-1544809.html",
+   "summary": "今日改選眾議院全部 435 席同參議院 35 席。道指期貨跌約 0.3%，納指 100 期貨反而升約 0.4%。歷史上，選舉前後八個交易日道指平均升約 2.8%。",
+   "level": "medium",
+   "scope": "market",
+   "affects": [
+    {
+     "sym": "VOO",
+     "dir": "mixed",
+     "why": "選舉結果會影響之後兩年嘅稅務同監管政策，香港時間明早開始出結果"
+    },
+    {
+     "sym": "QQQ",
+     "dir": "mixed",
+     "why": "選舉不確定性消除之後市場通常會鬆一口氣，但唔一定次次都係咁"
+    }
+   ],
+   "takeaway": "明早香港時間會陸續有結果，大市可能短暫大上大落，唔使太驚。",
+   "found": "2026-11-03 12:00"
+  },
+  {
+   "time": "2026-11-03 08:00",
+   "headline": "AMD 今晚放榜 市場料收入升 42%",
+   "source": "TradingKey",
+   "url": "https://www.tradingkey.com/analysis/stocks/us-stocks/262265872-stock-amd-price-prediction-ai-sox-tradingkey",
+   "summary": "AMD 美股收市後公佈業績，市場預期收入約 131 億美元（按年升 42%），每股盈利約 1.94 美元。放榜前好多人買保險式對沖，令股價跌超過 7%。",
+   "level": "high",
+   "scope": "sector",
+   "affects": [
+    {
+     "sym": "NVDA",
+     "dir": "mixed",
+     "why": "AMD 對 AI 晶片需求點講，會直接影響市場對 Nvidia 嘅睇法"
+    },
+    {
+     "sym": "TSM",
+     "dir": "mixed",
+     "why": "AMD 晶片主要由台積電代工，AMD 指引好唔好會影響台積電訂單預期"
+    },
+    {
+     "sym": "QQQM",
+     "dir": "mixed",
+     "why": "半導體股佔納指比重大，業績反應會帶動指數"
+    }
+   ],
+   "takeaway": "香港時間明早約 5 點出業績，晶片股盤後可能大幅波動。",
+   "found": "2026-11-03 12:00"
+  },
   {
    "time": "2026-11-03 05:30",
    "headline": "Apple 業績勝預期 但毛利指引差 盤後跌約3%",
@@ -64,6 +138,34 @@
    ],
    "takeaway": "AI 軟件需求仍然強，但而家市場對好業績嘅要求好高。",
    "found": "2026-11-03 08:00"
+  },
+  {
+   "time": "2026-11-03 05:00",
+   "headline": "納指週一跌 1.07% 費半跌逾 3%",
+   "source": "TradingKey",
+   "url": "https://www.tradingkey.com/analysis/stocks/us-stocks/262264978-us-stock-close-nasdaq-falls-dow-rises-marvell-oracle-tradingkey",
+   "summary": "納指收 25,164 點，跌 1.07%；標普跌 0.51%；道指反而升 0.41%。資金由 AI 晶片股流去其他板塊，Marvell 跌 12.7%，Oracle 跌 8.8%。納指十月累計已跌 5.3%。",
+   "level": "medium",
+   "scope": "market",
+   "affects": [
+    {
+     "sym": "QQQ",
+     "dir": "down",
+     "why": "AI 同晶片股佔比大，所以跌得比標普多"
+    },
+    {
+     "sym": "VOO",
+     "dir": "down",
+     "why": "受科技股拖累，但跌幅細過納指，因為有其他板塊撐住"
+    },
+    {
+     "sym": "ORCL",
+     "dir": "down",
+     "why": "集資 200 億美元引起攤薄同借貸憂慮，係週一跌得最多嘅大型股之一"
+    }
+   ],
+   "takeaway": "你嘅 VOO 分散啲，比 QQQ／QQQM 穩陣啲，可以作為緩衝。",
+   "found": "2026-11-03 12:00"
   },
   {
    "time": "2026-11-03 05:00",
@@ -289,6 +391,24 @@
   },
   {
    "time": "2026-11-02 23:30",
+   "headline": "富國削 Alphabet 目標價 另遭集體訴訟",
+   "source": "Investing.com",
+   "url": "https://www.investing.com/news/stock-market-news/why-is-alphabet-stock-climbing-today-93CH-4992201",
+   "summary": "Alphabet 上週業績後單日跌超過 12%，之後開始反彈。富國銀行維持「增持」評級，但將目標價由 417 削到 371 美元，指 AI 搜尋摘要令付費點擊減少。另外有律師行對 Alphabet 提出證券集體訴訟。",
+   "level": "medium",
+   "scope": "stock",
+   "affects": [
+    {
+     "sym": "GOOG",
+     "dir": "mixed",
+     "why": "評級冇變但目標價降低，加上訴訟消息，反彈動力可能受限制"
+    }
+   ],
+   "takeaway": "集體訴訟喺大跌之後好常見，影響通常有限。要留意 AI 對搜尋廣告收入嘅影響。",
+   "found": "2026-11-03 12:00"
+  },
+  {
+   "time": "2026-11-02 23:30",
    "headline": "Tesla重上400美元 歐洲數據獲關注",
    "source": "TradingKey",
    "url": "https://www.tradingkey.com/news/market-movers/262264478-market-movers-tsla-20261102",
@@ -344,24 +464,6 @@
     }
    ],
    "takeaway": "持有ORCL要留意最終發行價、債息同自由現金流進度，短期波幅可能較大。",
-   "found": "2026-11-03 01:00"
-  },
-  {
-   "time": "2026-11-02 23:07",
-   "headline": "Alphabet發60億歐元債 股價反彈",
-   "source": "Investing.com",
-   "url": "https://www.investing.com/news/stock-market-news/why-is-alphabet-stock-climbing-today-93CH-4992201",
-   "summary": "Alphabet發七批歐元債，股價早段升約1.5%。上週四業績後曾跌逾12%，係史上最差單日。",
-   "level": "high",
-   "scope": "stock",
-   "affects": [
-    {
-     "sym": "GOOG",
-     "dir": "mixed",
-     "why": "融資順利反映信用仍強，但搜尋增長同現金流憂慮未消。"
-    }
-   ],
-   "takeaway": "今日反彈幅度遠細過上週跌幅，下一步要睇搜尋增長同AI開支回報。",
    "found": "2026-11-03 01:00"
   },
   {
@@ -425,6 +527,24 @@
   },
   {
    "time": "2026-11-02 22:00",
+   "headline": "Tesla 聯同三星反對美國向越南加關稅",
+   "source": "Reuters（經 Traders Union）",
+   "url": "https://tradersunion.com/news/stocks/show/4061518-tesla-drops-0-99percent-to-usd399-34",
+   "summary": "美國對越南貨品嘅關稅調查就快到限期，Tesla 同三星公開反對加關稅，擔心供應鏈成本上升。另外有分析師開始模擬 Tesla 同 SpaceX 合併嘅情景，但雙方並冇宣佈任何交易。",
+   "level": "low",
+   "scope": "stock",
+   "affects": [
+    {
+     "sym": "TSLA",
+     "dir": "mixed",
+     "why": "如果加關稅，部分零件成本會上升；合併消息只係猜測"
+    }
+   ],
+   "takeaway": "留意越南關稅最後點決定。合併傳聞未證實，唔好當真。",
+   "found": "2026-11-03 12:00"
+  },
+  {
+   "time": "2026-11-02 22:00",
    "headline": "Melius 削 Nvidia 目標價 AI 開支憂慮未散",
    "source": "IBTimes",
    "url": "https://www.ibtimes.com.au/nvidia-shares-rebound-ai-spending-concerns-1877770",
@@ -468,6 +588,29 @@
    ],
    "takeaway": "你冇直接持有呢兩隻股，但佢反映市場對 AI 大額交易更審慎。",
    "found": "2026-11-03 08:00"
+  },
+  {
+   "time": "2026-11-02 20:00",
+   "headline": "SpaceX 承諾全用 Nvidia 晶片 明年加 10GW",
+   "source": "Benzinga",
+   "url": "https://www.benzinga.com/markets/tech/26/11/62785016/elon-musk-spacex-plan-swallows-nvidia-growth-forecast",
+   "summary": "馬斯克話 SpaceX 計劃 2027 年新增約 10GW 嘅 AI 算力，全部用 Nvidia Vera Rubin 平台。有分析估計，呢個規模相等於 Nvidia 大部分嘅增長預測。",
+   "level": "medium",
+   "scope": "stock",
+   "affects": [
+    {
+     "sym": "NVDA",
+     "dir": "up",
+     "why": "有一個大客戶承諾獨家採購，長線訂單嘅能見度提高"
+    },
+    {
+     "sym": "TSM",
+     "dir": "up",
+     "why": "Nvidia 晶片由台積電代工，大訂單會令台積電受惠"
+    }
+   ],
+   "takeaway": "係長線利好，但計劃要好多年先落實，短期股價主要仲係睇大市情緒。",
+   "found": "2026-11-03 12:00"
   },
   {
    "time": "2026-11-02 18:00",

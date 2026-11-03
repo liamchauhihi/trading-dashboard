@@ -1,5 +1,5 @@
 {
- "generated": "2026-11-03T18:00+08:00",
+ "generated": "2026-11-03T22:30+08:00",
  "holdings": [
   "TSM",
   "TSLA",
@@ -10,7 +10,7 @@
   "QQQM",
   "NVDA"
  ],
- "claude_ok": true,
+ "claude_ok": false,
  "claude_at": "2026-11-03T18:00+08:00",
  "summary": "AI 拋售未停，納指100 正式跌入調整區（距高位跌一成），台股、韓股今日再急跌，你嘅 TSM、NVDA、QQQ/QQQM 短期仍然受壓。今晚 AMD 業績同今週就業數據（週五非農）會係下一個考驗。美軍再襲伊朗島嶼，油價回升，和談仲未有結果。",
  "items": [

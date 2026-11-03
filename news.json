@@ -1,5 +1,5 @@
 {
- "generated": "2026-11-03T12:00+08:00",
+ "generated": "2026-11-03T18:00+08:00",
  "holdings": [
   "TSM",
   "TSLA",
@@ -11,9 +11,78 @@
   "NVDA"
  ],
  "claude_ok": true,
- "claude_at": "2026-11-03T12:00+08:00",
- "summary": "今日（香港時間今晚）係美國中期選舉投票日，市場同時等緊今晚 AMD 放榜。AI 晶片股嘅拋售由華爾街蔓延到亞洲，台股同韓股今朝都跌，對你嘅 TSM、NVDA、QQQ／QQQM 有壓力。Oracle 集資帶起嘅「AI 借錢擴張」憂慮仲未散。你嘅持倉偏重科技股，短期波動可能會大啲。",
+ "claude_at": "2026-11-03T18:00+08:00",
+ "summary": "AI 拋售未停，納指100 正式跌入調整區（距高位跌一成），台股、韓股今日再急跌，你嘅 TSM、NVDA、QQQ/QQQM 短期仍然受壓。今晚 AMD 業績同今週就業數據（週五非農）會係下一個考驗。美軍再襲伊朗島嶼，油價回升，和談仲未有結果。",
  "items": [
+  {
+   "time": "2026-11-03 15:00",
+   "headline": "伊朗話「球喺美國嗰邊」 和談未突破",
+   "source": "Al Jazeera",
+   "url": "https://www.aljazeera.com/news/liveblog/2026/11/3/iran-war-live-vance-sees-progress-in-talks-tehran-says-ball-in-us-court",
+   "summary": "伊朗議長 Ghalibaf 話「球喺美國嗰邊」，美國副總統 Vance 就話談判有進展。經卡塔爾斡旋之後雙方改咗方案，但仲未達成協議。",
+   "level": "low",
+   "scope": "market",
+   "affects": [
+    {
+     "sym": "VOO",
+     "dir": "mixed",
+     "why": "和談成功會壓低油價、利好大市，談判破裂就相反"
+    }
+   ],
+   "takeaway": "雙方都仲傾緊，消息會左右油價同大市情緒。",
+   "found": "2026-11-03 18:00"
+  },
+  {
+   "time": "2026-11-03 14:00",
+   "headline": "台股收跌3.6% 史上第七大點數跌幅",
+   "source": "中央社 Focus Taiwan",
+   "url": "https://focustaiwan.tw/business/202611030023",
+   "summary": "加權指數收跌1,612點（3.59%）報43,307點。台積電跌1.5%收NT$2,295，佔指數超過四成。分析員提到美國中期選舉前觀望，下個支持位睇七月低位約39,384點。",
+   "level": "high",
+   "scope": "stock",
+   "affects": [
+    {
+     "sym": "TSM",
+     "dir": "down",
+     "why": "台積電台股收跌1.5%，今晚美股 ADR 開市前情緒偏弱"
+    },
+    {
+     "sym": "NVDA",
+     "dir": "down",
+     "why": "亞洲 AI 供應鏈全線受壓，反映 AI 晶片需求憂慮"
+    }
+   ],
+   "takeaway": "台股跌幅比台積電本身大，係整個板塊被拋售，未見公司本身有壞消息。",
+   "found": "2026-11-03 18:00"
+  },
+  {
+   "time": "2026-11-03 12:00",
+   "headline": "韓股一度跌4% AI 晶片拋售蔓延亞洲",
+   "source": "AP／US News",
+   "url": "https://www.usnews.com/news/business/articles/2026-11-02/asian-shares-are-mixed-as-tech-losses-offset-broader-gains-on-wall-street",
+   "summary": "華爾街科技股下跌之後，以晶片為主嘅韓股 Kospi 一度跌4%，台股跌3.8%。恒指微升，日本休市，美股期貨偏軟。",
+   "level": "medium",
+   "scope": "sector",
+   "affects": [
+    {
+     "sym": "NVDA",
+     "dir": "down",
+     "why": "三星、SK 海力士等記憶體股受壓，反映 AI 硬件情緒差"
+    },
+    {
+     "sym": "TSM",
+     "dir": "down",
+     "why": "同屬亞洲 AI 供應鏈，資金一齊撤出"
+    },
+    {
+     "sym": "QQQ",
+     "dir": "down",
+     "why": "美股期貨偏軟，科技股今晚或者再受壓"
+    }
+   ],
+   "takeaway": "跌勢由美國傳到亞洲，今晚美股開市方向好關鍵。",
+   "found": "2026-11-03 18:00"
+  },
   {
    "time": "2026-11-03 11:00",
    "headline": "AI 拋售蔓延亞洲 台股早段跌 1.8%",
@@ -39,6 +108,29 @@
   },
   {
    "time": "2026-11-03 09:00",
+   "headline": "就業週：今晚 JOLTS 週五非農",
+   "source": "Fed Rate Calc 經濟日曆",
+   "url": "https://fedratecalc.com/us-economic-calendar/november-2026/",
+   "summary": "香港時間今晚23:00公布9月JOLTS職位空缺，週三21:15公布ADP，週五（11月6日）21:30公布10月非農就業。下一份CPI喺11月10日公布。",
+   "level": "medium",
+   "scope": "market",
+   "affects": [
+    {
+     "sym": "VOO",
+     "dir": "mixed",
+     "why": "就業太強會推高債息，太弱就會加深經濟憂慮"
+    },
+    {
+     "sym": "QQQ",
+     "dir": "mixed",
+     "why": "債息接近4.9%，科技股估值對數據好敏感"
+    }
+   ],
+   "takeaway": "美國冬令時間已經開始，數據改喺香港時間21:30公布，週五晚可能大上大落。",
+   "found": "2026-11-03 18:00"
+  },
+  {
+   "time": "2026-11-03 09:00",
    "headline": "美國今日中期選舉 期指表現參差",
    "source": "Goodreturns",
    "url": "https://www.goodreturns.in/news/us-stock-market-today-us-midterm-election-polls-dow-jones-futures-nasdaq-s-p-500-wall-street-outlook-1544809.html",
@@ -59,6 +151,29 @@
    ],
    "takeaway": "明早香港時間會陸續有結果，大市可能短暫大上大落，唔使太驚。",
    "found": "2026-11-03 12:00"
+  },
+  {
+   "time": "2026-11-03 08:30",
+   "headline": "美軍空襲伊朗格什姆島 油價反彈",
+   "source": "CNBC",
+   "url": "https://www.cnbc.com/amp/2026/11/03/oil-rises-after-report-of-us-strike-on-irans-qeshm-island.html",
+   "summary": "報道指美軍向荷姆茲海峽嘅伊朗格什姆島作出「有限度防衛性」空襲。布蘭特期油升0.5%至約105美元，週一曾跌約7%。",
+   "level": "medium",
+   "scope": "market",
+   "affects": [
+    {
+     "sym": "VOO",
+     "dir": "mixed",
+     "why": "油價回升會令通脹同減息預期反覆，影響大市"
+    },
+    {
+     "sym": "QQQ",
+     "dir": "mixed",
+     "why": "地緣風險升溫，資金傾向避險，科技股估值受壓"
+    }
+   ],
+   "takeaway": "昨日嘅和談憧憬未必穩陣，油價可能繼續大上大落。",
+   "found": "2026-11-03 18:00"
   },
   {
    "time": "2026-11-03 08:00",
@@ -87,6 +202,39 @@
    ],
    "takeaway": "香港時間明早約 5 點出業績，晶片股盤後可能大幅波動。",
    "found": "2026-11-03 12:00"
+  },
+  {
+   "time": "2026-11-03 05:30",
+   "headline": "納指100 跌入調整區 晶片股三日跌約12%",
+   "source": "NBC News",
+   "url": "https://www.nbcnews.com/business/markets/nasdaq-100-correction-tech-stocks-rcna589630",
+   "summary": "週一納指100 跌1.39% 收27,989點，比10月6日高位低10.4%，係今年第三次調整。費城半導體指數三個交易日累跌約12%，市場懷疑 AI 投資能否回本。",
+   "level": "high",
+   "scope": "market",
+   "affects": [
+    {
+     "sym": "QQQ",
+     "dir": "down",
+     "why": "大型科技股同晶片股佔比高，調整直接拖低淨值"
+    },
+    {
+     "sym": "QQQM",
+     "dir": "down",
+     "why": "同 QQQ 追蹤同一指數，走勢一樣"
+    },
+    {
+     "sym": "NVDA",
+     "dir": "down",
+     "why": "AI 晶片龍頭，最受 AI 開支憂慮影響"
+    },
+    {
+     "sym": "VOO",
+     "dir": "mixed",
+     "why": "標普較分散，週一只跌約0.5%，杜指仲升"
+    }
+   ],
+   "takeaway": "跌一成即係技術上嘅「調整」，以往都出現過，唔代表一定再跌，留意會唔會再破低位。",
+   "found": "2026-11-03 18:00"
   },
   {
    "time": "2026-11-03 05:30",

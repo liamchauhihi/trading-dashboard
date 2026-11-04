@@ -1,5 +1,5 @@
 {
- "generated": "2026-11-04T04:45+08:00",
+ "generated": "2026-11-04T08:00+08:00",
  "holdings": [
   "TSM",
   "TSLA",
@@ -10,10 +10,143 @@
   "QQQM",
   "NVDA"
  ],
- "claude_ok": false,
- "claude_at": "2026-11-04T01:00+08:00",
- "summary": "中期選舉投票日，美股晶片股反彈：Nvidia 升約3%，TSM 升逾2%，Oracle 完成200億美元集資後彈約5%。不過納指仍然喺調整區，油價同十年債息（約4.9%）仍然高企。今晚 AMD 放榜，會影響你手上 AI 股嘅短線情緒。",
+ "claude_ok": true,
+ "claude_at": "2026-11-04T08:00+08:00",
+ "summary": "AMD 同 Super Micro 業績都勝預期，盤後各升約 7–8%，AI 晶片股氣氛回暖，對你嘅 NVDA、TSM、QQQ 係正面。美國中期選舉開始點票，市場已預咗民主黨贏眾議院，結果出乎意料先會大郁。納指100 仍然喺調整區，波動未完。",
  "items": [
+  {
+   "time": "2026-11-04 07:30",
+   "headline": "中期選舉開始點票 美股期指輕微向上",
+   "source": "CNBC",
+   "url": "https://www.cnbc.com/2026/11/03/stock-market-today-live-updates.html",
+   "summary": "投票站陸續截止，標普期指升約 0.3%，納指100 期指升約 0.5%。預測市場普遍睇好民主黨奪得眾議院，分析員話市場已經反映咗呢個結果。",
+   "level": "high",
+   "scope": "market",
+   "affects": [
+    {
+     "sym": "VOO",
+     "dir": "mixed",
+     "why": "結果同預期一樣影響有限，共和黨意外保住國會就可能有波動"
+    },
+    {
+     "sym": "QQQ",
+     "dir": "mixed",
+     "why": "選舉結果會影響之後嘅財政、關稅同科技監管政策預期"
+    }
+   ],
+   "takeaway": "今日香港白天會陸續有結果，短期波動正常，唔使因為一晚嘅結果亂咗陣腳。",
+   "found": "2026-11-04 08:00"
+  },
+  {
+   "time": "2026-11-04 05:15",
+   "headline": "AMD 業績勝預期 數據中心收入近翻倍 盤後升約 8%",
+   "source": "CNBC",
+   "url": "https://www.cnbc.com/2026/11/03/amd-amd-q3-earnings-report-2026-.html",
+   "summary": "AMD 第三季收入 133.8 億美元，按年升約 45%，數據中心收入創新高 85.5 億美元。第四季指引約 170 億美元，高過預期，盤後升 7–8%。",
+   "level": "high",
+   "scope": "sector",
+   "affects": [
+    {
+     "sym": "NVDA",
+     "dir": "up",
+     "why": "AI 晶片需求依然強勁，可以減輕市場對 AI 開支放慢嘅擔心"
+    },
+    {
+     "sym": "TSM",
+     "dir": "up",
+     "why": "AMD 晶片主要由台積電代工，訂單前景受惠"
+    },
+    {
+     "sym": "QQQ",
+     "dir": "up",
+     "why": "晶片股係納指100 重要成分，帶動指數情緒"
+    }
+   ],
+   "takeaway": "上星期晶片股大跌嘅恐慌有所緩和，不過今晚開市先知道升勢會唔會持續。",
+   "found": "2026-11-04 08:00"
+  },
+  {
+   "time": "2026-11-04 05:10",
+   "headline": "Super Micro 收入大增近四倍 上調全年指引 盤後升",
+   "source": "CNBC",
+   "url": "https://cnbc.com/2026/11/03/stocks-making-the-biggest-moves-after-hours-anet-amd-smci-swks.html",
+   "summary": "AI 伺服器商 Super Micro 季度收入約 199 億美元，全年指引 720–820 億美元，高過預期，盤後升 6–9%。不過毛利率下跌，現金流亦流出。",
+   "level": "medium",
+   "scope": "sector",
+   "affects": [
+    {
+     "sym": "NVDA",
+     "dir": "up",
+     "why": "Super Micro 嘅伺服器大量用 Nvidia GPU，收入大增反映 GPU 需求仲好強"
+    }
+   ],
+   "takeaway": "AI 伺服器需求仲好旺，但硬件商利潤偏薄，可以留意下個月 Nvidia 業績嘅毛利。",
+   "found": "2026-11-04 08:00"
+  },
+  {
+   "time": "2026-11-04 05:00",
+   "headline": "標普結束三連跌 晶片股反彈 納指100 仍在調整區",
+   "source": "Investing.com",
+   "url": "https://www.investing.com/news/stock-market-news/us-stock-futures-steady-apple-dips-after-mixed-earnings-4993314",
+   "summary": "標普 500 收升 0.36% 報 7,568.92，納指升 0.83%，道指受 Apple 拖累跌約 0.4%。納指100 升 0.7%，但仍然比高位低約 10%。",
+   "level": "medium",
+   "scope": "market",
+   "affects": [
+    {
+     "sym": "QQQ",
+     "dir": "up",
+     "why": "科技股反彈，但仍然未走出調整區"
+    },
+    {
+     "sym": "QQQM",
+     "dir": "up",
+     "why": "同 QQQ 追蹤同一個指數，走勢一樣"
+    },
+    {
+     "sym": "VOO",
+     "dir": "up",
+     "why": "標普輕微回升，結束連跌三日"
+    }
+   ],
+   "takeaway": "一日反彈唔代表調整已經完結，留意納指100 可唔可以企穩。",
+   "found": "2026-11-04 08:00"
+  },
+  {
+   "time": "2026-11-04 05:00",
+   "headline": "Oracle 收升 5.85% Baird：集資規模符合預告",
+   "source": "TIKR",
+   "url": "https://www.tikr.com/blog/oracle-rebounds-5-as-20-billion-raise-prices-baird-says-its-exactly-what-they-previewed",
+   "summary": "Oracle 以每股 116 美元發行新股，再加 100 億美元債券，合共集資 200 億美元。公司話到 2030 財年前額外集資以此為上限。股價收升 5.85%，但今年仍然累跌約 35%。",
+   "level": "medium",
+   "scope": "stock",
+   "affects": [
+    {
+     "sym": "ORCL",
+     "dir": "up",
+     "why": "集資額度有咗上限，消除咗市場擔心公司不停發新股嘅陰霾"
+    }
+   ],
+   "takeaway": "新股攤薄同 7–8.65% 嘅高息債會加重負債，之後留意現金流同負債。",
+   "found": "2026-11-04 08:00"
+  },
+  {
+   "time": "2026-11-04 01:00",
+   "headline": "Nvidia 反彈 但中國經海外雲端用晶片或更難",
+   "source": "IBTimes",
+   "url": "https://www.ibtimes.com.au/nvidia-shares-rebound-ai-spending-concerns-1877770",
+   "summary": "Nvidia 喺 200 美元附近反彈約 2–3%。不過有報道指中國企業經海外雲端服務用先進晶片可能更難，Melius 維持買入評級但下調目標價。",
+   "level": "medium",
+   "scope": "stock",
+   "affects": [
+    {
+     "sym": "NVDA",
+     "dir": "mixed",
+     "why": "AMD 業績好有幫助，但中國限制同客戶融資壓力仍然係風險"
+    }
+   ],
+   "takeaway": "200 美元係近期重要支持位，11 月 17 日業績前波動可能偏大。",
+   "found": "2026-11-04 08:00"
+  },
   {
    "time": "2026-11-04 00:30",
    "headline": "布蘭特油價約104美元 十年債息約4.9%",
@@ -135,6 +268,24 @@
    "found": "2026-11-04 01:00"
   },
   {
+   "time": "2026-11-03 22:00",
+   "headline": "Google 遭集體訴訟招募 歐洲法院顧問質疑 Gemini 版權",
+   "source": "Google News／Stock Analysis",
+   "url": "https://stockanalysis.com/stocks/goog/",
+   "summary": "多間律師行招募投資者加入集體訴訟，指控 Alphabet 就 AI 模型開發作出失實陳述。歐盟法院顧問亦警告 Gemini 重用新聞內容可能侵犯版權。",
+   "level": "low",
+   "scope": "stock",
+   "affects": [
+    {
+     "sym": "GOOG",
+     "dir": "down",
+     "why": "法律同監管風險增加，不過短期對收入影響細"
+    }
+   ],
+   "takeaway": "GOOG 十月跌咗約 17%，呢類訴訟好常見，留意之後歐盟有冇正式裁決就得。",
+   "found": "2026-11-04 08:00"
+  },
+  {
    "time": "2026-11-03 21:30",
    "headline": "紐時：Anthropic 明年算力目標倍增至7GW",
    "source": "Investing.com（引述紐約時報）",
@@ -179,6 +330,24 @@
    ],
    "takeaway": "11月17日業績係關鍵，之前股價可能跟住 AMD 同成個 AI 板塊上落。",
    "found": "2026-11-04 01:00"
+  },
+  {
+   "time": "2026-11-03 20:00",
+   "headline": "Tesla 跌逾 1% 與 SpaceX 合併投票門檻高",
+   "source": "Stocktwits",
+   "url": "https://stocktwits.com/news-articles/markets/equity/tsla-stock-trump-vows-shield-musk-influencer-tougher-spacex-merger-vote/cNGQUPfR95Q",
+   "summary": "Tesla 投資者提醒，同 SpaceX 合併要約 19.8 億票贊成，即全部股份嘅一半，難度好高。Musk 自己都話唔好當合併係實會發生，Tesla 收跌約 1.3%。",
+   "level": "medium",
+   "scope": "stock",
+   "affects": [
+    {
+     "sym": "TSLA",
+     "dir": "down",
+     "why": "早前炒合併令股價升咗，而家合併前景唔明朗，部分升幅回吐"
+    }
+   ],
+   "takeaway": "合併只係傳聞同討論階段，Tesla 股價會因為消息大上大落，心理上要有準備。",
+   "found": "2026-11-04 08:00"
   },
   {
    "time": "2026-11-03 15:00",
@@ -592,6 +761,29 @@
    "found": "2026-11-03 08:00"
   },
   {
+   "time": "2026-11-03 03:00",
+   "headline": "傳 Musk 重新考慮台積電喺 Terafab 嘅角色",
+   "source": "Benzinga",
+   "url": "https://www.benzinga.com/markets/tech/26/11/62790600/whats-going-on-with-taiwan-semiconductor-stock-on-monday-4",
+   "summary": "報道指 Musk 重新考慮台積電喺德州 Terafab 晶片廠計劃入面嘅角色。同時台積電繼續擴大台灣以外嘅產能，ARK 早前亦減持咗約 2,460 萬美元。",
+   "level": "low",
+   "scope": "stock",
+   "affects": [
+    {
+     "sym": "TSM",
+     "dir": "mixed",
+     "why": "Terafab 未落實，對台積電收入影響細，但係海外擴產方面嘅不確定因素"
+    },
+    {
+     "sym": "TSLA",
+     "dir": "mixed",
+     "why": "Musk 自建晶片廠嘅計劃仲有變數"
+    }
+   ],
+   "takeaway": "暫時只係報道，對台積電業績影響有限，主要都係睇 AI 晶片需求。",
+   "found": "2026-11-04 08:00"
+  },
+  {
    "time": "2026-11-03 02:00",
    "headline": "今晚 Apple、Palantir 放榜 考驗 AI 情緒",
    "source": "TipRanks",
@@ -756,193 +948,6 @@
    ],
    "takeaway": "股價仍低過52週高位，估值靠自動駕駛憧憬，可留意監管同12月3日股東會。",
    "found": "2026-11-03 01:00"
-  },
-  {
-   "time": "2026-11-02 23:21",
-   "headline": "10月ISM製造業升至55.5 勝預期",
-   "source": "PR Newswire／ISM",
-   "url": "https://www.prnewswire.com/news-releases/manufacturing-pmi-at-55-5-october-2026-ism-manufacturing-pmi-report-302925617.html",
-   "summary": "製造業指數由54.5升至55.5，物價分項由77.9降至75.2，但原材料價格仍連升25個月。",
-   "level": "medium",
-   "scope": "market",
-   "affects": [
-    {
-     "sym": "VOO",
-     "dir": "mixed",
-     "why": "經濟強有利盈利，但物價仍高，加息壓力未除。"
-    },
-    {
-     "sym": "QQQ",
-     "dir": "mixed",
-     "why": "需求好係正面，債息若再升就會壓估值。"
-    }
-   ],
-   "takeaway": "數據反映經濟未見轉弱，通脹同加息預期仍然係關鍵。",
-   "found": "2026-11-03 01:00"
-  },
-  {
-   "time": "2026-11-02 23:07",
-   "headline": "Oracle集資200億美元 股價跌近6%",
-   "source": "Invezz",
-   "url": "https://invezz.com/news/2026/11/02/why-is-oracle-stock-falling-nearly-6-on-monday/",
-   "summary": "Oracle計劃發債及發股各約100億美元，為AI基建融資。截至8月底借貸已達約1253億美元。",
-   "level": "high",
-   "scope": "stock",
-   "affects": [
-    {
-     "sym": "ORCL",
-     "dir": "down",
-     "why": "發新股會攤薄現有股東，再加債令市場更擔心負債同OpenAI依賴。"
-    }
-   ],
-   "takeaway": "持有ORCL要留意最終發行價、債息同自由現金流進度，短期波幅可能較大。",
-   "found": "2026-11-03 01:00"
-  },
-  {
-   "time": "2026-11-02 23:00",
-   "headline": "報道指 Tesla Robotaxi 擴展至 Fort Worth",
-   "source": "Azat TV",
-   "url": "https://azat.tv/en/tesla-robotaxi-expands-fort-worth-stock-rally/",
-   "summary": "報道指 Tesla 週一將 Robotaxi 服務擴展至德州 Fort Worth，另有報道指侯斯頓服務範圍亦擴大。",
-   "level": "low",
-   "scope": "stock",
-   "affects": [
-    {
-     "sym": "TSLA",
-     "dir": "up",
-     "why": "自動駕駛進度係 Tesla 估值嘅重要故事，消息有助氣氛。"
-    }
-   ],
-   "takeaway": "可留意服務規模同實際收入，唔好只睇擴張城市數目。",
-   "found": "2026-11-03 08:00"
-  },
-  {
-   "time": "2026-11-02 22:48",
-   "headline": "傳台積電或主導 Tesla Terafab 晶片廠",
-   "source": "Ad-hoc-news（引述 Benzinga）",
-   "url": "https://ad-hoc-news.de/boerse/news/corporate-news/tsm-aktie-tsmc-koennte-bei-teslas-terafab-mehr-verantwortung-uebernehmen/70446296",
-   "summary": "傳 Musk 軟化立場，雙方或重開談判，由台積電主導德州廠生產。擁有權同出資未定，目標 2028 年下半年量產。",
-   "level": "medium",
-   "scope": "stock",
-   "affects": [
-    {
-     "sym": "TSM",
-     "dir": "mixed",
-     "why": "或多一個大客戶項目，但條款同資本開支未明"
-    },
-    {
-     "sym": "TSLA",
-     "dir": "mixed",
-     "why": "有台積電主導或降低執行風險，但仍未有協議"
-    }
-   ],
-   "takeaway": "呢個係未證實嘅報道，三方初時未有回應，你要等正式公佈。",
-   "found": "2026-11-03 04:45"
-  },
-  {
-   "time": "2026-11-02 22:40",
-   "headline": "Nvidia反彈約1% 上週五曾跌4.2%",
-   "source": "BNN Bloomberg／AP",
-   "url": "https://www.bnnbloomberg.ca/markets/dow-jones/2026/11/02/global-shares-are-mixed-and-us-futures-advance-while-oil-prices-fall-nearly-4/",
-   "summary": "Nvidia隨大市回升約1%至1.4%，暫未見公司有重大消息。Apple已取代佢成為美股市值最大公司。",
-   "level": "medium",
-   "scope": "stock",
-   "affects": [
-    {
-     "sym": "NVDA",
-     "dir": "up",
-     "why": "屬大市反彈，投資者仍擔心大客戶嘅AI開支能否持續。"
-    }
-   ],
-   "takeaway": "呢次升幅細過上週五跌幅，要睇大型科技公司開支態度有冇變。",
-   "found": "2026-11-03 01:00"
-  },
-  {
-   "time": "2026-11-02 22:00",
-   "headline": "Tesla 聯同三星反對美國向越南加關稅",
-   "source": "Reuters（經 Traders Union）",
-   "url": "https://tradersunion.com/news/stocks/show/4061518-tesla-drops-0-99percent-to-usd399-34",
-   "summary": "美國對越南貨品嘅關稅調查就快到限期，Tesla 同三星公開反對加關稅，擔心供應鏈成本上升。另外有分析師開始模擬 Tesla 同 SpaceX 合併嘅情景，但雙方並冇宣佈任何交易。",
-   "level": "low",
-   "scope": "stock",
-   "affects": [
-    {
-     "sym": "TSLA",
-     "dir": "mixed",
-     "why": "如果加關稅，部分零件成本會上升；合併消息只係猜測"
-    }
-   ],
-   "takeaway": "留意越南關稅最後點決定。合併傳聞未證實，唔好當真。",
-   "found": "2026-11-03 12:00"
-  },
-  {
-   "time": "2026-11-02 22:00",
-   "headline": "Melius 削 Nvidia 目標價 AI 開支憂慮未散",
-   "source": "IBTimes",
-   "url": "https://www.ibtimes.com.au/nvidia-shares-rebound-ai-spending-concerns-1877770",
-   "summary": "Nvidia 週一早段曾反彈，但 Melius Research 在業績前下調目標價，市場繼續關注 AI 開支。",
-   "level": "medium",
-   "scope": "stock",
-   "affects": [
-    {
-     "sym": "NVDA",
-     "dir": "down",
-     "why": "目標價下調加上開支憂慮，削弱咗早段反彈。"
-    }
-   ],
-   "takeaway": "一間大行嘅目標價唔代表結果，業績同指引先係下一個重點。",
-   "found": "2026-11-03 08:00"
-  },
-  {
-   "time": "2026-11-02 21:00",
-   "headline": "Marvell 全股票收購 Lumentum 兩股俱挫",
-   "source": "The Motley Fool",
-   "url": "https://fool.com/investing/2026/11/02/marvell-technology-is-acquiring-lumentum-why-does-the-market-hate-the-move",
-   "summary": "交易企業價值約 1,150 億美元。Marvell 收跌 12.72%，Lumentum 跌 18.59%，Ciena 亦跌逾 11%。",
-   "level": "medium",
-   "scope": "sector",
-   "affects": [
-    {
-     "sym": "MRVL",
-     "dir": "down",
-     "why": "全股票交易有攤薄憂慮，市場唔太受落。"
-    },
-    {
-     "sym": "LITE",
-     "dir": "down",
-     "why": "收購價跟 Marvell 股價變動，股價隨之急跌。"
-    },
-    {
-     "sym": "QQQ",
-     "dir": "down",
-     "why": "AI 網絡相關股同跌，加重科技板塊壓力。"
-    }
-   ],
-   "takeaway": "你冇直接持有呢兩隻股，但佢反映市場對 AI 大額交易更審慎。",
-   "found": "2026-11-03 08:00"
-  },
-  {
-   "time": "2026-11-02 20:00",
-   "headline": "SpaceX 承諾全用 Nvidia 晶片 明年加 10GW",
-   "source": "Benzinga",
-   "url": "https://www.benzinga.com/markets/tech/26/11/62785016/elon-musk-spacex-plan-swallows-nvidia-growth-forecast",
-   "summary": "馬斯克話 SpaceX 計劃 2027 年新增約 10GW 嘅 AI 算力，全部用 Nvidia Vera Rubin 平台。有分析估計，呢個規模相等於 Nvidia 大部分嘅增長預測。",
-   "level": "medium",
-   "scope": "stock",
-   "affects": [
-    {
-     "sym": "NVDA",
-     "dir": "up",
-     "why": "有一個大客戶承諾獨家採購，長線訂單嘅能見度提高"
-    },
-    {
-     "sym": "TSM",
-     "dir": "up",
-     "why": "Nvidia 晶片由台積電代工，大訂單會令台積電受惠"
-    }
-   ],
-   "takeaway": "係長線利好，但計劃要好多年先落實，短期股價主要仲係睇大市情緒。",
-   "found": "2026-11-03 12:00"
   }
  ]
 }

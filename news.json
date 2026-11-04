@@ -1,5 +1,5 @@
 {
- "generated": "2026-11-04T18:00+08:00",
+ "generated": "2026-11-04T22:30+08:00",
  "holdings": [
   "TSM",
   "TSLA",
@@ -11,9 +11,124 @@
   "NVDA"
  ],
  "claude_ok": true,
- "claude_at": "2026-11-04T18:00+08:00",
- "summary": "民主黨贏晒參眾兩院，市場擔心新國會會收緊數據中心建設同 AI 監管，納指期貨一度跌超過 2%，之後回穩到輕微向上。晶片同 AI 股（NVDA、TSM、ORCL）最受影響，VOO 呢類大市 ETF 嘅波動就細啲。另外要留意週五嘅非農數據同 11 月 17 日 Nvidia 放榜。",
+ "claude_at": "2026-11-04T22:30+08:00",
+ "summary": "民主黨贏晒國會之後，特朗普表示會接受選舉結果，美股期指由跌轉升，道指期貨一度升超過1,000點。不過AI數據中心股仍然受壓。Oracle因為取消同騰訊嘅晶片租賃合約，盤前跌3-4%；Tesla擔心Musk旗下公司要面對更多審查，盤前跌約5%。今晚ADP就業數據好過預期，星期五非農係下一個焦點。",
  "items": [
+  {
+   "time": "2026-11-04 21:15",
+   "headline": "ADP：10月私企增聘8.6萬人 勝預期",
+   "source": "Investing.com／Reuters",
+   "url": "https://www.investing.com/news/economic-indicators/us-private-payrolls-rise-by-86000-in-october-adp-says-4999417",
+   "summary": "10月私營企業增聘8.6萬人，高過預期嘅約6.7-6.9萬人，基本薪金按年升3.2%。星期五公佈嘅非農預期增加約6.5萬人，失業率預期4.2%。",
+   "level": "medium",
+   "scope": "market",
+   "affects": [
+    {
+     "sym": "VOO",
+     "dir": "mixed",
+     "why": "就業穩陣係好事，但可能令減息預期降溫"
+    },
+    {
+     "sym": "QQQ",
+     "dir": "mixed",
+     "why": "債息已經接近5%，科技股對息口好敏感"
+    }
+   ],
+   "takeaway": "星期五嘅非農報告更加重要。ADP以往同非農唔一定同步，唔使單靠呢個數判斷。",
+   "found": "2026-11-04 22:30"
+  },
+  {
+   "time": "2026-11-04 20:35",
+   "headline": "AI數據中心股盤前再受壓 CoreWeave等跌",
+   "source": "Investing.com",
+   "url": "https://sg.finance.yahoo.com/news/premarket-movers-trump-media-ai-123543162.html",
+   "summary": "民主黨贏咗國會之後，市場擔心數據中心會被收緊監管。盤前CoreWeave跌最多3.2%，Applied Digital跌3%，Comfort Systems跌約13%。",
+   "level": "medium",
+   "scope": "sector",
+   "affects": [
+    {
+     "sym": "ORCL",
+     "dir": "down",
+     "why": "Oracle大舉借錢起AI數據中心，首當其衝"
+    },
+    {
+     "sym": "NVDA",
+     "dir": "mixed",
+     "why": "數據中心開支有冇變化，會影響晶片需求"
+    }
+   ],
+   "takeaway": "暫時只係市場擔心，未有實際政策出台，你可以留意國會之後有冇提出新法案。",
+   "found": "2026-11-04 22:30"
+  },
+  {
+   "time": "2026-11-04 20:00",
+   "headline": "憂Musk旗下公司被審查 Tesla盤前跌約5%",
+   "source": "Investing.com",
+   "url": "https://investing.com/news/stock-market-news/spacex-tesla-slide-as-election-risks-mount-morgan-stanley-turns-bullish-4998990",
+   "summary": "民主黨控制國會之後，市場擔心Musk旗下公司要面對更多審查。Tesla盤前跌4.5-5.6%，SpaceX跌約5%。不過摩根士丹利轉為看好。",
+   "level": "high",
+   "scope": "stock",
+   "affects": [
+    {
+     "sym": "TSLA",
+     "dir": "down",
+     "why": "政治同監管風險上升，加上Tesla同SpaceX合併嘅不確定性"
+    }
+   ],
+   "takeaway": "你揸TSLA嘅話，短線可能要捱政治消息帶嚟嘅震盪，留意國會之後有冇針對Musk嘅行動。",
+   "found": "2026-11-04 22:30"
+  },
+  {
+   "time": "2026-11-04 19:30",
+   "headline": "Oracle取消騰訊70億美元晶片租約 盤前跌",
+   "source": "Financial Times／Reuters",
+   "url": "https://www.investing.com/news/stock-market-news/oracle-cancels-7-bln-chip-leasing-deal-with-tencent-ft-reports-4997349",
+   "summary": "據FT報道，美國官員表示關注之後，Oracle取消咗同騰訊一份五年、約70億美元嘅AI晶片租約，涉及最多10萬粒晶片。Oracle盤前跌約3-4%。路透話暫時未能獨立核實。",
+   "level": "high",
+   "scope": "stock",
+   "affects": [
+    {
+     "sym": "ORCL",
+     "dir": "down",
+     "why": "少咗一張大單，而且啱啱集資200億美元，市場擔心收入"
+    },
+    {
+     "sym": "NVDA",
+     "dir": "mixed",
+     "why": "中國客經海外雲端用晶片嘅路愈收愈窄"
+    }
+   ],
+   "takeaway": "你揸ORCL嘅話，今晚可能要面對波動，留意公司會唔會正式回應。",
+   "found": "2026-11-04 22:30"
+  },
+  {
+   "time": "2026-11-04 19:00",
+   "headline": "特朗普表明接受選舉結果 道指期貨急升逾千點",
+   "source": "CNBC",
+   "url": "https://www.cnbc.com/2026/11/03/stock-market-today-live-updates.html",
+   "summary": "特朗普話「絕對願意」接受選舉結果，又會同民主黨合作。政治不確定性減少，道指期貨升約2.1%，標普期貨升約1.1%，扭轉咗隔晚嘅跌勢。",
+   "level": "high",
+   "scope": "market",
+   "affects": [
+    {
+     "sym": "VOO",
+     "dir": "up",
+     "why": "政治風險降溫，大市期指造好"
+    },
+    {
+     "sym": "QQQ",
+     "dir": "up",
+     "why": "納指期貨由跌近2%轉升"
+    },
+    {
+     "sym": "QQQM",
+     "dir": "up",
+     "why": "同QQQ一樣追蹤納指100"
+    }
+   ],
+   "takeaway": "你嘅大市ETF今晚有機會高開，不過開市後會唔會守得住仲要睇。",
+   "found": "2026-11-04 22:30"
+  },
   {
    "time": "2026-11-04 16:30",
    "headline": "期指急跌後回穩 納指100期貨轉升",
@@ -140,6 +255,24 @@
    "found": "2026-11-04 18:00"
   },
   {
+   "time": "2026-11-04 12:00",
+   "headline": "分析：參院未過60席 政策難大改",
+   "source": "CNBC（引Capital Economics）",
+   "url": "https://www.cnbc.com/2026/11/04/a-blue-wave-sends-futures-into-the-green.html",
+   "summary": "Capital Economics認為，民主黨喺參議院未夠60席去打破拉布，特朗普又有否決權，所以短期政策唔會有大轉變。",
+   "level": "low",
+   "scope": "market",
+   "affects": [
+    {
+     "sym": "VOO",
+     "dir": "mixed",
+     "why": "國會分裂嘅格局下，政策較難大幅改變"
+    }
+   ],
+   "takeaway": "選舉對政策嘅實際影響可能細過市場最初嘅反應，唔使太驚。",
+   "found": "2026-11-04 22:30"
+  },
+  {
    "time": "2026-11-04 11:30",
    "headline": "選情拖累亞洲科技股 韓股跌逾2%",
    "source": "美聯社",
@@ -219,29 +352,6 @@
    "found": "2026-11-04 12:00"
   },
   {
-   "time": "2026-11-04 07:30",
-   "headline": "中期選舉開始點票 美股期指輕微向上",
-   "source": "CNBC",
-   "url": "https://www.cnbc.com/2026/11/03/stock-market-today-live-updates.html",
-   "summary": "投票站陸續截止，標普期指升約 0.3%，納指100 期指升約 0.5%。預測市場普遍睇好民主黨奪得眾議院，分析員話市場已經反映咗呢個結果。",
-   "level": "high",
-   "scope": "market",
-   "affects": [
-    {
-     "sym": "VOO",
-     "dir": "mixed",
-     "why": "結果同預期一樣影響有限，共和黨意外保住國會就可能有波動"
-    },
-    {
-     "sym": "QQQ",
-     "dir": "mixed",
-     "why": "選舉結果會影響之後嘅財政、關稅同科技監管政策預期"
-    }
-   ],
-   "takeaway": "今日香港白天會陸續有結果，短期波動正常，唔使因為一晚嘅結果亂咗陣腳。",
-   "found": "2026-11-04 08:00"
-  },
-  {
    "time": "2026-11-04 06:00",
    "headline": "Oracle 集資今日交收 Stephens 升評級",
    "source": "TIKR / Tradingpedia",
@@ -304,6 +414,29 @@
    ],
    "takeaway": "AI 伺服器需求仲好旺，但硬件商利潤偏薄，可以留意下個月 Nvidia 業績嘅毛利。",
    "found": "2026-11-04 08:00"
+  },
+  {
+   "time": "2026-11-04 05:00",
+   "headline": "十年債息升至4.96% 油價隨伊朗消息大上大落",
+   "source": "NBC News",
+   "url": "https://www.nbcnews.com/business/markets/bond-yields-oil-treasury-buyback-bessent-rcna599604",
+   "summary": "選舉加上伊朗局勢嘅不確定性，令十年期美債息星期二升超過6點子至4.96%。美國空襲伊朗格什姆島之後油價一度急升，但有和談消息時又急跌。",
+   "level": "medium",
+   "scope": "market",
+   "affects": [
+    {
+     "sym": "QQQ",
+     "dir": "down",
+     "why": "高息壓低高估值科技股嘅吸引力"
+    },
+    {
+     "sym": "VOO",
+     "dir": "mixed",
+     "why": "油價同息口可能推高通脹壓力"
+    }
+   ],
+   "takeaway": "如果債息升穿5%，你嘅科技股可能會更波動，可以留意中東和談嘅進展。",
+   "found": "2026-11-04 22:30"
   },
   {
    "time": "2026-11-04 05:00",
@@ -800,169 +933,6 @@
    ],
    "takeaway": "香港時間明早約 5 點出業績，晶片股盤後可能大幅波動。",
    "found": "2026-11-03 12:00"
-  },
-  {
-   "time": "2026-11-03 06:00",
-   "headline": "Tesla Robotaxi 擴至 Fort Worth 中國十月銷量升",
-   "source": "Gotrade",
-   "url": "https://heygotrade.com/en/news/tesla-tsla-stock-news-november-3-2026",
-   "summary": "Tesla 將 Robotaxi 服務擴展到德州第四個城市 Fort Worth。中國製 Model 3/Y 十月銷量上升，週一收報約404美元。",
-   "level": "low",
-   "scope": "stock",
-   "affects": [
-    {
-     "sym": "TSLA",
-     "dir": "mixed",
-     "why": "業務消息正面，但今晚跟大市回吐約1%；中國對手比亞迪、小米同樣強勁"
-    }
-   ],
-   "takeaway": "股價近期由349美元反彈到400美元附近，上落好大，可以留意400美元守唔守得住。",
-   "found": "2026-11-04 01:00"
-  },
-  {
-   "time": "2026-11-03 05:30",
-   "headline": "納指100 跌入調整區 晶片股三日跌約12%",
-   "source": "NBC News",
-   "url": "https://www.nbcnews.com/business/markets/nasdaq-100-correction-tech-stocks-rcna589630",
-   "summary": "週一納指100 跌1.39% 收27,989點，比10月6日高位低10.4%，係今年第三次調整。費城半導體指數三個交易日累跌約12%，市場懷疑 AI 投資能否回本。",
-   "level": "high",
-   "scope": "market",
-   "affects": [
-    {
-     "sym": "QQQ",
-     "dir": "down",
-     "why": "大型科技股同晶片股佔比高，調整直接拖低淨值"
-    },
-    {
-     "sym": "QQQM",
-     "dir": "down",
-     "why": "同 QQQ 追蹤同一指數，走勢一樣"
-    },
-    {
-     "sym": "NVDA",
-     "dir": "down",
-     "why": "AI 晶片龍頭，最受 AI 開支憂慮影響"
-    },
-    {
-     "sym": "VOO",
-     "dir": "mixed",
-     "why": "標普較分散，週一只跌約0.5%，杜指仲升"
-    }
-   ],
-   "takeaway": "跌一成即係技術上嘅「調整」，以往都出現過，唔代表一定再跌，留意會唔會再破低位。",
-   "found": "2026-11-03 18:00"
-  },
-  {
-   "time": "2026-11-03 05:30",
-   "headline": "Apple 業績勝預期 但毛利指引差 盤後跌約3%",
-   "source": "Investing.com",
-   "url": "https://www.investing.com/news/transcripts/earnings-call-transcript-apple-tops-q4-2026-estimates-but-shares-fall-after-hours-93CH-4993172",
-   "summary": "季度收入 1,145 億美元，升 12%。不過預期下季毛利率只有 45–46%，主因記憶體成本上升。",
-   "level": "high",
-   "scope": "stock",
-   "affects": [
-    {
-     "sym": "QQQ",
-     "dir": "down",
-     "why": "Apple 係主要成分股之一，盤後轉弱可能拖低今晚開市表現。"
-    },
-    {
-     "sym": "QQQM",
-     "dir": "down",
-     "why": "同 QQQ 追蹤同一指數，受 Apple 影響一樣。"
-    },
-    {
-     "sym": "VOO",
-     "dir": "down",
-     "why": "Apple 亦係標普 500 大比重股，但 VOO 較分散，影響較細。"
-    }
-   ],
-   "takeaway": "你冇直接持有 Apple，但佢會透過 ETF 影響你，可留意今晚開市反應。",
-   "found": "2026-11-03 08:00"
-  },
-  {
-   "time": "2026-11-03 05:05",
-   "headline": "Palantir 收入升96%兼上調指引 盤後仍偏軟",
-   "source": "Business Wire",
-   "url": "https://www.businesswire.com/news/home/20261101396214/en/Palantir-Reports-Q3-2026-U.S.-Comm-Revenue-Growth-of-148-YY-and-Revenue-Growth-of-96-YY-Raises-FY-2026-Revenue-Guidance-to-91-YY-Growth-and-U.S.-Comm-Revenue-Guidance-to-143-YY-Crushing-Consensus-Expectations",
-   "summary": "第三季收入 23.1 億美元，全年指引上調至約 85.3 億美元。盤後股價上落，美東傍晚 6 時約跌 3.6%。",
-   "level": "medium",
-   "scope": "stock",
-   "affects": [
-    {
-     "sym": "PLTR",
-     "dir": "mixed",
-     "why": "業績強勁，但高估值下市場反應唔算熱烈。"
-    },
-    {
-     "sym": "QQQ",
-     "dir": "mixed",
-     "why": "反映企業 AI 需求仍強，但好消息未必帶動股價。"
-    }
-   ],
-   "takeaway": "AI 軟件需求仍然強，但而家市場對好業績嘅要求好高。",
-   "found": "2026-11-03 08:00"
-  },
-  {
-   "time": "2026-11-03 05:00",
-   "headline": "納指週一跌 1.07% 費半跌逾 3%",
-   "source": "TradingKey",
-   "url": "https://www.tradingkey.com/analysis/stocks/us-stocks/262264978-us-stock-close-nasdaq-falls-dow-rises-marvell-oracle-tradingkey",
-   "summary": "納指收 25,164 點，跌 1.07%；標普跌 0.51%；道指反而升 0.41%。資金由 AI 晶片股流去其他板塊，Marvell 跌 12.7%，Oracle 跌 8.8%。納指十月累計已跌 5.3%。",
-   "level": "medium",
-   "scope": "market",
-   "affects": [
-    {
-     "sym": "QQQ",
-     "dir": "down",
-     "why": "AI 同晶片股佔比大，所以跌得比標普多"
-    },
-    {
-     "sym": "VOO",
-     "dir": "down",
-     "why": "受科技股拖累，但跌幅細過納指，因為有其他板塊撐住"
-    },
-    {
-     "sym": "ORCL",
-     "dir": "down",
-     "why": "集資 200 億美元引起攤薄同借貸憂慮，係週一跌得最多嘅大型股之一"
-    }
-   ],
-   "takeaway": "你嘅 VOO 分散啲，比 QQQ／QQQM 穩陣啲，可以作為緩衝。",
-   "found": "2026-11-03 12:00"
-  },
-  {
-   "time": "2026-11-03 05:00",
-   "headline": "AI 硬件股尾市急跌 AMD、Dell 跌逾7%",
-   "source": "Capp Notes",
-   "url": "https://cappnotes.substack.com/p/closing-look-monday-november-2-2026",
-   "summary": "AI 開支憂慮再起，AMD、Dell 跌逾 7%，Micron 跌近 6%。Nvidia 早段曾升約 2.6%，收市倒跌 1.26%。",
-   "level": "high",
-   "scope": "sector",
-   "affects": [
-    {
-     "sym": "NVDA",
-     "dir": "down",
-     "why": "早段反彈守唔住，反映市場對 AI 開支仍然審慎。"
-    },
-    {
-     "sym": "TSM",
-     "dir": "down",
-     "why": "台積電代工 AI 晶片，同板塊氣氛一齊受壓。"
-    },
-    {
-     "sym": "QQQ",
-     "dir": "down",
-     "why": "科技比重高，納指 100 收跌 1.39%。"
-    },
-    {
-     "sym": "QQQM",
-     "dir": "down",
-     "why": "同 QQQ 追蹤同一指數，同樣受科技股拖累。"
-    }
-   ],
-   "takeaway": "呢次主要係板塊情緒轉弱，留意今晚 AMD 業績會唔會改變氣氛。",
-   "found": "2026-11-03 08:00"
   }
  ]
 }

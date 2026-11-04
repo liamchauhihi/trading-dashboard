@@ -1,5 +1,5 @@
 {
- "generated": "2026-11-04T08:00+08:00",
+ "generated": "2026-11-04T12:00+08:00",
  "holdings": [
   "TSM",
   "TSLA",
@@ -11,9 +11,88 @@
   "NVDA"
  ],
  "claude_ok": true,
- "claude_at": "2026-11-04T08:00+08:00",
- "summary": "AMD 同 Super Micro 業績都勝預期，盤後各升約 7–8%，AI 晶片股氣氛回暖，對你嘅 NVDA、TSM、QQQ 係正面。美國中期選舉開始點票，市場已預咗民主黨贏眾議院，結果出乎意料先會大郁。納指100 仍然喺調整區，波動未完。",
+ "claude_at": "2026-11-04T12:00+08:00",
+ "summary": "中期選舉民主黨奪得眾議院，參議院未有結果，市場擔心 AI 數據中心會被收緊監管，納指期貨跌近 2%。你嘅持倉大部分係科技股同晶片股（NVDA、TSM、QQQ），今晚開市可能會受壓。今晚仲有 ADP、ISM 數據，同 Qualcomm、Arm 業績。",
  "items": [
+  {
+   "time": "2026-11-04 11:30",
+   "headline": "選情拖累亞洲科技股 韓股跌逾2%",
+   "source": "美聯社",
+   "url": "https://www.timesunion.com/news/world/article/asian-shares-are-mixed-as-tech-losses-offset-22508055.php",
+   "summary": "市場擔心美國 AI 投資放慢，韓股跌約 2.5%，SK 海力士、三星領跌，台股繼續偏弱，已經比十月高位低超過 10%。",
+   "level": "medium",
+   "scope": "sector",
+   "affects": [
+    {
+     "sym": "TSM",
+     "dir": "down",
+     "why": "台股同亞洲晶片股再跌，昨日升 1.6% 嘅美股 ADR 可能受壓"
+    },
+    {
+     "sym": "NVDA",
+     "dir": "down",
+     "why": "亞洲 AI 供應鏈情緒轉差"
+    }
+   ],
+   "takeaway": "晶片股近排大上大落，持有 TSM 嘅你要預咗短期會再波動。",
+   "found": "2026-11-04 12:00"
+  },
+  {
+   "time": "2026-11-04 11:00",
+   "headline": "民主黨預計奪眾議院 參議院仍未分勝負",
+   "source": "CNBC",
+   "url": "https://www.cnbc.com/2026/11/03/midterm-elections-2026-live-updates.html",
+   "summary": "傳媒預測民主黨奪回眾議院，參議院方面喺南卡、北卡翻盤，德州亦領先，但控制權仲未正式宣布。",
+   "level": "high",
+   "scope": "market",
+   "affects": [
+    {
+     "sym": "QQQ",
+     "dir": "down",
+     "why": "市場擔心國會轉手後會收緊大型科技同 AI 監管"
+    },
+    {
+     "sym": "VOO",
+     "dir": "mixed",
+     "why": "國會分裂可能減少財政刺激，對大市有好有壞"
+    }
+   ],
+   "takeaway": "參議院結果未出前股市可能大上大落，留意最終點票，唔使因為一晚嘅郁動慌張。",
+   "found": "2026-11-04 12:00"
+  },
+  {
+   "time": "2026-11-04 10:00",
+   "headline": "民主黨大勝機會升 納指期貨跌近2%",
+   "source": "Yahoo Finance / Benzinga",
+   "url": "https://finance.yahoo.com/markets/stocks/articles/dow-p-500-nasdaq-futures-030931252.html",
+   "summary": "隔夜交易時段納指100期貨一度跌近 2%，標普期貨跌約 0.5%。Nvidia 夜盤跌約 1.5%，AI 相關股受壓最大。",
+   "level": "high",
+   "scope": "market",
+   "affects": [
+    {
+     "sym": "NVDA",
+     "dir": "down",
+     "why": "市場擔心數據中心會被收緊限制，昨日升 2.3% 嘅升幅可能蝕返"
+    },
+    {
+     "sym": "QQQ",
+     "dir": "down",
+     "why": "期貨顯示納指100 開市可能偏低"
+    },
+    {
+     "sym": "QQQM",
+     "dir": "down",
+     "why": "同 QQQ 追蹤同一個指數"
+    },
+    {
+     "sym": "ORCL",
+     "dir": "down",
+     "why": "AI 基建概念股，受 AI 拋售拖累"
+    }
+   ],
+   "takeaway": "夜盤成交量少，郁動可以好誇張，要等今晚正式開市先睇清楚。",
+   "found": "2026-11-04 12:00"
+  },
   {
    "time": "2026-11-04 07:30",
    "headline": "中期選舉開始點票 美股期指輕微向上",
@@ -36,6 +115,24 @@
    ],
    "takeaway": "今日香港白天會陸續有結果，短期波動正常，唔使因為一晚嘅結果亂咗陣腳。",
    "found": "2026-11-04 08:00"
+  },
+  {
+   "time": "2026-11-04 06:00",
+   "headline": "Oracle 集資今日交收 Stephens 升評級",
+   "source": "TIKR / Tradingpedia",
+   "url": "https://www.tikr.com/blog/oracle-rebounds-5-as-20-billion-raise-prices-baird-says-its-exactly-what-they-previewed",
+   "summary": "Oracle 以每股 116 美元發新股，另發 100 億美元債券（息率 7%–8.65%），今日交收。Stephens 升至「增持」，目標價 213 美元。",
+   "level": "medium",
+   "scope": "stock",
+   "affects": [
+    {
+     "sym": "ORCL",
+     "dir": "mixed",
+     "why": "集資完成消除咗不確定性，但大摩警告信貸評級可能被降至低 BBB 級"
+    }
+   ],
+   "takeaway": "Oracle 欠債多，息口高，留意佢嘅信貸評級有冇變。",
+   "found": "2026-11-04 12:00"
   },
   {
    "time": "2026-11-04 05:15",
@@ -112,22 +209,22 @@
    "found": "2026-11-04 08:00"
   },
   {
-   "time": "2026-11-04 05:00",
-   "headline": "Oracle 收升 5.85% Baird：集資規模符合預告",
-   "source": "TIKR",
-   "url": "https://www.tikr.com/blog/oracle-rebounds-5-as-20-billion-raise-prices-baird-says-its-exactly-what-they-previewed",
-   "summary": "Oracle 以每股 116 美元發行新股，再加 100 億美元債券，合共集資 200 億美元。公司話到 2030 財年前額外集資以此為上限。股價收升 5.85%，但今年仍然累跌約 35%。",
-   "level": "medium",
+   "time": "2026-11-04 02:00",
+   "headline": "Alphabet 15億美元預付能源交易 鎖定加州綠電",
+   "source": "Android Headlines",
+   "url": "https://androidheadlines.com/2026/11/alphabet-google-prepaid-energy-deal-goldman.html",
+   "summary": "Alphabet 透過市政債市場做一單 15 億美元預付能源交易，為數據中心鎖定加州清潔電力。佢上季資本開支翻倍至 514 億美元。",
+   "level": "low",
    "scope": "stock",
    "affects": [
     {
-     "sym": "ORCL",
-     "dir": "up",
-     "why": "集資額度有咗上限，消除咗市場擔心公司不停發新股嘅陰霾"
+     "sym": "GOOG",
+     "dir": "mixed",
+     "why": "電力有保障對 AI 擴張有利，但市場依然擔心開支太大"
     }
    ],
-   "takeaway": "新股攤薄同 7–8.65% 嘅高息債會加重負債，之後留意現金流同負債。",
-   "found": "2026-11-04 08:00"
+   "takeaway": "GOOG 上星期出現史上最大單日跌幅，留意佢之後會唔會再控制開支。",
+   "found": "2026-11-04 12:00"
   },
   {
    "time": "2026-11-04 01:00",
@@ -266,6 +363,24 @@
    ],
    "takeaway": "數字暫時只係數據網站報道。週五非農先係重頭戲，可以留意債息有冇再升。",
    "found": "2026-11-04 01:00"
+  },
+  {
+   "time": "2026-11-03 22:00",
+   "headline": "巴克萊：合併後 Musk 將揸56%投票權",
+   "source": "Tesla North",
+   "url": "https://teslanorth.com/2026/11/03/musk-56-votes-spacex-tesla-merger/",
+   "summary": "巴克萊估計 Tesla 同 SpaceX 合併後，Musk 會持有約 37% 股份但約 56% 投票權。合併仲未正式落實，要全部股份過半數贊成先可以通過。",
+   "level": "low",
+   "scope": "stock",
+   "affects": [
+    {
+     "sym": "TSLA",
+     "dir": "mixed",
+     "why": "合併消息炒得熱，但投票門檻高，管治問題亦受關注"
+    }
+   ],
+   "takeaway": "合併只係討論緊，未有正式方案，唔好單憑傳聞判斷 TSLA。",
+   "found": "2026-11-04 12:00"
   },
   {
    "time": "2026-11-03 22:00",
@@ -833,121 +948,6 @@
    ],
    "takeaway": "呢個係較長線嘅轉變，唔係即時改變利率。",
    "found": "2026-11-03 04:45"
-  },
-  {
-   "time": "2026-11-03 00:30",
-   "headline": "美銀：AI股調整係經濟一大風險",
-   "source": "Yahoo Finance",
-   "url": "https://finance.yahoo.com/markets/live/stock-market-today-monday-november-2-dow-sp-500-nasdaq-091835095.html",
-   "summary": "美銀經濟師警告，AI交易若持續調整，會成為美國及全球經濟較大風險之一。",
-   "level": "medium",
-   "scope": "sector",
-   "affects": [
-    {
-     "sym": "QQQ",
-     "dir": "down",
-     "why": "指數集中AI相關大股，調整時首當其衝。"
-    },
-    {
-     "sym": "NVDA",
-     "dir": "down",
-     "why": "AI開支憂慮直接影響晶片需求預期。"
-    },
-    {
-     "sym": "ORCL",
-     "dir": "down",
-     "why": "高負債投資AI基建，對融資環境轉差較敏感。"
-    }
-   ],
-   "takeaway": "呢個係風險提示，唔係預測。你幾隻持倉都同AI有關，要留意集中風險。",
-   "found": "2026-11-03 01:00"
-  },
-  {
-   "time": "2026-11-03 00:25",
-   "headline": "美伊願談判 布蘭特油價急跌約7%",
-   "source": "CNBC",
-   "url": "https://cnbc.com/2026/11/02/oil-prices-fall-as-iran-us-pursue-diplomacy.html",
-   "summary": "Rubio稱美方寧願和平解決，伊朗稱有誠意就可達成協議。布蘭特跌至約105美元，WTI約97美元。",
-   "level": "high",
-   "scope": "market",
-   "affects": [
-    {
-     "sym": "VOO",
-     "dir": "up",
-     "why": "油價回落減輕通脹同加息憂慮，有利大市氣氛。"
-    },
-    {
-     "sym": "QQQ",
-     "dir": "up",
-     "why": "通脹壓力同債息回落，對高估值科技股較有利。"
-    },
-    {
-     "sym": "QQQM",
-     "dir": "up",
-     "why": "同QQQ追蹤相同指數，受惠原因一樣。"
-    }
-   ],
-   "takeaway": "談判未有結果，油輪同胡塞襲擊未停，消息一變油價可以再急郁。",
-   "found": "2026-11-03 01:00"
-  },
-  {
-   "time": "2026-11-03 00:00",
-   "headline": "十年債息回落至約4.9% 加息預期降溫",
-   "source": "The Bold News",
-   "url": "https://theboldnews.com/stocks-bounce-as-apple-earnings-near-oil-falls/",
-   "summary": "十年債息約4.93%，遠離10月高位5.36%。期貨仍反映72%機會加息四分一厘，但累計幅度減少。",
-   "level": "medium",
-   "scope": "market",
-   "affects": [
-    {
-     "sym": "QQQ",
-     "dir": "up",
-     "why": "債息回落，對高估值科技股壓力減輕。"
-    },
-    {
-     "sym": "VOO",
-     "dir": "up",
-     "why": "借貸成本憂慮稍減，有助大市估值。"
-    }
-   ],
-   "takeaway": "市場仍預期會加息，只係幅度預期細咗，週五非農可能再改變預期。",
-   "found": "2026-11-03 01:00"
-  },
-  {
-   "time": "2026-11-02 23:30",
-   "headline": "富國削 Alphabet 目標價 另遭集體訴訟",
-   "source": "Investing.com",
-   "url": "https://www.investing.com/news/stock-market-news/why-is-alphabet-stock-climbing-today-93CH-4992201",
-   "summary": "Alphabet 上週業績後單日跌超過 12%，之後開始反彈。富國銀行維持「增持」評級，但將目標價由 417 削到 371 美元，指 AI 搜尋摘要令付費點擊減少。另外有律師行對 Alphabet 提出證券集體訴訟。",
-   "level": "medium",
-   "scope": "stock",
-   "affects": [
-    {
-     "sym": "GOOG",
-     "dir": "mixed",
-     "why": "評級冇變但目標價降低，加上訴訟消息，反彈動力可能受限制"
-    }
-   ],
-   "takeaway": "集體訴訟喺大跌之後好常見，影響通常有限。要留意 AI 對搜尋廣告收入嘅影響。",
-   "found": "2026-11-03 12:00"
-  },
-  {
-   "time": "2026-11-02 23:30",
-   "headline": "Tesla重上400美元 歐洲數據獲關注",
-   "source": "TradingKey",
-   "url": "https://www.tradingkey.com/news/market-movers/262264478-market-movers-tsla-20261102",
-   "summary": "Tesla升約3%，報道指歐洲10月註冊數據轉強，加上科技股反彈及市場憧憬Robotaxi。",
-   "level": "medium",
-   "scope": "stock",
-   "affects": [
-    {
-     "sym": "TSLA",
-     "dir": "up",
-     "why": "第四季交付預期改善，但報道未列具體數字，原因未算確定。"
-    }
-   ],
-   "takeaway": "股價仍低過52週高位，估值靠自動駕駛憧憬，可留意監管同12月3日股東會。",
-   "found": "2026-11-03 01:00"
   }
  ]
 }

@@ -1,5 +1,5 @@
 {
- "generated": "2026-11-05T18:00+08:00",
+ "generated": "2026-11-05T22:30+08:00",
  "holdings": [
   "TSM",
   "TSLA",
@@ -11,9 +11,83 @@
   "NVDA"
  ],
  "claude_ok": true,
- "claude_at": "2026-11-05T18:00+08:00",
- "summary": "選後美股大升之後，亞洲晶片股今日大跌：韓股跌5%、台股跌3.2%。今晚美股期貨偏弱，納指期貨跌得多過道指。市場擔心民主黨控制國會之後會收緊AI數據中心，所以你持有嘅NVDA、TSM最受壓，GOOG、VOO相對穩陣。今晚有失業救濟金數據，聽日公布非農就業。",
+ "claude_at": "2026-11-05T22:30+08:00",
+ "summary": "選後市場分兩邊：大型科技股受追捧，晶片同數據中心股就因為民主黨可能限制建數據中心而再被沽，NVDA、TSM 今晚盤前續弱。今晚初領失業救濟金跌至 189K，就業仲好強，聽日非農就業數據會影響債息。你持有好多晶片股，短期波動會大啲。",
  "items": [
+  {
+   "time": "2026-11-05 21:30",
+   "headline": "初領失業救濟金跌至18.9萬 遠好過預期",
+   "source": "FXStreet",
+   "url": "https://www.fxstreet.com/news/us-initial-jobless-claims-dropped-to-189k-last-week-202611051334",
+   "summary": "截至10月31日嗰星期，初領失業救濟金得18.9萬人，預期係19.6萬，追平1969年以嚟最低。四星期平均跌至19.475萬。",
+   "level": "high",
+   "scope": "market",
+   "affects": [
+    {
+     "sym": "QQQ",
+     "dir": "mixed",
+     "why": "就業強代表經濟穩陣，但聯儲局減少理由減息，債息有機會反彈"
+    },
+    {
+     "sym": "VOO",
+     "dir": "mixed",
+     "why": "經濟數據好對盈利有利，但12月加息預期可能會再升"
+    }
+   ],
+   "takeaway": "聽日（周五）非農就業數據更重要，留意債息有冇再升",
+   "found": "2026-11-05 22:30"
+  },
+  {
+   "time": "2026-11-05 20:30",
+   "headline": "Nvidia盤前跌穿200美元 跌穿200日線",
+   "source": "Benzinga",
+   "url": "https://www.benzinga.com/trading-ideas/movers/26/11/62915715/what-is-going-on-with-nvidia-stock-on-thursday",
+   "summary": "選後資金繼續撤出AI晶片股，Nvidia盤前跌1.8%至196.5美元，低過20日、50日同200日平均線。11月17日公布業績。",
+   "level": "high",
+   "scope": "stock",
+   "affects": [
+    {
+     "sym": "NVDA",
+     "dir": "down",
+     "why": "資金因為擔心數據中心受限制而沽晶片股，技術上跌穿長期趨勢線"
+    },
+    {
+     "sym": "QQQ",
+     "dir": "down",
+     "why": "Nvidia係納指最大成分股之一"
+    },
+    {
+     "sym": "QQQM",
+     "dir": "down",
+     "why": "同QQQ一樣追蹤納指100"
+    }
+   ],
+   "takeaway": "11月17日業績係下一個關鍵，之前股價可能大上大落",
+   "found": "2026-11-05 22:30"
+  },
+  {
+   "time": "2026-11-05 18:00",
+   "headline": "標普期貨持平 晶片股弱拖低納指期貨",
+   "source": "Reuters / Investing.com",
+   "url": "https://za.investing.com/news/stock-market-news/sp-500-futures-steady-after-midterm-rally-nasdaq-lags-on-chip-weakness-4553536",
+   "summary": "選後大升市之後，道指期貨升約0.5%，標普期貨差唔多冇郁，納指100期貨跌約0.6%，因為晶片同數據中心股再被沽。",
+   "level": "medium",
+   "scope": "market",
+   "affects": [
+    {
+     "sym": "QQQ",
+     "dir": "down",
+     "why": "晶片股佔比高，跑輸大市"
+    },
+    {
+     "sym": "VOO",
+     "dir": "mixed",
+     "why": "傳統行業撐住，科技股拖累，整體接近持平"
+    }
+   ],
+   "takeaway": "資金由晶片轉去其他行業，唔係全面沽貨，唔使太驚",
+   "found": "2026-11-05 22:30"
+  },
   {
    "time": "2026-11-05 17:00",
    "headline": "美股期貨個別發展 納指期貨跌約1%",
@@ -41,6 +115,24 @@
    ],
    "takeaway": "大升之後回吐好平常，留意今晚就業數據會唔會令加息預期再升。",
    "found": "2026-11-05 18:00"
+  },
+  {
+   "time": "2026-11-05 16:00",
+   "headline": "Alphabet反彈後試300美元關口",
+   "source": "FX Leaders",
+   "url": "https://www.fxleaders.com/news/2026/11/05/googl-goog-tests-300-ceiling-following-post-election-surge/",
+   "summary": "大型雲端股選後一齊升，Alphabet周三最多升5.9%，收市升約3.2%，而家試緊300美元阻力，不過仲遠低過50日線（約336美元）。",
+   "level": "medium",
+   "scope": "stock",
+   "affects": [
+    {
+     "sym": "GOOG",
+     "dir": "mixed",
+     "why": "選後資金追大型科技股，但業績後擔心資本開支同現金流嘅問題仲未消除"
+    }
+   ],
+   "takeaway": "一日反彈未代表趨勢扭轉，睇下企唔企得穩300美元",
+   "found": "2026-11-05 22:30"
   },
   {
    "time": "2026-11-05 14:30",
@@ -87,6 +179,29 @@
    ],
    "takeaway": "台積電比大市抗跌係好事，不過要睇外資會唔會繼續沽。",
    "found": "2026-11-05 18:00"
+  },
+  {
+   "time": "2026-11-05 12:00",
+   "headline": "美元同十年債息跌至近兩個月低位",
+   "source": "Reuters / Investing.com",
+   "url": "https://ca.investing.com/news/forex-news/dollar-slides-as-us-election-drives-oil-and-treasury-yields-lower-sterling-gains-4932934",
+   "summary": "美元指數跌至101.25，係9月30日以嚟最低；十年債息再跌至約4.85%，係9月10日以嚟最低；布蘭特油價跌穿100美元。",
+   "level": "medium",
+   "scope": "market",
+   "affects": [
+    {
+     "sym": "QQQ",
+     "dir": "up",
+     "why": "債息回落通常對高估值科技股有利"
+    },
+    {
+     "sym": "VOO",
+     "dir": "up",
+     "why": "油價同債息齊跌，有助舒緩通脹同借貸成本"
+    }
+   ],
+   "takeaway": "如果聽日非農就業太強，債息可能好快升返上去",
+   "found": "2026-11-05 22:30"
   },
   {
    "time": "2026-11-05 12:00",
@@ -171,22 +286,27 @@
    "found": "2026-11-05 12:00"
   },
   {
-   "time": "2026-11-05 06:20",
-   "headline": "Oracle收跌近2% 200億美元集資完成增攤薄",
-   "source": "The Motley Fool",
-   "url": "https://www.fool.com/coverage/stock-market-today/2026/11/04/stock-market-today-nov-4-oracle-falls-on-canceled-7-billion-tencent-chip-leasing-deal/",
-   "summary": "Oracle收市報123.77美元，跌1.92%，貼近52週低位。除咗騰訊晶片租約告吹，佢約200億美元嘅股票加債券集資同日完成交收；據報新股以116美元發行，較之前收市價有一成一折讓。",
-   "level": "high",
-   "scope": "stock",
+   "time": "2026-11-05 05:30",
+   "headline": "晶片股一個月蒸發3.7萬億美元 分析師睇法分歧",
+   "source": "Yahoo Finance",
+   "url": "https://finance.yahoo.com/markets/stocks/article/nvidia-stock-trims-losses-as-chip-sell-off-eases-amid-ai-financing-concerns-203300012.html",
+   "summary": "費城半導體指數周三跌3.13%，晶片同記憶體股自10月6日起累計蒸發約3.7萬億美元。Dan Ives話仲可能再跌10-12%，Tom Lee就話係反應過敏。",
+   "level": "medium",
+   "scope": "sector",
    "affects": [
     {
-     "sym": "ORCL",
+     "sym": "NVDA",
      "dir": "down",
-     "why": "發新股攤薄每股盈利，發新債又要付高息，加上少咗騰訊呢筆大生意"
+     "why": "晶片股龍頭，最受資金撤走影響"
+    },
+    {
+     "sym": "TSM",
+     "dir": "down",
+     "why": "台積電ADR跌2.24%至395.75美元，跌穿400美元"
     }
    ],
-   "takeaway": "新股發行價116美元可能成為市場參考位，可以留意股價會唔會跌近呢個位。",
-   "found": "2026-11-05 12:00"
+   "takeaway": "專家睇法唔一致，代表波動會持續，記住你晶片股佔比唔少",
+   "found": "2026-11-05 22:30"
   },
   {
    "time": "2026-11-05 05:30",
@@ -243,6 +363,24 @@
    ],
    "takeaway": "今晚晶片股開市可能再受壓，留意台積電會唔會跟住跌。",
    "found": "2026-11-05 08:00"
+  },
+  {
+   "time": "2026-11-05 05:00",
+   "headline": "Oracle取消同騰訊70億美元晶片租賃合約",
+   "source": "The Motley Fool",
+   "url": "https://www.fool.com/coverage/stock-market-today/2026/11/04/stock-market-today-nov-4-oracle-falls-on-canceled-7-billion-tencent-chip-leasing-deal/",
+   "summary": "《金融時報》報道，美國官員表示關注之後，Oracle取消租10萬粒晶片俾騰訊、為期五年嘅70億美元合約。股價收123.77美元，一星期跌約14%。",
+   "level": "high",
+   "scope": "stock",
+   "affects": [
+    {
+     "sym": "ORCL",
+     "dir": "down",
+     "why": "少咗一張大單，加上啱啱集資200億美元，市場擔心回報"
+    }
+   ],
+   "takeaway": "股價貼近52周低位，留意下次業績講雲端訂單有冇受影響",
+   "found": "2026-11-05 22:30"
   },
   {
    "time": "2026-11-05 05:00",
@@ -394,6 +532,39 @@
   },
   {
    "time": "2026-11-05 02:00",
+   "headline": "德州新州長主張暫停建數據中心 AI基建股急跌",
+   "source": "CNBC",
+   "url": "https://www.cnbc.com/2026/11/04/ai-stocks-texas-governor-data-centers.html",
+   "summary": "民主黨Hinojosa贏咗德州州長，佢主張暫停批新數據中心；德州佔全美計劃容量約27%。數據中心建商跌17-23%，亞馬遜、微軟就升5-7%。",
+   "level": "high",
+   "scope": "sector",
+   "affects": [
+    {
+     "sym": "NVDA",
+     "dir": "down",
+     "why": "如果數據中心建慢咗，AI晶片需求增長可能會放慢"
+    },
+    {
+     "sym": "TSM",
+     "dir": "down",
+     "why": "幫Nvidia等公司代工AI晶片，同樣受拖累"
+    },
+    {
+     "sym": "ORCL",
+     "dir": "down",
+     "why": "大舉借錢建數據中心，政策風險直接影響佢"
+    },
+    {
+     "sym": "GOOG",
+     "dir": "mixed",
+     "why": "大型科技股選後反而被追捧，但長遠建數據中心可能有阻力"
+    }
+   ],
+   "takeaway": "佢仲未上任，亦未有禁令通過，留意之後實際政策點落實",
+   "found": "2026-11-05 22:30"
+  },
+  {
+   "time": "2026-11-05 02:00",
    "headline": "41項數據中心公投 幾乎全部被否決",
    "source": "CNBC",
    "url": "https://www.cnbc.com/2026/11/04/data-center-ballot-measures-2026-midterm.html",
@@ -419,6 +590,24 @@
    ],
    "takeaway": "多數公投冇法律約束力，但反映政治風險上升，要留意後續立法",
    "found": "2026-11-05 04:45"
+  },
+  {
+   "time": "2026-11-05 01:59",
+   "headline": "參議員揚言傳召 Musk公司或面對國會調查",
+   "source": "Yahoo Finance",
+   "url": "https://finance.yahoo.com/markets/stocks/articles/elon-musk-tesla-spacex-stocks-175945579.html",
+   "summary": "民主黨控制國會之後，有參議員警告會向Musk發「傳票」，自動駕駛、政府合約同選舉捐款都可能被查。Tesla同SpaceX市值合共蒸發約1,300億美元。",
+   "level": "medium",
+   "scope": "stock",
+   "affects": [
+    {
+     "sym": "TSLA",
+     "dir": "down",
+     "why": "監管同調查風險升，SpaceX合併計劃可能被拖慢"
+    }
+   ],
+   "takeaway": "政治新聞短期影響情緒，留意之後國會有冇真係開聆訊",
+   "found": "2026-11-05 22:30"
   },
   {
    "time": "2026-11-05 01:00",
@@ -483,24 +672,6 @@
    ],
    "takeaway": "合併仲未有確定條款，唔好單靠傳聞判斷，等官方公布。",
    "found": "2026-11-05 01:00"
-  },
-  {
-   "time": "2026-11-05 00:00",
-   "headline": "Musk選舉投入逾4.7億美元 德州兩場敗選",
-   "source": "Yahoo Finance / Bloomberg",
-   "url": "https://finance.yahoo.com/markets/stocks/articles/elon-musk-tesla-spacex-stocks-175945579.html",
-   "summary": "Musk為共和黨投入至少4.7億美元，其中約2.2億美元喺德州，但佢支持嘅德州參議員同州長候選人都輸咗。Tesla開市一度跌超過5%，收市跌約3.3%，Musk身家少咗逾600億美元。",
-   "level": "medium",
-   "scope": "stock",
-   "affects": [
-    {
-     "sym": "TSLA",
-     "dir": "down",
-     "why": "政治風險加大，Tesla同SpaceX合併計劃可能被國會調查"
-    }
-   ],
-   "takeaway": "Tesla股價受Musk個人政治影響好大，留意國會會唔會真係傳召佢。",
-   "found": "2026-11-05 18:00"
   },
   {
    "time": "2026-11-05 00:00",
@@ -772,167 +943,6 @@
    ],
    "takeaway": "你揸TSLA嘅話，短線可能要捱政治消息帶嚟嘅震盪，留意國會之後有冇針對Musk嘅行動。",
    "found": "2026-11-04 22:30"
-  },
-  {
-   "time": "2026-11-04 19:30",
-   "headline": "Oracle取消騰訊70億美元晶片租約 盤前跌",
-   "source": "Financial Times／Reuters",
-   "url": "https://www.investing.com/news/stock-market-news/oracle-cancels-7-bln-chip-leasing-deal-with-tencent-ft-reports-4997349",
-   "summary": "據FT報道，美國官員表示關注之後，Oracle取消咗同騰訊一份五年、約70億美元嘅AI晶片租約，涉及最多10萬粒晶片。Oracle盤前跌約3-4%。路透話暫時未能獨立核實。",
-   "level": "high",
-   "scope": "stock",
-   "affects": [
-    {
-     "sym": "ORCL",
-     "dir": "down",
-     "why": "少咗一張大單，而且啱啱集資200億美元，市場擔心收入"
-    },
-    {
-     "sym": "NVDA",
-     "dir": "mixed",
-     "why": "中國客經海外雲端用晶片嘅路愈收愈窄"
-    }
-   ],
-   "takeaway": "你揸ORCL嘅話，今晚可能要面對波動，留意公司會唔會正式回應。",
-   "found": "2026-11-04 22:30"
-  },
-  {
-   "time": "2026-11-04 19:06",
-   "headline": "Trump認輸 民主黨贏得超出預期",
-   "source": "FXStreet",
-   "url": "https://www.fxstreet.com/analysis/trump-concedes-defeat-after-democrats-win-both-chambers-in-a-wave-beyond-every-forecast-202611041106",
-   "summary": "Trump承認共和黨輸咗參眾兩院，選舉結果冇爭議。市場覺得國會分裂會限制借貸同開支，所以美元轉弱、金價上升。",
-   "level": "medium",
-   "scope": "market",
-   "affects": [
-    {
-     "sym": "VOO",
-     "dir": "up",
-     "why": "政治不確定性消除，大市氣氛改善"
-    },
-    {
-     "sym": "TSLA",
-     "dir": "down",
-     "why": "Musk支持嘅共和黨失利，政策風向對佢不利"
-    }
-   ],
-   "takeaway": "選舉已經塵埃落定，之後焦點會返去利率同企業業績",
-   "found": "2026-11-05 04:45"
-  },
-  {
-   "time": "2026-11-04 18:00",
-   "headline": "Tesla傳與台積電再談Terafab合作",
-   "source": "ad-hoc-news",
-   "url": "https://www.ad-hoc-news.de/boerse/news/corporate-news/tsmc-stock-could-gain-wider-role-in-tesla-s-texas-terafab/70457386",
-   "summary": "報道指Tesla同台積電可能重新傾，等台積電喺德州Terafab晶片廠擔當更大角色。不過雙方對邊個話事仲有分歧，暫時未有協議。",
-   "level": "low",
-   "scope": "stock",
-   "affects": [
-    {
-     "sym": "TSLA",
-     "dir": "mixed",
-     "why": "有台積電技術可以加快自家晶片計劃，但要投資逾168億美元"
-    },
-    {
-     "sym": "TSM",
-     "dir": "mixed",
-     "why": "可能多一個客戶，但台積電堅持座廠要由佢營運"
-    }
-   ],
-   "takeaway": "目前只係傾緊，未有落實，唔使因為呢單新聞有太大反應。",
-   "found": "2026-11-05 18:00"
-  },
-  {
-   "time": "2026-11-04 18:00",
-   "headline": "傳台積電或主導Tesla德州Terafab晶片廠",
-   "source": "ad-hoc-news",
-   "url": "https://ad-hoc-news.de/boerse/news/corporate-news/tsmc-stock-could-gain-wider-role-in-tesla-s-texas-terafab/70457386",
-   "summary": "報道指 Musk 可能重開談判，由台積電主力興建同營運 Tesla 喺德州嘅晶片廠。投資條款同 Intel 嘅角色仍未定，目標 2027 年中試產。",
-   "level": "low",
-   "scope": "stock",
-   "affects": [
-    {
-     "sym": "TSM",
-     "dir": "mixed",
-     "why": "多一個大客戶，但要額外投資，條款未定"
-    },
-    {
-     "sym": "TSLA",
-     "dir": "mixed",
-     "why": "自家晶片供應有著落，但未正式簽約"
-    }
-   ],
-   "takeaway": "暫時只係報道，未正式簽約，唔使因為呢單新聞有太大反應。",
-   "found": "2026-11-05 08:00"
-  },
-  {
-   "time": "2026-11-04 18:00",
-   "headline": "布蘭特油跌至約94美元 近兩個月低位",
-   "source": "The National",
-   "url": "https://thenationalnews.com/business/energy/2026/11/04/brent-oil-slides-to-94-on-iran-uncertainty-after-us-midterms",
-   "summary": "有報道指Trump想喺選舉後畀同伊朗嘅外交多啲時間，所以油價繼續跌。不過伊朗最高領袖話，期望美國政策會轉向嘅人「大錯特錯」。",
-   "level": "medium",
-   "scope": "market",
-   "affects": [
-    {
-     "sym": "VOO",
-     "dir": "up",
-     "why": "油價跌可以減輕通脹壓力，對企業成本有利"
-    },
-    {
-     "sym": "QQQ",
-     "dir": "up",
-     "why": "通脹降溫會減輕加息壓力，對科技股有利"
-    }
-   ],
-   "takeaway": "中東局勢仍然反覆，油價可能突然急升，要留意",
-   "found": "2026-11-05 04:45"
-  },
-  {
-   "time": "2026-11-04 16:30",
-   "headline": "期指急跌後回穩 納指100期貨轉升",
-   "source": "Reuters（經 93.3 The Drive）",
-   "url": "https://www.933thedrive.com/2026/11/04/us-stock-index-futures-steady-as-democrats-seize-congress/",
-   "summary": "選舉結果出咗之後期指一度大跌，到香港下晝已經回穩，納指100 E-mini 期貨升約 0.26%。",
-   "level": "high",
-   "scope": "market",
-   "affects": [
-    {
-     "sym": "QQQ",
-     "dir": "mixed",
-     "why": "期貨由大跌轉為輕微升，市場情緒稍為穩定"
-    },
-    {
-     "sym": "NVDA",
-     "dir": "mixed",
-     "why": "AI 股跟住大市情緒上上落落"
-    }
-   ],
-   "takeaway": "期貨回穩唔代表今晚一定升，開市頭一個鐘可能會好反覆。",
-   "found": "2026-11-04 18:00"
-  },
-  {
-   "time": "2026-11-04 15:30",
-   "headline": "亞股收市回穩 台積電跌約1%",
-   "source": "CNBC",
-   "url": "https://cnbc.com/2026/11/03/stock-market-today-live-updates.html",
-   "summary": "韓股早段跌 4%、台股跌超過 3%，之後收復失地。Kospi 收市反而升 0.62%，台積電收跌約 1.09%。",
-   "level": "medium",
-   "scope": "sector",
-   "affects": [
-    {
-     "sym": "TSM",
-     "dir": "down",
-     "why": "台灣股市跌，但收市前跌幅明顯收窄"
-    },
-    {
-     "sym": "NVDA",
-     "dir": "mixed",
-     "why": "亞洲晶片股止跌，美股晶片股壓力可能會輕啲"
-    }
-   ],
-   "takeaway": "亞洲收市已經冇咁恐慌，TSM 今晚可能跟住亞洲收市嘅走勢。",
-   "found": "2026-11-04 18:00"
   }
  ]
 }

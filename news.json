@@ -1,5 +1,5 @@
 {
- "generated": "2026-11-06T01:00+08:00",
+ "generated": "2026-11-06T04:45+08:00",
  "holdings": [
   "TSM",
   "TSLA",
@@ -11,36 +11,146 @@
   "NVDA"
  ],
  "claude_ok": true,
- "claude_at": "2026-11-06T01:00+08:00",
- "summary": "美國中期選舉民主黨大勝，市場驚佢哋收緊AI數據中心興建，晶片同AI股急跌，納指盤中跌約5%，差唔多入咗調整區。Tesla受Musk政治同合併風險拖累跌近一成。你嘅持倉大部分係科技股，今日會跌得比大市深。今晚公布非農就業數據，要留意。",
+ "claude_at": "2026-11-06T04:45+08:00",
+ "summary": "中期選舉民主黨大勝，市場擔心數據中心建設會放慢，AI 同晶片股大跌。納指尾市跌超過5%，跌入調整區；費城半導體指數盤中跌近11%。你持有嘅 NVDA、TSM、ORCL、QQQ／QQQM 跌得最重，TSLA 就有政治風險。今晚（香港時間21:30）公布非農就業數據，會再影響市況。",
  "items": [
   {
-   "time": "2026-11-06 00:30",
-   "headline": "晶片股大跌 納指盤中跌5%逼近調整區",
-   "source": "Yahoo Finance",
-   "url": "https://finance.yahoo.com/markets/live/stock-market-today-thursday-november-5-dow-sp-500-nasdaq-oil-rises-chip-stocks-141439950.html",
-   "summary": "費城半導體指數盤中跌約8–11%，標普跌約3.3%，抹走咗前一日選後大升市嘅升幅。資金轉去必需消費、醫療、公用股避險。",
+   "time": "2026-11-06 04:30",
+   "headline": "選舉結果令AI交易崩盤 納指盤中跌5.7%",
+   "source": "CNN",
+   "url": "https://www.cnn.com/2026/11/05/investing/tech-heavy-nasdaq-plunges",
+   "summary": "民主黨贏咗國會兩院同埋德州、喬治亞州長選舉，投資者擔心數據中心建設放慢，納指盤中最多跌5.7%，Nvidia跌7%至9%。",
    "level": "high",
    "scope": "market",
    "affects": [
     {
      "sym": "QQQ",
      "dir": "down",
-     "why": "大型科技同晶片股佔比高，跌幅大過大市"
+     "why": "大型科技同晶片股佔比高，係今次跌市重災區"
     },
     {
      "sym": "QQQM",
      "dir": "down",
-     "why": "同QQQ追蹤同一個指數，走勢一樣"
+     "why": "同QQQ追蹤同一個納指100指數，走勢一樣"
     },
     {
      "sym": "VOO",
      "dir": "down",
-     "why": "Nvidia等科技股權重大，拖低標普"
+     "why": "標普500入面科技股比重大，一齊被拖低"
     }
    ],
-   "takeaway": "你嘅組合偏重科技，會跌多過大市；呢啲係盤中數字，等收市價先作準。",
-   "found": "2026-11-06 01:00"
+   "takeaway": "今次跌市主要係政策憂慮，唔係公司盈利轉差，留意之後幾日有冇企穩。",
+   "found": "2026-11-06 04:45"
+  },
+  {
+   "time": "2026-11-06 04:00",
+   "headline": "AI大屠殺：晶片股同neocloud暴跌 納指創逾一年半最差",
+   "source": "CNBC",
+   "url": "https://cnbc.com/2026/11/05/qualcomm-earnings-chip-stocks-election.html",
+   "summary": "費城半導體指數盤中跌近11%，晶片股市值蒸發約2萬億美元，AMD、Micron、Applied Materials都跌超過一成。",
+   "level": "high",
+   "scope": "sector",
+   "affects": [
+    {
+     "sym": "NVDA",
+     "dir": "down",
+     "why": "AI晶片龍頭，係市場拋售AI概念嘅首要目標"
+    },
+    {
+     "sym": "TSM",
+     "dir": "down",
+     "why": "幫Nvidia、AMD、Qualcomm代工，晶片需求憂慮直接打擊佢"
+    }
+   ],
+   "takeaway": "Nvidia稍後公布業績，會反映大客戶AI開支有冇放慢，係下一個關鍵。",
+   "found": "2026-11-06 04:45"
+  },
+  {
+   "time": "2026-11-06 03:00",
+   "headline": "Nasdaq跌4%進入調整區 抹走選後升幅",
+   "source": "Quartz",
+   "url": "https://qz.com/nasdaq-correction-ai-chip-stocks-midterms-selloff-110526",
+   "summary": "納指由高位累計跌超過10%，正式進入調整區，周三選後嘅升幅全部蒸發，道指一度跌超過1000點。",
+   "level": "medium",
+   "scope": "market",
+   "affects": [
+    {
+     "sym": "QQQ",
+     "dir": "down",
+     "why": "納指跌入調整區，代表短期跌勢明顯"
+    },
+    {
+     "sym": "VOO",
+     "dir": "down",
+     "why": "標普500同樣抹走選後升幅"
+    }
+   ],
+   "takeaway": "調整區喺歷史上幾常見，唔等於一定會變熊市，但短期波動會好大。",
+   "found": "2026-11-06 04:45"
+  },
+  {
+   "time": "2026-11-06 02:30",
+   "headline": "道指標普抹走選後升幅 油價同步上升",
+   "source": "Yahoo Finance",
+   "url": "https://finance.yahoo.com/markets/live/stock-market-today-thursday-november-5-dow-sp-500-nasdaq-oil-rises-chip-stocks-141439950.html",
+   "summary": "周四晶片股暴跌，道指同標普500抹走選舉後嘅升幅，油價就逆市上升。",
+   "level": "medium",
+   "scope": "market",
+   "affects": [
+    {
+     "sym": "VOO",
+     "dir": "down",
+     "why": "大市全面受壓，唔只係科技股"
+    },
+    {
+     "sym": "GOOG",
+     "dir": "mixed",
+     "why": "Alphabet比其他科技股抗跌，只跌約1.6%"
+    }
+   ],
+   "takeaway": "GOOG今次相對抗跌，因為佢主要靠廣告同雲端賺錢，唔似晶片股咁依賴AI建設。",
+   "found": "2026-11-06 04:45"
+  },
+  {
+   "time": "2026-11-06 02:00",
+   "headline": "民主黨贏國會後 數據中心股繼續下跌",
+   "source": "MarketScreener",
+   "url": "https://www.marketscreener.com/news/data-center-stocks-continue-to-fall-after-democrats-win-congress-ce785fdcd180f726",
+   "summary": "德州新州長Hinojosa主張暫停興建數據中心同取消稅務優惠，喬治亞新州長亦主張暫停，Oracle跌約7%至9%，CoreWeave跌超過一成。",
+   "level": "high",
+   "scope": "sector",
+   "affects": [
+    {
+     "sym": "ORCL",
+     "dir": "down",
+     "why": "Oracle大量興建AI數據中心，而且借咗好多錢，最受政策風險影響"
+    },
+    {
+     "sym": "NVDA",
+     "dir": "down",
+     "why": "數據中心少起，對AI晶片需求就會減少"
+    }
+   ],
+   "takeaway": "暫停令嘅範圍仲未清楚，留意兩位州長上任後實際推乜政策。",
+   "found": "2026-11-06 04:45"
+  },
+  {
+   "time": "2026-11-06 01:00",
+   "headline": "民主黨大勝 參議員揚言傳召Musk Tesla再受壓",
+   "source": "Yahoo Finance",
+   "url": "https://finance.yahoo.com/markets/stocks/articles/elon-musk-tesla-spacex-stocks-175945579.html",
+   "summary": "Musk喺選舉花咗逾4億美元撐共和黨，大部分候選人都輸。民主黨議員揚言會傳召佢，調查政府合約同DOGE。",
+   "level": "high",
+   "scope": "stock",
+   "affects": [
+    {
+     "sym": "TSLA",
+     "dir": "down",
+     "why": "政治調查、自動駕駛監管同Tesla-SpaceX合併都可能遇到阻力"
+    }
+   ],
+   "takeaway": "TSLA受政治新聞影響好大，今次又碰上科技股跌市，波幅會特別大。",
+   "found": "2026-11-06 04:45"
   },
   {
    "time": "2026-11-06 00:00",
@@ -151,6 +261,29 @@
    ],
    "takeaway": "Tesla主要係被政治消息推動，波幅會好大，要預咗會繼續大上大落。",
    "found": "2026-11-06 01:00"
+  },
+  {
+   "time": "2026-11-05 22:00",
+   "headline": "今晚非農：9月只增2.9萬職位 聯儲12月9日議息",
+   "source": "CalendarX",
+   "url": "https://www.calendarx.com/events/jobs-report-november-2026",
+   "summary": "10月非農就業數據今晚香港時間21:30公布。9月只增加2.9萬個職位，失業率4.2%，係聯儲局12月議息前最重要嘅數據之一。",
+   "level": "high",
+   "scope": "market",
+   "affects": [
+    {
+     "sym": "VOO",
+     "dir": "mixed",
+     "why": "數據太差會引發衰退憂慮，太好就會減低減息機會"
+    },
+    {
+     "sym": "QQQ",
+     "dir": "mixed",
+     "why": "科技股對利率預期好敏感"
+    }
+   ],
+   "takeaway": "今晚數據可能令市場再大上大落，唔使因為一晚嘅波動就慌。",
+   "found": "2026-11-06 04:45"
   },
   {
    "time": "2026-11-05 22:00",
@@ -525,6 +658,29 @@
   },
   {
    "time": "2026-11-05 05:30",
+   "headline": "Qualcomm業績輕微勝預期 但手機晶片疲弱股價急跌",
+   "source": "CNBC",
+   "url": "https://cnbc.com/2026/11/04/stocks-making-the-biggest-moves-after-hours-cohr-app-expe-more.html",
+   "summary": "Qualcomm第四季盈利稍為好過預期，但手機晶片銷售唔夠預期，盤後跌近6%，周四盤中最多跌13%。",
+   "level": "medium",
+   "scope": "sector",
+   "affects": [
+    {
+     "sym": "TSM",
+     "dir": "down",
+     "why": "Qualcomm係台積電大客戶，手機晶片需求弱會影響訂單"
+    },
+    {
+     "sym": "NVDA",
+     "dir": "mixed",
+     "why": "手機同AI晶片唔同市場，但會拖低成個晶片板塊嘅氣氛"
+    }
+   ],
+   "takeaway": "手機市場疲弱同AI無直接關係，但會加重晶片股嘅悲觀情緒。",
+   "found": "2026-11-06 04:45"
+  },
+  {
+   "time": "2026-11-05 05:30",
    "headline": "晶片股一個月蒸發3.7萬億美元 分析師睇法分歧",
    "source": "Yahoo Finance",
    "url": "https://finance.yahoo.com/markets/stocks/article/nvidia-stock-trims-losses-as-chip-sell-off-eases-amid-ai-financing-concerns-203300012.html",
@@ -572,34 +728,6 @@
     }
    ],
    "takeaway": "今次升市主要係傳統股同大型科技股帶動，同你持有嘅晶片股方向唔同。",
-   "found": "2026-11-05 08:00"
-  },
-  {
-   "time": "2026-11-05 05:15",
-   "headline": "Qualcomm、Arm業績勝預期 盤後仍跌最多約6%",
-   "source": "CNBC / investingLive",
-   "url": "https://cnbc.com/2026/11/04/stocks-making-the-biggest-moves-after-hours-cohr-app-expe-more.html",
-   "summary": "兩間公司今季盈利都好過預期，但下季指引一般。Qualcomm 手機晶片收入大跌約 26%，因為記憶體缺貨拖慢手機生產。盤後 Qualcomm 跌約 2–6%，Arm 跌約 2–5%。",
-   "level": "medium",
-   "scope": "sector",
-   "affects": [
-    {
-     "sym": "QCOM",
-     "dir": "down",
-     "why": "下季盈利指引中位數低過預期，手機業務轉弱"
-    },
-    {
-     "sym": "ARM",
-     "dir": "down",
-     "why": "指引只係略好過預期，授權收入指標輕微唔夠"
-    },
-    {
-     "sym": "TSM",
-     "dir": "mixed",
-     "why": "兩間都係台積電客戶，手機晶片需求轉弱，不過 AI 訂單仍然強"
-    }
-   ],
-   "takeaway": "今晚晶片股開市可能再受壓，留意台積電會唔會跟住跌。",
    "found": "2026-11-05 08:00"
   },
   {
@@ -800,139 +928,6 @@
    ],
    "takeaway": "佢仲未上任，亦未有禁令通過，留意之後實際政策點落實",
    "found": "2026-11-05 22:30"
-  },
-  {
-   "time": "2026-11-05 02:00",
-   "headline": "41項數據中心公投 幾乎全部被否決",
-   "source": "CNBC",
-   "url": "https://www.cnbc.com/2026/11/04/data-center-ballot-measures-2026-midterm.html",
-   "summary": "10個州有41項限制起數據中心嘅地方公投，除咗北達科他州一個地方，其餘選民全部站喺反對數據中心嗰邊。民主黨喺俄亥俄同德州都用過反數據中心做選舉議題。",
-   "level": "high",
-   "scope": "sector",
-   "affects": [
-    {
-     "sym": "NVDA",
-     "dir": "down",
-     "why": "數據中心起得慢，AI晶片需求增長可能減慢"
-    },
-    {
-     "sym": "TSM",
-     "dir": "down",
-     "why": "台積電代工AI晶片，同樣受數據中心建設進度影響"
-    },
-    {
-     "sym": "ORCL",
-     "dir": "down",
-     "why": "Oracle大舉興建AI數據中心，起地擴張可能更難"
-    }
-   ],
-   "takeaway": "多數公投冇法律約束力，但反映政治風險上升，要留意後續立法",
-   "found": "2026-11-05 04:45"
-  },
-  {
-   "time": "2026-11-05 01:59",
-   "headline": "參議員揚言傳召 Musk公司或面對國會調查",
-   "source": "Yahoo Finance",
-   "url": "https://finance.yahoo.com/markets/stocks/articles/elon-musk-tesla-spacex-stocks-175945579.html",
-   "summary": "民主黨控制國會之後，有參議員警告會向Musk發「傳票」，自動駕駛、政府合約同選舉捐款都可能被查。Tesla同SpaceX市值合共蒸發約1,300億美元。",
-   "level": "medium",
-   "scope": "stock",
-   "affects": [
-    {
-     "sym": "TSLA",
-     "dir": "down",
-     "why": "監管同調查風險升，SpaceX合併計劃可能被拖慢"
-    }
-   ],
-   "takeaway": "政治新聞短期影響情緒，留意之後國會有冇真係開聆訊",
-   "found": "2026-11-05 22:30"
-  },
-  {
-   "time": "2026-11-05 01:00",
-   "headline": "12月加息機會仍約八成 選舉冇改變預期",
-   "source": "Schwab",
-   "url": "https://www.schwab.com/learn/story/stock-market-update-open",
-   "summary": "CME FedWatch顯示，市場估12月加息0.25厘嘅機會約81%，選舉結果出咗之後都冇乜變。5年期債息曾跌9點子至4.68%。",
-   "level": "high",
-   "scope": "market",
-   "affects": [
-    {
-     "sym": "QQQ",
-     "dir": "down",
-     "why": "加息對估值高嘅科技股壓力較大"
-    },
-    {
-     "sym": "NVDA",
-     "dir": "down",
-     "why": "高增長股對利率特別敏感"
-    },
-    {
-     "sym": "VOO",
-     "dir": "mixed",
-     "why": "加息壓估值，但債息回落可以抵銷部分影響"
-    }
-   ],
-   "takeaway": "留意下次通脹數據同聯儲局官員講話，加息預期會左右科技股",
-   "found": "2026-11-05 04:45"
-  },
-  {
-   "time": "2026-11-05 00:30",
-   "headline": "Musk押注共和黨失利 Tesla收跌約3%",
-   "source": "GuruFocus",
-   "url": "https://www.gurufocus.com/news/9168799/spacex-and-tesla-stocks-falls-musk-faces-fresh-political-threat-from-democratic-wins",
-   "summary": "Musk捐咗至少4.74億美元支持共和黨，但佢支持嘅德州候選人落敗。市場擔心新國會調查Musk旗下公司同自動駕駛，Tesla與SpaceX合併嘅進度都可能受影響。",
-   "level": "high",
-   "scope": "stock",
-   "affects": [
-    {
-     "sym": "TSLA",
-     "dir": "down",
-     "why": "監管同政治風險上升，合併時間表變得唔明朗"
-    }
-   ],
-   "takeaway": "Tesla股價好受政治影響，要預咗波動會大，可以留意國會會唔會開聽證會。",
-   "found": "2026-11-05 01:00"
-  },
-  {
-   "time": "2026-11-05 00:30",
-   "headline": "Musk分拆合併或要趕喺新國會前完成",
-   "source": "Kuwait Times",
-   "url": "https://kuwaittimes.com/article/52263/business/musk-wants-to-merge-spacex-and-tesla/",
-   "summary": "Musk喺X回應民主黨計劃調查佢時話「玩火者終自焚」(Live by the sword, die by the sword)。有評論認為SpaceX同Tesla合併嘅時機可能因為選舉結果而改變。",
-   "level": "medium",
-   "scope": "stock",
-   "affects": [
-    {
-     "sym": "TSLA",
-     "dir": "mixed",
-     "why": "合併可能加快亦可能拖延，兩邊都有影響"
-    }
-   ],
-   "takeaway": "合併仲未有確定條款，唔好單靠傳聞判斷，等官方公布。",
-   "found": "2026-11-05 01:00"
-  },
-  {
-   "time": "2026-11-05 00:00",
-   "headline": "美油急跌逾7% 十年債息回落至4.9%",
-   "source": "CNBC",
-   "url": "https://cnbc.com/2026/11/03/treasury-yields-fall-as-democrats-win-big-in-us-midterm-elections.html",
-   "summary": "副總統Vance將共和黨落敗歸咎於伊朗戰爭，市場憧憬局勢降溫，美國原油跌逾7%。十年期債息跌約5點子至約4.92%。",
-   "level": "high",
-   "scope": "market",
-   "affects": [
-    {
-     "sym": "QQQ",
-     "dir": "up",
-     "why": "債息回落，對高估值科技股有利"
-    },
-    {
-     "sym": "VOO",
-     "dir": "up",
-     "why": "油價跌可以紓緩通脹同企業成本壓力"
-    }
-   ],
-   "takeaway": "油價同債息係今年通脹同加息嘅主要源頭，可以留意油價會唔會繼續回落。",
-   "found": "2026-11-05 01:00"
   }
  ]
 }

@@ -1,5 +1,5 @@
 {
- "generated": "2026-11-05T08:00+08:00",
+ "generated": "2026-11-05T12:00+08:00",
  "holdings": [
   "TSM",
   "TSLA",
@@ -11,9 +11,91 @@
   "NVDA"
  ],
  "claude_ok": true,
- "claude_at": "2026-11-05T08:00+08:00",
- "summary": "民主黨大勝後美股大升，道指創 2025 年 4 月以來最大單日升幅。不過資金走出 AI 晶片股，Nvidia 收市跌穿 200 日線，所以以科技股為主嘅 QQQ 升幅比標普細。Qualcomm、Arm 業績後盤後都跌，手機晶片需求轉弱。下一件大事係星期五晚嘅 10 月非農就業數據，會影響 12 月加息機會。",
+ "claude_at": "2026-11-05T12:00+08:00",
+ "summary": "民主黨橫掃國會之後，資金由 AI 基建股轉去其他股票：晶片股同 Musk 旗下公司受壓，大市就創今年最大升幅。今日台股早段一度跌超過一千點，但台積電跌得唔多。今晚有初領失業救濟金數據，聽日公布非農就業。市場估 12 月加息機會約八成，數據會影響債息同科技股估值。",
  "items": [
+  {
+   "time": "2026-11-05 10:00",
+   "headline": "台股盤中一度急跌逾千點 台積電抗跌",
+   "source": "鉅亨網",
+   "url": "https://news.cnyes.com/news/id/6647548",
+   "summary": "費半隔晚跌逾3%，台股今早一度跌穿42000點，最低去到41866點。記憶體、電路板、散熱等AI供應鏈股有幾隻觸及跌停，台積電就喺2250至2275元之間上落，同昨收差唔多。",
+   "level": "high",
+   "scope": "sector",
+   "affects": [
+    {
+     "sym": "TSM",
+     "dir": "mixed",
+     "why": "台股AI股急跌，但台積電本身抗跌，ADR今晚未必再跟住大跌"
+    },
+    {
+     "sym": "NVDA",
+     "dir": "down",
+     "why": "AI供應鏈遭拋售，反映市場仍然擔心AI硬件需求見頂"
+    }
+   ],
+   "takeaway": "今晚留意台積電ADR會唔會企穩。AI供應鏈股都跌，唔係台積電自己出事。",
+   "found": "2026-11-05 12:00"
+  },
+  {
+   "time": "2026-11-05 08:00",
+   "headline": "投信看好台積電年底反彈 目標價3200元",
+   "source": "壹蘋新聞網",
+   "url": "https://news.nextapple.com/finance/20261105/91AAAC86F4E4D5D7FD4EC83AD553C411",
+   "summary": "群益投信嘅蔡明彥認為，AI基本面冇變，台積電股價有機會升到3200元，又講台股年底有機會反彈，並分享佢點睇入市時機。",
+   "level": "low",
+   "scope": "stock",
+   "affects": [
+    {
+     "sym": "TSM",
+     "dir": "up",
+     "why": "有本地基金經理認為最近下跌係情緒問題，基本面冇變"
+    }
+   ],
+   "takeaway": "呢個係個別機構嘅睇法，唔代表一定升到目標價，聽聽就好。",
+   "found": "2026-11-05 12:00"
+  },
+  {
+   "time": "2026-11-05 07:00",
+   "headline": "今晚公布初領失業救濟金 周五非農就業",
+   "source": "Babypips",
+   "url": "https://babypips.com/news/daily-financial-forex-market-recap-2026-11-04",
+   "summary": "美國今晚8:30（香港時間晚上9:30）公布初領失業救濟金人數，同日有聯儲局官員講話，周五公布10月非農就業。早前ADP數字勝預期，ISM服務業指數略遜預期。",
+   "level": "high",
+   "scope": "market",
+   "affects": [
+    {
+     "sym": "QQQ",
+     "dir": "mixed",
+     "why": "就業數據太強，加息預期就會升溫，對高估值科技股唔利"
+    },
+    {
+     "sym": "VOO",
+     "dir": "mixed",
+     "why": "數據會影響12月加息機會同債息走勢"
+    }
+   ],
+   "takeaway": "今晚同周五數據公布嗰陣大市可能會大上大落，留意有冇數據大幅偏離預期。",
+   "found": "2026-11-05 12:00"
+  },
+  {
+   "time": "2026-11-05 06:20",
+   "headline": "Oracle收跌近2% 200億美元集資完成增攤薄",
+   "source": "The Motley Fool",
+   "url": "https://www.fool.com/coverage/stock-market-today/2026/11/04/stock-market-today-nov-4-oracle-falls-on-canceled-7-billion-tencent-chip-leasing-deal/",
+   "summary": "Oracle收市報123.77美元，跌1.92%，貼近52週低位。除咗騰訊晶片租約告吹，佢約200億美元嘅股票加債券集資同日完成交收；據報新股以116美元發行，較之前收市價有一成一折讓。",
+   "level": "high",
+   "scope": "stock",
+   "affects": [
+    {
+     "sym": "ORCL",
+     "dir": "down",
+     "why": "發新股攤薄每股盈利，發新債又要付高息，加上少咗騰訊呢筆大生意"
+    }
+   ],
+   "takeaway": "新股發行價116美元可能成為市場參考位，可以留意股價會唔會跌近呢個位。",
+   "found": "2026-11-05 12:00"
+  },
   {
    "time": "2026-11-05 05:30",
    "headline": "選後大升市收市：標普升1.6% 納指升1.4%",
@@ -143,6 +225,29 @@
    ],
    "takeaway": "今次跌係跟板塊走，唔係公司自己出事，可以留意佢點樣回應AI需求",
    "found": "2026-11-05 04:45"
+  },
+  {
+   "time": "2026-11-05 02:03",
+   "headline": "金價重上4000美元 選後美元同油價齊跌",
+   "source": "FXStreet",
+   "url": "https://www.fxstreet.com/news/gold-reclaims-4-000-as-us-midterm-sweep-sinks-usd-oil-plunges-202611041803",
+   "summary": "民主黨橫掃國會之後美元走弱，金價重上每安士4000美元，油價大跌。報道引述市場估計，12月加息0.25厘嘅機會約79%。",
+   "level": "medium",
+   "scope": "market",
+   "affects": [
+    {
+     "sym": "VOO",
+     "dir": "up",
+     "why": "油價回落，通脹壓力有機會減輕"
+    },
+    {
+     "sym": "QQQ",
+     "dir": "mixed",
+     "why": "美元弱有利海外收入多嘅科技股，但加息預期仍然偏高"
+    }
+   ],
+   "takeaway": "油價跌有助紓緩通脹，但加息預期仲未降，所以債息依然係科技股估值嘅主要壓力。",
+   "found": "2026-11-05 12:00"
   },
   {
    "time": "2026-11-05 02:00",
@@ -427,6 +532,29 @@
   },
   {
    "time": "2026-11-04 21:00",
+   "headline": "AMD業績同指引勝預期 2027年預計增長逾八成",
+   "source": "CNBC",
+   "url": "https://cnbc.com/2026/11/04/amd-earnings-analysts-ai-growth.html",
+   "summary": "AMD第三季收入134億美元，按年增長45%，數據中心收入差唔多翻倍。第四季指引約170億美元，高過預期；管理層預計2027年收入增長超過八成。摩根大通將目標價升至575美元。",
+   "level": "medium",
+   "scope": "sector",
+   "affects": [
+    {
+     "sym": "TSM",
+     "dir": "up",
+     "why": "AMD晶片由台積電代工，AMD睇好需求即係台積電訂單有支持"
+    },
+    {
+     "sym": "NVDA",
+     "dir": "mixed",
+     "why": "證明AI晶片需求仍然強勁，但AMD同Nvidia係直接對手"
+    }
+   ],
+   "takeaway": "AI晶片需求數字仲係好，最近晶片股下跌主要係市場情緒問題。",
+   "found": "2026-11-05 12:00"
+  },
+  {
+   "time": "2026-11-04 21:00",
    "headline": "Nvidia距10月高位仍跌逾一成半 17日公布業績",
    "source": "Investing.com",
    "url": "https://www.investing.com/news/stock-market-news/ai-sector-outlook-darkens-as-democrat-wins-threaten-900b-capex-cycle-93CH-4998267",
@@ -475,6 +603,24 @@
    ],
    "takeaway": "暫時只係市場擔心，未有實際政策出台，你可以留意國會之後有冇提出新法案。",
    "found": "2026-11-04 22:30"
+  },
+  {
+   "time": "2026-11-04 20:00",
+   "headline": "德州政權易手 Tesla業務審批或添阻力",
+   "source": "NPR",
+   "url": "https://npr.org/2026/11/04/nx-s1-6029650/elon-musk-midterms-democrats-texas-congress",
+   "summary": "Musk支持嘅候選人喺德州參議員同州長選舉落敗。民主黨預計會調查Musk旗下公司拎到嘅政府合約同佢喺DOGE嘅角色。Tesla同SpaceX嘅總部同主要業務都喺德州。",
+   "level": "medium",
+   "scope": "stock",
+   "affects": [
+    {
+     "sym": "TSLA",
+     "dir": "down",
+     "why": "自動駕駛同儲能嘅審批，以及Tesla同SpaceX合併，都可能被聆訊拖慢"
+    }
+   ],
+   "takeaway": "政治風險可能拖一段時間，股價可能會繼續因新聞上落，留意國會調查嘅進展。",
+   "found": "2026-11-05 12:00"
   },
   {
    "time": "2026-11-04 20:00",
@@ -796,172 +942,6 @@
     }
    ],
    "takeaway": "唔使因為一晚嘅選舉波動就驚，長線持有就睇返基本面。",
-   "found": "2026-11-04 18:00"
-  },
-  {
-   "time": "2026-11-04 10:00",
-   "headline": "民主黨大勝機會升 納指期貨跌近2%",
-   "source": "Yahoo Finance / Benzinga",
-   "url": "https://finance.yahoo.com/markets/stocks/articles/dow-p-500-nasdaq-futures-030931252.html",
-   "summary": "隔夜交易時段納指100期貨一度跌近 2%，標普期貨跌約 0.5%。Nvidia 夜盤跌約 1.5%，AI 相關股受壓最大。",
-   "level": "high",
-   "scope": "market",
-   "affects": [
-    {
-     "sym": "NVDA",
-     "dir": "down",
-     "why": "市場擔心數據中心會被收緊限制，昨日升 2.3% 嘅升幅可能蝕返"
-    },
-    {
-     "sym": "QQQ",
-     "dir": "down",
-     "why": "期貨顯示納指100 開市可能偏低"
-    },
-    {
-     "sym": "QQQM",
-     "dir": "down",
-     "why": "同 QQQ 追蹤同一個指數"
-    },
-    {
-     "sym": "ORCL",
-     "dir": "down",
-     "why": "AI 基建概念股，受 AI 拋售拖累"
-    }
-   ],
-   "takeaway": "夜盤成交量少，郁動可以好誇張，要等今晚正式開市先睇清楚。",
-   "found": "2026-11-04 12:00"
-  },
-  {
-   "time": "2026-11-04 06:00",
-   "headline": "Oracle 集資今日交收 Stephens 升評級",
-   "source": "TIKR / Tradingpedia",
-   "url": "https://www.tikr.com/blog/oracle-rebounds-5-as-20-billion-raise-prices-baird-says-its-exactly-what-they-previewed",
-   "summary": "Oracle 以每股 116 美元發新股，另發 100 億美元債券（息率 7%–8.65%），今日交收。Stephens 升至「增持」，目標價 213 美元。",
-   "level": "medium",
-   "scope": "stock",
-   "affects": [
-    {
-     "sym": "ORCL",
-     "dir": "mixed",
-     "why": "集資完成消除咗不確定性，但大摩警告信貸評級可能被降至低 BBB 級"
-    }
-   ],
-   "takeaway": "Oracle 欠債多，息口高，留意佢嘅信貸評級有冇變。",
-   "found": "2026-11-04 12:00"
-  },
-  {
-   "time": "2026-11-04 05:15",
-   "headline": "AMD 業績勝預期 數據中心收入近翻倍 盤後升約 8%",
-   "source": "CNBC",
-   "url": "https://www.cnbc.com/2026/11/03/amd-amd-q3-earnings-report-2026-.html",
-   "summary": "AMD 第三季收入 133.8 億美元，按年升約 45%，數據中心收入創新高 85.5 億美元。第四季指引約 170 億美元，高過預期，盤後升 7–8%。",
-   "level": "high",
-   "scope": "sector",
-   "affects": [
-    {
-     "sym": "NVDA",
-     "dir": "up",
-     "why": "AI 晶片需求依然強勁，可以減輕市場對 AI 開支放慢嘅擔心"
-    },
-    {
-     "sym": "TSM",
-     "dir": "up",
-     "why": "AMD 晶片主要由台積電代工，訂單前景受惠"
-    },
-    {
-     "sym": "QQQ",
-     "dir": "up",
-     "why": "晶片股係納指100 重要成分，帶動指數情緒"
-    }
-   ],
-   "takeaway": "上星期晶片股大跌嘅恐慌有所緩和，不過今晚開市先知道升勢會唔會持續。",
-   "found": "2026-11-04 08:00"
-  },
-  {
-   "time": "2026-11-04 05:10",
-   "headline": "Super Micro 收入大增近四倍 上調全年指引 盤後升",
-   "source": "CNBC",
-   "url": "https://cnbc.com/2026/11/03/stocks-making-the-biggest-moves-after-hours-anet-amd-smci-swks.html",
-   "summary": "AI 伺服器商 Super Micro 季度收入約 199 億美元，全年指引 720–820 億美元，高過預期，盤後升 6–9%。不過毛利率下跌，現金流亦流出。",
-   "level": "medium",
-   "scope": "sector",
-   "affects": [
-    {
-     "sym": "NVDA",
-     "dir": "up",
-     "why": "Super Micro 嘅伺服器大量用 Nvidia GPU，收入大增反映 GPU 需求仲好強"
-    }
-   ],
-   "takeaway": "AI 伺服器需求仲好旺，但硬件商利潤偏薄，可以留意下個月 Nvidia 業績嘅毛利。",
-   "found": "2026-11-04 08:00"
-  },
-  {
-   "time": "2026-11-04 05:05",
-   "headline": "AMD季績收入134億美元 數據中心按年增97%",
-   "source": "AMD（SEC 文件）",
-   "url": "https://www.sec.gov/Archives/edgar/data/0000002488/000000248826000188/q32026991.htm",
-   "summary": "AMD 第三季收入 134 億美元，高過公司自己預測嘅上限；數據中心收入按年增 97%。管理層話第四季增長會再加快，但股價冇乜反應。",
-   "level": "medium",
-   "scope": "sector",
-   "affects": [
-    {
-     "sym": "TSM",
-     "dir": "up",
-     "why": "AMD 嘅 GPU 同 CPU 都由台積電代工，需求強對佢有利"
-    },
-    {
-     "sym": "NVDA",
-     "dir": "mixed",
-     "why": "證明 AI 需求仍然強，但 AMD 搶緊市場份額"
-    }
-   ],
-   "takeaway": "AI 晶片需求數據仍然好，近排晶片股跌主要係擔心估值同政策。",
-   "found": "2026-11-05 08:00"
-  },
-  {
-   "time": "2026-11-04 05:00",
-   "headline": "十年債息升至4.96% 油價隨伊朗消息大上大落",
-   "source": "NBC News",
-   "url": "https://www.nbcnews.com/business/markets/bond-yields-oil-treasury-buyback-bessent-rcna599604",
-   "summary": "選舉加上伊朗局勢嘅不確定性，令十年期美債息星期二升超過6點子至4.96%。美國空襲伊朗格什姆島之後油價一度急升，但有和談消息時又急跌。",
-   "level": "medium",
-   "scope": "market",
-   "affects": [
-    {
-     "sym": "QQQ",
-     "dir": "down",
-     "why": "高息壓低高估值科技股嘅吸引力"
-    },
-    {
-     "sym": "VOO",
-     "dir": "mixed",
-     "why": "油價同息口可能推高通脹壓力"
-    }
-   ],
-   "takeaway": "如果債息升穿5%，你嘅科技股可能會更波動，可以留意中東和談嘅進展。",
-   "found": "2026-11-04 22:30"
-  },
-  {
-   "time": "2026-11-04 05:00",
-   "headline": "Nvidia 超越 Apple 成全球市值最大",
-   "source": "Benzinga",
-   "url": "https://benzinga.com/markets/equities/26/11/62832505/stock-market-today-nvidia-overtakes-apple-chip-rally-nasdaq-jolts-yields",
-   "summary": "週二晶片股反彈，Nvidia 升 2.9% 至約 208 美元；Apple 因毛利警告下跌，Nvidia 重新成為全球市值最大公司。",
-   "level": "medium",
-   "scope": "stock",
-   "affects": [
-    {
-     "sym": "NVDA",
-     "dir": "up",
-     "why": "反彈企返 200 美元以上，市值登頂"
-    },
-    {
-     "sym": "QQQ",
-     "dir": "mixed",
-     "why": "Nvidia 升但 Apple 跌，兩隻都係大比重成分股"
-    }
-   ],
-   "takeaway": "Nvidia 11 月 17 日放榜，業績前股價波動可能會大啲。",
    "found": "2026-11-04 18:00"
   }
  ]

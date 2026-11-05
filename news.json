@@ -1,5 +1,5 @@
 {
- "generated": "2026-11-05T04:45+08:00",
+ "generated": "2026-11-05T08:00+08:00",
  "holdings": [
   "TSM",
   "TSLA",
@@ -11,9 +11,93 @@
   "NVDA"
  ],
  "claude_ok": true,
- "claude_at": "2026-11-05T04:45+08:00",
- "summary": "民主黨橫掃國會之後美股大升，道指升近3%，但資金由AI基建股轉去大型科技股，所以你嘅NVDA、TSM同TSLA跌、GOOG升。市場仍然估12月聯儲局有約八成機會加息，加上多個地方投票反對起數據中心，AI晶片股短期可能仲會比較波動。",
+ "claude_at": "2026-11-05T08:00+08:00",
+ "summary": "民主黨大勝後美股大升，道指創 2025 年 4 月以來最大單日升幅。不過資金走出 AI 晶片股，Nvidia 收市跌穿 200 日線，所以以科技股為主嘅 QQQ 升幅比標普細。Qualcomm、Arm 業績後盤後都跌，手機晶片需求轉弱。下一件大事係星期五晚嘅 10 月非農就業數據，會影響 12 月加息機會。",
  "items": [
+  {
+   "time": "2026-11-05 05:30",
+   "headline": "選後大升市收市：標普升1.6% 納指升1.4%",
+   "source": "TheStreet",
+   "url": "https://www.thestreet.com/stock-market-today/stock-market-today-dow-jones-sp-500-nasdaq-updates-nov-04-2026",
+   "summary": "道指升 1,569 點（約 3%），收 53,356 點。標普 500 升 1.58%，收 7,688 點；納指升 1.44%。油價急跌，Amazon、Microsoft、Apple 都升，Nvidia 就跌。",
+   "level": "medium",
+   "scope": "market",
+   "affects": [
+    {
+     "sym": "VOO",
+     "dir": "up",
+     "why": "標普 500 全面上升，傳統行業同大型股都受惠"
+    },
+    {
+     "sym": "QQQM",
+     "dir": "up",
+     "why": "大型科技股升，但晶片股拖低咗升幅"
+    },
+    {
+     "sym": "QQQ",
+     "dir": "up",
+     "why": "同 QQQM 一樣，升約 1%，少過標普"
+    }
+   ],
+   "takeaway": "今次升市主要係傳統股同大型科技股帶動，同你持有嘅晶片股方向唔同。",
+   "found": "2026-11-05 08:00"
+  },
+  {
+   "time": "2026-11-05 05:15",
+   "headline": "Qualcomm、Arm業績勝預期 盤後仍跌最多約6%",
+   "source": "CNBC / investingLive",
+   "url": "https://cnbc.com/2026/11/04/stocks-making-the-biggest-moves-after-hours-cohr-app-expe-more.html",
+   "summary": "兩間公司今季盈利都好過預期，但下季指引一般。Qualcomm 手機晶片收入大跌約 26%，因為記憶體缺貨拖慢手機生產。盤後 Qualcomm 跌約 2–6%，Arm 跌約 2–5%。",
+   "level": "medium",
+   "scope": "sector",
+   "affects": [
+    {
+     "sym": "QCOM",
+     "dir": "down",
+     "why": "下季盈利指引中位數低過預期，手機業務轉弱"
+    },
+    {
+     "sym": "ARM",
+     "dir": "down",
+     "why": "指引只係略好過預期，授權收入指標輕微唔夠"
+    },
+    {
+     "sym": "TSM",
+     "dir": "mixed",
+     "why": "兩間都係台積電客戶，手機晶片需求轉弱，不過 AI 訂單仍然強"
+    }
+   ],
+   "takeaway": "今晚晶片股開市可能再受壓，留意台積電會唔會跟住跌。",
+   "found": "2026-11-05 08:00"
+  },
+  {
+   "time": "2026-11-05 05:00",
+   "headline": "Nvidia逆市跌3%收穿200日線 晶片股拖低納指",
+   "source": "Invezz / MarketBeat",
+   "url": "https://invezz.com/news/2026/11/04/why-is-nvidia-stock-falling-while-broader-markets-rally-on-democratic-midterm-win/",
+   "summary": "大市大升，Nvidia 反而跌約 3.2%，收市約 200 美元。原因係晶片股被沽、市場擔心德州同俄亥俄州數據中心審批出事，加上 AMD 業績好都冇帶動同業。",
+   "level": "high",
+   "scope": "stock",
+   "affects": [
+    {
+     "sym": "NVDA",
+     "dir": "down",
+     "why": "跌穿 200 日線，技術上轉弱，賣壓未見停"
+    },
+    {
+     "sym": "TSM",
+     "dir": "down",
+     "why": "AI 晶片股一齊被沽，台積電同步受壓"
+    },
+    {
+     "sym": "QQQ",
+     "dir": "mixed",
+     "why": "大型科技股升，晶片股跌，所以升幅比標普細"
+    }
+   ],
+   "takeaway": "Nvidia 11 月 17 日公布業績，之前可能仍然波動，留意 200 美元附近守唔守得住。",
+   "found": "2026-11-05 08:00"
+  },
   {
    "time": "2026-11-05 04:30",
    "headline": "道指升近3% 標普升1.75% 選後大升市",
@@ -481,6 +565,29 @@
   },
   {
    "time": "2026-11-04 18:00",
+   "headline": "傳台積電或主導Tesla德州Terafab晶片廠",
+   "source": "ad-hoc-news",
+   "url": "https://ad-hoc-news.de/boerse/news/corporate-news/tsmc-stock-could-gain-wider-role-in-tesla-s-texas-terafab/70457386",
+   "summary": "報道指 Musk 可能重開談判，由台積電主力興建同營運 Tesla 喺德州嘅晶片廠。投資條款同 Intel 嘅角色仍未定，目標 2027 年中試產。",
+   "level": "low",
+   "scope": "stock",
+   "affects": [
+    {
+     "sym": "TSM",
+     "dir": "mixed",
+     "why": "多一個大客戶，但要額外投資，條款未定"
+    },
+    {
+     "sym": "TSLA",
+     "dir": "mixed",
+     "why": "自家晶片供應有著落，但未正式簽約"
+    }
+   ],
+   "takeaway": "暫時只係報道，未正式簽約，唔使因為呢單新聞有太大反應。",
+   "found": "2026-11-05 08:00"
+  },
+  {
+   "time": "2026-11-04 18:00",
    "headline": "布蘭特油跌至約94美元 近兩個月低位",
    "source": "The National",
    "url": "https://thenationalnews.com/business/energy/2026/11/04/brent-oil-slides-to-94-on-iran-uncertainty-after-us-midterms",
@@ -789,6 +896,29 @@
    "found": "2026-11-04 08:00"
   },
   {
+   "time": "2026-11-04 05:05",
+   "headline": "AMD季績收入134億美元 數據中心按年增97%",
+   "source": "AMD（SEC 文件）",
+   "url": "https://www.sec.gov/Archives/edgar/data/0000002488/000000248826000188/q32026991.htm",
+   "summary": "AMD 第三季收入 134 億美元，高過公司自己預測嘅上限；數據中心收入按年增 97%。管理層話第四季增長會再加快，但股價冇乜反應。",
+   "level": "medium",
+   "scope": "sector",
+   "affects": [
+    {
+     "sym": "TSM",
+     "dir": "up",
+     "why": "AMD 嘅 GPU 同 CPU 都由台積電代工，需求強對佢有利"
+    },
+    {
+     "sym": "NVDA",
+     "dir": "mixed",
+     "why": "證明 AI 需求仍然強，但 AMD 搶緊市場份額"
+    }
+   ],
+   "takeaway": "AI 晶片需求數據仍然好，近排晶片股跌主要係擔心估值同政策。",
+   "found": "2026-11-05 08:00"
+  },
+  {
    "time": "2026-11-04 05:00",
    "headline": "十年債息升至4.96% 油價隨伊朗消息大上大落",
    "source": "NBC News",
@@ -833,121 +963,6 @@
    ],
    "takeaway": "Nvidia 11 月 17 日放榜，業績前股價波動可能會大啲。",
    "found": "2026-11-04 18:00"
-  },
-  {
-   "time": "2026-11-04 05:00",
-   "headline": "標普結束三連跌 晶片股反彈 納指100 仍在調整區",
-   "source": "Investing.com",
-   "url": "https://www.investing.com/news/stock-market-news/us-stock-futures-steady-apple-dips-after-mixed-earnings-4993314",
-   "summary": "標普 500 收升 0.36% 報 7,568.92，納指升 0.83%，道指受 Apple 拖累跌約 0.4%。納指100 升 0.7%，但仍然比高位低約 10%。",
-   "level": "medium",
-   "scope": "market",
-   "affects": [
-    {
-     "sym": "QQQ",
-     "dir": "up",
-     "why": "科技股反彈，但仍然未走出調整區"
-    },
-    {
-     "sym": "QQQM",
-     "dir": "up",
-     "why": "同 QQQ 追蹤同一個指數，走勢一樣"
-    },
-    {
-     "sym": "VOO",
-     "dir": "up",
-     "why": "標普輕微回升，結束連跌三日"
-    }
-   ],
-   "takeaway": "一日反彈唔代表調整已經完結，留意納指100 可唔可以企穩。",
-   "found": "2026-11-04 08:00"
-  },
-  {
-   "time": "2026-11-04 02:00",
-   "headline": "Alphabet 15億美元預付能源交易 鎖定加州綠電",
-   "source": "Android Headlines",
-   "url": "https://androidheadlines.com/2026/11/alphabet-google-prepaid-energy-deal-goldman.html",
-   "summary": "Alphabet 透過市政債市場做一單 15 億美元預付能源交易，為數據中心鎖定加州清潔電力。佢上季資本開支翻倍至 514 億美元。",
-   "level": "low",
-   "scope": "stock",
-   "affects": [
-    {
-     "sym": "GOOG",
-     "dir": "mixed",
-     "why": "電力有保障對 AI 擴張有利，但市場依然擔心開支太大"
-    }
-   ],
-   "takeaway": "GOOG 上星期出現史上最大單日跌幅，留意佢之後會唔會再控制開支。",
-   "found": "2026-11-04 12:00"
-  },
-  {
-   "time": "2026-11-04 01:00",
-   "headline": "Nvidia 反彈 但中國經海外雲端用晶片或更難",
-   "source": "IBTimes",
-   "url": "https://www.ibtimes.com.au/nvidia-shares-rebound-ai-spending-concerns-1877770",
-   "summary": "Nvidia 喺 200 美元附近反彈約 2–3%。不過有報道指中國企業經海外雲端服務用先進晶片可能更難，Melius 維持買入評級但下調目標價。",
-   "level": "medium",
-   "scope": "stock",
-   "affects": [
-    {
-     "sym": "NVDA",
-     "dir": "mixed",
-     "why": "AMD 業績好有幫助，但中國限制同客戶融資壓力仍然係風險"
-    }
-   ],
-   "takeaway": "200 美元係近期重要支持位，11 月 17 日業績前波動可能偏大。",
-   "found": "2026-11-04 08:00"
-  },
-  {
-   "time": "2026-11-04 00:30",
-   "headline": "布蘭特油價約104美元 十年債息約4.9%",
-   "source": "CNBC",
-   "url": "https://cnbc.com/2026/11/02/stock-market-today-live-updates.html",
-   "summary": "美伊和談嘅消息同美軍空襲嘅消息互相拉扯，布蘭特期油喺104至105美元之間上落，十年債息大約4.9%。有報道指特朗普考慮喺中期選舉之後恢復大規模軍事行動。",
-   "level": "medium",
-   "scope": "market",
-   "affects": [
-    {
-     "sym": "VOO",
-     "dir": "down",
-     "why": "油價同債息高企會推高通脹，亦會壓低股票估值"
-    },
-    {
-     "sym": "QQQ",
-     "dir": "down",
-     "why": "成長股對債息最敏感"
-    }
-   ],
-   "takeaway": "選舉之後伊朗局勢可能有新變化，油價急升或者債息破5%都會打擊大市。",
-   "found": "2026-11-04 01:00"
-  },
-  {
-   "time": "2026-11-04 00:00",
-   "headline": "晶片股反彈 Nvidia 升約3% 納指轉升",
-   "source": "Investing.com",
-   "url": "https://investing.com/news/stock-market-news/why-is-nvidia-stock-rallying-today-93CH-4995760",
-   "summary": "連跌幾日之後，晶片股今晚早段反彈：Micron 升約4%，Nvidia、AMD、Broadcom 各升約3%。Nvidia 回升至大約208美元，收復部分十月跌幅。",
-   "level": "high",
-   "scope": "sector",
-   "affects": [
-    {
-     "sym": "NVDA",
-     "dir": "up",
-     "why": "超賣之後有買盤回流；Anthropic 擴充算力嘅消息亦幫手"
-    },
-    {
-     "sym": "TSM",
-     "dir": "up",
-     "why": "台股暴跌之後，美股晶片反彈帶動 TSM ADR 升逾2%"
-    },
-    {
-     "sym": "QQQM",
-     "dir": "up",
-     "why": "晶片股喺納指100佔比大"
-    }
-   ],
-   "takeaway": "一日反彈唔代表見底。今晚 AMD 業績係下一個考驗，晶片股短期可能仍然大上大落。",
-   "found": "2026-11-04 01:00"
   }
  ]
 }

@@ -1,5 +1,5 @@
 {
- "generated": "2026-11-06T08:00+08:00",
+ "generated": "2026-11-06T12:00+08:00",
  "holdings": [
   "TSM",
   "TSLA",
@@ -11,9 +11,111 @@
   "NVDA"
  ],
  "claude_ok": true,
- "claude_at": "2026-11-06T08:00+08:00",
- "summary": "民主黨中期選舉大勝之後，市場擔心數據中心會被收緊監管，AI 股大跌：納指收市跌 5.5%，正式進入調整區。你嘅 NVDA、TSM、TSLA、ORCL 同 QQQ/QQQM 跌得最多，GOOG 相對抗跌。今晚香港時間 21:30 公布非農就業數據，下星期二（11 月 10 日）公布 CPI，兩個數據都可能令市況再大上大落。",
+ "claude_at": "2026-11-06T12:00+08:00",
+ "summary": "美國中期選舉後，市場擔心AI同數據中心會受更嚴格監管，晶片股暴跌之後亞洲股市都跟住大跌，台股跌超過8%。今晚公布非農數據，直接影響聯儲局12月點決定。你嘅持倉大部分係科技股同晶片股，短期可能仲會大上大落。",
  "items": [
+  {
+   "time": "2026-11-06 10:30",
+   "headline": "AI股拋售蔓延亞洲 韓股熔斷 台股跌近9%",
+   "source": "Business Standard",
+   "url": "https://www.business-standard.com/amp/markets/news/asian-markets-crash-as-ai-rout-rocks-us-markets-kospi-plunges-8-126110600087_1.html",
+   "summary": "韓國Kospi一度跌約8.6%，觸發熔斷停市20分鐘；日經跌超過6%，跌穿60,000點；台股跌超過8%，台積電本地股跌近一成，三星同SK海力士都大跌。",
+   "level": "high",
+   "scope": "market",
+   "affects": [
+    {
+     "sym": "TSM",
+     "dir": "down",
+     "why": "台積電台灣本地股再跌近一成，今晚ADR開市可能繼續受壓"
+    },
+    {
+     "sym": "NVDA",
+     "dir": "down",
+     "why": "亞洲晶片同記憶體股全線下跌，反映全球對AI投資嘅信心轉弱"
+    },
+    {
+     "sym": "QQQ",
+     "dir": "down",
+     "why": "全球科技股一齊沽，美股科技股今晚嘅氣氛都會受影響"
+    }
+   ],
+   "takeaway": "亞洲跌得咁急，通常係恐慌式拋售。留意今晚美股開市有冇止跌。",
+   "found": "2026-11-06 12:00"
+  },
+  {
+   "time": "2026-11-06 09:40",
+   "headline": "大跌後美股期貨反覆 市場等非農數據",
+   "source": "Investing.com / Yahoo Finance",
+   "url": "https://finance.yahoo.com/markets/stocks/articles/u-stock-futures-rise-ai-013807565.html",
+   "summary": "周四係2025年4月關稅風波以來最差嘅一日，標普11個板塊全部收跌。期貨之後一度回升，市場預期10月非農增6.5萬個職位，失業率維持4.2%。",
+   "level": "high",
+   "scope": "market",
+   "affects": [
+    {
+     "sym": "VOO",
+     "dir": "mixed",
+     "why": "非農數據弱就加深對經濟嘅擔心，太強又會令市場驚聯儲收緊，兩邊都有風險"
+    },
+    {
+     "sym": "QQQ",
+     "dir": "mixed",
+     "why": "科技股跌完之後對數據好敏感，今晚可能大上大落"
+    }
+   ],
+   "takeaway": "今晚香港時間大約9:30公布非農，數據出咗之後可能大上大落，唔使急住決定。",
+   "found": "2026-11-06 12:00"
+  },
+  {
+   "time": "2026-11-06 08:30",
+   "headline": "伊朗協議有望 布蘭特油價回落至94美元",
+   "source": "CNBC",
+   "url": "https://www.cnbc.com/2026/11/05/stock-market-today-live-updates.html",
+   "summary": "市場憧憬同伊朗達成協議，布蘭特原油跌到每桶約94美元，WTI跌到88美元左右，扭轉咗之前跟大市一齊升嘅走勢。",
+   "level": "low",
+   "scope": "market",
+   "affects": [
+    {
+     "sym": "VOO",
+     "dir": "up",
+     "why": "油價回落有助減輕通脹壓力，對大市有少少支持"
+    },
+    {
+     "sym": "TSLA",
+     "dir": "mixed",
+     "why": "油價對電動車需求有間接影響，但而家主要受政治因素主導"
+    }
+   ],
+   "takeaway": "油價回落係少有嘅好消息，但未夠抵銷AI股嘅壓力。",
+   "found": "2026-11-06 12:00"
+  },
+  {
+   "time": "2026-11-06 08:00",
+   "headline": "Nvidia、Meta、台積電跌入熊市 25隻AI股全部跌兩成",
+   "source": "FourWeekMBA",
+   "url": "https://fourweekmba.com/ai-nvidia-meta-tsmc-enter-bear-markets-25-of-25-now-down-20/",
+   "summary": "追蹤嘅25隻AI股，全部已經由高位跌超過20%，正式進入熊市。費城半導體指數單日跌約12%，係2020年3月以來最大跌幅；12隻AI股一日蒸發約1.44萬億美元市值。",
+   "level": "high",
+   "scope": "sector",
+   "affects": [
+    {
+     "sym": "NVDA",
+     "dir": "down",
+     "why": "由高位跌超過兩成，今年嘅升幅已經全部蒸發"
+    },
+    {
+     "sym": "TSM",
+     "dir": "down",
+     "why": "一日跌約11%，同樣由高位跌超過兩成"
+    },
+    {
+     "sym": "QQQM",
+     "dir": "down",
+     "why": "AI股佔納指100好大比重，指數跟住一齊跌"
+    }
+   ],
+   "takeaway": "熊市入面反彈同急跌都會好頻密。唔使逐日估市，記住自己嘅止蝕位就得。",
+   "found": "2026-11-06 12:00"
+  },
   {
    "time": "2026-11-06 07:30",
    "headline": "美股期貨再跌 納指期貨跌約0.4–0.8%",
@@ -254,6 +356,39 @@
   },
   {
    "time": "2026-11-06 02:00",
+   "headline": "40個限制數據中心公投通過 Jefferies下調建設預測",
+   "source": "Seoul Economic Daily",
+   "url": "https://en.sedaily.com/international/2026/11/06/nasdaq-plunges-55-percent-into-correction-on-ai-regulation",
+   "summary": "10個州有41項數據中心公投，40項通過限制或者規管。Jefferies話民主黨大勝係AI股「短期最壞情況」，下調咗今個十年數據中心容量預測；Meta高層都話喺美國起新數據中心會好困難。",
+   "level": "high",
+   "scope": "sector",
+   "affects": [
+    {
+     "sym": "NVDA",
+     "dir": "down",
+     "why": "數據中心起少咗，AI晶片嘅需求預期就會跟住降"
+    },
+    {
+     "sym": "ORCL",
+     "dir": "down",
+     "why": "Oracle嘅雲端增長靠大量興建數據中心，受監管影響最直接"
+    },
+    {
+     "sym": "TSM",
+     "dir": "down",
+     "why": "AI晶片訂單預期減少，台積電先進製程嘅需求都會受影響"
+    },
+    {
+     "sym": "GOOG",
+     "dir": "mixed",
+     "why": "同樣要起數據中心，不過廣告現金流強，暫時算抗跌"
+    }
+   ],
+   "takeaway": "呢次跌嘅核心係政策風險，唔係公司業績差。要睇之後真正立咗咩法。",
+   "found": "2026-11-06 12:00"
+  },
+  {
+   "time": "2026-11-06 02:00",
    "headline": "民主黨贏國會後 數據中心股繼續下跌",
    "source": "MarketScreener",
    "url": "https://www.marketscreener.com/news/data-center-stocks-continue-to-fall-after-democrats-win-congress-ce785fdcd180f726",
@@ -387,6 +522,24 @@
   },
   {
    "time": "2026-11-05 23:00",
+   "headline": "Tesla再跌11% 市場憂Musk擴張大計受阻",
+   "source": "Bloomberg",
+   "url": "https://bloomberg.com/news/articles/2026-11-05/tesla-shares-tumble-again-in-deepening-post-election-slump",
+   "summary": "Tesla周三已經跌3.3%，周四再跌11%。Bloomberg指投資者擔心民主黨控制國會之後，Musk擴張商業版圖嘅計劃會受阻。",
+   "level": "medium",
+   "scope": "stock",
+   "affects": [
+    {
+     "sym": "TSLA",
+     "dir": "down",
+     "why": "政治風險增加，合併同擴張計劃前景唔明朗"
+    }
+   ],
+   "takeaway": "Tesla而家主要受政治新聞影響，波動會好大，留意國會有冇真係傳召Musk。",
+   "found": "2026-11-06 12:00"
+  },
+  {
+   "time": "2026-11-05 23:00",
    "headline": "台積電ADR急跌近一成 跌穿360美元",
    "source": "Investing.com",
    "url": "https://za.investing.com/news/stock-market-news/why-is-taiwan-semiconductor-manufacturing-stock-plunging-today-93CH-4555529",
@@ -420,6 +573,34 @@
    ],
    "takeaway": "Tesla主要係被政治消息推動，波幅會好大，要預咗會繼續大上大落。",
    "found": "2026-11-06 01:00"
+  },
+  {
+   "time": "2026-11-05 22:30",
+   "headline": "Qualcomm指引差跌11% Arm跌7%",
+   "source": "24/7 Wall St.",
+   "url": "https://247wallst.com/investing/2026/11/05/qualcomm-sinks-11-as-soft-profit-guidance-and-handset-slump-overshadow-beat-arm-holdings-drops-7-skyworks-slides-2/",
+   "summary": "Qualcomm預測下季盈利同收入都低過預期，手機業務疲弱，股價跌11%。Arm專利費收入只增長8%，股價跌約7%。Barclays兩隻股嘅目標價都下調咗。",
+   "level": "medium",
+   "scope": "sector",
+   "affects": [
+    {
+     "sym": "QQQ",
+     "dir": "down",
+     "why": "兩間都係納指晶片股，指引差令晶片板塊再受壓"
+    },
+    {
+     "sym": "TSM",
+     "dir": "down",
+     "why": "Qualcomm同Arm設計嘅晶片好多都係台積電代工，手機需求弱對台積電唔係好消息"
+    },
+    {
+     "sym": "NVDA",
+     "dir": "mixed",
+     "why": "業務唔同，但會拖累成個晶片板塊嘅氣氛"
+    }
+   ],
+   "takeaway": "除咗AI，手機晶片需求都轉弱。下星期台積電10月營收要睇清楚。",
+   "found": "2026-11-06 12:00"
   },
   {
    "time": "2026-11-05 22:00",
@@ -727,157 +908,6 @@
    ],
    "takeaway": "台積電比大市抗跌係好事，不過要睇外資會唔會繼續沽。",
    "found": "2026-11-05 18:00"
-  },
-  {
-   "time": "2026-11-05 12:00",
-   "headline": "美元同十年債息跌至近兩個月低位",
-   "source": "Reuters / Investing.com",
-   "url": "https://ca.investing.com/news/forex-news/dollar-slides-as-us-election-drives-oil-and-treasury-yields-lower-sterling-gains-4932934",
-   "summary": "美元指數跌至101.25，係9月30日以嚟最低；十年債息再跌至約4.85%，係9月10日以嚟最低；布蘭特油價跌穿100美元。",
-   "level": "medium",
-   "scope": "market",
-   "affects": [
-    {
-     "sym": "QQQ",
-     "dir": "up",
-     "why": "債息回落通常對高估值科技股有利"
-    },
-    {
-     "sym": "VOO",
-     "dir": "up",
-     "why": "油價同債息齊跌，有助舒緩通脹同借貸成本"
-    }
-   ],
-   "takeaway": "如果聽日非農就業太強，債息可能好快升返上去",
-   "found": "2026-11-05 22:30"
-  },
-  {
-   "time": "2026-11-05 12:00",
-   "headline": "台股連挫 分析師對台積電後市睇法分歧",
-   "source": "BigGo Finance",
-   "url": "https://finance.biggo.com/news/9919e36d-a6d7-47ed-9692-920a5f310e3b",
-   "summary": "台股兩日跌超過3,000點，分析師意見分歧：有人話已經跌過龍、或者會反彈；有人警告最壞情況台積電股價可以跌一半。",
-   "level": "low",
-   "scope": "stock",
-   "affects": [
-    {
-     "sym": "TSM",
-     "dir": "mixed",
-     "why": "看好同看淡嘅觀點差好遠，短期波動可能好大"
-    }
-   ],
-   "takeaway": "極端預測聽聽就算，留意台積電10月營收（通常10號左右公布）。",
-   "found": "2026-11-05 18:00"
-  },
-  {
-   "time": "2026-11-05 10:00",
-   "headline": "台股盤中一度急跌逾千點 台積電抗跌",
-   "source": "鉅亨網",
-   "url": "https://news.cnyes.com/news/id/6647548",
-   "summary": "費半隔晚跌逾3%，台股今早一度跌穿42000點，最低去到41866點。記憶體、電路板、散熱等AI供應鏈股有幾隻觸及跌停，台積電就喺2250至2275元之間上落，同昨收差唔多。",
-   "level": "high",
-   "scope": "sector",
-   "affects": [
-    {
-     "sym": "TSM",
-     "dir": "mixed",
-     "why": "台股AI股急跌，但台積電本身抗跌，ADR今晚未必再跟住大跌"
-    },
-    {
-     "sym": "NVDA",
-     "dir": "down",
-     "why": "AI供應鏈遭拋售，反映市場仍然擔心AI硬件需求見頂"
-    }
-   ],
-   "takeaway": "今晚留意台積電ADR會唔會企穩。AI供應鏈股都跌，唔係台積電自己出事。",
-   "found": "2026-11-05 12:00"
-  },
-  {
-   "time": "2026-11-05 08:00",
-   "headline": "投信看好台積電年底反彈 目標價3200元",
-   "source": "壹蘋新聞網",
-   "url": "https://news.nextapple.com/finance/20261105/91AAAC86F4E4D5D7FD4EC83AD553C411",
-   "summary": "群益投信嘅蔡明彥認為，AI基本面冇變，台積電股價有機會升到3200元，又講台股年底有機會反彈，並分享佢點睇入市時機。",
-   "level": "low",
-   "scope": "stock",
-   "affects": [
-    {
-     "sym": "TSM",
-     "dir": "up",
-     "why": "有本地基金經理認為最近下跌係情緒問題，基本面冇變"
-    }
-   ],
-   "takeaway": "呢個係個別機構嘅睇法，唔代表一定升到目標價，聽聽就好。",
-   "found": "2026-11-05 12:00"
-  },
-  {
-   "time": "2026-11-05 07:00",
-   "headline": "今晚公布初領失業救濟金 周五非農就業",
-   "source": "Babypips",
-   "url": "https://babypips.com/news/daily-financial-forex-market-recap-2026-11-04",
-   "summary": "美國今晚8:30（香港時間晚上9:30）公布初領失業救濟金人數，同日有聯儲局官員講話，周五公布10月非農就業。早前ADP數字勝預期，ISM服務業指數略遜預期。",
-   "level": "high",
-   "scope": "market",
-   "affects": [
-    {
-     "sym": "QQQ",
-     "dir": "mixed",
-     "why": "就業數據太強，加息預期就會升溫，對高估值科技股唔利"
-    },
-    {
-     "sym": "VOO",
-     "dir": "mixed",
-     "why": "數據會影響12月加息機會同債息走勢"
-    }
-   ],
-   "takeaway": "今晚同周五數據公布嗰陣大市可能會大上大落，留意有冇數據大幅偏離預期。",
-   "found": "2026-11-05 12:00"
-  },
-  {
-   "time": "2026-11-05 05:30",
-   "headline": "Qualcomm業績輕微勝預期 但手機晶片疲弱股價急跌",
-   "source": "CNBC",
-   "url": "https://cnbc.com/2026/11/04/stocks-making-the-biggest-moves-after-hours-cohr-app-expe-more.html",
-   "summary": "Qualcomm第四季盈利稍為好過預期，但手機晶片銷售唔夠預期，盤後跌近6%，周四盤中最多跌13%。",
-   "level": "medium",
-   "scope": "sector",
-   "affects": [
-    {
-     "sym": "TSM",
-     "dir": "down",
-     "why": "Qualcomm係台積電大客戶，手機晶片需求弱會影響訂單"
-    },
-    {
-     "sym": "NVDA",
-     "dir": "mixed",
-     "why": "手機同AI晶片唔同市場，但會拖低成個晶片板塊嘅氣氛"
-    }
-   ],
-   "takeaway": "手機市場疲弱同AI無直接關係，但會加重晶片股嘅悲觀情緒。",
-   "found": "2026-11-06 04:45"
-  },
-  {
-   "time": "2026-11-05 05:30",
-   "headline": "晶片股一個月蒸發3.7萬億美元 分析師睇法分歧",
-   "source": "Yahoo Finance",
-   "url": "https://finance.yahoo.com/markets/stocks/article/nvidia-stock-trims-losses-as-chip-sell-off-eases-amid-ai-financing-concerns-203300012.html",
-   "summary": "費城半導體指數周三跌3.13%，晶片同記憶體股自10月6日起累計蒸發約3.7萬億美元。Dan Ives話仲可能再跌10-12%，Tom Lee就話係反應過敏。",
-   "level": "medium",
-   "scope": "sector",
-   "affects": [
-    {
-     "sym": "NVDA",
-     "dir": "down",
-     "why": "晶片股龍頭，最受資金撤走影響"
-    },
-    {
-     "sym": "TSM",
-     "dir": "down",
-     "why": "台積電ADR跌2.24%至395.75美元，跌穿400美元"
-    }
-   ],
-   "takeaway": "專家睇法唔一致，代表波動會持續，記住你晶片股佔比唔少",
-   "found": "2026-11-05 22:30"
   }
  ]
 }

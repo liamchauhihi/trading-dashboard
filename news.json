@@ -1,5 +1,5 @@
 {
- "generated": "2026-11-06T18:00+08:00",
+ "generated": "2026-11-06T22:30+08:00",
  "holdings": [
   "TSM",
   "TSLA",
@@ -11,9 +11,149 @@
   "NVDA"
  ],
  "claude_ok": true,
- "claude_at": "2026-11-06T18:00+08:00",
- "summary": "美股周四AI股大跌之後，今日亞洲同歐洲股市繼續跌，不過美股納指期貨喺歐洲時段反彈約1%，Nvidia盤前升大約3%。今晚就公布10月非農，聯儲局官員仲講緊要加息，所以數據會直接影響息口預期。你嘅持倉大部分係科技同晶片股，所以今晚個市可能會好波動。",
+ "claude_at": "2026-11-06T22:30+08:00",
+ "summary": "10月非農新增16.5萬個職位，遠高過預期，失業率跌到4.1%。債息因此上升，市場估聯儲局12月加息嘅機會升到約八成，對科技股唔利。周四AI股大跌之後，今晚晶片股盤前反彈。你持有嘅NVDA、TSM、TSLA、QQQ同QQQM都會跟住AI情緒同債息大上大落，未必一兩日就穩定落嚟。",
  "items": [
+  {
+   "time": "2026-11-06 21:45",
+   "headline": "非農強勁 市場估12月加息機會升至約八成",
+   "source": "Reuters",
+   "url": "https://investing.com/news/economy-news/traders-raise-bets-of-fed-rate-hike-after-jobs-report-5008229",
+   "summary": "數據公布後，利率期貨顯示聯儲局下月加息0.25厘嘅機會由約七成半升到約八成。2年債息升到4.52%，10年債息升到4.88%，30年債息升到5.29%，美元亦走強。",
+   "level": "high",
+   "scope": "market",
+   "affects": [
+    {
+     "sym": "NVDA",
+     "dir": "down",
+     "why": "高增長股對利率最敏感，債息上升會壓低估值"
+    },
+    {
+     "sym": "TSLA",
+     "dir": "down",
+     "why": "估值好高，加息預期升溫特別唔利"
+    },
+    {
+     "sym": "QQQ",
+     "dir": "down",
+     "why": "10年債息接近4.9%，對科技股估值有壓力"
+    }
+   ],
+   "takeaway": "12月議息會議係下一個關鍵日子，期間科技股可能繼續大上大落。",
+   "found": "2026-11-06 22:30"
+  },
+  {
+   "time": "2026-11-06 21:30",
+   "headline": "10月非農新增16.5萬 遠超預期 失業率跌至4.1%",
+   "source": "CNBC",
+   "url": "https://www.cnbc.com/2026/11/06/jobs-report-october-2026.html",
+   "summary": "市場本來預期只增約6萬個職位，結果新增16.5萬，9月數字亦上調到6萬。失業率由4.2%跌到4.1%，時薪按年升3.1%，高過預期。",
+   "level": "high",
+   "scope": "market",
+   "affects": [
+    {
+     "sym": "QQQ",
+     "dir": "down",
+     "why": "經濟太強，減息無望，甚至可能加息，高估值科技股最受壓"
+    },
+    {
+     "sym": "QQQM",
+     "dir": "down",
+     "why": "同QQQ一樣追蹤納指100，受債息上升影響"
+    },
+    {
+     "sym": "VOO",
+     "dir": "mixed",
+     "why": "經濟強對企業盈利係好事，但加息風險會拖累估值"
+    }
+   ],
+   "takeaway": "經濟本身冇問題，市場驚嘅係加息。你要留意債息走勢。",
+   "found": "2026-11-06 22:30"
+  },
+  {
+   "time": "2026-11-06 20:30",
+   "headline": "晶片股盤前大反彈 台積電ADR升逾7%",
+   "source": "Yahoo Finance",
+   "url": "https://finance.yahoo.com/technology/articles/u-chip-stocks-rebound-sharply-105433545.html",
+   "summary": "費城半導體指數周四跌約12%，係2020年以嚟最差嘅一日。今日盤前有人趁低吸納，台積電ADR報約379美元，AMD、博通、美光升5%至8%。",
+   "level": "high",
+   "scope": "sector",
+   "affects": [
+    {
+     "sym": "TSM",
+     "dir": "up",
+     "why": "周四跌近11%之後，盤前反彈約7%"
+    },
+    {
+     "sym": "NVDA",
+     "dir": "up",
+     "why": "跟隨晶片股回升，盤前升3%至5%"
+    },
+    {
+     "sym": "ORCL",
+     "dir": "up",
+     "why": "盤前升約2.6%至4%，跟住AI股回升"
+    }
+   ],
+   "takeaway": "暴跌後反彈好常見，唔代表已經見底，可以睇吓收市守唔守得住。",
+   "found": "2026-11-06 22:30"
+  },
+  {
+   "time": "2026-11-06 20:00",
+   "headline": "Nasdaq期貨高開 但加息憂慮限制升幅",
+   "source": "CP24 / Reuters",
+   "url": "https://www.cp24.com/news/money/2026/11/06/nasdaq-eyes-higher-open-as-chips-pare-losses-rate-hike-fears-linger/",
+   "summary": "非農公布後，納指期貨升約1.3%至1.6%，標普期貨只升約0.3%。強勁數據推高債息，抵銷咗部分科技股反彈。",
+   "level": "medium",
+   "scope": "market",
+   "affects": [
+    {
+     "sym": "VOO",
+     "dir": "mixed",
+     "why": "大市升幅細過科技股，加息憂慮拖住"
+    },
+    {
+     "sym": "QQQ",
+     "dir": "up",
+     "why": "周四跌6%之後，今日有技術性反彈"
+    }
+   ],
+   "takeaway": "今晚收市先算數，盤前升幅可以好快消失。",
+   "found": "2026-11-06 22:30"
+  },
+  {
+   "time": "2026-11-06 19:00",
+   "headline": "分析：民主黨贏中期選舉 數據中心建設變「消耗戰」",
+   "source": "CNBC",
+   "url": "https://www.cnbc.com/2026/11/06/ai-data-center-midterms-selloff.html",
+   "summary": "市場擔心民主黨控制國會之後，數據中心審批同電費爭議會拖慢AI建設。UBS估計2028年美國約三成新增數據中心容量有機會受影響。",
+   "level": "high",
+   "scope": "sector",
+   "affects": [
+    {
+     "sym": "NVDA",
+     "dir": "down",
+     "why": "數據中心建得慢，AI晶片需求增長可能放慢"
+    },
+    {
+     "sym": "TSM",
+     "dir": "down",
+     "why": "AI晶片主要由佢生產，訂單增長預期受影響"
+    },
+    {
+     "sym": "ORCL",
+     "dir": "down",
+     "why": "大舉借錢起數據中心，建設受阻影響回報"
+    },
+    {
+     "sym": "GOOG",
+     "dir": "mixed",
+     "why": "資本開支壓力可能減輕，但AI擴張會慢咗"
+    }
+   ],
+   "takeaway": "呢個係政策風險，影響要幾年先見到，短期市場會反應過度。",
+   "found": "2026-11-06 22:30"
+  },
   {
    "time": "2026-11-06 16:30",
    "headline": "納指期貨反彈約1% Nvidia盤前升近3%",
@@ -614,6 +754,24 @@
   },
   {
    "time": "2026-11-05 23:30",
+   "headline": "民主黨大勝 SpaceX同Tesla合併審批難度增加",
+   "source": "Yahoo Finance",
+   "url": "https://finance.yahoo.com/markets/article/spacex-tesla-stocks-tumble-as-democratic-sweep-raises-questions-on-merger-prospects-ai-buildout-153753814.html",
+   "summary": "Musk曾表示SpaceX同Tesla合併係好主意。分析師Dan Ives認為民主黨控制國會之後，2027年完成合併嘅監管難度大增。Tesla周三跌3.3%，周四再跌近11%。",
+   "level": "high",
+   "scope": "stock",
+   "affects": [
+    {
+     "sym": "TSLA",
+     "dir": "down",
+     "why": "合併同AI題材受政治阻力，周四收報約343.7美元"
+    }
+   ],
+   "takeaway": "Tesla股價好受Musk同政治新聞影響，短期可能繼續大上大落。",
+   "found": "2026-11-06 22:30"
+  },
+  {
+   "time": "2026-11-05 23:30",
    "headline": "Nvidia盤中跌逾8% 成為標普最大拖累",
    "source": "Benzinga",
    "url": "https://www.benzinga.com/markets/tech/26/11/62934964/us-tech-stocks-wipe-out-1-7-trillion-thursday-nvidia-amd-micron",
@@ -765,164 +923,21 @@
   },
   {
    "time": "2026-11-05 22:00",
-   "headline": "今晚非農：9月只增2.9萬職位 聯儲12月9日議息",
-   "source": "CalendarX",
-   "url": "https://www.calendarx.com/events/jobs-report-november-2026",
-   "summary": "10月非農就業數據今晚香港時間21:30公布。9月只增加2.9萬個職位，失業率4.2%，係聯儲局12月議息前最重要嘅數據之一。",
-   "level": "high",
-   "scope": "market",
-   "affects": [
-    {
-     "sym": "VOO",
-     "dir": "mixed",
-     "why": "數據太差會引發衰退憂慮，太好就會減低減息機會"
-    },
-    {
-     "sym": "QQQ",
-     "dir": "mixed",
-     "why": "科技股對利率預期好敏感"
-    }
-   ],
-   "takeaway": "今晚數據可能令市場再大上大落，唔使因為一晚嘅波動就慌。",
-   "found": "2026-11-06 04:45"
-  },
-  {
-   "time": "2026-11-05 22:00",
-   "headline": "分析師：民主黨勝選令Tesla-SpaceX合併添障礙",
-   "source": "Yahoo Finance",
-   "url": "https://finance.yahoo.com/markets/stocks/article/spacex-tesla-stocks-sink-as-analyst-warns-democrats-victory-will-create-major-hurdles-for-ai-build-out-135511616.html",
-   "summary": "有分析師警告，民主黨勝選會為AI基建帶嚟「重大障礙」。市場傳Tesla可能用約24%溢價合併SpaceX，有人擔心溢價太高，但合併仍未正式宣布。",
-   "level": "medium",
-   "scope": "stock",
-   "affects": [
-    {
-     "sym": "TSLA",
-     "dir": "down",
-     "why": "合併溢價同審批都有唔確定性"
-    }
-   ],
-   "takeaway": "合併只係傳聞，未有正式公布；留意12月3日Tesla股東大會有冇新消息。",
-   "found": "2026-11-06 01:00"
-  },
-  {
-   "time": "2026-11-05 22:00",
-   "headline": "Alphabet抗跌 只微跌約1%",
-   "source": "Trefis",
-   "url": "https://www.trefis.com/stock/amzn/articles/622738/why-did-amazon-and-google-stock-rise/2026-11-05",
-   "summary": "選後市場分開兩邊：起數據中心嘅公司（晶片、基建）大跌，而用數據中心嘅大公司（Alphabet、Amazon等）就算好啲。Alphabet前一日升約3%，今日跌幅比大市細。",
-   "level": "medium",
+   "headline": "Google將自願離職計劃擴至五國 並就加州青少年法例興訟",
+   "source": "Google Finance",
+   "url": "https://www.google.com/finance/quote/GOOGL:NASDAQ",
+   "summary": "Google將自願離職補償計劃擴大到加拿大、法國、德國、日本同瑞士。另外，Meta、Google同TikTok分別入稟控告加州總檢察長，挑戰一條青少年社交媒體法例。",
+   "level": "low",
    "scope": "stock",
    "affects": [
     {
      "sym": "GOOG",
      "dir": "mixed",
-     "why": "如果起數據中心慢咗，佢資本開支壓力反而細啲"
+     "why": "減人可以慳成本，但反映公司要控制開支"
     }
    ],
-   "takeaway": "GOOG今日比其他持倉抗跌；佢業績後跌咗13%，未完全收復。",
-   "found": "2026-11-06 01:00"
-  },
-  {
-   "time": "2026-11-05 21:30",
-   "headline": "初領失業救濟金跌至18.9萬 遠好過預期",
-   "source": "FXStreet",
-   "url": "https://www.fxstreet.com/news/us-initial-jobless-claims-dropped-to-189k-last-week-202611051334",
-   "summary": "截至10月31日嗰星期，初領失業救濟金得18.9萬人，預期係19.6萬，追平1969年以嚟最低。四星期平均跌至19.475萬。",
-   "level": "high",
-   "scope": "market",
-   "affects": [
-    {
-     "sym": "QQQ",
-     "dir": "mixed",
-     "why": "就業強代表經濟穩陣，但聯儲局減少理由減息，債息有機會反彈"
-    },
-    {
-     "sym": "VOO",
-     "dir": "mixed",
-     "why": "經濟數據好對盈利有利，但12月加息預期可能會再升"
-    }
-   ],
-   "takeaway": "聽日（周五）非農就業數據更重要，留意債息有冇再升",
-   "found": "2026-11-05 22:30"
-  },
-  {
-   "time": "2026-11-05 21:00",
-   "headline": "聯儲Hammack：利率要收緊先壓到通脹",
-   "source": "Bloomberg",
-   "url": "https://bloomberg.com/news/articles/2026-11-05/fed-s-hammack-says-restrictive-rates-needed-to-cool-inflation",
-   "summary": "克里夫蘭聯儲行長Hammack話利率要去到「限制性」水平，通脹先會返到2%；Barkin亦話通脹未見回落。股市大跌之後，期貨顯示12月加息機會由82.7%跌到70.1%。",
-   "level": "high",
-   "scope": "market",
-   "affects": [
-    {
-     "sym": "QQQ",
-     "dir": "down",
-     "why": "加息預期對高估值科技股最不利"
-    },
-    {
-     "sym": "VOO",
-     "dir": "mixed",
-     "why": "股市跌令加息機會稍為減少"
-    },
-    {
-     "sym": "GOOG",
-     "dir": "down",
-     "why": "利率高會壓低成長股估值"
-    }
-   ],
-   "takeaway": "12月9日議息之前，每個數據都會令加息預期上落，股價會跟住郁。",
-   "found": "2026-11-06 18:00"
-  },
-  {
-   "time": "2026-11-05 21:00",
-   "headline": "CNN：反數據中心浪潮嘅經濟代價",
-   "source": "CNN",
-   "url": "https://www.cnn.com/2026/11/05/economy/data-center-texas-election",
-   "summary": "CNN分析指，選民喺選舉中反對數據中心，將來可能拖慢AI投資。不過報道亦指出，唔代表全國一半數據中心計劃會停。",
-   "level": "medium",
-   "scope": "sector",
-   "affects": [
-    {
-     "sym": "ORCL",
-     "dir": "mixed",
-     "why": "實際影響要睇各州點樣立法"
-    },
-    {
-     "sym": "TSM",
-     "dir": "mixed",
-     "why": "最終要睇訂單有冇真係減少"
-    }
-   ],
-   "takeaway": "立法要時間，總統亦有否決權；短期市場會反應過大，長遠要睇實際落實。",
-   "found": "2026-11-06 01:00"
-  },
-  {
-   "time": "2026-11-05 20:30",
-   "headline": "Nvidia盤前跌穿200美元 跌穿200日線",
-   "source": "Benzinga",
-   "url": "https://www.benzinga.com/trading-ideas/movers/26/11/62915715/what-is-going-on-with-nvidia-stock-on-thursday",
-   "summary": "選後資金繼續撤出AI晶片股，Nvidia盤前跌1.8%至196.5美元，低過20日、50日同200日平均線。11月17日公布業績。",
-   "level": "high",
-   "scope": "stock",
-   "affects": [
-    {
-     "sym": "NVDA",
-     "dir": "down",
-     "why": "資金因為擔心數據中心受限制而沽晶片股，技術上跌穿長期趨勢線"
-    },
-    {
-     "sym": "QQQ",
-     "dir": "down",
-     "why": "Nvidia係納指最大成分股之一"
-    },
-    {
-     "sym": "QQQM",
-     "dir": "down",
-     "why": "同QQQ一樣追蹤納指100"
-    }
-   ],
-   "takeaway": "11月17日業績係下一個關鍵，之前股價可能大上大落",
-   "found": "2026-11-05 22:30"
+   "takeaway": "呢啲屬於小新聞，Google近期主要都係跟住AI板塊同資本開支憂慮上落。",
+   "found": "2026-11-06 22:30"
   }
  ]
 }

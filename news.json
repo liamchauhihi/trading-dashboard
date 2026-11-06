@@ -1,5 +1,5 @@
 {
- "generated": "2026-11-07T01:00+08:00",
+ "generated": "2026-11-07T04:45+08:00",
  "holdings": [
   "TSM",
   "TSLA",
@@ -11,36 +11,54 @@
   "NVDA"
  ],
  "claude_ok": true,
- "claude_at": "2026-11-07T01:00+08:00",
- "summary": "晶片股喺史上第二差嘅一日之後反彈，台積電同Nvidia帶頭，你嘅TSM、NVDA、TSLA都升得多。不過非農數據強勁，推高咗債息，聯儲局12月加息嘅機會好大，杜指仍然偏軟。反彈未代表已經見底，Nvidia 11月17日業績係下一個關鍵。",
+ "claude_at": "2026-11-07T04:45+08:00",
+ "summary": "晶片股喺大跌後反彈，費城半導體指數升約4.6%，但標普同納指仍然向住連續第四個星期下跌。非農強勁，令12月加息嘅憂慮持續，債息停喺4.85%以上。你嘅TSM、NVDA、TSLA今日都反彈，不過AI股波動仍然好大。",
  "items": [
   {
-   "time": "2026-11-07 00:30",
-   "headline": "晶片股大反彈 納指升逾1% 杜指反而偏軟",
-   "source": "Yahoo Finance",
-   "url": "https://finance.yahoo.com/markets/live/stock-market-today-friday-november-6-dow-sp-500-nasdaq-jobs-report-earnings-135953863.html",
-   "summary": "費城半導體指數周四跌12%，係有紀錄以來第二差。周五Nvidia、AMD、美光帶頭反彈，納指升約1–1.5%；杜指就因為加息憂慮偏弱。",
+   "time": "2026-11-07 01:10",
+   "headline": "AI股暫停全球拋售 美股本週跌幅收窄",
+   "source": "AP／Korea Times",
+   "url": "https://www.koreatimes.co.kr/world/20261107/ai-stocks-halt-brutal-worldwide-sell-off-as-wall-street-trims-its-loss-for-the-week",
+   "summary": "標普500周五升約0.9%，本週跌幅收窄至約2.1%，距離上月紀錄高位仍低5.1%。Nvidia升3.7%，Micron升5.9%。杜指大致持平。",
    "level": "high",
    "scope": "market",
    "affects": [
     {
+     "sym": "VOO",
+     "dir": "up",
+     "why": "大市反彈，但仍然向住連續第四週下跌"
+    },
+    {
      "sym": "QQQ",
      "dir": "up",
-     "why": "大型科技同晶片股反彈，帶動納指100回升"
+     "why": "科技股帶頭反彈，納指升約1.6%"
     },
     {
      "sym": "QQQM",
      "dir": "up",
-     "why": "同QQQ追蹤同一個指數，走勢一樣"
-    },
-    {
-     "sym": "VOO",
-     "dir": "mixed",
-     "why": "科技股升，但加息憂慮拖住其他行業，標普只係微升"
+     "why": "同QQQ追蹤同一個指數"
     }
    ],
-   "takeaway": "大跌之後反彈好常見，要睇幾日先知係咪企穩，唔使因為一日升跌就改變計劃。",
-   "found": "2026-11-07 01:00"
+   "takeaway": "一日反彈未代表見底，留意下星期能唔能夠企穩",
+   "found": "2026-11-07 04:45"
+  },
+  {
+   "time": "2026-11-07 00:34",
+   "headline": "馬斯克：Cybertruck約2027年中停產 讓路Cybercab",
+   "source": "Yahoo Finance",
+   "url": "https://finance.yahoo.com/markets/live/stock-market-today-friday-november-6-dow-sp-500-nasdaq-jobs-report-earnings-135953863.html",
+   "summary": "馬斯克表示Cybertruck生產會喺2027年中左右逐步結束，騰出產能生產無人駕駛的士Cybercab。Tesla當日升約4.75%。",
+   "level": "high",
+   "scope": "stock",
+   "affects": [
+    {
+     "sym": "TSLA",
+     "dir": "mixed",
+     "why": "市場關注重心轉向自動駕駛，但Cybercab仲要等監管豁免先可以大規模推出"
+    }
+   ],
+   "takeaway": "Tesla嘅故事愈嚟愈靠自動駕駛，留意監管同埋量產進度",
+   "found": "2026-11-07 04:45"
   },
   {
    "time": "2026-11-07 00:00",
@@ -920,29 +938,6 @@
    ],
    "takeaway": "政治風險短期難消除，可以留意國會會唔會真係傳召Musk。",
    "found": "2026-11-06 18:00"
-  },
-  {
-   "time": "2026-11-06 00:00",
-   "headline": "資金避險 十年債息跌至4.83%",
-   "source": "CNBC",
-   "url": "https://www.cnbc.com/2026/11/05/treasury-yields-bonds-interest-rates.html",
-   "summary": "科技股大跌，資金走去買美債，十年債息跌超過6個點子到4.831%，兩年債息跌8個點子到4.50%。市場等今晚嘅10月非農就業數據，預期新增約5.9萬個職位。",
-   "level": "medium",
-   "scope": "market",
-   "affects": [
-    {
-     "sym": "VOO",
-     "dir": "mixed",
-     "why": "債息跌對股市估值有幫助，但反映市場避險"
-    },
-    {
-     "sym": "QQQ",
-     "dir": "mixed",
-     "why": "減息預期升對科技股有利，但而家被AI憂慮蓋過"
-    }
-   ],
-   "takeaway": "今晚（香港時間）非農數據可能令市場再大郁，數據出嚟前後要預咗會波動。",
-   "found": "2026-11-06 01:00"
   }
  ]
 }

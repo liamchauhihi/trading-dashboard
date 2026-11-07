@@ -1,5 +1,5 @@
 {
- "generated": "2026-11-07T04:45+08:00",
+ "generated": "2026-11-07T08:00+08:00",
  "holdings": [
   "TSM",
   "TSLA",
@@ -11,9 +11,60 @@
   "NVDA"
  ],
  "claude_ok": true,
- "claude_at": "2026-11-07T04:45+08:00",
- "summary": "晶片股喺大跌後反彈，費城半導體指數升約4.6%，但標普同納指仍然向住連續第四個星期下跌。非農強勁，令12月加息嘅憂慮持續，債息停喺4.85%以上。你嘅TSM、NVDA、TSLA今日都反彈，不過AI股波動仍然好大。",
+ "claude_at": "2026-11-07T08:00+08:00",
+ "summary": "AI股大跌後週五反彈，但美股已連跌四個星期。非農數據強勁，聯儲局官員講法偏向加息，市場估12月加息機會約八成，債息企喺高位，科技股估值受壓。台積電、Tesla、Nvidia反彈幅度最大，不過波動仍然好大；Oracle同微軟合約完結嘅消息值得留意。",
  "items": [
+  {
+   "time": "2026-11-07 05:10",
+   "headline": "納指週五升1.1% 美股仍連跌四週",
+   "source": "UPI",
+   "url": "https://www.upi.com/Top_News/US/2026/11/06/nasdaq-rebounds-tech-stocks/5901794005326",
+   "summary": "納指收市升1.09%報24,579，標普升0.31%。不過成個星期計，納指跌3.4%、標普跌2.7%，三大指數都係連續第四週下跌。週四嗰場大拋售令標普成份股市值蒸發近3萬億美元。",
+   "level": "high",
+   "scope": "market",
+   "affects": [
+    {
+     "sym": "QQQ",
+     "dir": "mixed",
+     "why": "週五反彈1.4%，但納指週四已跌入調整區，即係比高位低超過一成"
+    },
+    {
+     "sym": "QQQM",
+     "dir": "mixed",
+     "why": "同QQQ追蹤同一個指數，走勢一樣"
+    },
+    {
+     "sym": "VOO",
+     "dir": "mixed",
+     "why": "標普只係微升，標普入面跌嘅股票多過升嘅，個反彈主要靠AI股撐起"
+    }
+   ],
+   "takeaway": "一日反彈唔代表已經見底，分析師都話個反彈好脆弱，留意下星期會唔會再跌。",
+   "found": "2026-11-07 08:00"
+  },
+  {
+   "time": "2026-11-07 03:00",
+   "headline": "Nvidia自10月高位蒸發約1.4萬億美元",
+   "source": "Yahoo Finance",
+   "url": "https://finance.yahoo.com/markets/article/nvidia-has-lost-nearly-14-trillion-since-its-october-record-165912910.html",
+   "summary": "Nvidia週五收市升約2.8%，但週四跌咗9%，係2025年1月DeepSeek事件之後最差嘅一日。股價比10月6日嘅高位仍然低約24%。",
+   "level": "medium",
+   "scope": "stock",
+   "affects": [
+    {
+     "sym": "NVDA",
+     "dir": "mixed",
+     "why": "已經跌咗好多，有人趁低吸納，但市場仍然擔心AI開支回報唔夠"
+    },
+    {
+     "sym": "QQQ",
+     "dir": "mixed",
+     "why": "Nvidia係納指最大嘅成份股之一"
+    }
+   ],
+   "takeaway": "11月17日公佈業績之前股價可能大上大落，記住評估自己持倉嘅比例。",
+   "found": "2026-11-07 08:00"
+  },
   {
    "time": "2026-11-07 01:10",
    "headline": "AI股暫停全球拋售 美股本週跌幅收窄",
@@ -61,6 +112,34 @@
    "found": "2026-11-07 04:45"
   },
   {
+   "time": "2026-11-07 00:30",
+   "headline": "聯儲官員放鷹 Musalem預期12月加息",
+   "source": "Reuters／Yahoo Finance",
+   "url": "https://finance.yahoo.com/economy/policy/articles/strong-october-jobs-report-sends-134858909.html",
+   "summary": "非農公佈後，聖路易聯儲總裁Musalem表示預期12月加息0.25厘，Barkin就話通脹太高、無回落跡象。另外工資按年升3.1%，高過預期嘅2.9%。",
+   "level": "high",
+   "scope": "market",
+   "affects": [
+    {
+     "sym": "QQQ",
+     "dir": "down",
+     "why": "加息會推高債息，對高估值嘅科技股最唔利"
+    },
+    {
+     "sym": "NVDA",
+     "dir": "down",
+     "why": "高增長股對利率最敏感"
+    },
+    {
+     "sym": "VOO",
+     "dir": "down",
+     "why": "利率上升會壓低整體股票估值"
+    }
+   ],
+   "takeaway": "工資升得快會令通脹更難回落，所以留意之後公佈嘅CPI，同埋聯儲官員點講。",
+   "found": "2026-11-07 08:00"
+  },
+  {
    "time": "2026-11-07 00:00",
    "headline": "Tesla反彈約5% 選後大跌後回穩",
    "source": "AOL / Yahoo Finance",
@@ -77,6 +156,29 @@
    ],
    "takeaway": "今日升主要係反彈，未有新嘅利好消息。政治調查風險仲喺度，波幅會繼續大。",
    "found": "2026-11-07 01:00"
+  },
+  {
+   "time": "2026-11-06 23:30",
+   "headline": "分析：12月加息未必成事",
+   "source": "Axios",
+   "url": "https://www.axios.com/2026/11/06/federal-reserve-jobs-report-bonds",
+   "summary": "雖然非農強勁，但有策略師認為油價回落同科技股大跌會令經濟降溫，可能令2027年初唔使再加息。兩年期債息週五早段只係升咗0.04厘。",
+   "level": "medium",
+   "scope": "market",
+   "affects": [
+    {
+     "sym": "VOO",
+     "dir": "mixed",
+     "why": "加息預期隨時再變，大市會跟住搖擺"
+    },
+    {
+     "sym": "QQQ",
+     "dir": "mixed",
+     "why": "科技股對利率預期最敏感"
+    }
+   ],
+   "takeaway": "市場意見分歧，12月議息之前每一份數據都可能令股市大上大落。",
+   "found": "2026-11-07 08:00"
   },
   {
    "time": "2026-11-06 23:30",
@@ -103,6 +205,29 @@
   },
   {
    "time": "2026-11-06 23:00",
+   "headline": "微軟停租Oracle AI雲端算力",
+   "source": "Bloomberg",
+   "url": "https://bloomberg.com/news/articles/2026-11-06/microsoft-is-winding-down-oracle-deal-to-rent-ai-cloud-capacity",
+   "summary": "微軟2023年同Oracle簽咗租用AI算力嘅合約，而家決定唔續約，並逐步停用。報道指原因係嗰批硬件用舊一代Nvidia晶片。Oracle回應話AI基建需求依然強勁。",
+   "level": "high",
+   "scope": "stock",
+   "affects": [
+    {
+     "sym": "ORCL",
+     "dir": "down",
+     "why": "少咗一個大客嘅收入，盤中曾經跌約4%，最後收市仍然升0.8%"
+    },
+    {
+     "sym": "NVDA",
+     "dir": "mixed",
+     "why": "反映客戶想轉用新一代晶片，舊晶片嘅需求就減少"
+    }
+   ],
+   "takeaway": "Oracle週四已經跌近7%，消息未完全消化，留意會唔會有其他客戶跟住走。",
+   "found": "2026-11-07 08:00"
+  },
+  {
+   "time": "2026-11-06 23:00",
    "headline": "Nvidia盤中反彈逾5% 業績前波動大",
    "source": "StockTitan",
    "url": "https://www.stocktitan.net/articles/stock-market-today-live-november-6-2026",
@@ -125,22 +250,27 @@
    "found": "2026-11-07 01:00"
   },
   {
-   "time": "2026-11-06 22:45",
-   "headline": "台積電ADR急彈約7% 台灣出手限制沽空",
+   "time": "2026-11-06 22:50",
+   "headline": "台灣沽空新規11月9日生效 另備5000億基金",
    "source": "Benzinga",
    "url": "https://www.benzinga.com/markets/tech/26/11/62974369/tsmc-surges-7-as-taiwan-restricts-short-selling-to-halt-brutal-semiconductor-crash",
-   "summary": "台灣監管機構將每隻股票每日沽空盤限喺平均成交量3%以內，沽空保證金提高到130%，仲話有需要會出動5,000億台幣嘅國安基金。台積電ADR反彈約7%，收復周四近六成跌幅。",
+   "summary": "台灣收緊即日沽空上限、提高沽空保證金，11月9日生效。當局亦表示可以動用新台幣5000億元國安基金托市。台積電ADR週四跌10.8%，週五收市回升6.3%。",
    "level": "high",
    "scope": "stock",
    "affects": [
     {
      "sym": "TSM",
      "dir": "up",
-     "why": "限制沽空加上護盤承諾，減低咗恐慌式拋售"
+     "why": "限制沽空加上政府可能托市，短期沽壓會細啲"
+    },
+    {
+     "sym": "NVDA",
+     "dir": "mixed",
+     "why": "晶片股氣氛好轉，但大家對AI開支嘅疑慮仍然未散"
     }
    ],
-   "takeaway": "你嘅TSM今日升6%主要係因為呢個。政策護盤只係止血，基本因素仲要睇AI需求。",
-   "found": "2026-11-07 01:00"
+   "takeaway": "政策可以暫時穩住個市，但改變唔到基本因素，外資已經撤走超過450億美元，要繼續留意。",
+   "found": "2026-11-07 08:00"
   },
   {
    "time": "2026-11-06 22:40",
@@ -187,6 +317,24 @@
    ],
    "takeaway": "你冇持有黃金或者加密貨幣，影響係間接嘅，可以當作睇市場情緒嘅指標。",
    "found": "2026-11-07 01:00"
+  },
+  {
+   "time": "2026-11-06 22:00",
+   "headline": "Alphabet被入禀集體訴訟 涉Gemini延誤",
+   "source": "GlobeNewswire",
+   "url": "https://globenewswire.com/news-release/2026/11/06/3397821/1020/en/kaplan-fox-alerts-investors-of-alphabet-inc-nasdaq-googl-goog-to-a-pending-securities-class-action-deadline-is-december-1-2026.html",
+   "summary": "律師行Kaplan Fox代表2026年5月19日至7月16日期間買入嘅投資者，就Gemini 3.5 Pro延誤嘅資訊披露入禀集體訴訟。",
+   "level": "low",
+   "scope": "stock",
+   "affects": [
+    {
+     "sym": "GOOG",
+     "dir": "mixed",
+     "why": "呢類訴訟好常見，通常對大公司財務影響細"
+    }
+   ],
+   "takeaway": "律師行經常喺股價大跌之後發起呢類訴訟，唔使太擔心。",
+   "found": "2026-11-07 08:00"
   },
   {
    "time": "2026-11-06 21:45",
@@ -243,6 +391,29 @@
    ],
    "takeaway": "經濟本身冇問題，市場驚嘅係加息。你要留意債息走勢。",
    "found": "2026-11-06 22:30"
+  },
+  {
+   "time": "2026-11-06 21:00",
+   "headline": "Alphabet披露買入5.5億美元高通股",
+   "source": "Yahoo Finance",
+   "url": "https://finance.yahoo.com/markets/stocks/articles/google-parent-reveals-548-million-133611955.html",
+   "summary": "Alphabet最新文件顯示買咗近300萬股高通，價值約5.48億美元，同時增持SpaceX到超過5.55億股。高通盤前因此升超過3%。",
+   "level": "low",
+   "scope": "stock",
+   "affects": [
+    {
+     "sym": "GOOG",
+     "dir": "mixed",
+     "why": "屬於投資組合變動，對本業影響細"
+    },
+    {
+     "sym": "QCOM",
+     "dir": "up",
+     "why": "有大公司入股，市場信心受支持"
+    }
+   ],
+   "takeaway": "對Google股價影響有限，唔使特別擔心。",
+   "found": "2026-11-07 08:00"
   },
   {
    "time": "2026-11-06 20:30",
@@ -782,162 +953,6 @@
    ],
    "takeaway": "Tesla 呢次跌主要係政治風險，唔係賣車數字。之後留意國會會唔會真係傳召 Musk。",
    "found": "2026-11-06 08:00"
-  },
-  {
-   "time": "2026-11-06 03:00",
-   "headline": "甲骨文跌7% 集資200億 騰訊交易告吹",
-   "source": "Motley Fool / Investing.com",
-   "url": "https://www.fool.com/investing/2026/11/05/why-oracle-stock-is-sinking-today/",
-   "summary": "周四甲骨文一度跌9%，見52週新低約112美元。原因包括同中國科技巨頭嘅交易取消、宣布發100億股票加100億債券集資，同埋AI基建股被拋售。",
-   "level": "high",
-   "scope": "stock",
-   "affects": [
-    {
-     "sym": "ORCL",
-     "dir": "down",
-     "why": "發新股會攤薄股東權益，債務已經約1,250億美元，仲失咗一單大合約"
-    }
-   ],
-   "takeaway": "今日只係微升約1%。你要留意佢負債同數據中心融資，115美元附近係重要支持位。",
-   "found": "2026-11-07 01:00"
-  },
-  {
-   "time": "2026-11-06 03:00",
-   "headline": "Nasdaq跌4%進入調整區 抹走選後升幅",
-   "source": "Quartz",
-   "url": "https://qz.com/nasdaq-correction-ai-chip-stocks-midterms-selloff-110526",
-   "summary": "納指由高位累計跌超過10%，正式進入調整區，周三選後嘅升幅全部蒸發，道指一度跌超過1000點。",
-   "level": "medium",
-   "scope": "market",
-   "affects": [
-    {
-     "sym": "QQQ",
-     "dir": "down",
-     "why": "納指跌入調整區，代表短期跌勢明顯"
-    },
-    {
-     "sym": "VOO",
-     "dir": "down",
-     "why": "標普500同樣抹走選後升幅"
-    }
-   ],
-   "takeaway": "調整區喺歷史上幾常見，唔等於一定會變熊市，但短期波動會好大。",
-   "found": "2026-11-06 04:45"
-  },
-  {
-   "time": "2026-11-06 02:30",
-   "headline": "道指標普抹走選後升幅 油價同步上升",
-   "source": "Yahoo Finance",
-   "url": "https://finance.yahoo.com/markets/live/stock-market-today-thursday-november-5-dow-sp-500-nasdaq-oil-rises-chip-stocks-141439950.html",
-   "summary": "周四晶片股暴跌，道指同標普500抹走選舉後嘅升幅，油價就逆市上升。",
-   "level": "medium",
-   "scope": "market",
-   "affects": [
-    {
-     "sym": "VOO",
-     "dir": "down",
-     "why": "大市全面受壓，唔只係科技股"
-    },
-    {
-     "sym": "GOOG",
-     "dir": "mixed",
-     "why": "Alphabet比其他科技股抗跌，只跌約1.6%"
-    }
-   ],
-   "takeaway": "GOOG今次相對抗跌，因為佢主要靠廣告同雲端賺錢，唔似晶片股咁依賴AI建設。",
-   "found": "2026-11-06 04:45"
-  },
-  {
-   "time": "2026-11-06 02:00",
-   "headline": "40個限制數據中心公投通過 Jefferies下調建設預測",
-   "source": "Seoul Economic Daily",
-   "url": "https://en.sedaily.com/international/2026/11/06/nasdaq-plunges-55-percent-into-correction-on-ai-regulation",
-   "summary": "10個州有41項數據中心公投，40項通過限制或者規管。Jefferies話民主黨大勝係AI股「短期最壞情況」，下調咗今個十年數據中心容量預測；Meta高層都話喺美國起新數據中心會好困難。",
-   "level": "high",
-   "scope": "sector",
-   "affects": [
-    {
-     "sym": "NVDA",
-     "dir": "down",
-     "why": "數據中心起少咗，AI晶片嘅需求預期就會跟住降"
-    },
-    {
-     "sym": "ORCL",
-     "dir": "down",
-     "why": "Oracle嘅雲端增長靠大量興建數據中心，受監管影響最直接"
-    },
-    {
-     "sym": "TSM",
-     "dir": "down",
-     "why": "AI晶片訂單預期減少，台積電先進製程嘅需求都會受影響"
-    },
-    {
-     "sym": "GOOG",
-     "dir": "mixed",
-     "why": "同樣要起數據中心，不過廣告現金流強，暫時算抗跌"
-    }
-   ],
-   "takeaway": "呢次跌嘅核心係政策風險，唔係公司業績差。要睇之後真正立咗咩法。",
-   "found": "2026-11-06 12:00"
-  },
-  {
-   "time": "2026-11-06 02:00",
-   "headline": "民主黨贏國會後 數據中心股繼續下跌",
-   "source": "MarketScreener",
-   "url": "https://www.marketscreener.com/news/data-center-stocks-continue-to-fall-after-democrats-win-congress-ce785fdcd180f726",
-   "summary": "德州新州長Hinojosa主張暫停興建數據中心同取消稅務優惠，喬治亞新州長亦主張暫停，Oracle跌約7%至9%，CoreWeave跌超過一成。",
-   "level": "high",
-   "scope": "sector",
-   "affects": [
-    {
-     "sym": "ORCL",
-     "dir": "down",
-     "why": "Oracle大量興建AI數據中心，而且借咗好多錢，最受政策風險影響"
-    },
-    {
-     "sym": "NVDA",
-     "dir": "down",
-     "why": "數據中心少起，對AI晶片需求就會減少"
-    }
-   ],
-   "takeaway": "暫停令嘅範圍仲未清楚，留意兩位州長上任後實際推乜政策。",
-   "found": "2026-11-06 04:45"
-  },
-  {
-   "time": "2026-11-06 01:30",
-   "headline": "台積電ADR跌一成 聯電跌16% 下星期公布10月營收",
-   "source": "Yahoo Finance",
-   "url": "https://finance.yahoo.com/markets/stocks/articles/tsmc-sinks-10-umc-down-182304636.html",
-   "summary": "台積電ADR收市跌10.78%，晶片股一齊大跌。台積電下星期會公布10月營收；第四季指引係523–543億美元，9月營收按年升54.6%。",
-   "level": "high",
-   "scope": "stock",
-   "affects": [
-    {
-     "sym": "TSM",
-     "dir": "down",
-     "why": "AI晶片需求預期受數據中心政策打擊"
-    }
-   ],
-   "takeaway": "下星期嘅10月營收會反映實際需求有冇轉差，係重要嘅驗證數據。",
-   "found": "2026-11-06 08:00"
-  },
-  {
-   "time": "2026-11-06 01:00",
-   "headline": "Tesla年初至今跌24% 連SpaceX蒸發4,200億",
-   "source": "CNBC",
-   "url": "https://www.cnbc.com/2026/11/05/tesla-spacex-stocks-fall-after-2026-midterms.html",
-   "summary": "Tesla周四跌11%，周三已經跌3.3%，今年累計跌大約24%。由周二收市計，Tesla同SpaceX市值合共蒸發超過4,200億美元。市場擔心民主黨控制國會之後會調查Musk同收緊監管。",
-   "level": "high",
-   "scope": "stock",
-   "affects": [
-    {
-     "sym": "TSLA",
-     "dir": "down",
-     "why": "政治同監管風險增加，盤前仍然弱"
-    }
-   ],
-   "takeaway": "政治風險短期難消除，可以留意國會會唔會真係傳召Musk。",
-   "found": "2026-11-06 18:00"
   }
  ]
 }

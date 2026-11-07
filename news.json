@@ -1,5 +1,5 @@
 {
- "generated": "2026-11-07T12:00+08:00",
+ "generated": "2026-11-07T18:00+08:00",
  "holdings": [
   "TSM",
   "TSLA",
@@ -11,8 +11,8 @@
   "NVDA"
  ],
  "claude_ok": true,
- "claude_at": "2026-11-07T12:00+08:00",
- "summary": "AI晶片股週五由近年最傷嘅大跌中反彈：台積電ADR升6.3%，Nvidia升2.8%，Tesla升4.2%。不過美股仍然連跌四週。非農數據強勁，市場而家估12月有七至八成機會加息。下週二公佈嘅CPI，同11月17日Nvidia業績，係你科技持倉接落嚟最關鍵嘅兩關。",
+ "claude_at": "2026-11-07T18:00+08:00",
+ "summary": "民主黨中期選舉大勝，市場驚收緊AI同數據中心規管，週四晶片股大跌，週五先反彈。非農強勁令12月加息預期升溫，下週二CPI好關鍵。你嘅持倉大多係科技同AI股，短期可能會大上大落。",
  "items": [
   {
    "time": "2026-11-07 06:00",
@@ -92,6 +92,34 @@
    ],
    "takeaway": "一日反彈唔代表已經見底，分析師都話個反彈好脆弱，留意下星期會唔會再跌。",
    "found": "2026-11-07 08:00"
+  },
+  {
+   "time": "2026-11-07 05:00",
+   "headline": "標普錄2025年4月以來最差一週",
+   "source": "TheStreet",
+   "url": "https://pro.thestreet.com/market-commentary/tech-bounces-but-the-sp-500-still-has-its-worst-week-since-april-2025",
+   "summary": "雖然週五科技股反彈，但全週標普500跌約2.7%，納指跌約3.4%，道指跌約0.9%。科技股係今個星期跌得最多嘅板塊。",
+   "level": "medium",
+   "scope": "market",
+   "affects": [
+    {
+     "sym": "VOO",
+     "dir": "down",
+     "why": "追蹤標普500，全週跌約2.7%"
+    },
+    {
+     "sym": "QQQ",
+     "dir": "down",
+     "why": "納指全週跌得比大市多"
+    },
+    {
+     "sym": "QQQM",
+     "dir": "down",
+     "why": "同QQQ追蹤同一個指數"
+    }
+   ],
+   "takeaway": "週五反彈唔代表已經見底。下週有CPI同AI雲端股業績，可能仲會大上大落。",
+   "found": "2026-11-07 18:00"
   },
   {
    "time": "2026-11-07 05:00",
@@ -925,54 +953,31 @@
   },
   {
    "time": "2026-11-06 08:00",
-   "headline": "Nvidia、Meta、台積電跌入熊市 25隻AI股全部跌兩成",
-   "source": "FourWeekMBA",
-   "url": "https://fourweekmba.com/ai-nvidia-meta-tsmc-enter-bear-markets-25-of-25-now-down-20/",
-   "summary": "追蹤嘅25隻AI股，全部已經由高位跌超過20%，正式進入熊市。費城半導體指數單日跌約12%，係2020年3月以來最大跌幅；12隻AI股一日蒸發約1.44萬億美元市值。",
-   "level": "high",
-   "scope": "sector",
-   "affects": [
-    {
-     "sym": "NVDA",
-     "dir": "down",
-     "why": "由高位跌超過兩成，今年嘅升幅已經全部蒸發"
-    },
-    {
-     "sym": "TSM",
-     "dir": "down",
-     "why": "一日跌約11%，同樣由高位跌超過兩成"
-    },
-    {
-     "sym": "QQQM",
-     "dir": "down",
-     "why": "AI股佔納指100好大比重，指數跟住一齊跌"
-    }
-   ],
-   "takeaway": "熊市入面反彈同急跌都會好頻密。唔使逐日估市，記住自己嘅止蝕位就得。",
-   "found": "2026-11-06 12:00"
-  },
-  {
-   "time": "2026-11-06 07:30",
-   "headline": "美股期貨再跌 納指期貨跌約0.4–0.8%",
-   "source": "CNBC",
-   "url": "https://cnbc.com/2026/11/05/stock-market-today-live-updates.html",
-   "summary": "大跌之後，晚間期貨繼續偏弱：標普期貨跌0.3–0.6%，納指100期貨跌0.4–0.8%。市場等緊今晚嘅非農數據。",
+   "headline": "特朗普揚言下週推新關稅 最高300%",
+   "source": "Seoul Economic Daily",
+   "url": "https://en.sedaily.com/international/2026/11/06/trump-threatens-300-percent-tariffs-as-cabinet-exodus-talk",
+   "summary": "特朗普話未來一兩個星期會有更多關稅行動，唔喺美國設廠嘅公司可能要付高達300%關稅，但冇講法律依據同時間。另一邊，Jeffries承諾新國會100日內廢除關稅。",
    "level": "medium",
    "scope": "market",
    "affects": [
     {
-     "sym": "QQQ",
-     "dir": "down",
-     "why": "納指期貨繼續向下，今晚開市可能仲有壓力"
+     "sym": "TSM",
+     "dir": "mixed",
+     "why": "台積電已經喺美國設廠，影響可能較細，但晶片關稅仍然有不確定性"
+    },
+    {
+     "sym": "TSLA",
+     "dir": "mixed",
+     "why": "Tesla主要喺美國生產，但零件成本可能受影響"
     },
     {
      "sym": "VOO",
      "dir": "down",
-     "why": "標普期貨小跌"
+     "why": "關稅消息可以令成個大市波動"
     }
    ],
-   "takeaway": "暴跌之後第二日通常都好波動，唔使每個價位都盯住。",
-   "found": "2026-11-06 08:00"
+   "takeaway": "暫時只有一個媒體報道，又冇細節。等有正式公佈先再評估，唔使即刻驚。",
+   "found": "2026-11-07 18:00"
   }
  ]
 }

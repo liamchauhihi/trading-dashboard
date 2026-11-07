@@ -1,5 +1,5 @@
 {
- "generated": "2026-11-07T18:00+08:00",
+ "generated": "2026-11-07T22:30+08:00",
  "holdings": [
   "TSM",
   "TSLA",
@@ -11,9 +11,88 @@
   "NVDA"
  ],
  "claude_ok": true,
- "claude_at": "2026-11-07T18:00+08:00",
- "summary": "民主黨中期選舉大勝，市場驚收緊AI同數據中心規管，週四晶片股大跌，週五先反彈。非農強勁令12月加息預期升溫，下週二CPI好關鍵。你嘅持倉大多係科技同AI股，短期可能會大上大落。",
+ "claude_at": "2026-11-07T22:30+08:00",
+ "summary": "上星期民主黨贏咗中期選舉，有人叫停建數據中心；再加上非農數據強勁，12月加息預期升溫，AI股經歷咗一輪大跌。週五雲端公司業績好過預期，股價有反彈，但係呢一星期大市仍然下跌。下星期二10月CPI同CoreWeave業績會決定方向。你嘅持倉大部分係AI同科技股，短期會繼續大上大落。",
  "items": [
+  {
+   "time": "2026-11-07 10:00",
+   "headline": "Alphabet買入約5.5億美元高通股份",
+   "source": "Reuters（經KuCoin轉載）",
+   "url": "https://www.kucoin.com/news/flash/alphabet-invests-548m-in-qualcomm-bets-on-ai-chip-expansion",
+   "summary": "最新持股披露顯示，Alphabet第三季買入約298萬股高通，持股大約0.5%，市值約5.48億美元。消息傳出後高通股價升大約5%。",
+   "level": "low",
+   "scope": "stock",
+   "affects": [
+    {
+     "sym": "GOOG",
+     "dir": "mixed",
+     "why": "屬於小額策略投資，對公司盈利影響好細"
+    },
+    {
+     "sym": "QCOM",
+     "dir": "up",
+     "why": "市場憧憬兩間公司會有AI晶片合作，但雙方未有確認"
+    }
+   ],
+   "takeaway": "金額相對Alphabet規模好細，唔使過度解讀。",
+   "found": "2026-11-07 22:30"
+  },
+  {
+   "time": "2026-11-07 07:00",
+   "headline": "下週焦點：CPI、PPI、思科同應用材料業績",
+   "source": "The Globe and Mail",
+   "url": "https://www.theglobeandmail.com/investing/article-wall-streets-week-ahead-as-tech-swoon-roils-market-us-inflation-data/",
+   "summary": "週二公佈10月CPI，同日收市後有CoreWeave業績。週四思科、應用材料公佈業績，週五公佈PPI。台積電10月營收預計亦會喺10號左右公佈。",
+   "level": "medium",
+   "scope": "market",
+   "affects": [
+    {
+     "sym": "TSM",
+     "dir": "mixed",
+     "why": "10月營收同應用材料對晶片設備需求嘅講法都會影響股價"
+    },
+    {
+     "sym": "NVDA",
+     "dir": "mixed",
+     "why": "CoreWeave係Nvidia大客，佢嘅業績會影響市場對AI需求嘅睇法"
+    },
+    {
+     "sym": "VOO",
+     "dir": "mixed",
+     "why": "通脹數據會左右12月加唔加息"
+    }
+   ],
+   "takeaway": "下星期數據密集，大市可能波動比較大，唔使因為一日大上大落而慌。",
+   "found": "2026-11-07 22:30"
+  },
+  {
+   "time": "2026-11-07 06:30",
+   "headline": "雲端股業績勝預期 Cloudflare升20%",
+   "source": "Yahoo Finance",
+   "url": "https://finance.yahoo.com/markets/stocks/articles/cloudflare-soars-20-iren-surges-140646893.html",
+   "summary": "Cloudflare、IREN業績好過預期，週五分別升兩成同15%。CoreWeave跟住升咗大約10%，AI雲端板塊喺大跌後反彈。",
+   "level": "medium",
+   "scope": "sector",
+   "affects": [
+    {
+     "sym": "NVDA",
+     "dir": "up",
+     "why": "雲端公司生意好，代表佢哋會繼續買GPU"
+    },
+    {
+     "sym": "TSM",
+     "dir": "up",
+     "why": "AI晶片需求未見轉弱，係週五急升原因之一"
+    },
+    {
+     "sym": "ORCL",
+     "dir": "mixed",
+     "why": "同業表現好，但Oracle仲受微軟停租算力拖累"
+    }
+   ],
+   "takeaway": "實際業績未見轉差。反彈能唔能夠持續，要睇下週CoreWeave業績。",
+   "found": "2026-11-07 22:30"
+  },
   {
    "time": "2026-11-07 06:00",
    "headline": "下週AI雲端股業績 CoreWeave打頭陣",
@@ -237,6 +316,34 @@
    "found": "2026-11-07 12:00"
   },
   {
+   "time": "2026-11-07 02:00",
+   "headline": "分析：AI數據中心擴建變成「消耗戰」",
+   "source": "CNBC",
+   "url": "https://www.cnbc.com/2026/11/06/ai-data-center-midterms-selloff.html",
+   "summary": "分析指AI股受壓有幾個原因：選舉結果、債息上升、建廠資金需求越來越大。市場開始懷疑AI投資能唔能夠維持而家嘅速度。",
+   "level": "high",
+   "scope": "sector",
+   "affects": [
+    {
+     "sym": "NVDA",
+     "dir": "down",
+     "why": "估值建基於AI開支持續高速增長"
+    },
+    {
+     "sym": "QQQ",
+     "dir": "down",
+     "why": "大型科技股佔指數比重好重"
+    },
+    {
+     "sym": "QQQM",
+     "dir": "down",
+     "why": "同QQQ追蹤同一個指數"
+    }
+   ],
+   "takeaway": "你嘅持倉好集中喺AI，同一個消息會令幾隻股票一齊郁，要有心理準備。",
+   "found": "2026-11-07 22:30"
+  },
+  {
    "time": "2026-11-07 01:30",
    "headline": "下週二公佈10月CPI 決定12月加息預期",
    "source": "CNBC",
@@ -442,6 +549,29 @@
    ],
    "takeaway": "暫時只係傳聞，等公司正式公布先當真，唔好單憑傳聞判斷。",
    "found": "2026-11-07 01:00"
+  },
+  {
+   "time": "2026-11-06 23:00",
+   "headline": "油價約91美元 債息高企至4.88%",
+   "source": "Charles Schwab",
+   "url": "https://www.schwab.com/learn/story/stock-market-update-open",
+   "summary": "非農數據公佈後，十年期債息升至4.88%。紐約期油大約91美元，金價大約4,060美元，加息擔憂令估值高嘅股票受壓。",
+   "level": "low",
+   "scope": "market",
+   "affects": [
+    {
+     "sym": "QQQ",
+     "dir": "down",
+     "why": "債息高，對高增長科技股估值不利"
+    },
+    {
+     "sym": "TSLA",
+     "dir": "down",
+     "why": "高息令買車借錢成本上升，估值亦受壓"
+    }
+   ],
+   "takeaway": "如果債息繼續升穿5%，科技股可能會再受壓，值得留意。",
+   "found": "2026-11-07 22:30"
   },
   {
    "time": "2026-11-06 23:00",
@@ -662,6 +792,29 @@
   },
   {
    "time": "2026-11-06 20:00",
+   "headline": "數據中心反對聲音 邊啲AI公司受影響",
+   "source": "Euronews",
+   "url": "https://www.euronews.com/2026/11/06/data-centre-backlash-which-ai-companies-have-been-affected-by-us-midterm-results",
+   "summary": "有民調指56%選民認為AI同數據中心係重要投票因素。民主黨亦贏咗德州、喬治亞、俄亥俄州長，而呢幾個都係建數據中心嘅熱門州份。",
+   "level": "medium",
+   "scope": "sector",
+   "affects": [
+    {
+     "sym": "ORCL",
+     "dir": "down",
+     "why": "Oracle喺德州有大型AI數據中心項目"
+    },
+    {
+     "sym": "GOOG",
+     "dir": "mixed",
+     "why": "各州審批建數據中心可能會變嚴"
+    }
+   ],
+   "takeaway": "以後地方政府審批數據中心可能會慢咗，可以留意相關公司業績會點講。",
+   "found": "2026-11-07 22:30"
+  },
+  {
+   "time": "2026-11-06 20:00",
    "headline": "Nasdaq期貨高開 但加息憂慮限制升幅",
    "source": "CP24 / Reuters",
    "url": "https://www.cp24.com/news/money/2026/11/06/nasdaq-eyes-higher-open-as-chips-pare-losses-rate-hike-fears-linger/",
@@ -681,39 +834,6 @@
     }
    ],
    "takeaway": "今晚收市先算數，盤前升幅可以好快消失。",
-   "found": "2026-11-06 22:30"
-  },
-  {
-   "time": "2026-11-06 19:00",
-   "headline": "分析：民主黨贏中期選舉 數據中心建設變「消耗戰」",
-   "source": "CNBC",
-   "url": "https://www.cnbc.com/2026/11/06/ai-data-center-midterms-selloff.html",
-   "summary": "市場擔心民主黨控制國會之後，數據中心審批同電費爭議會拖慢AI建設。UBS估計2028年美國約三成新增數據中心容量有機會受影響。",
-   "level": "high",
-   "scope": "sector",
-   "affects": [
-    {
-     "sym": "NVDA",
-     "dir": "down",
-     "why": "數據中心建得慢，AI晶片需求增長可能放慢"
-    },
-    {
-     "sym": "TSM",
-     "dir": "down",
-     "why": "AI晶片主要由佢生產，訂單增長預期受影響"
-    },
-    {
-     "sym": "ORCL",
-     "dir": "down",
-     "why": "大舉借錢起數據中心，建設受阻影響回報"
-    },
-    {
-     "sym": "GOOG",
-     "dir": "mixed",
-     "why": "資本開支壓力可能減輕，但AI擴張會慢咗"
-    }
-   ],
-   "takeaway": "呢個係政策風險，影響要幾年先見到，短期市場會反應過度。",
    "found": "2026-11-06 22:30"
   },
   {
@@ -868,116 +988,6 @@
    ],
    "takeaway": "亞洲跌得咁急，通常係恐慌式拋售。留意今晚美股開市有冇止跌。",
    "found": "2026-11-06 12:00"
-  },
-  {
-   "time": "2026-11-06 10:00",
-   "headline": "Cathie Wood減持Google 公司擴大自願離職計劃",
-   "source": "24/7 Wall St.",
-   "url": "https://247wallst.com/investing/2026/11/05/cathie-wood-sells-12-8-million-of-alphabet-days-after-the-stock-suffered-its-worst-day-since-its-2004-ipo-losing-nearly-half-a-trillion-dollars-in-market-value/",
-   "summary": "ARK沽出約1,280萬美元Alphabet股票。Google喺幾個國家擴大自願離職計劃以控制成本，同時計劃喺懷俄明州起170億美元數據中心。",
-   "level": "medium",
-   "scope": "stock",
-   "affects": [
-    {
-     "sym": "GOOG",
-     "dir": "mixed",
-     "why": "減省成本有助利潤，但AI開支大、自由現金流轉負，仲係市場擔心嘅地方"
-    }
-   ],
-   "takeaway": "Google業績後曾經錄得上市以來最差單日表現，今日升1.5%算回穩，留意AI開支會唔會繼續加大。",
-   "found": "2026-11-07 01:00"
-  },
-  {
-   "time": "2026-11-06 10:00",
-   "headline": "Google盤前微升 摩通下調目標價至375",
-   "source": "MarketBeat",
-   "url": "https://www.marketbeat.com/stocks/NASDAQ/goog/news",
-   "summary": "GOOG盤前升大約1.2%。摩根大通維持「增持」，但將目標價由425美元降到375美元。另外Google計劃2027年1月將Gemini Flash API價錢加一倍，並投資170億美元喺懷俄明州起數據中心。",
-   "level": "low",
-   "scope": "stock",
-   "affects": [
-    {
-     "sym": "GOOG",
-     "dir": "mixed",
-     "why": "AI收費提高有助收入，但資本開支仍然好大"
-    }
-   ],
-   "takeaway": "Google呢輪比其他AI股抗跌，不過資本開支大同自由現金流轉負都要留意。",
-   "found": "2026-11-06 18:00"
-  },
-  {
-   "time": "2026-11-06 09:40",
-   "headline": "大跌後美股期貨反覆 市場等非農數據",
-   "source": "Investing.com / Yahoo Finance",
-   "url": "https://finance.yahoo.com/markets/stocks/articles/u-stock-futures-rise-ai-013807565.html",
-   "summary": "周四係2025年4月關稅風波以來最差嘅一日，標普11個板塊全部收跌。期貨之後一度回升，市場預期10月非農增6.5萬個職位，失業率維持4.2%。",
-   "level": "high",
-   "scope": "market",
-   "affects": [
-    {
-     "sym": "VOO",
-     "dir": "mixed",
-     "why": "非農數據弱就加深對經濟嘅擔心，太強又會令市場驚聯儲收緊，兩邊都有風險"
-    },
-    {
-     "sym": "QQQ",
-     "dir": "mixed",
-     "why": "科技股跌完之後對數據好敏感，今晚可能大上大落"
-    }
-   ],
-   "takeaway": "今晚香港時間大約9:30公布非農，數據出咗之後可能大上大落，唔使急住決定。",
-   "found": "2026-11-06 12:00"
-  },
-  {
-   "time": "2026-11-06 08:30",
-   "headline": "伊朗協議有望 布蘭特油價回落至94美元",
-   "source": "CNBC",
-   "url": "https://www.cnbc.com/2026/11/05/stock-market-today-live-updates.html",
-   "summary": "市場憧憬同伊朗達成協議，布蘭特原油跌到每桶約94美元，WTI跌到88美元左右，扭轉咗之前跟大市一齊升嘅走勢。",
-   "level": "low",
-   "scope": "market",
-   "affects": [
-    {
-     "sym": "VOO",
-     "dir": "up",
-     "why": "油價回落有助減輕通脹壓力，對大市有少少支持"
-    },
-    {
-     "sym": "TSLA",
-     "dir": "mixed",
-     "why": "油價對電動車需求有間接影響，但而家主要受政治因素主導"
-    }
-   ],
-   "takeaway": "油價回落係少有嘅好消息，但未夠抵銷AI股嘅壓力。",
-   "found": "2026-11-06 12:00"
-  },
-  {
-   "time": "2026-11-06 08:00",
-   "headline": "特朗普揚言下週推新關稅 最高300%",
-   "source": "Seoul Economic Daily",
-   "url": "https://en.sedaily.com/international/2026/11/06/trump-threatens-300-percent-tariffs-as-cabinet-exodus-talk",
-   "summary": "特朗普話未來一兩個星期會有更多關稅行動，唔喺美國設廠嘅公司可能要付高達300%關稅，但冇講法律依據同時間。另一邊，Jeffries承諾新國會100日內廢除關稅。",
-   "level": "medium",
-   "scope": "market",
-   "affects": [
-    {
-     "sym": "TSM",
-     "dir": "mixed",
-     "why": "台積電已經喺美國設廠，影響可能較細，但晶片關稅仍然有不確定性"
-    },
-    {
-     "sym": "TSLA",
-     "dir": "mixed",
-     "why": "Tesla主要喺美國生產，但零件成本可能受影響"
-    },
-    {
-     "sym": "VOO",
-     "dir": "down",
-     "why": "關稅消息可以令成個大市波動"
-    }
-   ],
-   "takeaway": "暫時只有一個媒體報道，又冇細節。等有正式公佈先再評估，唔使即刻驚。",
-   "found": "2026-11-07 18:00"
   }
  ]
 }

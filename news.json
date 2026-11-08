@@ -1,5 +1,5 @@
 {
- "generated": "2026-11-08T12:00+08:00",
+ "generated": "2026-11-08T18:00+08:00",
  "holdings": [
   "TSM",
   "TSLA",
@@ -11,8 +11,8 @@
   "NVDA"
  ],
  "claude_ok": true,
- "claude_at": "2026-11-08T12:00+08:00",
- "summary": "上週四美股因中期選舉後市場擔心AI監管收緊而急跌，納指跌入調整區；週五晶片股反彈，台積電、Tesla、Nvidia升幅較大。週五公佈嘅就業數據遠勝預期，推高債息。下週二有CPI，你嘅科技股持倉短期可能繼續大上大落。",
+ "claude_at": "2026-11-08T18:00+08:00",
+ "summary": "10月非農職位大增16.5萬，市場估聯儲局12月加息機會升到約七成半，下週二CPI好關鍵。民主黨中期選舉大勝，市場擔心AI數據中心建設放慢，晶片股上週大跌後週五反彈。你嘅持倉以科技同晶片為主，未來一週可能繼續大上大落。",
  "items": [
   {
    "time": "2026-11-07 22:00",
@@ -59,6 +59,29 @@
    ],
    "takeaway": "巴郡仲有大量現金，佢肯加快回購自己嘅股份，反映管理層覺得股價唔貴",
    "found": "2026-11-08 08:00"
+  },
+  {
+   "time": "2026-11-07 15:00",
+   "headline": "台積電回應3D DRAM傳聞：繼續專注邏輯晶片代工",
+   "source": "MLQ.ai（引述路透社）",
+   "url": "https://mlq.ai/news/tsmc-says-it-will-remain-a-logic-foundry-after-a-report-that-it-is-exploring-3d-dram-for-nvidia",
+   "summary": "The Information報道台積電應Nvidia要求研究3D DRAM，帶動股價週五大升。台積電之後回應話會專注晶圓代工本業，繼續做邏輯晶片代工。",
+   "level": "medium",
+   "scope": "stock",
+   "affects": [
+    {
+     "sym": "TSM",
+     "dir": "mixed",
+     "why": "公司淡化傳聞，週五因傳聞而升嘅部分可能回吐"
+    },
+    {
+     "sym": "NVDA",
+     "dir": "mixed",
+     "why": "記憶體供應緊張嘅問題未必咁快解決"
+    }
+   ],
+   "takeaway": "週五大升有部分靠傳聞，留意11月10日台積電10月營收。",
+   "found": "2026-11-08 18:00"
   },
   {
    "time": "2026-11-07 12:00",
@@ -174,24 +197,6 @@
    ],
    "takeaway": "數據唔齊，市場解讀可能有分歧，公佈當晚波動可能會大啲",
    "found": "2026-11-08 12:00"
-  },
-  {
-   "time": "2026-11-07 08:00",
-   "headline": "馬斯克中期選舉砸近5億美元 支持者大多落敗",
-   "source": "ABC News",
-   "url": "https://www.abc.net.au/news/2026-11-07/tesla-to-pull-the-plug-on-cybertruck/107359058",
-   "summary": "馬斯克喺中期選舉投放創紀錄近5億美元政治捐款，但佢支持嘅共和黨候選人大多落敗；同週佢宣佈Cybertruck約2027年中停產。",
-   "level": "low",
-   "scope": "stock",
-   "affects": [
-    {
-     "sym": "TSLA",
-     "dir": "mixed",
-     "why": "政治影響力減弱，同新國會關係可能影響監管同補貼"
-    }
-   ],
-   "takeaway": "Tesla週五升4.2%主要係跌完反彈，政治因素可能令股價繼續波動。",
-   "found": "2026-11-08 01:00"
   },
   {
    "time": "2026-11-07 07:00",
@@ -565,6 +570,24 @@
   },
   {
    "time": "2026-11-07 02:00",
+   "headline": "Tesla明年年中逐步停產Cybertruck 騰位造Cybercab",
+   "source": "ABC News",
+   "url": "https://www.abc.net.au/news/2026-11-07/tesla-to-pull-the-plug-on-cybertruck/107359058",
+   "summary": "馬斯克喺X話，德州超級工廠會喺2027年年中左右逐步停產銷情差嘅Cybertruck，騰出空間加產自動駕駛的士Cybercab。Tesla股價週五升約4%。",
+   "level": "high",
+   "scope": "stock",
+   "affects": [
+    {
+     "sym": "TSLA",
+     "dir": "up",
+     "why": "市場睇好佢放棄賣得差嘅車款、集中做Robotaxi，係週五升4.2%嘅主因之一"
+    }
+   ],
+   "takeaway": "Tesla股價越嚟越靠自動駕駛故事支撐，留意Cybercab嘅實際投產進度。",
+   "found": "2026-11-08 18:00"
+  },
+  {
+   "time": "2026-11-07 02:00",
    "headline": "傳台積電考慮生產先進AI記憶體晶片",
    "source": "Reuters / The Information",
    "url": "https://www.investing.com/news/stock-market-news/tsmc-considers-making-advanced-memory-chips-the-information-reports-5008786",
@@ -676,22 +699,22 @@
    "found": "2026-11-07 04:45"
   },
   {
-   "time": "2026-11-07 00:34",
-   "headline": "馬斯克：Cybertruck約2027年中停產 讓路Cybercab",
-   "source": "Yahoo Finance",
-   "url": "https://finance.yahoo.com/markets/live/stock-market-today-friday-november-6-dow-sp-500-nasdaq-jobs-report-earnings-135953863.html",
-   "summary": "馬斯克表示Cybertruck生產會喺2027年中左右逐步結束，騰出產能生產無人駕駛的士Cybercab。Tesla當日升約4.75%。",
-   "level": "high",
+   "time": "2026-11-07 01:00",
+   "headline": "國會委員會要求黃仁勳出席閉門簡報",
+   "source": "Yahoo Finance / GuruFocus",
+   "url": "https://finance.yahoo.com/markets/stocks/articles/nvidia-stocks-rebound-6-78-165211819.html",
+   "summary": "三位眾議院委員會主席要求Nvidia行政總裁黃仁勳出席閉門簡報，講解佢同Megaspeed一名高層嘅往來。信件冇指控佢違法，但用國家安全角度提出問題。",
+   "level": "medium",
    "scope": "stock",
    "affects": [
     {
-     "sym": "TSLA",
-     "dir": "mixed",
-     "why": "市場關注重心轉向自動駕駛，但Cybercab仲要等監管豁免先可以大規模推出"
+     "sym": "NVDA",
+     "dir": "down",
+     "why": "多咗一個監管同國安方面嘅不確定因素"
     }
    ],
-   "takeaway": "Tesla嘅故事愈嚟愈靠自動駕駛，留意監管同埋量產進度",
-   "found": "2026-11-07 04:45"
+   "takeaway": "暫時只係要求簡報，未有指控，留意之後有冇調查或者出口限制。",
+   "found": "2026-11-08 18:00"
   },
   {
    "time": "2026-11-07 00:30",
@@ -743,6 +766,29 @@
    ],
    "takeaway": "工資升得快會令通脹更難回落，所以留意之後公佈嘅CPI，同埋聯儲官員點講。",
    "found": "2026-11-07 08:00"
+  },
+  {
+   "time": "2026-11-07 00:00",
+   "headline": "晶片股週五反彈 Nvidia收升2.78%",
+   "source": "Yahoo Finance",
+   "url": "https://finance.yahoo.com/markets/live/stock-market-today-friday-november-6-dow-sp-500-nasdaq-jobs-report-earnings-135953863.html",
+   "summary": "週四費半大跌12%，係2020年3月以嚟最差一日，Nvidia跌9%。週五Nvidia同另外七隻大型晶片股平均收復咗超過三分一跌幅。",
+   "level": "medium",
+   "scope": "sector",
+   "affects": [
+    {
+     "sym": "NVDA",
+     "dir": "up",
+     "why": "急跌後有買盤入市，收升2.78%"
+    },
+    {
+     "sym": "TSM",
+     "dir": "up",
+     "why": "跟晶片股反彈，加上記憶體晶片傳聞，升6.33%"
+    }
+   ],
+   "takeaway": "反彈未代表跌勢完結，分析師提醒180美元附近係Nvidia嘅重要支持位。",
+   "found": "2026-11-08 18:00"
   },
   {
    "time": "2026-11-07 00:00",
@@ -922,62 +968,6 @@
    ],
    "takeaway": "11月17日業績先係真正考驗，業績前波幅可能好大，心理上要有準備。",
    "found": "2026-11-07 01:00"
-  },
-  {
-   "time": "2026-11-06 22:40",
-   "headline": "非農後債息急升 十年期見4.88%",
-   "source": "Rallies.ai / Finimize",
-   "url": "https://rallies.ai/news/us-yields-advance-after-strong-jobs-report-backs-rate-hike-view-a8e53c2012648348",
-   "summary": "就業數據強過預期之後，十年期債息升到約4.88%，兩年期約4.53%，三十年期約5.28%；美元亦走強。市場仲預期最後一次加息會提早到4月。",
-   "level": "high",
-   "scope": "market",
-   "affects": [
-    {
-     "sym": "QQQ",
-     "dir": "down",
-     "why": "債息高會壓低成長股估值，限制科技股反彈幅度"
-    },
-    {
-     "sym": "VOO",
-     "dir": "down",
-     "why": "借貸成本上升，對整體估值不利"
-    },
-    {
-     "sym": "TSLA",
-     "dir": "down",
-     "why": "高估值股對利率特別敏感"
-    }
-   ],
-   "takeaway": "就算晶片股反彈，債息持續高企都會拖住大市，要留意12月8–9日議息。",
-   "found": "2026-11-07 01:00"
-  },
-  {
-   "time": "2026-11-06 22:30",
-   "headline": "就業數據強勁 12月加息機會升至約八成",
-   "source": "Finimize",
-   "url": "https://finimize.com/content/strong-jobs-print-pushed-treasury-yields-back-up",
-   "summary": "數據公佈後10年期債息升至約4.88%，2年期約4.52%；期貨市場估12月加息機會由約72%升至77%-81%，金價回落。",
-   "level": "high",
-   "scope": "market",
-   "affects": [
-    {
-     "sym": "QQQ",
-     "dir": "down",
-     "why": "債息高會壓低科技股估值"
-    },
-    {
-     "sym": "NVDA",
-     "dir": "down",
-     "why": "高增長股對息口最敏感"
-    },
-    {
-     "sym": "TSLA",
-     "dir": "down",
-     "why": "估值高，加息預期升對佢壓力大"
-    }
-   ],
-   "takeaway": "息口係而家壓住科技股嘅主要因素，下週二CPI會決定加唔加息。",
-   "found": "2026-11-08 01:00"
   }
  ]
 }

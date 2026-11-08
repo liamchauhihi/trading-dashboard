@@ -1,5 +1,5 @@
 {
- "generated": "2026-11-08T22:30+08:00",
+ "generated": "2026-11-09T01:00+08:00",
  "holdings": [
   "TSM",
   "TSLA",
@@ -11,9 +11,32 @@
   "NVDA"
  ],
  "claude_ok": true,
- "claude_at": "2026-11-08T22:30+08:00",
- "summary": "美國10月就業數據強過預期，市場估聯儲局12月加息機會升至約八成，債息上升，對科技股唔利。中期選舉後，市場擔心民主黨會收緊AI同數據中心規管，晶片股經歷大跌之後週五反彈。台灣週一起大幅收緊沽空，同時預備動用平準基金。你持有嘅科技同晶片股短期會繼續大上大落，下週二CPI係關鍵。",
+ "claude_at": "2026-11-09T01:00+08:00",
+ "summary": "上週五非農就業數據好過預期，市場估12月聯儲局加息機會約八成，週二CPI會係關鍵。Nvidia同時面對國會壓力，CEO黃仁勳被要求出席閉門會議，H200晶片又卡喺香港入唔到大陸，你持有嘅NVDA、TSM同QQQ可能繼續大上大落。TSLA同TSM上週五大升，主要係晶片股反彈加3D DRAM傳聞帶動。",
  "items": [
+  {
+   "time": "2026-11-08 18:30",
+   "headline": "十年債息4.86% 油價90美元 VIX仍高企",
+   "source": "TipRanks",
+   "url": "https://www.tipranks.com/news/the-week-that-was-the-week-ahead-macro-and-markets-november-8",
+   "summary": "上週標普跌2.7%，納指跌3.4%。週五收市十年期債息約4.86%，紐約期油約90美元，恐慌指數VIX 25.6，比正常水平高。",
+   "level": "medium",
+   "scope": "market",
+   "affects": [
+    {
+     "sym": "QQQ",
+     "dir": "down",
+     "why": "高債息會壓低科技股估值"
+    },
+    {
+     "sym": "VOO",
+     "dir": "mixed",
+     "why": "高油價推高通脹壓力，但能源股受惠"
+    }
+   ],
+   "takeaway": "VIX高過20代表市場仲好緊張，每日郁2-3%可能會比較常見。",
+   "found": "2026-11-09 01:00"
+  },
   {
    "time": "2026-11-07 22:00",
    "headline": "傳Nvidia要求台積電研發3D DRAM記憶體",
@@ -172,6 +195,24 @@
   },
   {
    "time": "2026-11-07 08:00",
+   "headline": "Google被指迫學校用Gemini 急忙澄清",
+   "source": "San José Inside",
+   "url": "https://www.sanjoseinside.com/business/google-scrambles-to-counter-claims-it-is-bullying-schools-into-using-gemini/",
+   "summary": "Google高層一度表示關閉AI嘅學校會用唔到Search，引起反彈，之後Google喺X澄清，話改動係俾學校更多選擇。",
+   "level": "low",
+   "scope": "stock",
+   "affects": [
+    {
+     "sym": "GOOG",
+     "dir": "mixed",
+     "why": "公關風波，對收入影響好細，但會增加AI監管關注"
+    }
+   ],
+   "takeaway": "暫時屬於小風波，唔使太擔心，留意之後會唔會引嚟監管跟進。",
+   "found": "2026-11-09 01:00"
+  },
+  {
+   "time": "2026-11-07 08:00",
    "headline": "分析：有總統否決權 國會難全面限制數據中心",
    "source": "Fox Business",
    "url": "https://www.foxbusiness.com/politics/new-political-landscape-facing-ai-after-democrats-midterm-gains",
@@ -281,6 +322,24 @@
    ],
    "takeaway": "實際業績未見轉差。反彈能唔能夠持續，要睇下週CoreWeave業績。",
    "found": "2026-11-07 22:30"
+  },
+  {
+   "time": "2026-11-07 06:00",
+   "headline": "馬斯克：德州廠明年中逐步停產Cybertruck",
+   "source": "The Motley Fool",
+   "url": "https://www.fool.com/investing/2026/11/07/elon-musk-is-winding-down-cybertruck-production-to-build-cybercabs-the-model-s-and-model-x-already-gave-up-their-factory-space-to-robots/",
+   "summary": "馬斯克喺X表示，德州廠約2027年中會逐步停產Cybertruck，騰出位置大量生產無人駕駛Cybercab。佢冇講會唔會喺其他地方繼續生產。",
+   "level": "medium",
+   "scope": "stock",
+   "affects": [
+    {
+     "sym": "TSLA",
+     "dir": "mixed",
+     "why": "賣唔好嘅車型讓路俾Robotaxi，但未來收入更加靠自駕技術成唔成功"
+    }
+   ],
+   "takeaway": "Tesla愈嚟愈似一隻押注自動駕駛同機械人嘅股，波動可能更大。",
+   "found": "2026-11-09 01:00"
   },
   {
    "time": "2026-11-07 06:00",
@@ -506,6 +565,29 @@
   },
   {
    "time": "2026-11-07 03:00",
+   "headline": "國會要求黃仁勳11月18日出席閉門會議",
+   "source": "The National",
+   "url": "https://www.thenationalnews.com/future/technology/2026/11/06/jensen-huang-nvidia-china-ai-congress/",
+   "summary": "三位共和黨眾議員要求黃仁勳出席閉門簡報，解釋佢同一名涉嫌向中國傳遞情報嘅新加坡公司高層有咩往來。Nvidia否認有不當行為。",
+   "level": "high",
+   "scope": "stock",
+   "affects": [
+    {
+     "sym": "NVDA",
+     "dir": "down",
+     "why": "管治同出口監管嘅疑問增加，業績前多一個負面因素"
+    },
+    {
+     "sym": "TSM",
+     "dir": "mixed",
+     "why": "Nvidia係台積電最大客戶，監管風險會間接影響"
+    }
+   ],
+   "takeaway": "暫時只係問話，未有指控，留意11月11日回覆限期同後續發展。",
+   "found": "2026-11-09 01:00"
+  },
+  {
+   "time": "2026-11-07 03:00",
    "headline": "Anthropic上市估值傳降至1.2-1.3萬億美元",
    "source": "Quartz",
    "url": "https://qz.com/anthropic-ipo-valuation-expectations-fall-ai-selloff-110626",
@@ -595,6 +677,29 @@
    ],
    "takeaway": "Oracle負債高、現金流係負數，對壞消息會特別敏感，要留意",
    "found": "2026-11-07 12:00"
+  },
+  {
+   "time": "2026-11-07 02:00",
+   "headline": "民主黨國會擬針對Nvidia晶片出口 1月或發傳票",
+   "source": "Bloomberg",
+   "url": "https://www.bloomberg.com/news/articles/2026-11-06/nvidia-s-ai-chip-exports-emerge-as-target-in-democratic-congress",
+   "summary": "中期選舉後民主黨控制國會，預計會追問Nvidia點樣防止AI晶片流入中國，最快1月動用傳票權。",
+   "level": "medium",
+   "scope": "sector",
+   "affects": [
+    {
+     "sym": "NVDA",
+     "dir": "down",
+     "why": "對華銷售可能被收得更緊，政治風險上升"
+    },
+    {
+     "sym": "QQQ",
+     "dir": "mixed",
+     "why": "Nvidia係納指最大成分股之一"
+    }
+   ],
+   "takeaway": "係長期監管風險，唔會即刻影響盈利，但會令股價情緒波動。",
+   "found": "2026-11-09 01:00"
   },
   {
    "time": "2026-11-07 02:00",
@@ -858,116 +963,6 @@
    ],
    "takeaway": "算係少少好消息，但未改變市場估12月加息嘅預期",
    "found": "2026-11-07 12:00"
-  },
-  {
-   "time": "2026-11-07 00:00",
-   "headline": "Tesla反彈約5% 選後大跌後回穩",
-   "source": "AOL / Yahoo Finance",
-   "url": "https://www.aol.com/articles/chip-stocks-lead-tech-rebound-150906000.html",
-   "summary": "Tesla周四跌10.8%，收343.69美元，市場擔心民主黨控制國會之後會調查Musk旗下公司。周五同SpaceX一齊反彈約5%。",
-   "level": "high",
-   "scope": "stock",
-   "affects": [
-    {
-     "sym": "TSLA",
-     "dir": "up",
-     "why": "跌得太急之後有技術反彈，同大市科技股一齊回升"
-    }
-   ],
-   "takeaway": "今日升主要係反彈，未有新嘅利好消息。政治調查風險仲喺度，波幅會繼續大。",
-   "found": "2026-11-07 01:00"
-  },
-  {
-   "time": "2026-11-06 23:30",
-   "headline": "分析：12月加息未必成事",
-   "source": "Axios",
-   "url": "https://www.axios.com/2026/11/06/federal-reserve-jobs-report-bonds",
-   "summary": "雖然非農強勁，但有策略師認為油價回落同科技股大跌會令經濟降溫，可能令2027年初唔使再加息。兩年期債息週五早段只係升咗0.04厘。",
-   "level": "medium",
-   "scope": "market",
-   "affects": [
-    {
-     "sym": "VOO",
-     "dir": "mixed",
-     "why": "加息預期隨時再變，大市會跟住搖擺"
-    },
-    {
-     "sym": "QQQ",
-     "dir": "mixed",
-     "why": "科技股對利率預期最敏感"
-    }
-   ],
-   "takeaway": "市場意見分歧，12月議息之前每一份數據都可能令股市大上大落。",
-   "found": "2026-11-07 08:00"
-  },
-  {
-   "time": "2026-11-06 23:30",
-   "headline": "傳台積電研究進軍先進記憶體 供應Nvidia",
-   "source": "Investing.com",
-   "url": "https://in.investing.com/news/stock-market-news/tsmc-rises-on-report-of-potential-push-into-advanced-memory-for-nvidia-5687659",
-   "summary": "The Information報道，台積電正評估擴展到先進記憶體晶片生產，可能為Nvidia供貨，成為今日股價反彈嘅另一個原因。",
-   "level": "medium",
-   "scope": "stock",
-   "affects": [
-    {
-     "sym": "TSM",
-     "dir": "up",
-     "why": "有機會開拓新收入來源，不過仍然係報道，未經證實"
-    },
-    {
-     "sym": "NVDA",
-     "dir": "mixed",
-     "why": "多一個記憶體供應商可能有幫助，但仍然未落實"
-    }
-   ],
-   "takeaway": "暫時只係傳聞，等公司正式公布先當真，唔好單憑傳聞判斷。",
-   "found": "2026-11-07 01:00"
-  },
-  {
-   "time": "2026-11-06 23:00",
-   "headline": "長期失業比例升至2021年以來最高",
-   "source": "CNBC",
-   "url": "https://www.cnbc.com/2026/11/06/long-term-unemployment-october-jobs-report.html",
-   "summary": "10月失業超過27週嘅人佔總失業人數27.6%，創2021年底以來最高；較廣義嘅U-6失業率亦由7.6%升至7.9%。",
-   "level": "low",
-   "scope": "market",
-   "affects": [
-    {
-     "sym": "VOO",
-     "dir": "mixed",
-     "why": "就業表面強勁，但底層有轉弱跡象"
-    },
-    {
-     "sym": "QQQ",
-     "dir": "mixed",
-     "why": "如果聯儲局重視呢啲細節，加息壓力可能細啲"
-    }
-   ],
-   "takeaway": "就業數據唔係全部咁好，聯儲局未必一定加息。",
-   "found": "2026-11-08 01:00"
-  },
-  {
-   "time": "2026-11-06 23:00",
-   "headline": "油價約91美元 債息高企至4.88%",
-   "source": "Charles Schwab",
-   "url": "https://www.schwab.com/learn/story/stock-market-update-open",
-   "summary": "非農數據公佈後，十年期債息升至4.88%。紐約期油大約91美元，金價大約4,060美元，加息擔憂令估值高嘅股票受壓。",
-   "level": "low",
-   "scope": "market",
-   "affects": [
-    {
-     "sym": "QQQ",
-     "dir": "down",
-     "why": "債息高，對高增長科技股估值不利"
-    },
-    {
-     "sym": "TSLA",
-     "dir": "down",
-     "why": "高息令買車借錢成本上升，估值亦受壓"
-    }
-   ],
-   "takeaway": "如果債息繼續升穿5%，科技股可能會再受壓，值得留意。",
-   "found": "2026-11-07 22:30"
   }
  ]
 }

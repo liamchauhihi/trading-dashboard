@@ -1,5 +1,5 @@
 {
- "generated": "2026-11-08T04:45+08:00",
+ "generated": "2026-11-08T08:00+08:00",
  "holdings": [
   "TSM",
   "TSLA",
@@ -10,10 +10,74 @@
   "QQQM",
   "NVDA"
  ],
- "claude_ok": false,
- "claude_at": "2026-11-08T01:00+08:00",
- "summary": "美國10月非農新增16.5萬份工，遠超預期，12月加息機會升至約八成，債息再上；中期選舉後AI股週四急跌，週五晶片股反彈但未收復失地。你持有大量科技同晶片股，下週二CPI係關鍵，波動可能仍然大。",
+ "claude_ok": true,
+ "claude_at": "2026-11-08T08:00+08:00",
+ "summary": "AI晶片股上週因民主黨贏國會、擔心數據中心受限而大跌，週五先反彈。台灣限制沽空、傳台積電考慮造記憶體晶片，帶動TSM大升。下週二CPI同17號Nvidia業績會決定科技股走向，聯儲局12月加息機會仍約78%，你嘅科技持倉短期可能繼續大上大落。",
  "items": [
+  {
+   "time": "2026-11-07 21:00",
+   "headline": "巴郡第三季經營盈利跌6% 回購翻倍",
+   "source": "CNBC",
+   "url": "https://www.cnbc.com/2026/11/07/berkshire-hathaway-q3-2026-earnings-buybacks.html",
+   "summary": "巴郡第三季經營盈利跌5.8%至127億美元，主要拖累係GEICO保險。季內回購約96億美元股票，現金儲備約3,774億美元。",
+   "level": "low",
+   "scope": "market",
+   "affects": [
+    {
+     "sym": "VOO",
+     "dir": "mixed",
+     "why": "巴郡係標普500大型成分股之一"
+    },
+    {
+     "sym": "BRK.B",
+     "dir": "mixed",
+     "why": "盈利下跌但加快回購"
+    }
+   ],
+   "takeaway": "巴郡仲有大量現金，佢肯加快回購自己嘅股份，反映管理層覺得股價唔貴",
+   "found": "2026-11-08 08:00"
+  },
+  {
+   "time": "2026-11-07 12:00",
+   "headline": "Tesla下月股東大會 Cybertruck仍受監管查問",
+   "source": "24/7 Wall St.",
+   "url": "https://247wallst.com/investing/2026/11/07/a-retiree-who-bought-1000-tesla-shares-at-197-just-watched-musk-kill-the-cybertruck",
+   "summary": "馬斯克宣佈Cybertruck約2027年中停產之後，美國汽車安全監管機構仍然查問佢有冇按聯邦標準認證。Tesla亦定咗11月20日進入阿根廷市場。",
+   "level": "low",
+   "scope": "stock",
+   "affects": [
+    {
+     "sym": "TSLA",
+     "dir": "mixed",
+     "why": "市場聚焦Cybercab機械人的士，但監管問題仍未解決"
+    }
+   ],
+   "takeaway": "Tesla週五升4%主要因為市場睇好Cybercab，要留意之後有冇正式公告",
+   "found": "2026-11-08 08:00"
+  },
+  {
+   "time": "2026-11-07 10:00",
+   "headline": "微軟停租Oracle算力 Oracle稱需求仍強",
+   "source": "Reuters / Bloomberg",
+   "url": "https://investing.com/news/stock-market-news/microsoft-is-winding-down-oracle-deal-to-rent-ai-cloud-capacity-bloomberg-news-reports-5008946",
+   "summary": "微軟逐步結束2023年向Oracle租用舊款Nvidia GPU算力嘅合約。Oracle回應話AI基建需求仍然強勁；Bernstein亦認為OpenAI合約對Oracle嘅下行風險低。",
+   "level": "medium",
+   "scope": "stock",
+   "affects": [
+    {
+     "sym": "ORCL",
+     "dir": "mixed",
+     "why": "失去一份舊合約，但6,640億美元訂單大部份仲喺度"
+    },
+    {
+     "sym": "NVDA",
+     "dir": "mixed",
+     "why": "舊款GPU需求減弱，反映客戶轉用新晶片"
+    }
+   ],
+   "takeaway": "要留意OpenAI會唔會調整明年對Oracle嘅算力需求，佢佔訂單約一半",
+   "found": "2026-11-08 08:00"
+  },
   {
    "time": "2026-11-07 10:00",
    "headline": "Alphabet買入約5.5億美元高通股份",
@@ -110,6 +174,34 @@
    ],
    "takeaway": "實際業績未見轉差。反彈能唔能夠持續，要睇下週CoreWeave業績。",
    "found": "2026-11-07 22:30"
+  },
+  {
+   "time": "2026-11-07 06:00",
+   "headline": "下週科技股或再動盪 Nvidia業績成焦點",
+   "source": "CNBC",
+   "url": "https://www.cnbc.com/2026/11/06/stock-market-next-week-outlook-for-nov-9-13-2026.html",
+   "summary": "分析指科技股波動可能未完，VIX仍然高過25。Nvidia將於11月17日公佈業績，市場視之為AI投資有冇回報嘅試金石。",
+   "level": "high",
+   "scope": "sector",
+   "affects": [
+    {
+     "sym": "NVDA",
+     "dir": "mixed",
+     "why": "業績同指引會直接決定AI股走向"
+    },
+    {
+     "sym": "QQQ",
+     "dir": "mixed",
+     "why": "Nvidia係納指最大成分股之一"
+    },
+    {
+     "sym": "QQQM",
+     "dir": "mixed",
+     "why": "同QQQ一樣"
+    }
+   ],
+   "takeaway": "業績前後波幅通常好大，要有心理準備",
+   "found": "2026-11-08 08:00"
   },
   {
    "time": "2026-11-07 06:00",
@@ -381,6 +473,34 @@
   },
   {
    "time": "2026-11-07 02:00",
+   "headline": "傳台積電考慮生產先進AI記憶體晶片",
+   "source": "Reuters / The Information",
+   "url": "https://www.investing.com/news/stock-market-news/tsmc-considers-making-advanced-memory-chips-the-information-reports-5008786",
+   "summary": "The Information報道，台積電應Nvidia要求，研究生產3D DRAM等先進記憶體，可能新建或改裝廠房。台積電話唔評論市場傳聞，會專注本業。",
+   "level": "medium",
+   "scope": "stock",
+   "affects": [
+    {
+     "sym": "TSM",
+     "dir": "up",
+     "why": "如果成事，可以喺AI硬件賺多一份錢"
+    },
+    {
+     "sym": "NVDA",
+     "dir": "mixed",
+     "why": "多一個記憶體供應商，長遠可能壓低成本"
+    },
+    {
+     "sym": "MU",
+     "dir": "down",
+     "why": "台積電入行會加劇記憶體競爭"
+    }
+   ],
+   "takeaway": "暫時只係傳聞，未有正式宣佈，唔好當咗係已經落實",
+   "found": "2026-11-08 08:00"
+  },
+  {
+   "time": "2026-11-07 02:00",
    "headline": "OpenAI、Arm、高通高層：AI需求無問題",
    "source": "CNBC",
    "url": "https://www.cnbc.com/2026/11/06/tech-executives-ai-data-center-selloff-midterms.html",
@@ -434,29 +554,6 @@
    ],
    "takeaway": "你嘅持倉好集中喺AI，同一個消息會令幾隻股票一齊郁，要有心理準備。",
    "found": "2026-11-07 22:30"
-  },
-  {
-   "time": "2026-11-07 01:30",
-   "headline": "下週二公佈10月CPI 決定12月加息預期",
-   "source": "CNBC",
-   "url": "https://www.cnbc.com/2026/11/06/stock-market-next-week-outlook-for-nov-9-13-2026.html",
-   "summary": "10月CPI將於香港時間11月10日晚上9:30公佈。市場預期按月通脹由0.6%降至0.3%，核心通脹由0.3%降至0.2%；週五仲有PPI。",
-   "level": "high",
-   "scope": "market",
-   "affects": [
-    {
-     "sym": "QQQ",
-     "dir": "mixed",
-     "why": "通脹高過預期會推高債息，壓科技股"
-    },
-    {
-     "sym": "VOO",
-     "dir": "mixed",
-     "why": "加息預期直接影響大市估值"
-    }
-   ],
-   "takeaway": "CPI當晚大市可能大上大落，要預咗心理準備",
-   "found": "2026-11-07 12:00"
   },
   {
    "time": "2026-11-07 01:10",
@@ -856,133 +953,31 @@
   },
   {
    "time": "2026-11-06 21:30",
-   "headline": "10月非農新增16.5萬 遠超預期 失業率跌至4.1%",
-   "source": "Benzinga",
-   "url": "https://www.benzinga.com/markets/economic-data/26/11/62974776/october-jobs-report-nonfarm-payrolls-unemployment-rate",
-   "summary": "美國10月非農新增16.5萬份工，市場預期只有約6.5萬；失業率由4.2%跌至4.1%，8、9月數字亦向上修訂，時薪按年升3.1%。",
-   "level": "high",
-   "scope": "market",
-   "affects": [
-    {
-     "sym": "QQQ",
-     "dir": "mixed",
-     "why": "經濟穩陣係好事，但加息機會大咗，對高估值科技股唔利"
-    },
-    {
-     "sym": "VOO",
-     "dir": "mixed",
-     "why": "盈利前景穩，但息口壓力增加"
-    },
-    {
-     "sym": "QQQM",
-     "dir": "mixed",
-     "why": "同QQQ一樣，同受息口影響"
-    }
-   ],
-   "takeaway": "就業強即係經濟未見衰退，但聯儲局更有理由加息，要留意下週CPI。",
-   "found": "2026-11-08 01:00"
-  },
-  {
-   "time": "2026-11-06 21:30",
-   "headline": "10月非農新增16.5萬 遠超預期 失業率跌至4.1%",
-   "source": "CNBC",
-   "url": "https://www.cnbc.com/2026/11/06/jobs-report-october-2026.html",
-   "summary": "市場本來預期只增約6萬個職位，結果新增16.5萬，9月數字亦上調到6萬。失業率由4.2%跌到4.1%，時薪按年升3.1%，高過預期。",
+   "headline": "10月非農增16.5萬 12月加息機會約78%",
+   "source": "Reuters",
+   "url": "https://ca.investing.com/news/economy-news/fed-seen-sticking-to-december-rate-hike-after-jobs-data-4939832",
+   "summary": "美國10月新增16.5萬個職位，失業率跌至4.1%。市場估計聯儲局12月8至9日會議加息0.25厘嘅機會約78%，低過數據啱公佈時嘅85%。",
    "level": "high",
    "scope": "market",
    "affects": [
     {
      "sym": "QQQ",
      "dir": "down",
-     "why": "經濟太強，減息無望，甚至可能加息，高估值科技股最受壓"
+     "why": "加息預期升，高估值科技股最受壓"
     },
     {
      "sym": "QQQM",
      "dir": "down",
-     "why": "同QQQ一樣追蹤納指100，受債息上升影響"
+     "why": "同QQQ一樣追蹤納指100"
     },
     {
      "sym": "VOO",
-     "dir": "mixed",
-     "why": "經濟強對企業盈利係好事，但加息風險會拖累估值"
-    }
-   ],
-   "takeaway": "經濟本身冇問題，市場驚嘅係加息。你要留意債息走勢。",
-   "found": "2026-11-06 22:30"
-  },
-  {
-   "time": "2026-11-06 21:00",
-   "headline": "Alphabet披露買入5.5億美元高通股",
-   "source": "Yahoo Finance",
-   "url": "https://finance.yahoo.com/markets/stocks/articles/google-parent-reveals-548-million-133611955.html",
-   "summary": "Alphabet最新文件顯示買咗近300萬股高通，價值約5.48億美元，同時增持SpaceX到超過5.55億股。高通盤前因此升超過3%。",
-   "level": "low",
-   "scope": "stock",
-   "affects": [
-    {
-     "sym": "GOOG",
-     "dir": "mixed",
-     "why": "屬於投資組合變動，對本業影響細"
-    },
-    {
-     "sym": "QCOM",
-     "dir": "up",
-     "why": "有大公司入股，市場信心受支持"
-    }
-   ],
-   "takeaway": "對Google股價影響有限，唔使特別擔心。",
-   "found": "2026-11-07 08:00"
-  },
-  {
-   "time": "2026-11-06 20:30",
-   "headline": "晶片股盤前大反彈 台積電ADR升逾7%",
-   "source": "Yahoo Finance",
-   "url": "https://finance.yahoo.com/technology/articles/u-chip-stocks-rebound-sharply-105433545.html",
-   "summary": "費城半導體指數周四跌約12%，係2020年以嚟最差嘅一日。今日盤前有人趁低吸納，台積電ADR報約379美元，AMD、博通、美光升5%至8%。",
-   "level": "high",
-   "scope": "sector",
-   "affects": [
-    {
-     "sym": "TSM",
-     "dir": "up",
-     "why": "周四跌近11%之後，盤前反彈約7%"
-    },
-    {
-     "sym": "NVDA",
-     "dir": "up",
-     "why": "跟隨晶片股回升，盤前升3%至5%"
-    },
-    {
-     "sym": "ORCL",
-     "dir": "up",
-     "why": "盤前升約2.6%至4%，跟住AI股回升"
-    }
-   ],
-   "takeaway": "暴跌後反彈好常見，唔代表已經見底，可以睇吓收市守唔守得住。",
-   "found": "2026-11-06 22:30"
-  },
-  {
-   "time": "2026-11-06 20:00",
-   "headline": "數據中心反對聲音 邊啲AI公司受影響",
-   "source": "Euronews",
-   "url": "https://www.euronews.com/2026/11/06/data-centre-backlash-which-ai-companies-have-been-affected-by-us-midterm-results",
-   "summary": "有民調指56%選民認為AI同數據中心係重要投票因素。民主黨亦贏咗德州、喬治亞、俄亥俄州長，而呢幾個都係建數據中心嘅熱門州份。",
-   "level": "medium",
-   "scope": "sector",
-   "affects": [
-    {
-     "sym": "ORCL",
      "dir": "down",
-     "why": "Oracle喺德州有大型AI數據中心項目"
-    },
-    {
-     "sym": "GOOG",
-     "dir": "mixed",
-     "why": "各州審批建數據中心可能會變嚴"
+     "why": "息口上升會壓低整體股市估值"
     }
    ],
-   "takeaway": "以後地方政府審批數據中心可能會慢咗，可以留意相關公司業績會點講。",
-   "found": "2026-11-07 22:30"
+   "takeaway": "下週二CPI係關鍵，通脹再高可能令加息機會更大",
+   "found": "2026-11-08 08:00"
   }
  ]
 }

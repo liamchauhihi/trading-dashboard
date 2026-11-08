@@ -1,5 +1,5 @@
 {
- "generated": "2026-11-08T18:00+08:00",
+ "generated": "2026-11-08T22:30+08:00",
  "holdings": [
   "TSM",
   "TSLA",
@@ -11,8 +11,8 @@
   "NVDA"
  ],
  "claude_ok": true,
- "claude_at": "2026-11-08T18:00+08:00",
- "summary": "10月非農職位大增16.5萬，市場估聯儲局12月加息機會升到約七成半，下週二CPI好關鍵。民主黨中期選舉大勝，市場擔心AI數據中心建設放慢，晶片股上週大跌後週五反彈。你嘅持倉以科技同晶片為主，未來一週可能繼續大上大落。",
+ "claude_at": "2026-11-08T22:30+08:00",
+ "summary": "美國10月就業數據強過預期，市場估聯儲局12月加息機會升至約八成，債息上升，對科技股唔利。中期選舉後，市場擔心民主黨會收緊AI同數據中心規管，晶片股經歷大跌之後週五反彈。台灣週一起大幅收緊沽空，同時預備動用平準基金。你持有嘅科技同晶片股短期會繼續大上大落，下週二CPI係關鍵。",
  "items": [
   {
    "time": "2026-11-07 22:00",
@@ -169,6 +169,34 @@
    ],
    "takeaway": "金額相對Alphabet規模好細，唔使過度解讀。",
    "found": "2026-11-07 22:30"
+  },
+  {
+   "time": "2026-11-07 08:00",
+   "headline": "分析：有總統否決權 國會難全面限制數據中心",
+   "source": "Fox Business",
+   "url": "https://www.foxbusiness.com/politics/new-political-landscape-facing-ai-after-democrats-midterm-gains",
+   "summary": "摩根大通同瑞銀都認為，國會要推翻總統否決好難，真正規管數據中心嘅較可能係各州。有分析師預計，AI資本開支到2027年仍然強勁。",
+   "level": "medium",
+   "scope": "sector",
+   "affects": [
+    {
+     "sym": "NVDA",
+     "dir": "up",
+     "why": "如果規管風險被高估，之前嘅跌幅可能有修正空間"
+    },
+    {
+     "sym": "TSM",
+     "dir": "up",
+     "why": "AI晶片訂單未必好似市場驚嗰咁受影響"
+    },
+    {
+     "sym": "ORCL",
+     "dir": "mixed",
+     "why": "州份層面嘅規管仍然可能影響佢喺個別州起數據中心"
+    }
+   ],
+   "takeaway": "唔使太恐慌，但要留意德州等州份會唔會推出數據中心禁令。",
+   "found": "2026-11-08 22:30"
   },
   {
    "time": "2026-11-07 08:00",
@@ -570,6 +598,47 @@
   },
   {
    "time": "2026-11-07 02:00",
+   "headline": "木頭姐：Tesla Robotaxi業務開始起飛",
+   "source": "Asianet Newsable（引述CNBC）",
+   "url": "https://newsable.asianetnews.com/markets/cathie-wood-sees-tesla-s-robotaxi-business-taking-off-says-this-is-the-moment-investors-have-waited-for-articleshow-rd7zl24",
+   "summary": "ARK嘅Cathie Wood週五表示，Tesla嘅Robotaxi已經去到「逃逸速度」。消息同Cybertruck讓路畀Cybercab嘅計劃一齊，帶動Tesla週五升4.2%，但全週仍跌超過10%。",
+   "level": "medium",
+   "scope": "stock",
+   "affects": [
+    {
+     "sym": "TSLA",
+     "dir": "up",
+     "why": "市場將焦點放喺Robotaxi增長，而唔係Cybertruck賣得差"
+    }
+   ],
+   "takeaway": "Tesla好睇消息同情緒，上落好大，要留意Robotaxi實際擴展嘅進度。",
+   "found": "2026-11-08 22:30"
+  },
+  {
+   "time": "2026-11-07 02:00",
+   "headline": "Oracle跌至一年多低位 傳微軟嫌舊款晶片唔續約",
+   "source": "Benzinga",
+   "url": "https://www.benzinga.com/trading-ideas/movers/26/11/63003689/oracle-stock-slides-as-microsoft-reportedly-pulls-back-from-ai-computing-deal",
+   "summary": "新細節：知情人士話微軟唔續約，係因為租用嘅伺服器用舊款Nvidia晶片，唔符合要求。Oracle盤中低見109美元，Oracle就話舊GPU可以用更高價再租出。",
+   "level": "medium",
+   "scope": "stock",
+   "affects": [
+    {
+     "sym": "ORCL",
+     "dir": "down",
+     "why": "市場擔心舊設備貶值快，AI雲端收入唔穩定"
+    },
+    {
+     "sym": "NVDA",
+     "dir": "mixed",
+     "why": "客戶追新晶片有利新產品，但雲端商可能減少開支"
+    }
+   ],
+   "takeaway": "要留意Oracle仲有冇其他大客戶縮減合約，同埋佢借錢起數據中心嘅壓力。",
+   "found": "2026-11-08 22:30"
+  },
+  {
+   "time": "2026-11-07 02:00",
    "headline": "Tesla明年年中逐步停產Cybertruck 騰位造Cybercab",
    "source": "ABC News",
    "url": "https://www.abc.net.au/news/2026-11-07/tesla-to-pull-the-plug-on-cybertruck/107359058",
@@ -643,34 +712,6 @@
    "found": "2026-11-08 01:00"
   },
   {
-   "time": "2026-11-07 02:00",
-   "headline": "分析：AI數據中心擴建變成「消耗戰」",
-   "source": "CNBC",
-   "url": "https://www.cnbc.com/2026/11/06/ai-data-center-midterms-selloff.html",
-   "summary": "分析指AI股受壓有幾個原因：選舉結果、債息上升、建廠資金需求越來越大。市場開始懷疑AI投資能唔能夠維持而家嘅速度。",
-   "level": "high",
-   "scope": "sector",
-   "affects": [
-    {
-     "sym": "NVDA",
-     "dir": "down",
-     "why": "估值建基於AI開支持續高速增長"
-    },
-    {
-     "sym": "QQQ",
-     "dir": "down",
-     "why": "大型科技股佔指數比重好重"
-    },
-    {
-     "sym": "QQQM",
-     "dir": "down",
-     "why": "同QQQ追蹤同一個指數"
-    }
-   ],
-   "takeaway": "你嘅持倉好集中喺AI，同一個消息會令幾隻股票一齊郁，要有心理準備。",
-   "found": "2026-11-07 22:30"
-  },
-  {
    "time": "2026-11-07 01:10",
    "headline": "AI股暫停全球拋售 美股本週跌幅收窄",
    "source": "AP／Korea Times",
@@ -697,6 +738,39 @@
    ],
    "takeaway": "一日反彈未代表見底，留意下星期能唔能夠企穩",
    "found": "2026-11-07 04:45"
+  },
+  {
+   "time": "2026-11-07 01:00",
+   "headline": "中期選舉後市場怕AI受限 數據中心建設變「消耗戰」",
+   "source": "CNBC",
+   "url": "https://www.cnbc.com/2026/11/06/ai-data-center-midterms-selloff.html",
+   "summary": "民主黨喺中期選舉大勝，有黨內高層提出「全國暫停興建數據中心」。AI同晶片股本週急跌，市場重新為AI規管風險定價，週五先有反彈。",
+   "level": "high",
+   "scope": "sector",
+   "affects": [
+    {
+     "sym": "NVDA",
+     "dir": "down",
+     "why": "數據中心少起，AI晶片需求可能放慢"
+    },
+    {
+     "sym": "TSM",
+     "dir": "down",
+     "why": "AI晶片主要由台積電代工，訂單前景會受影響"
+    },
+    {
+     "sym": "ORCL",
+     "dir": "down",
+     "why": "Oracle正大舉興建AI雲端數據中心，最受規管影響"
+    },
+    {
+     "sym": "GOOG",
+     "dir": "mixed",
+     "why": "AI投資或要放慢，不過Google業務比較多元化"
+    }
+   ],
+   "takeaway": "政策暫時仲係提議階段，未變成法例。之後要睇國會同各州有冇實際行動。",
+   "found": "2026-11-08 22:30"
   },
   {
    "time": "2026-11-07 01:00",
@@ -738,34 +812,6 @@
    ],
    "takeaway": "反彈未代表跌浪完結。下週一台股開市，留意沽空新規生效後嘅反應",
    "found": "2026-11-07 12:00"
-  },
-  {
-   "time": "2026-11-07 00:30",
-   "headline": "聯儲官員放鷹 Musalem預期12月加息",
-   "source": "Reuters／Yahoo Finance",
-   "url": "https://finance.yahoo.com/economy/policy/articles/strong-october-jobs-report-sends-134858909.html",
-   "summary": "非農公佈後，聖路易聯儲總裁Musalem表示預期12月加息0.25厘，Barkin就話通脹太高、無回落跡象。另外工資按年升3.1%，高過預期嘅2.9%。",
-   "level": "high",
-   "scope": "market",
-   "affects": [
-    {
-     "sym": "QQQ",
-     "dir": "down",
-     "why": "加息會推高債息，對高估值嘅科技股最唔利"
-    },
-    {
-     "sym": "NVDA",
-     "dir": "down",
-     "why": "高增長股對利率最敏感"
-    },
-    {
-     "sym": "VOO",
-     "dir": "down",
-     "why": "利率上升會壓低整體股票估值"
-    }
-   ],
-   "takeaway": "工資升得快會令通脹更難回落，所以留意之後公佈嘅CPI，同埋聯儲官員點講。",
-   "found": "2026-11-07 08:00"
   },
   {
    "time": "2026-11-07 00:00",
@@ -922,52 +968,6 @@
    ],
    "takeaway": "如果債息繼續升穿5%，科技股可能會再受壓，值得留意。",
    "found": "2026-11-07 22:30"
-  },
-  {
-   "time": "2026-11-06 23:00",
-   "headline": "微軟停租Oracle AI雲端算力",
-   "source": "Bloomberg",
-   "url": "https://bloomberg.com/news/articles/2026-11-06/microsoft-is-winding-down-oracle-deal-to-rent-ai-cloud-capacity",
-   "summary": "微軟2023年同Oracle簽咗租用AI算力嘅合約，而家決定唔續約，並逐步停用。報道指原因係嗰批硬件用舊一代Nvidia晶片。Oracle回應話AI基建需求依然強勁。",
-   "level": "high",
-   "scope": "stock",
-   "affects": [
-    {
-     "sym": "ORCL",
-     "dir": "down",
-     "why": "少咗一個大客嘅收入，盤中曾經跌約4%，最後收市仍然升0.8%"
-    },
-    {
-     "sym": "NVDA",
-     "dir": "mixed",
-     "why": "反映客戶想轉用新一代晶片，舊晶片嘅需求就減少"
-    }
-   ],
-   "takeaway": "Oracle週四已經跌近7%，消息未完全消化，留意會唔會有其他客戶跟住走。",
-   "found": "2026-11-07 08:00"
-  },
-  {
-   "time": "2026-11-06 23:00",
-   "headline": "Nvidia盤中反彈逾5% 業績前波動大",
-   "source": "StockTitan",
-   "url": "https://www.stocktitan.net/articles/stock-market-today-live-november-6-2026",
-   "summary": "Nvidia周四跌9%之後，周五盤中一度反彈約5.6%，同美光、AMD帶領晶片股回升。",
-   "level": "high",
-   "scope": "stock",
-   "affects": [
-    {
-     "sym": "NVDA",
-     "dir": "up",
-     "why": "超賣之後有買盤，但民主黨可能拖慢數據中心建設嘅憂慮未解決"
-    },
-    {
-     "sym": "QQQ",
-     "dir": "up",
-     "why": "Nvidia係納指100最大成分股之一"
-    }
-   ],
-   "takeaway": "11月17日業績先係真正考驗，業績前波幅可能好大，心理上要有準備。",
-   "found": "2026-11-07 01:00"
   }
  ]
 }

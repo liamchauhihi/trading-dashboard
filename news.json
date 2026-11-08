@@ -1,5 +1,5 @@
 {
- "generated": "2026-11-08T08:00+08:00",
+ "generated": "2026-11-08T12:00+08:00",
  "holdings": [
   "TSM",
   "TSLA",
@@ -11,9 +11,32 @@
   "NVDA"
  ],
  "claude_ok": true,
- "claude_at": "2026-11-08T08:00+08:00",
- "summary": "AI晶片股上週因民主黨贏國會、擔心數據中心受限而大跌，週五先反彈。台灣限制沽空、傳台積電考慮造記憶體晶片，帶動TSM大升。下週二CPI同17號Nvidia業績會決定科技股走向，聯儲局12月加息機會仍約78%，你嘅科技持倉短期可能繼續大上大落。",
+ "claude_at": "2026-11-08T12:00+08:00",
+ "summary": "上週四美股因中期選舉後市場擔心AI監管收緊而急跌，納指跌入調整區；週五晶片股反彈，台積電、Tesla、Nvidia升幅較大。週五公佈嘅就業數據遠勝預期，推高債息。下週二有CPI，你嘅科技股持倉短期可能繼續大上大落。",
  "items": [
+  {
+   "time": "2026-11-07 22:00",
+   "headline": "傳Nvidia要求台積電研發3D DRAM記憶體",
+   "source": "24/7 Wall St.",
+   "url": "https://247wallst.com/investing/2026/11/07/tsmc-jumped-6-on-a-report-it-could-make-memory-chips-for-nvidia/",
+   "summary": "有報道指台積電應Nvidia要求，開始規劃生產3D DRAM記憶體。台積電ADR週五升6.3%，前一日曾急跌10.8%。兩間公司都未證實消息。",
+   "level": "medium",
+   "scope": "stock",
+   "affects": [
+    {
+     "sym": "TSM",
+     "dir": "up",
+     "why": "如果成事，會多咗記憶體呢個新收入來源"
+    },
+    {
+     "sym": "NVDA",
+     "dir": "up",
+     "why": "可以減少依賴現有記憶體供應商"
+    }
+   ],
+   "takeaway": "消息未經證實，你要分清楚佢係反彈主因定只係傳聞",
+   "found": "2026-11-08 12:00"
+  },
   {
    "time": "2026-11-07 21:00",
    "headline": "巴郡第三季經營盈利跌6% 回購翻倍",
@@ -54,6 +77,29 @@
    ],
    "takeaway": "Tesla週五升4%主要因為市場睇好Cybercab，要留意之後有冇正式公告",
    "found": "2026-11-08 08:00"
+  },
+  {
+   "time": "2026-11-07 10:00",
+   "headline": "台積電約11月10日公佈10月營收",
+   "source": "TSMC",
+   "url": "https://pr.tsmc.com/english/news/3343",
+   "summary": "台積電通常喺每月10號左右公佈上月營收。9月營收5,118.6億新台幣，按年增長54.6%；第四季指引係523億至543億美元。",
+   "level": "medium",
+   "scope": "stock",
+   "affects": [
+    {
+     "sym": "TSM",
+     "dir": "mixed",
+     "why": "營收可以驗證AI晶片需求有冇放慢"
+    },
+    {
+     "sym": "NVDA",
+     "dir": "mixed",
+     "why": "台積電營收反映AI晶片出貨情況"
+    }
+   ],
+   "takeaway": "營收係AI需求嘅實際數據，可以幫你判斷近排嘅恐慌有冇理據",
+   "found": "2026-11-08 12:00"
   },
   {
    "time": "2026-11-07 10:00",
@@ -100,6 +146,34 @@
    ],
    "takeaway": "金額相對Alphabet規模好細，唔使過度解讀。",
    "found": "2026-11-07 22:30"
+  },
+  {
+   "time": "2026-11-07 08:00",
+   "headline": "下週二公佈CPI 今次冇整體按年通脹率",
+   "source": "Stocktitan / Schaeffer's",
+   "url": "https://www.stocktitan.net/articles/october-2026-cpi-preview-no-yearly-rate",
+   "summary": "10月CPI將於香港時間11月10日晚上9:30公佈。因為去年政府停擺，2025年10月數據缺失，所以今次冇整體按年數字。市場估按年約3.7%至3.9%。",
+   "level": "high",
+   "scope": "market",
+   "affects": [
+    {
+     "sym": "QQQ",
+     "dir": "mixed",
+     "why": "通脹高過預期會推高債息，對科技股唔利"
+    },
+    {
+     "sym": "VOO",
+     "dir": "mixed",
+     "why": "大市方向下週好受CPI影響"
+    },
+    {
+     "sym": "NVDA",
+     "dir": "mixed",
+     "why": "高估值股對利率預期特別敏感"
+    }
+   ],
+   "takeaway": "數據唔齊，市場解讀可能有分歧，公佈當晚波動可能會大啲",
+   "found": "2026-11-08 12:00"
   },
   {
    "time": "2026-11-07 08:00",
@@ -174,6 +248,24 @@
    ],
    "takeaway": "實際業績未見轉差。反彈能唔能夠持續，要睇下週CoreWeave業績。",
    "found": "2026-11-07 22:30"
+  },
+  {
+   "time": "2026-11-07 06:00",
+   "headline": "分析師：中期選舉後Tesla與SpaceX合併添變數",
+   "source": "TipRanks（經CNBC）",
+   "url": "https://www.cnbc.com/quotes/TSLA/",
+   "summary": "Wedbush分析師Dan Ives表示，中期選舉結果令Tesla同SpaceX合併前景出現疑問。佢之前估計2027年前合併嘅機會有八至九成。",
+   "level": "low",
+   "scope": "stock",
+   "affects": [
+    {
+     "sym": "TSLA",
+     "dir": "mixed",
+     "why": "部分投資者睇好合併，前景唔明朗會影響情緒"
+    }
+   ],
+   "takeaway": "合併只係市場揣測，公司未有任何協議，唔使太着緊",
+   "found": "2026-11-08 12:00"
   },
   {
    "time": "2026-11-07 06:00",
@@ -886,98 +978,6 @@
    ],
    "takeaway": "息口係而家壓住科技股嘅主要因素，下週二CPI會決定加唔加息。",
    "found": "2026-11-08 01:00"
-  },
-  {
-   "time": "2026-11-06 22:30",
-   "headline": "加息預期升溫 金價同比特幣齊跌",
-   "source": "Kitco",
-   "url": "https://www.kitco.com/news/article/2026-11-06/gold-falls-us-payrolls-surge-165000-strengthening-december-fed-hike-case",
-   "summary": "非農強勁令12月加息機會升到約78–85%，美元走強，金價下跌，比特幣一度跌到約75,000美元，低過9月低位。",
-   "level": "low",
-   "scope": "market",
-   "affects": [
-    {
-     "sym": "VOO",
-     "dir": "down",
-     "why": "市場整體風險胃納減弱，資金傾向保守"
-    }
-   ],
-   "takeaway": "你冇持有黃金或者加密貨幣，影響係間接嘅，可以當作睇市場情緒嘅指標。",
-   "found": "2026-11-07 01:00"
-  },
-  {
-   "time": "2026-11-06 22:00",
-   "headline": "Alphabet被入禀集體訴訟 涉Gemini延誤",
-   "source": "GlobeNewswire",
-   "url": "https://globenewswire.com/news-release/2026/11/06/3397821/1020/en/kaplan-fox-alerts-investors-of-alphabet-inc-nasdaq-googl-goog-to-a-pending-securities-class-action-deadline-is-december-1-2026.html",
-   "summary": "律師行Kaplan Fox代表2026年5月19日至7月16日期間買入嘅投資者，就Gemini 3.5 Pro延誤嘅資訊披露入禀集體訴訟。",
-   "level": "low",
-   "scope": "stock",
-   "affects": [
-    {
-     "sym": "GOOG",
-     "dir": "mixed",
-     "why": "呢類訴訟好常見，通常對大公司財務影響細"
-    }
-   ],
-   "takeaway": "律師行經常喺股價大跌之後發起呢類訴訟，唔使太擔心。",
-   "found": "2026-11-07 08:00"
-  },
-  {
-   "time": "2026-11-06 21:45",
-   "headline": "非農強勁 市場估12月加息機會升至約八成",
-   "source": "Reuters",
-   "url": "https://investing.com/news/economy-news/traders-raise-bets-of-fed-rate-hike-after-jobs-report-5008229",
-   "summary": "數據公布後，利率期貨顯示聯儲局下月加息0.25厘嘅機會由約七成半升到約八成。2年債息升到4.52%，10年債息升到4.88%，30年債息升到5.29%，美元亦走強。",
-   "level": "high",
-   "scope": "market",
-   "affects": [
-    {
-     "sym": "NVDA",
-     "dir": "down",
-     "why": "高增長股對利率最敏感，債息上升會壓低估值"
-    },
-    {
-     "sym": "TSLA",
-     "dir": "down",
-     "why": "估值好高，加息預期升溫特別唔利"
-    },
-    {
-     "sym": "QQQ",
-     "dir": "down",
-     "why": "10年債息接近4.9%，對科技股估值有壓力"
-    }
-   ],
-   "takeaway": "12月議息會議係下一個關鍵日子，期間科技股可能繼續大上大落。",
-   "found": "2026-11-06 22:30"
-  },
-  {
-   "time": "2026-11-06 21:30",
-   "headline": "10月非農增16.5萬 12月加息機會約78%",
-   "source": "Reuters",
-   "url": "https://ca.investing.com/news/economy-news/fed-seen-sticking-to-december-rate-hike-after-jobs-data-4939832",
-   "summary": "美國10月新增16.5萬個職位，失業率跌至4.1%。市場估計聯儲局12月8至9日會議加息0.25厘嘅機會約78%，低過數據啱公佈時嘅85%。",
-   "level": "high",
-   "scope": "market",
-   "affects": [
-    {
-     "sym": "QQQ",
-     "dir": "down",
-     "why": "加息預期升，高估值科技股最受壓"
-    },
-    {
-     "sym": "QQQM",
-     "dir": "down",
-     "why": "同QQQ一樣追蹤納指100"
-    },
-    {
-     "sym": "VOO",
-     "dir": "down",
-     "why": "息口上升會壓低整體股市估值"
-    }
-   ],
-   "takeaway": "下週二CPI係關鍵，通脹再高可能令加息機會更大",
-   "found": "2026-11-08 08:00"
   }
  ]
 }

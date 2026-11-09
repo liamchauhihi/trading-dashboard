@@ -1,5 +1,5 @@
 {
- "generated": "2026-11-09T12:00+08:00",
+ "generated": "2026-11-09T18:00+08:00",
  "holdings": [
   "TSM",
   "TSLA",
@@ -11,9 +11,129 @@
   "NVDA"
  ],
  "claude_ok": true,
- "claude_at": "2026-11-09T12:00+08:00",
- "summary": "三件事最重要：台灣出手救市，台積電今日喺台股大升約6%；黃仁勳調查繼續拖住Nvidia；週二CPI會決定12月加唔加息。週五科技股已經反彈，你嘅TSM、TSLA、NVDA升得最多，但今個禮拜可能仲會好波動。",
+ "claude_at": "2026-11-09T18:00+08:00",
+ "summary": "今晚美股開市前有三件事最重要：Nvidia 因為黃仁勳被調查，盤前跌約5%；台股同台積電靠救市措施大幅反彈；週二公佈 CPI，聯儲局官員講嘢偏鷹，12月加息機會接近八成。你持有嘅 NVDA、QQQ、QQQM 短線會比較波動，TSM 同 TSLA 上週五已經反彈。",
  "items": [
+  {
+   "time": "2026-11-09 17:30",
+   "headline": "特朗普撐黃仁勳 北京否認間諜指控",
+   "source": "Benzinga",
+   "url": "https://www.benzinga.com/markets/equities/26/11/63023739/nvda-stock-falls-over-5-pre-market-trump-backs-jensen-huang-to-stay-as-nvidia-ceo",
+   "summary": "特朗普公開撐黃仁勳繼續做 CEO，但補咗一句「世事難料」。中國外交部就話間諜指控冇根據。董事會表示，暫時冇理由相信公司機密外洩。",
+   "level": "medium",
+   "scope": "stock",
+   "affects": [
+    {
+     "sym": "NVDA",
+     "dir": "mixed",
+     "why": "白宮表態撐佢係好消息，但調查仲未完，仍然有變數"
+    }
+   ],
+   "takeaway": "暫時係管理層風險，唔係生意本身出事。11月17日公佈業績先係重點。",
+   "found": "2026-11-09 18:00"
+  },
+  {
+   "time": "2026-11-09 17:00",
+   "headline": "黃仁勳被調查 Nvidia盤前跌約5%",
+   "source": "CNBC",
+   "url": "https://www.cnbc.com/2026/11/09/nvidia-jensen-huang-chinese-spy-investigation.html",
+   "summary": "董事會開始獨立調查之後，Nvidia 週一盤前跌大約4.7%至6%。分析師 Dan Ives 話，黃仁勳有機會被撤換，要睇調查結果。",
+   "level": "high",
+   "scope": "stock",
+   "affects": [
+    {
+     "sym": "NVDA",
+     "dir": "down",
+     "why": "CEO 會唔會留任變成未知數，市場唔鍾意呢種唔確定"
+    },
+    {
+     "sym": "QQQ",
+     "dir": "down",
+     "why": "Nvidia 係納指最大嘅成分股之一，跌得多會拖低指數"
+    },
+    {
+     "sym": "QQQM",
+     "dir": "down",
+     "why": "同 QQQ 跟同一個指數，影響一樣"
+    }
+   ],
+   "takeaway": "盤前價唔等於收市價。留意今晚開市後跌幅有冇收窄，同埋調查有冇新消息。",
+   "found": "2026-11-09 18:00"
+  },
+  {
+   "time": "2026-11-09 16:00",
+   "headline": "聯儲局官員齊講通脹太高 12月加息機會近八成",
+   "source": "FXStreet",
+   "url": "https://www.fxstreet.com/news/federal-reserve-december-rate-hike-view-reinforced-commerzbank-202611090801",
+   "summary": "Williams、Daly、Musalem 都話通脹太高，可能要再收緊。上週非農新增16.5萬份職位，係預期嘅兩倍，市場估12月加息機會大約77%至80%。",
+   "level": "high",
+   "scope": "market",
+   "affects": [
+    {
+     "sym": "QQQ",
+     "dir": "down",
+     "why": "加息會令高估值嘅科技股壓力大啲"
+    },
+    {
+     "sym": "VOO",
+     "dir": "down",
+     "why": "息口升會壓低整體股市估值"
+    },
+    {
+     "sym": "ORCL",
+     "dir": "down",
+     "why": "Oracle 借好多錢起數據中心，加息會令借貸成本更貴"
+    }
+   ],
+   "takeaway": "週二晚嘅 CPI 係本週最大嘅事。數字高過預期，大市可能再波動。",
+   "found": "2026-11-09 18:00"
+  },
+  {
+   "time": "2026-11-09 15:00",
+   "headline": "美股期貨升 無視Nvidia跌 油價回落紓緩通脹憂慮",
+   "source": "Yahoo Finance",
+   "url": "https://finance.yahoo.com/markets/live/stock-market-today-monday-november-9-dow-sp-500-nasdaq-nvidia-090535419.html",
+   "summary": "週一道指、標普、納指期貨都升，大市暫時冇被 Nvidia 盤前急跌拖落去。油價回落都令市場對通脹冇咁擔心。",
+   "level": "medium",
+   "scope": "market",
+   "affects": [
+    {
+     "sym": "VOO",
+     "dir": "up",
+     "why": "標普期貨向好，大市情緒改善"
+    },
+    {
+     "sym": "QQQ",
+     "dir": "mixed",
+     "why": "大市向好，但 Nvidia 下跌會抵消部分升幅"
+    }
+   ],
+   "takeaway": "上週急跌之後，市場暫時穩住，但未算已經轉勢。",
+   "found": "2026-11-09 18:00"
+  },
+  {
+   "time": "2026-11-09 14:00",
+   "headline": "亞洲股市大反彈 日經升約2.5%",
+   "source": "AP",
+   "url": "https://news4jax.com/business/2026/11/09/asian-markets-bounce-back-after-a-recovery-for-ai-stocks-on-wall-street",
+   "summary": "美國 AI 股上週五反彈，加上台灣推出穩定市場措施，週一亞洲股市普遍上升。日經升大約2.5%，台股升大約4.9%。",
+   "level": "low",
+   "scope": "market",
+   "affects": [
+    {
+     "sym": "TSM",
+     "dir": "up",
+     "why": "台股本地股價今日升4.68%，美股 ADR 今晚有機會跟住升"
+    },
+    {
+     "sym": "NVDA",
+     "dir": "mixed",
+     "why": "亞洲晶片股向好，但佢本身有調查壓力"
+    }
+   ],
+   "takeaway": "亞洲氣氛好轉，但美股今晚點行仍然要睇 Nvidia 同 CPI。",
+   "found": "2026-11-09 18:00"
+  },
   {
    "time": "2026-11-09 10:00",
    "headline": "台股今日最多升6.4% 台積電聯發科帶頭",
@@ -853,126 +973,6 @@
    ],
    "takeaway": "一日反彈唔代表已經見底，分析師都話個反彈好脆弱，留意下星期會唔會再跌。",
    "found": "2026-11-07 08:00"
-  },
-  {
-   "time": "2026-11-07 05:00",
-   "headline": "台積電美股反彈6% 傳為Nvidia生產記憶體",
-   "source": "24/7 Wall St.",
-   "url": "https://247wallst.com/investing/2026/11/07/tsmc-jumped-6-on-a-report-it-could-make-memory-chips-for-nvidia/",
-   "summary": "週四TSM急跌10.8%，週五反彈6.3%。原因包括有報道指台積電計劃幫Nvidia造堆疊式DRAM，加上台灣限制沽空。全週計仍然跌7.6%。",
-   "level": "high",
-   "scope": "stock",
-   "affects": [
-    {
-     "sym": "TSM",
-     "dir": "up",
-     "why": "傳聞帶出新生意嘅想像，加上救市措施，所以反彈"
-    },
-    {
-     "sym": "NVDA",
-     "dir": "up",
-     "why": "晶片股一齊反彈，NVDA週五升2.78%"
-    }
-   ],
-   "takeaway": "台積電話佢會繼續專注做邏輯晶片，所以傳聞未證實，唔好當真",
-   "found": "2026-11-09 12:00"
-  },
-  {
-   "time": "2026-11-07 05:00",
-   "headline": "Tesla週五升4.2% 停產Cybertruck讓路Cybercab",
-   "source": "Yahoo Finance",
-   "url": "https://finance.yahoo.com/markets/stocks/articles/tesla-jumped-4-musk-212720611.html",
-   "summary": "TSLA收報358.22美元，升4.23%。馬斯克話德州廠明年中停產Cybertruck，騰出位置生產Cybercab。電動車股亦喺中期選舉後嘅急跌之後反彈。",
-   "level": "high",
-   "scope": "stock",
-   "affects": [
-    {
-     "sym": "TSLA",
-     "dir": "up",
-     "why": "市場覺得資源轉去自動駕駛的士，對前景係好事"
-    }
-   ],
-   "takeaway": "升主要靠消息同反彈，民主黨贏選舉之後嘅監管風險仲喺度",
-   "found": "2026-11-09 12:00"
-  },
-  {
-   "time": "2026-11-07 05:00",
-   "headline": "週五科技股反彈 納指升1.1%",
-   "source": "Bytes Europe（轉載CNBC）",
-   "url": "https://www.byteseu.com/2508139/",
-   "summary": "週四AI股急跌之後，週五晶片股帶頭反彈。納指升1.09%，標普升0.31%，道指跌0.46%。",
-   "level": "medium",
-   "scope": "market",
-   "affects": [
-    {
-     "sym": "QQQ",
-     "dir": "up",
-     "why": "納指100嘅科技權重股反彈，QQQ升1.4%"
-    },
-    {
-     "sym": "QQQM",
-     "dir": "up",
-     "why": "同QQQ追蹤同一個指數，升1.26%"
-    },
-    {
-     "sym": "VOO",
-     "dir": "up",
-     "why": "標普只係微升0.3%，因為非科技股偏弱"
-    }
-   ],
-   "takeaway": "只係收復部分跌幅，趨勢未轉好，唔使因為一日反彈就太樂觀",
-   "found": "2026-11-09 12:00"
-  },
-  {
-   "time": "2026-11-07 05:00",
-   "headline": "晶片股週五強力反彈 台積電升逾6%",
-   "source": "Yahoo Finance",
-   "url": "https://finance.yahoo.com/markets/article/nvidia-amd-micron-sandsik-lead-chip-sector-higher-134336542.html",
-   "summary": "經歷2020年以來最差拋售後，Nvidia、AMD、美光領晶片股反彈；台積電ADR升6.3%、Nvidia升2.8%，但分析指反彈基礎脆弱。",
-   "level": "medium",
-   "scope": "sector",
-   "affects": [
-    {
-     "sym": "TSM",
-     "dir": "up",
-     "why": "週四急跌後有買盤低吸，收復大半跌幅"
-    },
-    {
-     "sym": "NVDA",
-     "dir": "up",
-     "why": "跟隨晶片股反彈，重返年初至今正回報"
-    }
-   ],
-   "takeaway": "一日反彈唔代表已見底，你持有晶片股要預咗仲會大上大落。",
-   "found": "2026-11-08 01:00"
-  },
-  {
-   "time": "2026-11-07 05:00",
-   "headline": "標普錄2025年4月以來最差一週",
-   "source": "TheStreet",
-   "url": "https://pro.thestreet.com/market-commentary/tech-bounces-but-the-sp-500-still-has-its-worst-week-since-april-2025",
-   "summary": "雖然週五科技股反彈，但全週標普500跌約2.7%，納指跌約3.4%，道指跌約0.9%。科技股係今個星期跌得最多嘅板塊。",
-   "level": "medium",
-   "scope": "market",
-   "affects": [
-    {
-     "sym": "VOO",
-     "dir": "down",
-     "why": "追蹤標普500，全週跌約2.7%"
-    },
-    {
-     "sym": "QQQ",
-     "dir": "down",
-     "why": "納指全週跌得比大市多"
-    },
-    {
-     "sym": "QQQM",
-     "dir": "down",
-     "why": "同QQQ追蹤同一個指數"
-    }
-   ],
-   "takeaway": "週五反彈唔代表已經見底。下週有CPI同AI雲端股業績，可能仲會大上大落。",
-   "found": "2026-11-07 18:00"
   }
  ]
 }

@@ -1,5 +1,5 @@
 {
- "generated": "2026-11-09T18:00+08:00",
+ "generated": "2026-11-09T22:30+08:00",
  "holdings": [
   "TSM",
   "TSLA",
@@ -11,9 +11,93 @@
   "NVDA"
  ],
  "claude_ok": true,
- "claude_at": "2026-11-09T18:00+08:00",
- "summary": "今晚美股開市前有三件事最重要：Nvidia 因為黃仁勳被調查，盤前跌約5%；台股同台積電靠救市措施大幅反彈；週二公佈 CPI，聯儲局官員講嘢偏鷹，12月加息機會接近八成。你持有嘅 NVDA、QQQ、QQQM 短線會比較波動，TSM 同 TSLA 上週五已經反彈。",
+ "claude_at": "2026-11-09T22:30+08:00",
+ "summary": "週二公佈10月CPI係今個禮拜最大焦點：上週五非農職位大增16.5萬，令12月加息嘅預期升溫，科技股估值要承受壓力。Nvidia因黃仁勳被調查逆市下跌，但台積電、Google有AI硬件好消息撐住；Oracle失去Microsoft嘅租用合約，壓力未消。",
  "items": [
+  {
+   "time": "2026-11-09 21:30",
+   "headline": "Nvidia下週二公佈業績 指引收入1080億美元",
+   "source": "InsiderFinance",
+   "url": "https://www.insiderfinance.io/news/nvidia-earnings-set-for-nov-17-amid-sell-signals",
+   "summary": "Nvidia確認11月17日美股收市後（香港時間18日早上）公佈第三季業績；公司之前嘅指引係收入約1080億美元、毛利率約74%。",
+   "level": "medium",
+   "scope": "sector",
+   "affects": [
+    {
+     "sym": "NVDA",
+     "dir": "mixed",
+     "why": "業績可以將焦點由調查拉返去基本面，但要達到預期先撐得住"
+    },
+    {
+     "sym": "TSM",
+     "dir": "mixed",
+     "why": "Nvidia係台積電大客戶，指引好壞會直接影響佢"
+    },
+    {
+     "sym": "QQQ",
+     "dir": "mixed",
+     "why": "AI龍頭嘅業績會影響成個科技板塊嘅情緒"
+    }
+   ],
+   "takeaway": "你有幾隻持倉都同AI晶片有關，18日早上睇業績之前，心理上要準備好大波動。",
+   "found": "2026-11-09 22:30"
+  },
+  {
+   "time": "2026-11-09 21:00",
+   "headline": "分析師：黃仁勳去留或視乎調查結果",
+   "source": "CNBC",
+   "url": "https://www.cnbc.com/2026/11/09/nvidia-jensen-huang-chinese-spy-investigation.html",
+   "summary": "Nvidia自從事件曝光之後已經累計跌咗約13%，今日盤前再跌約5%。Wedbush分析師Dan Ives認為黃仁勳有可能因調查而被撤換，短期會持續拖低股價。眾議院將於11月18日要求黃仁勳出席閉門簡報。",
+   "level": "high",
+   "scope": "stock",
+   "affects": [
+    {
+     "sym": "NVDA",
+     "dir": "down",
+     "why": "CEO去留有不確定性，調查又冇時間表，短期難以消除陰影"
+    },
+    {
+     "sym": "QQQ",
+     "dir": "down",
+     "why": "Nvidia係納指最大嘅成分股之一，會拖低指數"
+    },
+    {
+     "sym": "VOO",
+     "dir": "down",
+     "why": "Nvidia喺標普500佔比好高"
+    }
+   ],
+   "takeaway": "11月17日Nvidia公佈業績，18日黃仁勳出席國會簡報，呢兩日股價可能會大上大落。",
+   "found": "2026-11-09 22:30"
+  },
+  {
+   "time": "2026-11-09 19:45",
+   "headline": "Google推出兩款新TPU 盤前升約3%",
+   "source": "ANI",
+   "url": "https://www.aninews.in/news/business/google-expands-eighth-generation-hardware-lineup-with-tpu-8tx-and-8i-max20261109194625/",
+   "summary": "Google發佈TPU 8tx（主打加密運算，用AMD EPYC處理器）同TPU 8i Max（雙晶片，專做長文本推理），今年已經推出咗4款TPU系統。另外有報道指Alphabet計劃首次發行港元同星元債券，集資最多約30億美元。",
+   "level": "medium",
+   "scope": "stock",
+   "affects": [
+    {
+     "sym": "GOOG",
+     "dir": "up",
+     "why": "自家AI晶片更齊全，雲端業務嘅競爭力增強，盤前升約2–3%"
+    },
+    {
+     "sym": "NVDA",
+     "dir": "down",
+     "why": "Google自研晶片越做越強，長遠會分走部分AI晶片需求"
+    },
+    {
+     "sym": "TSM",
+     "dir": "up",
+     "why": "Google嘅TPU都要靠晶圓代工生產"
+    }
+   ],
+   "takeaway": "GOOG仍未完全收復10月底業績後嘅跌幅，新晶片係長遠利好，但短線仍然要睇大市同CPI。",
+   "found": "2026-11-09 22:30"
+  },
   {
    "time": "2026-11-09 17:30",
    "headline": "特朗普撐黃仁勳 北京否認間諜指控",
@@ -30,34 +114,6 @@
     }
    ],
    "takeaway": "暫時係管理層風險，唔係生意本身出事。11月17日公佈業績先係重點。",
-   "found": "2026-11-09 18:00"
-  },
-  {
-   "time": "2026-11-09 17:00",
-   "headline": "黃仁勳被調查 Nvidia盤前跌約5%",
-   "source": "CNBC",
-   "url": "https://www.cnbc.com/2026/11/09/nvidia-jensen-huang-chinese-spy-investigation.html",
-   "summary": "董事會開始獨立調查之後，Nvidia 週一盤前跌大約4.7%至6%。分析師 Dan Ives 話，黃仁勳有機會被撤換，要睇調查結果。",
-   "level": "high",
-   "scope": "stock",
-   "affects": [
-    {
-     "sym": "NVDA",
-     "dir": "down",
-     "why": "CEO 會唔會留任變成未知數，市場唔鍾意呢種唔確定"
-    },
-    {
-     "sym": "QQQ",
-     "dir": "down",
-     "why": "Nvidia 係納指最大嘅成分股之一，跌得多會拖低指數"
-    },
-    {
-     "sym": "QQQM",
-     "dir": "down",
-     "why": "同 QQQ 跟同一個指數，影響一樣"
-    }
-   ],
-   "takeaway": "盤前價唔等於收市價。留意今晚開市後跌幅有冇收窄，同埋調查有冇新消息。",
    "found": "2026-11-09 18:00"
   },
   {
@@ -922,57 +978,6 @@
    ],
    "takeaway": "11月17日Nvidia業績之前嘅預告，可以當睇AI熱度嘅溫度計",
    "found": "2026-11-07 12:00"
-  },
-  {
-   "time": "2026-11-07 05:30",
-   "headline": "美股連跌四週 道指週五獨跌",
-   "source": "BNN Bloomberg",
-   "url": "https://www.bnnbloomberg.ca/markets/dow-jones/2026/11/06/wall-street-stocks-in-relief-rally-after-heavy-ai-related-selloff/",
-   "summary": "週五標普升約0.3%，納指升1.1%至1.4%，道指跌約0.5%。標普全週仍跌2%以上，資金喺科技股同傳統股之間轉移。",
-   "level": "medium",
-   "scope": "market",
-   "affects": [
-    {
-     "sym": "VOO",
-     "dir": "mixed",
-     "why": "週五升0.3%，但全週仍然下跌"
-    },
-    {
-     "sym": "QQQ",
-     "dir": "up",
-     "why": "科技股週五跑贏"
-    }
-   ],
-   "takeaway": "你嘅持倉集中科技股，波幅會比大市大",
-   "found": "2026-11-07 12:00"
-  },
-  {
-   "time": "2026-11-07 05:10",
-   "headline": "納指週五升1.1% 美股仍連跌四週",
-   "source": "UPI",
-   "url": "https://www.upi.com/Top_News/US/2026/11/06/nasdaq-rebounds-tech-stocks/5901794005326",
-   "summary": "納指收市升1.09%報24,579，標普升0.31%。不過成個星期計，納指跌3.4%、標普跌2.7%，三大指數都係連續第四週下跌。週四嗰場大拋售令標普成份股市值蒸發近3萬億美元。",
-   "level": "high",
-   "scope": "market",
-   "affects": [
-    {
-     "sym": "QQQ",
-     "dir": "mixed",
-     "why": "週五反彈1.4%，但納指週四已跌入調整區，即係比高位低超過一成"
-    },
-    {
-     "sym": "QQQM",
-     "dir": "mixed",
-     "why": "同QQQ追蹤同一個指數，走勢一樣"
-    },
-    {
-     "sym": "VOO",
-     "dir": "mixed",
-     "why": "標普只係微升，標普入面跌嘅股票多過升嘅，個反彈主要靠AI股撐起"
-    }
-   ],
-   "takeaway": "一日反彈唔代表已經見底，分析師都話個反彈好脆弱，留意下星期會唔會再跌。",
-   "found": "2026-11-07 08:00"
   }
  ]
 }

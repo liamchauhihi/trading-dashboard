@@ -1,5 +1,5 @@
 {
- "generated": "2026-11-10T18:00+08:00",
+ "generated": "2026-11-10T22:30+08:00",
  "holdings": [
   "TSM",
   "TSLA",
@@ -11,9 +11,195 @@
   "NVDA"
  ],
  "claude_ok": true,
- "claude_at": "2026-11-10T18:00+08:00",
- "summary": "今晚美國公佈10月CPI，市場估12月加息機會約八成，10年期債息升到4.88%，數字偏高就可能拖低科技股。Nvidia因黃仁勳事件要面對股東集體訴訟，亦有報道話出口管制可能收緊。台積電10月營收創新高，AI晶片需求依然強勁，對TSM同半導體相關嘅ETF係好消息。",
+ "claude_at": "2026-11-10T22:30+08:00",
+ "summary": "今晚 10 月 CPI 高過預期，聯儲局理事 Waller 話 12 月應該加息，甚至可以考慮加半厘。債息即刻急升，納指期貨跌近 1%。你持有嘅 QQQ、QQQM、NVDA、TSLA 呢類科技成長股對加息最敏感，尋晚先大反彈，今晚可能要還返啲。Anthropic 公佈 IPO 招股價，下星期上市，會影響 AI 板塊嘅資金流向。",
  "items": [
+  {
+   "time": "2026-11-10 21:45",
+   "headline": "美債息急升 2年期一日升逾15點子",
+   "source": "CNBC",
+   "url": "https://www.cnbc.com/2026/11/10/us-bonds-treasurys-yields.html",
+   "summary": "CPI 公佈之後，10 年期債息升超過 7 點子，去到約 4.94%；2 年期升超過 15 點子，去到約 4.70%。尋日公佈嘅就業數據好過預期，債息已經升緊。",
+   "level": "high",
+   "scope": "market",
+   "affects": [
+    {
+     "sym": "QQQ",
+     "dir": "down",
+     "why": "債息越高，科技股將來盈利折現返嚟就越唔值錢"
+    },
+    {
+     "sym": "GOOG",
+     "dir": "down",
+     "why": "大型科技股通常同債息反方向行"
+    },
+    {
+     "sym": "VOO",
+     "dir": "mixed",
+     "why": "銀行股可能受惠，科技股受壓，兩邊抵銷部分"
+    }
+   ],
+   "takeaway": "10年期債息逼近5%係重要心理關口，可以留意佢會唔會企穩喺上面",
+   "found": "2026-11-10 22:30"
+  },
+  {
+   "time": "2026-11-10 21:40",
+   "headline": "CPI後美股期貨轉跌 納指期貨跌近1%",
+   "source": "Yahoo Finance",
+   "url": "https://finance.yahoo.com/markets/live/stock-market-today-tuesday-november-10-dow-sp-500-nasdaq-inflation-data-cpi-090627830.html",
+   "summary": "開市前期貨本來上落唔大，CPI 一出就轉跌：納指100期貨跌約 1%，標普期貨跌約 0.4%。尋晚納指先升咗 2.7%，標普升 2.35%。",
+   "level": "medium",
+   "scope": "market",
+   "affects": [
+    {
+     "sym": "QQQ",
+     "dir": "down",
+     "why": "尋晚升 3.5% 之後，今晚可能有人趁高沽出"
+    },
+    {
+     "sym": "QQQM",
+     "dir": "down",
+     "why": "同 QQQ 一樣"
+    }
+   ],
+   "takeaway": "尋晚大升今晚回吐好常見，一兩日嘅上落唔代表趨勢已經轉咗",
+   "found": "2026-11-10 22:30"
+  },
+  {
+   "time": "2026-11-10 21:30",
+   "headline": "10月CPI高過預期 核心通脹連續三個月升0.3%",
+   "source": "Fox Business / StockTitan",
+   "url": "https://www.stocktitan.net/articles/october-2026-cpi-inflation-report",
+   "summary": "整體 CPI 按月升 0.4%（預期 0.3%），核心升 0.3%（預期 0.2%）。住屋、食物同能源都係推高物價嘅主要原因。因為去年政府停擺冇收集數據，今次冇按年數字。",
+   "level": "high",
+   "scope": "market",
+   "affects": [
+    {
+     "sym": "QQQ",
+     "dir": "down",
+     "why": "通脹降得慢，加息機會大增，高估值科技股最受壓"
+    },
+    {
+     "sym": "QQQM",
+     "dir": "down",
+     "why": "同 QQQ 一樣追蹤納指100，影響相同"
+    },
+    {
+     "sym": "VOO",
+     "dir": "down",
+     "why": "成個大市要面對更高利率，估值受壓"
+    }
+   ],
+   "takeaway": "通脹未降落嚟，即係利率可能要高一段時間，短期波動會大啲",
+   "found": "2026-11-10 22:30"
+  },
+  {
+   "time": "2026-11-10 20:00",
+   "headline": "Anthropic公佈招股價70至78美元 預計19號上市",
+   "source": "CNBC / Anthropic",
+   "url": "https://www.cnbc.com/2026/11/10/anthropic-sets-price-range-of-70-to-78-in-upcoming-ipo.html",
+   "summary": "Anthropic 正式開始路演，發行 8.25 億股，集資大約 580 至 640 億美元，代號 ANT，喺 Nasdaq 上市。傳 18 號定價、19 號開始交易，認購已經足額。",
+   "level": "medium",
+   "scope": "sector",
+   "affects": [
+    {
+     "sym": "GOOG",
+     "dir": "up",
+     "why": "Alphabet 持有 Anthropic 股份，上市可以反映呢筆投資嘅價值"
+    },
+    {
+     "sym": "NVDA",
+     "dir": "mixed",
+     "why": "AI 需求好嘅證明；不過大型 IPO 可能將資金從現有 AI 股抽走"
+    },
+    {
+     "sym": "QQQ",
+     "dir": "mixed",
+     "why": "巨型 IPO 抽走資金，短期可能令科技股有沽壓"
+    }
+   ],
+   "takeaway": "可以留意上市前後 AI 股會唔會因為資金轉移而波動",
+   "found": "2026-11-10 22:30"
+  },
+  {
+   "time": "2026-11-10 19:30",
+   "headline": "Nvidia盤前微升 市場評估黃仁勳事件影響",
+   "source": "CNBC",
+   "url": "https://www.cnbc.com/2026/11/10/nvidia-nvda-jensen-huang-affair-chinese-spy.html",
+   "summary": "Nvidia 尋晚跌 4.3%，今日盤前輕微反彈。有分析估計董事會嘅調查要 4 至 6 個星期，股價離一個月前高位已經跌咗約 25%。11 月 17 號公佈業績。",
+   "level": "high",
+   "scope": "stock",
+   "affects": [
+    {
+     "sym": "NVDA",
+     "dir": "mixed",
+     "why": "調查未完，消息隨時再出；業績好可能幫手穩住股價"
+    },
+    {
+     "sym": "TSM",
+     "dir": "mixed",
+     "why": "Nvidia 係台積電大客，市場會擔心出口管制收緊"
+    },
+    {
+     "sym": "QQQ",
+     "dir": "mixed",
+     "why": "Nvidia 係納指最大成分股之一"
+    }
+   ],
+   "takeaway": "11月17號業績係下一個關鍵，公佈前後可能大上大落",
+   "found": "2026-11-10 22:30"
+  },
+  {
+   "time": "2026-11-10 18:30",
+   "headline": "聯儲局Waller：12月應加息 唔排除加半厘",
+   "source": "CNBC / Bloomberg",
+   "url": "https://www.cnbc.com/2026/11/10/fed-governor-waller-sees-december-hike-likely.html",
+   "summary": "Waller 喺倫敦講，就算通脹回落，佢都支持 12 月加 0.25 厘；如果核心 CPI 升 0.3% 或以上，就應該考慮加 0.5 厘。今晚數據啱啱好達到呢條線。",
+   "level": "high",
+   "scope": "market",
+   "affects": [
+    {
+     "sym": "QQQ",
+     "dir": "down",
+     "why": "加息幅度可能更大，對成長股估值唔利"
+    },
+    {
+     "sym": "NVDA",
+     "dir": "down",
+     "why": "本身已經因為 CEO 事件受壓，再加息令風險胃納再跌"
+    },
+    {
+     "sym": "TSLA",
+     "dir": "down",
+     "why": "高估值股，對利率特別敏感"
+    }
+   ],
+   "takeaway": "留意 12 月 8-9 號議息會議，市場而家估加息機會接近九成",
+   "found": "2026-11-10 22:30"
+  },
+  {
+   "time": "2026-11-10 17:00",
+   "headline": "美伊和談消息後 布蘭特油價回落近3%",
+   "source": "Investrade",
+   "url": "https://investrade.com/morning-preview-november-10-2026/",
+   "summary": "油價尋晚急跌之後今日繼續回落，布蘭特期油跌約 2.9%，去到大約 89.9 美元。不過 10 月 CPI 入面能源價格仍然升咗 0.7%。",
+   "level": "low",
+   "scope": "market",
+   "affects": [
+    {
+     "sym": "VOO",
+     "dir": "mixed",
+     "why": "油價跌有助壓低之後嘅通脹，但能源股會受壓"
+    },
+    {
+     "sym": "TSLA",
+     "dir": "mixed",
+     "why": "油價高低會影響電動車需求，不過短期影響唔大"
+    }
+   ],
+   "takeaway": "油價回落對之後嘅通脹數據有幫助，可以留意11月CPI",
+   "found": "2026-11-10 22:30"
+  },
   {
    "time": "2026-11-10 13:30",
    "headline": "台積電10月營收按年升近六成 創歷史新高",
@@ -777,177 +963,6 @@
    ],
    "takeaway": "你同時持有GOOG同NVDA，兩隻有少少此消彼長，可以分散風險。",
    "found": "2026-11-10 01:00"
-  },
-  {
-   "time": "2026-11-09 22:45",
-   "headline": "Nvidia開市跌5-6% 大市升都拉唔返",
-   "source": "Yahoo Finance",
-   "url": "https://finance.yahoo.com/markets/article/nvidia-stock-sinks-as-chipmaker-investigates-ceo-jensen-huangs-relationship-with-alleged-chinese-spy-130346548.html",
-   "summary": "Nvidia董事會調查黃仁勳同一名懷疑中國間諜嘅關係，股價正式開市後跌約5-6%，盤中一度跌8%，之後跌幅收窄。",
-   "level": "high",
-   "scope": "stock",
-   "affects": [
-    {
-     "sym": "NVDA",
-     "dir": "down",
-     "why": "CEO管治風險未清，投資者先減持"
-    },
-    {
-     "sym": "QQQ",
-     "dir": "mixed",
-     "why": "NVDA係最大成分股之一，拖慢咗指數升幅"
-    }
-   ],
-   "takeaway": "你要留意調查結果同下週二業績，消息可能令股價大上大落。",
-   "found": "2026-11-10 01:00"
-  },
-  {
-   "time": "2026-11-09 22:00",
-   "headline": "黃仁勳承認婚外情並道歉 特朗普撐佢留任",
-   "source": "Bloomberg / Fox Business",
-   "url": "https://www.foxbusiness.com/markets/nvidia-shares-fall-after-investigation-ceos-relationship-alleged-chinese-spy",
-   "summary": "黃仁勳向員工發信，就同一名被指係中國間諜嘅女商人有婚外情道歉，表示會全力配合董事會獨立調查。特朗普表示佢應該繼續做 CEO。國會亦要求佢 11 月 18 日出席閉門簡報。",
-   "level": "high",
-   "scope": "stock",
-   "affects": [
-    {
-     "sym": "NVDA",
-     "dir": "down",
-     "why": "管理層風險未消，調查結果同國會簡報都可能再觸發波動"
-    },
-    {
-     "sym": "QQQ",
-     "dir": "mixed",
-     "why": "Nvidia 係 QQQ 最大成分股之一，會拖慢指數升幅"
-    },
-    {
-     "sym": "QQQM",
-     "dir": "mixed",
-     "why": "同 QQQ 一樣追蹤納指 100，持倉相同"
-    }
-   ],
-   "takeaway": "暫時係管治問題，同 Nvidia 盤生意無直接關係；留意 11/18 簡報同 11/17 業績",
-   "found": "2026-11-10 12:00"
-  },
-  {
-   "time": "2026-11-09 21:30",
-   "headline": "Nvidia下週二公佈業績 指引收入1080億美元",
-   "source": "InsiderFinance",
-   "url": "https://www.insiderfinance.io/news/nvidia-earnings-set-for-nov-17-amid-sell-signals",
-   "summary": "Nvidia確認11月17日美股收市後（香港時間18日早上）公佈第三季業績；公司之前嘅指引係收入約1080億美元、毛利率約74%。",
-   "level": "medium",
-   "scope": "sector",
-   "affects": [
-    {
-     "sym": "NVDA",
-     "dir": "mixed",
-     "why": "業績可以將焦點由調查拉返去基本面，但要達到預期先撐得住"
-    },
-    {
-     "sym": "TSM",
-     "dir": "mixed",
-     "why": "Nvidia係台積電大客戶，指引好壞會直接影響佢"
-    },
-    {
-     "sym": "QQQ",
-     "dir": "mixed",
-     "why": "AI龍頭嘅業績會影響成個科技板塊嘅情緒"
-    }
-   ],
-   "takeaway": "你有幾隻持倉都同AI晶片有關，18日早上睇業績之前，心理上要準備好大波動。",
-   "found": "2026-11-09 22:30"
-  },
-  {
-   "time": "2026-11-09 21:00",
-   "headline": "傳微軟唔續租 Oracle AI 算力 Oracle 股價曾跌至109美元",
-   "source": "Bloomberg（經 FinanceFeeds 轉述）",
-   "url": "https://financefeeds.com/oracle-orcl-stock-116-50-monday-after-microsoft-ai-rental-wind-down-bull-130-bear-106/",
-   "summary": "據報微軟唔會續約 2023 年向 Oracle 租嘅 AI 算力，原因係所用嘅舊款 Nvidia 晶片已經唔啱需要。Oracle 上星期五曾跌至 109.21 美元，星期一反彈約 3%。",
-   "level": "medium",
-   "scope": "stock",
-   "affects": [
-    {
-     "sym": "ORCL",
-     "dir": "down",
-     "why": "大客戶唔續約，令人擔心 Oracle 雲端訂單嘅質素"
-    }
-   ],
-   "takeaway": "合約規模未公開，暫時只有單一來源；留意 Oracle 會唔會回應",
-   "found": "2026-11-10 12:00"
-  },
-  {
-   "time": "2026-11-09 21:00",
-   "headline": "十年債息約4.87% 週二CPI成焦點",
-   "source": "InvestingLive",
-   "url": "https://investinglive.com/technical-analysis/morning-kickstart-stock-futures-climb-as-bitcoin-nears-its-200-day-moving-average-usd-is-lower",
-   "summary": "雖然油價跌，美債息仍然微升，十年期約4.87%、兩年期約4.55%。市場等緊週二公佈嘅10月CPI。",
-   "level": "high",
-   "scope": "market",
-   "affects": [
-    {
-     "sym": "QQQ",
-     "dir": "mixed",
-     "why": "債息高對科技股估值有壓力，要睇CPI結果"
-    },
-    {
-     "sym": "VOO",
-     "dir": "mixed",
-     "why": "CPI高過預期嘅話，12月加息機會更大"
-    }
-   ],
-   "takeaway": "週二晚CPI公佈前後，你嘅持倉可能大幅波動。",
-   "found": "2026-11-10 01:00"
-  },
-  {
-   "time": "2026-11-09 20:30",
-   "headline": "美伊重啟談判 紐油跌近3%至87美元",
-   "source": "FXStreet",
-   "url": "https://fxstreet.com/news/wti-oil-extends-losses-nearing-8700-amid-efforts-to-resume-us-iran-negotiations-202611091233",
-   "summary": "美國同伊朗嘗試重啟談判，WTI油價跌近3%，接近每桶87美元，紓緩市場對通脹嘅擔心，係今日股市反彈嘅原因之一。",
-   "level": "medium",
-   "scope": "market",
-   "affects": [
-    {
-     "sym": "VOO",
-     "dir": "up",
-     "why": "油價跌可以減輕通脹同加息壓力"
-    },
-    {
-     "sym": "QQQ",
-     "dir": "up",
-     "why": "通脹憂慮減少，對高估值科技股有利"
-    }
-   ],
-   "takeaway": "中東局勢仍然可以隨時變，油價再急升嘅話會打擊股市。",
-   "found": "2026-11-10 01:00"
-  },
-  {
-   "time": "2026-11-09 19:45",
-   "headline": "Google推出兩款新TPU 盤前升約3%",
-   "source": "ANI",
-   "url": "https://www.aninews.in/news/business/google-expands-eighth-generation-hardware-lineup-with-tpu-8tx-and-8i-max20261109194625/",
-   "summary": "Google發佈TPU 8tx（主打加密運算，用AMD EPYC處理器）同TPU 8i Max（雙晶片，專做長文本推理），今年已經推出咗4款TPU系統。另外有報道指Alphabet計劃首次發行港元同星元債券，集資最多約30億美元。",
-   "level": "medium",
-   "scope": "stock",
-   "affects": [
-    {
-     "sym": "GOOG",
-     "dir": "up",
-     "why": "自家AI晶片更齊全，雲端業務嘅競爭力增強，盤前升約2–3%"
-    },
-    {
-     "sym": "NVDA",
-     "dir": "down",
-     "why": "Google自研晶片越做越強，長遠會分走部分AI晶片需求"
-    },
-    {
-     "sym": "TSM",
-     "dir": "up",
-     "why": "Google嘅TPU都要靠晶圓代工生產"
-    }
-   ],
-   "takeaway": "GOOG仍未完全收復10月底業績後嘅跌幅，新晶片係長遠利好，但短線仍然要睇大市同CPI。",
-   "found": "2026-11-09 22:30"
   }
  ]
 }

@@ -1,5 +1,5 @@
 {
- "generated": "2026-11-10T22:30+08:00",
+ "generated": "2026-11-11T01:00+08:00",
  "holdings": [
   "TSM",
   "TSLA",
@@ -11,9 +11,111 @@
   "NVDA"
  ],
  "claude_ok": true,
- "claude_at": "2026-11-10T22:30+08:00",
- "summary": "今晚 10 月 CPI 高過預期，聯儲局理事 Waller 話 12 月應該加息，甚至可以考慮加半厘。債息即刻急升，納指期貨跌近 1%。你持有嘅 QQQ、QQQM、NVDA、TSLA 呢類科技成長股對加息最敏感，尋晚先大反彈，今晚可能要還返啲。Anthropic 公佈 IPO 招股價，下星期上市，會影響 AI 板塊嘅資金流向。",
+ "claude_at": "2026-11-11T01:00+08:00",
+ "summary": "通脹數據高過預期，市場開始估聯儲局12月可能加息半厘，科技股受壓。Nvidia因黃仁勳事件連跌兩日，係你持倉入面跌得最多嘅一隻。不過 AMD 同 Broadcom 等晶片股反而上升，Google 同 Tesla 都有自己嘅好消息撐住。",
  "items": [
+  {
+   "time": "2026-11-11 00:30",
+   "headline": "美股午市偏軟 納指跌約1%",
+   "source": "Yahoo Finance",
+   "url": "https://finance.yahoo.com/markets/live/stock-market-today-tuesday-november-10-dow-sp-500-nasdaq-inflation-data-cpi-090627830.html",
+   "summary": "CPI數據令市場加注聯儲局加息，週一大升之後，週二標普500跌約0.7%，納指跌約1%，道指跌約0.4%。科技股受壓較大，小型股就相對堅挺。",
+   "level": "medium",
+   "scope": "market",
+   "affects": [
+    {
+     "sym": "VOO",
+     "dir": "down",
+     "why": "大市跟住通脹數據回吐"
+    },
+    {
+     "sym": "QQQ",
+     "dir": "down",
+     "why": "科技股比大市跌得多"
+    }
+   ],
+   "takeaway": "週一大升之後回吐係正常，今晚收市前仲會有變化。",
+   "found": "2026-11-11 01:00"
+  },
+  {
+   "time": "2026-11-10 23:30",
+   "headline": "Nvidia連跌第二日 再跌約5%至6%",
+   "source": "CNBC",
+   "url": "https://www.cnbc.com/2026/11/10/nvidia-nvda-jensen-huang-affair-chinese-spy.html",
+   "summary": "黃仁勳婚外情對象疑似中國間諜，董事會已展開獨立調查，加上股東入稟集體訴訟，Nvidia繼週一跌4%後再跌約5%。特朗普話FBI正在調查，民主黨亦要求國會加強監察。",
+   "level": "high",
+   "scope": "stock",
+   "affects": [
+    {
+     "sym": "NVDA",
+     "dir": "down",
+     "why": "管理層風險未明朗，有分析師估調查要4至6星期，期間股價受壓"
+    },
+    {
+     "sym": "QQQ",
+     "dir": "down",
+     "why": "Nvidia係納指最大成分股之一，佢跌會拖低指數"
+    },
+    {
+     "sym": "QQQM",
+     "dir": "down",
+     "why": "同QQQ一樣追蹤納指100，Nvidia佔比好重"
+    }
+   ],
+   "takeaway": "今次跌主要因為CEO個人風波，唔係生意轉差。留意董事會調查結果同11月17號業績。",
+   "found": "2026-11-11 01:00"
+  },
+  {
+   "time": "2026-11-10 22:30",
+   "headline": "12月加息半厘機會由1%升到11%",
+   "source": "Bloomingbit / CME FedWatch",
+   "url": "https://en.bloomingbit.io/feed/news/124114",
+   "summary": "核心CPI升0.3%，高過預期。CME FedWatch顯示，12月加息半厘嘅機會由公佈前約1%升到約11%，加息0.25厘嘅機會約89%。聯儲局12月8至9號開會。",
+   "level": "high",
+   "scope": "market",
+   "affects": [
+    {
+     "sym": "QQQ",
+     "dir": "down",
+     "why": "加息預期升，高估值科技股通常最受壓"
+    },
+    {
+     "sym": "VOO",
+     "dir": "down",
+     "why": "息口上升會壓低股票整體估值"
+    },
+    {
+     "sym": "QQQM",
+     "dir": "down",
+     "why": "同QQQ一樣，對利率好敏感"
+    }
+   ],
+   "takeaway": "12月加息幾乎已成定局，市場而家係睇會唔會加多過0.25厘。",
+   "found": "2026-11-11 01:00"
+  },
+  {
+   "time": "2026-11-10 22:00",
+   "headline": "Nvidia下週二公佈業績 成為下個焦點",
+   "source": "Yahoo Finance",
+   "url": "https://finance.yahoo.com/quote/NVDA/",
+   "summary": "Nvidia會喺11月17號美股收市後公佈業績（即係香港時間18號清晨）。市場會睇AI晶片需求，同管理層點樣回應黃仁勳事件。",
+   "level": "medium",
+   "scope": "stock",
+   "affects": [
+    {
+     "sym": "NVDA",
+     "dir": "mixed",
+     "why": "業績好可能抵消部分醜聞嘅影響，差就會雪上加霜"
+    },
+    {
+     "sym": "TSM",
+     "dir": "mixed",
+     "why": "Nvidia係台積電大客戶，佢嘅指引會影響台積電"
+    }
+   ],
+   "takeaway": "記住香港時間11月18號清晨，業績前後股價可能大上大落。",
+   "found": "2026-11-11 01:00"
+  },
   {
    "time": "2026-11-10 21:45",
    "headline": "美債息急升 2年期一日升逾15點子",
@@ -40,29 +142,6 @@
     }
    ],
    "takeaway": "10年期債息逼近5%係重要心理關口，可以留意佢會唔會企穩喺上面",
-   "found": "2026-11-10 22:30"
-  },
-  {
-   "time": "2026-11-10 21:40",
-   "headline": "CPI後美股期貨轉跌 納指期貨跌近1%",
-   "source": "Yahoo Finance",
-   "url": "https://finance.yahoo.com/markets/live/stock-market-today-tuesday-november-10-dow-sp-500-nasdaq-inflation-data-cpi-090627830.html",
-   "summary": "開市前期貨本來上落唔大，CPI 一出就轉跌：納指100期貨跌約 1%，標普期貨跌約 0.4%。尋晚納指先升咗 2.7%，標普升 2.35%。",
-   "level": "medium",
-   "scope": "market",
-   "affects": [
-    {
-     "sym": "QQQ",
-     "dir": "down",
-     "why": "尋晚升 3.5% 之後，今晚可能有人趁高沽出"
-    },
-    {
-     "sym": "QQQM",
-     "dir": "down",
-     "why": "同 QQQ 一樣"
-    }
-   ],
-   "takeaway": "尋晚大升今晚回吐好常見，一兩日嘅上落唔代表趨勢已經轉咗",
    "found": "2026-11-10 22:30"
   },
   {
@@ -119,34 +198,6 @@
     }
    ],
    "takeaway": "可以留意上市前後 AI 股會唔會因為資金轉移而波動",
-   "found": "2026-11-10 22:30"
-  },
-  {
-   "time": "2026-11-10 19:30",
-   "headline": "Nvidia盤前微升 市場評估黃仁勳事件影響",
-   "source": "CNBC",
-   "url": "https://www.cnbc.com/2026/11/10/nvidia-nvda-jensen-huang-affair-chinese-spy.html",
-   "summary": "Nvidia 尋晚跌 4.3%，今日盤前輕微反彈。有分析估計董事會嘅調查要 4 至 6 個星期，股價離一個月前高位已經跌咗約 25%。11 月 17 號公佈業績。",
-   "level": "high",
-   "scope": "stock",
-   "affects": [
-    {
-     "sym": "NVDA",
-     "dir": "mixed",
-     "why": "調查未完，消息隨時再出；業績好可能幫手穩住股價"
-    },
-    {
-     "sym": "TSM",
-     "dir": "mixed",
-     "why": "Nvidia 係台積電大客，市場會擔心出口管制收緊"
-    },
-    {
-     "sym": "QQQ",
-     "dir": "mixed",
-     "why": "Nvidia 係納指最大成分股之一"
-    }
-   ],
-   "takeaway": "11月17號業績係下一個關鍵，公佈前後可能大上大落",
    "found": "2026-11-10 22:30"
   },
   {
@@ -567,6 +618,24 @@
   },
   {
    "time": "2026-11-10 04:00",
+   "headline": "Tesla連升兩日 Robotaxi擴展到第8個城市",
+   "source": "Benzinga",
+   "url": "https://www.benzinga.com/trading-ideas/movers/26/11/63054627/tesla-stock-moves-higher-whats-going-on-2",
+   "summary": "馬斯克話Cybertruck會喺2027年年中左右停產，騰出廠房生產Cybercab；Robotaxi加入San Antonio，總共覆蓋8個城市。Tesla週五升約4%，週一再升約5%。",
+   "level": "medium",
+   "scope": "stock",
+   "affects": [
+    {
+     "sym": "TSLA",
+     "dir": "up",
+     "why": "市場睇好自動駕駛同Cybercab嘅前景"
+    }
+   ],
+   "takeaway": "中期選舉後曾經大跌約9%，而家反彈緊。股價上落一向好大，要有心理準備。",
+   "found": "2026-11-11 01:00"
+  },
+  {
+   "time": "2026-11-10 04:00",
    "headline": "Oracle反彈約3% 超賣後有人執平貨同空頭補倉",
    "source": "TradingKey",
    "url": "https://www.tradingkey.com/news/market-movers/262296990-market-movers-orcl-20261109",
@@ -610,6 +679,29 @@
    ],
    "takeaway": "油價係今次反彈嘅主因，如果和談破裂，油價可能再升，股市又會受壓。",
    "found": "2026-11-10 04:45"
+  },
+  {
+   "time": "2026-11-10 03:00",
+   "headline": "Google推兩款第八代TPU 股價升約3%",
+   "source": "FX Leaders",
+   "url": "https://www.fxleaders.com/news/2026/11/09/alphabet-googl-jump-as-google-unveils-custom-ai-silicon-to-challenge-nvidia/",
+   "summary": "Google推出TPU 8tx（主打政府同受監管行業）同TPU 8i Max（處理長篇內容嘅AI工作），話TPU已經有近100個客戶。Alphabet週一升約3%，但仍然比10月高位低約兩成。",
+   "level": "medium",
+   "scope": "stock",
+   "affects": [
+    {
+     "sym": "GOOG",
+     "dir": "up",
+     "why": "自家AI晶片多咗收入來源，可以同Nvidia競爭"
+    },
+    {
+     "sym": "NVDA",
+     "dir": "mixed",
+     "why": "TPU長遠會搶走部分AI晶片市場"
+    }
+   ],
+   "takeaway": "業績後大跌之後有好消息撐住，但仲未收復失地，可以留意佢會唔會企穩。",
+   "found": "2026-11-11 01:00"
   },
   {
    "time": "2026-11-10 03:00",
@@ -876,93 +968,6 @@
    ],
    "takeaway": "呢個係長遠估算，唔係保證。Alphabet自由現金流已經連續兩季係負數，都要留意。",
    "found": "2026-11-10 18:00"
-  },
-  {
-   "time": "2026-11-09 23:30",
-   "headline": "摩通將Alphabet移出重點推介名單 維持增持",
-   "source": "TipRanks",
-   "url": "https://www.tipranks.com/news/alphabet-stock-googl-climbs-after-google-launches-two-new-ai-chips-to-rival-nvidia",
-   "summary": "摩根大通將Alphabet移出Analyst Focus List，改推Meta同Amazon，原因係搜尋收入增長放緩、自由現金流係負數，不過評級維持增持。",
-   "level": "medium",
-   "scope": "stock",
-   "affects": [
-    {
-     "sym": "GOOG",
-     "dir": "mixed",
-     "why": "新TPU係利好，但大行降低推介抵銷部分升幅"
-    }
-   ],
-   "takeaway": "GOOG今日只升約1%，比大市弱；股價仲未補返10月底業績後嘅跌幅。",
-   "found": "2026-11-10 04:45"
-  },
-  {
-   "time": "2026-11-09 23:30",
-   "headline": "台積電升近4% 傳考慮進軍先進記憶體",
-   "source": "Benzinga",
-   "url": "https://www.benzinga.com/markets/tech/26/11/63039328/what-is-going-on-with-taiwan-semiconductor-stock-on-monday",
-   "summary": "晶片股反彈，台積電ADR升近4%；市場亦消化台積電考慮擴展到先進記憶體生產嘅報道。台股早前已經升超過6%。",
-   "level": "medium",
-   "scope": "stock",
-   "affects": [
-    {
-     "sym": "TSM",
-     "dir": "up",
-     "why": "晶片股反彈，加上記憶體新業務想像空間"
-    }
-   ],
-   "takeaway": "記憶體計劃仍然只係「考慮緊」，未落實，你唔好當係已經確定嘅消息。",
-   "found": "2026-11-10 01:00"
-  },
-  {
-   "time": "2026-11-09 23:00",
-   "headline": "晶片股反彈 Nvidia 跌至4月以嚟最低收市",
-   "source": "Benzinga / TradingView",
-   "url": "https://www.tradingview.com/news/benzinga:53009b946094b:0-nasdaq-100-jumps-3-as-chips-rebound-nvidia-lags-most-since-deepseek-stock-market-today/",
-   "summary": "其他晶片股大升，Nvidia 就跌 4.2%，收市價係 4 月 7 日以嚟最低。資金由 Nvidia 流去 AMD、博通同台積電，加上 Google 推出新 TPU，競爭壓力亦有增加。",
-   "level": "medium",
-   "scope": "sector",
-   "affects": [
-    {
-     "sym": "NVDA",
-     "dir": "down",
-     "why": "資金轉去其他晶片股，加上 Google TPU 競爭"
-    },
-    {
-     "sym": "TSM",
-     "dir": "up",
-     "why": "AMD、博通、Google TPU 都係由台積電代工，邊個贏都幫到佢"
-    },
-    {
-     "sym": "AMD",
-     "dir": "up",
-     "why": "被視為 Nvidia 嘅替代選擇"
-    }
-   ],
-   "takeaway": "你同時持有 NVDA 同 TSM，兩者走勢唔同步，可以互相抵消部分風險",
-   "found": "2026-11-10 12:00"
-  },
-  {
-   "time": "2026-11-09 23:00",
-   "headline": "Google新TPU正面挑戰Nvidia 股價升逾3%",
-   "source": "Benzinga",
-   "url": "https://www.benzinga.com/markets/tech/26/11/63035881/google-turns-up-the-heat-on-nvidia-with-new-offerings",
-   "summary": "Google推出兩款新TPU後，正式開市股價升約3.4%至約293.6美元。市場視之為Nvidia AI晶片嘅競爭對手。",
-   "level": "medium",
-   "scope": "stock",
-   "affects": [
-    {
-     "sym": "GOOG",
-     "dir": "up",
-     "why": "自家AI晶片可以減成本，仲可以租畀雲端客"
-    },
-    {
-     "sym": "NVDA",
-     "dir": "down",
-     "why": "大客自己整晶片，長遠或者會蠶食需求"
-    }
-   ],
-   "takeaway": "你同時持有GOOG同NVDA，兩隻有少少此消彼長，可以分散風險。",
-   "found": "2026-11-10 01:00"
   }
  ]
 }

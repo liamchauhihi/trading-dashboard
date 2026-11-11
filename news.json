@@ -1,5 +1,5 @@
 {
- "generated": "2026-11-11T22:30+08:00",
+ "generated": "2026-11-12T01:00+08:00",
  "holdings": [
   "TSM",
   "TSLA",
@@ -11,9 +11,101 @@
   "NVDA"
  ],
  "claude_ok": true,
- "claude_at": "2026-11-11T22:30+08:00",
- "summary": "通脹數據太熱，市場估計12月加息機會仍然有九成左右。不過今晚科技股反彈：CoreWeave業績好過預期，帶動AI雲端股造好，Oracle盤前升咗大約5%；台積電10月營收創新高。Nvidia就仍然受CEO醜聞拖累，國會今日係回覆限期。你嘅大市ETF今晚偏好，NVDA依然係最大風險。",
+ "claude_at": "2026-11-12T01:00+08:00",
+ "summary": "CoreWeave 業績好過預期，帶動 AI 股反彈。Oracle、Nvidia、台積電今日都大升，納指升約1.5%。不過通脹偏熱，市場差唔多肯定聯儲局12月會加息，高估值科技股之後仍然可能大上大落。Nvidia 下星期二（11月17日）公布業績，係下一個要留意嘅關口。",
  "items": [
+  {
+   "time": "2026-11-12 00:30",
+   "headline": "CoreWeave業績消除AI泡沫憂慮 美股科技股反彈",
+   "source": "Reuters / Detroit News",
+   "url": "https://www.detroitnews.com/story/business/2026/11/11/sp-500-nasdaq-rise-as-coreweave-results-ease-ai-spending-worries/92724217007/",
+   "summary": "CoreWeave 收入增長強勁，而且減少靠借錢擴張，紓緩咗市場對 AI 泡沫嘅擔心。標普500盤中升約0.8–0.9%，納指升約1.5%，科技股一日市值多咗約5000億美元。",
+   "level": "high",
+   "scope": "market",
+   "affects": [
+    {
+     "sym": "QQQ",
+     "dir": "up",
+     "why": "大型科技股同晶片股帶頭反彈"
+    },
+    {
+     "sym": "QQQM",
+     "dir": "up",
+     "why": "成分同 QQQ 一樣，走勢一致"
+    },
+    {
+     "sym": "VOO",
+     "dir": "up",
+     "why": "AI 股佔標普比重大，帶動大市"
+    },
+    {
+     "sym": "GOOG",
+     "dir": "up",
+     "why": "跟隨 AI 板塊氣氛回升"
+    }
+   ],
+   "takeaway": "呢次係連跌幾日之後嘅反彈，加息壓力仲喺度，唔好當係已經轉勢。",
+   "found": "2026-11-12 01:00"
+  },
+  {
+   "time": "2026-11-11 23:30",
+   "headline": "Oracle盤中急升近9% 市值增加逾300億美元",
+   "source": "FourWeekMBA / Investing.com",
+   "url": "https://fourweekmba.com/ai-oracle-adds-31-6b-in-market-value-as-ai-cloud-stocks-rally/",
+   "summary": "CoreWeave 業績帶動 AI 雲端股一齊上，Oracle 盤中最多升約8.6%，大約128美元。佢今年之前已經跌咗約34%，主要因為市場擔心佢借債多同發新股。",
+   "level": "high",
+   "scope": "stock",
+   "affects": [
+    {
+     "sym": "ORCL",
+     "dir": "up",
+     "why": "同業業績好，市場重新相信 AI 雲端需求"
+    }
+   ],
+   "takeaway": "今日升係因為行業氣氛，Oracle 自己嘅負債問題未解決，波幅仍然會大。",
+   "found": "2026-11-12 01:00"
+  },
+  {
+   "time": "2026-11-11 23:00",
+   "headline": "Nvidia反彈逾4% 料創兩個月最好單日表現",
+   "source": "Yahoo Finance",
+   "url": "https://finance.yahoo.com/markets/live/stock-market-today-wednesday-november-11-dow-sp-500-nasdaq-nvidia-treasurys-veterans-day-140638547.html",
+   "summary": "連跌兩日之後，Nvidia 跟住晶片股同韓國晶片股反彈，升約4%。不過11月計仍然跌咗約14%，市值少咗約7000億美元。今日亦係國會要求黃仁勳回覆嘅限期。",
+   "level": "high",
+   "scope": "stock",
+   "affects": [
+    {
+     "sym": "NVDA",
+     "dir": "up",
+     "why": "AI 需求憂慮紓緩，跌得多後反彈"
+    },
+    {
+     "sym": "QQQ",
+     "dir": "up",
+     "why": "Nvidia 係 QQQ 最大成分股之一"
+    }
+   ],
+   "takeaway": "留意黃仁勳會唔會被國會發傳票，同埋11月17日業績。",
+   "found": "2026-11-12 01:00"
+  },
+  {
+   "time": "2026-11-11 21:30",
+   "headline": "Tesla奧斯汀無人的士範圍擴至約440平方哩",
+   "source": "EVwire / Gotrade",
+   "url": "https://evwire.com/p/tesla-robotaxi-austin-geofence-expansion-440-square-miles-update",
+   "summary": "Tesla 將奧斯汀無人的士服務範圍由約272擴到約440平方哩，之前亦剛剛喺聖安東尼奧開咗服務。股價盤前升約1.8%，之後跟大市繼續上。",
+   "level": "medium",
+   "scope": "stock",
+   "affects": [
+    {
+     "sym": "TSLA",
+     "dir": "up",
+     "why": "無人的士擴張，令市場對自動駕駛更有期望"
+    }
+   ],
+   "takeaway": "無人的士仲未有收入，車隊亦細，股價主要靠期望支持。",
+   "found": "2026-11-12 01:00"
+  },
   {
    "time": "2026-11-11 21:30",
    "headline": "CoreWeave業績勝預期 帶動AI雲端股 Oracle盤前升逾5%",
@@ -36,6 +128,29 @@
    ],
    "takeaway": "Oracle之前一個月跌咗大約13%，今次反彈係由消息推動。留意升幅收市時仲keep唔keep到。",
    "found": "2026-11-11 22:30"
+  },
+  {
+   "time": "2026-11-11 21:00",
+   "headline": "Baird下調Nvidia評級至中性 目標價削至200美元",
+   "source": "CNBC / Bloomberg",
+   "url": "https://www.cnbc.com/2026/11/11/nvidia-baird-downgrade-ceo-ai-capex.html",
+   "summary": "Baird 將 Nvidia 由「跑贏大市」降至「中性」，目標價由500美元削到200美元，理由係黃仁勳前途未明、AI 投資放慢同對華出口限制。同日大摩因為止蝕規則將佢剔出首選股，但維持增持評級。",
+   "level": "high",
+   "scope": "stock",
+   "affects": [
+    {
+     "sym": "NVDA",
+     "dir": "mixed",
+     "why": "評級被降，但股價當日照升約4%"
+    },
+    {
+     "sym": "TSM",
+     "dir": "mixed",
+     "why": "Nvidia 係台積電大客戶"
+    }
+   ],
+   "takeaway": "股價今日升主要靠行業反彈，CEO 調查同11月17日業績先係關鍵。",
+   "found": "2026-11-12 01:00"
   },
   {
    "time": "2026-11-11 21:00",
@@ -123,6 +238,34 @@
    ],
    "takeaway": "亞洲冇明顯恐慌，今晚美股要睇債息同Nvidia會唔會止跌",
    "found": "2026-11-11 12:00"
+  },
+  {
+   "time": "2026-11-11 10:00",
+   "headline": "聯儲Waller傾向12月加息 高盛再加一次加息預測",
+   "source": "The Standard / CBS News",
+   "url": "https://thestandard.com.hk/finance/article/348218/Goldman-adds-another-rate-hike-to-Fed-outlook-after-hot-inflation-data",
+   "summary": "10月核心通脹按月升0.3%。一向偏鴿派嘅 Waller 話傾向支持12月加息，甚至可以考慮加半厘。高盛預計明年3月會再加息，市場估12月加息機會接近9成或以上。",
+   "level": "high",
+   "scope": "market",
+   "affects": [
+    {
+     "sym": "QQQ",
+     "dir": "down",
+     "why": "加息會壓低高估值科技股"
+    },
+    {
+     "sym": "VOO",
+     "dir": "down",
+     "why": "借貸成本上升，影響整體企業盈利"
+    },
+    {
+     "sym": "TSLA",
+     "dir": "down",
+     "why": "高估值成長股對息口特別敏感"
+    }
+   ],
+   "takeaway": "加息差唔多已經反映咗，要留意會唔會加半厘。",
+   "found": "2026-11-12 01:00"
   },
   {
    "time": "2026-11-11 09:15",
@@ -830,149 +973,6 @@
    ],
    "takeaway": "油價回落對之後嘅通脹數據有幫助，可以留意11月CPI",
    "found": "2026-11-10 22:30"
-  },
-  {
-   "time": "2026-11-10 13:30",
-   "headline": "台積電10月營收創新高 按年升近六成",
-   "source": "TSMC / Hardware Busters",
-   "url": "https://hwbusters.com/news/tsmc-posts-record-nt586-9-billion-october-already-a-third-of-the-way-to-its-q4-target/",
-   "summary": "10月營收大約5,869億新台幣，按月升14.7%，按年升59.7%，打破8月嘅紀錄，亦高過分析師估計，已經達到第四季指引大約三分之一。",
-   "level": "high",
-   "scope": "stock",
-   "affects": [
-    {
-     "sym": "TSM",
-     "dir": "up",
-     "why": "營收好過預期，AI晶片需求依然強勁，係TSM升4.5%嘅主要原因"
-    },
-    {
-     "sym": "NVDA",
-     "dir": "mixed",
-     "why": "AI晶片需求好，但Nvidia股價而家主要受CEO醜聞影響"
-    }
-   ],
-   "takeaway": "顯示AI需求未見放慢。下次要睇12月初公佈嘅11月營收。",
-   "found": "2026-11-11 22:30"
-  },
-  {
-   "time": "2026-11-10 13:30",
-   "headline": "台積電10月營收按年升近六成 創歷史新高",
-   "source": "Bloomberg / ANI",
-   "url": "https://www.bloomberg.com/news/articles/2026-11-10/tsmc-taiwan-semiconductor-manufacturing-revenue-earnings-ai-chip-demand",
-   "summary": "10月營收約5,869億新台幣，按年升59.7%，按月升14.7%，比分析師預期嘅5,600至5,700億高。單計10月已經做到第四季指引大約三分之一。",
-   "level": "high",
-   "scope": "stock",
-   "affects": [
-    {
-     "sym": "TSM",
-     "dir": "up",
-     "why": "營收打破紀錄又高過預期，反映AI晶片訂單依然強勁"
-    },
-    {
-     "sym": "NVDA",
-     "dir": "up",
-     "why": "台積電幫Nvidia生產晶片，營收強即係AI晶片需求未見放慢"
-    },
-    {
-     "sym": "QQQ",
-     "dir": "up",
-     "why": "半導體股佔比重，行業數據好會撐住指數"
-    }
-   ],
-   "takeaway": "AI需求數據繼續強，但台積電股價昨日已升3.5%，有部分好消息可能已經反映咗。",
-   "found": "2026-11-10 18:00"
-  },
-  {
-   "time": "2026-11-10 11:45",
-   "headline": "亞洲股市跟升 台股大漲3.4% 日經升2.6%",
-   "source": "AP",
-   "url": "https://www.wsoctv.com/news/business/asian-stocks-rise/O3AZTZLC7E47FHN7WU2S34EXKI/",
-   "summary": "華爾街科技股反彈帶動亞洲股市，台灣加權指數升 3.4%，日經 225 升 2.6% 至 60,279 點。油價繼續回落，美股期貨輕微上升。",
-   "level": "medium",
-   "scope": "market",
-   "affects": [
-    {
-     "sym": "TSM",
-     "dir": "up",
-     "why": "台積電係台股最大權重，台股大升反映買盤回流"
-    }
-   ],
-   "takeaway": "亞洲延續升勢對 TSM 有利，但今晚 CPI 先係真正方向",
-   "found": "2026-11-10 12:00"
-  },
-  {
-   "time": "2026-11-10 10:00",
-   "headline": "Nvidia董事會獨立調查黃仁勳 分析師提領導層風險",
-   "source": "Yahoo Finance",
-   "url": "https://finance.yahoo.com/markets/stocks/articles/nvidia-faces-governance-overhang-jensen-020907411.html",
-   "summary": "黃仁勳向員工承認婚外情。董事會成立獨立董事委員會，請外部律師調查佢係咪被外國情報人員針對，並表示暫時冇理由相信國家安全或公司機密外洩。Nvidia市值自10月起已蒸發約1.7萬億美元。",
-   "level": "high",
-   "scope": "stock",
-   "affects": [
-    {
-     "sym": "NVDA",
-     "dir": "down",
-     "why": "如果CEO要落台，市場會擔心公司策略同客戶關係受影響"
-    },
-    {
-     "sym": "TSM",
-     "dir": "mixed",
-     "why": "Nvidia係台積電大客戶，不過AI晶片整體需求冇因此改變"
-    }
-   ],
-   "takeaway": "留意調查結果同業績會上管理層點講，呢段時間股價可能好波動",
-   "found": "2026-11-11 12:00"
-  },
-  {
-   "time": "2026-11-10 08:50",
-   "headline": "本週再有AI業績：CoreWeave、思科、應用材料",
-   "source": "FXStreet",
-   "url": "https://www.fxstreet.com/news/dow-jones-futures-advance-as-market-eyes-inflation-data-tech-earnings-202611100850",
-   "summary": "除咗今晚收市後公佈嘅CoreWeave，市場仲留意思科同晶片設備商應用材料嘅業績，用嚟判斷AI投資熱潮仲撐唔撐得住。",
-   "level": "medium",
-   "scope": "sector",
-   "affects": [
-    {
-     "sym": "NVDA",
-     "dir": "mixed",
-     "why": "AI客戶嘅開支計劃會直接影響晶片需求嘅預期"
-    },
-    {
-     "sym": "TSM",
-     "dir": "mixed",
-     "why": "應用材料嘅展望反映晶圓廠擴產步伐"
-    },
-    {
-     "sym": "ORCL",
-     "dir": "mixed",
-     "why": "同屬AI雲端基建，CoreWeave業績會影響市場點睇Oracle"
-    }
-   ],
-   "takeaway": "呢幾份業績會影響成個AI板塊嘅情緒，你持有好多科技股，公佈前後可能大上大落。",
-   "found": "2026-11-10 18:00"
-  },
-  {
-   "time": "2026-11-10 08:00",
-   "headline": "Nvidia同黃仁勳被股東入稟集體訴訟",
-   "source": "City AM",
-   "url": "https://www.cityam.com/nvidia-hit-with-shareholder-lawsuit-after-190bn-market-value-wipeout/",
-   "summary": "Rosen律師行代表股東入稟，指Nvidia冇披露黃仁勳同涉嫌中國間諜嘅前Megaspeed高層嘅私人關係，誤導投資者。訴訟涵蓋2025年10月9日至2026年11月8日買入嘅人。",
-   "level": "high",
-   "scope": "stock",
-   "affects": [
-    {
-     "sym": "NVDA",
-     "dir": "down",
-     "why": "官司加上FBI調查，管治風險短期內好難消散"
-    },
-    {
-     "sym": "QQQ",
-     "dir": "mixed",
-     "why": "Nvidia係納指最大成分股之一，佢郁會拖住指數"
-    }
-   ],
-   "takeaway": "呢類集體訴訟通常拖好耐先有結果。留意11月18日國會可能要佢出席嘅閉門會議。",
-   "found": "2026-11-10 18:00"
   }
  ]
 }

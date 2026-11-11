@@ -1,5 +1,5 @@
 {
- "generated": "2026-11-11T12:00+08:00",
+ "generated": "2026-11-11T18:00+08:00",
  "holdings": [
   "TSM",
   "TSLA",
@@ -11,9 +11,27 @@
   "NVDA"
  ],
  "claude_ok": true,
- "claude_at": "2026-11-11T12:00+08:00",
- "summary": "10月通脹高過預期，市場估12月加息機會升到約91%，10年期債息逼近5%，美股三大指數下跌。Nvidia有CEO風波，又俾美銀剔出首選名單，再跌約5.5%；資金轉去AMD、博通同台積電。你嘅持倉以科技股為主，短期會跟住債息同下週二Nvidia業績上落。",
+ "claude_at": "2026-11-11T18:00+08:00",
+ "summary": "美國通脹太熱，聯儲局官員一個接一個講12月要加息，債息高企，科技股受壓。Nvidia因為CEO風波連跌兩日，加上Citi下調目標價，下週二業績會係關鍵。台積電就靠強勁營收同投資Anthropic逆市造好。你持有嘅QQQ、QQQM、VOO都同時受加息預期同AI股波動影響。",
  "items": [
+  {
+   "time": "2026-11-11 14:00",
+   "headline": "台積電台股收升4.8% 帶動台股大升3.6%",
+   "source": "Focus Taiwan（中央社）",
+   "url": "https://focustaiwan.tw/business/202611110018",
+   "summary": "10月營收按年升近六成、派息9元台幣，加上會用最多5億美元認購Anthropic新股，台積電今日以全日最高位2,395元台幣收市，獨力推高台股約880點。",
+   "level": "high",
+   "scope": "stock",
+   "affects": [
+    {
+     "sym": "TSM",
+     "dir": "up",
+     "why": "台股大升，今晚美國預託證券（ADR）有機會跟住造好"
+    }
+   ],
+   "takeaway": "分析師指2,450元台幣附近有阻力，急升之後可能會有波動",
+   "found": "2026-11-11 18:00"
+  },
   {
    "time": "2026-11-11 11:30",
    "headline": "亞洲股市今早分化 日經升 恒指跌",
@@ -51,6 +69,42 @@
    "found": "2026-11-11 12:00"
   },
   {
+   "time": "2026-11-11 08:00",
+   "headline": "今日美國退伍軍人節 股市照開 債市休市",
+   "source": "QuantVPS",
+   "url": "https://www.quantvps.com/market-hours/veterans-day",
+   "summary": "11月11號紐約證券交易所同納斯達克照常開市，但美國債券市場跟SIFMA建議休市，所以今晚冇美債交易。",
+   "level": "low",
+   "scope": "market",
+   "affects": [
+    {
+     "sym": "SPY",
+     "dir": "mixed",
+     "why": "冇債市參考，成交可能偏淡，波動未必反映真實情緒"
+    }
+   ],
+   "takeaway": "今晚成交淡，唔使太在意細微波動",
+   "found": "2026-11-11 18:00"
+  },
+  {
+   "time": "2026-11-11 07:00",
+   "headline": "Tesla將停產Cybertruck 聖安東尼奧推無人的士",
+   "source": "ad-hoc-news",
+   "url": "https://ad-hoc-news.de/boerse/news/corporate-news/tesla-stock-slips-as-cybertruck-refunds-loom-after-production-shift/70486350",
+   "summary": "Tesla計劃2027年中前停止喺德州廠生產Cybertruck，部分訂單會退訂金，資源轉去Cybercab無人的士。佢已經喺聖安東尼奧開始提供冇安全員嘅無人的士服務。",
+   "level": "medium",
+   "scope": "stock",
+   "affects": [
+    {
+     "sym": "TSLA",
+     "dir": "mixed",
+     "why": "停產會令汽車收入少咗，但市場更睇重無人的士嘅進展"
+    }
+   ],
+   "takeaway": "可以留意無人的士車隊規模，同埋退訂金涉及幾多錢",
+   "found": "2026-11-11 18:00"
+  },
+  {
    "time": "2026-11-11 06:45",
    "headline": "Oracle跌1.5% 跌幅大過大市 一個月跌近13%",
    "source": "Yahoo Finance／Zacks",
@@ -67,6 +121,62 @@
    ],
    "takeaway": "Bernstein睇好，但大摩同高盛睇淡，分歧大；留意會唔會跌穿109美元低位",
    "found": "2026-11-11 12:00"
+  },
+  {
+   "time": "2026-11-11 06:00",
+   "headline": "布蘭特油價跌到8月以嚟最低 美伊和談有進展",
+   "source": "Euronews",
+   "url": "https://www.euronews.com/2026/11/10/oil-prices-continue-to-fall-on-hopes-of-us-iran-peace-deal-talks",
+   "summary": "卡塔爾話美國同伊朗對調停都有「正面回應」，布蘭特期油跌到大約92美元，今個月累計跌咗兩成左右。不過和談未落實，隨時有變。",
+   "level": "medium",
+   "scope": "market",
+   "affects": [
+    {
+     "sym": "VOO",
+     "dir": "up",
+     "why": "油價回落有助減輕通脹壓力，對大市有利"
+    },
+    {
+     "sym": "QQQ",
+     "dir": "up",
+     "why": "通脹預期降溫有機會令債息喘一喘"
+    }
+   ],
+   "takeaway": "油價係少數嘅好消息，但如果和談破裂，油價可能會反彈",
+   "found": "2026-11-11 18:00"
+  },
+  {
+   "time": "2026-11-11 05:30",
+   "headline": "Nvidia再跌5.5% 兩日蒸發近5000億美元市值",
+   "source": "CNBC",
+   "url": "https://www.cnbc.com/2026/11/10/nvidia-nvda-jensen-huang-affair-chinese-spy.html",
+   "summary": "黃仁勳承認婚外情，對方涉嫌係中國間諜，董事會請前紐約聯邦檢察官調查，FBI亦介入。Nvidia堅持佢會繼續做CEO，又話冇證據顯示機密外洩。",
+   "level": "high",
+   "scope": "stock",
+   "affects": [
+    {
+     "sym": "NVDA",
+     "dir": "down",
+     "why": "管理層同出口中國嘅風險未清楚，兩日跌超過10%"
+    },
+    {
+     "sym": "QQQ",
+     "dir": "down",
+     "why": "Nvidia係QQQ最大成分股之一，拖累指數"
+    },
+    {
+     "sym": "QQQM",
+     "dir": "down",
+     "why": "成分同QQQ一樣，同樣受拖累"
+    },
+    {
+     "sym": "VOO",
+     "dir": "down",
+     "why": "Nvidia喺S&P 500佔比好重"
+    }
+   ],
+   "takeaway": "調查結果同11月17號業績未出之前，股價可能仲會大上大落",
+   "found": "2026-11-11 18:00"
   },
   {
    "time": "2026-11-11 05:15",
@@ -186,6 +296,39 @@
    "found": "2026-11-11 08:00"
   },
   {
+   "time": "2026-11-11 04:00",
+   "headline": "聯儲局Logan、Goolsbee齊撐加息 有人提半厘",
+   "source": "Bloomberg",
+   "url": "https://www.bloomberg.com/news/articles/2026-11-10/fed-s-waller-backs-december-rate-hike-says-open-to-larger-move",
+   "summary": "Waller之後，達拉斯聯儲Logan支持最少再加兩次息，Goolsbee話加半厘都可以考慮。市場估計12月加息機會接近九成，議息會議喺12月8至9號。",
+   "level": "high",
+   "scope": "market",
+   "affects": [
+    {
+     "sym": "QQQ",
+     "dir": "down",
+     "why": "息口越高，高估值科技股越受壓"
+    },
+    {
+     "sym": "QQQM",
+     "dir": "down",
+     "why": "同QQQ一樣，對息口好敏感"
+    },
+    {
+     "sym": "VOO",
+     "dir": "down",
+     "why": "加息會令借貸成本上升，大市估值受壓"
+    },
+    {
+     "sym": "TSLA",
+     "dir": "down",
+     "why": "高估值增長股對加息特別敏感"
+    }
+   ],
+   "takeaway": "唔只一個官員咁講，要留意加息幅度會唔會變成半厘",
+   "found": "2026-11-11 18:00"
+  },
+  {
    "time": "2026-11-11 03:00",
    "headline": "Nvidia間諜風波升級 FBI介入 傳涉75億美元晶片流入中國",
    "source": "Yahoo Finance",
@@ -219,6 +362,70 @@
    "found": "2026-11-11 08:00"
   },
   {
+   "time": "2026-11-11 01:30",
+   "headline": "Citi下調Nvidia目標價至285美元 維持買入",
+   "source": "GuruFocus／Yahoo Finance",
+   "url": "https://finance.yahoo.com/markets/stocks/articles/nvidia-stock-falls-citi-trims-173024804.html",
+   "summary": "業績公佈前，Citi將Nvidia目標價由315美元減到285美元，不過繼續維持「買入」評級。",
+   "level": "medium",
+   "scope": "stock",
+   "affects": [
+    {
+     "sym": "NVDA",
+     "dir": "mixed",
+     "why": "目標價降咗，但評級冇變，大行仍然睇好基本因素"
+    }
+   ],
+   "takeaway": "降目標價唔等於睇淡，可以留意其他大行有冇跟住調",
+   "found": "2026-11-11 18:00"
+  },
+  {
+   "time": "2026-11-11 01:00",
+   "headline": "Alphabet回軟 Wells Fargo下調目標價",
+   "source": "Benzinga",
+   "url": "https://www.benzinga.com/markets/tech/26/11/63110214/whats-going-on-with-alphabet-stock-on-tuesday",
+   "summary": "星期一公佈新一代自家AI晶片（TPU），股價急升，星期二就跟大市回軟。Wells Fargo維持「增持」，但目標價由371美元減到365美元。股價仲低過20日平均線約7.5%。",
+   "level": "medium",
+   "scope": "stock",
+   "affects": [
+    {
+     "sym": "GOOG",
+     "dir": "mixed",
+     "why": "自家晶片同Gemini有進展，但大市氣氛差，股價仲喺近期低位"
+    }
+   ],
+   "takeaway": "短期走勢跟大市同息口，自家晶片進展係長線要睇嘅重點",
+   "found": "2026-11-11 18:00"
+  },
+  {
+   "time": "2026-11-11 00:00",
+   "headline": "Google、Nvidia等七間公司認購260億美元Anthropic股份",
+   "source": "The Motley Fool",
+   "url": "https://www.fool.com/investing/2026/11/10/nvidia-alphabet-and-micron-just-agreed-to-buy-26-billion-of-stock-in-one-of-their-biggest-customers/",
+   "summary": "Anthropic修訂招股文件：Google同Nvidia各認購100億美元，AMD、博通、美光、微軟同台積電都有份，全部以招股價認購。部分Google嘅錢係履行之前已承諾嘅投資。",
+   "level": "medium",
+   "scope": "sector",
+   "affects": [
+    {
+     "sym": "GOOG",
+     "dir": "mixed",
+     "why": "加碼AI，但要用好多現金，回報要睇Anthropic上市後表現"
+    },
+    {
+     "sym": "NVDA",
+     "dir": "mixed",
+     "why": "投資咗自己大客戶，有人擔心係「循環式」交易"
+    },
+    {
+     "sym": "TSM",
+     "dir": "up",
+     "why": "投資金額細，但反映同AI客戶關係密切"
+    }
+   ],
+   "takeaway": "Anthropic預計19號上市，反應會影響成個AI板塊情緒",
+   "found": "2026-11-11 18:00"
+  },
+  {
    "time": "2026-11-11 00:00",
    "headline": "Tesla翌日回軟 分析指無人的士車隊仲好細",
    "source": "Yahoo Finance",
@@ -235,34 +442,6 @@
    ],
    "takeaway": "唔使理會每日小上落，留意Tesla幾時公佈車隊數字",
    "found": "2026-11-11 12:00"
-  },
-  {
-   "time": "2026-11-10 23:30",
-   "headline": "Nvidia連跌第二日 再跌約5%至6%",
-   "source": "CNBC",
-   "url": "https://www.cnbc.com/2026/11/10/nvidia-nvda-jensen-huang-affair-chinese-spy.html",
-   "summary": "黃仁勳婚外情對象疑似中國間諜，董事會已展開獨立調查，加上股東入稟集體訴訟，Nvidia繼週一跌4%後再跌約5%。特朗普話FBI正在調查，民主黨亦要求國會加強監察。",
-   "level": "high",
-   "scope": "stock",
-   "affects": [
-    {
-     "sym": "NVDA",
-     "dir": "down",
-     "why": "管理層風險未明朗，有分析師估調查要4至6星期，期間股價受壓"
-    },
-    {
-     "sym": "QQQ",
-     "dir": "down",
-     "why": "Nvidia係納指最大成分股之一，佢跌會拖低指數"
-    },
-    {
-     "sym": "QQQM",
-     "dir": "down",
-     "why": "同QQQ一樣追蹤納指100，Nvidia佔比好重"
-    }
-   ],
-   "takeaway": "今次跌主要因為CEO個人風波，唔係生意轉差。留意董事會調查結果同11月17號業績。",
-   "found": "2026-11-11 01:00"
   },
   {
    "time": "2026-11-10 22:30",
@@ -411,6 +590,29 @@
    ],
    "takeaway": "通脹未降落嚟，即係利率可能要高一段時間，短期波動會大啲",
    "found": "2026-11-10 22:30"
+  },
+  {
+   "time": "2026-11-10 20:00",
+   "headline": "應用材料星期四公佈業績 晶片股再有考驗",
+   "source": "Applied Materials 投資者關係",
+   "url": "https://ir.appliedmaterials.com/events/event-details/q4-2026-applied-materials-earnings-conference-call",
+   "summary": "晶片設備商應用材料會喺美東時間11月12號收市後（即香港時間13號早上）公佈第四季業績，市場預期每股盈利約4.06美元。",
+   "level": "low",
+   "scope": "sector",
+   "affects": [
+    {
+     "sym": "TSM",
+     "dir": "mixed",
+     "why": "設備訂單反映晶圓廠擴產意慾，同台積電資本開支有關"
+    },
+    {
+     "sym": "NVDA",
+     "dir": "mixed",
+     "why": "會影響市場對AI晶片供應鏈嘅情緒"
+    }
+   ],
+   "takeaway": "可以當作Nvidia下週業績之前嘅晶片股熱身",
+   "found": "2026-11-11 18:00"
   },
   {
    "time": "2026-11-10 20:00",
@@ -766,218 +968,6 @@
    ],
    "takeaway": "今晚CPI如果高過預期，債息可能再升，科技股ETF波動會較大。",
    "found": "2026-11-10 18:00"
-  },
-  {
-   "time": "2026-11-10 06:00",
-   "headline": "Oracle分析師意見分歧 Stephens同瑞銀仍然睇好",
-   "source": "Tradingpedia",
-   "url": "https://tradingpedia.com/2026/11/09/oracle-tokenized-stock-struggles-as-analyst-views-split",
-   "summary": "Oracle週一升約3%，收市大約119.8美元。Stephens俾「增持」評級，目標價213美元；瑞銀維持「買入」，目標價250美元。不過Microsoft逐步停租Oracle AI算力，加上信用違約掉期息差接近300點，市場仍然擔心。",
-   "level": "medium",
-   "scope": "stock",
-   "affects": [
-    {
-     "sym": "ORCL",
-     "dir": "mixed",
-     "why": "分析師目標價遠高過現價，但大客戶流失同債務問題仍然拖住股價"
-    }
-   ],
-   "takeaway": "一日反彈唔代表見底，要留意佢嘅債務同大客戶訂單有冇消息。",
-   "found": "2026-11-10 08:00"
-  },
-  {
-   "time": "2026-11-10 05:00",
-   "headline": "Tesla無人的士開到聖安東尼奧 股價升5.5%",
-   "source": "Yahoo Finance",
-   "url": "https://finance.yahoo.com/markets/stocks/articles/tesla-soars-5-robotaxi-reaches-183159233.html",
-   "summary": "Tesla喺德州聖安東尼奧推出Robotaxi服務，週一收市升5.54%。Musk亦支持喺2027年中前停產Cybertruck，騰出產能生產Cybercab無人的士。",
-   "level": "medium",
-   "scope": "stock",
-   "affects": [
-    {
-     "sym": "TSLA",
-     "dir": "up",
-     "why": "無人的士擴展到新城市，市場睇好自動駕駛業務"
-    }
-   ],
-   "takeaway": "每開一個新城市股價都會有反應，但車隊規模先係重點",
-   "found": "2026-11-11 12:00"
-  },
-  {
-   "time": "2026-11-10 05:00",
-   "headline": "美股全線反彈 費城半導體指數急升近7%",
-   "source": "Reuters / Yahoo Finance",
-   "url": "https://finance.yahoo.com/markets/live/stock-market-today-monday-november-9-dow-sp-500-nasdaq-nvidia-090535419.html",
-   "summary": "標普 500 升 2.4%、納指升 2.7%，11 個板塊全部上升。上星期因民主黨中期選舉大勝，市場擔心 AI 監管收緊而大跌，今次收復大部分失地。AMD 升 13%、博通升 8.8%。",
-   "level": "high",
-   "scope": "market",
-   "affects": [
-    {
-     "sym": "VOO",
-     "dir": "up",
-     "why": "全部板塊普遍上升，標普 500 收復上週大部分跌幅"
-    },
-    {
-     "sym": "QQQ",
-     "dir": "up",
-     "why": "晶片股同科技股帶頭反彈"
-    },
-    {
-     "sym": "TSM",
-     "dir": "up",
-     "why": "晶片板塊情緒大幅回暖"
-    }
-   ],
-   "takeaway": "反彈係建基於油價回落；如果今晚 CPI 偏高，升幅可能好快蝕返",
-   "found": "2026-11-10 12:00"
-  },
-  {
-   "time": "2026-11-10 05:00",
-   "headline": "今晚CPI：預測核心按月升0.2% 今次冇按年數字",
-   "source": "Kiplinger",
-   "url": "https://www.kiplinger.com/investing/economy/october-2026-cpi-report-what-to-expect",
-   "summary": "美國10月CPI香港時間今晚9:30公佈。市場預測整體按月升約0.3%，核心升0.2%。勞工統計局今次唔會公佈按年數字。美銀認為核心通脹有機會高過預期。",
-   "level": "high",
-   "scope": "market",
-   "affects": [
-    {
-     "sym": "QQQ",
-     "dir": "mixed",
-     "why": "通脹低過預期會減少加息壓力，對科技股有利；高過預期就相反"
-    },
-    {
-     "sym": "VOO",
-     "dir": "mixed",
-     "why": "大市方向好大程度睇CPI同12月加息機會"
-    },
-    {
-     "sym": "QQQM",
-     "dir": "mixed",
-     "why": "同QQQ一樣追蹤納指100，對息口好敏感"
-    }
-   ],
-   "takeaway": "今晚大市可能大上大落，唔使因為一晚嘅波動就慌。",
-   "found": "2026-11-10 08:00"
-  },
-  {
-   "time": "2026-11-10 05:00",
-   "headline": "Nvidia收市跌4.3% 董事會組獨立委員會查黃仁勳",
-   "source": "CNBC",
-   "url": "https://www.cnbc.com/2026/11/09/nvidia-jensen-huang-chinese-spy-investigation.html",
-   "summary": "Nvidia董事會由獨立董事加外聘律師，調查黃仁勳係咪成為外國情報目標。股價收市跌4.27%，跌到4月以嚟最低。公司表示仍然信任黃仁勳，中國外交部否認有間諜事件。",
-   "level": "high",
-   "scope": "stock",
-   "affects": [
-    {
-     "sym": "NVDA",
-     "dir": "down",
-     "why": "調查結果未明，管理層前景唔清楚，令股價有額外風險"
-    },
-    {
-     "sym": "QQQ",
-     "dir": "mixed",
-     "why": "Nvidia係納指權重最大嘅股票之一，會拖慢升幅"
-    }
-   ],
-   "takeaway": "下週二公佈業績之前，股價可能繼續跟住調查消息上落。",
-   "found": "2026-11-10 08:00"
-  },
-  {
-   "time": "2026-11-10 04:15",
-   "headline": "納指升約3% 晶片股反彈 Nvidia跌幅創DeepSeek後最大",
-   "source": "Benzinga",
-   "url": "https://benzinga.com/markets/equities/26/11/63055270/stock-market-today-nasdaq-100-chip-rebound-nvidia-deepseek",
-   "summary": "道指一度升逾1,200點，標普升約2-2.7%，納指100升約3.1%。AMD等晶片股反彈，但Nvidia跌幅係DeepSeek事件以嚟最大。",
-   "level": "high",
-   "scope": "market",
-   "affects": [
-    {
-     "sym": "QQQ",
-     "dir": "up",
-     "why": "科技股全面反彈，帶動納指100大升"
-    },
-    {
-     "sym": "QQQM",
-     "dir": "up",
-     "why": "同QQQ追蹤同一指數"
-    },
-    {
-     "sym": "VOO",
-     "dir": "up",
-     "why": "標普500收復上週選後大部分跌幅"
-    },
-    {
-     "sym": "NVDA",
-     "dir": "down",
-     "why": "CEO風波令佢落後大市"
-    }
-   ],
-   "takeaway": "大市已收復大部分選後跌幅，但Nvidia係QQQ重磅股，佢嘅風波會拖低升幅。",
-   "found": "2026-11-10 04:45"
-  },
-  {
-   "time": "2026-11-10 04:00",
-   "headline": "Tesla連升兩日 Robotaxi擴展到第8個城市",
-   "source": "Benzinga",
-   "url": "https://www.benzinga.com/trading-ideas/movers/26/11/63054627/tesla-stock-moves-higher-whats-going-on-2",
-   "summary": "馬斯克話Cybertruck會喺2027年年中左右停產，騰出廠房生產Cybercab；Robotaxi加入San Antonio，總共覆蓋8個城市。Tesla週五升約4%，週一再升約5%。",
-   "level": "medium",
-   "scope": "stock",
-   "affects": [
-    {
-     "sym": "TSLA",
-     "dir": "up",
-     "why": "市場睇好自動駕駛同Cybercab嘅前景"
-    }
-   ],
-   "takeaway": "中期選舉後曾經大跌約9%，而家反彈緊。股價上落一向好大，要有心理準備。",
-   "found": "2026-11-11 01:00"
-  },
-  {
-   "time": "2026-11-10 04:00",
-   "headline": "Oracle反彈約3% 超賣後有人執平貨同空頭補倉",
-   "source": "TradingKey",
-   "url": "https://www.tradingkey.com/news/market-movers/262296990-market-movers-orcl-20261109",
-   "summary": "上週五Bloomberg報道Microsoft逐步結束向Oracle租用AI雲端算力，股價曾見一年低位109美元。今日跟大市反彈約3%，主要係技術性買盤。",
-   "level": "medium",
-   "scope": "stock",
-   "affects": [
-    {
-     "sym": "ORCL",
-     "dir": "mixed",
-     "why": "短線反彈，但失去大客同200億集資嘅陰影仲在"
-    },
-    {
-     "sym": "MSFT",
-     "dir": "mixed",
-     "why": "減少外租算力，轉用自家設施"
-    }
-   ],
-   "takeaway": "今年已跌約42%，一日反彈未必代表見底，留意100美元附近有冇支持。",
-   "found": "2026-11-10 04:45"
-  },
-  {
-   "time": "2026-11-10 03:30",
-   "headline": "美伊和談希望升溫 紐油再插6%至約85美元",
-   "source": "CNBC",
-   "url": "https://www.cnbc.com/2026/11/08/stock-market-today-live-updates.html",
-   "summary": "紐油跌約6%至約85美元，布油跌約7%至約91美元。特朗普話如果和談有進展，再出兵伊朗嘅機會好低，不過協議仲未達成。",
-   "level": "high",
-   "scope": "market",
-   "affects": [
-    {
-     "sym": "VOO",
-     "dir": "up",
-     "why": "油價跌，通脹壓力減輕，大市受惠"
-    },
-    {
-     "sym": "QQQ",
-     "dir": "up",
-     "why": "通脹憂慮減輕，有利高估值科技股"
-    }
-   ],
-   "takeaway": "油價係今次反彈嘅主因，如果和談破裂，油價可能再升，股市又會受壓。",
-   "found": "2026-11-10 04:45"
   }
  ]
 }

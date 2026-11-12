@@ -1,5 +1,5 @@
 {
- "generated": "2026-11-12T04:45+08:00",
+ "generated": "2026-11-12T08:00+08:00",
  "holdings": [
   "TSM",
   "TSLA",
@@ -11,9 +11,121 @@
   "NVDA"
  ],
  "claude_ok": true,
- "claude_at": "2026-11-12T04:45+08:00",
- "summary": "AI 雲端同晶片股今日大反彈：CoreWeave 業績令人冇咁擔心 AI 公司借貸太多，Oracle、Nvidia、台積電一齊升。不過通脹數據偏熱，聯儲局官員講嘢偏強硬，市場已經當 12 月加息係實。你嘅科技股持倉短線上落會好大。下星期二 Nvidia 公布業績，係下一個重要關口。",
+ "claude_at": "2026-11-12T08:00+08:00",
+ "summary": "最大件事係《華爾街日報》報道 Nvidia 董事會準備撤換 CEO 黃仁勳，Nvidia 盤後跌約8–9%，納指期貨跟住跌約0.8%。你持有 NVDA，亦間接透過 QQQ、QQQM、VOO 持有；TSM 亦可能受牽連。白天 CoreWeave 帶動 AI 股反彈（ORCL、TSM 大升），但12月加息嘅憂慮仍然存在。",
  "items": [
+  {
+   "time": "2026-11-12 07:00",
+   "headline": "納指期貨跌約0.8% Nvidia拖累AI股",
+   "source": "investingLive",
+   "url": "https://investinglive.com/stock-market-update/nasdaq-futures-drop-0-8-as-wsj-says-nvidia-board-is-preparing-to-oust-ceo-huang/",
+   "summary": "美股期貨晚市重開之後，納指100期貨跌約0.8%，標普期貨跌約0.3%。沽壓主要集中喺 AI 供應鏈，唔係全面拋售。",
+   "level": "high",
+   "scope": "market",
+   "affects": [
+    {
+     "sym": "QQQ",
+     "dir": "down",
+     "why": "科技股比重高，最受 Nvidia 消息影響"
+    },
+    {
+     "sym": "QQQM",
+     "dir": "down",
+     "why": "同 QQQ 一樣，都係追蹤納指100"
+    },
+    {
+     "sym": "TSM",
+     "dir": "down",
+     "why": "台積電係 Nvidia 主要晶片代工商，屬同一條 AI 供應鏈，可能跟住被沽"
+    },
+    {
+     "sym": "VOO",
+     "dir": "mixed",
+     "why": "大市只係微跌，非科技股影響有限"
+    }
+   ],
+   "takeaway": "昨晚大升嘅 AI 股，今晚可能會回吐部分升幅。",
+   "found": "2026-11-12 08:00"
+  },
+  {
+   "time": "2026-11-12 06:15",
+   "headline": "華爾街日報：Nvidia董事會準備撤換黃仁勳",
+   "source": "CBS News / WSJ",
+   "url": "https://www.cbsnews.com/news/nvidia-stock-dives-report-board-prepares-oust-jensen-huang/",
+   "summary": "《華爾街日報》報道，董事會最快今日開會決定黃仁勳去留。消息出咗之後，Nvidia 盤後跌超過8%，約159.5美元，創52週新低。",
+   "level": "high",
+   "scope": "stock",
+   "affects": [
+    {
+     "sym": "NVDA",
+     "dir": "down",
+     "why": "創辦人兼 CEO 可能被撤換，管理層唔明朗，盤後已經大跌"
+    },
+    {
+     "sym": "QQQ",
+     "dir": "down",
+     "why": "Nvidia 係納指100入面權重最大嘅股票之一"
+    },
+    {
+     "sym": "QQQM",
+     "dir": "down",
+     "why": "同 QQQ 追蹤同一個指數，會受同樣影響"
+    },
+    {
+     "sym": "VOO",
+     "dir": "down",
+     "why": "Nvidia 喺標普500權重大，不過影響會細過 QQQ"
+    }
+   ],
+   "takeaway": "今晚開市可能會大幅波動。留意董事會正式公布，現時仍然只係傳媒報道。",
+   "found": "2026-11-12 08:00"
+  },
+  {
+   "time": "2026-11-12 05:30",
+   "headline": "紐時指黃仁勳有第二段婚外情 對象係員工",
+   "source": "CNBC",
+   "url": "https://www.cnbc.com/2026/11/11/nvidia-jensen-huang-affair-employee.html",
+   "summary": "《紐約時報》報道，黃仁勳另有一段婚外情，對象係公司員工。早前據報佢同一位被指係中國間諜嘅客戶公司高層有關係，董事會已經展開獨立調查。",
+   "level": "high",
+   "scope": "stock",
+   "affects": [
+    {
+     "sym": "NVDA",
+     "dir": "down",
+     "why": "管治同國家安全疑慮加深，董事會面對更大壓力要採取行動"
+    }
+   ],
+   "takeaway": "呢件係管理層風波，唔係生意轉差。不過喺結果公布之前，股價可能仍然好波動。",
+   "found": "2026-11-12 08:00"
+  },
+  {
+   "time": "2026-11-12 05:00",
+   "headline": "美股收高 CoreWeave飆25% 蘋果創新高",
+   "source": "TheStreet",
+   "url": "https://www.thestreet.com/stock-market-today/stock-market-today-dow-jones-sp-500-nasdaq-updates-nov-11-2026",
+   "summary": "週三納指升約1.6%，標普升約1.3%。CoreWeave 業績好過預期、升約25%，重燃 AI 熱潮，蘋果股價創新高。前一日因為 CPI 太熱而急跌，今日反彈。",
+   "level": "medium",
+   "scope": "market",
+   "affects": [
+    {
+     "sym": "ORCL",
+     "dir": "up",
+     "why": "同屬 AI 雲端股，CoreWeave 業績好令市場對 AI 債務嘅憂慮降溫，升8.8%"
+    },
+    {
+     "sym": "TSM",
+     "dir": "up",
+     "why": "晶片股全線反彈，TSM 美股升4.3%"
+    },
+    {
+     "sym": "VOO",
+     "dir": "up",
+     "why": "大市全面反彈約1.3%"
+    }
+   ],
+   "takeaway": "ORCL 同 TSM 大升主要係因為 AI 情緒轉好，公司本身冇新消息，情緒好容易又轉。",
+   "found": "2026-11-12 08:00"
+  },
   {
    "time": "2026-11-12 04:00",
    "headline": "美股尾市造好 納指升約1.7% 科技股帶頭",
@@ -97,6 +209,34 @@
    ],
    "takeaway": "呢次係連跌幾日之後嘅反彈，加息壓力仲喺度，唔好當係已經轉勢。",
    "found": "2026-11-12 01:00"
+  },
+  {
+   "time": "2026-11-11 23:30",
+   "headline": "12月加息幾成定局 通脹偏熱壓住估值",
+   "source": "TheStreet",
+   "url": "https://pro.thestreet.com/stock-market-today/a-serious-change-in-sentiment",
+   "summary": "10月 CPI 好過預期熱，加上聯儲官員講法偏鷹，市場仍然預期12月最少加息0.25厘。標普啱啱經歷咗自2025年4月以嚟最差嘅一個星期。",
+   "level": "medium",
+   "scope": "market",
+   "affects": [
+    {
+     "sym": "QQQ",
+     "dir": "down",
+     "why": "加息會打擊高估值科技股"
+    },
+    {
+     "sym": "TSLA",
+     "dir": "down",
+     "why": "市盈率好高嘅股票對息口最敏感"
+    },
+    {
+     "sym": "GOOG",
+     "dir": "mixed",
+     "why": "盈利穩陣，但都會受估值收縮影響"
+    }
+   ],
+   "takeaway": "留意接住落嚟聯儲官員講話同債息，息口係呢排大市最大嘅壓力。",
+   "found": "2026-11-12 08:00"
   },
   {
    "time": "2026-11-11 23:30",
@@ -299,6 +439,24 @@
    ],
    "takeaway": "12月加息機會仍然有九成左右，加息嘅壓力未消，所以呢次反彈唔代表已經轉勢。",
    "found": "2026-11-11 22:30"
+  },
+  {
+   "time": "2026-11-11 20:00",
+   "headline": "分析：Nvidia董事會或留任黃仁勳但削權",
+   "source": "Fortune",
+   "url": "https://fortune.com/2026/11/11/nvidia-board-directors-jensen-huang-captive-board/",
+   "summary": "Fortune 分析認為，董事會未必會炒黃仁勳，有可能讓佢留任，但加強監管。Time 就指董事會正考慮撤換、休假或者譴責幾個做法。",
+   "level": "medium",
+   "scope": "stock",
+   "affects": [
+    {
+     "sym": "NVDA",
+     "dir": "mixed",
+     "why": "結局未定，可能係撤換、休假或者削權，每個結果對股價嘅影響都唔同"
+    }
+   ],
+   "takeaway": "最終決定未出，唔好只靠單一報道下判斷，等公司正式公布。",
+   "found": "2026-11-12 08:00"
   },
   {
    "time": "2026-11-11 20:00",
@@ -825,154 +983,6 @@
    ],
    "takeaway": "唔使理會每日小上落，留意Tesla幾時公佈車隊數字",
    "found": "2026-11-11 12:00"
-  },
-  {
-   "time": "2026-11-10 22:30",
-   "headline": "12月加息半厘機會由1%升到11%",
-   "source": "Bloomingbit / CME FedWatch",
-   "url": "https://en.bloomingbit.io/feed/news/124114",
-   "summary": "核心CPI升0.3%，高過預期。CME FedWatch顯示，12月加息半厘嘅機會由公佈前約1%升到約11%，加息0.25厘嘅機會約89%。聯儲局12月8至9號開會。",
-   "level": "high",
-   "scope": "market",
-   "affects": [
-    {
-     "sym": "QQQ",
-     "dir": "down",
-     "why": "加息預期升，高估值科技股通常最受壓"
-    },
-    {
-     "sym": "VOO",
-     "dir": "down",
-     "why": "息口上升會壓低股票整體估值"
-    },
-    {
-     "sym": "QQQM",
-     "dir": "down",
-     "why": "同QQQ一樣，對利率好敏感"
-    }
-   ],
-   "takeaway": "12月加息幾乎已成定局，市場而家係睇會唔會加多過0.25厘。",
-   "found": "2026-11-11 01:00"
-  },
-  {
-   "time": "2026-11-10 22:00",
-   "headline": "美銀將Nvidia剔出US 1首選股名單",
-   "source": "TipRanks",
-   "url": "https://www.tipranks.com/news/bank-of-america-drops-nvidia-from-top-stock-list-as-fbi-probes-ceo-jensen-huang",
-   "summary": "美銀將Nvidia、美光同Lam Research剔出精選股名單，但三隻都維持「買入」評級，冇解釋原因。同時FBI正調查黃仁勳醜聞，Nvidia收市跌約5.5%。",
-   "level": "high",
-   "scope": "stock",
-   "affects": [
-    {
-     "sym": "NVDA",
-     "dir": "down",
-     "why": "大行剔出首選名單，加上CEO風波，市場情緒轉差"
-    },
-    {
-     "sym": "QQQ",
-     "dir": "down",
-     "why": "Nvidia係納指100最大成分股之一"
-    }
-   ],
-   "takeaway": "美銀評級仍然係買入，呢個係情緒打擊多過基本面轉差；最重要係下週二業績",
-   "found": "2026-11-11 12:00"
-  },
-  {
-   "time": "2026-11-10 22:00",
-   "headline": "Nvidia下週二公佈業績 成為下個焦點",
-   "source": "Yahoo Finance",
-   "url": "https://finance.yahoo.com/quote/NVDA/",
-   "summary": "Nvidia會喺11月17號美股收市後公佈業績（即係香港時間18號清晨）。市場會睇AI晶片需求，同管理層點樣回應黃仁勳事件。",
-   "level": "medium",
-   "scope": "stock",
-   "affects": [
-    {
-     "sym": "NVDA",
-     "dir": "mixed",
-     "why": "業績好可能抵消部分醜聞嘅影響，差就會雪上加霜"
-    },
-    {
-     "sym": "TSM",
-     "dir": "mixed",
-     "why": "Nvidia係台積電大客戶，佢嘅指引會影響台積電"
-    }
-   ],
-   "takeaway": "記住香港時間11月18號清晨，業績前後股價可能大上大落。",
-   "found": "2026-11-11 01:00"
-  },
-  {
-   "time": "2026-11-10 21:45",
-   "headline": "美債息急升 2年期一日升逾15點子",
-   "source": "CNBC",
-   "url": "https://www.cnbc.com/2026/11/10/us-bonds-treasurys-yields.html",
-   "summary": "CPI 公佈之後，10 年期債息升超過 7 點子，去到約 4.94%；2 年期升超過 15 點子，去到約 4.70%。尋日公佈嘅就業數據好過預期，債息已經升緊。",
-   "level": "high",
-   "scope": "market",
-   "affects": [
-    {
-     "sym": "QQQ",
-     "dir": "down",
-     "why": "債息越高，科技股將來盈利折現返嚟就越唔值錢"
-    },
-    {
-     "sym": "GOOG",
-     "dir": "down",
-     "why": "大型科技股通常同債息反方向行"
-    },
-    {
-     "sym": "VOO",
-     "dir": "mixed",
-     "why": "銀行股可能受惠，科技股受壓，兩邊抵銷部分"
-    }
-   ],
-   "takeaway": "10年期債息逼近5%係重要心理關口，可以留意佢會唔會企穩喺上面",
-   "found": "2026-11-10 22:30"
-  },
-  {
-   "time": "2026-11-10 21:30",
-   "headline": "Bernstein重申Oracle跑贏大市 目標價325美元",
-   "source": "Yahoo Finance",
-   "url": "https://finance.yahoo.com/technology/ai/articles/why-bernstein-says-oracle-ai-133149244.html",
-   "summary": "Bernstein認為Oracle嘅AI機會比之前估計更有價值，維持跑贏大市評級。不過Oracle今年已經跌咗約40%，週二再跌1.5%，收約118美元，接近52週低位109美元。",
-   "level": "medium",
-   "scope": "stock",
-   "affects": [
-    {
-     "sym": "ORCL",
-     "dir": "mixed",
-     "why": "分析師仲睇好，但早前有大行降級，加上債息上升，壓力未完"
-    }
-   ],
-   "takeaway": "分析師意見分歧好大。下次業績約12月14日，可以留意雲端訂單同負債情況。",
-   "found": "2026-11-11 08:00"
-  },
-  {
-   "time": "2026-11-10 21:30",
-   "headline": "10月CPI高過預期 核心通脹連續三個月升0.3%",
-   "source": "Fox Business / StockTitan",
-   "url": "https://www.stocktitan.net/articles/october-2026-cpi-inflation-report",
-   "summary": "整體 CPI 按月升 0.4%（預期 0.3%），核心升 0.3%（預期 0.2%）。住屋、食物同能源都係推高物價嘅主要原因。因為去年政府停擺冇收集數據，今次冇按年數字。",
-   "level": "high",
-   "scope": "market",
-   "affects": [
-    {
-     "sym": "QQQ",
-     "dir": "down",
-     "why": "通脹降得慢，加息機會大增，高估值科技股最受壓"
-    },
-    {
-     "sym": "QQQM",
-     "dir": "down",
-     "why": "同 QQQ 一樣追蹤納指100，影響相同"
-    },
-    {
-     "sym": "VOO",
-     "dir": "down",
-     "why": "成個大市要面對更高利率，估值受壓"
-    }
-   ],
-   "takeaway": "通脹未降落嚟，即係利率可能要高一段時間，短期波動會大啲",
-   "found": "2026-11-10 22:30"
   }
  ]
 }

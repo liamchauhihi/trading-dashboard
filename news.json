@@ -1,19 +1,18 @@
 {
- "generated": "2026-11-17T09:17+08:00",
+ "generated": "2026-11-17T09:28+08:00",
  "holdings": [
   "TSM",
-  "TSLA",
-  "QQQ",
   "GOOG",
-  "ORCL",
+  "NVDA",
   "VOO",
   "QQQM",
-  "NVDA"
+  "QQQ",
+  "SNDK"
  ],
  "claude_ok": true,
  "model": "haiku",
- "claude_at": "2026-11-17T09:17+08:00",
- "summary": "最重要三件事：①16日美股大跌（納指約跌2.5%），AI同晶片股帶頭；②美國收緊AI晶片出口，打擊Nvidia同台積電；③Nvidia週二美股收市後公布業績，市場好緊張。對你持倉：NVDA、TSM波幅會大，ETF跟大市走。",
+ "claude_at": "2026-11-17T09:28+08:00",
+ "summary": "美股16日大跌後，市場最關注聯儲局：12月加息機會已接近全數，10年期債息約5%，科技股估值承壓。你持倉中的SNDK、TSM、NVDA、GOOG受板塊拖累最大；NVDA將於美國周二收市後公布業績。",
  "items": [
   {
    "time": "2026-11-17 08:00",
@@ -42,6 +41,34 @@
    ],
    "takeaway": "業績前後波幅會好大，短線唔好以為估到方向；公布後要睇清楚指引。",
    "found": "2026-11-17 09:17"
+  },
+  {
+   "time": "2026-11-17 05:00",
+   "headline": "納指跌入修正區 VIX升約19%",
+   "source": "CNN（引述路透）",
+   "url": "https://www.cnn.com/2026/11/16/business/stocks-nvidia-ai-anthropic",
+   "summary": "11月16日收市：標普500跌1.92%，納指跌2.49%，較10月6日高位跌逾一成，進入修正區；道指跌1.41%。",
+   "level": "high",
+   "scope": "market",
+   "affects": [
+    {
+     "sym": "QQQ",
+     "dir": "down",
+     "why": "納指跌幅大，科技同AI股帶頭下挫"
+    },
+    {
+     "sym": "QQQM",
+     "dir": "down",
+     "why": "同樣追蹤納指100，跌幅同步"
+    },
+    {
+     "sym": "VOO",
+     "dir": "down",
+     "why": "標普500單日跌約1.9%（報道數字），大市普遍走弱"
+    }
+   ],
+   "takeaway": "指數ETF跟住大市走，短期波動會較大；按你自己嘅長線計劃睇，唔好因單日跌幅衝動行事。",
+   "found": "2026-11-17 09:28"
   },
   {
    "time": "2026-11-17 05:00",
@@ -95,6 +122,34 @@
    ],
    "takeaway": "大市一齊跌，唔使即刻驚，但波幅會大，要有心理準備。",
    "found": "2026-11-17 09:17"
+  },
+  {
+   "time": "2026-11-17 00:00",
+   "headline": "聯儲局12月加息機會急升 債息逼近5%",
+   "source": "The Motley Fool",
+   "url": "https://www.fool.com/investing/2026/11/16/theres-now-100-chance-fed-rate-hike-in-december-thats-not-worst-news-for-wall-street/",
+   "summary": "市場幾乎肯定12月會加息，有官員提到可能加半厘。10年期債息約5%，高息令高增長股票嘅估值難以支撐。",
+   "level": "high",
+   "scope": "market",
+   "affects": [
+    {
+     "sym": "QQQ",
+     "dir": "down",
+     "why": "納指成分股多為高增長科技股，加息預期會壓低估值"
+    },
+    {
+     "sym": "QQQM",
+     "dir": "down",
+     "why": "同樣追蹤納指100，受科技股影響較大"
+    },
+    {
+     "sym": "VOO",
+     "dir": "down",
+     "why": "追蹤標普500，加息會拖累整體大市"
+    }
+   ],
+   "takeaway": "你持有的指數ETF較易受息口影響；留意12月聯儲局會議結果，唔使因一日新聞即刻作決定。",
+   "found": "2026-11-17 09:28"
   },
   {
    "time": "2026-11-16 23:00",

@@ -1,5 +1,5 @@
 {
- "generated": "2026-11-18T01:00+08:00",
+ "generated": "2026-11-18T04:45+08:00",
  "holdings": [
   "TSM",
   "GOOG",
@@ -9,8 +9,8 @@
   "QQQ",
   "SNDK"
  ],
- "claude_ok": true,
- "model": "haiku",
+ "claude_ok": false,
+ "model": null,
  "claude_at": "2026-11-18T01:00+08:00",
  "summary": "QQQ 跌約 1.4%，AI 科技股反覆。焦點有三：聯儲局或再加息、美債息有望升穿 5%、英偉達美股收市後公布業績（期權估計股價或郁約 8.5%）。TSM、SNDK 昨日跌幅較大，分別與晶片出口限制、NAND 供應過剩報道有關。VOO、QQQ、QQQM 主要跟大市走。",
  "items": [

@@ -1,5 +1,5 @@
 {
- "generated": "2026-11-17T09:28+08:00",
+ "generated": "2026-11-17T12:00+08:00",
  "holdings": [
   "TSM",
   "GOOG",
@@ -11,9 +11,32 @@
  ],
  "claude_ok": true,
  "model": "haiku",
- "claude_at": "2026-11-17T09:28+08:00",
- "summary": "美股16日大跌後，市場最關注聯儲局：12月加息機會已接近全數，10年期債息約5%，科技股估值承壓。你持倉中的SNDK、TSM、NVDA、GOOG受板塊拖累最大；NVDA將於美國周二收市後公布業績。",
+ "claude_at": "2026-11-17T12:00+08:00",
+ "summary": "納指跌 2.5% 入修正區，AI 同晶片股帶頭跌。Nvidia 黃仁勳辭職、董事會拒絕復任，今晚公布業績係首份冇佢嘅報告。SNDK、GOOG、TSM 跌幅大，持倉受科技股拖累，留意業績同出口規則。",
  "items": [
+  {
+   "time": "2026-11-17 10:00",
+   "headline": "AI 晶片出口規則細節未定，有報道話仍係草案",
+   "source": "CyberScoop",
+   "url": "https://cyberscoop.com/commerce-ai-chip-export-restrictions/",
+   "summary": "有報道指規則仍係草案，針對 Blackwell 或以上級別晶片，並可能加入挪威、南非。另有報道話 90 日內要取得牌照，各方說法未統一。",
+   "level": "medium",
+   "scope": "sector",
+   "affects": [
+    {
+     "sym": "NVDA",
+     "dir": "down",
+     "why": "受限制地區銷售可能受影響"
+    },
+    {
+     "sym": "TSM",
+     "dir": "down",
+     "why": "代工客戶同中國業務可能受影響"
+    }
+   ],
+   "takeaway": "正式條文未定，屬不確定因素，留意聯邦公報（Federal Register）正式版本。",
+   "found": "2026-11-17 12:00"
+  },
   {
    "time": "2026-11-17 08:00",
    "headline": "Nvidia週二公布業績 市場焦點",
@@ -122,6 +145,144 @@
    ],
    "takeaway": "大市一齊跌，唔使即刻驚，但波幅會大，要有心理準備。",
    "found": "2026-11-17 09:17"
+  },
+  {
+   "time": "2026-11-17 04:00",
+   "headline": "Nvidia 跌 4% 至 52 週低，董事會拒絕黃仁勳復任",
+   "source": "CNBC",
+   "url": "https://www.cnbc.com/2026/11/16/nvidia-stock-price-jensen-huang.html",
+   "summary": "黃仁勳上週辭任 CEO，董事會似乎唔考慮其復任。股價收 156.14 美元，跌 4.12%，跌至 2025 年 7 月以來低位，多間大行降評。",
+   "level": "high",
+   "scope": "stock",
+   "affects": [
+    {
+     "sym": "NVDA",
+     "dir": "down",
+     "why": "CEO 更替不明朗，股價直接受壓"
+    },
+    {
+     "sym": "TSM",
+     "dir": "down",
+     "why": "同屬 AI 晶片股，情緒同步轉差"
+    }
+   ],
+   "takeaway": "今晚公布業績，係首份冇黃仁勳嘅報告，留意指引同 CEO 消息，波幅可能好大。",
+   "found": "2026-11-17 12:00"
+  },
+  {
+   "time": "2026-11-17 04:00",
+   "headline": "SanDisk 昨日再跌 8.6%，8 併 1 拆股即將生效",
+   "source": "Finimize",
+   "url": "https://finimize.com/content/sndk-asset-snapshot",
+   "summary": "11 月 5 日單日暴跌 22%，當時冇公司公告；有報道指 11 月 10 日前一個月累跌約 42%。昨日再跌，暫未搵到明確原因。",
+   "level": "high",
+   "scope": "stock",
+   "affects": [
+    {
+     "sym": "SNDK",
+     "dir": "down",
+     "why": "記憶體股板塊一齊跌，市場擔心 AI 存儲需求同估值"
+    }
+   ],
+   "takeaway": "拆股只改股數、不改總市值，留意自己嘅 −8% 止蝕線，唔使因單日跌而恐慌。",
+   "found": "2026-11-17 12:00"
+  },
+  {
+   "time": "2026-11-17 04:00",
+   "headline": "Google 跌約 3.9%，市場擔心 AI 開支龐大",
+   "source": "FX Leaders",
+   "url": "https://www.fxleaders.com/news/2026/11/16/alphabet-goog-stock-extends-decline-as-200b-infrastructure-spending-and-google-anthropic-investment-raise-concerns/",
+   "summary": "投資者擔心 Alphabet 龐大 AI 基建開支，以及再向 Anthropic 投資 100 億美元，回報未明；股價跌至約 285 美元。各來源跌幅數字不一。",
+   "level": "high",
+   "scope": "stock",
+   "affects": [
+    {
+     "sym": "GOOG",
+     "dir": "down",
+     "why": "AI 開支大，搜尋業務同監管壓力並存"
+    },
+    {
+     "sym": "QQQ",
+     "dir": "down",
+     "why": "GOOG 係大市值科技股，拖累指數"
+    }
+   ],
+   "takeaway": "留意 AI 開支同搜尋業務消息；單日跌幅唔等於趨勢，睇清楚你嘅 200 日線。",
+   "found": "2026-11-17 12:00"
+  },
+  {
+   "time": "2026-11-17 04:00",
+   "headline": "台積電 ADR 昨日跌 6.3%，AI 晶片股同步受壓",
+   "source": "Qz",
+   "url": "https://qz.com/us-ai-chip-reexport-licenses-five-countries-111626",
+   "summary": "昨日跌 6.34%，暫未搵到台積電獨有消息。跌勢跟板塊走，亦受美國新出口規則影響，規則令中國設計商較難同台積電合作。",
+   "level": "high",
+   "scope": "sector",
+   "affects": [
+    {
+     "sym": "TSM",
+     "dir": "down",
+     "why": "跟 AI 晶片股同步；出口規則影響中國客戶"
+    },
+    {
+     "sym": "NVDA",
+     "dir": "down",
+     "why": "同屬晶片板塊，受出口限制影響"
+    }
+   ],
+   "takeaway": "暫無台積電獨有壞消息，主要跟板塊走，留意出口規則後續發展。",
+   "found": "2026-11-17 12:00"
+  },
+  {
+   "time": "2026-11-17 04:00",
+   "headline": "美光、英特爾昨日跌逾 7%，晶片股齊跌",
+   "source": "MarketSpeaker",
+   "url": "https://marketspeaker.com/nasdaq-sp500-dow-close-nvidia-chip-selloff-november-16-2026/",
+   "summary": "納指跌 2.49%，美光同英特爾跌逾 7%。市場擔心 AI 投資回報同監管，晶片股氣氛差。",
+   "level": "medium",
+   "scope": "sector",
+   "affects": [
+    {
+     "sym": "SNDK",
+     "dir": "down",
+     "why": "同屬記憶體股，一齊受壓"
+    },
+    {
+     "sym": "NVDA",
+     "dir": "down",
+     "why": "同屬晶片板塊"
+    },
+    {
+     "sym": "TSM",
+     "dir": "down",
+     "why": "同屬晶片板塊"
+    }
+   ],
+   "takeaway": "晶片板塊整體受壓，持有 SNDK、NVDA、TSM 嘅人波動會大，睇清自己嘅止蝕位即可。",
+   "found": "2026-11-17 12:00"
+  },
+  {
+   "time": "2026-11-17 04:00",
+   "headline": "10 年期美債息報約 5.15%，高息壓力令股市承壓",
+   "source": "STL News",
+   "url": "https://www.stl.news/u-s-stock-market-today-november-16-2026/",
+   "summary": "11 月 16 日 10 年期美債息報約 5.15%，高息令高估值科技股承壓。只得一個來源，數字要再確認。",
+   "level": "medium",
+   "scope": "market",
+   "affects": [
+    {
+     "sym": "QQQ",
+     "dir": "down",
+     "why": "高息令成長股估值受壓"
+    },
+    {
+     "sym": "VOO",
+     "dir": "down",
+     "why": "大市估值承壓"
+    }
+   ],
+   "takeaway": "息口高會壓股市估值，唔使因一日數字而行動，留意聯儲局 12 月決定。",
+   "found": "2026-11-17 12:00"
   },
   {
    "time": "2026-11-17 00:00",

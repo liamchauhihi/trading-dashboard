@@ -1,5 +1,5 @@
 {
- "generated": "2026-11-19T01:00+08:00",
+ "generated": "2026-11-19T04:45+08:00",
  "holdings": [
   "TSM",
   "GOOG",
@@ -11,9 +11,201 @@
  ],
  "claude_ok": true,
  "model": "haiku",
- "claude_at": "2026-11-19T01:00+08:00",
- "summary": "市場最大憂慮係聯儲局可能加息（Waller 主張加半厘，會議記錄快公布）。英偉達業績後升勢消退，SanDisk 跌 4.12%，原因未能核實。Anthropic 上市帶嚟 AI 股分化。對你持倉係短期波動風險上升，唔係即時定論。",
+ "claude_at": "2026-11-19T04:45+08:00",
+ "summary": "聯儲局會議紀錄顯示多數官員傾向再加息，12 月或加半厘，大市承壓。英偉達業績後升勢消退，加上管理層爭議拖累 NVDA；SNDK 受評級下調影響。QQQ 同 QQQM 留意 Anthropic 或納入納指 100。",
  "items": [
+  {
+   "time": "2026-11-19 04:25",
+   "headline": "聯儲局會議紀錄：多數官員傾向再加息",
+   "source": "BigGo Finance",
+   "url": "https://news.google.com/rss/articles/CBMidkFVX3lxTE9ldGUwNHN0WkRUQXBBaHpYM2FrUElEZ2dmT1lrbzZ2MDhleHczUlExNmw0NEdNVlBHN09MdmdsX2g1cWlyOC1nMHVfb29aNGxHU0NFOFhRb3BpWk5lREg5bjU4ZENaY1NPbFVYdS1JMEJmUkhJY3c?oc=5",
+   "summary": "紀錄顯示多數官員認為仍需加息，標題指 12 月可能加半厘。",
+   "level": "high",
+   "scope": "market",
+   "affects": [
+    {
+     "sym": "VOO",
+     "dir": "down",
+     "why": "加息預期令大型股估值承壓，VOO 追蹤大市，受影響較直接。"
+    },
+    {
+     "sym": "QQQ",
+     "dir": "down",
+     "why": "科技股對利率較敏感，QQQ 可能比大市受壓更多。"
+    }
+   ],
+   "takeaway": "留意利率同債息走勢。這是大市風險，不是單一股票問題。",
+   "found": "2026-11-19 04:45"
+  },
+  {
+   "time": "2026-11-19 04:20",
+   "headline": "Ackman 批英偉達董事會未有召回黃仁勳",
+   "source": "Business Insider",
+   "url": "https://news.google.com/rss/articles/CBMiowFBVV95cUxPQVRCUEhOVUstSlFsb0loaFJOdzFCXzI3dDdxSXpDWkNFWXlONzRZR3lSLVl3MlA5aWRnNXczUFdlV28zWUlEdWRaRkhvTk5pUkE2ZWpuSnFQRnNOMHpoX1AwQ1h1R3kyVk9WZ1pKUUR5bEQxa2JwMGZoTUpxamtHVEVycDlvSlVMNVRDZGY4SXUtUmZvQnNyNm9wc1VYbTFTNmJj?oc=5",
+   "summary": "Ackman 批評英偉達董事會未有考慮黃仁勳重返；另有報道指 Bessent 想外聘 CEO。",
+   "level": "medium",
+   "scope": "stock",
+   "affects": [
+    {
+     "sym": "NVDA",
+     "dir": "mixed",
+     "why": "管理層變動仍未明朗，短期或增加股價波動。"
+    }
+   ],
+   "takeaway": "這是個股管理層風險，留意後續消息，唔使每日追看股價。",
+   "found": "2026-11-19 04:45"
+  },
+  {
+   "time": "2026-11-19 04:16",
+   "headline": "華爾街為 Anthropic 上市準備，AI 股整體疲弱",
+   "source": "Reuters",
+   "url": "https://news.google.com/rss/articles/CBMixwFBVV95cUxONkZkRVdESVU1UERiQmhZWmp5cl9Vel9VQlJOOWtLM3ZfVjFVVU5rYUZVWk5UVF8xU0t3SU0ybEF4UDNBOWFNeVI3RjlGMzZVdUhMbnV4UU9JQXpqM1FxZk1reHJGbFM5Qm1VcTMwTl81SEtvWVRYNjJRa0JPZ2xkamZfR3I2elFGWnhlNUFsMWNYMW5MeWJYR3o4SFg5NWhxa0tjYzJtMVpaelVhMUREQnZJa0huN1pzSlUzdTBHWm9ackd6Q0w4?oc=5",
+   "summary": "Anthropic 上市定價在即，華爾街積極準備，但 AI 股整體表現仍然疲弱。",
+   "level": "medium",
+   "scope": "market",
+   "affects": [
+    {
+     "sym": "GOOG",
+     "dir": "mixed",
+     "why": "Google 有份參與 Anthropic 相關投資，走勢或受上市影響。"
+    },
+    {
+     "sym": "NVDA",
+     "dir": "mixed",
+     "why": "AI 焦點轉向新上市股，可能分散對現有 AI 股的資金。"
+    }
+   ],
+   "takeaway": "Anthropic 上市可能吸引資金，亦可能分薄其他 AI 股焦點，留意相關報道。",
+   "found": "2026-11-19 04:45"
+  },
+  {
+   "time": "2026-11-19 04:10",
+   "headline": "Waller 提議或加半厘「震撼」市場",
+   "source": "The Hill",
+   "url": "https://news.google.com/rss/articles/CBMicEFVX3lxTE56MzFOekFrVXJIek1aZU85UGZhODU0T056cDY0c3FrOG5HaE9pV3dUVTNxQTJHZFRVY3p6YVJjWHAyRnZ3NWJWaU5KN1NjY1hWdEZjSkU0SkJydXdBcHFpUDBnWTQ3M1lEQ3g3ZDhzZHjSAXZBVV95cUxNSEdoRmMxXzBYczExWUl6RkpiTFZSbDN1Q0xZV0dpWmxDMHlJMlh6MDVaNFQ2cmdFVDR4WmVaQUdpYjM0bWozRUN0ZmwzUUFOdkdvdk8zc2dOTGxMT1NRNVF0Wk1UUy1IX2ZMTmdVa0xOYnNJNUxB?oc=5",
+   "summary": "聯儲局官員 Waller 認為或需以半厘加息「震撼」市場，立場更強硬。",
+   "level": "high",
+   "scope": "market",
+   "affects": [
+    {
+     "sym": "VOO",
+     "dir": "down",
+     "why": "加息幅度可能加大，會增加大市短期波動。"
+    },
+    {
+     "sym": "QQQM",
+     "dir": "down",
+     "why": "成長股對利率變化較敏感，波動可能較大。"
+    }
+   ],
+   "takeaway": "加息預期仍然主導市場情緒，留意 12 月議息結果。",
+   "found": "2026-11-19 04:45"
+  },
+  {
+   "time": "2026-11-19 03:59",
+   "headline": "美股多數收低，英偉達業績未能平息憂慮",
+   "source": "WSJ",
+   "url": "https://news.google.com/rss/articles/CBMitgFBVV95cUxQeVFyOU5ZTWtBVzZob0FxRUQxME5TdllYbHgxNDVsTTZYaDBQMkNnU0x6czdEaUtlemhyQXJWVHk3cURHeWJ5NXRncmtubDZtZnNvTG5ac1E0Vm1YS0o3OWRrRm5GNi1wOEFwallTZmhyaHBqX0Z2MG80S3gzb3ViQnhZTWgxSmlkRHFTa09NNXA5MHhGVzYtQ28yVVRIdzVyZ2RJYTJ4cldqZms3dFg1ekplQUp1QQ?oc=5",
+   "summary": "英偉達業績後市場反應反覆，美股多數收低，大市同時受加息憂慮影響。",
+   "level": "high",
+   "scope": "stock",
+   "affects": [
+    {
+     "sym": "NVDA",
+     "dir": "down",
+     "why": "業績勝預期，但股價升勢消退，投資者仍擔心 AI 股前景。"
+    },
+    {
+     "sym": "QQQ",
+     "dir": "down",
+     "why": "科技大型股佔 QQQ 比重高，NVDA 走弱會影響指數。"
+    }
+   ],
+   "takeaway": "NVDA 單日跌約 2.8%，未過 3%，但業績後走勢反覆，留意能否企穩。",
+   "found": "2026-11-19 04:45"
+  },
+  {
+   "time": "2026-11-19 03:56",
+   "headline": "Anthropic 或 12 月納入納指 100",
+   "source": "Nacionale",
+   "url": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxOWU9rTnRJRHFRWlpPcWRWNGpRZHJ6Q1hpSUJxbWY5UG9BaW5fdC1IWlRkTmh6OGJKSWctWHVRRGdwcV8yYzlxelgzdDg2QU1rcjRwdXpoWmIwczhxQWptSWdMZ1NVaVZqd1pWSHREWWQtWldGMndTRy1SQkh3WmI3cHVSNjZHM19hbGxKeUVkSllpQ2ZoSWJ0a1NPcVVJWk1aUXJvTGhsY2k?oc=5",
+   "summary": "報道指 Anthropic 或於 12 月 21 日前納入納指 100；標普 500 則未有時間表，要等 2027 年後期。",
+   "level": "medium",
+   "scope": "market",
+   "affects": [
+    {
+     "sym": "QQQ",
+     "dir": "mixed",
+     "why": "指數會買入新成分股，但其他成分股比重會被攤薄。"
+    },
+    {
+     "sym": "QQQM",
+     "dir": "mixed",
+     "why": "同 QQQ 追蹤納指 100，成分比重會按指數調整而改變。"
+    },
+    {
+     "sym": "VOO",
+     "dir": "mixed",
+     "why": "標普 500 暫時未有納入時間，短期影響較少。"
+    }
+   ],
+   "takeaway": "這是指數成分調整，唔代表 ETF 本身好壞，無須因此改變長線持有。",
+   "found": "2026-11-19 04:45"
+  },
+  {
+   "time": "2026-11-19 03:30",
+   "headline": "文章：英偉達風波下，台積電、ASML 仍值得留意",
+   "source": "Zacks Investment Research",
+   "url": "https://news.google.com/rss/articles/CBMiiwFBVV95cUxPM3FvYXJ3Wm9JZFJkNVBTQ0FKZ2huLTBwTmdPYXFNMWhqWXNoLXRCbGtxS1Q5U0p5RTZmWHVSUVRoVWhtSkZVN0hxclg4N2xOc2dhcEJuWjBaeGpJSUNBbkpqTEk5OU9yY0hCQ2hzaHplWnk4WkdSTnFkN3pNZ1hRZjZ3Q1BnWkNnWkhqY0RXVnBRTWIyaGZaNnNndmdn?oc=5",
+   "summary": "Zacks 文章認為英偉達管理層問題下，台積電及 ASML 或仍值得留意，但供應鏈風險仍在。",
+   "level": "low",
+   "scope": "sector",
+   "affects": [
+    {
+     "sym": "TSM",
+     "dir": "mixed",
+     "why": "文章只係觀點，供應鏈同英偉達相關風險仍然存在。"
+    }
+   ],
+   "takeaway": "只係分析觀點，唔代表買賣建議。TSM 單日升約 0.5%，無需因此行動。",
+   "found": "2026-11-19 04:45"
+  },
+  {
+   "time": "2026-11-19 02:05",
+   "headline": "SanDisk 盈利驚喜，準備 8 拆 1 拆股",
+   "source": "GuruFocus",
+   "url": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxOQTZubS1PU05TWXhqWl8zc01ROUVnX2xsUGdiVktTbjV6OFNTSWRLbmpaQXZoSWdpcTZHaGpPM3lYOGpnYS13UVcwOWdjLUF0SXVZTXQ0OEJDeGE5NWJ0eDh3aU1jTkdBZ05kU3VReGZjSGtwRllkUHo0SWV3YWNpbWJOYkw0NWlBTFA0azNoai1tSnZyZGJlelZwNTRrTGRhazNWeW9yMGxBcEU?oc=5",
+   "summary": "標題指 SanDisk 業績勝預期，並將進行 8 拆 1 拆股。",
+   "level": "medium",
+   "scope": "stock",
+   "affects": [
+    {
+     "sym": "SNDK",
+     "dir": "mixed",
+     "why": "拆股本身不改變公司價值，但股數增加、每股價格下降。"
+    }
+   ],
+   "takeaway": "拆股後股數會變多、每股價格變低，留意券商通知，記得換算你的股數同成本。",
+   "found": "2026-11-19 04:45"
+  },
+  {
+   "time": "2026-11-19 01:17",
+   "headline": "Zacks 下調 SanDisk 評級，股價跌",
+   "source": "Pluang",
+   "url": "https://news.google.com/rss/articles/CBMirgFBVV95cUxOYTBoVWROZzJ5alJLU3BRdHgzZ2xvaFVabkdrZTFva3dZM0MwS2F6SHlnLVhrU055SGhEdTlYNHhIZmVjLW5DLWVaVHN4WHhpeXpSTXZFZEpOUzNObzNMWVo1NlRwMHpUc3ltS0ZYMTZpbnRJWVpLOTdjV3JucldielVKNUpGZ0RnNDF3cUF4anN5b3NUZGdBZld6QnNqMWpmUFJDaHpaSXNSWXcxd1E?oc=5",
+   "summary": "SanDisk 被 Zacks 下調評級，股價隨之下跌；早前數據中心規管憂慮亦令股價受壓。",
+   "level": "medium",
+   "scope": "stock",
+   "affects": [
+    {
+     "sym": "SNDK",
+     "dir": "down",
+     "why": "評級下調令市場情緒轉弱，股價短期承壓。"
+    }
+   ],
+   "takeaway": "SNDK 波動較大，留意評級與行業消息，可對照你的止蝕位檢視。",
+   "found": "2026-11-19 04:45"
+  },
   {
    "time": "2026-11-19 00:56",
    "headline": "期貨升 250 點，市場開市前有反彈跡象",
@@ -197,6 +389,29 @@
    ],
    "takeaway": "文章只係觀點，唔係買賣建議；台積電嘅出口規管問題仍然係主要風險。",
    "found": "2026-11-19 01:00"
+  },
+  {
+   "time": "2026-11-18 22:40",
+   "headline": "英偉達、Google 等涉 260 億美元 Anthropic 交易",
+   "source": "Yahoo Finance",
+   "url": "https://news.google.com/rss/articles/CBMinAFBVV95cUxNSktaU2tkVDdkTGIwODBmQVg1bUhad21qeERpQ0VnZGgxQk50R1FGTm44TzU0aVo2TWhYYzBWc3dvU0dYOXpLM04tZ1d1clZvM241RXUwOVJ5c0tKNUMtazkxWnI4MFcxaVZxU003QmN3QTJKdWQ4SV9aVTgyeV85V2V5VjYzYVFUUVRNWEZNelJRSW1OVXdWREpIR0M?oc=5",
+   "summary": "標題指英偉達、Google 等正購入約 260 億美元 Anthropic 相關股份，詳情需睇原文。",
+   "level": "medium",
+   "scope": "stock",
+   "affects": [
+    {
+     "sym": "GOOG",
+     "dir": "mixed",
+     "why": "Google 參與投資，或有相關收益，但也會受 AI 股情緒影響。"
+    },
+    {
+     "sym": "NVDA",
+     "dir": "mixed",
+     "why": "英偉達同樣參與投資，表現視乎 Anthropic 上市後估值。"
+    }
+   ],
+   "takeaway": "GOOG、NVDA 都與 Anthropic 有關聯，留意上市後的估值變化。",
+   "found": "2026-11-19 04:45"
   },
   {
    "time": "2026-11-18 22:27",
@@ -667,221 +882,6 @@
     }
    ],
    "takeaway": "呢類講話短期影響有限，留意 12 月議息焦點。",
-   "found": "2026-11-18 08:00"
-  },
-  {
-   "time": "2026-11-18 07:10",
-   "headline": "SanDisk 盤後領漲，留意 8 拆 1 拆股安排",
-   "source": "Moomoo",
-   "url": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxPeTYwYTYwQUx3aUFwdEg4OWpCcXd0MFN5a3hQbnNtLThOUXZhc2FkV1V2VUZhWWZrTFhxLWFOSHNTdWJoaEdEZEM5UGRxdXVKdzNoTFBqdGoweXFoMXFuLWtPcjhUbERKSmNvZ2gxQ1o2bkNtUXZlQ2JoRy1WYy14VTdTaUxrdWZmT05jUGRoV3dJNk9xbE9DNFJ5Qmt3eG90ODZRelYzUEQyeFE?oc=5",
-   "summary": "SanDisk 盤後股價領漲；另有報道提到公司將有 8 拆 1 拆股，而大型基金沽貨消息早前令股價下跌。",
-   "level": "medium",
-   "scope": "stock",
-   "affects": [
-    {
-     "sym": "SNDK",
-     "dir": "mixed",
-     "why": "盤後升，但大型基金沽貨同 NAND 價格下調預測構成壓力"
-    }
-   ],
-   "takeaway": "你持有 SNDK 要留意拆股安排同 NAND 價格走勢，股價波動大，唔使單靠一日消息判斷。",
-   "found": "2026-11-18 12:00"
-  },
-  {
-   "time": "2026-11-18 07:05",
-   "headline": "報道：英偉達董事會拒絕黃仁勳重返 CEO 提議",
-   "source": "Investor's Business Daily",
-   "url": "https://news.google.com/rss/articles/CBMilAFBVV95cUxOTEx5ajRyZTctMzlRWGYyelF2RHNJcEEzd3I5alJ1YktQb1NqcFgxR3NPZVpMZUFMZzdhVTlMRkxxRG5kZVBhcG1qNTMwYlEybVN5NVhUazJYX0NPUVVHc1E1Mms5SXVuWHZVakZBZ0M5ZU56U01fRzZxVjBGeEEzcU9WU0phOXc0S0I0dHNBdUNPNC16?oc=5",
-   "summary": "報道指英偉達董事會拒絕黃仁勳重返 CEO 的提議，股價隨後上升。黃仁勳早前表示若符合股東利益，願意回任。",
-   "level": "medium",
-   "scope": "stock",
-   "affects": [
-    {
-     "sym": "NVDA",
-     "dir": "mixed",
-     "why": "管理層變動仍受市場關注"
-    }
-   ],
-   "takeaway": "管理層消息影響可能持續，留意之後正式公告。",
-   "found": "2026-11-18 08:00"
-  },
-  {
-   "time": "2026-11-18 06:59",
-   "headline": "美股四連跌，科技股拖累；英偉達盤中升約 3%",
-   "source": "富途資訊",
-   "url": "https://news.google.com/rss/articles/CBMijAFBVV95cUxNUWcxWEl0YWxNWnVoVXRLcTNlUWpvVVFad0tIVnR1VkZQVURRN0NsMkFUQ3h2T0JvUlV2S2hyVFM0UXdiZWtGOXdnMk5oRHA1ek5UeVpWRHNnRWZfb0tpZTJiMXBEcERCdGJRLS1ZSUt5bHowRW9TdXBQb0l6bzFxNklDckNWcVNwTlB4Tg?oc=5",
-   "summary": "標普 500 同納指連跌四個交易日；軟件股大跌，Salesforce 跌逾 9%，美元結束五日升勢。",
-   "level": "high",
-   "scope": "market",
-   "affects": [
-    {
-     "sym": "SPY",
-     "dir": "down",
-     "why": "大市連跌四日，偏弱"
-    },
-    {
-     "sym": "QQQ",
-     "dir": "down",
-     "why": "納指同科技股大跌"
-    },
-    {
-     "sym": "QQQM",
-     "dir": "down",
-     "why": "同樣跟隨納指走弱"
-    },
-    {
-     "sym": "VOO",
-     "dir": "down",
-     "why": "標普 500 連跌，成分股普遍受壓"
-    }
-   ],
-   "takeaway": "你持有嘅 ETF 同大市同步偏弱，短線波動屬正常，留意下面嘅加息消息。",
-   "found": "2026-11-18 12:00"
-  },
-  {
-   "time": "2026-11-18 06:49",
-   "headline": "英偉達首份無黃仁勳業績勝預期、上調指引",
-   "source": "WSJ",
-   "url": "https://news.google.com/rss/articles/CBMihAFBVV95cUxQOERUMkVEZEttRVd6TG92RVVFUzc4RU10anVtbFoxeV9RN1VneDJiUkc5NXpVWWNhM09PUWhGMHNHcmJNeTU0WTltdjA1TE5BbUtvOWx1QU4ySmJJc2lPWmoydVJld09sOER4Rk4xRE9QbXpKSVMzNE9ldENzQWZWVGZGRlY?oc=5",
-   "summary": "英偉達第三季收入接近翻倍，超出市場預期，並上調指引。Barron's 報道指股價盤後上升。",
-   "level": "high",
-   "scope": "stock",
-   "affects": [
-    {
-     "sym": "NVDA",
-     "dir": "up",
-     "why": "業績勝預期、指引上調"
-    },
-    {
-     "sym": "QQQ",
-     "dir": "up",
-     "why": "英偉達係納指 100 大權重股"
-    },
-    {
-     "sym": "QQQM",
-     "dir": "up",
-     "why": "英偉達係納指 100 大權重股"
-    },
-    {
-     "sym": "TSM",
-     "dir": "up",
-     "why": "AI 晶片需求情緒改善"
-    }
-   ],
-   "takeaway": "業績好但盤後升幅未必延續，留意開市後反應。",
-   "found": "2026-11-18 08:00"
-  },
-  {
-   "time": "2026-11-18 06:27",
-   "headline": "報道：Google、亞馬遜持有 Anthropic 股份或值 4,000 億美元",
-   "source": "Barron's",
-   "url": "https://news.google.com/rss/articles/CBMigAFBVV95cUxQRUdva3ZWLW4yUFMwNnU5R0NMRV9VQm5tLXpGSUxlRWJYNG5sSVVxWWNWUTJESUtGVTNfLUNZQ2UyLTB1UjY4bmpVTjl0VW5rT0c2Z016RlhlakR6WlZPejdZQW93dUc0WFQ4Ny14WGFqdlUwakIwb21OZUR4WThfOA?oc=5",
-   "summary": "報道估計，若 Anthropic 估值達到預期，Google 同亞馬遜持有嘅股份價值或達約 4,000 億美元。",
-   "level": "medium",
-   "scope": "stock",
-   "affects": [
-    {
-     "sym": "GOOG",
-     "dir": "mixed",
-     "why": "Anthropic 持股價值受關注，但大型基金近期沽出 Alphabet 股份"
-    }
-   ],
-   "takeaway": "你持有 GOOG 可留意 Anthropic 上市進度；呢類估算數字唔需即時改變你嘅決定。",
-   "found": "2026-11-18 12:00"
-  },
-  {
-   "time": "2026-11-18 06:05",
-   "headline": "華爾街 2027 年標普 500 目標分歧：8,200 對 8,700",
-   "source": "BigGo Finance",
-   "url": "https://news.google.com/rss/articles/CBMidkFVX3lxTFBiYTltNjFfT0ZoNFBGa01TTy1uTEdCcExLZk5KNzdKMW9sV05uT3IzdnpBa3VwT1IzcHM4SUVyN1I0amcxeldaVlJFNmJMZ3VNTEZjQldWaXdMUXRENE1adjI0NURTZ0pFYmRzNjVHQVRCbE9mNlE?oc=5",
-   "summary": "Wells Fargo 預測標普 500 指數 8,200 點，Morgan Stanley 預測 8,700 點，反映券商對 2027 年睇法唔一。",
-   "level": "low",
-   "scope": "market",
-   "affects": [
-    {
-     "sym": "VOO",
-     "dir": "mixed",
-     "why": "大市指數目標意見分歧"
-    }
-   ],
-   "takeaway": "券商目標只供參考，長線持有唔使跟住買賣。",
-   "found": "2026-11-18 08:00"
-  },
-  {
-   "time": "2026-11-18 05:52",
-   "headline": "華爾街收低，市場聚焦 Anthropic 上市",
-   "source": "Reuters",
-   "url": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxOemNySVhGbms1VkxVYXFsTFdtdVh1MjNQQk16Y1ZfNGFHMFhDRWUtZldZRzJzSWxpNlBLWVpTenJnU2FHZndaVUlEclFtQVNvTzJBWTNpM1p0N3dmWjlyMEFKbkowZkpSanhVcEVLUjZfOWxNcW5OZVFuLTNFNF93ZDd4b0wxX1VzNlJPODdqc0xob1ZrR0xuQkJ6bExvNDdQMk5saFVSdkVBZw?oc=5",
-   "summary": "華爾街收市偏軟，投資者等待英偉達業績，焦點轉向 Anthropic 上市。",
-   "level": "medium",
-   "scope": "market",
-   "affects": [
-    {
-     "sym": "GOOG",
-     "dir": "mixed",
-     "why": "Anthropic 上市帶動估值討論"
-    },
-    {
-     "sym": "NVDA",
-     "dir": "mixed",
-     "why": "業績前投資者觀望"
-    }
-   ],
-   "takeaway": "大市暫時觀望，唔使因一日波動即時反應。",
-   "found": "2026-11-18 08:00"
-  },
-  {
-   "time": "2026-11-18 03:29",
-   "headline": "美國新晶片規則收緊審查，台積電跌約 4%",
-   "source": "GuruFocus",
-   "url": "https://news.google.com/rss/articles/CBMirAFBVV95cUxQNW1zSk1JNlVaSGgzdXNUZnloaC1mNXgxanZyT1NlZkotT0ozVTJWbnkyZjlsZEFQZ25xc1RyWUlYNjkwcmVHbURnNG9RZlM4ZURmNVpVcnNhUlZDc0NCTFlPbjUzR3JhTmx1U21HYnNScUlWVmFXUkxpckx1ci1MY2d5YklQckJTR1M5ZlVsZWRJNTlyMmxLM0tvNUMtY3JMYkhrQ1pjTjZfNWMw?oc=5",
-   "summary": "報道指美國新規收緊晶片相關審查，台積電股價跌 4.26%。另有報道稱賣壓增加。",
-   "level": "high",
-   "scope": "stock",
-   "affects": [
-    {
-     "sym": "TSM",
-     "dir": "down",
-     "why": "政策消息令賣壓增加"
-    }
-   ],
-   "takeaway": "跌幅大，屬政策消息，留意會否有進一步細節。",
-   "found": "2026-11-18 08:00"
-  },
-  {
-   "time": "2026-11-18 03:02",
-   "headline": "SanDisk 跌約 5%，Druckenmiller 沽貨曝光",
-   "source": "GuruFocus",
-   "url": "https://news.google.com/rss/articles/CBMisgFBVV95cUxPLTFpU0E1THpYQ0lxM05ReU8zM3lLSE5BY0hBSk9YUEE4X0NXVGpDN0tNMHhVdm02X2dHVHlzQVNFNGI3Zmp5dFVBazlZekN0aTdkYnhmV01ybkI2WUV4cDJUSHRKUnFIWkV6TFUyR0d5UWM4ZURGU2Q5elgyb1FTcmZsWTRlQ1NwdHlNSWtWRllRV0dJNTFkTHYxWDlBUHc5ZUV2S0tidzFHUXBSNmF6YXFB?oc=5",
-   "summary": "報道指 Druckenmiller 已全數沽出，股價一度跌 5.43%。公司即將進行 1 拆 8（一股變八股）拆股。",
-   "level": "high",
-   "scope": "stock",
-   "affects": [
-    {
-     "sym": "SNDK",
-     "dir": "down",
-     "why": "大股東沽貨，NAND 價格預測亦被下調"
-    }
-   ],
-   "takeaway": "拆股後股數會變、每股價會細，以經紀戶口為準。",
-   "found": "2026-11-18 08:00"
-  },
-  {
-   "time": "2026-11-18 03:01",
-   "headline": "Anthropic 上市文件顯示 Google 承諾約 1,213 億美元",
-   "source": "TradingView",
-   "url": "https://news.google.com/rss/articles/CBMi4gFBVV95cUxQLTFSQjNmU25zY1RkVmhnS2R0WW5MYkNtMGlfSDU2bklyQkVVd2pyamd0c1p6YkYxOHZsd1dsZ2J4eXM1WWxNb2M5OFktMDROUnZYc3otaXBkRGYwVk4zMDdJRUdjSzBDSVRYdms4MF9pLW1XZW1fZmVSS3lVZmRRS0oyam1YSVp2VlN1Z3prM2tYb3dJdTY0SUJqUjVpS05MYmlxS0tvOG52YmluckxHdVlseVZzVFBudGZMZnVYQ1Jmc3pPMjVyYW1UUFQ2d3g4NUxWSzVJUmswbFZ5TW1zbWVB?oc=5",
-   "summary": "Anthropic 上市申請顯示 Google 承諾金額約 1,213 億美元，Alphabet 股價因此下跌。",
-   "level": "high",
-   "scope": "stock",
-   "affects": [
-    {
-     "sym": "GOOG",
-     "dir": "down",
-     "why": "投資承諾金額受市場關注"
-    }
-   ],
-   "takeaway": "Anthropic 上市後估值會影響 GOOG，留意之後定價。",
    "found": "2026-11-18 08:00"
   }
  ]

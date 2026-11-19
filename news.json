@@ -1,5 +1,5 @@
 {
- "generated": "2026-11-19T22:30+08:00",
+ "generated": "2026-11-20T01:00+08:00",
  "holdings": [
   "TSM",
   "GOOG",
@@ -11,9 +11,127 @@
  ],
  "claude_ok": true,
  "model": "haiku",
- "claude_at": "2026-11-19T22:30+08:00",
- "summary": "Anthropic 上市帶動 AI 股反彈，但聯儲局偏鷹言論同加息預期令大市承壓。TSM、NVDA 受中國出口規則同管理層變動影響較大；SNDK 今日收市後完成拆股，股數變多但總值不變；GOOG 有 Anthropic 持股支持。VOO、QQQ、QQQM 主要受利率預期影響。",
+ "claude_at": "2026-11-20T01:00+08:00",
+ "summary": "今晚最大新聞係 Anthropic 喺納斯達克開市，市值一度逾 2 萬億美元，GOOG 因持有股份直接受惠。大市受加息預期壓制，SPY 昨日跌 0.9%。台積電跌 1.57%，可能與已報道嘅中國付運受限有關，名單內冇新嘅台積電消息；英偉達暫時冇新嘅個股消息。",
  "items": [
+  {
+   "time": "2026-11-20 00:52",
+   "headline": "Anthropic 納斯達克開市，市值逾 2 萬億美元",
+   "source": "Reuters",
+   "url": "https://news.google.com/rss/articles/CBMiswFBVV95cUxPVmU0cXVPRUhwcDZpRkRudEI3bjNfMllQVEN3M09VWFNmQUJTck1UUE9mVERRbmFicElZMWxKVnd3UWpTNGY3R1JiZ0NnRnNBRHhLMkxkVC1vUWVOVzQ3NzcwMkoycTR0MC1LUnBfdUIyWl9OZE5xYnlVVmQ5bzdVZmdnVHFjUjh6dHZrbVVQdEFPaDNCUC1KSkZEMUlhcU9OeWFiWi10SGwxNTBpNE16aTd1MA?oc=5",
+   "summary": "Anthropic 今日喺納斯達克正式上市，開市後市值一度超過 2 萬億美元，市場焦點轉向 AI 股會否跟隨。",
+   "level": "high",
+   "scope": "market",
+   "affects": [
+    {
+     "sym": "GOOG",
+     "dir": "up",
+     "why": "持有 Anthropic 股份，賬面價值隨其市值上升"
+    },
+    {
+     "sym": "QQQ",
+     "dir": "mixed",
+     "why": "AI 情緒會影響大型科技股，方向未定"
+    }
+   ],
+   "takeaway": "AI 股波動屬正常，唔好因為單一消息就改變長線計劃。",
+   "found": "2026-11-20 01:00"
+  },
+  {
+   "time": "2026-11-20 00:44",
+   "headline": "亞馬遜、Google 合共持有 Anthropic 近三成股權",
+   "source": "Fortune",
+   "url": "https://news.google.com/rss/articles/CBMijAFBVV95cUxPZllIdVJYdEMxSlFtaUpJYXV5ZDRXeGRkUWhaQ3VlZGp4aTB0YVRIRm5UdGQ2NkFxbS1DY0lHYWdtZm42eW5SVFZFZFhmVm9XWUVIM0pJR1MyUmFRcWgxa2NVOU5MRmRZQlhMVVpWVHlkaGRBcWpPbkF3RDR5eGZvWGNUclJtSlM1ckdVZg?oc=5",
+   "summary": "上市後亞馬遜同 Google 合共持有約三成 Anthropic 股份，賬面價值約 2,600 億美元。",
+   "level": "high",
+   "scope": "stock",
+   "affects": [
+    {
+     "sym": "GOOG",
+     "dir": "up",
+     "why": "持有大量 Anthropic 股份，賬面收益增加"
+    }
+   ],
+   "takeaway": "呢個係賬面收益，未必即時變成現金，留意之後股價嘅真實反應。",
+   "found": "2026-11-20 01:00"
+  },
+  {
+   "time": "2026-11-20 00:36",
+   "headline": "墨西哥披索跌至 17 個月低，聯儲局前景令市場不安",
+   "source": "Bloomberg",
+   "url": "https://news.google.com/rss/articles/CBMisgFBVV95cUxOUlpnbkxHVEExS0lGS1ZYWmdlLU5HT1gzdTZYR0RUbW1VeDlaQ0lXdWFXQzdjR3U1YUVQOHl1cHIwVHdLZV8taUVmb0NhejNvTmtlcGRaS19lSmlzbEpma3lVN1BSc2JmMEJzVFpFaU1ucFFhZGRIYVdMekpKUlR5azFoOGdJaUtlZkJaZXJBNFgyNFQ0YXU4WVBXQkoxc2xEQUFoeFNITy1XeS1iRFdqeS1n?oc=5",
+   "summary": "聯儲局可能加息嘅預期令新興市場貨幣承壓，反映市場對利率仍然擔心。",
+   "level": "medium",
+   "scope": "market",
+   "affects": [
+    {
+     "sym": "QQQ",
+     "dir": "down",
+     "why": "高息預期令高估值科技股承壓"
+    },
+    {
+     "sym": "VOO",
+     "dir": "down",
+     "why": "大市受利率預期影響，指數成份股一齊受壓"
+    }
+   ],
+   "takeaway": "加息預期係大市主要風險，留意之後通脹數據同聯儲局言論。",
+   "found": "2026-11-20 01:00"
+  },
+  {
+   "time": "2026-11-20 00:07",
+   "headline": "Alphabet 因資本開支預期上升而回落",
+   "source": "Yahoo Finance",
+   "url": "https://news.google.com/rss/articles/CBMimwFBVV95cUxNcHlQUHNhX0pyNGVqNUdLYXdETWRZai1UMzZPODJVWllENWFiNHE0MWYtcVlnTEZLZHJmZG9VVUZpYk9yOFNYV0RfX3pqTUlPVzBBRlZCZ0lVeGxXMXVFbzQtQWtCSmcyaUZQV0E4VC1DV2gzclNLQVdPRU1EdW9zNWhBdmNLSkVGRmdkdmwxZHdXR3NhbUhmOVVKRQ?oc=5",
+   "summary": "市場留意到 Alphabet 上調 2026 年資本開支預測，即係會喺 AI 基建花更多錢，股價因而回落。",
+   "level": "medium",
+   "scope": "stock",
+   "affects": [
+    {
+     "sym": "GOOG",
+     "dir": "down",
+     "why": "開支增加可能壓低短期利潤預期"
+    }
+   ],
+   "takeaway": "留意公司之後嘅業績指引同開支數字，睇清楚係咪持續嘅趨勢。",
+   "found": "2026-11-20 01:00"
+  },
+  {
+   "time": "2026-11-20 00:06",
+   "headline": "AMD 遭沽空報告拖累急跌 8%，英特爾逆市升",
+   "source": "24/7 Wall St.",
+   "url": "https://news.google.com/rss/articles/CBMigAJBVV95cUxNdzd0czNoRHhWV3NBazdxMDZFQ0tLcWtObmF2UXRSLTBReGpORWJ4UkxpWDBZSUxqQ2YwNEFaNEEzSF9VRVZjQjU2UUE3dTlPUWhCRnBObm9IOXJrYjNhOHhXUnJSNTJzOE9ZZTNsNDBsdXc2ZkpmZ0J1NHF2MmdGaWlDdjBIZkMtRTRNQzZuWnY5YXNQZlI2MGJWOWNSemRHdzJEYXZyYkhaNWhBWEh5cHJTRkJCRzBXY191NVRFRGhlbTJaWS0yVldjaEd0LXNudnhPa2FGaExCdU5LUEl3ek5WdTBsMXRtMXluV1pYLUpIWmpuWHNOTGx2ZG81T3hT?oc=5",
+   "summary": "沽空機構 Hunterbrook 指 AMD 韌體同一間被列入黑名單嘅中國伺服器商有關，AMD 股價大跌。",
+   "level": "medium",
+   "scope": "sector",
+   "affects": [
+    {
+     "sym": "NVDA",
+     "dir": "mixed",
+     "why": "同屬晶片股，中國相關審查可能影響板塊情緒"
+    }
+   ],
+   "takeaway": "今次主要係 AMD 嘅個別問題，但提醒你晶片股同中國有關嘅消息容易引起連鎖波動。",
+   "found": "2026-11-20 01:00"
+  },
+  {
+   "time": "2026-11-19 22:52",
+   "headline": "美光 CEO：2027、2028 年供求會比今年更緊",
+   "source": "24/7 Wall St.",
+   "url": "https://news.google.com/rss/articles/CBMi3gFBVV95cUxOX2NVX2JuMWR2VXRWXy05ZzBINFlBejd3c0hPWGxHeHJQam84dWhXbC1RaGxIejJiX3d1RWRNakNIdlM4dEtVazFUQzIwTUtUVW82UWxTc3hsWW02cUJQbnN0RFFEMFZMQnJWVUoxSVVVbFNiczd0MkFCMHpmaW1kS1dIUDdPcUVBZjV3QkVVdlN1ZHVDZXhwRVRHT3B0RW9xaHF1UndjX3h5UVp0Z21aRFF5SmR1R0IyY3NTbEIwV2FFZ0x1WG9PSDhScVYwaWs0TlFFQWlJVDVBREhsd1E?oc=5",
+   "summary": "美光 CEO 話 2027 同 2028 年記憶體供求會比今年更緊絀，對存儲股前景有利。",
+   "level": "medium",
+   "scope": "sector",
+   "affects": [
+    {
+     "sym": "SNDK",
+     "dir": "up",
+     "why": "同屬存儲股，供求偏緊有利產品價格"
+    }
+   ],
+   "takeaway": "行業利好，但存儲股股價波幅大，留意波動就好。",
+   "found": "2026-11-20 01:00"
+  },
   {
    "time": "2026-11-19 22:24",
    "headline": "領導層變動拖累英偉達股價",
@@ -66,34 +184,6 @@
     }
    ],
    "takeaway": "今日係盤中升幅，要睇收市同之後幾日走勢；唔好因一日反彈就改變持倉計劃。",
-   "found": "2026-11-19 22:30"
-  },
-  {
-   "time": "2026-11-19 22:09",
-   "headline": "Anthropic 創紀錄上市，AI 股受關注",
-   "source": "Reuters",
-   "url": "https://news.google.com/rss/articles/CBMiswFBVV95cUxPVmU0cXVPRUhwcDZpRkRudEI3bjNfMllQVEN3M09VWFNmQUJTck1UUE9mVERRbmFicElZMWxKVnd3UWpTNGY3R1JiZ0NnRnNBRHhLMkxkVC1vUWVOVzQ3NzcwMkoycTR0MC1LUnBfdUIyWl9OZE5xYnlVVmQ5bzdVZmdnVHFjUjh6dHZrbVVQdEFPaDNCUC1KSkZEMUlhcU9OeWFiWi10SGwxNTBpNE16aTd1MA?oc=5",
-   "summary": "Anthropic 今日掛牌，Reuters 報道市場會以呢次上市檢驗 AI 嘅機遇同風險。",
-   "level": "high",
-   "scope": "market",
-   "affects": [
-    {
-     "sym": "NVDA",
-     "dir": "mixed",
-     "why": "AI 概念股情緒受帶動，但估值同資金分流都可能影響表現"
-    },
-    {
-     "sym": "GOOG",
-     "dir": "up",
-     "why": "Google 持有 Anthropic 股份，上市估值對佢有正面影響"
-    },
-    {
-     "sym": "TSM",
-     "dir": "mixed",
-     "why": "AI 需求預期同大市風險偏好都會影響半導體股"
-    }
-   ],
-   "takeaway": "新股估值同資金流向會影響 AI 股短期情緒，唔使因為一日新聞就急住郁倉。",
    "found": "2026-11-19 22:30"
   },
   {
@@ -783,111 +873,6 @@
    ],
    "takeaway": "有標題稱黃仁勳辭任，但與另一則消息矛盾，未核實前唔好當真。",
    "found": "2026-11-19 08:00"
-  },
-  {
-   "time": "2026-11-19 05:08",
-   "headline": "分析：台積電按成長前景計，估值似乎偏平",
-   "source": "Yahoo Finance",
-   "url": "https://news.google.com/rss/articles/CBMiowFBVV95cUxPSHZ4N0lvQl9kcTU2ZlRNbUdrQkl5bUR6Y3Q2YkxMZXFDWWUyeE9rMWhkWEdRUkd3clA5MjE0aGFkZFAzRnNLVFE5SThEeWJYUWZudEd3SGh5SFFwdDF4Qk9HZWw0dTRzYWoyQmxvc3psN3dWRW4wQ2c2Ml9kbkQ1cEhJaDBidUh1VDN5T3hIRXIyTmZ6TThDVW1LR0pEZ1FoTEVZ?oc=5",
-   "summary": "一篇分析文章認為台積電按其成長前景計，估值似乎偏平；同日另有文章指英偉達風波下台積電仍值得留意。",
-   "level": "medium",
-   "scope": "stock",
-   "affects": [
-    {
-     "sym": "TSM",
-     "dir": "up",
-     "why": "分析員認為估值相對成長前景仍合理"
-    }
-   ],
-   "takeaway": "屬個別分析觀點，唔係指令；TSM 受 AI 需求同大市利率影響，留意加息消息。",
-   "found": "2026-11-19 18:00"
-  },
-  {
-   "time": "2026-11-19 04:32",
-   "headline": "Alphabet 首日再買約 100 億美元 Anthropic 股份",
-   "source": "The Globe and Mail",
-   "url": "https://news.google.com/rss/articles/CBMiggJBVV95cUxOeXJJV1ZVUThaNnJCSTJSRy03c2hwWG16cm53SW9Iakc3S2d4aVU2YXlhNGU3VlRGcmtWcEZQS2RqdUdrbG0zdF9POEotcjVhWWlQSG9YZTJZWURHVXk0NVRjaElHYXJKR0dQSzBQSUF1Sk11QXpqcHFnVUcxcm9LU3ZMLXBiT0NiQ3d0eGdMbC10OWhzUnVHTkQ5a01pU0J6eWJTbWxQa0pxZFpaQTl0d0RRZzNpQl9sRi1Iek13QmdiWXdFUFd6WHlTLVhMTzh3dUl2TEpYdmZDTHdYcUJLSk56X1ducGpjZ1pPQXF1Yy00TnlVQjNTbV9vSHB6dWRlY0E?oc=5",
-   "summary": "Alphabet 在 Anthropic 上市首日再買約 100 億美元股份，成為 Anthropic 重要股東。",
-   "level": "medium",
-   "scope": "stock",
-   "affects": [
-    {
-     "sym": "GOOG",
-     "dir": "mixed",
-     "why": "持有 Anthropic 股份會帶嚟收益波動，同時增加 AI 投資風險"
-    },
-    {
-     "sym": "QQQ",
-     "dir": "mixed",
-     "why": "Alphabet 係納指成份股，影響幅度有限"
-    }
-   ],
-   "takeaway": "GOOG 股價受 AI 新股影響；唔使因一則新聞即時改動持倉。",
-   "found": "2026-11-19 08:00"
-  },
-  {
-   "time": "2026-11-19 04:25",
-   "headline": "聯儲局會議紀錄：多數官員傾向再加息",
-   "source": "BigGo Finance",
-   "url": "https://news.google.com/rss/articles/CBMidkFVX3lxTE9ldGUwNHN0WkRUQXBBaHpYM2FrUElEZ2dmT1lrbzZ2MDhleHczUlExNmw0NEdNVlBHN09MdmdsX2g1cWlyOC1nMHVfb29aNGxHU0NFOFhRb3BpWk5lREg5bjU4ZENaY1NPbFVYdS1JMEJmUkhJY3c?oc=5",
-   "summary": "紀錄顯示多數官員認為仍需加息，標題指 12 月可能加半厘。",
-   "level": "high",
-   "scope": "market",
-   "affects": [
-    {
-     "sym": "VOO",
-     "dir": "down",
-     "why": "加息預期令大型股估值承壓，VOO 追蹤大市，受影響較直接。"
-    },
-    {
-     "sym": "QQQ",
-     "dir": "down",
-     "why": "科技股對利率較敏感，QQQ 可能比大市受壓更多。"
-    }
-   ],
-   "takeaway": "留意利率同債息走勢。這是大市風險，不是單一股票問題。",
-   "found": "2026-11-19 04:45"
-  },
-  {
-   "time": "2026-11-19 04:20",
-   "headline": "Ackman 批英偉達董事會未有召回黃仁勳",
-   "source": "Business Insider",
-   "url": "https://news.google.com/rss/articles/CBMiowFBVV95cUxPQVRCUEhOVUstSlFsb0loaFJOdzFCXzI3dDdxSXpDWkNFWXlONzRZR3lSLVl3MlA5aWRnNXczUFdlV28zWUlEdWRaRkhvTk5pUkE2ZWpuSnFQRnNOMHpoX1AwQ1h1R3kyVk9WZ1pKUUR5bEQxa2JwMGZoTUpxamtHVEVycDlvSlVMNVRDZGY4SXUtUmZvQnNyNm9wc1VYbTFTNmJj?oc=5",
-   "summary": "Ackman 批評英偉達董事會未有考慮黃仁勳重返；另有報道指 Bessent 想外聘 CEO。",
-   "level": "medium",
-   "scope": "stock",
-   "affects": [
-    {
-     "sym": "NVDA",
-     "dir": "mixed",
-     "why": "管理層變動仍未明朗，短期或增加股價波動。"
-    }
-   ],
-   "takeaway": "這是個股管理層風險，留意後續消息，唔使每日追看股價。",
-   "found": "2026-11-19 04:45"
-  },
-  {
-   "time": "2026-11-19 04:16",
-   "headline": "華爾街為 Anthropic 上市準備，AI 股整體疲弱",
-   "source": "Reuters",
-   "url": "https://news.google.com/rss/articles/CBMixwFBVV95cUxONkZkRVdESVU1UERiQmhZWmp5cl9Vel9VQlJOOWtLM3ZfVjFVVU5rYUZVWk5UVF8xU0t3SU0ybEF4UDNBOWFNeVI3RjlGMzZVdUhMbnV4UU9JQXpqM1FxZk1reHJGbFM5Qm1VcTMwTl81SEtvWVRYNjJRa0JPZ2xkamZfR3I2elFGWnhlNUFsMWNYMW5MeWJYR3o4SFg5NWhxa0tjYzJtMVpaelVhMUREQnZJa0huN1pzSlUzdTBHWm9ackd6Q0w4?oc=5",
-   "summary": "Anthropic 上市定價在即，華爾街積極準備，但 AI 股整體表現仍然疲弱。",
-   "level": "medium",
-   "scope": "market",
-   "affects": [
-    {
-     "sym": "GOOG",
-     "dir": "mixed",
-     "why": "Google 有份參與 Anthropic 相關投資，走勢或受上市影響。"
-    },
-    {
-     "sym": "NVDA",
-     "dir": "mixed",
-     "why": "AI 焦點轉向新上市股，可能分散對現有 AI 股的資金。"
-    }
-   ],
-   "takeaway": "Anthropic 上市可能吸引資金，亦可能分薄其他 AI 股焦點，留意相關報道。",
-   "found": "2026-11-19 04:45"
   }
  ]
 }

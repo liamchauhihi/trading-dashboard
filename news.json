@@ -1,5 +1,5 @@
 {
- "generated": "2026-11-19T04:45+08:00",
+ "generated": "2026-11-19T08:00+08:00",
  "holdings": [
   "TSM",
   "GOOG",
@@ -11,9 +11,170 @@
  ],
  "claude_ok": true,
  "model": "haiku",
- "claude_at": "2026-11-19T04:45+08:00",
- "summary": "聯儲局會議紀錄顯示多數官員傾向再加息，12 月或加半厘，大市承壓。英偉達業績後升勢消退，加上管理層爭議拖累 NVDA；SNDK 受評級下調影響。QQQ 同 QQQM 留意 Anthropic 或納入納指 100。",
+ "claude_at": "2026-11-19T08:00+08:00",
+ "summary": "聯儲局傾向再加息，市場估 12 月加息機會好高。道指兩日跌逾 1,400 點，AI 股承壓。英偉達業績後股價跌，展望未能消除憂慮。對你持倉：VOO、QQQ、QQQM 會跟大市走；NVDA、SNDK 受壓較明顯；GOOG 受 Anthropic 上市影響。",
  "items": [
+  {
+   "time": "2026-11-19 07:13",
+   "headline": "美國零售銷售僅升 0.2%，增長放緩",
+   "source": "Cryptonews.net",
+   "url": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE9jMTVHOXlXLU9zUVJBSnFnT05hQU5uZkUtUGZwcS1OandvNVl2OGNaaEc1S0FDTkxrUGk5Sm9Ga2hVNEQ5RlFYX0M3eTJpblU4R3EyWllzblYtdEU?oc=5",
+   "summary": "美國零售銷售數字只升 0.2%，消費增長放緩；文章指加息壓力或令比特幣同黃金承壓。",
+   "level": "medium",
+   "scope": "market",
+   "affects": [
+    {
+     "sym": "VOO",
+     "dir": "mixed",
+     "why": "消費放緩同加息前景並存，方向未明"
+    }
+   ],
+   "takeaway": "屬宏觀數據，暫時唔需要因此改動持倉，留意之後大市反應。",
+   "found": "2026-11-19 08:00"
+  },
+  {
+   "time": "2026-11-19 07:04",
+   "headline": "道指兩日跌逾 1,400 點，AI 憂慮加劇",
+   "source": "Rolling Out",
+   "url": "https://news.google.com/rss/articles/CBMie0FVX3lxTE1ocmRVYndFbGk2RWFEZzE3QzhIb19JYjkzOWFuVzlUQjYzZ0JISDVNZGEwcnEtRXN5Ujl4QzR1N2RfLXdfODhpYXNfVHAwUTFoWTc1YjhqdkNOemxQUFgtZXEtanRiTGZIbEV6MEItM1Y3QTJQN0lvLXFPWQ?oc=5",
+   "summary": "道指過去兩個交易日合共跌超過 1,400 點，市場擔心 AI 股估值，同時憂慮聯儲局再加息。",
+   "level": "high",
+   "scope": "market",
+   "affects": [
+    {
+     "sym": "VOO",
+     "dir": "down",
+     "why": "大市下跌，大市指數基金會跟住跌"
+    },
+    {
+     "sym": "QQQ",
+     "dir": "down",
+     "why": "科技股比重高，跌勢較易影響納指基金"
+    },
+    {
+     "sym": "QQQM",
+     "dir": "down",
+     "why": "同 QQQ 追蹤納指，跟隨科技股走勢"
+    }
+   ],
+   "takeaway": "ETF 會跟大市波動；短期跌唔代表結構有問題，留意自己承受得住幾多跌幅。",
+   "found": "2026-11-19 08:00"
+  },
+  {
+   "time": "2026-11-19 07:04",
+   "headline": "聯儲局 Kashkari：市場預期加息比官員多",
+   "source": "MLQ.ai",
+   "url": "https://news.google.com/rss/articles/CBMikAFBVV95cUxOaDg4SkRTTmgyVGpYR2NvTnRZT3JDeHcwUDFnaEVlRXo2WDBmeElsaERJRmZZSklaSHg1ampac0dYVmphRXctSlNyZXJOM3l6U1lXUjkwdmpzMGNtYi1YOTdHeFhxdHJzRlk5aVVaWWhaeWhNaGR0SlhwR192SmpsTHh6U3NjRmVnQlJxTXpHNzU?oc=5",
+   "summary": "聯儲局官員 Kashkari 指，市場對加息次數嘅預期比官員自己嘅看法更進取。",
+   "level": "high",
+   "scope": "market",
+   "affects": [
+    {
+     "sym": "QQQ",
+     "dir": "down",
+     "why": "利率升會令高估值科技股承壓"
+    },
+    {
+     "sym": "VOO",
+     "dir": "down",
+     "why": "加息預期升，大市估值可能受壓"
+    }
+   ],
+   "takeaway": "加息預期升，科技股較易受壓；重點留意 12 月會議嘅結果。",
+   "found": "2026-11-19 08:00"
+  },
+  {
+   "time": "2026-11-19 07:02",
+   "headline": "SanDisk 投資者記住 11 月 20 日",
+   "source": "Barchart",
+   "url": "https://news.google.com/rss/articles/CBMipgFBVV95cUxPZ0lsR0hwZGw0N3dzTXJwRWdUcTg5aE1tbXBfazRITXFlYzVpRHdkYTN5cl9tX25kRFpYWUtnTGZWcmJYZjA5anNJd0lQQi1KeVpvZjZpY0RPc1h5NzdWOUtFVUgtaC1OdHNMeW94MTBFRUk2aWpNMG5mRGE4T2ZIY2hHd3BaaFd2NzR0ZE1ZRENCM3kwWVdaRWZBSjZSSmhOd2wteUpn?oc=5",
+   "summary": "Barchart 提醒投資者留意 11 月 20 日，標題未寫明具體事件；SanDisk 早前盈利超預期，並準備 8 拆 1。",
+   "level": "medium",
+   "scope": "stock",
+   "affects": [
+    {
+     "sym": "SNDK",
+     "dir": "mixed",
+     "why": "日期可能有事件，但標題未講清楚，方向未明"
+    }
+   ],
+   "takeaway": "11 月 20 日可能有事，但具體內容未核實，請打開原文睇清楚。",
+   "found": "2026-11-19 08:00"
+  },
+  {
+   "time": "2026-11-19 06:17",
+   "headline": "英偉達股價回落，前景仍未消除憂慮",
+   "source": "Reuters",
+   "url": "https://news.google.com/rss/articles/CBMimgFBVV95cUxNNlVnb2FaQlk2WUUtQ3dtaUlBRF9oSnFadkhYVUNwSzRKdnFQNENDUmgyMXBFV1NKaDhUcXJYTGF3Z21LM1F0OEZMVTJZU0lhWHlhOHBCb0t5WVRmMVRMU1ZCRTlJRUpYRlFCZ3RBYVV4WlF0Nms2Q1NvbkVjU0p5NVVQbmFrdzdfZmdLdVgxZnZBUkRGbkpZMTNR?oc=5",
+   "summary": "路透社指，英偉達業績同展望雖然好，但未能消除投資者憂慮，股價回落。",
+   "level": "high",
+   "scope": "stock",
+   "affects": [
+    {
+     "sym": "NVDA",
+     "dir": "down",
+     "why": "股價直接受壓，昨日跌 2.89%"
+    },
+    {
+     "sym": "QQQ",
+     "dir": "down",
+     "why": "英偉達係納指重磅成份股"
+    },
+    {
+     "sym": "QQQM",
+     "dir": "down",
+     "why": "英偉達係納指重磅成份股"
+    },
+    {
+     "sym": "VOO",
+     "dir": "down",
+     "why": "英偉達係 S&P 500 大成份股"
+    }
+   ],
+   "takeaway": "有標題稱黃仁勳辭任，但與另一則消息矛盾，未核實前唔好當真。",
+   "found": "2026-11-19 08:00"
+  },
+  {
+   "time": "2026-11-19 05:08",
+   "headline": "分析：台積電按成長前景計，股價似乎偏平",
+   "source": "Yahoo Finance",
+   "url": "https://news.google.com/rss/articles/CBMiowFBVV95cUxPSHZ4N0lvQl9kcTU2ZlRNbUdrQkl5bUR6Y3Q2YkxMZXFDWWUyeE9rMWhkWEdRUkd3clA5MjE0aGFkZFAzRnNLVFE5SThEeWJYUWZudEd3SGh5SFFwdDF4Qk9HZWw0dTRzYWoyQmxvc3psN3dWRW4wQ2c2Ml9kbkQ1cEhJaDBidUh1VDN5T3hIRXIyTmZ6TThDVW1LR0pEZ1FoTEVZ?oc=5",
+   "summary": "一篇分析文章認為，以台積電嘅成長前景計，股價估值似乎偏低。",
+   "level": "low",
+   "scope": "stock",
+   "affects": [
+    {
+     "sym": "TSM",
+     "dir": "mixed",
+     "why": "只係一篇分析觀點，唔代表市場方向"
+    }
+   ],
+   "takeaway": "只係個別分析意見，留意即可，唔需要即時行動。",
+   "found": "2026-11-19 08:00"
+  },
+  {
+   "time": "2026-11-19 04:32",
+   "headline": "Alphabet 首日再買約 100 億美元 Anthropic 股份",
+   "source": "The Globe and Mail",
+   "url": "https://news.google.com/rss/articles/CBMiggJBVV95cUxOeXJJV1ZVUThaNnJCSTJSRy03c2hwWG16cm53SW9Iakc3S2d4aVU2YXlhNGU3VlRGcmtWcEZQS2RqdUdrbG0zdF9POEotcjVhWWlQSG9YZTJZWURHVXk0NVRjaElHYXJKR0dQSzBQSUF1Sk11QXpqcHFnVUcxcm9LU3ZMLXBiT0NiQ3d0eGdMbC10OWhzUnVHTkQ5a01pU0J6eWJTbWxQa0pxZFpaQTl0d0RRZzNpQl9sRi1Iek13QmdiWXdFUFd6WHlTLVhMTzh3dUl2TEpYdmZDTHdYcUJLSk56X1ducGpjZ1pPQXF1Yy00TnlVQjNTbV9vSHB6dWRlY0E?oc=5",
+   "summary": "Alphabet 在 Anthropic 上市首日再買約 100 億美元股份，成為 Anthropic 重要股東。",
+   "level": "medium",
+   "scope": "stock",
+   "affects": [
+    {
+     "sym": "GOOG",
+     "dir": "mixed",
+     "why": "持有 Anthropic 股份會帶嚟收益波動，同時增加 AI 投資風險"
+    },
+    {
+     "sym": "QQQ",
+     "dir": "mixed",
+     "why": "Alphabet 係納指成份股，影響幅度有限"
+    }
+   ],
+   "takeaway": "GOOG 股價受 AI 新股影響；唔使因一則新聞即時改動持倉。",
+   "found": "2026-11-19 08:00"
+  },
   {
    "time": "2026-11-19 04:25",
    "headline": "聯儲局會議紀錄：多數官員傾向再加息",
@@ -100,6 +261,24 @@
    ],
    "takeaway": "加息預期仍然主導市場情緒，留意 12 月議息結果。",
    "found": "2026-11-19 04:45"
+  },
+  {
+   "time": "2026-11-19 04:07",
+   "headline": "Alphabet 雲端增長創紀錄，股價卻未見大升",
+   "source": "Yahoo Finance",
+   "url": "https://news.google.com/rss/articles/CBMikwFBVV95cUxNczRFYUN1ZC01a2hTT29CdmNSSFZFeVBKdW11Sm9FTEZWa0l5UC11emJGcWZSNExwSlBZcFc1ZmU4V0JUVHRJZmhsSXB2cDhncV9QckVuMF94T0F4a2UxeDBXMW9qSXkzU2QwdUhJNnBvWEtzUjFlUmlzWjUzeFBMUW1rRXdDN2lSR3N6RnA0MGtGSG8?oc=5",
+   "summary": "文章指 Alphabet 雲端增長創紀錄，股價卻未見大幅上升；另有報道指 Google Cloud 升 103%。",
+   "level": "medium",
+   "scope": "stock",
+   "affects": [
+    {
+     "sym": "GOOG",
+     "dir": "up",
+     "why": "雲端業務增長強勁，屬基本面利好，但股價反應平淡"
+    }
+   ],
+   "takeaway": "業務數字好，但股價未必即時反映；留意之後股價走勢。",
+   "found": "2026-11-19 08:00"
   },
   {
    "time": "2026-11-19 03:59",
@@ -714,175 +893,6 @@
    ],
    "takeaway": "AI 股可能分化，你要留意持倉集中喺 AI 同科技呢個主題嘅風險。",
    "found": "2026-11-18 18:00"
-  },
-  {
-   "time": "2026-11-18 15:38",
-   "headline": "分析指台積電或係英偉達事件最大輸家，被下調評級",
-   "source": "Seeking Alpha",
-   "url": "https://news.google.com/rss/articles/CBMikAFBVV95cUxPczhDUGRPMWt3bGpnUW5tYjdNVGM2OG1nRWplX3J4aWxkSFpydTFjbW1PS0dITDdFanE2UFFQTEpsbGh3N0dPQnRHM1J3UkhERmNhQVFaTG1jNmdiQzVGLXo2WTF4TXJvVDc1a2N2NTlSZGFfbE9ZZExVYkxFUDMwbFk4eVdQZE5yX3dwZGwxMF8?oc=5",
-   "summary": "一篇分析文章標題指台積電被下調評級，認為英偉達事件中台積電受損最大（屬作者觀點）。",
-   "level": "medium",
-   "scope": "stock",
-   "affects": [
-    {
-     "sym": "TSM",
-     "dir": "down",
-     "why": "評級下調可能影響部分投資者信心"
-    }
-   ],
-   "takeaway": "評級升降只係一個意見，你可以留意之後有冇其他分析師跟進，唔好單靠一篇文章判斷。",
-   "found": "2026-11-18 18:00"
-  },
-  {
-   "time": "2026-11-18 13:13",
-   "headline": "數據中心規管憂慮，SanDisk 股價受壓",
-   "source": "Simply Wall St",
-   "url": "https://news.google.com/rss/articles/CBMivwFBVV95cUxOc1VkNjdBeGphSlRhUkdWTXY3MVNFOHhJYVJQV2hFX29HWGs0RDNmRWNaM0ZkYnU3X0JkdFk3RVhjUHFYcUlrOW9aeXF0RUNIUkZkajVZXzRQZWwwcEFGVzdyX2pRZEphVm85YjZQNllGUFhmam83c1FvdnlZRlRtQWNVX2hUVU5pR3Z1STQ2MzdyS3hndVd5VGdETVpzU2FmOFdtdUltTlVyTXJYakZRMjJjWTk4eHlYQ0hRVnBiY9IBxAFBVV95cUxNa1NYY3N3NDRWMmxXT0x2aElad3ltcFlUMW80ZzhkNVRvX2E4REVscmllRGViYi1LTk0wTUJyMlgzdUZ2ZHVFcDhrenRIbHZNeGNxNU1TTUt5aUw2OExVNUEtWHl1WFoxVThxRDl5MnBVTURHZUpBNmxqbjR4cXhDWWFXeENxaHZFQ01MZlNSa2dlLXdFc21oeGhiSVJRWDl1aDFNYUNZNTdRZ2NzTXJUYW1DVHd3WWl6SWtPaUpfbURCM3l4?oc=5",
-   "summary": "市場擔心數據中心相關規管；文章認為 SanDisk 股價或低於合理值 42%（分析觀點）。",
-   "level": "medium",
-   "scope": "stock",
-   "affects": [
-    {
-     "sym": "SNDK",
-     "dir": "down",
-     "why": "規管憂慮令市場情緒轉弱，上一個交易日跌約 1.5%"
-    }
-   ],
-   "takeaway": "規管消息未確定，「低於合理值」只係一方觀點；你可以留意規管進展同公司公告。",
-   "found": "2026-11-18 18:00"
-  },
-  {
-   "time": "2026-11-18 12:46",
-   "headline": "美光、台積電盤後急升，半導體股情緒回暖",
-   "source": "Benzinga",
-   "url": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxPLXEzQm5DOFRRZTdNaHpMTlE5RFdad29xMkFOZ0g5Zkxodkc0MGJXZXAxQVZ4TTg1NlNucHl1dHR3V3h1UDI4RGk2Q21QamxvS3pBZ2J4cjlQUjRPOTAzNHlWbTRMTXpjWjI5U3NYMUVtc05KQTNKVjV5d2FMQW1JbHNEQXE1Z29OZXJjMG5tTUM4OC1fT0o5WS1qZ3lJVnJNMWpaV0xkZjhGemc?oc=5",
-   "summary": "美光盤後升約 4.7%，台積電盤後亦升約 4.7%，同早段急跌形成對比。",
-   "level": "medium",
-   "scope": "sector",
-   "affects": [
-    {
-     "sym": "TSM",
-     "dir": "up",
-     "why": "盤後反彈，但屬短線情緒，未代表已經回穩"
-    },
-    {
-     "sym": "SNDK",
-     "dir": "up",
-     "why": "同屬存儲／半導體板塊，美光升可能帶動情緒"
-    }
-   ],
-   "takeaway": "盤後升幅未必延續，你要等美股正式開市後嘅走勢先作準。",
-   "found": "2026-11-18 18:00"
-  },
-  {
-   "time": "2026-11-18 12:15",
-   "headline": "台積電跌 3.7%，因美國新晶片出口規則",
-   "source": "Gotrade",
-   "url": "https://news.google.com/rss/articles/CBMifEFVX3lxTFBuYlo2MDhIYXA1UTFIejhqdTh1UmJMMnFwS3dFdnExZ190QjFCcE1VR2JvLVZJT0NGVVZPRnFKblR2b21JR2lueWcwbF8xY28tUUJsM3FwMkthQk5leEJ1a2d5RlNZa1FLUjQ3bEFhSjJTc2JTMjNOVVhTdHQ?oc=5",
-   "summary": "11 月 17 日美股台積電（TSM）跌約 3.7%，原因係美國新出口規則收緊晶片審查。",
-   "level": "high",
-   "scope": "stock",
-   "affects": [
-    {
-     "sym": "TSM",
-     "dir": "down",
-     "why": "新出口規則直接影響半導體股情緒"
-    },
-    {
-     "sym": "NVDA",
-     "dir": "mixed",
-     "why": "同屬 AI 晶片股，或受同一政策影響，影響未明"
-    }
-   ],
-   "takeaway": "台積電跌幅係政策消息引起，你要留意後續規則細節同公司公告；單日跌唔使恐慌。",
-   "found": "2026-11-18 18:00"
-  },
-  {
-   "time": "2026-11-18 11:22",
-   "headline": "英偉達業績後股價一度升約 4%",
-   "source": "TradingKey",
-   "url": "https://news.google.com/rss/articles/CBMitgFBVV95cUxPaW04Wk1LYm03MEpEdWdIXzBoRlp1ZTgzeHdNRjNDYVByQlRicklSdk1XbndTTWFVY2dyc185Ym10eVA3ZjNnNTdwdmVyd1RkNDd1WGxEVm5SSWJvY0tSdUdlMXhHSkxaUHJZbWZOelBqTEV1LVNrUU5Ud0dnQzZ1YnVlUkd2c2xFRVptVHkwTXMyemd3Z0diNG1JUWdoQjdicjFuMVJsY0FFVmdVOXdmVmMxeTVkZw?oc=5",
-   "summary": "報道指市場已不太寄望黃仁勳重返，業績後股價一度升約 4%；但另有報道指盤後曾轉跌，走勢反覆。",
-   "level": "high",
-   "scope": "stock",
-   "affects": [
-    {
-     "sym": "NVDA",
-     "dir": "mixed",
-     "why": "業績勝預期、指引上調，但盤後走勢反覆"
-    }
-   ],
-   "takeaway": "你持有英偉達唔需因盤後反覆而驚，留意開市後成交同市場對指引嘅解讀。",
-   "found": "2026-11-18 12:00"
-  },
-  {
-   "time": "2026-11-18 11:21",
-   "headline": "金價跌穿 3,800 美元，聯儲局官員釋出加息信號",
-   "source": "The Edge Malaysia",
-   "url": "https://news.google.com/rss/articles/CBMiUEFVX3lxTE8wOU11Y3YyT2dQZjRhRENHUE1Yel9vWW15WjkyTnlpMWQzS0hRaFZTVDR3d0RDQ2FLNlBmQ2pBWnpmdEU0OU5OUjdLRkE2d2M3?oc=5",
-   "summary": "聯儲局官員釋出更多加息信號，美元維持近 19 個月高位，金價跌至逾一年低位。",
-   "level": "high",
-   "scope": "market",
-   "affects": [
-    {
-     "sym": "SPY",
-     "dir": "down",
-     "why": "加息預期升溫，股市估值承壓"
-    },
-    {
-     "sym": "QQQ",
-     "dir": "down",
-     "why": "高估值科技股對加息較敏感"
-    }
-   ],
-   "takeaway": "加息風險係大市主要壓力，數據公布前波動可能加大；唔需因單一官員發言改變長線計劃。",
-   "found": "2026-11-18 12:00"
-  },
-  {
-   "time": "2026-11-18 11:11",
-   "headline": "台積電股價急跌，AI 前景受客戶因素衝擊",
-   "source": "Yahoo Finance",
-   "url": "https://news.google.com/rss/articles/CBMirAFBVV95cUxPRGhfT1h2VHNtYVlES2FYa3lSdm40WmcxQ3d3TGl2bG9xZG5KbHFYeHlqZ044TEFjUHNZZDBvVjZxc3ZxdGxKQ18wc1lXNjVXZzItMUt2Ym50X1lfWk84eXJneUpZYUtIVEdwZFN0SlBXbnpPUWdnNmxPUGVBRDI2amdTUDdOU1Naal9ocl9iSlQ2TkJkVl81ZGlnaTFpcWRFX05XZDl2VzVhcXE1?oc=5",
-   "summary": "標題指台積電因客戶相關消息大跌，市場擔心 AI 需求。凌晨報道指美國新晶片審查收緊，股價跌約 4%；盤後曾反彈約 4.66%。",
-   "level": "high",
-   "scope": "stock",
-   "affects": [
-    {
-     "sym": "TSM",
-     "dir": "mixed",
-     "why": "上一交易日跌 3.68%，美國晶片規則同客戶消息令氣氛偏弱，盤後走勢反覆"
-    }
-   ],
-   "takeaway": "你持有台積電要留意 AI 需求同美國晶片規則消息，波動大，唔需因單日新聞即時做決定。",
-   "found": "2026-11-18 12:00"
-  },
-  {
-   "time": "2026-11-18 07:43",
-   "headline": "聯儲局官員傾向逐步加息",
-   "source": "The Star",
-   "url": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxPMzB1UmtvYWYtOVJKR0VVZDdZb2xOWl9QbE9VV21yYTdNSUd4S3JiZGh6cWJUV253alR5b2ZVc1lxWS1FX1V6MlU0OTBsNXlzVkNlUDEwM0t0eHlydzVBYTZ4dE9SUGdZbF9MSmNFQ2lpRnh1OFljX2VjNUVILW9XMmZlZDZRTmoyVi1YdDVRQ24xZzY5UlkwYzBEMEswTWpja3dJdHh0bkFYaUk?oc=5",
-   "summary": "聯儲局 Hammack 傾向逐步、穩定加息；Williams 仍偏緊但指暫時唔使大動作。加息預期令債息、美元及高估值股承壓。",
-   "level": "high",
-   "scope": "market",
-   "affects": [
-    {
-     "sym": "QQQ",
-     "dir": "down",
-     "why": "加息令高估值科技股承壓"
-    },
-    {
-     "sym": "QQQM",
-     "dir": "down",
-     "why": "加息令高估值科技股承壓"
-    },
-    {
-     "sym": "VOO",
-     "dir": "down",
-     "why": "利率上升影響整體股市估值"
-    }
-   ],
-   "takeaway": "呢類講話短期影響有限，留意 12 月議息焦點。",
-   "found": "2026-11-18 08:00"
   }
  ]
 }

@@ -1,5 +1,5 @@
 {
- "generated": "2026-11-23T22:30+08:00",
+ "generated": "2026-11-24T01:00+08:00",
  "holdings": [
   "TSM",
   "GOOG",
@@ -11,9 +11,165 @@
  ],
  "claude_ok": true,
  "model": "haiku",
- "claude_at": "2026-11-23T22:30+08:00",
- "summary": "英偉達盤前大升，董事會重新委任黃仁勳做行政總裁，科技股反彈。但市場擔心聯儲局12月可能加息，大市波動仍大，科技股持倉同大市聯動最強。注意：部分單日升跌數字互相矛盾（TSM +20%、SPY 同 QQQ 方向相反），請用券商報價核對。",
+ "claude_at": "2026-11-24T01:00+08:00",
+ "summary": "週一科技股大反彈，主因係黃仁勳重返英偉達，NVDA、TSM、SNDK 急升，QQQ、VOO 跟住升。聯儲局 12 月有機會加息，市場仍然反覆。資料入面嘅升跌數字似係盤中數字，未必係收市。持倉波動會好大，唔使因為一日升跌而急於買賣。",
  "items": [
+  {
+   "time": "2026-11-24 00:35",
+   "headline": "Bernstein 分析師：黃仁勳重返英偉達，總比不在好",
+   "source": "CNBC",
+   "url": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxNeElhYktSaDdMM3JaUEtZeS1jMEtFTm5ra3czc1BadG9wZElYbDhvaDZYd0poTEVsMmFOYkxyRjFnWmZPN3J1NG11RGRjeXc2eUJuU3k3T1YxdFpVbndkV09DNjYxWjJudEVzc0RoakdKRWdHSEJ5aXR4RDNBcV9aT2hvTmdLTkhuNG9BeEFsc2RhQk9kLTF5M3hsaGVjdGZ0eGtwaWlZWThEc3c5dUdiWG9CbnZVRkdDdkY5N3NDQjU?oc=5",
+   "summary": "Bernstein 分析師 Stacy Rasgon 評論英偉達股價，認為黃仁勳留任行政總裁總比不在好。",
+   "level": "high",
+   "scope": "stock",
+   "affects": [
+    {
+     "sym": "NVDA",
+     "dir": "up",
+     "why": "黃仁勳重返任行政總裁，市場信心回升，資料顯示股價升 32.67%"
+    }
+   ],
+   "takeaway": "NVDA 升幅極大、波動亦大；Michael Burry 同日公開批評，意見分歧，留意後續收市價。",
+   "found": "2026-11-24 01:00"
+  },
+  {
+   "time": "2026-11-24 00:30",
+   "headline": "華爾街因黃仁勳重返英偉達而大升，納指重返 24,000 點",
+   "source": "Seeking Alpha",
+   "url": "https://news.google.com/rss/articles/CBMiigFBVV95cUxNc3FGeDhwT01uM2IxajQ2U3dZeE5jcnBWeUdfVU8yU2RxVzdlSTFicmtRN2pSekE4VzJxOEt4dmstZWoyNnRLT1hxUnZmSGRKbVJiVG1Ud1BNb2NIYXQxUlhHWHh6d295Y1REN2lKWC0weHlxOXI3MV8tSkNCNTJuMjBCblVMMzlpLUE?oc=5",
+   "summary": "報道指美股大升，帶動納指重返 24,000 點水平，市況由恐慌轉向反彈。",
+   "level": "high",
+   "scope": "market",
+   "affects": [
+    {
+     "sym": "QQQ",
+     "dir": "up",
+     "why": "納指大升，QQQ 跟住升"
+    },
+    {
+     "sym": "QQQM",
+     "dir": "up",
+     "why": "同樣追蹤科技股，跟住大市升"
+    },
+    {
+     "sym": "VOO",
+     "dir": "up",
+     "why": "標普 500 跟住大市反彈"
+    }
+   ],
+   "takeaway": "大升後都可能再回調，留意波動，唔使因一日反彈而改變計劃。",
+   "found": "2026-11-24 01:00"
+  },
+  {
+   "time": "2026-11-24 00:03",
+   "headline": "英偉達重新聘請黃仁勳，SanDisk 股價今日急升",
+   "source": "Yahoo Finance",
+   "url": "https://news.google.com/rss/articles/CBMingFBVV95cUxQTWR6R3E3WWsyamVnRDkwQ0JpaDJjZW1kM0VWY2hlMm91dlpQTS0xaTJ1M1B4TXM1OFViV25QdHVKUmttT0UyM0FsbTc5Nm56bUlGZVpnTnd0b09vM0VqMUl2N0hBOV9oT3JoamtxbHRQYVBKWGxUWGVsVXFiUGpWRWNsemlobUxPZXp4aWJIYVYyeERVY1RzMGpDa1VZQQ?oc=5",
+   "summary": "報道指 SanDisk 股價因黃仁勳重返英偉達而急升，另有報道指盤中升 22%；但資料顯示上一個交易日跌 2.57%，兩者數字對唔上。",
+   "level": "medium",
+   "scope": "stock",
+   "affects": [
+    {
+     "sym": "SNDK",
+     "dir": "mixed",
+     "why": "新聞指升，但資料升跌數字互相矛盾，要核對"
+    }
+   ],
+   "takeaway": "SNDK 數字有矛盾，等睇清楚官方收市價再判斷，唔好單靠標題。",
+   "found": "2026-11-24 01:00"
+  },
+  {
+   "time": "2026-11-24 00:00",
+   "headline": "11 個行業中 9 個週一上升，增長股領先",
+   "source": "Benzinga",
+   "url": "https://news.google.com/rss/articles/CBMiogFBVV95cUxOSjR1bmdqTjFCTm52MlNOWEtvbVp2NXpZZUVxV0JDTmowck5pZ3JKZ0NXcHljUDJrbXJIcTM0M29hN2hiS0xTWks3c1UtcjMyZzZVVlZXSl9CQXlLSy1vZlhtWUdEeThKN1Y4T2QyZGhiSmlkcXY1T1VaSDk3V3ExcWdfZWRrbkJtOC1SR3dXQVc4ZFBFWWVBaThDYV9kS19NZ0E?oc=5",
+   "summary": "報道指週一 11 個行業中有 9 個上升，增長型科技股領先反彈；另有報道形容週一早上嘅波動係 2008 年以來最大。",
+   "level": "medium",
+   "scope": "sector",
+   "affects": [
+    {
+     "sym": "QQQ",
+     "dir": "up",
+     "why": "科技股反彈，資料顯示升 7.19%"
+    },
+    {
+     "sym": "QQQM",
+     "dir": "up",
+     "why": "同樣追蹤科技股，資料顯示升 6.89%"
+    },
+    {
+     "sym": "VOO",
+     "dir": "up",
+     "why": "大市反彈，資料顯示升 4.67%"
+    }
+   ],
+   "takeaway": "ETF 跟大市走，單日大升後波動仍然大，留意長線計劃而非單日數字。",
+   "found": "2026-11-24 01:00"
+  },
+  {
+   "time": "2026-11-23 23:55",
+   "headline": "黃仁勳重返英偉達，帶動台積電、英特爾等晶片股齊升",
+   "source": "24/7 Wall St.",
+   "url": "https://news.google.com/rss/articles/CBMi6wFBVV95cUxPY3NBa1ZIRXJyUHFCWERaWWxiTGFoRW53aGY2Q1pqUzZQNmpiVGpQdG00T2hzVWpQNEN4Q0JBYlRja3FvdWhKaHpxVjVxQjRfQnlwRmc1Tm0tMFVVQjVNTzUzM29rbTlwWE5DZDNRYWM3aHQ0NkNzbGhIUExDa1F3MnhibXEwWEc3RzhUUzNIUkYtV1haWGtfYWdzNnlpaHFLU3dQS1R1dDZKVUx1SC1GczJ5UnMyTVF6alEyblVtdmIwdldnQjhIc01OaDgycmpQQ0pNQlBGaVRmWHJMS1ExemxsdFFVNkpLVEZn?oc=5",
+   "summary": "報道指台積電大升約 17%，主因黃仁勳重返英偉達帶動晶片股；另有報道提到中國方面嘅影響，內容未核實。",
+   "level": "high",
+   "scope": "stock",
+   "affects": [
+    {
+     "sym": "TSM",
+     "dir": "up",
+     "why": "晶片股情緒改善；台積電 10 月收入升 60%（已報道）"
+    }
+   ],
+   "takeaway": "資料顯示 TSM 升 15.64%，升幅大；中國相關風險報道要留意。",
+   "found": "2026-11-24 01:00"
+  },
+  {
+   "time": "2026-11-23 23:51",
+   "headline": "聯儲局官員傾向再加息，會議紀要顯示多數人預期仍會加息",
+   "source": "NewsBreak",
+   "url": "https://news.google.com/rss/articles/CBMiyAJBVV95cUxNVlQ3ZktEZDVhSFEtaXZkaWhibjJmMlBONGt5OXQtNUxNbmVBN2o3M3pnU3FmazBRRkZHdlBBMVFXbEI0ZG92b3FHR1hiRElPenVOaU5uSzFzcmdYLXp1ejlaZ0pCNVFlUnFZdjF3bzc3cHhhTTN1UjgxaHhXNVZCaS05aDdzc25MYTVQaVZHWHd5bTFhR0JCNXpJQWhfZXdDc2tBZ1FLOGVxSnhBVjZDSWQ3VUNJbl81T1piMFpleHJoM0s1eHZHUzE1LWR5VjFjRUpVcjNGTFl2YzdOcEJxakRxSjhRZzNvLVNab1hfWjdvTHVleDJYQ2gtYW5wRXFCeGZLVG51UkhKYjhTYUZ4ZlNJRGZlTndvcEMyTDFaMV96X0dCR3d2eUpXVm5TVml5VjJTTDBmVUlrLVdXSDZJVVlQa1dTZ0Nn?oc=5",
+   "summary": "聯儲局官員 Lisa Cook 同 Beth Hammack 曾投票支持十月加息；11 月 18 日公布嘅紀要顯示，幾乎所有官員都認為之後可能繼續加息。",
+   "level": "high",
+   "scope": "market",
+   "affects": [
+    {
+     "sym": "VOO",
+     "dir": "down",
+     "why": "加息預期令大市估值承壓"
+    },
+    {
+     "sym": "QQQ",
+     "dir": "down",
+     "why": "科技股對利率較敏感"
+    }
+   ],
+   "takeaway": "12 月議息前大市可能反覆，唔好只睇單日升跌。",
+   "found": "2026-11-24 01:00"
+  },
+  {
+   "time": "2026-11-23 23:42",
+   "headline": "Alphabet 股價升逾 4%，AI 樂觀情緒同 Google Cloud 增長帶動",
+   "source": "Speaks Media",
+   "url": "https://news.google.com/rss/articles/CBMixAFBVV95cUxPQzdDd055ZFRlWE93MXpINlkzUi1lcnlYeHVHNFRoc0F1VDlzNmd5S2wydnR6NWthdG1hSWgwUFpyNFpzMlpjZTNkR1hVd21ibGw3ME1rQVVlUnhWeV9STnpDYmp4aG5MTU9IbVJhWkFuQ2lJWmNJMVVFdThVdmRidlN4akV2aDNBbDRzX2ZOYlc0R1czelFRNkVNVGJVQUJ1aWdjNU5QQjhxV2RTdExUTGFtMnlRZzA1MzVpeUdzS3BuX25U?oc=5",
+   "summary": "報道指 Alphabet 股價因 AI 樂觀情緒同 Google Cloud 增長而上升；另有報道指 Google 傳出削減 AI 晶片計劃，令 Broadcom 大跌。",
+   "level": "medium",
+   "scope": "stock",
+   "affects": [
+    {
+     "sym": "GOOG",
+     "dir": "up",
+     "why": "AI 同雲端業務情緒改善，資料顯示升 6.19%"
+    },
+    {
+     "sym": "AVGO",
+     "dir": "down",
+     "why": "報道指 Google 削減 AI 晶片計劃"
+    }
+   ],
+   "takeaway": "GOOG 之前跌幅已大，今日反彈；AI 晶片消息仍然要留意。",
+   "found": "2026-11-24 01:00"
+  },
   {
    "time": "2026-11-23 22:20",
    "headline": "Anthropic承諾花費9,000億美元，華爾街憂債務變垃圾級",
@@ -752,147 +908,6 @@
    ],
    "takeaway": "黃金跌勢反映利率預期，留意大市情緒",
    "found": "2026-11-23 08:00"
-  },
-  {
-   "time": "2026-11-23 07:15",
-   "headline": "市場更新：科技股大跌，英偉達急挫",
-   "source": "GuruFocus",
-   "url": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxQX1puYW82SURsWmFNNGtKZXQ4SGF0bnE2ekpsQXE4VE9kN3NwaTM4OTBvR2ZhY0R6M09USFFPRFg0WHIwdERIbFFMdmVRMGpTdnpIMnk1RkczZGFqdFBxRFNWaVBZUDJoU0FubU9oazNaR3JUUlhMN3p6c0NvR2ZOMlZobTdKOHFsZlo1T2drSXMtVmhHeXN2QzFXS29nVkYtWUNnV0hGWVRsUQ?oc=5",
-   "summary": "文章指科技股大跌，英偉達跌幅特別突出。",
-   "level": "high",
-   "scope": "stock",
-   "affects": [
-    {
-     "sym": "NVDA",
-     "dir": "down",
-     "why": "上一個交易日跌 14%，今早繼續受壓"
-    }
-   ],
-   "takeaway": "跌幅原因已有報道（CEO 離任、SEC 調查），留意後續",
-   "found": "2026-11-23 08:00"
-  },
-  {
-   "time": "2026-11-23 06:51",
-   "headline": "WSJ：AI 泡沫是否已經爆咗？",
-   "source": "WSJ",
-   "url": "https://news.google.com/rss/articles/CBMigAFBVV95cUxNY1JnMEhXZi1IVjZ1SmxTWE5RWThOVFJSLTAxcV9mQ3NWVUYyNm5UNjVaTkhHZDduNnVDclZJWWd4Vi1KOElBS1lrSExJSFVCZGtyWEdMRnpSLW9kZ3hQa2pfMUoyTUJqaWlYSDRyaEdjdlZ2RTlVQk5FS3JkU0czdw?oc=5",
-   "summary": "華爾街日報討論 AI 股近期大跌，係咪代表 AI 熱潮已經完結。",
-   "level": "medium",
-   "scope": "market",
-   "affects": [
-    {
-     "sym": "NVDA",
-     "dir": "mixed",
-     "why": "AI 股估值會重新被質疑，但未有定論"
-    },
-    {
-     "sym": "TSM",
-     "dir": "mixed",
-     "why": "同屬 AI 產業鏈，情緒受影響"
-    }
-   ],
-   "takeaway": "情緒主導，短期難判斷，留意大型科技股財報",
-   "found": "2026-11-23 08:00"
-  },
-  {
-   "time": "2026-11-23 06:45",
-   "headline": "財長 Bessent 對黃仁勳語氣放軟",
-   "source": "BeInCrypto",
-   "url": "https://news.google.com/rss/articles/CBMic0FVX3lxTE4xZktlbXhfcGx5MUJTWGpmZG55THFycmcyYWdRVkViMDVqMjZSbmt5ODdSakpEaFFPeXd3M2E2eHR5bDFRbzhEb25ZY0IxOEFLV21KSy0xanJlamd1VmQ1UWQ5ZmpZTGR1aFR1QmZPNndVNGs?oc=5",
-   "summary": "財長 Bessent 對前英偉達 CEO 黃仁勳嘅言論語氣轉和，文章問英偉達股價會否有喘息機會。",
-   "level": "medium",
-   "scope": "stock",
-   "affects": [
-    {
-     "sym": "NVDA",
-     "dir": "mixed",
-     "why": "政府高層語氣較溫和，但 CEO 同 SEC 問題仍在"
-    }
-   ],
-   "takeaway": "單一表態唔足以決定方向，留意 SEC 調查進展",
-   "found": "2026-11-23 08:00"
-  },
-  {
-   "time": "2026-11-23 06:04",
-   "headline": "花旗評論記憶體股大跌後嘅買入機會",
-   "source": "Investing.com",
-   "url": "https://news.google.com/rss/articles/CBMitwFBVV95cUxQanJzRkZUbHZMNXViQkJkQXh4WkRnSEtmNFUzM1hlQWxseGpVVWQwRGc0X2FxWGkxb243WEl2cFJ1TU84NzV6Q2lqVUNhUXZxU1pwTmEwQkp4M0tJekZ3NWRDZ1BCdW1vekN4QnNfYWliRTd0TTV3eE1xMlZ5WjhHcU9PMVZpUkNuYlB4T3RyRmhpWWVFY3pBWkdwaFRQaWNhTXBOOEtSczhlTzkxRU1FVFZ0Z3U0Yms?oc=5",
-   "summary": "花旗就記憶體股近期大跌表態，文章討論股價跌後會否值得買入。",
-   "level": "medium",
-   "scope": "sector",
-   "affects": [
-    {
-     "sym": "SNDK",
-     "dir": "mixed",
-     "why": "同屬記憶體板塊，分析對跌後機會睇法唔一"
-    }
-   ],
-   "takeaway": "SNDK 跌 2.7%，留意記憶體價格同財報指引",
-   "found": "2026-11-23 08:00"
-  },
-  {
-   "time": "2026-11-23 05:17",
-   "headline": "納指 100 跌入熊市，係 2025 年 4 月以來首次",
-   "source": "Yahoo Finance",
-   "url": "https://news.google.com/rss/articles/CBMingFBVV95cUxPSDNZa2xoSTJGWFFKaTB4TktCeFNJOU1IU2hvLTVtREtPRGQ3QWt1T0RRaGNlbkZ6RGpSVTNCbjFYWmxlNW5Qck9SNFB4TVd1WmYtdjB6TUlZb3d4dWE4b2lwODRmSDJ1NmN1OWx2Wm5zTGFXX3dyUVJXTkJzdzJja3FpQ3N6VmxzWGNSelc0YTFXVi04Tmo4OG0xdjl5QQ?oc=5",
-   "summary": "分析員 Charlie Bilello 指，納指 100 跌入熊市，係 2025 年 4 月以來首次。",
-   "level": "high",
-   "scope": "market",
-   "affects": [
-    {
-     "sym": "QQQ",
-     "dir": "down",
-     "why": "QQQ 追蹤納指 100，指數跌就跟住跌"
-    },
-    {
-     "sym": "QQQM",
-     "dir": "down",
-     "why": "同樣追蹤納指 100"
-    }
-   ],
-   "takeaway": "你持有嘅 QQQ、QQQM 跟緊呢個指數，留意心理承受力",
-   "found": "2026-11-23 08:00"
-  },
-  {
-   "time": "2026-11-23 04:00",
-   "headline": "債市押注聯儲局加息，被股市下跌打亂",
-   "source": "Bloomberg",
-   "url": "https://news.google.com/rss/articles/CBMitgFBVV95cUxPWmRPX29ITVVwcjVDVWpENEUyaFJ5alFtbVBxTzc0OWZoNkozOW9GZ3UwT3NBOGM5aUtxdm5SbjdYYmNxR3NIWVY1LWFaRUhINmRmdmxYaHlKRzY5dlBnQ3JaYkdlZU1XbVFRcnBDTkcyb1hPNG5pblZkUV9MdEd2S25aSE1TWWFzLXVrQzc0YkxQVTY1MnJYbV82TzgteDJKN2YyWmNneXY1aTg5NURYNFJzcDRxQQ?oc=5",
-   "summary": "債市押注聯儲局加息嘅交易受股市下跌影響，市場仍然預期聯儲局有機會加息。",
-   "level": "high",
-   "scope": "market",
-   "affects": [
-    {
-     "sym": "QQQ",
-     "dir": "down",
-     "why": "加息預期升，高估值科技股較敏感"
-    },
-    {
-     "sym": "VOO",
-     "dir": "down",
-     "why": "大市加息壓力會影響整體股市"
-    }
-   ],
-   "takeaway": "加息預期係大市壓力來源，留意下週關鍵通脹數據，唔使單靠一條新聞判斷方向。",
-   "found": "2026-11-23 04:45"
-  },
-  {
-   "time": "2026-11-23 03:47",
-   "headline": "Google 2027 年晶片計劃，對 Broadcom 係壞消息",
-   "source": "Yahoo Finance",
-   "url": "https://news.google.com/rss/articles/CBMijwFBVV95cUxNWkFzR1BlVVA5SU1NdHdiUnhqV2NfNWxSemNiX2pJMXpvZm82cTdSMUQ0dWVmUUJwSVhUUDFZQ280T2ZPOU55YUpBMDdPZEh5b3ctRHpXZUM5Ri1pZ0V3NExTSkNzQzI2a0tXSkR5MzRRTDkwanMxdjdkeDRvU1g2dS1INGxBOHVILUZmaC1hMA?oc=5",
-   "summary": "文章主要講 Google 2027 年晶片計劃對 Broadcom 不利，對 Google 自己嘅影響較少提及。",
-   "level": "medium",
-   "scope": "stock",
-   "affects": [
-    {
-     "sym": "GOOG",
-     "dir": "mixed",
-     "why": "文章主講 Broadcom，對 Google 影響未明"
-    }
-   ],
-   "takeaway": "主要影響 Broadcom，GOOG 影響有限，可留意 Google 自家 AI 晶片進展。",
-   "found": "2026-11-23 04:45"
   }
  ]
 }

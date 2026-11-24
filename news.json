@@ -1,5 +1,5 @@
 {
- "generated": "2026-11-25T01:00+08:00",
+ "generated": "2026-11-25T04:45+08:00",
  "holdings": [
   "TSM",
   "GOOG",
@@ -9,8 +9,8 @@
   "QQQ",
   "SNDK"
  ],
- "claude_ok": true,
- "model": "haiku",
+ "claude_ok": false,
+ "model": null,
  "claude_at": "2026-11-25T01:00+08:00",
  "summary": "AI 同晶片股大跌拖累美股：NVDA 上個交易日跌 8.71%，SNDK 跌 18.68%，TSM 跌 5.22%，QQQ 跌 2.79%，VOO 跌 1.15%。市場同時擔心聯儲局可能再加息。對你持倉影響最大係 NVDA、TSM、SNDK，以及科技股比重高嘅 QQQ、QQQM。",
  "items": [

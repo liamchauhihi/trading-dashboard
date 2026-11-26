@@ -1,5 +1,5 @@
 {
- "generated": "2026-11-26T08:00+08:00",
+ "generated": "2026-11-26T12:00+08:00",
  "holdings": [
   "TSM",
   "GOOG",
@@ -11,9 +11,155 @@
  ],
  "claude_ok": true,
  "model": "haiku",
- "claude_at": "2026-11-26T08:00+08:00",
- "summary": "昨日美股收市跌幅有限（標普 −0.29%，納指 −0.65%），盤中跌得更深。AI 晶片股係主要拖累：SNDK 跌約 22%，輝達跌 3.9%，谷歌跌 2%。加息預期升溫，對科技股同 ETF 構成壓力。",
+ "claude_at": "2026-11-26T12:00+08:00",
+ "summary": "通脹升至 3.8%，市場幾乎肯定 12 月加息，科技股承壓。晶片股急跌：輝達跌約 3.9%（受管治與出口管制審查），台積電與 SanDisk 亦跌；谷歌跌約 2%，與 AI 相關。ETF 受大市影響，個股以 NVDA、SNDK、GOOG 波動最大。",
  "items": [
+  {
+   "time": "2026-11-26 11:42",
+   "headline": "美股期貨因科技股反彈而轉升",
+   "source": "Investing.com",
+   "url": "https://news.google.com/rss/articles/CBMiswFBVV95cUxNc09naTRBTHppblJfSEM4Y3UyYkZid0dzbkNJdVBkWnV5SGNMd2NvX1BuczV5a242ZEl6ZlRkX1FxOU1jVWtwZVEzQWcwWlJsZXZtVG5vbk9hVjlFUFdwcV9lTGZ1cy16ODhkQUF6MWhWMHhVZXo4eTBYRV9sMWN2a1NaV2hpQ1hHTWdqcjJJNU4wR2N1SG5zUW4zNVprRGhNVVVXVXYxV1BzeENfdDhBTm01VQ?oc=5",
+   "summary": "美股期貨轉升，科技股反彈守住，但早段美股曾大幅波動。",
+   "level": "medium",
+   "scope": "market",
+   "affects": [
+    {
+     "sym": "QQQ",
+     "dir": "mixed",
+     "why": "科技股反彈，但早段波動大，反彈未必穩定"
+    },
+    {
+     "sym": "VOO",
+     "dir": "mixed",
+     "why": "大市回升，但仍受加息預期影響"
+    }
+   ],
+   "takeaway": "大市波動仍大，不宜只睇一兩個鐘的走勢。",
+   "found": "2026-11-26 12:00"
+  },
+  {
+   "time": "2026-11-26 11:37",
+   "headline": "美國通脹升至 3.8%，12 月加息機率約 94%",
+   "source": "tokenpost",
+   "url": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE1MWlY1X1dWU0FLekdVZ2ZyanJIYkJ1ejlmaGR4dmpJZmRTb2Fxejh1WFVxMGxBcVF1Ulkza3kyODE2X1dtWHRIX1BySkFqUThmQTQ5LUhESkJTQQ?oc=5",
+   "summary": "通脹數據仍然偏熱，市場幾乎肯定聯儲局十二月可能加息。利率上升會壓低高估值科技股。",
+   "level": "high",
+   "scope": "market",
+   "affects": [
+    {
+     "sym": "QQQ",
+     "dir": "down",
+     "why": "納指成分股多為高估值科技股，對加息較敏感"
+    },
+    {
+     "sym": "QQQM",
+     "dir": "down",
+     "why": "同樣追蹤納指 100，走勢與 QQQ 相近"
+    },
+    {
+     "sym": "VOO",
+     "dir": "down",
+     "why": "大型股同樣受利率上升壓力影響"
+    }
+   ],
+   "takeaway": "留意加息對科技股的影響，但唔使因一日數據即刻行動。",
+   "found": "2026-11-26 12:00"
+  },
+  {
+   "time": "2026-11-26 11:06",
+   "headline": "分析師：輝達估值近期偏平，認為增長有支持",
+   "source": "Benzinga",
+   "url": "https://news.google.com/rss/articles/CBMi_gFBVV95cUxPQmt5LTVNWGpHOHM4WG9NdDdQUkZGamNqNDZrb0QzVkdRZWk4R0hIOHVlZVdUM25IMllJOWxCYk1MOWdURWJvVS0wTXc5ZXhSdVJjNDExNG5HMndZVlN5aEJqQUM0R0RiN29UQXF2aENIVUZaV0dYOXdLQzRkODJmeGkyOThySFZlRWpxMlJfNGozUjJQR0FSQkVqWjdoTF9sb2xkYmcxVlBDWTh0S21WVzRKT1JOc0dNTUtpTVJtYVM2MUl5c1lVT201b2NjS1VzalRoZHBNRXVqTGhLVEFuYXM0SjUwVnJGZlV3SkZ2RnBCeTN4dUROV3RDSU95UQ?oc=5",
+   "summary": "分析師 Gary Black 認為輝達估值現時偏平，並認為其增長受支持，可望延續至 2028 年。",
+   "level": "medium",
+   "scope": "stock",
+   "affects": [
+    {
+     "sym": "NVDA",
+     "dir": "up",
+     "why": "分析師睇好其估值與增長，但只屬一家之言"
+    }
+   ],
+   "takeaway": "分析師觀點可以參考，但不保證升跌。",
+   "found": "2026-11-26 12:00"
+  },
+  {
+   "time": "2026-11-26 11:03",
+   "headline": "亞洲科技股因撿平盤買家而回升",
+   "source": "Yahoo Finance",
+   "url": "https://news.google.com/rss/articles/CBMimwFBVV95cUxQT3ZFNnYxamp4RElmYnNmcTB2X0pIZEhxV29uSW8tQkliVmZHVERQNElNUjJjYklkU2g2ME5GSWRLOEdsUTROdHhvRFFXX3phY1otc0hscmozVDNGdjhad0xqekltZTlON1dnNVFLSmEtbnZCbEE5Yk9VWXlSNVFMZ21FdjRldUlIR0RPVXVJYW1QS0xadW9PYzBxMA?oc=5",
+   "summary": "亞洲科技股因買家趁低吸納而回升，AI 板塊有反彈跡象，但市場仍然波動大。",
+   "level": "medium",
+   "scope": "sector",
+   "affects": [
+    {
+     "sym": "TSM",
+     "dir": "up",
+     "why": "亞洲科技股反彈，台積電同樣受惠"
+    },
+    {
+     "sym": "NVDA",
+     "dir": "up",
+     "why": "AI 板塊反彈，對輝達有正面影響"
+    }
+   ],
+   "takeaway": "今次反彈未必持續，留意美股開盤後的表現。",
+   "found": "2026-11-26 12:00"
+  },
+  {
+   "time": "2026-11-26 10:54",
+   "headline": "SanDisk 跌約 5.6%，AI 記憶體憂慮加深",
+   "source": "JournalArta",
+   "url": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxQeHNDSXdPYW9RUnB3aS1fMjJ2OVpxYzNvS0JsOE1vUEpSMTJleHJjV3JPcVJpbjdINDZLSkp4UURhY2RTYlJSS1pzN202Y2JDWTBtaERzTFlwYXNXYjNBT08wSVhnanl0LVgzdnlsbDNkVUxWZmpBcDYydzU1N2VlYmlHY2lNa2twbkRJNFBnemhBc2szclJPNW1FM2FHdVRqZmZmYThwQzc?oc=5",
+   "summary": "SanDisk 股價跌至約 73.61 美元，市場擔心 AI 記憶體需求及 NAND 價格風險，另有分析師降評。",
+   "level": "high",
+   "scope": "stock",
+   "affects": [
+    {
+     "sym": "SNDK",
+     "dir": "down",
+     "why": "需求及價格憂慮令股價偏弱"
+    }
+   ],
+   "takeaway": "SNDK 波動大，留意 NAND 價格及分析師評級的消息。",
+   "found": "2026-11-26 12:00"
+  },
+  {
+   "time": "2026-11-26 10:39",
+   "headline": "輝達市值跌穿微軟，分析師列出五大壓力",
+   "source": "Yahoo Finance",
+   "url": "https://news.google.com/rss/articles/CBMimgFBVV95cUxQYkwwaEEtY3lVNTJENlZ1NVNGMFZrSTlxYU5tMXFGMnVGdk1fYXo0a2pUTy1NRVBOWGhfSEo4UTNXNlFBY285b016NnVJNHgyZWwzbWpZcHM1NENDekdoUE9DMTFpbXBEcDRTZVZrZll6cm5wSXRlV3FCMXZFczRpUGFleVR6MVlNcnlzN0pvWmV4eEFPQ1NjVzBR?oc=5",
+   "summary": "輝達市值已跌至微軟之下。分析師列出五項壓力因素，詳情需要睇原文。",
+   "level": "medium",
+   "scope": "stock",
+   "affects": [
+    {
+     "sym": "NVDA",
+     "dir": "down",
+     "why": "股價受壓，市值排名下跌"
+    }
+   ],
+   "takeaway": "留意個股走勢，以及分析師提及的壓力因素。",
+   "found": "2026-11-26 12:00"
+  },
+  {
+   "time": "2026-11-26 10:00",
+   "headline": "華爾街日報報道輝達高層與中國相關公司的關係",
+   "source": "WSJ",
+   "url": "https://news.google.com/rss/articles/CBMimAFBVV95cUxNM2JKcnNFYk5jM09EUEZXNjdqZ1N6V05CbnNQR1gzd09nUlhzRVpTSlM4ZjM4SG1uVXExci1OWWdCY05oNkpTOVFjbzk5amIyeHNzdHNpejM1THVZNFdYVWw5dGx3MFF6YndNbGVnN0dTbHNuVDdSSlQwVWl4MDRadXVxbkJyV0FnVEhjNDlVN21JRDVKRkpGeQ?oc=5",
+   "summary": "報道涉及輝達與一間中國相關公司高層的關係。加上出口管制審查，市場關注輝達的管治問題。",
+   "level": "high",
+   "scope": "stock",
+   "affects": [
+    {
+     "sym": "NVDA",
+     "dir": "down",
+     "why": "管治及出口管制審查令投資者憂慮"
+    }
+   ],
+   "takeaway": "留意後續管治及監管發展，唔使單靠一篇報道下結論。",
+   "found": "2026-11-26 12:00"
+  },
   {
    "time": "2026-11-26 07:18",
    "headline": "輝達醜聞引發國會收緊晶片管制討論",
@@ -130,6 +276,29 @@
    "found": "2026-11-26 08:00"
   },
   {
+   "time": "2026-11-26 05:12",
+   "headline": "增長型 ETF 承壓，一篇評級下調文章認為 QQQ 仍有反彈空間",
+   "source": "Seeking Alpha",
+   "url": "https://news.google.com/rss/articles/CBMivwFBVV95cUxQTUNtZmVod0RWdy0zNGRIY1k5QkNDV3gtOWQ0WUgyYm12X3Z5N2xUTmFTZDNCRjFwSnJvdnBJUWZaOHJfaWlWOVFFa3ZxRmd3QVAxS0MtZEc2UnlzSlRIN0ktMkN5VWhLa0RlSXhsRVNsRUJ0dFQyby1ieE1oU1pSNkVRRW5KMnV1bUJmUDV2MnJBVU1pOTd5U0hlYjVrOFZPaEhxdFBHcmE3TENOQlZrUzdyZlRUZ3hRYkFsU01tQQ?oc=5",
+   "summary": "一篇評級下調的文章指增長型 ETF 承壓，但認為 QQQ 仍有較大反彈空間，觀點分歧。",
+   "level": "low",
+   "scope": "sector",
+   "affects": [
+    {
+     "sym": "QQQ",
+     "dir": "mixed",
+     "why": "文章認為反彈空間仍在，但增長股承壓"
+    },
+    {
+     "sym": "QQQM",
+     "dir": "mixed",
+     "why": "同樣追蹤納指 100，情況與 QQQ 相近"
+    }
+   ],
+   "takeaway": "只係一篇分析文章，唔宜單靠它作決定。",
+   "found": "2026-11-26 12:00"
+  },
+  {
    "time": "2026-11-26 05:02",
    "headline": "納指價格波幅升至 19 個月高位，市場或不健康",
    "source": "Seeking Alpha",
@@ -151,6 +320,24 @@
    ],
    "takeaway": "波動大係市況一部分，長線持有者應睇整體計劃，唔好只睇單日。",
    "found": "2026-11-26 08:00"
+  },
+  {
+   "time": "2026-11-26 04:51",
+   "headline": "SanDisk 評級下調：NAND 周期或已見頂",
+   "source": "Seeking Alpha",
+   "url": "https://news.google.com/rss/articles/CBMimAFBVV95cUxNYU8xeDdEdUZSLXZQSnRvS2w2MzlXSktMejJrS1VZc1RpWG5mWHNpeklyOFIzVGgyQl9TRjl5cW9uQ2VCazdtck9jMnpHaFBaNUU0TWRLcHRDMUhKRzFpUmxWcG02QlpFWS1jUGJacTNuTm16NXNFV1lwTjVUa3ZlUktrTXNhUlRtV3plbWtLMzM3WWVJRVhiaQ?oc=5",
+   "summary": "分析師降評 SanDisk，認為 NAND 周期可能已見頂，對前景較保守。",
+   "level": "medium",
+   "scope": "stock",
+   "affects": [
+    {
+     "sym": "SNDK",
+     "dir": "down",
+     "why": "NAND 周期見頂的風險"
+    }
+   ],
+   "takeaway": "降評屬於個別觀點，要對照自己持倉的比重及目標。",
+   "found": "2026-11-26 12:00"
   },
   {
    "time": "2026-11-26 04:39",
@@ -309,6 +496,24 @@
    "found": "2026-11-26 04:45"
   },
   {
+   "time": "2026-11-26 03:29",
+   "headline": "台積電考慮在美國 Aggieland 建 226 億美元晶圓廠",
+   "source": "Yahoo Finance",
+   "url": "https://news.google.com/rss/articles/CBMikgFBVV95cUxNRXNIbDhMb2M1NW80ampyZlNtRjEyM21JaEFjVGdSQnB4NmRkQTd4cDIxWXBIcEJVLTViTFZaclVCR3BtWFh2THdOcmZlNjF4dlcyYnJaNlp4RTBwMnpxR09xMkZyUVVGamJzNmhCcW96S1VjUl84V2xFSFliQXJqNU5WVUswVFIxb1FpdzBMcVdIUQ?oc=5",
+   "summary": "報道台積電考慮在美國 Aggieland 興建 226 億美元晶圓廠，選址約 3,000 英畝。",
+   "level": "low",
+   "scope": "stock",
+   "affects": [
+    {
+     "sym": "TSM",
+     "dir": "up",
+     "why": "美國擴產屬長線利好，短期影響有限"
+    }
+   ],
+   "takeaway": "屬長線消息，對短線股價影響有限。",
+   "found": "2026-11-26 12:00"
+  },
+  {
    "time": "2026-11-26 03:27",
    "headline": "SanDisk 高管出售股份",
    "source": "Simply Wall St",
@@ -361,6 +566,24 @@
    ],
    "takeaway": "留意中國出口限制嘅進一步消息；呢類政策消息短期易令股價大幅波動。",
    "found": "2026-11-26 04:45"
+  },
+  {
+   "time": "2026-11-26 02:53",
+   "headline": "谷歌股價下跌，原因與 AI 相關",
+   "source": "The Globe and Mail",
+   "url": "https://news.google.com/rss/articles/CBMi0wFBVV95cUxQeEVTbW5idEFyQWpfMmJCa3lYa2pHSm94bXFfU19DUG83UGJYeHB6N1VnVVZsYk5KTG5KWVJYOHhtWXpBRFlYdnlTY2pLUVBwOVE5S3llRW1tRWJGRzlyOGZlWFBFSXpsRDJURHNiWkNLR3FXNGd2bnhwbkpDVjhkWnRKMlFUV0Fub1RHUExPUG9ETFJOUl9iZFU4X0FuN0Z4bFo0Y0x1RzhndEtsWnZ0dzdkQjZMRnJYWVd1ZHp0RFNvajFkblp0cFVJaTJmbmNpWlZB?oc=5",
+   "summary": "谷歌股價當日下跌約 2%。報道指跌因與 AI 相關，另有債務保險成本偏高、機構減持等因素。",
+   "level": "high",
+   "scope": "stock",
+   "affects": [
+    {
+     "sym": "GOOG",
+     "dir": "down",
+     "why": "AI 開支及競爭憂慮拖累股價"
+    }
+   ],
+   "takeaway": "留意 AI 開支及競爭消息的後續發展。",
+   "found": "2026-11-26 12:00"
   },
   {
    "time": "2026-11-26 02:22",
@@ -433,6 +656,34 @@
    ],
    "takeaway": "GOOG 大跌主要係大市拋售，暫時未見公司層面嘅新公告。留意之後有冇公司新消息。",
    "found": "2026-11-26 01:00"
+  },
+  {
+   "time": "2026-11-26 00:49",
+   "headline": "晶片股急跌：AI 升勢逆轉，關稅憂慮加劇",
+   "source": "Yahoo! Finance Canada",
+   "url": "https://news.google.com/rss/articles/CBMihAFBVV95cUxPaWE0THhRUTVUaXJsTTRxWDRaM1BmMW04ZElnZWxMNjhZUmxBQWtKM2oyQzZSbUJ2dmlucEVjbXVSbHRGVTlMTnlPc1hQdWNHTW1ZSUJRNm9iYVp4eW5OeUtkYTRGaW83SXBwZEJma05FdjBhWHl4OG1tSUU1YnVWczRheE0?oc=5",
+   "summary": "輝達帶頭的 AI 升勢逆轉，晶片股齊跌，加上關稅擔憂。輝達當日跌約 3.9%，台積電跌約 2%。",
+   "level": "high",
+   "scope": "sector",
+   "affects": [
+    {
+     "sym": "NVDA",
+     "dir": "down",
+     "why": "輝達跌約 3.9%，是晶片股急跌的主要拖累"
+    },
+    {
+     "sym": "TSM",
+     "dir": "down",
+     "why": "同屬晶片股，一齊受壓"
+    },
+    {
+     "sym": "SNDK",
+     "dir": "down",
+     "why": "記憶體晶片屬 AI 相關板塊，同步受壓"
+    }
+   ],
+   "takeaway": "持有晶片股的人波動會較大，留意自己設定的止蝕位。",
+   "found": "2026-11-26 12:00"
   },
   {
    "time": "2026-11-26 00:25",
@@ -592,287 +843,6 @@
    ],
    "takeaway": "QQQ、QQQM 跌幅同科技股拋售一致；長線持有者唔好因單日跌勢而衝動決定。",
    "found": "2026-11-26 04:45"
-  },
-  {
-   "time": "2026-11-25 23:24",
-   "headline": "晶片股再跌，AI 行情難以重拾",
-   "source": "Seeking Alpha",
-   "url": "https://news.google.com/rss/articles/CBMiowFBVV95cUxQZlZiLVUzVDVib0RBTkhmVDVLUk1faElFMENOWHhGX3MxY2ZNSnFEelNCekFjU1JFUjdaU3c5clcwRXBQak56QjFQN21GQm5jNXBwS1NfNnZPcjhWU2JWTGRUa1dVb1NfNFBMWmhNdnJjbm52U1lSWFAtcWZ4ZTJaODlpbVVySzZlRk5yUDdSM2Z5NWNFdEt5cV8yUHBJN0lEa1JR?oc=5",
-   "summary": "晶片股再度下跌，AI 相關股票未能重拾升勢。",
-   "level": "high",
-   "scope": "sector",
-   "affects": [
-    {
-     "sym": "TSM",
-     "dir": "down",
-     "why": "台積電屬晶片板塊，跟住板塊一齊跌"
-    },
-    {
-     "sym": "NVDA",
-     "dir": "down",
-     "why": "輝達係 AI 晶片龍頭，最受 AI 行情影響"
-    },
-    {
-     "sym": "SNDK",
-     "dir": "down",
-     "why": "記憶體股同屬晶片板塊"
-    }
-   ],
-   "takeaway": "TSM、NVDA、SNDK 同屬晶片／AI 板塊，會一齊受影響。留意你嘅持倉集中喺同一板塊嘅風險。",
-   "found": "2026-11-26 01:00"
-  },
-  {
-   "time": "2026-11-25 22:15",
-   "headline": "聯儲局偏好嘅通脹指標上升，加息押注增加",
-   "source": "ABC News",
-   "url": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxQbFd6dlZlV25JVlBjcjRXWWdYUTdqd2ZBeG1WbGI3Z1dGRjhwN0pCWEJteUN2YVBvSHFXbHl2M3VPcS05WU9TTWlQaVpZS3BVTTV1Sk1kVTNDSXQyOWlMLUJOT1ViUnhGUnM0Qkhxc3BGUlFMeUU2aHVBYy1SQTJPNVZDZUJwWkdhLUVUdWZNREdxaHI2R1BROTZlbTliVHZCVFdUWGMzaU02UdIBrwFBVV95cUxPWE1jU1l6LVdTcGhmTWp6aUROSnFNX0tsQVF2Q0FRam85VGs4SS1CNlg3VUpSRF95Y0Z1cnRzdGtGOWM0YWJLUTNhRElWVTNaQzdjVHA3TzYyN25yOTlyMV9qZzhzLTRZNHlDMFF4emdVQU9UbGZnWnktMC1tNTFQUURsN1NxRW05TUhyNW1odXcwbWI0T2xnYXlkdXkyaXNpS0VXMGlVZDVHcGNpamkw?oc=5",
-   "summary": "聯儲局偏好嘅通脹指標上升，市場加息押注增加，金價亦接近 52 週低位。",
-   "level": "high",
-   "scope": "market",
-   "affects": [
-    {
-     "sym": "QQQ",
-     "dir": "down",
-     "why": "利率再升對高估值科技股不利"
-    },
-    {
-     "sym": "QQQM",
-     "dir": "down",
-     "why": "同 QQQ 一樣受利率預期影響"
-    },
-    {
-     "sym": "VOO",
-     "dir": "down",
-     "why": "大盤估值受利率預期壓制"
-    }
-   ],
-   "takeaway": "利率係科技股短期最大壓力之一，留意之後嘅利率同通脹數據公布。",
-   "found": "2026-11-25 22:30"
-  },
-  {
-   "time": "2026-11-25 22:13",
-   "headline": "美光跌 7%，DRAM 前景轉弱加上新關稅打擊記憶體股",
-   "source": "24/7 Wall St.",
-   "url": "https://news.google.com/rss/articles/CBMiiwJBVV95cUxPMHo3cGJWUUhPeEoxeTRsSTRvWldWNF9yUG9tbTlpR0Q4QW80S1g2cnJyUHMtZm1pM3h6QUxtLV9JMktCYXRicFltVUxfWFRXNWJxOGh0b283S1FlSkNBOWV0eDJpQUdxZWRfX0hXeHIwR3JROWt2N3ZFaUdJcGRDQ2QwLVBuMGlvVzVlWGtjUlJmRnA4b1JhTUNRMGRZRG16a01EUG9ZV0ROWkF0MFpoYldLWEZMeTl6TlJSMDVfZjV3dG9ndGFsb1Z0eEV0dm9QWFN6bVRiS2hlbzVhYndvbk5SeVluWnIySGxIeFdocDFqTDNYLWFRdXZXX1RXZmNONUFDSFljOFFnVW8?oc=5",
-   "summary": "美光跌約 7%，原因包括 DRAM 前景轉弱及新關稅，SanDisk 亦同步跌約 7%。",
-   "level": "high",
-   "scope": "sector",
-   "affects": [
-    {
-     "sym": "SNDK",
-     "dir": "down",
-     "why": "同屬記憶體股，DRAM 前景轉弱及關稅令股價同步急跌"
-    },
-    {
-     "sym": "NVDA",
-     "dir": "mixed",
-     "why": "AI 伺服器需求是否持續仍有疑問，影響正負都有"
-    }
-   ],
-   "takeaway": "你持有 SNDK 嘅話，記憶體週期風險最明顯，留意價格同之後 DRAM 數據，唔使即時恐慌。",
-   "found": "2026-11-25 22:30"
-  },
-  {
-   "time": "2026-11-25 22:10",
-   "headline": "黃仁勳回任輝達，但 AI 問題仍未消除",
-   "source": "WSJ",
-   "url": "https://news.google.com/rss/articles/CBMilwFBVV95cUxPWFM4bkNmY3BwVVRwTE1oNUdLQ05FWWItQzVEMnQtTW00eDJsQnZsN3pPY3hsYjRHZEpwSTdQMllTWUxGTEIxWDYzQ3BPV190Q2stSU9FaDMtT21fWlkzdHVlVE5XWHdzRXZlSFBWeVJXLXZoN3NOZ0VhOUZCbWVMbHVlU25xVHdTU0Rhelk3Z2tVZ2hwdGVv?oc=5",
-   "summary": "報道指黃仁勳回任輝達，但 AI 行業面對嘅問題仍然存在，市場觀望。",
-   "level": "medium",
-   "scope": "stock",
-   "affects": [
-    {
-     "sym": "NVDA",
-     "dir": "mixed",
-     "why": "管理層變動受關注，但 AI 行業問題未解決，正負面都有"
-    }
-   ],
-   "takeaway": "留意管理層同監管消息嘅後續發展，唔使單憑一則新聞判斷。",
-   "found": "2026-11-25 22:30"
-  },
-  {
-   "time": "2026-11-25 22:09",
-   "headline": "華爾街科技股再度拋售，AI 熱潮似乎退卻",
-   "source": "The Telegraph",
-   "url": "https://news.google.com/rss/articles/CBMioAFBVV95cUxOUFRFYlFfUGdiM3BxbVFRZGJNUEM3Z2FOU0sxVlBiNVdPMW9Lb0xTcmRRTkxacjEzWnJZTjFJVEltbzZ3cG51a1NqcEVwNWstSWN2dk9HcXFvR00tTHF5SEw0cFRGRGk2TEFDdnRpdDM4bGxxa0hJNFRTWTA4TFUzakw3NHRhNUlQOFZkNGNWVEZTcUR0NUVzQ183SHhBUGhR?oc=5",
-   "summary": "科技股再度拋售，市場擔心 AI 熱潮退卻，納指及大型科技股齊跌。",
-   "level": "high",
-   "scope": "market",
-   "affects": [
-    {
-     "sym": "QQQ",
-     "dir": "down",
-     "why": "納指成分以科技股為主，今日同步走弱"
-    },
-    {
-     "sym": "NVDA",
-     "dir": "down",
-     "why": "AI 股情緒轉差，輝達首當其衝"
-    },
-    {
-     "sym": "TSM",
-     "dir": "down",
-     "why": "AI 晶片需求疑慮影響半導體股"
-    },
-    {
-     "sym": "GOOG",
-     "dir": "down",
-     "why": "大型科技股一同被拋售"
-    }
-   ],
-   "takeaway": "你持有嘅科技 ETF 同個股短期波動會大，留意自己訂好嘅止蝕位，唔好憑情緒即時決定。",
-   "found": "2026-11-25 22:30"
-  },
-  {
-   "time": "2026-11-25 21:54",
-   "headline": "美國通脹年率升至 3.8%，為五月以來最高",
-   "source": "The Guardian",
-   "url": "https://news.google.com/rss/articles/CBMioAFBVV95cUxNT0FBRVB0TDVXeEprbXpxSm9xUXlSMXdBRDRueXJvMGxRR1J0Vko0MjN4T2VVXzNXV2JNZkpIYzV4YTFILWFSWHhMNlo3aFQwTHNXQ3hwaE81SFJ2MjNOTGg1TTFjdE5YTjlsWHBmUVh1QUFqSjBzclJMTUZwelJqVk9kRDA5a1R0bV9LQ29JdzFnTzlpSndUYWwwTHBlU0R5?oc=5",
-   "summary": "美國消費物價年率升至 3.8%，為五月以來最高，令市場擔心聯儲局會再加息。",
-   "level": "high",
-   "scope": "market",
-   "affects": [
-    {
-     "sym": "QQQ",
-     "dir": "down",
-     "why": "通脹高令利率長期偏高，增長股估值承壓"
-    },
-    {
-     "sym": "QQQM",
-     "dir": "down",
-     "why": "同 QQQ 一樣屬科技股為主嘅指數"
-    },
-    {
-     "sym": "VOO",
-     "dir": "down",
-     "why": "大盤指數受加息預期拖累"
-    }
-   ],
-   "takeaway": "留意加息預期對科技股估值嘅壓力，單憑一組數據唔使即時行動。",
-   "found": "2026-11-25 22:30"
-  },
-  {
-   "time": "2026-11-25 21:45",
-   "headline": "輝達、AMD 同美光股價急跌，資金撤離 AI 股",
-   "source": "Yahoo Finance",
-   "url": "https://news.google.com/rss/articles/CBMiswFBVV95cUxOVk9mVUxsUll4NmpxRklUb1dFaHduU3ZURXZRV2ktV0pDM2ZMNElPb3RrV0NiS0JlLTVXQXJKNnpTV1JmV1k2NGMtdzNLa0F0c2tsY2xRMmJKZHhwY1dueWZXb0l4VXhWNkl4NmJ6QUlTNjBpZUItN0xkX21JUXJ5WGlUbWdON0E0V2FOT2lGYkozcm9VSjlXVjR3SDc5WWQ3VzJhWm5mb29YbjBQSU1hQURkYw?oc=5",
-   "summary": "輝達、AMD 及美光等 AI 相關股份下跌，投資者撤離 AI 股。輝達上一個交易日已跌 5.86%。",
-   "level": "high",
-   "scope": "stock",
-   "affects": [
-    {
-     "sym": "NVDA",
-     "dir": "down",
-     "why": "輝達係今次 AI 股拋售嘅主要焦點，上一交易日跌 5.86%"
-    },
-    {
-     "sym": "SNDK",
-     "dir": "down",
-     "why": "同屬 AI 相關記憶體股，同步受壓"
-    },
-    {
-     "sym": "TSM",
-     "dir": "down",
-     "why": "AI 晶片板塊情緒轉弱，半導體股一同受影響"
-    }
-   ],
-   "takeaway": "輝達佔部分 ETF 比重較大，留意 AI 股情緒，唔使因單日跌幅即時行動。",
-   "found": "2026-11-25 22:30"
-  },
-  {
-   "time": "2026-11-25 21:04",
-   "headline": "納指接近熊市，AI 股拋售",
-   "source": "Pluang",
-   "url": "https://news.google.com/rss/articles/CBMiowFBVV95cUxQTHRVLTZxaHNXcVJmR2hfcTk1MkdybU5aektkQjViSDBoeDhsNFhtTnM0dnVfTzIwSm13eGVYUXRzSm5kU2ctT0pFbG5meVRIVEVWd0pKQS1peEZpSjBKczNVOW1uT0FmU2JXdExBTm56MGt3RHE0QkRJTXFEWk9YbUtZYTVSMk51YnhWbFlWRlpRcGg3ZGh1QnJjakRXY0p0emdv?oc=5",
-   "summary": "頭條形容納指 100 指數接近熊市，AI 股拋售係主要原因。",
-   "level": "high",
-   "scope": "market",
-   "affects": [
-    {
-     "sym": "QQQ",
-     "dir": "down",
-     "why": "QQQ 追蹤納指 100，跌幅直接反映科技股"
-    },
-    {
-     "sym": "QQQM",
-     "dir": "down",
-     "why": "QQQM 同樣追蹤納指 100"
-    }
-   ],
-   "takeaway": "QQQ 同 QQQM 追蹤同一批納指 100 股票，兩隻基金嘅跌幅通常一齊出現，重疊好大。留意科技股整體走勢。",
-   "found": "2026-11-26 01:00"
-  },
-  {
-   "time": "2026-11-25 21:04",
-   "headline": "台積電爭取 226 億美元德州廠稅務優惠",
-   "source": "GuruFocus",
-   "url": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxOYlVGNlNFT05TZVdBNVZjOGxUM1p4U3N6R2VGT3gtZjFxakY5ZFU4TUZEWjVZNmwweWFQMFdBZUR1QXAxdzJ6bmJKQmFFeFpVMERIMHJMZjVPRWtFSDZCQnJZa3Bac21vUTNRX2JHRzJ2WU5RT2NzT3lxRlFVOThsTFU5MmJ6UDVwdk50dDRxelpiVmJLdGJtZ00zbThYMFJBUlQwZEtjRGE?oc=5",
-   "summary": "台積電就德州廠爭取約 226 億美元稅務優惠，配合 AI 晶片需求增長。",
-   "level": "medium",
-   "scope": "stock",
-   "affects": [
-    {
-     "sym": "TSM",
-     "dir": "up",
-     "why": "擴產同稅務優惠對長線有利，但短期股價仍受大市拖累"
-    }
-   ],
-   "takeaway": "長線基本面消息偏正面，但短期股價仍受科技股拋售影響。",
-   "found": "2026-11-25 22:30"
-  },
-  {
-   "time": "2026-11-25 19:21",
-   "headline": "Chanos 稱 Alphabet 係少數真正交出業績嘅超大型科企",
-   "source": "Yahoo Finance",
-   "url": "https://news.google.com/rss/articles/CBMimgFBVV95cUxQMkt5eDd3TExGdkpVTUFFNkg4elM3emVFeW9RNERfSUk4WGtGRmlwbnZJS2dCd25yOTUtaTI0Tmd4YnE4SlhLQnNLQlc2Y3BBdmEzcXJCT2pwazJJZTR0eFlXZ183SlZUSnk4RV9LMGdDdjF5d05MbVd4S3lzaklzM3FRQUlqMHdFTkpLNXpVeWtUUDNDbk9KYXdR?oc=5",
-   "summary": "基金經理 Chanos 認為 Alphabet 業績數字突出，有評論問係咪而家適合買入。",
-   "level": "low",
-   "scope": "stock",
-   "affects": [
-    {
-     "sym": "GOOG",
-     "dir": "mixed",
-     "why": "屬個人觀點，未能抵消 TPU 同開支憂慮嘅影響"
-    }
-   ],
-   "takeaway": "呢類係評論文章，唔係事實結論，留意公司業績同指引先至實際。",
-   "found": "2026-11-25 22:30"
-  },
-  {
-   "time": "2026-11-25 16:27",
-   "headline": "TrendForce 下調 DRAM 價格預測，記憶體股受壓",
-   "source": "Yahoo Finance",
-   "url": "https://news.google.com/rss/articles/CBMilAFBVV95cUxPTXBnTzBGYTl6Vzl5UkctSVRJb2dodjduZXZUeklUY3FSODZWRWVDY1FnUm5wektheE44TER1VWt3cVJsUlBpdmQzMURTQzk4Tk5CUEZWTkZJbEIzaG5DT1J0NWhKcjJxLUlVYlJyNnZ3WjJPeUFDcUF3Y25PRWh4dVcyVjdnc3otd2J6TmN6UDBucW1X?oc=5",
-   "summary": "研究機構 TrendForce 下調 DRAM 價格預測，記憶體股 MU、SNDK 一齊受壓。報道提到 SNDK 曾跌近 11%，與系統數字有出入。",
-   "level": "high",
-   "scope": "sector",
-   "affects": [
-    {
-     "sym": "SNDK",
-     "dir": "down",
-     "why": "記憶體價格預測下調，直接影響佢嘅盈利預期"
-    }
-   ],
-   "takeaway": "SNDK 波幅大，記憶體價格走勢係主要變數，唔好只睇單日跌幅。",
-   "found": "2026-11-25 18:00"
-  },
-  {
-   "time": "2026-11-25 16:09",
-   "headline": "美國 11 月消費者信心升至 103.3",
-   "source": "MEXC",
-   "url": "https://news.google.com/rss/articles/CBMipgFBVV95cUxPMHNlalppLVJFT1AwNzN3a1ZJMl85S1h1MEtobWlUejdULXBGRnBfUF85SUJfSXhCYllnQUJGdjE3Rl9Tci00UDlReVhkblMyZXhxNEstcGpqbTVkTjFGVTl4RW91WDA0S0R1Ym5nSTZ4TXp4UExyZ1M4RG9fUmxXLWxWN1kyLXZxOWZnSHluYUNWSkR0Rl9IRTBaOW9FclVxZFB4ZkdR?oc=5",
-   "summary": "美國 11 月消費者信心指數升至 103.3，顯示消費者仍有信心。",
-   "level": "low",
-   "scope": "market",
-   "affects": [
-    {
-     "sym": "VOO",
-     "dir": "up",
-     "why": "經濟數據正面，對大市有少少支持"
-    }
-   ],
-   "takeaway": "經濟數據正面，但唔足以扭轉今日科技股跌勢。",
-   "found": "2026-11-25 18:00"
   }
  ]
 }

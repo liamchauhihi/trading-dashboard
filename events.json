@@ -1,5 +1,5 @@
 {
- "generated": "2026-11-26T19:04+08:00",
+ "generated": "2026-11-27T19:02+08:00",
  "days": 60,
  "holdings": [
   "TSM",
@@ -11,25 +11,25 @@
   "SNDK"
  ],
  "claude_ok": true,
- "claude_at": "2026-11-26T19:04+08:00",
- "summary": "未來60日重點：12月4日就業、10日CPI、聯儲局9日議息；12月11日政府撥款限期；台積電1月約14日業績。NVDA剛經歷黃仁勳復任及調查，消息風險高。GOOG、SNDK業績預計2月，不在範圍內。",
+ "claude_at": "2026-11-27T19:02+08:00",
+ "summary": "重點：12/3 黃仁勳出席參議院聽證；12/9 議息、12/10 CPI；12/11 政府撥款到期；1/14 台積電業績（暫定）。另外 SNDK 據報已 1 拆 8，請核對股數同成本。",
  "sources": [
   "https://www.federalreserve.gov/monetarypolicy/fomccalendars.htm",
   "https://www.bls.gov/schedule/news_release/cpi.htm",
   "https://www.bea.gov/news/schedule",
   "https://investor.tsmc.com/english/financial-calendar",
-  "https://nvidianews.nvidia.com/"
+  "https://techcrunch.com/2026/11/23/jensen-huang-scheduled-to-testify-next-week-in-senate-following-reinstatement-as-nvidia-ceo/"
  ],
  "events": [
   {
-   "date": "2026-12-01",
-   "time": "美東 09:35（香港 22:35）",
+   "date": "2026-12-03",
+   "time": "開始時間未核實（香港時間或為當晚至 12/4 凌晨）",
    "type": "other",
    "sym": "NVDA",
-   "name": "NVIDIA出席UBS科技及AI會議",
-   "why": "黃仁勳11月23日復任CEO後不久的投資者活動。",
-   "impact": "管理層對需求、出口管制或調查的說法，可令NVDA大上大落，並牽動TSM、QQQ、QQQM、VOO。",
-   "watch": "訂單展望、對華出口、調查進展",
+   "name": "黃仁勳參議院聽證",
+   "why": "據報聚焦晶片出口管制同 MegaSpeed 爭議；12/1-2 另有眾議院閉門問話。",
+   "impact": "若出現新指控或收緊出口法案，NVDA 波動最直接，TSM、QQQ、QQQM、VOO 亦可能受牽連。",
+   "watch": "有冇新證據、議員立法取態、公司對中國業務嘅回應。",
    "affects": [
     "NVDA",
     "TSM",
@@ -38,25 +38,6 @@
     "VOO"
    ],
    "confidence": "confirmed",
-   "src": "claude"
-  },
-  {
-   "date": "2026-12-01",
-   "time": "時間未公佈",
-   "type": "other",
-   "sym": "NVDA",
-   "name": "黃仁勳國會閉門問話（日期推算）",
-   "why": "傳媒指黃仁勳下週二接受三個眾議院委員會問話。",
-   "impact": "若傳出新指控或出口限制，NVDA首當其衝，TSM及QQQ、QQQM、VOO亦可能受壓；若無新料，憂慮或降溫。",
-   "watch": "問話後消息、SEC及司法部調查",
-   "affects": [
-    "NVDA",
-    "TSM",
-    "QQQ",
-    "QQQM",
-    "VOO"
-   ],
-   "confidence": "estimated",
    "src": "claude"
   },
   {
@@ -64,34 +45,34 @@
    "time": "美東 08:30（香港 21:30）",
    "type": "jobs",
    "sym": null,
-   "name": "美國11月非農就業",
-   "why": "議息前重要就業數據，影響利率預期。",
-   "impact": "數據過熱可推高債息，壓低QQQ、QQQM、NVDA、SNDK；急速轉弱則可能引發衰退憂慮，拖累VOO。",
-   "watch": "新增職位、失業率、時薪",
+   "name": "11 月非農就業",
+   "why": "議息前重要就業數據，影響市場對利率嘅預期。",
+   "impact": "太強可能推高債息，壓低 QQQ、QQQM、NVDA 等增長股；太弱則可能引發經濟放緩憂慮。",
+   "watch": "新增職位、失業率、時薪增幅、前值修訂。",
    "affects": [
-    "VOO",
     "QQQ",
     "QQQM",
+    "VOO",
     "NVDA",
-    "SNDK",
     "GOOG",
-    "TSM"
+    "TSM",
+    "SNDK"
    ],
    "confidence": "confirmed",
    "src": "claude"
   },
   {
    "date": "2026-12-09",
-   "time": "美股收市後（香港 12月10日清晨）",
+   "time": "美股收市後（香港 12/10 清晨）",
    "type": "earnings",
    "sym": "AVGO",
-   "name": "博通業績",
-   "why": "AI訂製晶片大廠，反映科技巨頭AI開支。",
-   "impact": "AI指引影響NVDA、TSM（晶片代工）及GOOG（自研晶片合作）情緒，亦牽動QQQ、QQQM。",
-   "watch": "AI晶片收入指引、大客戶訂單",
+   "name": "Broadcom 業績",
+   "why": "AI 客製晶片同網絡晶片大廠，反映雲端公司 AI 開支。",
+   "impact": "指引影響 AI 股情緒：TSM（晶片代工）、NVDA、GOOG（自研晶片相關開支），亦影響 QQQ、QQQM、VOO。",
+   "watch": "AI 收入指引、大客訂單、毛利率。",
    "affects": [
-    "NVDA",
     "TSM",
+    "NVDA",
     "GOOG",
     "QQQ",
     "QQQM",
@@ -102,21 +83,21 @@
   },
   {
    "date": "2026-12-09",
-   "time": "美東 14:00（香港 12月10日 03:00）",
+   "time": "美東 14:00（香港 12/10 03:00）",
    "type": "fomc",
    "sym": null,
-   "name": "聯儲局議息結果及經濟預測",
-   "why": "決定利率，並更新官員對未來利率的預測。",
-   "impact": "過往議息後兩日平均郁幅：VOO約0.8%、QQQ約1.1%、NVDA約2.6%、SNDK約5.2%；偏鷹通常不利科技股。",
-   "watch": "利率決定、點陣圖、主席記者會",
+   "name": "聯儲局議息結果",
+   "why": "12/8-9 會議，公佈利率決定同經濟預測（點陣圖），之後有記者會。",
+   "impact": "全部持倉都受影響。過往議息後平均波幅：SNDK 約 5.2%、NVDA 約 2.6%、QQQ 約 1.1%、VOO 約 0.8%。",
+   "watch": "利率決定、點陣圖、通脹預測、主席語氣。",
    "affects": [
-    "VOO",
-    "QQQ",
-    "QQQM",
-    "NVDA",
-    "SNDK",
+    "TSM",
     "GOOG",
-    "TSM"
+    "NVDA",
+    "VOO",
+    "QQQM",
+    "QQQ",
+    "SNDK"
    ],
    "confidence": "confirmed",
    "src": "claude"
@@ -126,31 +107,31 @@
    "time": "美東 08:30（香港 21:30）",
    "type": "cpi",
    "sym": null,
-   "name": "美國11月CPI通脹",
-   "why": "最受注視的通脹數據，影響減息或加息預期。",
-   "impact": "高過預期多數壓低QQQ、QQQM、NVDA、SNDK等高估值股及VOO；低過預期則有利氣氛。",
-   "watch": "核心CPI按月升幅對比預期",
+   "name": "11 月 CPI 通脹",
+   "why": "最受注目嘅通脹數據，緊接議息之後公佈。",
+   "impact": "高過預期可能令減息希望降溫，QQQ、QQQM、NVDA、SNDK 較敏感；低過預期通常利好情緒。",
+   "watch": "核心 CPI 按月、按年，同預期比較。",
    "affects": [
-    "VOO",
-    "QQQ",
-    "QQQM",
-    "NVDA",
-    "SNDK",
+    "TSM",
     "GOOG",
-    "TSM"
+    "NVDA",
+    "VOO",
+    "QQQM",
+    "QQQ",
+    "SNDK"
    ],
    "confidence": "confirmed",
    "src": "claude"
   },
   {
    "date": "2026-12-10",
-   "time": "台北／香港 13:30（美東 00:30）",
+   "time": "美東 00:30（香港 13:30）",
    "type": "other",
    "sym": "TSM",
-   "name": "台積電11月營收",
-   "why": "每月營收是AI晶片需求的早期訊號。",
-   "impact": "直接影響TSM；明顯高於或低於季度指引步伐，亦可能帶動NVDA等晶片股。",
-   "watch": "按年、按月增幅；第四季指引進度",
+   "name": "台積電 11 月營收",
+   "why": "每月營收係 AI 晶片需求嘅早期指標。",
+   "impact": "增速明顯放慢可能拖低 TSM，並影響 NVDA 情緒；強勁則支持 AI 需求講法。",
+   "watch": "按年、按月增幅，對比本季指引進度。",
    "affects": [
     "TSM",
     "NVDA"
@@ -160,13 +141,13 @@
   },
   {
    "date": "2026-12-11",
-   "time": "美東午夜限期（香港 12月12日約13:00）",
+   "time": "美東 23:59（香港 12/12 12:59）",
    "type": "other",
    "sym": null,
-   "name": "美國政府撥款限期",
-   "why": "臨時撥款到期，未通過新撥款便可能停擺。",
-   "impact": "停擺風險可令VOO、QQQ波動，亦可能延誤經濟數據公佈；若再通過臨時撥款，影響多數有限。",
-   "watch": "新臨時撥款法案、延長至何時",
+   "name": "政府撥款到期限",
+   "why": "臨時撥款屆滿，未有新法案就可能停擺；截至最近報道仲未有協議。",
+   "impact": "停擺風險可能令 VOO、QQQ、QQQM 波動，亦可能令經濟數據延遲公佈。",
+   "watch": "國會有冇通過延長撥款，延到幾時。",
    "affects": [
     "VOO",
     "QQQ",
@@ -177,19 +158,39 @@
   },
   {
    "date": "2026-12-11",
-   "time": "預計美股收市後（香港 12月12日清晨）",
+   "time": "美股收市後（香港 12/12 清晨）",
    "type": "other",
    "sym": null,
-   "name": "納斯達克100年度換股公佈",
-   "why": "指數成分調整，預計12月21日開市前生效。",
-   "impact": "QQQ、QQQM要跟指數買賣；持倉中被納入、剔除或調整比重的股份，成交及波動可能增加。",
-   "watch": "納入及剔除名單",
+   "name": "納指 100 年度換股公佈",
+   "why": "按指數規則推算嘅公佈日，12/21 開市前生效。",
+   "impact": "QQQ、QQQM 成分股會調整，基金換股令相關股份成交增加，對 ETF 整體影響通常有限。",
+   "watch": "加入同剔除名單、大型新股有冇納入。",
    "affects": [
     "QQQ",
-    "QQQM",
-    "SNDK"
+    "QQQM"
    ],
    "confidence": "estimated",
+   "src": "claude"
+  },
+  {
+   "date": "2026-12-14",
+   "time": "美國邁阿密，12/14-15（具體時間未公佈）",
+   "type": "other",
+   "sym": null,
+   "name": "G20 峰會及特習會面",
+   "why": "市場預期討論延長中美貿易休戰、關稅同晶片限制。",
+   "impact": "談得好利好 TSM、NVDA 同大市；破裂或加晶片限制，NVDA、TSM、SNDK 可能受壓。",
+   "watch": "休戰有冇延期、晶片出口同稀土安排。",
+   "affects": [
+    "TSM",
+    "NVDA",
+    "SNDK",
+    "QQQ",
+    "QQQM",
+    "VOO",
+    "GOOG"
+   ],
+   "confidence": "confirmed",
    "src": "claude"
   },
   {
@@ -197,16 +198,16 @@
    "time": "美東 08:30（香港 21:30）",
    "type": "other",
    "sym": null,
-   "name": "美國11月PPI生產物價",
-   "why": "反映企業成本通脹，亦影響PCE估算。",
-   "impact": "若明顯偏高，利率憂慮升溫，QQQ、QQQM、NVDA、SNDK較敏感，VOO亦受影響。",
-   "watch": "核心PPI及計入PCE的分項",
+   "name": "11 月 PPI 生產物價",
+   "why": "反映上游通脹，會影響 PCE 通脹估算。",
+   "impact": "意外偏高可能推高債息，影響 QQQ、QQQM、VOO 及科技股。",
+   "watch": "核心 PPI 按月升幅。",
    "affects": [
     "VOO",
     "QQQ",
     "QQQM",
     "NVDA",
-    "SNDK"
+    "GOOG"
    ],
    "confidence": "confirmed",
    "src": "claude"
@@ -216,10 +217,10 @@
    "time": "美東 08:30（香港 21:30）",
    "type": "other",
    "sym": null,
-   "name": "美國11月零售銷售",
-   "why": "反映年尾消費旺季的消費力。",
-   "impact": "太弱會引發經濟憂慮，影響VOO及GOOG廣告前景；太強則可能推高利率預期，壓科技股。",
-   "watch": "整體及控制組銷售按月變化",
+   "name": "11 月零售銷售",
+   "why": "睇假期旺季初段消費力，消費係美國經濟主力。",
+   "impact": "太弱可能引發衰退憂慮拖低 VOO；亦影響市場對 GOOG 廣告收入嘅想像。",
+   "watch": "整體及核心（對照組）銷售按月變化。",
    "affects": [
     "VOO",
     "QQQ",
@@ -231,13 +232,13 @@
   },
   {
    "date": "2026-12-17",
-   "time": "美東 16:30（香港 12月18日 05:30）",
+   "time": "美股收市後（香港 12/18 清晨）",
    "type": "earnings",
    "sym": "MU",
-   "name": "美光業績",
-   "why": "記憶體龍頭，是SNDK及AI晶片需求風向標。",
-   "impact": "記憶體價格及需求指引可令SNDK大幅波動，亦影響NVDA、TSM氣氛。",
-   "watch": "NAND價格、下季指引、供應增幅",
+   "name": "Micron 業績",
+   "why": "記憶體龍頭，TrendForce 預測 2027 年首季 NAND 合約價跌 0-5%。",
+   "impact": "對 SNDK 影響最大：NAND 價格指引轉弱可能急跌。SNDK 據報 11 月已 1 拆 8，請核對股數成本。",
+   "watch": "NAND 價格同供應指引、毛利率、2027 年訂單。",
    "affects": [
     "SNDK",
     "NVDA",
@@ -250,13 +251,34 @@
   },
   {
    "date": "2026-12-18",
-   "time": "美股全日，收市前後最波動（香港 12月19日 05:00收市）",
+   "time": "美股全日，收市前後最波動（香港 12/19 約 05:00 收市）",
    "type": "opex",
    "sym": null,
-   "name": "四巫日（季度期權期貨結算）",
-   "why": "大量衍生工具同日結算，成交急增。",
-   "impact": "VOO、QQQ及大型股如NVDA、GOOG尾段可能急上急落，未必反映公司基本面。",
-   "watch": "收市前成交量及波幅",
+   "name": "四巫日",
+   "why": "季度期權期貨同時結算，成交同波幅通常放大。",
+   "impact": "全部持倉可能短線波動；撞正納指換股調倉，QQQ、QQQM 成交或特別大。",
+   "watch": "尾市成交量同價格急變，唔代表基本面轉變。",
+   "affects": [
+    "TSM",
+    "GOOG",
+    "NVDA",
+    "VOO",
+    "QQQM",
+    "QQQ",
+    "SNDK"
+   ],
+   "confidence": "confirmed",
+   "src": "claude"
+  },
+  {
+   "date": "2026-12-23",
+   "time": "美東 08:30（香港 21:30）",
+   "type": "pce",
+   "sym": null,
+   "name": "11 月 PCE 通脹",
+   "why": "聯儲局最重視嘅通脹指標。",
+   "impact": "偏高可能壓低 QQQ、QQQM、NVDA 等；假期前成交薄，波幅可能放大。",
+   "watch": "核心 PCE 按月、按年，個人消費開支。",
    "affects": [
     "VOO",
     "QQQ",
@@ -272,32 +294,12 @@
   {
    "date": "2026-12-23",
    "time": "美東 08:30（香港 21:30）",
-   "type": "pce",
-   "sym": null,
-   "name": "美國11月PCE通脹及收支",
-   "why": "聯儲局最重視的通脹指標。",
-   "impact": "偏高會削弱寬鬆預期，壓QQQ、NVDA、SNDK；假期前成交疏落，波幅可能放大。",
-   "watch": "核心PCE按月及按年、消費開支",
-   "affects": [
-    "VOO",
-    "QQQ",
-    "QQQM",
-    "NVDA",
-    "SNDK",
-    "GOOG"
-   ],
-   "confidence": "confirmed",
-   "src": "claude"
-  },
-  {
-   "date": "2026-12-23",
-   "time": "美東 08:30（香港 21:30）",
    "type": "gdp",
    "sym": null,
-   "name": "美國第三季GDP終值",
-   "why": "確認經濟增長及企業盈利狀況。",
-   "impact": "屬修訂數字，一般影響較細；若大幅修訂，可能影響VOO及利率預期。",
-   "watch": "增長修訂、消費、企業利潤",
+   "name": "第三季 GDP 終值",
+   "why": "同日公佈；第二次估算為年率增長 4.3%。",
+   "impact": "屬舊數據，除非大幅修訂，否則對 VOO、QQQ、QQQM 影響通常較細。",
+   "watch": "修訂幅度、消費同企業投資。",
    "affects": [
     "VOO",
     "QQQ",
@@ -308,32 +310,31 @@
   },
   {
    "date": "2026-12-30",
-   "time": "美東 14:00（香港 12月31日 03:00）",
+   "time": "美東 14:00（香港 12/31 03:00）",
    "type": "fomc",
    "sym": null,
-   "name": "聯儲局12月會議紀錄",
-   "why": "披露官員對通脹及利率的分歧。",
-   "impact": "如語氣比預期鷹，QQQ、QQQM、NVDA、SNDK可能受壓；年尾成交少，波動或放大。",
-   "watch": "對通脹風險及下次利率的討論",
+   "name": "議息會議紀錄",
+   "why": "按會後三星期慣例推算，披露委員對利率嘅分歧。",
+   "impact": "語氣偏鷹可能壓低 QQQ、QQQM、NVDA；年底成交薄。",
+   "watch": "委員對通脹同減息步伐嘅睇法。",
    "affects": [
     "VOO",
     "QQQ",
     "QQQM",
-    "NVDA",
-    "SNDK"
+    "NVDA"
    ],
-   "confidence": "confirmed",
+   "confidence": "estimated",
    "src": "claude"
   },
   {
    "date": "2027-01-05",
-   "time": "美東 13:00（香港 1月6日 02:00）起；展期1月6至9日",
+   "time": "美東 13:00（香港 1/6 02:00）起；CES 展期 1/6-9",
    "type": "other",
    "sym": null,
-   "name": "CES 2027科技展（AMD發佈會打頭陣）",
-   "why": "大型科技展，常公佈AI及晶片新產品。",
-   "impact": "AMD新品影響NVDA競爭預期；晶片熱潮可帶動TSM、SNDK。NVIDIA主題演講暫未查到公佈。",
-   "watch": "AI晶片新品、儲存需求、NVIDIA安排",
+   "name": "CES 科技展及 AMD 發佈會",
+   "why": "AI 同晶片新品集中發佈；NVIDIA 主題演講暫未見公佈。",
+   "impact": "AMD 新品影響競爭預期，關乎 NVDA；晶片需求消息亦牽動 TSM、SNDK 情緒。",
+   "watch": "AI 晶片路線圖、客戶合作、NVIDIA 有冇活動。",
    "affects": [
     "NVDA",
     "TSM",
@@ -349,10 +350,10 @@
    "time": "美東 08:30（香港 21:30）",
    "type": "jobs",
    "sym": null,
-   "name": "美國12月非農就業",
-   "why": "新一年首份就業報告，影響1月底議息預期。",
-   "impact": "過熱推高債息，不利QQQ、NVDA、SNDK；過弱則引發經濟憂慮，拖累VOO。",
-   "watch": "失業率、時薪、前值修訂",
+   "name": "12 月非農就業",
+   "why": "1 月議息前最後一份就業報告。",
+   "impact": "大幅偏離預期會改變利率預期，影響 VOO、QQQ、QQQM 同高波幅嘅 SNDK、NVDA。",
+   "watch": "新增職位、失業率、時薪。",
    "affects": [
     "VOO",
     "QQQ",
@@ -367,13 +368,13 @@
   },
   {
    "date": "2027-01-08",
-   "time": "台北／香港 13:30（美東 00:30）",
+   "time": "美東 00:30（香港 13:30）",
    "type": "other",
    "sym": "TSM",
-   "name": "台積電12月營收",
-   "why": "可得出第四季全季營收，是業績前哨。",
-   "impact": "對照第四季指引523至543億美元，影響TSM業績預期，亦牽動NVDA。",
-   "watch": "全季營收是否超出指引",
+   "name": "台積電 12 月營收",
+   "why": "公佈後可計出第四季全季營收。",
+   "impact": "對比公司指引，超出或落後會影響 TSM 業績前預期，亦牽動 NVDA。",
+   "watch": "第四季合計營收對比指引。",
    "affects": [
     "TSM",
     "NVDA"
@@ -382,35 +383,56 @@
    "src": "claude"
   },
   {
+   "date": "2027-01-10",
+   "time": "星期日（具體時間未公佈）",
+   "type": "other",
+   "sym": null,
+   "name": "中美貿易休戰到期",
+   "why": "據報休戰期限，未延期就可能重燃關稅同出口管制。",
+   "impact": "破裂風險對 TSM、NVDA、SNDK 較大，亦拖累大市；若 G20 已延期，影響大減。",
+   "watch": "G20 後有冇正式延期公告。",
+   "affects": [
+    "TSM",
+    "NVDA",
+    "SNDK",
+    "VOO",
+    "QQQ",
+    "QQQM",
+    "GOOG"
+   ],
+   "confidence": "estimated",
+   "src": "claude"
+  },
+  {
    "date": "2027-01-13",
    "time": "美東 08:30（香港 21:30）",
    "type": "cpi",
    "sym": null,
-   "name": "美國12月CPI通脹",
-   "why": "1月議息前最關鍵通脹數據。",
-   "impact": "高過預期多數壓低科技股，QQQ、QQQM、NVDA、SNDK較敏感；VOO亦受影響。",
-   "watch": "核心CPI按月升幅、全年通脹",
+   "name": "12 月 CPI 通脹",
+   "why": "1 月議息前關鍵通脹數據。",
+   "impact": "偏高會打擊減息預期，QQQ、QQQM、NVDA、SNDK 較敏感。",
+   "watch": "核心 CPI 按月升幅同預期差距。",
    "affects": [
-    "VOO",
-    "QQQ",
-    "QQQM",
-    "NVDA",
-    "SNDK",
+    "TSM",
     "GOOG",
-    "TSM"
+    "NVDA",
+    "VOO",
+    "QQQM",
+    "QQQ",
+    "SNDK"
    ],
    "confidence": "confirmed",
    "src": "claude"
   },
   {
    "date": "2027-01-14",
-   "time": "預計台北／香港 13:30至14:00（美東約00:30至01:00）",
+   "time": "台灣約 14:00 法說會（香港 14:00，美東 01:00）",
    "type": "earnings",
    "sym": "TSM",
    "name": "台積電第四季業績",
-   "why": "你持有TSM；全年展望及資本開支影響整個AI鏈。",
-   "impact": "過去8次業績後兩日平均郁約3.2%（平時約2.7%）；展望亦影響NVDA、SNDK及QQQ。另有估計指1月21日。",
-   "watch": "2027年指引、毛利率、資本開支",
+   "why": "公佈全年展望同資本開支；日期未正式確認，部分日曆寫 1/21。",
+   "impact": "TSM 過去 8 次業績後兩日平均郁約 3.2%（平時約 2.7%）；指引牽動 NVDA、SNDK、QQQ。",
+   "watch": "2027 收入指引、資本開支、AI 需求、毛利率。",
    "affects": [
     "TSM",
     "NVDA",
@@ -427,37 +449,33 @@
    "time": "美東 08:30（香港 21:30）",
    "type": "other",
    "sym": null,
-   "name": "美國12月PPI生產物價",
-   "why": "補充通脹圖像，影響PCE估算。",
-   "impact": "連同前一日CPI偏高，利率憂慮會加深，影響VOO、QQQ、NVDA、SNDK。",
-   "watch": "核心PPI按月變化",
+   "name": "12 月 PPI 生產物價",
+   "why": "補充通脹圖像，影響 PCE 估算。",
+   "impact": "意外偏高可能推高債息，影響 VOO、QQQ、QQQM 及科技股。",
+   "watch": "核心 PPI 按月升幅。",
    "affects": [
     "VOO",
     "QQQ",
-    "QQQM",
-    "NVDA",
-    "SNDK"
+    "QQQM"
    ],
    "confidence": "confirmed",
    "src": "claude"
   },
   {
    "date": "2027-01-15",
-   "time": "美股全日（香港 1月16日 05:00收市）",
+   "time": "美股全日（香港 1/16 約 05:00 收市）",
    "type": "opex",
    "sym": null,
    "name": "每月期權結算日",
-   "why": "1月期權到期量通常較大。",
-   "impact": "NVDA、GOOG、SNDK等期權活躍股份短線波動可能增加，亦影響QQQ。",
-   "watch": "大型行使價附近的股價及成交",
+   "why": "1 月期權通常未平倉量較大。",
+   "impact": "持倉股價可能短暫被期權對沖盤推動，NVDA、SNDK 等熱門股較明顯。",
+   "watch": "成交量同大行使價附近走勢。",
    "affects": [
     "NVDA",
     "GOOG",
-    "SNDK",
     "TSM",
-    "QQQ",
-    "QQQM",
-    "VOO"
+    "SNDK",
+    "QQQ"
    ],
    "confidence": "confirmed",
    "src": "claude"
@@ -467,15 +485,36 @@
    "time": "美東 08:30（香港 21:30）",
    "type": "other",
    "sym": null,
-   "name": "美國12月零售銷售",
-   "why": "反映聖誕旺季消費成績。",
-   "impact": "弱數據不利VOO及GOOG廣告前景；過強可能令利率預期升溫。",
-   "watch": "控制組銷售、網上銷售",
+   "name": "12 月零售銷售",
+   "why": "反映整個假期旺季消費表現。",
+   "impact": "影響經濟同企業盈利預期，關乎 VOO，亦間接影響 GOOG 廣告前景。",
+   "watch": "核心銷售按月變化、網購表現。",
    "affects": [
     "VOO",
     "QQQ",
     "QQQM",
     "GOOG"
+   ],
+   "confidence": "confirmed",
+   "src": "claude"
+  },
+  {
+   "date": "2027-01-26",
+   "time": "1/26-27 開會；結果美東 1/27 14:00（香港 1/28 03:00）",
+   "type": "fomc",
+   "sym": null,
+   "name": "1 月議息會議開始",
+   "why": "結果喺本期之後一日公佈；大型科技股業績亦集中喺前後。",
+   "impact": "全部持倉受影響。微軟、蘋果、GOOG、SNDK 業績預計約 1 月底至 2 月初，NVDA 約 2 月下旬。",
+   "watch": "利率聲明、記者會、各公司確實業績日。",
+   "affects": [
+    "TSM",
+    "GOOG",
+    "NVDA",
+    "VOO",
+    "QQQM",
+    "QQQ",
+    "SNDK"
    ],
    "confidence": "confirmed",
    "src": "claude"
@@ -487,12 +526,12 @@
    "typical2d": 0.027202632424541795,
    "fomc": {
     "n": 31,
-    "avgAbs": 0.015795697890796837,
+    "avgAbs": 0.015795698110576496,
     "up": 20
    },
    "earn": {
     "n": 8,
-    "avgAbs": 0.031753564149276006,
+    "avgAbs": 0.031753572600181204,
     "up": 4,
     "maxAbs": 0.05032423101634986,
     "last": [
@@ -523,7 +562,7 @@
      },
      {
       "date": "2025-07-17",
-      "move": 0.011954886410216359,
+      "move": 0.011954952304562116,
       "surprise": 6.79
      },
      {
@@ -533,7 +572,7 @@
      },
      {
       "date": "2025-01-16",
-      "move": 0.022727271014376882,
+      "move": 0.022727272727272707,
       "surprise": 0.68
      }
     ]
@@ -541,15 +580,15 @@
   },
   "GOOG": {
    "typical1d": 0.010312431374746633,
-   "typical2d": 0.01696757861111764,
+   "typical2d": 0.01696752908343746,
    "fomc": {
     "n": 31,
-    "avgAbs": 0.017415034261789395,
+    "avgAbs": 0.017415045102919063,
     "up": 19
    },
    "earn": {
     "n": 8,
-    "avgAbs": 0.05709906968247638,
+    "avgAbs": 0.05709902531934216,
     "up": 4,
     "maxAbs": 0.10892270526980408,
     "last": [
@@ -570,12 +609,12 @@
      },
      {
       "date": "2026-02-04",
-      "move": -0.027502332337574376,
+      "move": -0.027502242589134807,
       "surprise": 6.78
      },
      {
       "date": "2025-10-29",
-      "move": 0.050180713305760793,
+      "move": 0.050180599319823216,
       "surprise": 26.87
      },
      {
@@ -585,28 +624,28 @@
      },
      {
       "date": "2025-04-24",
-      "move": 0.03886642226190662,
+      "move": 0.03886612310011395,
       "surprise": 39.84
      },
      {
       "date": "2025-02-04",
-      "move": -0.04609146581525636,
+      "move": -0.046091613806352405,
       "surprise": 1.18
      }
     ]
    }
   },
   "NVDA": {
-   "typical1d": 0.015548369088584257,
-   "typical2d": 0.022476445089657127,
+   "typical1d": 0.015548410193963857,
+   "typical2d": 0.022476405560357793,
    "fomc": {
     "n": 31,
-    "avgAbs": 0.02604701081823826,
+    "avgAbs": 0.026047023598656027,
     "up": 16
    },
    "earn": {
     "n": 8,
-    "avgAbs": 0.030086542603654218,
+    "avgAbs": 0.03008651472965397,
     "up": 2,
     "maxAbs": 0.07007738456004264,
     "last": [
@@ -632,42 +671,42 @@
      },
      {
       "date": "2025-11-19",
-      "move": -0.003970076582991533,
+      "move": -0.003969992580879711,
       "surprise": 3.46
      },
      {
       "date": "2025-08-27",
-      "move": -0.00880249303688918,
+      "move": -0.008802409626184948,
       "surprise": 4.1
      },
      {
       "date": "2025-05-28",
-      "move": 0.027232645441503056,
+      "move": 0.027232532546500376,
       "surprise": 8.02
      },
      {
       "date": "2025-02-26",
-      "move": -0.051172647997317466,
+      "move": -0.051172705313134226,
       "surprise": 5.25
      }
     ]
    }
   },
   "VOO": {
-   "typical1d": 0.005070670103978714,
-   "typical2d": 0.007411433662388611,
+   "typical1d": 0.005070572548037555,
+   "typical2d": 0.007411434044658827,
    "fomc": {
     "n": 31,
-    "avgAbs": 0.007740752704173411,
+    "avgAbs": 0.007740698649826087,
     "up": 14
    }
   },
   "QQQM": {
-   "typical1d": 0.007855764770675955,
-   "typical2d": 0.012161964803721725,
+   "typical1d": 0.007855764772475404,
+   "typical2d": 0.01216202338457556,
    "fomc": {
     "n": 31,
-    "avgAbs": 0.010475750436436596,
+    "avgAbs": 0.0104757572422963,
     "up": 17
    }
   },
@@ -676,7 +715,7 @@
    "typical2d": 0.012337977465408267,
    "fomc": {
     "n": 31,
-    "avgAbs": 0.01050051383110792,
+    "avgAbs": 0.010500506700269918,
     "up": 17
    }
   },
@@ -733,11 +772,11 @@
    }
   },
   "SPY": {
-   "typical1d": 0.004890645928350701,
+   "typical1d": 0.004890690259956476,
    "typical2d": 0.007380792443812401,
    "fomc": {
     "n": 31,
-    "avgAbs": 0.00782568155692291,
+    "avgAbs": 0.007825681383417474,
     "up": 14
    }
   }

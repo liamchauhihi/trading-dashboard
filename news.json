@@ -1,5 +1,5 @@
 {
- "generated": "2026-11-28T04:45+08:00",
+ "generated": "2026-11-28T08:00+08:00",
  "holdings": [
   "TSM",
   "GOOG",
@@ -11,9 +11,170 @@
  ],
  "claude_ok": true,
  "model": "haiku",
- "claude_at": "2026-11-28T04:45+08:00",
- "summary": "聯儲局下月幾乎肯定加息，壓住大市；但晶片股週五反彈，華爾街上週錄得一年多來最佳表現。對持倉：TSM 受惠關稅方案不包晶片，NVDA 面對國會聽證及評級風險，SNDK 大升但波動大。",
+ "claude_at": "2026-11-28T08:00+08:00",
+ "summary": "上一個交易日大市反彈，SPY 升 1.6%、QQQ 升 2.7%，市場形容係一年來最好嘅一週。但通脹升至 3.8%，市場幾乎肯定押注聯儲局 12 月加息，就業數據亦將公布，波動未必完結。持倉方面，TSM 因關稅方案未包括晶片而升；SNDK 受記憶體股反彈帶動大升；QQQ、QQQM、VOO 主要跟隨大市反彈。",
  "items": [
+  {
+   "time": "2026-11-28 06:47",
+   "headline": "大市上一個交易日反彈，為一年來最好一週作結",
+   "source": "Indiana Gazette Online",
+   "url": "https://news.google.com/rss/articles/CBMi8wFBVV95cUxNTDlsbThrZVo5d1FEdG9ma1BjTWp2ck5oOUJHMWhIV0VsR1ZORGR2ejFPcXo2RDFtUVp1Q1Vzb1ZFLVhrN2l5RUNfU3F1VkRWckl4aEg2bVhhWVdwbEQxUHFuaFJZZWpmQnZUOUtyMGFGRW5vS05PX3N3a1V2TmVkNVJyelBFa2tiTmZPX2tELVZuOEJpZG5uOEU1Z0k5MXBpM1dVck5lZC1ucXRYWG1ReFdHdjc1YlJPYXFYam1vRjc2NnM4aVNmX3VmNDVFbGlHbnZuT1kyMHhTMkRVb3hGRzhwbFpNNDFjWUVLcF9OUzFHcms?oc=5",
+   "summary": "上週五大市反彈收市，市場形容係一年來最好嘅一週，但期間波動頗大。",
+   "level": "high",
+   "scope": "market",
+   "affects": [
+    {
+     "sym": "SPY",
+     "dir": "up",
+     "why": "大市反彈，SPY 上升 1.62%"
+    },
+    {
+     "sym": "VOO",
+     "dir": "up",
+     "why": "追蹤 S&P 500，上升 1.66%"
+    },
+    {
+     "sym": "QQQ",
+     "dir": "up",
+     "why": "科技股帶動反彈，升 2.69%"
+    },
+    {
+     "sym": "QQQM",
+     "dir": "up",
+     "why": "同樣受科技股帶動，升 2.68%"
+    }
+   ],
+   "takeaway": "反彈令持倉上升，但市場波動仍大，唔好因單日升跌而作決定。",
+   "found": "2026-11-28 08:00"
+  },
+  {
+   "time": "2026-11-28 06:21",
+   "headline": "大市本週面對就業數據同利率走勢考驗",
+   "source": "Reuters",
+   "url": "https://news.google.com/rss/articles/CBMiwwFBVV95cUxPQWRTQ0tlUW54X0tjS2R6bWdzblVkUnZ5VnBCa2NjWkd5Q2xIWUh0MUFWVW4weVlRTTBpbDhFWTFsbmYwc2NqOERDdGxTZmpHTzdHRVk2b2o5U0RZYm1WMXZhaEJMRXFrQmxKaUViQXNNdE1XZ3RTT05VbmxqX3BYOXNONGFkMVFTU1VLVVRjTzdfUTloYnhJaVpsWS1YMV9FVGlmeUdYRmk0clkzM3FhQjZuUnRfYXdZRnVHdTE2Smo1V2M?oc=5",
+   "summary": "Reuters 週前瞻指市場下週要面對就業數據同利率走勢，波動或會持續。",
+   "level": "high",
+   "scope": "market",
+   "affects": [
+    {
+     "sym": "SPY",
+     "dir": "mixed",
+     "why": "就業數據好壞都可能牽動加息預期，方向未定"
+    },
+    {
+     "sym": "VOO",
+     "dir": "mixed",
+     "why": "追蹤大市，受同一批數據影響"
+    }
+   ],
+   "takeaway": "就業數據會係近期重要日子，留意大市波動，但唔需要因此即時改動持倉。",
+   "found": "2026-11-28 08:00"
+  },
+  {
+   "time": "2026-11-28 05:54",
+   "headline": "谷歌跑輸大市反彈，市場擔心 AI 成本及雲端前景",
+   "source": "JournalArta",
+   "url": "https://news.google.com/rss/articles/CBMimwFBVV95cUxPM0RwRG50ZWplcVZkQVFlOFJISVZjcWcxNTl2Q0RDR05IM2pmX3luOGFrd2NyTngzdVQySExxYWQ3THhNeXJLTHA0dVJ1SEN4Tm5RajR6bGhtWjRYMzNHNWEwb1RYTzFYdGZVa1NYYUhqSndyRDRkR3N0M2hZdmY2Rk5oUElfc1QweGM2TmVsUUwxbTRkZHFBLUhuWQ?oc=5",
+   "summary": "GOOG 跑輸 S&P 500 反彈，報道提及 AI 成本同雲端前景令市場有保留。上一日 GOOG 升 0.54%，但此前已連跌三日。",
+   "level": "medium",
+   "scope": "stock",
+   "affects": [
+    {
+     "sym": "GOOG",
+     "dir": "mixed",
+     "why": "上一日微升，但 AI 成本同雲端前景仍有疑慮"
+    }
+   ],
+   "takeaway": "GOOG 升幅跑輸大市，留意 AI 投資及雲端業務嘅消息，唔使因單日新聞作決定。",
+   "found": "2026-11-28 08:00"
+  },
+  {
+   "time": "2026-11-28 05:41",
+   "headline": "通脹升至 3.8%，加息押注增加",
+   "source": "Around Prague",
+   "url": "https://news.google.com/rss/articles/CBMipwFBVV95cUxPcTczemZXcDNhTWVsdy0wbi1BRklzWU80ekFDZDdsOWVySkNkTEk2T1pVVjhaU2ZUVlBlbWQ2TXJKVDZ3aXFPVnZNQUQ2ZWxRWHRNTjc0N252cFNpWE5HLUx4TC1ULUJsU3V4RlVjckFoeDVTUW1vZ1FrT0ZTZGxoUzZTeTZtMXdJWEpDZjRJVW1YZHBja0tPSV85QllNY1NPNUpCcmZIOA?oc=5",
+   "summary": "報道指通脹升至 3.8%，市場加息押注加強，同日有報道提及科技股下跌。",
+   "level": "high",
+   "scope": "market",
+   "affects": [
+    {
+     "sym": "QQQ",
+     "dir": "down",
+     "why": "科技股同利率敏感，加息預期會壓低估值"
+    },
+    {
+     "sym": "QQQM",
+     "dir": "down",
+     "why": "同樣持有大型科技股，受利率影響較大"
+    },
+    {
+     "sym": "SPY",
+     "dir": "down",
+     "why": "通脹及加息押注升溫會影響整體估值"
+    }
+   ],
+   "takeaway": "加息風險係大市主要不確定因素，波動可能會再現，唔使因一日新聞而改變長線持倉。",
+   "found": "2026-11-28 08:00"
+  },
+  {
+   "time": "2026-11-28 05:29",
+   "headline": "AI 樂觀情緒回勇，納指同大市一週內錄得最佳表現",
+   "source": "Stocktwits",
+   "url": "https://news.google.com/rss/articles/CBMi2AFBVV95cUxOcE4wX0dSa2RLaHBlWm9abGh5TWdiYWlFV0x4RHVRaTdBdURMLTFVUVBPbEtITTFMejVNWHFfU3Z2cjVUSk04MzRKeVIzMXdRMG1tYndwRXhiMlQwdnQwUFlFclpkbkUxS0tFUEZuX040OHlzU1JGMmMwSXhiTy1VdnQ5bV9nWFRlLVpsRElsNjBZYWZzVExnUWVzUkloVWowSWItdVhxamZWZDhTYkxaTURKbVZZdS1RdWdmTWM5bjZVNEN6SnBUVUJSeE5vcFQ2azU0MUJONlM?oc=5",
+   "summary": "報道指 AI 樂觀情緒回勇，納指同 S&P 500 一週內錄得一年來最好表現。",
+   "level": "high",
+   "scope": "sector",
+   "affects": [
+    {
+     "sym": "QQQ",
+     "dir": "up",
+     "why": "納指成份以科技股為主，AI 樂觀情緒直接帶動升幅"
+    },
+    {
+     "sym": "QQQM",
+     "dir": "up",
+     "why": "同樣以大型科技股為主，受惠於 AI 反彈"
+    }
+   ],
+   "takeaway": "科技股反彈令 QQQ 系列持倉上升，但 AI 板塊波動大，留意加息消息會否再次拖累。",
+   "found": "2026-11-28 08:00"
+  },
+  {
+   "time": "2026-11-28 04:41",
+   "headline": "關稅方案唔包括晶片，台積電股價升 3.2%",
+   "source": "JournalArta",
+   "url": "https://news.google.com/rss/articles/CBMinwFBVV95cUxPRzFUWElhNzNhY1ppZHoxOEFIM1I5VmJVN0FZTl9pcUlIbXpJVm1SaS1BQ19zY3BVZ0lPUFh0eHVWUU11ZzVIYkxxM1h1VTNSTzM1T3VZbG1pOTgxblU4S3FOb2lVeTlQeThaWjhaYmNVUXZOYnJFRkhybGNCRmJsUEJDV0JzbGtWOWFOOUxUZk9xQXd5MVpmZllpYmhoeTg?oc=5",
+   "summary": "報道指美國關稅方案唔包括晶片，台積電股價因此上升 3.21%，收報約 353.34 美元。",
+   "level": "high",
+   "scope": "stock",
+   "affects": [
+    {
+     "sym": "TSM",
+     "dir": "up",
+     "why": "關稅方案未包括晶片，減少了貿易風險，股價升 3.21%"
+    }
+   ],
+   "takeaway": "今次升幅主要來自關稅消息，屬短期情緒因素；亞利桑那新廠動工屬長線利好，可繼續留意。",
+   "found": "2026-11-28 08:00"
+  },
+  {
+   "time": "2026-11-28 04:30",
+   "headline": "黃仁勳重返英偉達，報道指目標 FY2028 收入增長 75%",
+   "source": "Barchart.com",
+   "url": "https://news.google.com/rss/articles/CBMi0wFBVV95cUxNQS1oUmpYRnQzOTJyUjlBZWgzN3QtdTZWd1RzVV9qVEd0YjFiSE4zQkszVUdmOEJaZlE1c1NUOXg1dU9nZExlYjRJajBCZ0JuM0FjTnRPZFMxTzFMNkhNQnp6c2xwSUVyZHNBNEt0U0psb0FtMks4SnUyVlVkSTNqUlpPb3RYMmtkcWtrZk9WbUFKRUZ1YUg4MC1ZRGVoSkxPRUxMWXNXbkg1ejFUYUpyTFcybmxYR1JWUENneWR2WVhjdFJ4T0dENmlYOG14OS1BdFdr?oc=5",
+   "summary": "報道以標題指黃仁勳重返英偉達，並提及英偉達目標 FY2028 收入增長 75%；呢個係報道嘅說法，未經公司確認。",
+   "level": "medium",
+   "scope": "stock",
+   "affects": [
+    {
+     "sym": "NVDA",
+     "dir": "up",
+     "why": "管理層回任同增長目標有助提振市場信心"
+    }
+   ],
+   "takeaway": "NVDA 上一日只升 0.8%，短期無大變化；但 12 月出席國會作供及出口規則未明仍係風險，留意公司正式公布。",
+   "found": "2026-11-28 08:00"
+  },
   {
    "time": "2026-11-28 04:23",
    "headline": "美國關稅方案未包括晶片，台積電股價上升",
@@ -111,21 +272,26 @@
   },
   {
    "time": "2026-11-28 03:43",
-   "headline": "SanDisk 急升約 16% 至 85.36 美元",
+   "headline": "SanDisk 股價急升約 16%，記憶體股反彈",
    "source": "JournalArta",
    "url": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxNd0JxTWhOTDkyenhUUXczZGcwdGJFN0FONUd5cjBtWXVvd01oNXRNc19HVEs5Wkd2VGM3a2xXZzV3emZ6bEQ0V0k3cHlWZk92bk02WHlaRnNycEc2bkkxN3BERWY5Qlc3dlFLQkVwSEtrTjJTWnBvT0pzeWV4WU5lbS1JdS1CdFBKYl9Hd2FEcVA3M254dUJibVlRNkRTZ1o2bk9iYlgyMHNpWDNqeGtlOUVxa3VKSVR2?oc=5",
-   "summary": "報道指 Nvidia 同 Kioxia 測試快閃記憶體，帶動 SanDisk 股價急升約 16%。",
+   "summary": "SanDisk 股價升近 16%，報 85.36 美元，報道指 Nvidia 同 Kioxia 測試快閃記憶體，帶動記憶體股反彈。",
    "level": "high",
    "scope": "stock",
    "affects": [
     {
      "sym": "SNDK",
      "dir": "up",
-     "why": "記憶體股反彈加上測試消息帶動股價"
+     "why": "記憶體股整體反彈，加上 Nvidia 同 Kioxia 測試快閃記憶體嘅消息，股價大升"
+    },
+    {
+     "sym": "NVDA",
+     "dir": "up",
+     "why": "報道提及 Nvidia 測試快閃記憶體，可能有協同效應"
     }
    ],
-   "takeaway": "單日升幅大，波動亦大；唔好追高，留意之後有冇正式確認。",
-   "found": "2026-11-28 04:45"
+   "takeaway": "SNDK 單日升幅大，短期波動會好大，唔好追高；留意記憶體股能否持續。",
+   "found": "2026-11-28 08:00"
   },
   {
    "time": "2026-11-28 02:51",
@@ -707,147 +873,6 @@
    ],
    "takeaway": "加息預期係大市主要壓力，短期波動可能持續，留意債息同通脹數據。",
    "found": "2026-11-27 12:00"
-  },
-  {
-   "time": "2026-11-27 09:58",
-   "headline": "特朗普將出席台積電擴建典禮",
-   "source": "名單記錄（無連結）",
-   "url": "",
-   "summary": "名單記錄特朗普將出席台積電擴建典禮；具體內容未有連結可以核實。",
-   "level": "medium",
-   "scope": "stock",
-   "affects": [
-    {
-     "sym": "TSM",
-     "dir": "up",
-     "why": "高層出席或有助公司與政策關係，但對盈利影響未明"
-    }
-   ],
-   "takeaway": "屬於新聞性消息，唔代表業績改變；留意公司之後正式公布嘅內容。",
-   "found": "2026-11-27 18:00"
-  },
-  {
-   "time": "2026-11-27 09:58",
-   "headline": "特朗普將出席台積電擴建典禮",
-   "source": "GuruFocus",
-   "url": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxQUmpYQVdveEZjckFybWQtMlRlLUJFMm5uUWVBclR6SjJVN1dxS0JTbUo3OUxWM3JFaUZLQjVKZWpFNHV0UUJsWDliZzEyWEk2ZlUweXZlX0dQaWx6OXNPUUNNNUJacGJNZnhFTTdZdGxSeThlMk9VN3c1bFJDa2s2RnJldVhrTXV1TnFTRElJZWFxQkN4RUNOSXllUjlSSHg3ZUZ3VjNaelY?oc=5",
-   "summary": "報道指特朗普將出席台積電擴建儀式，晶片行業近日波動大。",
-   "level": "medium",
-   "scope": "stock",
-   "affects": [
-    {
-     "sym": "TSM",
-     "dir": "up",
-     "why": "政治支持或帶來正面情緒，但原文未有財務數字"
-    }
-   ],
-   "takeaway": "典禮屬象徵性新聞，未必直接改變業績，睇清原文內容再判斷。",
-   "found": "2026-11-27 12:00"
-  },
-  {
-   "time": "2026-11-27 09:36",
-   "headline": "SNDK 獲評級上調，但 NAND 價格風險仍受關注",
-   "source": "Seeking Alpha",
-   "url": "https://news.google.com/rss/articles/CBMijwFBVV95cUxNeUZlVlZBZ0NJeDJYNHZzbUFDNF9DX2xQTG1wTTRoT3pMVkp6Qklsekg4SHowY1NqSWgzVW5nYUxVVVpBd2g1YWpvSWhWVVJYQ2ZZX1JxcF9aVTBHd3FEMUZYV3QyR0c5d0Z6aEc1OElXeDNsVzhuVXNpLTA2UTVGVWNZb1ExbnFDYTRQUzBTcw?oc=5",
-   "summary": "有分析文章上調 SNDK 評級，指早前「賣出」評級已應驗；NAND 價格風險仍在。",
-   "level": "medium",
-   "scope": "stock",
-   "affects": [
-    {
-     "sym": "SNDK",
-     "dir": "mixed",
-     "why": "評級上調，但估值同 NAND 價格風險仍在"
-    }
-   ],
-   "takeaway": "評級上調只係一家之言；SNDK 波幅大，留意自己持倉比重。",
-   "found": "2026-11-27 12:00"
-  },
-  {
-   "time": "2026-11-27 09:15",
-   "headline": "特朗普稱週三股市急挫令佢一度擔心",
-   "source": "TradingView",
-   "url": "https://news.google.com/rss/articles/CBMiywFBVV95cUxNY2otYWlmZVU1aFU2TlBjSW44bFEyVkhHOUZ4TDkzM2ptcEMxc0NXRldpMlIxRkdfbDlHalJ1cGhtZ1psYm55cFd2YmhOSjY5RG56RDdONS1rSlh5V1d0T05XdExOVGF6VGMxem8yVFMxVjNSd1JYN3d5TDlRUlVXU09XekxpZllhZTlIWEUyR2ZDcFlnZkNfSlpMM3hoZW5iSmpKVTVDOUF0X00wOFpjWW1EOWpHcGxhSC1ROElrczFvNUVtMjRGZWZ0WQ?oc=5",
-   "summary": "特朗普表示週三華爾街大跌令他一度憂心，但股市其後回升。",
-   "level": "medium",
-   "scope": "market",
-   "affects": [
-    {
-     "sym": "VOO",
-     "dir": "mixed",
-     "why": "言論影響情緒，但未見具體政策內容"
-    },
-    {
-     "sym": "QQQ",
-     "dir": "mixed",
-     "why": "同上"
-    }
-   ],
-   "takeaway": "領導人言論影響情緒，但唔等於政策，以正式公布為準。",
-   "found": "2026-11-27 12:00"
-  },
-  {
-   "time": "2026-11-27 07:52",
-   "headline": "報道指 NVDA 股票組合有 41% 持 SpaceX",
-   "source": "TIKR.com",
-   "url": "https://news.google.com/rss/articles/CBMi0AFBVV95cUxQVEVYWUZ4T0FibmozQVZ3WWo0eTVqWUljYmlLX0pHR1lGMVE5cWJ6QlNpSnV1eFV4WmgzN3M3OE91N0dRVk5WYlRGV3hJVkE5ZVE2bHY2T0Q1Q0RNWFJBWHVfZDJqc2F4TE1QNFhRZHhabkFfMGV3OVlEWHlMTnVHRnVGMWRDSm9Cc0YxOFVBQVNfYUt5c2pjRkwtZUtyUVNmYkUtanlWMjZobTlHRUMydGRwUU5hZnNsbGg3a09fTzFjUm5ydnFQZFhFMFN4bHBy?oc=5",
-   "summary": "一份分析文章指 NVDA 持有 SpaceX 股份佔其股票組合約 41%，數字來自分析網站，要自行核實。",
-   "level": "low",
-   "scope": "stock",
-   "affects": [
-    {
-     "sym": "NVDA",
-     "dir": "mixed",
-     "why": "若 SpaceX 估值波動，會影響投資組合，但非核心業務"
-    }
-   ],
-   "takeaway": "屬投資組合層面嘅風險，未見直接影響 AI 業務；留意後續正式披露。",
-   "found": "2026-11-27 12:00"
-  },
-  {
-   "time": "2026-11-27 07:00",
-   "headline": "納指 100 日內波幅近兩年最闊",
-   "source": "名單記錄（無連結）",
-   "url": "",
-   "summary": "納指 100 近五日平均日內波幅係 2025 年 4 月以來最闊，即係日內震盪好大。",
-   "level": "medium",
-   "scope": "market",
-   "affects": [
-    {
-     "sym": "QQQ",
-     "dir": "mixed",
-     "why": "日內波動大，升跌都可能好快逆轉"
-    },
-    {
-     "sym": "QQQM",
-     "dir": "mixed",
-     "why": "同跟蹤納指 100，波動同樣較大"
-    }
-   ],
-   "takeaway": "QQQ / QQQM 短期起跌大，唔使因一兩日升跌就慌；睇長線能否持有係關鍵。",
-   "found": "2026-11-27 18:00"
-  },
-  {
-   "time": "2026-11-27 07:00",
-   "headline": "納指 100 五日平均日內波幅為 2025 年 4 月以來最闊",
-   "source": "tokenpost",
-   "url": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE9XQUdoNmQtYzctV3I3d0k2UHlRbThiRFJocElmTGo3SlZsTlBLdUFWYm1JeVVzSW5TRXY1RV9sMWQ4S2xidW9sTWpxSzRidU5qU1JhMlQ3Z000dw?oc=5",
-   "summary": "納指 100 近五日日內波幅擴大至 2025 年 4 月以來最闊，反映市場波動增加。",
-   "level": "medium",
-   "scope": "market",
-   "affects": [
-    {
-     "sym": "QQQ",
-     "dir": "mixed",
-     "why": "波幅大代表日內上落快，方向未定"
-    },
-    {
-     "sym": "QQQM",
-     "dir": "mixed",
-     "why": "同 QQQ 追蹤同一指數"
-    }
-   ],
-   "takeaway": "波動大時日內價格較難睇，長線持有者唔使每個鐘都睇價格。",
-   "found": "2026-11-27 08:00"
   }
  ]
 }
